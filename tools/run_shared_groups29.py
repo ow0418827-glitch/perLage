@@ -112,6 +112,9 @@ def prepare():
 
 
 def run():
+    state_file=ROOT/'RUN_STATUS.json'
+    if state_file.exists() and read_json(state_file).get('status')=='stopped_by_user_scope_change':
+        raise RuntimeError('用户已停止本轮防御测试，请使用 tools/run_shared_groups29_nodefense.py 继续无防御最终测试')
     prepare()
     phases = [('generate_'+key, [sys.executable,'-X','utf8','-B','-u','-m',
         'src.experiments.pipeline','generate','--method','PerLAGE','--config',str(ROOT/'configs'/(key+'.json'))]) for key in GROUPS]

@@ -248,13 +248,18 @@ def report(root,*,require_shopping=True):
         lines += [f"## {display}",'',f"原商品：{group['source']['id']}；固定目标：{group['target']['id']}。",'',
             '| 条件 | 原图前三 | 修改图前三 | 原图前五 | 修改图前五 |','|---|---:|---:|---:|---:|']
         for label,names in table_groups():
+            if not any(r['group']==group['key'] and r['condition']['label'] in names for r in rows):
+                continue
             fields=[]
             for metric in ('top3','top5'):
                 for bank in ('clean','modified'):
                     subset=[r for r in rows if r['group']==group['key'] and r['condition']['label'] in names and r['bank']==bank]
                     fields.append(f"{sum(r[metric] for r in subset)}/{sum(r['query_count'] for r in subset)}")
             lines.append('| '+label+' | '+' | '.join(fields)+' |')
-        lines += ['','扩散行合并全部五个固定种子，逐种子及逐请求结果保存在原始记录中。','']
+        if any(r['condition']['kind']=='diffusion' for r in rows):
+            lines += ['','扩散行合并全部五个固定种子，逐种子及逐请求结果保存在原始记录中。','']
+        else:
+            lines += ['','本轮仅执行上述实际存在的条件，未执行的防御条件不计入结果。','']
     shopping_file=root/'shopping/outcomes.json'
     if require_shopping and not (root/'shopping/COMPLETED.json').is_file():raise ValueError('最终购物尚未完整完成')
     if shopping_file.exists():

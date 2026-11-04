@@ -162,6 +162,9 @@ def test_shared_retrieval_recomputes_both_vectors_and_independently_verifies(bat
     assert len(rows)==4 and len(created)==2 and all(e.closed for e in created)
     proof=read_json(tmp_path/'retrieval/INDEPENDENT_VERIFICATION.json')
     assert proof['status']=='passed' and proof['rankings']==8 and proof['max_score_error']==0
+    report_text=(tmp_path/'REPORT.md').read_text(encoding='utf-8')
+    assert '模糊半径' not in report_text and '0/0' not in report_text
+    assert '扩散行合并' not in report_text
     clean=read_json(tmp_path/'retrieval/indexes/none/clean.json')
     modified=read_json(tmp_path/'retrieval/indexes/none/modified.json')
     assert len(clean['vectors'])==len(modified['vectors'])==len(entries)
