@@ -1,0 +1,10 @@
+[project]
+name = "perlage"
+version = "0.1.0"
+description = "Public-only pair selection, two image methods, and shared long-term memory evaluation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["src/tests"]
+addopts = "-q -p no:cacheprovider"
+pythonpath = ["."]

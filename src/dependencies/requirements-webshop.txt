@@ -1,0 +1,6 @@
+# WebShop（购物环境）服务端的可选依赖；另需 Java（爪哇运行时）与公开商品数据。
+pyserini==1.2.0
+cleantext==1.1.4
+rank-bm25==0.2.2
+thefuzz==0.22.1
+spacy>=3.8,<4

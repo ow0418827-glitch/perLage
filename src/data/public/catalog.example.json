@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "target": {
+    "id": "public_target_product_id",
+    "title": "Public target product name",
+    "image": "images/target.png",
+    "source_url": "https://example.com/public-target",
+    "boxes": [[0, 0, 512, 512]],
+    "text_regions": [],
+    "text_regions_reviewed": false
+  },
+  "candidates": [{
+    "id": "owned_source_product_id",
+    "title": "Public source product name",
+    "image": "images/source.png",
+    "owned": true,
+    "source_note": "攻击者自有商品的公开展示图",
+    "boxes": [[0, 0, 512, 512]],
+    "text_regions": [],
+    "text_regions_reviewed": false
+  }]
+}
