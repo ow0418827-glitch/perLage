@@ -25,6 +25,49 @@ ACTIVE = DATA / 'private/shared_memory.json'
 def now():return datetime.now(timezone.utc).isoformat()
 
 
+def training_child(command,stream,state,key):
+    """初始化完整落盘后，在新进程继续，释放阶段间模型和运行时缓存。"""
+    generation=ROOT/'groups'/key/'methods/PerLAGE/generation'
+    initial=generation/'initialization/ready.json'
+    pause=generation/'PAUSE_REQUESTED'
+    protocol='runtime_release_after_completed_initialization_v1'
+    recycle_needed=not initial.exists()
+    requested=False
+    environment=dict(__import__('os').environ,TOKENIZERS_PARALLELISM='false',PYTHONDONTWRITEBYTECODE='1')
+    while True:
+        child=subprocess.Popen(command,cwd=PROJECT,stdout=stream,stderr=subprocess.STDOUT,env=environment,
+                               creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+        state['child_pid']=child.pid;save_json(ROOT/'RUN_STATUS.json',state)
+        while child.poll() is None:
+            if recycle_needed and initial.exists() and not pause.exists():
+                try:ready=read_json(initial)
+                except ValueError:ready={}
+                if ready.get('status')=='completed' and ready.get('method')=='perlage_generation_initialization':
+                    pause.write_text(protocol,encoding='utf-8')
+                    requested=True;recycle_needed=False
+                    save_json(generation/'RUNTIME_PROCESS_SPLIT.json',dict(status='requested',protocol=protocol,
+                        initial_ready_sha256=sha256_file(initial),requested_at=now(),numeric_defaults_unchanged=True))
+            time.sleep(2)
+        code=child.returncode
+        if not requested:
+            split_record=generation/'RUNTIME_PROCESS_SPLIT.json'
+            if code==0 and split_record.exists():
+                record=read_json(split_record)
+                record.update(status='completed_in_fresh_process',completed_at=now())
+                save_json(split_record,record)
+            return code
+        if pause.is_file() and pause.read_text(encoding='utf-8')==protocol:pause.unlink()
+        progress=generation/'latent_generation_refinement/progress.json'
+        actual=read_json(progress) if progress.exists() else {}
+        if code!=0 and actual.get('status')=='paused':
+            save_json(generation/'RUNTIME_PROCESS_SPLIT.json',dict(status='resuming_in_fresh_process',protocol=protocol,
+                initial_ready_sha256=sha256_file(initial),checkpoint_sha256=sha256_file(progress.parent/'checkpoint.pt'),
+                completed_latent_steps=actual['step'],resumed_at=now(),numeric_defaults_unchanged=True))
+            requested=False
+            continue
+        return code
+
+
 def prepare():
     BASE.mkdir(parents=True, exist_ok=True)
     original = BASE / 'original_shared_pool.json'
@@ -84,10 +127,13 @@ def run():
         (ROOT/'RUN_STATUS.md').write_text(f'当前阶段：{stage}\n状态：执行中\n日志：{log}\n',encoding='utf-8')
         started=time.perf_counter()
         with log.open('a',encoding='utf-8') as stream:
-            child=subprocess.Popen(command,cwd=PROJECT,stdout=stream,stderr=subprocess.STDOUT,
-                                   creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
-            state['child_pid']=child.pid;save_json(ROOT/'RUN_STATUS.json',state)
-            code=child.wait()
+            if stage.startswith('generate_'):
+                code=training_child(command,stream,state,stage[len('generate_'):])
+            else:
+                child=subprocess.Popen(command,cwd=PROJECT,stdout=stream,stderr=subprocess.STDOUT,
+                                       creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
+                state['child_pid']=child.pid;save_json(ROOT/'RUN_STATUS.json',state)
+                code=child.wait()
         result=dict(status='completed' if code==0 else 'failed',stage=stage,exit_code=code,
                     completed_at=now(),seconds=time.perf_counter()-started,log=str(log))
         save_json(completed,result)
