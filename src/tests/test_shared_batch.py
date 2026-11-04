@@ -6,7 +6,7 @@ import pytest
 
 from src.vision.audit import read_json,save_json
 from src.vision.image_utils import sha256_file
-from src.experiments.shared_batch import replace_source_records,make_banks,evaluate,verify,OLD_ASINS
+from src.experiments.shared_batch import replace_source_records,make_banks,evaluate,verify,OLD_ASINS,SharedFeatureCache
 from src.experiments.shared_shopping import policy_references
 from test_shared_pool import ToyEncoder
 
@@ -86,6 +86,24 @@ def test_gallery_policy_reference_does_not_invent_a_purchase(batch_inputs):
     assert adapted[0]['Completed'] is False and adapted[0]['Actions']==[]
     assert 'no observed purchase' in adapted[0]['Instruction']
     assert adapted[1:]==entries[1:] and 'Actions' not in entries[0]
+
+
+def test_feature_reuse_checks_current_image_bytes_and_does_not_cross_verification(products):
+    class Counted(ToyEncoder):
+        def __init__(self):super().__init__();self.calls=0
+        def encode_joint(self,*args,**kwargs):
+            self.calls+=1;return super().encode_joint(*args,**kwargs)
+    base=Counted();cached=SharedFeatureCache(base)
+    image=Path(products[0]['image'])
+    cached.encode_joint('same text',image);cached.encode_joint('same text',image)
+    assert base.calls==1
+    with Image.open(image) as opened:changed=opened.copy()
+    changed.putpixel((0,0),(0,0,0));changed.save(image)
+    cached.encode_joint('same text',image)
+    assert base.calls==2
+    fresh_base=Counted();fresh=SharedFeatureCache(fresh_base)
+    fresh.encode_joint('same text',image)
+    assert fresh_base.calls==1
 
 
 def test_shared_retrieval_recomputes_both_vectors_and_independently_verifies(batch_inputs,tmp_path):

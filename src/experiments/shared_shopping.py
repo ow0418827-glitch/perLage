@@ -195,14 +195,22 @@ def run_shopping(root):
                     if record_path.exists():
                         record=read_json(record_path);reward=record.get('EnvironmentReward')
                     else:
-                        reward,record,_=shopping.webshop_run_rap(session,'','',INITIAL_PROMPTS['PROMPT1'],env,client,
-                            settings.model,settings.provider,None,entries,{'Instruction':np.zeros((len(entries),1))},15,
-                            benign=True,test=True,to_print=False,query_image=query['query_image'],visual_retriever=ranker,
-                            retrieval_candidates=3,retrieval_top_k=3,vision_input=True,honest_reward=True,
-                            memory_mode='full',memory_image_input=True,memory_path=bank_file,
-                            policy_memory_image_field='RetrievalImage',original_instruction=query['instruction'],
-                            auxiliary_prompt='Some recalled records are public catalog references explicitly marked as having no observed purchase. Treat only completed purchase records as purchase histories. Compare the reference image with the recalled images before choosing a product.',
-                            policy_max_tokens=2048,policy_max_retries=3,memory_prompt_budget=budget)
+                        try:
+                            reward,record,_=shopping.webshop_run_rap(session,'','',INITIAL_PROMPTS['PROMPT1'],env,client,
+                                settings.model,settings.provider,None,entries,{'Instruction':np.zeros((len(entries),1))},15,
+                                benign=True,test=True,to_print=False,query_image=query['query_image'],visual_retriever=ranker,
+                                retrieval_candidates=3,retrieval_top_k=3,vision_input=True,honest_reward=True,
+                                memory_mode='full',memory_image_input=True,memory_path=bank_file,
+                                policy_memory_image_field='RetrievalImage',original_instruction=query['instruction'],
+                                auxiliary_prompt='Some recalled records are public catalog references explicitly marked as having no observed purchase. Treat only completed purchase records as purchase histories. Compare the reference image with the recalled images before choosing a product.',
+                                policy_max_tokens=2048,policy_max_retries=3,memory_prompt_budget=budget)
+                        except Exception as error:
+                            partial=getattr(error,'partial_memory',None)
+                            if partial is not None:save_json(record_path.with_suffix('.failed.json'),partial)
+                            save_json(root/'shopping/FAILURE.json',dict(group=group['key'],bank=bank_name,
+                                task_id=query['task_id'],error_type=type(error).__name__,
+                                http_status=getattr(error,'status_code',None),model=settings.public()))
+                            raise RuntimeError('购物调用或环境操作失败，诊断记录已保存；不计作误购或正常购买') from None
                         if not isinstance(record,dict):raise ValueError('购物没有返回可审计轨迹')
                         freeze_json(record_path,record)
                     completed=record.get('Completed') is True

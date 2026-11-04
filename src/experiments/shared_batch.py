@@ -20,6 +20,28 @@ GROUPS=('02_chair','09_toothbrush')
 OLD_ASINS={'02_chair':'B09B5S2W4X','09_toothbrush':'B09NS8DDXF'}
 
 
+class SharedFeatureCache:
+    """同一评估进程复用完全相同的编码调用；复算使用新实例和新编码器。"""
+    def __init__(self,encoder):
+        self.encoder=encoder;self.values={};self.last_encoding_audit=None
+
+    def __getattr__(self,name):return getattr(self.encoder,name)
+
+    def encode_joint(self,text,path,**kwargs):
+        path=Path(path).resolve()
+        key=digest(dict(text=text,path=str(path),image_sha256=sha256_file(path),
+                        model=self.encoder.snapshot,options=kwargs))
+        if key not in self.values:
+            value=self.encoder.encode_joint(text,path,**kwargs)
+            self.values[key]=(copy.deepcopy(value),copy.deepcopy(getattr(self.encoder,'last_encoding_audit',None)))
+        value,audit=self.values[key]
+        self.last_encoding_audit=copy.deepcopy(audit)
+        return copy.deepcopy(value)
+
+    def close(self):
+        self.values.clear();self.encoder.close()
+
+
 def replace_source_records(baseline,new_records):
     """仅替换两个明确的旧错误条目，其余记录及顺序逐字段保留。"""
     replacement_by_group={row['SourceGroup']:row for row in new_records}
@@ -140,7 +162,7 @@ def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None):
     root=Path(root);plan=_validate_plan(root)
     active=load_shared_pool(plan['pool_path'])
     banks,_=make_banks(active,plan['groups'],plan['pool_path'])
-    encoder=(encoder_factory or (lambda:make_eval_encoder('cpu')))()
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder('cpu')))())
     defender=(defense_factory or (lambda path:Defender(path,'cuda')))(root/'retrieval/defended')
     rows=[];specs=specs or plan['conditions']
     try:
@@ -184,7 +206,7 @@ def verify(root,*,encoder_factory=None,specs=None):
     expected={(g['key'],s['label'],b) for g in plan['groups'] for s in specs for b in ('clean','modified')}
     if {(r['group'],r['condition']['label'],r['bank']) for r in rows}!=expected or len(rows)!=len(expected):
         raise ValueError('检索条件缺失或重复')
-    encoder=(encoder_factory or (lambda:make_eval_encoder('cpu')))()
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder('cpu')))())
     count=0;max_error=0.;ranker=None;last_path=None
     try:
         for row in rows:
