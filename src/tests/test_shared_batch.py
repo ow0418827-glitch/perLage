@@ -11,6 +11,31 @@ from src.experiments.shared_shopping import policy_references,prepare_original_c
 from test_shared_pool import ToyEncoder
 
 
+def test_colored_print_glints_are_preserved_and_not_treated_as_white_paper():
+    import numpy as np
+    from src.vision._natural.colour import prepare_print_context,halo_error
+    source=np.full((80,80,3),(225,160,175),dtype=np.uint8)
+    source[35,35]=255
+    parent=source.copy();parent[:20]=np.clip(parent[:20].astype(int)-20,0,255)
+    foreground=np.ones((80,80),bool)
+    edit_mask=np.full((80,80),255,np.uint8);edit_mask[25:55,25:55]=0
+    context=prepare_print_context(source,parent,edit_mask,foreground,[[25/80,25/80,55/80,55/80]])
+    assert context['opaque'][25:55,25:55].all()
+    assert context['halo_applicable'] is False and halo_error(context,parent)==0
+
+
+def test_white_paper_print_halo_detection_is_still_active():
+    import numpy as np
+    from src.vision._natural.colour import prepare_print_context,halo_error
+    source=np.full((80,80,3),245,dtype=np.uint8);source[35:42,35:42]=30
+    parent=source.copy();parent[:25]=220
+    foreground=np.ones((80,80),bool)
+    edit_mask=np.full((80,80),255,np.uint8);edit_mask[25:55,25:55]=0
+    context=prepare_print_context(source,parent,edit_mask,foreground,[[25/80,25/80,55/80,55/80]])
+    assert context['halo_applicable'] is True and context['halo'].any()
+    assert not context['opaque'][26,26]
+
+
 @pytest.fixture
 def batch_inputs(products,tmp_path):
     entries=[]

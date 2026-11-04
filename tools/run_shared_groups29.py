@@ -15,7 +15,7 @@ from src.vision.audit import read_json, save_json, freeze_json
 from src.vision.image_utils import sha256_file
 from src.memory.shared_pool import build_shared_pool
 
-ROOT = OUTPUT / 'shared_groups29_20261104'
+ROOT = OUTPUT / 'shared_groups29_20261104_final'
 GROUPS = ('02_chair', '09_toothbrush')
 OLD_POOL = PROJECT.parent / 'lage/src/output/lage_runs/catalog_shared_memory_20261103/shared_memory_pool.json'
 BASE = DATA / 'private/reused_shared_20261104'

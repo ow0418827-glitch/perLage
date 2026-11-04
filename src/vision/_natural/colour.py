@@ -89,8 +89,10 @@ def _prepare_general_context(source,parent_anchor,parent_edit_mask,foreground,re
     for region in regions:
         local=print_region_mask(source.shape,[region]);inside=local&foreground
         if not inside.any():continue
-        # 深色织物的白色及彩色印字连同底色保守保留；不套用白纸上的深墨估计。
-        if np.median(ys[inside])<.35:
+        # 深色或彩色底材上的图案整体保留。彩色塑料反光、白色印字不是纸底。
+        # 沿用本函数既有的十二级色差判据，不改变后续光晕减半或图像质量门槛。
+        chroma=source.max(-1).astype(float)-source.min(-1).astype(float)
+        if np.median(ys[inside])<.35 or np.median(chroma[inside])>=12:
             opaque|=local
         else:
             darkest=float(np.quantile(ys[inside],.02))
