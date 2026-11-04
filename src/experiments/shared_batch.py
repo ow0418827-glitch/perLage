@@ -34,7 +34,9 @@ def replace_source_records(baseline,new_records):
             removed.append(copy.deepcopy(entry));output.append(copy.deepcopy(replacement_by_group[key]))
         else:output.append(copy.deepcopy(entry))
     if len(removed)!=2 or len(output)!=len(baseline):raise ValueError('共享池替换数量不一致')
-    if any(e['FinalASIN'] in OLD_ASINS.values() for e in output):raise ValueError('旧两组错误商品仍留在共享池')
+    if any(e.get('SourceGroup') in GROUPS and e.get('EntryType')=='error'
+           and e['FinalASIN']==OLD_ASINS[e['SourceGroup']] for e in output):
+        raise ValueError('旧两组错误条目仍留在共享池')
     if len({e['Id'] for e in output})!=len(output):raise ValueError('共享记忆标识重复')
     return output,removed
 
@@ -45,8 +47,9 @@ def make_banks(entries,groups,pool_path):
     modified=copy.deepcopy(clean);ids={}
     for group in groups:
         source=group['source']
-        eligible=[(i,e) for i,e in enumerate(modified) if e['FinalASIN']==source['id']]
-        if len(eligible)!=1:raise ValueError('新原商品必须唯一存在于全局共享池')
+        eligible=[(i,e) for i,e in enumerate(modified) if e['FinalASIN']==source['id']
+                  and e.get('SourceGroup')==group['key'] and e.get('EntryType')=='error']
+        if len(eligible)!=1:raise ValueError('本轮新原商品记忆标识必须唯一；不能误改同款的其他购买')
         index,entry=eligible[0]
         if memory_index_text(entry)!=source['title'] or entry['PrimaryImage']['SHA256']!=source['image_sha256']:
             raise ValueError('共享记忆商品名称或原图与公开选取不符')

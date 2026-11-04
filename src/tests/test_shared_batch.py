@@ -48,6 +48,15 @@ def test_replacement_refuses_an_unexpected_old_product(batch_inputs):
         replace_source_records(entries,entries[1:])
 
 
+def test_other_purchases_of_the_same_product_keep_their_original_images(batch_inputs):
+    entries,groups,pool=batch_inputs
+    other=copy.deepcopy(entries[1]);other.update(Id='another_purchase',EntryType='normal')
+    entries.append(other)
+    banks,ids=make_banks(entries,groups,pool)
+    assert banks['modified'][-1]==banks['clean'][-1]
+    assert ids['02_chair']==entries[1]['Id']
+
+
 def test_both_images_are_substituted_in_one_bank_and_histories_stay_intact(batch_inputs):
     entries,groups,pool=batch_inputs
     original=copy.deepcopy(entries)
