@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "lexical_limit": 2000,
+  "candidate_limit": 30,
+  "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "groups": [
+    {
+      "key": "02_chair",
+      "target_id": "B09CYFD5BX",
+      "title_pattern": "\\b(?:barber|salon|stylist|hydraulic|beauty)\\b.{0,60}\\b(?:chair|stool)\\b|\\bbar\\s+stools?\\b"
+    },
+    {
+      "key": "09_toothbrush",
+      "target_id": "B09J81RMLD",
+      "title_pattern": "\\btoothbrush(?:es)?\\b"
+    }
+  ]
+}

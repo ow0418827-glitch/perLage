@@ -160,6 +160,8 @@ def validate_product(record, base, *, owned=False):
                 raise FileNotFoundError('公开图片或掩码不存在：' + str(path))
             product[field] = str(path)
     product['image_sha256'] = sha256_file(product['image'])
+    if product.get('foreground_mask'):
+        product['foreground_mask_sha256'] = sha256_file(product['foreground_mask'])
     if not product.get('foreground_mask') and not product.get('boxes'):
         raise ValueError('须提供基于公开原图的主体框或前景掩码')
     return product
