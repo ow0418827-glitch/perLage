@@ -139,6 +139,38 @@ def policy_references(entries):
     return result
 
 
+def prepare_original_cache(root,entries,sources,*,catalog_factory=None):
+    """只登记已核验的原商品图片；修改图片不能进入商城原图缓存。"""
+    from src.environment.disk_catalog import DiskCatalog
+    root=Path(root);cache=root/'shopping/observed_images'
+    known={r['id']:r['image_sha256'] for r in sources}
+    prepared=[];skipped=[]
+    with (catalog_factory or DiskCatalog.open)(CATALOG) as catalog:
+        for entry in entries:
+            asin=entry['FinalASIN'];primary=entry['PrimaryImage']
+            url=catalog.product(asin).get('MainImage','')
+            if not isinstance(url,str) or not url.startswith(('http://','https://')):
+                skipped.append(asin);continue
+            documented={primary.get('SourceURL'),primary.get('OriginalURL')}
+            if url not in documented and known.get(asin)!=primary['SHA256']:
+                skipped.append(asin);continue
+            image=Path(primary['LocalPath'])
+            if primary.get('ASIN')!=asin or sha256_file(image)!=primary['SHA256']:
+                raise ValueError('准备商城原图缓存时商品身份或摘要不符')
+            destination=cache/'assets'/(primary['SHA256']+image.suffix.lower())
+            destination.parent.mkdir(parents=True,exist_ok=True)
+            if not destination.exists():__import__('shutil').copyfile(image,destination)
+            if sha256_file(destination)!=primary['SHA256']:raise ValueError('原图缓存复制摘要不符')
+            record_path=cache/'image_records'/(asin+'.json')
+            record=dict(asin=asin,url=url,path=destination.relative_to(cache).as_posix(),
+                        sha256=primary['SHA256'],role='original_product')
+            if record_path.exists():
+                if read_json(record_path)!=record:skipped.append(asin)
+                continue
+            freeze_json(record_path,record);prepared.append(asin)
+    return dict(prepared=prepared,skipped=skipped,cache=str(cache.resolve()))
+
+
 def run_shopping(root):
     from src.configuration.llm_config import load_model_config
     from src.experiments.shared_evaluation import make_eval_encoder
@@ -169,19 +201,20 @@ def run_shopping(root):
     if len(done_keys)!=len(outcomes):raise ValueError('已有购物试验重复')
     for outcome in outcomes:
         if sha256_file(outcome['record_path'])!=outcome['record_sha256']:raise ValueError('已有购物证据改变')
+    freeze_json(root/'shopping/PLAN.json',dict(condition='none',retrieval_top_k=3,
+        episodes=sum(len(g['queries']) for g in plan['groups'])*2,
+        catalog_images_policy='original_catalog_same_in_both_banks',
+        historical_memory_images_policy='two_simultaneous_substitutions_in_modified_bank',
+        complete_purchase_required_for_misleading_metric=True))
     try:
         for bank_name in ('clean','modified'):
             original_bank_file=root/'retrieval/banks/none'/(bank_name+'.json')
             entries=policy_references(read_json(original_bank_file))
             bank_file=root/'shopping/policy_banks'/(bank_name+'.json');freeze_json(bank_file,entries)
             ranker=VisualMemoryRetriever(encoder,bank_file,cache_dir=root/'shopping/indexes'/bank_name)
-            image_overrides={}
-            for group in plan['groups']:
-                product=group['source'];image=product['image'] if bank_name=='clean' else group['frozen_image']
-                target=root/'shopping/assets'/(group['key']+'_'+bank_name+Path(image).suffix)
-                if not target.exists():__import__('shutil').copyfile(image,target)
-                image_overrides[product['id']]=str(target.resolve())
-            save_json(root/'shopping/image_overrides.json',image_overrides)
+            save_json(root/'shopping/image_overrides.json',{})
+            cache_audit=prepare_original_cache(root,entries,[g['source'] for g in plan['groups']])
+            save_json(root/'shopping'/('original_cache_'+bank_name+'.json'),cache_audit)
             for group in plan['groups']:
                 for query in group['queries']:
                     key=(group['key'],bank_name,query['task_id'])

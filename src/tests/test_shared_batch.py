@@ -7,7 +7,7 @@ import pytest
 from src.vision.audit import read_json,save_json
 from src.vision.image_utils import sha256_file
 from src.experiments.shared_batch import replace_source_records,make_banks,evaluate,verify,OLD_ASINS,SharedFeatureCache
-from src.experiments.shared_shopping import policy_references
+from src.experiments.shared_shopping import policy_references,prepare_original_cache
 from test_shared_pool import ToyEncoder
 
 
@@ -104,6 +104,21 @@ def test_feature_reuse_checks_current_image_bytes_and_does_not_cross_verificatio
     fresh_base=Counted();fresh=SharedFeatureCache(fresh_base)
     fresh.encode_joint('same text',image)
     assert fresh_base.calls==1
+
+
+def test_storefront_cache_only_contains_original_images(batch_inputs,tmp_path):
+    entries,groups,pool=batch_inputs
+    banks,_=make_banks(entries,groups,pool)
+    class Catalog:
+        def __enter__(self):return self
+        def __exit__(self,*args):pass
+        def product(self,asin):return {'MainImage':'https://m.media-amazon.com/'+asin+'.jpg'}
+    prepared=prepare_original_cache(tmp_path,banks['modified'],[g['source'] for g in groups],catalog_factory=lambda _:Catalog())
+    assert len(prepared['prepared'])==2
+    for group in groups:
+        record=read_json(tmp_path/'shopping/observed_images/image_records'/(group['source']['id']+'.json'))
+        assert record['sha256']==group['source']['image_sha256']
+        assert record['sha256']!=group['frozen_image_sha256'] and record['role']=='original_product'
 
 
 def test_shared_retrieval_recomputes_both_vectors_and_independently_verifies(batch_inputs,tmp_path):
