@@ -9,6 +9,7 @@ src/data/private/
 src/data/public/catalog.json
 src/data/public/images/
 src/data/public/selection_runs/
+src/data/public/groups/
 src/configs/*.local.*
 .env
 .env.*

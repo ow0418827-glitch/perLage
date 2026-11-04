@@ -20,6 +20,7 @@
 6. 生成分割与文字叠图，实际核对后记录逐图审核。误识别、遗漏文字和印刷图案可据公开原图修正；场景混入、人物拼贴或明显漏分的图片记录拒绝理由。审核绑定图片、自动标注及核对图的内容摘要。
 7. 对公开原图去重，将通过审核的清单交给原有四项评分。没有合格候选则报告不足；不降低门槛。多组源商品重复时明确报错，不悄悄改为另一候选。
 8. 冻结每组最高分合格图对、所有候选分项、后续方法配置和统一汇总。报告核对选择是否为最高分、汇总是否一致，以及公开图片和标注摘要。
+9. 将确定图对发布到公开数据的分组目录，按原商品与目标商品命名；两种方法后续从这个目录读取，复用已冻结的选择。
 
 新代码没有改变四项评分的数值默认值。自动标注和图像质量检查属于公开输入准备，不构成新的图片生成方法。
 
@@ -39,7 +40,7 @@
 .\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py report
 ```
 
-`select`（精筛和冻结）在缺少实际审核记录时返回状态码二；存在任务未选出合格图对时返回状态码三。`report`（只读核对并生成报告）复用冻结证据。`all`（全阶段入口）也会在审核记录缺失时停在该位置。
+`select`（精筛、冻结及正式分组发布）在缺少实际审核记录时返回状态码二；存在任务未选出合格图对时返回状态码三。`report`（只读核对并生成报告）复用冻结证据。`all`（全阶段入口）也会在审核记录缺失时停在该位置。
 
 每次运行可指定 `--root`（结果目录参数）和 `--public-root`（公开资产目录参数）；它们都必须属于当前项目。输入或规则改变时使用新目录。图片、下载缓存、公开运行数据和实验结果均被版本管理排除，源码和配置示例可上传。
 
@@ -66,4 +67,39 @@
 .\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py report --root src/output/public_pair_selection/groups29_20261104_final --public-root src/data/public/selection_runs/groups29_20261104_final
 ```
 
-本轮后续配置为 `src/data/public/selection_runs/groups29_20261104_final/pipeline_configs/02_chair.json`（第二组配置）和同目录下的 `09_toothbrush.json`（第九组配置）。更换方法参数不会重新挑图；完整入口校验并复用该组已经冻结的图对。
+早期公开准备目录中的流程配置保留为当时选图的审计证据。后续生成使用下面正式分组目录中的配置。
+
+## 正式分组图片与后续读取
+
+第二组正式目录为 `src/data/public/groups/02_chair/`（理发椅组目录），第九组为 `src/data/public/groups/09_toothbrush/`（牙刷组目录）。结构一致：
+
+```text
+02_chair/
+  source.jpg
+  target.jpg
+  pair.json
+  pipeline.json
+  metadata/
+    source_foreground.png
+    target_foreground.png
+    selection.json
+```
+
+其中 `source.jpg`（原商品图）与 `target.jpg`（目标商品图）是直接查看和生成时读取的正式图片。复制保持原始字节，内容摘要不变；若原图本身为其他格式，则保留真实扩展名。`pair.json`（图对清单）记录商品编号、公开名称、标注和选取证据。`pipeline.json`（本组完整流程配置）让两种方法从该分组目录直接读取图片，已不依赖早期下载缓存或全部候选清单。
+
+已存在的本轮冻结结果可用以下命令发布，不重新评分或换图：
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py publish --root src/output/public_pair_selection/groups29_20261104_final --public-root src/data/public/selection_runs/groups29_20261104_final
+```
+
+这里 `publish`（发布正式分组输入）只复制并核验公开图对，不运行生成。首次选取的新流程会自动执行这一步。
+
+后续第二组的生成命令如下，第九组替换为其对应目录即可：
+
+```powershell
+.\run_pipeline.ps1 -Stage generate -Method lucid -Config src/data/public/groups/02_chair/pipeline.json
+.\run_pipeline.ps1 -Stage generate -Method PerLAGE -Config src/data/public/groups/02_chair/pipeline.json
+```
+
+这里 `generate`（完整生成并冻结）、`lucid`（原始像素优化方法）与 `PerLAGE`（感知标签保护生成编辑方法）分别是阶段和方法参数。两种方法使用同一个正式图对和同一份共享池配置。图片或前景标注与冻结摘要不一致时，程序停止；不能静默使用变化后的输入沿用旧评分。

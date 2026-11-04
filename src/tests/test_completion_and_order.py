@@ -69,6 +69,7 @@ def test_both_methods_use_same_public_selection_before_generation(products,tmp_p
     monkeypatch.setattr(pipeline,'source_snapshot',lambda:{'test':'fixture'})
     def fake_generate(source,target,output,**kwargs):
         events.append(kwargs['method'])
+        assert Path(source).stem=='source' and Path(target).stem=='target'
         out=Path(output);out.mkdir(parents=True)
         image=out/'adversarial.png';image.write_bytes(Path(source).read_bytes())
         common=dict(method=kwargs['method'],status='success',output_image=str(image),output_image_sha256=sha256_file(image),
@@ -85,6 +86,8 @@ def test_both_methods_use_same_public_selection_before_generation(products,tmp_p
     assert events==['select','lucid','PerLAGE']
     assert a['source']==b['source'] and a['target']==b['target']
     assert a['shared_pool_scope']==b['shared_pool_scope']=='shared'
+    assert pipeline.load_frozen(root/'methods/lucid')==a
+    assert pipeline.load_frozen(root/'methods/PerLAGE')==b
     assert (root/'methods/PerLAGE/QUERY_IMAGE_REQUEST.json').is_file()
     changed=dict(config,generation={'lucid':{'steps':3}})
     with pytest.raises(ValueError):pipeline.generate(changed,root,selected,'lucid',generator=fake_generate)

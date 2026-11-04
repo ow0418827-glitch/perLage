@@ -39,11 +39,13 @@ def source_snapshot():
 
 def load_config(path):
     config = read_json(path)
-    allowed = {'schema_version', 'method', 'public_catalog', 'selection', 'selection_models',
+    allowed = {'schema_version', 'method', 'public_catalog', 'public_pair', 'selection', 'selection_models',
                'generation', 'evaluation', 'run_dir'}
     if not isinstance(config, dict) or set(config) - allowed or config.get('schema_version') != 1:
         raise ValueError('完整流程配置含未知字段或版本无效')
     normalize_method(config.get('method', 'PerLAGE'))
+    if bool(config.get('public_catalog')) == bool(config.get('public_pair')):
+        raise ValueError('须指定公开候选清单或已确定的分组图对，且只能使用其中一种输入')
     if any(k in config.get('evaluation', {}) for k in ('groups', 'group_memory', 'memory_by_group')):
         raise ValueError('完整流程不再接受按组记忆配置')
     return config
@@ -74,6 +76,20 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                  project_path(evaluation.get('encoder_config', PRIVATE / 'evaluator.json'))]
     root = Path(root)
     with catalog_training_guard(allowed_output_roots=[root / 'selection'], private_paths=protected):
+        if config.get('public_pair'):
+            from src.vision.pair_assets import load_pair
+            manifest = project_path(config['public_pair'])
+            selected = load_pair(manifest, DATA / 'public')
+            if digest(selected['configuration']) != digest(asdict(settings)):
+                raise ValueError('分组图对已确定；更改筛选参数须重新执行公开选图')
+            original_models = selected.get('binding', {}).get('models_configuration', {})
+            if config.get('selection_models', original_models) != original_models:
+                raise ValueError('分组图对已确定；更改公开代理须重新执行公开选图')
+            selected['scoring_binding'] = selected['binding']
+            selected['binding'] = dict(public_pair_sha256=selected['pair_manifest_sha256'],
+                                       scoring_record_sha256=selected['scoring_record_sha256'])
+            freeze_json(root / 'selection' / 'SELECTED_PAIR.json', selected)
+            return read_json(root / 'selection' / 'SELECTED_PAIR.json')
         path, target, candidates = public_inputs(config)
         binding = dict(public_catalog_sha256=sha256_file(path), public_records_sha256=digest([target] + candidates),
                        configuration=digest(asdict(settings)), models_configuration=config.get('selection_models', {}),
@@ -96,6 +112,10 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
         selection.update(binding=binding, target=target)
         if selection['selected_source_id']:
             selection['source'] = next(c for c in candidates if c['id'] == selection['selected_source_id'])
+            from src.vision.pair_assets import publish_pair
+            scoring_path = root / 'selection' / 'SCORED_PAIR.json'
+            freeze_json(scoring_path, selection)
+            selection = publish_pair(scoring_path, DATA / 'public' / 'groups' / root.name, DATA / 'public')
         freeze_json(saved_path, selection)
         if selection['status'] != 'selected':
             raise ValueError('没有候选通过公开筛选；已保存全部拒绝原因，不自动降低门槛')

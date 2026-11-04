@@ -16,6 +16,7 @@ from src.data_sources.webshop_public import (OWNERSHIP_POLICY,extract_public_can
     semantic_shortlist,download_shortlist)
 from src.vision.public_annotations import (ANNOTATION_POLICY,annotate_downloads,contact_sheets,apply_reviews)
 from src.experiments.pipeline import select_pair
+from src.vision.pair_assets import publish_pair
 
 
 def validate_config(config):
@@ -179,9 +180,47 @@ def report(root,public):
     return path
 
 
+def publish_groups(root):
+    """将本轮已选图对发布到便于查看和供两种方法读取的分组目录。"""
+    root = Path(root)
+    bundle = read_json(root / 'PAIR_SELECTION_BUNDLE.json')
+    if bundle['status'] != 'selected':
+        raise ValueError('全部任务选出合格图对后才能发布正式分组输入')
+    records = []
+    for row in bundle['groups']:
+        if sha256_file(row['selection_path']) != row['selection_sha256']:
+            raise ValueError('原公开选取记录改变')
+        if not re.fullmatch(r'[A-Za-z0-9_]+', row['key']):
+            raise ValueError('分组目录名无效')
+        group = DATA / 'public' / 'groups' / row['key']
+        selected = publish_pair(row['selection_path'], group, DATA / 'public')
+        if any(selected[role]['id'] != row[role]['id'] for role in ('source', 'target')):
+            raise ValueError('正式图对与本轮冻结汇总不一致')
+        if sha256_file(row['pipeline_config']) != row['pipeline_config_sha256']:
+            raise ValueError('原公开流程配置改变')
+        definition = read_json(row['pipeline_config'])
+        definition.pop('public_catalog')
+        definition['public_pair'] = str((group / 'pair.json').resolve())
+        definition['run_dir'] = str((OUTPUT / 'runs' / row['key']).resolve())
+        definition['selection'] = selected['configuration']
+        definition['selection_models'] = selected['binding'].get('models_configuration', {})
+        config_path = group / 'pipeline.json'
+        freeze_json(config_path, definition)
+        records.append(dict(key=row['key'], directory=str(group.resolve()),
+            source=selected['source']['image'], target=selected['target']['image'],
+            manifest=selected['pair_manifest'], manifest_sha256=selected['pair_manifest_sha256'],
+            pipeline_config=str(config_path.resolve()), pipeline_config_sha256=sha256_file(config_path),
+            original_selection_sha256=row['selection_sha256']))
+    result = dict(schema_version=1, status='published',
+                  selected_bundle_sha256=sha256_file(root / 'PAIR_SELECTION_BUNDLE.json'),
+                  groups=records, generation_runs=0, shared_memory_read=False)
+    freeze_json(root / 'NAMED_PAIRS.json', result)
+    return result
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('stage',choices=('prepare','annotate','select','report','all'),nargs='?',default='all')
+    parser.add_argument('stage',choices=('prepare','annotate','select','publish','report','all'),nargs='?',default='all')
     parser.add_argument('--config',type=Path,default=CONFIGS/'selection_groups29.example.json')
     parser.add_argument('--products',type=Path)
     parser.add_argument('--root',type=Path,default=OUTPUT/'public_pair_selection/groups29_20261104')
@@ -214,8 +253,11 @@ def main(argv=None):
                     print('公开图片标注已准备，等待实际视觉核对记录。');return 2
                 selected=select_groups(config,root,public,device=args.device)
             if args.stage in ('select','report','all'):report(root,public)
+            if args.stage in ('select','publish','all'):
+                if read_json(root/'PAIR_SELECTION_BUNDLE.json')['status']=='selected':publish_groups(root)
+                elif args.stage=='publish':raise ValueError('本轮尚未确定全部图对')
             save_json(root/('ACCESS_AUDIT_'+args.stage+'.json'),{k:v for k,v in audit.items() if k!='active'})
-        state=('completed' if read_json(root/'PAIR_SELECTION_BUNDLE.json')['status']=='selected' else 'no_eligible_pair') if args.stage in ('select','report','all') else args.stage
+        state=('completed' if read_json(root/'PAIR_SELECTION_BUNDLE.json')['status']=='selected' else 'no_eligible_pair') if args.stage in ('select','publish','report','all') else args.stage
         save_json(root/'RUN_STATUS.json',dict(status=state,
                                              victim_memory_read=False,formal_queries_read=False,shopping_runs=0))
         if state=='no_eligible_pair':return 3
