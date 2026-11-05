@@ -111,6 +111,10 @@ def audit_and_report(root):
         recovery=read_json(root/'IMAGE_DOWNLOAD_RECOVERY.json')
         lines += ['曾因商城原图下载失败中止；核验同一商品与同一地址的旧原图缓存后恢复。'
             f"已完成的{recovery['completed_episodes_preserved']}条结果保留，仅恢复未完成请求；技术失败不计作购买结果。",'']
+    if (root/'API_CONNECTION_RECOVERY.json').is_file():
+        recovery=read_json(root/'API_CONNECTION_RECOVERY.json')
+        lines += [f"另一次因购物接口连接失败中止，保留{recovery['completed_episodes_preserved']}条已完成记录后恢复。"
+            '连接错误仍最多尝试三次，重试等待改为十五秒、三十秒；提示、模型及生成参数不变。','']
     (root/'PROMPT_COMPARISON.md').write_text('\n'.join(lines),encoding='utf-8')
 
 

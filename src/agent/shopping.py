@@ -120,6 +120,16 @@ def _policy_response_metadata(completion, attempt, token_budget):
     return text, metadata
 
 
+def policy_retry_delay(error, failed_attempt):
+  """瞬时连接、限流与服务错误退避；不增加调用次数或改变模型参数。"""
+  transient = type(error).__name__ in {
+      'APIConnectionError', 'APITimeoutError', 'RateLimitError',
+      'ConnectionError', 'ConnectTimeout', 'ReadTimeout', 'Timeout'}
+  status = getattr(error, 'status_code', None)
+  transient = transient or status == 429 or (isinstance(status, int) and 500 <= status <= 599)
+  return min(15 * (2 ** max(0, failed_attempt - 1)), 60) if transient else 1
+
+
 def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, trace=None,
         memory_images=None, max_tokens=None, max_retries=30):
   """Call the configured LLM and return the trimmed response."""
@@ -222,7 +232,9 @@ def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, tra
         raise e
       if isinstance(e, PolicyActionError) and response_metadata['FinishReason'] == 'length':
         token_budget = min(token_budget * 2, retry_token_limit)
-      time.sleep(1)
+      delay = policy_retry_delay(e, retries)
+      response_metadata['RetryDelaySeconds'] = delay
+      time.sleep(delay)
 
   action = parse_action(text)
   if trace is not None:
