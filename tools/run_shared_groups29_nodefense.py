@@ -51,22 +51,25 @@ def prepare():
 
 
 def run():
+    if (ROOT/'PAUSED_BY_USER.json').exists():
+        raise RuntimeError('用户已暂停本轮所有实验，须在用户明确要求继续后解除暂停标记')
     prepare()
     for stage in ('evaluate','shopping','report'):
         completed=ROOT/'stages'/(stage+'.json')
         if completed.exists() and read_json(completed).get('status')=='completed':continue
         log=ROOT/'logs'/(stage+'.log');log.parent.mkdir(parents=True,exist_ok=True)
-        state=dict(status='running',stage=stage,started_at=now(),supervisor_pid=os.getpid(),log=str(log))
+        actual_stage='verify' if stage=='evaluate' and (ROOT/'retrieval/evaluation.json').exists() else stage
+        state=dict(status='running',stage=stage,command_stage=actual_stage,started_at=now(),supervisor_pid=os.getpid(),log=str(log))
         save_json(ROOT/'RUN_STATUS.json',state)
         (ROOT/'RUN_STATUS.md').write_text(f'当前阶段：{stage}\n状态：执行中\n范围：仅无防御检索与最终购物\n日志：{log}\n',encoding='utf-8')
-        command=[sys.executable,'-X','utf8','-B','-u','-m','src.experiments.shared_batch',stage,'--root',str(ROOT)]
+        command=[sys.executable,'-X','utf8','-B','-u','-m','src.experiments.shared_batch',actual_stage,'--root',str(ROOT)]
         started=time.perf_counter()
         with log.open('a',encoding='utf-8') as stream:
             child=subprocess.Popen(command,cwd=PROJECT,stdout=stream,stderr=subprocess.STDOUT,
                 creationflags=getattr(subprocess,'CREATE_NO_WINDOW',0))
             state['child_pid']=child.pid;save_json(ROOT/'RUN_STATUS.json',state)
             code=child.wait()
-        result=dict(status='completed' if code==0 else 'failed',stage=stage,exit_code=code,
+        result=dict(status='completed' if code==0 else 'failed',stage=stage,command_stage=actual_stage,exit_code=code,
             completed_at=now(),seconds=time.perf_counter()-started,log=str(log))
         save_json(completed,result)
         if code:
