@@ -107,15 +107,25 @@ def audit_and_report(root):
     lines += ['',f'已核实{len(actions)}次策略动作逐字使用中性指导。首三步符合指定顺序的请求为{followed}/80，不按结果重新采样。','',
         '保持旧观察协议：参考图和召回记忆图进入视觉载荷，商城页面图片仍仅作审计保存。本轮没有同时修改观察能力。','',
         '这是固定图对的提示对照，未使用简化选图协议的新图对。温度仍为0.5，未指定成对随机种子，不将全部差异视作没有随机误差的因果估计。','']
+    if (root/'IMAGE_DOWNLOAD_RECOVERY.json').is_file():
+        recovery=read_json(root/'IMAGE_DOWNLOAD_RECOVERY.json')
+        lines += ['曾因商城原图下载失败中止；核验同一商品与同一地址的旧原图缓存后恢复。'
+            f"已完成的{recovery['completed_episodes_preserved']}条结果保留，仅恢复未完成请求；技术失败不计作购买结果。",'']
     (root/'PROMPT_COMPARISON.md').write_text('\n'.join(lines),encoding='utf-8')
 
 
 def run(root):
     root=Path(root).resolve();prepare(root)
     start=datetime.now(timezone.utc);est=read_json(root/'ESTIMATE.json')
-    save_json(root/'STARTED.json',dict(started_at=start.isoformat(),supervisor_pid=os.getpid(),
-        estimated_finish=(start+timedelta(seconds=est['estimate_seconds'])).isoformat(),
-        conservative_check_time=(start+timedelta(seconds=est['estimate_seconds']+est['safety_buffer_seconds'])).isoformat()))
+    if (root/'STARTED.json').exists():
+        completed=len(read_json(root/'shopping/outcomes.json')) if (root/'shopping/outcomes.json').exists() else 0
+        remaining=round(est['estimate_seconds']*(80-completed)/80)
+        save_json(root/'RESUMED.json',dict(resumed_at=start.isoformat(),supervisor_pid=os.getpid(),
+            completed_episodes_preserved=completed,estimated_finish=(start+timedelta(seconds=remaining)).isoformat()))
+    else:
+        save_json(root/'STARTED.json',dict(started_at=start.isoformat(),supervisor_pid=os.getpid(),
+            estimated_finish=(start+timedelta(seconds=est['estimate_seconds'])).isoformat(),
+            conservative_check_time=(start+timedelta(seconds=est['estimate_seconds']+est['safety_buffer_seconds'])).isoformat()))
     environment=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',OMP_NUM_THREADS='1',MKL_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',
         TOKENIZERS_PARALLELISM='false',HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1')
     for stage in ['evaluate','shopping','report','audit']:
