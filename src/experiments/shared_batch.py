@@ -158,11 +158,11 @@ def _score_group(ranker,bank,group,source_id):
     return observed
 
 
-def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None):
+def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None,device='cuda'):
     root=Path(root);plan=_validate_plan(root)
     active=load_shared_pool(plan['pool_path'])
     banks,_=make_banks(active,plan['groups'],plan['pool_path'])
-    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder('cpu')))())
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device)))())
     defender=(defense_factory or (lambda path:Defender(path,'cuda')))(root/'retrieval/defended')
     rows=[];specs=specs or plan['conditions']
     try:
@@ -195,18 +195,19 @@ def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None):
     finally:
         encoder.close()
         if hasattr(defender,'purifier'):defender.purifier=None
-    verify(root,encoder_factory=encoder_factory,specs=specs)
+    verify(root,encoder_factory=encoder_factory,specs=specs,device=device)
     report(root,require_shopping=False)
     return rows
 
 
-def verify(root,*,encoder_factory=None,specs=None):
+def verify(root,*,encoder_factory=None,specs=None,device='cuda'):
     root=Path(root);plan=_validate_plan(root);rows=read_json(root/'retrieval/evaluation.json')
     specs=specs or plan['conditions']
     expected={(g['key'],s['label'],b) for g in plan['groups'] for s in specs for b in ('clean','modified')}
     if {(r['group'],r['condition']['label'],r['bank']) for r in rows}!=expected or len(rows)!=len(expected):
         raise ValueError('检索条件缺失或重复')
-    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder('cpu')))())
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device)))())
+    actual_device=str(getattr(encoder,'device','injected_test_encoder'))
     count=0;max_error=0.;ranker=None;last_path=None
     try:
         for row in rows:
@@ -229,7 +230,8 @@ def verify(root,*,encoder_factory=None,specs=None):
                 raise ValueError('前三或前五汇总不一致')
     finally:encoder.close()
     result=dict(status='passed',rows=len(rows),rankings=count,max_score_error=max_error,
-                fresh_encoder=True,old_vector_cache_used=False,rows_sha256=sha256_file(root/'retrieval/evaluation.json'))
+                fresh_encoder=True,old_vector_cache_used=False,encoder_device=actual_device,
+                rows_sha256=sha256_file(root/'retrieval/evaluation.json'))
     freeze_json(root/'retrieval/INDEPENDENT_VERIFICATION.json',result)
     return result
 
@@ -297,10 +299,13 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage',choices=('finalize','evaluate','verify','shopping','report'))
     parser.add_argument('--root',type=Path,required=True)
+    parser.add_argument('--device',choices=('cuda','cpu'),default='cuda')
     args=parser.parse_args()
     if args.stage=='shopping':
         from src.experiments.shared_shopping import run_shopping
-        run_shopping(args.root)
+        run_shopping(args.root,device=args.device)
+    elif args.stage in ('evaluate','verify'):
+        globals()[args.stage](args.root,device=args.device)
     else:globals()[args.stage](args.root)
 
 

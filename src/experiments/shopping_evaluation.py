@@ -15,6 +15,7 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
     from src.configuration.llm_config import load_model_config
     from src.agent.shopping import webshopEnv, webshop_run_rap
     from src.agent.prompts.webshop_prompt import INITIAL_PROMPTS
+    from src.configuration.shopping_prompt import load_shopping_prompt
     from src.vision.visual_retrieval import VisualMemoryRetriever
     from src.experiments.shared_evaluation import make_eval_encoder
     plan = read_json(method_root / 'evaluation/evaluation_plan.json')
@@ -31,6 +32,7 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
     rows = read_json(method_root / 'evaluation/evaluation.json')
     settings = load_model_config(model_config)
     client = settings.client()
+    guidance = load_shopping_prompt()
     encoder = make_eval_encoder(device, plan.get('encoder_config'))
     outcomes = []
     try:
@@ -54,6 +56,7 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
                     vision_input=True, honest_reward=True, memory_mode='full',
                     memory_image_input=True, memory_path=row['bank_path'],
                     policy_memory_image_field='RetrievalImage',
+                    auxiliary_prompt=guidance['text'],
                     original_instruction=query['instruction'])
                 outcomes.append(dict(condition=row['condition'], bank=row['bank'], task_id=query['task_id'],
                                      environment_reward=reward, record=record))

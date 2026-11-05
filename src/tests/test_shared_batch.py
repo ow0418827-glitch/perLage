@@ -173,3 +173,20 @@ def test_shared_retrieval_recomputes_both_vectors_and_independently_verifies(bat
     save_json(tmp_path/'retrieval/evaluation.json',changed)
     with pytest.raises(ValueError,match='名次不一致'):
         verify(tmp_path,encoder_factory=encoder,specs=specs)
+
+
+def test_default_evaluation_and_fresh_verification_both_request_cuda(batch_inputs,tmp_path,monkeypatch):
+    from src.experiments import shared_batch
+    entries,groups,pool=batch_inputs
+    banks,ids=make_banks(entries,groups,pool)
+    poisoned=tmp_path/'poisoned.json';save_json(poisoned,dict(entries=banks['modified']))
+    specs=[dict(label='none',kind='none',size=512)]
+    save_json(tmp_path/'BATCH_PLAN.json',dict(groups=groups,pool_path=str(pool),pool_sha256=sha256_file(pool),
+        pool_count=len(entries),poisoned_pool=str(poisoned),poisoned_pool_sha256=sha256_file(poisoned),
+        source_memory_ids=ids,conditions=specs,record_kinds={'purchase_memory':3,'simulated_gallery':0}))
+    devices=[]
+    def encoder(device):
+        devices.append(device);return ToyEncoder()
+    monkeypatch.setattr(shared_batch,'make_eval_encoder',encoder)
+    evaluate(tmp_path,defense_factory=lambda path:lambda image,spec:Path(image),specs=specs)
+    assert devices==['cuda','cuda']
