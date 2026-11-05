@@ -235,9 +235,11 @@ def verify(root,*,encoder_factory=None,specs=None):
 
 
 def report(root,*,require_shopping=True):
+    from src.experiments.paired_metrics import paired_rank_metrics
     root=Path(root);plan=_validate_plan(root);rows=read_json(root/'retrieval/evaluation.json')
     verified=read_json(root/'retrieval/INDEPENDENT_VERIFICATION.json')
-    if verified['status']!='passed':raise ValueError('检索尚未通过独立复算')
+    if verified['status']!='passed' or verified['rows_sha256']!=sha256_file(root/'retrieval/evaluation.json'):
+        raise ValueError('检索尚未通过绑定当前结果的独立复算')
     lines=['# 两组新选公开图对的共享记忆实验','',
         f"共享池共 {plan['pool_count']} 条，其中已完成本地商城购买记忆 {plan['record_kinds']['purchase_memory']} 条，模拟商品参考 {plan['record_kinds']['simulated_gallery']} 条。",
         '第二组与第九组旧源商品条目已移除，换入新商品实际环境购买轨迹。修改池同时包含两张新生成图，其他九十八条保持原内容。',
@@ -246,7 +248,7 @@ def report(root,*,require_shopping=True):
     for group in plan['groups']:
         display={'02_chair':'第二组理发椅','09_toothbrush':'第九组牙刷'}[group['key']]
         lines += [f"## {display}",'',f"原商品：{group['source']['id']}；固定目标：{group['target']['id']}。",'',
-            '| 条件 | 原图前三 | 修改图前三 | 原图前五 | 修改图前五 |','|---|---:|---:|---:|---:|']
+            '| 条件 | 原图前三 | 修改图前三 | 原图前五 | 修改图前五 | 前三增量（百分点） | 平均名次改善 |','|---|---:|---:|---:|---:|---:|---:|']
         for label,names in table_groups():
             if not any(r['group']==group['key'] and r['condition']['label'] in names for r in rows):
                 continue
@@ -255,7 +257,11 @@ def report(root,*,require_shopping=True):
                 for bank in ('clean','modified'):
                     subset=[r for r in rows if r['group']==group['key'] and r['condition']['label'] in names and r['bank']==bank]
                     fields.append(f"{sum(r[metric] for r in subset)}/{sum(r['query_count'] for r in subset)}")
+            selected=[r for r in rows if r['group']==group['key'] and r['condition']['label'] in names]
+            delta=paired_rank_metrics([r for r in selected if r['bank']=='clean'],[r for r in selected if r['bank']=='modified'])
+            fields += [f"{delta['top3_gain']*100:+.1f}",f"{delta['mean_rank_gain']:+.3f}"]
             lines.append('| '+label+' | '+' | '.join(fields)+' |')
+        lines += ['','前三增量为修改图减原图；平均名次改善为原图名次减修改图名次，正值表示名次上升。']
         if any(r['condition']['kind']=='diffusion' for r in rows):
             lines += ['','扩散行合并全部五个固定种子，逐种子及逐请求结果保存在原始记录中。','']
         else:

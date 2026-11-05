@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "reviewer": "",
+  "pairs": [
+    {
+      "left": {"id": "DEV0000001", "title": "Public shampoo development A", "image": "images/a.jpg", "source_url": "https://example.com/a"},
+      "right": {"id": "DEV0000002", "title": "Public shampoo development B", "image": "images/b.jpg", "source_url": "https://example.com/b"},
+      "label": null,
+      "review_note": ""
+    },
+    {
+      "left": {"id": "DEV0000003", "title": "Public shampoo development C", "image": "images/c.jpg", "source_url": "https://example.com/c"},
+      "right": {"id": "DEV0000004", "title": "Public shampoo development D", "image": "images/d.jpg", "source_url": "https://example.com/d"},
+      "label": null,
+      "review_note": ""
+    }
+  ]
+}

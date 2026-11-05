@@ -1,22 +1,16 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "target": {
-    "id": "public_target_product_id",
-    "title": "Public target product name",
+    "id": "A000000001",
+    "title": "Public shampoo in a bottle",
     "image": "images/target.png",
-    "source_url": "https://example.com/public-target",
-    "boxes": [[0, 0, 512, 512]],
-    "text_regions": [],
-    "text_regions_reviewed": false
+    "source_url": "https://example.com/public-target"
   },
   "candidates": [{
-    "id": "owned_source_product_id",
-    "title": "Public source product name",
+    "id": "A000000002",
+    "title": "Public hair conditioner bottle",
     "image": "images/source.png",
     "owned": true,
-    "source_note": "攻击者自有商品的公开展示图",
-    "boxes": [[0, 0, 512, 512]],
-    "text_regions": [],
-    "text_regions_reviewed": false
+    "source_note": "须替换为实际公开来源与可控商品说明"
   }]
 }

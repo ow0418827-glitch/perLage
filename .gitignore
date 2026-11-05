@@ -10,6 +10,8 @@ src/data/public/catalog.json
 src/data/public/images/
 src/data/public/selection_runs/
 src/data/public/groups/
+src/data/public/calibration/
+src/data/public/*.sqlite*
 src/configs/*.local.*
 .env
 .env.*

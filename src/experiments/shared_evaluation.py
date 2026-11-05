@@ -164,6 +164,7 @@ def verify(output, *, encoder_factory=None, device='cuda'):
 
 
 def report(output):
+    from src.experiments.paired_metrics import paired_rank_metrics
     output = Path(output)
     plan = read_json(output / 'evaluation_plan.json')
     rows = read_json(output / 'evaluation.json')
@@ -177,7 +178,7 @@ def report(output):
              f"方法：{plan['method']}。共享池 {plan['pool_count']} 条；真实购买记忆 {plan['record_kinds']['purchase_memory']} 条，模拟图库 {plan['record_kinds']['simulated_gallery']} 条。",
              '', '正式查询使用模糊文字及单独生成、经核对无明确名称和品牌的图片。所有图库图片接受相同防御，查询图片保持原样。',
              '', '前三及前五表示检索命中，不表示购买成功。本轮没有购物或外部模型调用。', '',
-             '| 条件 | 原图前三 | 修改图前三 | 原图前五 | 修改图前五 |', '|---|---:|---:|---:|---:|']
+             '| 条件 | 原图前三 | 修改图前三 | 原图前五 | 修改图前五 | 前三增量（百分点） | 平均名次改善 |', '|---|---:|---:|---:|---:|---:|---:|']
     for title, labels in table_groups():
         if not all((lbl, b) in lookup for lbl in labels for b in ('clean', 'modified')):
             continue
@@ -186,7 +187,10 @@ def report(output):
             for name in ('clean', 'modified'):
                 qs = [q for lbl in labels for q in lookup[(lbl, name)]['queries']]
                 values.append(f"{sum(q['rank'] <= k for q in qs)}/{len(qs)}")
+        delta=paired_rank_metrics([lookup[(lbl,'clean')] for lbl in labels],[lookup[(lbl,'modified')] for lbl in labels])
+        values += [f"{delta['top3_gain']*100:+.1f}",f"{delta['mean_rank_gain']:+.3f}"]
         lines.append('| ' + title + ' | ' + ' | '.join(values) + ' |')
+    lines += ['', '前三增量为修改图减原图；平均名次改善为原图名次减修改图名次，正值表示名次上升。同一请求的不同种子不是独立需求。']
     lines += ['', '## 全部条件与种子', '', '| 条件 | 图库 | 前三 | 前五 |', '|---|---|---:|---:|']
     for row in rows:
         lines.append(f"| {row['condition']['label']} | {row['bank']} | {row['top3']}/{row['query_count']} | {row['top5']}/{row['query_count']} |")

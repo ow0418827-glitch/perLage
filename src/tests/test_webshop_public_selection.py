@@ -7,7 +7,7 @@ from PIL import Image,ImageDraw
 import pytest
 
 from src.data_sources.webshop_public import (public_projection,simulated_controlled,
-    extract_public_candidates,semantic_shortlist,download_public_image)
+    extract_public_candidates,random_shortlist,download_public_image)
 from src.vision.audit import save_json,digest
 from src.vision.public_annotations import (object_prior,remove_connected_background,regions_from_ocr,apply_reviews)
 from src.experiments.public_pair_selection import validate_config,pipeline_config
@@ -39,7 +39,7 @@ def test_raw_dataset_preparation_keeps_only_public_matching_candidates(tmp_path)
     sources=[f'{i:010d}' for i in range(100) if simulated_controlled(f'{i:010d}',42,{target})][:4]
     rows=[public_record(target)]+[public_record(pid) for pid in sources]+[public_record('B000000001','Unrelated public item')]
     path=tmp_path/'products.json';save_json(path,rows)
-    groups=[dict(key='chair',target_id=target,title_pattern=r'\bsalon\b')]
+    groups=[dict(key='chair',target_id=target)]
     result=extract_public_candidates(path,groups,tmp_path/'public',lexical_limit=3)
     assert result['scanned_products']==6
     assert len(result['groups'][0]['candidates'])==3
@@ -48,18 +48,32 @@ def test_raw_dataset_preparation_keeps_only_public_matching_candidates(tmp_path)
     assert extract_public_candidates(path,groups,tmp_path/'public',lexical_limit=3)==result
 
 
-def test_semantic_shortlist_uses_fixed_window_and_preserves_all_scores(tmp_path):
-    class Model:
-        max_seq_length=256
-        def encode(self,texts,**kwargs):
-            return np.array([[1.,0.],[.72,np.sqrt(1-.72**2)],[.60,.80],[.99,np.sqrt(1-.99**2)]])
+def test_public_index_reuses_scan_across_runs_and_binds_source(tmp_path,monkeypatch):
+    import ijson
+    from src.data_sources.webshop_public import build_public_index
+    path=tmp_path/'products.json';save_json(path,[public_record()])
+    index=tmp_path/'public.sqlite';first=build_public_index(path,index)
+    monkeypatch.setattr(ijson,'items',lambda *a,**k:(_ for _ in ()).throw(AssertionError('不能重复扫描原始文件')))
+    assert build_public_index(path,index)==first
+    assert build_public_index(path,index,verify_source=True)==first
+    path.write_text('[]',encoding='utf-8')
+    with pytest.raises(ValueError,match='源文件'):build_public_index(path,index)
+
+
+def test_development_items_are_excluded_before_candidate_download(tmp_path):
+    target='A000000001';ids=[f'{i:010d}' for i in range(100) if simulated_controlled(f'{i:010d}',42,{target})][:5]
+    path=tmp_path/'products.json';save_json(path,[public_record(target)]+[public_record(x) for x in ids])
+    result=extract_public_candidates(path,[dict(key='chair',target_id=target)],tmp_path/'public',lexical_limit=32,excluded_ids=ids[:2])
+    assert {x['id'] for x in result['groups'][0]['candidates']}==set(ids[2:])
+    with pytest.raises(ValueError,match='目标与开发'):extract_public_candidates(path,[dict(key='chair',target_id=target)],tmp_path/'other',excluded_ids=[target])
+
+
+def test_shortlist_preserves_fixed_random_candidates_without_text_model(tmp_path):
     target=public_projection(public_record())
     candidates=[public_projection(public_record(f'{i:010d}',f'Public source {i}')) for i in range(3)]
     extracted=dict(groups=[dict(key='chair',target=target,candidates=candidates,counts={})])
-    out=semantic_shortlist(extracted,tmp_path,limit=1,model=Model(),model_snapshot={'fixture':True})
-    assert len(out['groups'][0]['coarse_scores'])==3
-    assert out['groups'][0]['candidates'][0]['id']=='0000000000'
-    assert out['groups'][0]['counts']['semantic_eligible']==2
+    out=random_shortlist(extracted,tmp_path)
+    assert out['groups'][0]['candidates']==candidates and out['text_model_used'] is False
 
 
 def test_download_uses_current_cache_and_rejects_digest_changes(tmp_path):
@@ -107,8 +121,8 @@ def test_multiple_targets_keep_one_shared_pool_and_separate_query_images(tmp_pat
 
 
 def test_batch_config_rejects_path_traversal():
-    config=dict(schema_version=1,seed=42,lexical_limit=2000,candidate_limit=30,
-        text_model='public-model',groups=[dict(key='../escape',target_id='A000000001',title_pattern='chair')])
+    config=dict(schema_version=2,seed=42,candidate_limit=32,calibration_path='public_certificate.json',
+        groups=[dict(key='../escape',target_id='A000000001')])
     with pytest.raises(ValueError):validate_config(config)
 
 

@@ -3,10 +3,8 @@
   "method": "PerLAGE",
   "public_catalog": "src/data/public/catalog.json",
   "run_dir": "src/output/runs/default",
-  "selection": {},
-  "selection_models": {
-    "text_model": "sentence-transformers/all-MiniLM-L6-v2"
-  },
+  "selection": {"seed": 42, "calibration_path": "src/data/public/calibration/shape_v2_verified/threshold.json", "min_image_side": 64},
+  "selection_models": {"batch_size": 16},
   "generation": {
     "lucid": {"steps": 1000, "epsilon_levels": 16},
     "PerLAGE": {}

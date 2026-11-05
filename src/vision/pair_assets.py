@@ -31,14 +31,8 @@ def _copy_exact(source, destination, expected):
 
 
 def _verify_choice(selection):
-    if selection.get('status') != 'selected' or not selection.get('source'):
-        raise ValueError('只有已经确定的合格图对才能发布')
-    eligible = sorted((row for row in selection['candidates'] if row['eligible']),
-                      key=lambda row: (-row['score'], row['source_id']))
-    if (not eligible or eligible[0]['source_id'] != selection['source']['id']
-            or selection['selected_source_id'] != selection['source']['id']
-            or selection['target_id'] != selection['target']['id']):
-        raise ValueError('正式图对与公开最高分选择不一致')
+    from src.vision.pair_selection import verify_selection
+    verify_selection(selection)
 
 
 def load_pair(manifest_path, public_root, *, verify_models=True):

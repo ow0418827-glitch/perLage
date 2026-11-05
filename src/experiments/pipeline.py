@@ -15,6 +15,10 @@ from src.vision.pair_selection import SelectionConfig, LocalSelectionBackend, ch
 from src.experiments.query_contract import QueryImagePending, pending_query_spec
 
 
+class SelectedAnnotationsPending(ValueError):
+    """先完成轻量抽样，再为实际选中的图对准备公开生成标注。"""
+
+
 TRAINING_QUERIES = (
     'Find a product with a similar overall visual appearance.',
     'Use the reference picture as a broad visual guide for product matching.',
@@ -57,10 +61,10 @@ def public_inputs(config):
     if not path.is_relative_to(public_root):
         raise ValueError('公开目录清单须置于新项目的公开输入目录')
     document = read_json(path)
-    if set(document) != {'schema_version', 'target', 'candidates'} or document['schema_version'] != 1:
+    if set(document) != {'schema_version', 'target', 'candidates'} or document['schema_version'] not in (1,2):
         raise ValueError('公开清单仅接受目标商品及攻击者自有候选')
-    target = validate_product(document['target'], path.parent)
-    candidates = [validate_product(r, path.parent, owned=True) for r in document['candidates']]
+    target = validate_product(document['target'], path.parent,generation_ready=False,public_root=public_root)
+    candidates = [validate_product(r, path.parent, owned=True,generation_ready=False,public_root=public_root) for r in document['candidates']]
     for record in [target] + candidates:
         for key in ('image', 'foreground_mask'):
             if record.get(key) and not Path(record[key]).is_relative_to(public_root):
@@ -69,7 +73,6 @@ def public_inputs(config):
 
 
 def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBackend):
-    settings = SelectionConfig(**config.get('selection', {}))
     evaluation = config.get('evaluation', {})
     protected = [project_path(evaluation.get('shared_pool', SHARED_MEMORY)),
                  project_path(evaluation.get('query_manifest', PRIVATE / 'query_image.json')),
@@ -80,7 +83,7 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
             from src.vision.pair_assets import load_pair
             manifest = project_path(config['public_pair'])
             selected = load_pair(manifest, DATA / 'public')
-            if digest(selected['configuration']) != digest(asdict(settings)):
+            if config.get('selection') and digest(selected['configuration']) != digest(config['selection']):
                 raise ValueError('分组图对已确定；更改筛选参数须重新执行公开选图')
             original_models = selected.get('binding', {}).get('models_configuration', {})
             if config.get('selection_models', original_models) != original_models:
@@ -90,10 +93,18 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                                        scoring_record_sha256=selected['scoring_record_sha256'])
             freeze_json(root / 'selection' / 'SELECTED_PAIR.json', selected)
             return read_json(root / 'selection' / 'SELECTED_PAIR.json')
+        raw_settings=dict(config.get('selection',{}))
+        if raw_settings.get('calibration_path'):
+            calibration=project_path(raw_settings['calibration_path'])
+            if not calibration.is_relative_to((DATA/'public').resolve()):raise ValueError('校准证书须位于公开数据目录')
+            raw_settings['calibration_path']=str(calibration)
+        settings = SelectionConfig(**raw_settings)
+        settings.validate()
         path, target, candidates = public_inputs(config)
         binding = dict(public_catalog_sha256=sha256_file(path), public_records_sha256=digest([target] + candidates),
                        configuration=digest(asdict(settings)), models_configuration=config.get('selection_models', {}),
-                       selector_code_sha256=sha256_file(PROJECT / 'src/vision/pair_selection.py'))
+                       selector_code_sha256=sha256_file(PROJECT / 'src/vision/pair_selection.py'),
+                       calibration_sha256=sha256_file(settings.calibration_path))
         saved_path = root / 'selection' / 'SELECTED_PAIR.json'
         if saved_path.exists():
             saved = read_json(saved_path)
@@ -106,12 +117,27 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
             return saved
         backend = backend_factory(config.get('selection_models', {}), root / 'selection' / 'features', device)
         try:
-            selection = choose_pair(target, candidates, backend, settings)
+            selection = choose_pair(target, candidates, backend, settings,public_root=DATA/'public')
         finally:
             backend.close()
         selection.update(binding=binding, target=target)
         if selection['selected_source_id']:
             selection['source'] = next(c for c in candidates if c['id'] == selection['selected_source_id'])
+            pending_path=root/'selection'/'DRAWN_PAIR.json'
+            if pending_path.exists():
+                pending=read_json(pending_path)
+                if any(pending.get(k)!=selection.get(k) for k in ('configuration','models','candidates','draw','selected_source_id')):
+                    raise ValueError('已抽中的图对只能补充标注；候选、模型或抽样规则改变须使用新的运行目录')
+                for role in ('source','target'):
+                    if any(pending[role].get(k)!=selection[role].get(k) for k in ('id','title','image_sha256','type_review')):
+                        raise ValueError('补充标注不能更换已抽中的公开商品身份或图片')
+                selection['annotation_binding']=dict(drawn_pair_sha256=sha256_file(pending_path))
+            if any(p.get('text_regions_reviewed') is not True or not (p.get('boxes') or p.get('foreground_mask'))
+                   for p in (selection['source'],target)):
+                if not pending_path.exists():freeze_json(pending_path,selection)
+                raise SelectedAnnotationsPending('轻量选图已完成；仅须核对选中源图与目标图的主体和印刷区，然后继续发布或生成')
+            selection['source']=validate_product(selection['source'],path.parent,owned=True)
+            selection['target']=validate_product(target,path.parent)
             from src.vision.pair_assets import publish_pair
             scoring_path = root / 'selection' / 'SCORED_PAIR.json'
             freeze_json(scoring_path, selection)
@@ -273,6 +299,10 @@ def main(argv=None):
         if args.stage == 'report':
             from src.experiments.shared_evaluation import report
             report(method_root / 'evaluation')
+    except SelectedAnnotationsPending as error:
+        save_json(root/'RUN_STATUS.json',dict(status='awaiting_selected_public_annotations',reason=str(error),generation_completed=False))
+        print(str(error))
+        return 2
     except QueryImagePending as error:
         save_json(method_root / 'RUN_STATUS.json', dict(status='awaiting_query_image', reason=str(error),
                                                        generation_completed=True, evaluation_completed=False))

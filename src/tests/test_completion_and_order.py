@@ -40,7 +40,7 @@ def test_initialization_alone_and_short_schedule_rejected(products,tmp_path):
     with pytest.raises(ValueError):validate_complete(ready)
 
 
-def test_both_methods_use_same_public_selection_before_generation(products,tmp_path,monkeypatch):
+def test_both_methods_use_same_public_selection_before_generation(products,tmp_path,monkeypatch,calibration_factory):
     import numpy as np
     from src.experiments import pipeline
     from src.vision import optimization
@@ -57,11 +57,11 @@ def test_both_methods_use_same_public_selection_before_generation(products,tmp_p
         snapshot={'weights':'test_fixture'}
         def __init__(self,*args):events.append('select')
         def features(self,p):
-            text=np.array([1.,0.]) if p['id']==target['id'] else np.array([.72,np.sqrt(1-.72**2)])
-            return dict(cls=[1.,0.],patches=[[1.,0.],[0.,1.]],text=text,clip_image=[1.,0.],clip_text=[1.,0.],aspect=1.)
-        def recolor_cost(self,*args):return .01
+            return dict(shape=[1.,0.])
         def close(self):pass
-    config=dict(public_catalog=str(public/'catalog.json'),generation={'lucid':{'steps':2},'PerLAGE':{}})
+    from dataclasses import asdict
+    cfg=calibration_factory(snapshot=Backend.snapshot,directory=public/'calibration')
+    config=dict(public_catalog=str(public/'catalog.json'),selection=asdict(cfg),generation={'lucid':{'steps':2},'PerLAGE':{}})
     root=tmp_path/'run'
     selected=pipeline.select_pair(config,root,device='cpu',backend_factory=Backend)
     selected_again=pipeline.select_pair(config,root,device='cpu',backend_factory=Backend)

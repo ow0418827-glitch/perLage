@@ -12,7 +12,7 @@ from src.vision.pair_selection import choose_pair, validate_product
 
 
 @pytest.fixture
-def selected_public_pair(products, tmp_path):
+def selected_public_pair(products, tmp_path,calibration_factory):
     public = tmp_path / 'data/public'
     cache = public / 'cache'
     cache.mkdir(parents=True)
@@ -32,12 +32,9 @@ def selected_public_pair(products, tmp_path):
     class Backend:
         snapshot = {'fixture': True}
         def features(self, product):
-            text = [1., 0.] if product['id'] == target['id'] else [.72, np.sqrt(1 - .72**2)]
-            return dict(cls=[1., 0.], patches=[[1., 0.], [0., 1.]], text=text,
-                        clip_image=[1., 0.], clip_text=[1., 0.], aspect=1.)
-        def recolor_cost(self, *args):return .01
+            return dict(shape=[1.,0.])
 
-    selection = choose_pair(target, [source], Backend())
+    selection = choose_pair(target, [source], Backend(),calibration_factory(directory=public/'calibration'))
     selection.update(source=source, target=target, binding={'models_configuration': {}})
     selected_path = tmp_path / 'run/selection/SELECTED_PAIR.json'
     save_json(selected_path, selection)
@@ -91,7 +88,7 @@ def test_another_frozen_choice_cannot_overwrite_the_same_group(selected_public_p
     public, _, selected_path, directory = selected_public_pair
     selected = publish_pair(selected_path, directory, public)
     original = read_json(selected_path)
-    original['calibration'] = 'another frozen selection'
+    original['test_note'] = 'another frozen selection'
     save_json(selected_path, original)
     with pytest.raises(ValueError, match='另一份冻结选择'):
         publish_pair(selected_path, directory, public)

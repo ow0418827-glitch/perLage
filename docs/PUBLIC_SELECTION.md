@@ -1,105 +1,74 @@
-# 固定公开目标的商品数据选图入口
+# 轻量公开商品选图入口
 
-新增工具将原始公开商品数据接到两种方法共同使用的图对筛选器。当前默认任务保留第二组理发椅和第九组儿童硅胶牙刷的公开目标，只重新选源商品。本入口只执行选图，不生成对抗图、不读取共享记忆、不运行正式检索或购物。
+当前入口为 `tools/select_public_pairs.py`（公开选图工具），配置使用第二版。默认保留两组公开目标，粗类型候选预算32张，使用公开开发集门槛和固定种子均匀抽样。完整数学定义见[选图协议](PAIR_SELECTION.md)。
 
-## 数据与输入
-
-原始输入为 WebShop（网上购物实验环境）的完整商品数组文件。适配器逐条只投影商品编号、公开名称和第一张主图地址；不提取内部类目、用户任务、价格、奖励或购买历史。商城环境目录和购买任务构建器不参与此入口。
-
-默认配置见 `src/configs/selection_groups29.example.json`（两组公开选取配置），固定目标编号为 `B09CYFD5BX`（第二组理发椅）和 `B09J81RMLD`（第九组儿童硅胶牙刷）。组别只用于公开选取任务及图对的组织，所有后续方法配置仍指向同一个共享长期记忆池。
-
-原始数据不提供攻击者真实商家所有权。当前实验在读取数据之前，固定种子四十二和商品编号散列规则，将非目标商品划分为模拟可控集合：策略名、种子和编号组合的安全散列摘要，取前八字节整数，对二取余为零时入选。目标集合始终排除。该声明只表示实验控制范围，不能作为真实所有权证明。
-
-## 从数据集到冻结图对
-
-1. 冻结目标、公开标题匹配规则、模拟可控划分、候选数量和原有四项筛选参数。
-2. 流式读取原始商品数组，从公开标题匹配的模拟可控商品中按固定编号散列保留至多两千个。此处不加载完整原始数组，也不访问商城私有类目。
-3. 使用本地公开句向量及已有语义门槛粗筛，再按已有高斯窗口排序，固定保留每组三十个图片候选。保存全部粗筛分数和计数。
-4. 有限重试下载每件商品的第一张公开主图，校验图片、保存原始字节及摘要。无效或不可下载的记录如实列出，不根据私有效果另挑角度。
-5. 使用 RapidOCR（本地文字识别工具）提出文字区域；主体分割器一次加载复用，使用公开图像产生的主体框和正前景点，并排除与边界连通的近背景色。自动标注只是提议。
-6. 生成分割与文字叠图，实际核对后记录逐图审核。误识别、遗漏文字和印刷图案可据公开原图修正；场景混入、人物拼贴或明显漏分的图片记录拒绝理由。审核绑定图片、自动标注及核对图的内容摘要。
-7. 对公开原图去重，将通过审核的清单交给原有四项评分。没有合格候选则报告不足；不降低门槛。多组源商品重复时明确报错，不悄悄改为另一候选。
-8. 冻结每组最高分合格图对、所有候选分项、后续方法配置和统一汇总。报告核对选择是否为最高分、汇总是否一致，以及公开图片和标注摘要。
-9. 将确定图对发布到公开数据的分组目录，按原商品与目标商品命名；两种方法后续从这个目录读取，复用已冻结的选择。
-
-新代码没有改变四项评分的数值默认值。自动标注和图像质量检查属于公开输入准备，不构成新的图片生成方法。
-
-## 运行
-
-先按项目依赖清单准备本地运行环境及公开模型。新增文字识别工具的模型随软件包提供，运行选图时不向受害系统请求预测。
+## 准备本地模型与真实开发标签
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py prepare --products <原始商品文件路径>
+.\.venv\Scripts\python.exe -X utf8 -B tools/prepare_selection_models.py
+```
+
+选图阶段只需要一个冻结的小型视觉模型，准备工具优先使用中国大陆镜像。正式生成的分割、文字识别与生成模型仍在相应阶段准备。
+
+把 `src/configs/shape_development.example.json`（开发标签模板）复制到公开数据目录，填入实际公开图片、来源、核对者、逐对说明及零或一标签。模板中的空标签不能用于校准。正负样本须等量；开发商品及其图片不能作为正式目标或候选。若需隔离同系列变体，可额外登记开发保留商品。
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py calibrate --development src/data/public/calibration/development.json
+```
+
+证书写到配置指定的公开校准路径，包含实际逐对分数、阈值、拟合误差及模型身份。没有真实校准证书时停止，不将旧阈值或合成测试标签当作正式开发结果。更换模型、预处理或标签须另建证书与运行目录。
+
+## 从原始公开数据取候选并抽图
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py prepare --products 'D:\Material\Literature Reading\code\MINJA-main\rap\webshop\data\items_shuffle.json'
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py select
+```
+
+第一次建立本项目自己的公开字段索引；不复制原项目源码或实验结果，也不使用原始文件中的私有类目、任务、历史、价格和奖励。后续不同目标复用索引。`--verify-source`（重验原始文件内容参数）会额外重新计算原文件摘要；正常复用检查源文件元数据与类型规则身份。
+
+未识别或多义类型必须提供配置中的公开类型核对清单。每条核对包括粗类型、核对者、依据及当前公开名称摘要。程序不把未知类型默认为兼容。
+
+候选按粗类型和既定模拟可控划分截取，不计算标题相似度。下载失败保留证据，不自动补足到预算或改变种子。外形门槛之后，从合格集合抽样。空集合保存逐候选拒绝原因，返回状态码三，停止本组。
+
+## 只标注选中的图对并发布
+
+```powershell
 .\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py annotate
 ```
 
-`prepare`（公开提取、语义粗筛及下载）与 `annotate`（自动标注并生成核对图）完成后，查看输出目录的公开核对图。实际审核记录写入该次公开资产目录的 `visual_reviews.json`（逐图视觉核对记录）。审核记录必须包含当前标注清单摘要、审核者，以及每张图的原图摘要、提议摘要、接受状态和必要修正。程序不自动伪造审核通过。
+此阶段才调用主体与文字标注模型，仅处理实际抽中的源图与目标图；不会给全部三十二张候选做分割和文字区域标注。
+
+查看运行目录中的公开核对图，将实际核对结果写入公开资产目录的 `selected_visual_reviews.json`（选中图对视觉核对文件）。格式沿用逐图审核：顶层为实际核对者与当前标注清单摘要，记录中包含图片摘要、提议摘要、接受状态、必要的主体框及印刷区修正。不合格则停止，不能按正式名次重选。程序不生成自动通过的视觉声明。
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py select
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py publish
 .\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py report
 ```
 
-`select`（精筛、冻结及正式分组发布）在缺少实际审核记录时返回状态码二；存在任务未选出合格图对时返回状态码三。`report`（只读核对并生成报告）复用冻结证据。`all`（全阶段入口）也会在审核记录缺失时停在该位置。
-
-每次运行可指定 `--root`（结果目录参数）和 `--public-root`（公开资产目录参数）；它们都必须属于当前项目。输入或规则改变时使用新目录。图片、下载缓存、公开运行数据和实验结果均被版本管理排除，源码和配置示例可上传。
-
-## 本次两组实际结果
-
-二〇二六年十一月四日，本轮扫描了一百一十八万一千四百三十六条原始商品记录。第二组词法匹配七千三百一十九条，其中三千六百五十七条属于模拟可控集合；第九组词法匹配九千五百二十五条，其中四千八百二十五条属于该集合。每组固定散列截取两千条后，语义合格数分别为一千零九十四、一千二百三十九，再各保留三十个准备主图。
-
-两张目标与六十张候选主图全部下载成功。公开分割首轮发现背景误分，原记录保留于预检目录；在正式评分之前，使用正前景点和背景连通排除修正了标注策略，并在独立最终目录重新标注，候选和评分门槛未变。
-
-最终自动标注通过六十一张，一张因背景复杂拒绝；逐图实际视觉核对后另拒绝九张，公开主图去重再排除一个重复候选。进入四项精筛的源商品分别为二十三个和二十六个，门槛合格分别为七个和五个。
-
-| 任务 | 固定目标 | 所选源商品 | 综合代理分数 | 原始形态分数 | 标题语义余弦 |
-|---|---|---|---:|---:|---:|
-| 第二组 | `B09CYFD5BX` | `B09FY5Y9G2`（棕色液压理发椅） | 0.919407 | 0.797045 | 0.718296 |
-| 第九组 | `B09J81RMLD` | `B09LVD5J4B`（粉色卡通硅胶牙刷） | 0.831561 | 0.656732 | 0.718223 |
-
-结果表示本轮冻结的候选范围内最高分。第九组形态分数仅略高于既定零点六五门槛，应保留该局限；代理分数不是攻击成功概率，也没有证明完整生成或检索攻击有效。
-
-最终本地产物位于 `src/output/public_pair_selection/groups29_20261104_final`（本轮结果目录），包含原图对照、冻结汇总、全部精筛分项及数据访问审计。两份可供两种方法共用的后续流程配置，位于本轮公开资产目录的方法配置子目录。正式生成、模糊查询图准备和共享池评估均未执行。
-
-在本机复核本轮冻结结果时，须显式使用最终目录，避免把早期预检目录作为本轮结果：
+也可以运行一次完整选图命令：
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py report --root src/output/public_pair_selection/groups29_20261104_final --public-root src/data/public/selection_runs/groups29_20261104_final
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py all --products 'D:\Material\Literature Reading\code\MINJA-main\rap\webshop\data\items_shuffle.json'
 ```
 
-早期公开准备目录中的流程配置保留为当时选图的审计证据。后续生成使用下面正式分组目录中的配置。
+未填写真实视觉核对记录时，完整选图命令在标注后返回状态码二，等待核对，再使用发布阶段继续。这是公开标注输入缺失，不是额外审批流程。
 
-## 正式分组图片与后续读取
+## 正式文件与两种方法
 
-第二组正式目录为 `src/data/public/groups/02_chair/`（理发椅组目录），第九组为 `src/data/public/groups/09_toothbrush/`（牙刷组目录）。结构一致：
+默认运行目录为 `src/output/public_pair_selection/shape_v2/`（选图输出）；公开准备目录为 `src/data/public/selection_runs/simple_v2/`（候选与标注）；正式分组目录如下。
 
 ```text
-02_chair/
+src/data/public/groups/shape_v2/02_chair/
   source.jpg
   target.jpg
   pair.json
   pipeline.json
   metadata/
-    source_foreground.png
-    target_foreground.png
-    selection.json
 ```
 
-其中 `source.jpg`（原商品图）与 `target.jpg`（目标商品图）是直接查看和生成时读取的正式图片。复制保持原始字节，内容摘要不变；若原图本身为其他格式，则保留真实扩展名。`pair.json`（图对清单）记录商品编号、公开名称、标注和选取证据。`pipeline.json`（本组完整流程配置）让两种方法从该分组目录直接读取图片，已不依赖早期下载缓存或全部候选清单。
+图片保留原始格式与字节，实际扩展名可能为其他受支持格式。协议版本目录保留旧两组已冻结的文件，不覆盖此前 source、target 或生成图。
 
-已存在的本轮冻结结果可用以下命令发布，不重新评分或换图：
+生成时使用该目录中的完整流程配置，两种方法共同读取相同 source 与 target；生成准备须已有实际核对的主体和印刷区。新配置的正式模糊查询路径也按运行版本隔离，避免自动复用已经观察过的查询。所有组仍指向一个共享长期记忆池。
 
-```powershell
-.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py publish --root src/output/public_pair_selection/groups29_20261104_final --public-root src/data/public/selection_runs/groups29_20261104_final
-```
-
-这里 `publish`（发布正式分组输入）只复制并核验公开图对，不运行生成。首次选取的新流程会自动执行这一步。
-
-后续第二组的生成命令如下，第九组替换为其对应目录即可：
-
-```powershell
-.\run_pipeline.ps1 -Stage generate -Method lucid -Config src/data/public/groups/02_chair/pipeline.json
-.\run_pipeline.ps1 -Stage generate -Method PerLAGE -Config src/data/public/groups/02_chair/pipeline.json
-```
-
-这里 `generate`（完整生成并冻结）、`lucid`（原始像素优化方法）与 `PerLAGE`（感知标签保护生成编辑方法）分别是阶段和方法参数。两种方法使用同一个正式图对和同一份共享池配置。图片或前景标注与冻结摘要不一致时，程序停止；不能静默使用变化后的输入沿用旧评分。
+本工具不修改共享记忆、不生成方法最终图、不进行正式检索或购物。旧多指标选择只保留历史文件读取，第一版配置不能启动新的旧评分实验。

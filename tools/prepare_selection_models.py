@@ -15,21 +15,10 @@ def main():
     os.environ.pop('HF_HUB_OFFLINE', None)
     os.environ.pop('TRANSFORMERS_OFFLINE', None)
     from huggingface_hub import snapshot_download
-    import torch
     from src.paths import MODEL_ROOT
     snapshot_download('facebook/dinov2-small', local_dir=MODEL_ROOT / 'dinov2-small',
                       allow_patterns=['config.json', 'preprocessor_config.json', 'model.safetensors'])
-    snapshot_download('sentence-transformers/all-MiniLM-L6-v2',
-                      allow_patterns=['*.json', '*.txt', 'model.safetensors', '1_Pooling/*'])
-    # 此主干使用视觉库公布的官方原始权重及其内容校验；不替换成随机权重。
-    from src.vision.image_utils import sha256_file
-    checkpoint = Path(torch.hub.get_dir()) / 'checkpoints/alexnet-owt-7be5be79.pth'
-    if not checkpoint.is_file():
-        checkpoint.parent.mkdir(parents=True, exist_ok=True)
-        from torchvision.models import AlexNet_Weights
-        torch.hub.download_url_to_file(AlexNet_Weights.IMAGENET1K_V1.url,
-                                      str(checkpoint), hash_prefix='7be5be79')
-    print('新增公开代理准备完成；感知主干摘要：' + sha256_file(checkpoint))
+    print('轻量选图所需的单一冻结视觉模型已准备。正式生成所需模型仍由生成阶段准备。')
 
 
 if __name__ == '__main__':
