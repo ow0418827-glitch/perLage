@@ -2,22 +2,22 @@
 import argparse
 from dataclasses import asdict
 import os
-from pathlib import Path
+from src.paths import PUBLIC, PRIVATE, VISUAL_CONFIGS, EXPERIMENT_CONFIGS, public_root_for, ProjectPath as Path
 import re
 
 from src.paths import DATA,OUTPUT,CONFIGS,PRIVATE,SHARED_MEMORY,PROJECT
-from src.vision.audit import digest,freeze_json,read_json,save_json
-from src.vision.image_utils import sha256_file
-from src.vision.pair_selection import SelectionConfig,LocalSelectionBackend,choose_pair,validate_product,verify_selection
-from src.vision.shape_calibration import calibrate,load_calibration
-from src.vision.catalog_training_guard import catalog_training_guard
-from src.data_sources.webshop_public import extract_public_candidates,random_shortlist,download_shortlist,OWNERSHIP_POLICY
-from src.vision.pair_assets import publish_pair
+from src.visual.audit import digest,freeze_json,read_json,save_json
+from src.visual.image_utils import sha256_file
+from src.visual.pair_selection import SelectionConfig,LocalSelectionBackend,choose_pair,validate_product,verify_selection
+from src.visual.shape_calibration import calibrate,load_calibration
+from src.visual.catalog_training_guard import catalog_training_guard
+from src.visual.selection.webshop_public import extract_public_candidates,random_shortlist,download_shortlist,OWNERSHIP_POLICY
+from src.visual.pair_assets import publish_pair
 
 
 def public_path(value):
     path=Path(value);path=(path if path.is_absolute() else PROJECT/path).resolve()
-    if not path.is_relative_to((DATA/'public').resolve()):raise ValueError('选图输入、索引和校准证书须位于当前项目公开目录')
+    public_root_for(path, extra_roots=(PUBLIC,))
     return path
 
 
@@ -43,14 +43,14 @@ def selection_settings(config):
 
 
 def freeze_plan(config,root):
-    from src.vision.product_types import TYPE_RULES_SHA256
+    from src.visual.product_types import TYPE_RULES_SHA256
     path=public_path(config['calibration_path']);proof=read_json(path)
-    load_calibration(path,proof['models'],public_root=DATA/'public')
+    load_calibration(path,proof['models'],public_root=public_root_for(path, extra_roots=(PUBLIC,)))
     freeze_json(Path(root)/'PUBLIC_PLAN.json',dict(schema_version=2,config=config,
         selection=asdict(selection_settings(config)),calibration_sha256=sha256_file(path),
         type_rules_sha256=TYPE_RULES_SHA256,
-        implementation_sha256={name:sha256_file(PROJECT/name) for name in ('src/vision/pair_selection.py','src/vision/shape_calibration.py',
-            'src/data_sources/webshop_public.py','src/experiments/public_pair_selection.py')},
+        implementation_sha256={name:sha256_file(PROJECT/name) for name in ('src/visual/pair_selection.py','src/visual/shape_calibration.py',
+            'src/visual/selection/webshop_public.py','src/experiments/public_pair_selection.py')},
         ownership_policy=OWNERSHIP_POLICY,target_ids_fixed=[g['target_id'] for g in config['groups']],
         formal_queries_used=False,victim_memory_used=False,shopping_allowed=False,
         annotation_scope='drawn_source_and_target_only',empty_set_policy='stop_without_relaxation'))
@@ -60,7 +60,7 @@ def pipeline_config(key,catalog,root,*,selection=None,models=None):
     root=Path(root)
     return dict(schema_version=1,method='PerLAGE',public_catalog=str(Path(catalog).resolve()),
         run_dir=str((root/'groups'/key).resolve()),selection=selection or {},selection_models=models or {},
-        generation=dict(lucid=dict(steps=1000,epsilon_levels=16),PerLAGE={}),
+        generation=dict(lucid=dict(steps=1000,epsilon_levels=16),PerLAGE={},PerLAGE_no_pixel={}),
         evaluation=dict(shared_pool=str(SHARED_MEMORY),query_manifest=str(PRIVATE/'query_images'/root.name/(key+'.json'))))
 
 
@@ -68,7 +68,8 @@ def downloaded_product(product,downloads,*,source=False):
     record=dict(id=product['id'],title=product['title'],source_url=product['source_url'],image=downloads['records'][product['id']]['image'])
     if 'type_review' in product:record['type_review']=product['type_review']
     if source:record.update(owned=True,source_note='固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权')
-    return validate_product(record,Path(record['image']).parent,owned=source,generation_ready=False,public_root=DATA/'public')
+    return validate_product(record,Path(record['image']).parent,owned=source,generation_ready=False,
+                            public_root=public_root_for(record['image'], extra_roots=(PUBLIC,)))
 
 
 def select_groups(config,root,public,*,device='cuda',backend_factory=LocalSelectionBackend):
@@ -84,7 +85,8 @@ def select_groups(config,root,public,*,device='cuda',backend_factory=LocalSelect
             catalog=public/'candidate_catalogs'/(group['key']+'.json')
             freeze_json(catalog,dict(schema_version=2,target=target,candidates=candidates))
             if not candidates:raise ValueError('本组所有公开候选下载失败：'+group['key'])
-            result=choose_pair(target,candidates,backend,settings,excluded_source_ids=used|targets,public_root=DATA/'public')
+            result=choose_pair(target,candidates,backend,settings,excluded_source_ids=used|targets,
+                               public_root=public_root_for(public, extra_roots=(PUBLIC,)))
             result.update(target=target,binding=dict(public_catalog_sha256=sha256_file(catalog),models_configuration=config.get('models',{}),
                 calibration_sha256=sha256_file(settings.calibration_path),public_plan_sha256=sha256_file(root/'PUBLIC_PLAN.json')),
                 download_failures={p['id']:downloads['failures'][p['id']] for p in group['candidates'] if p['id'] in downloads['failures']})
@@ -117,7 +119,7 @@ def selected_inputs(root,public):
 
 
 def annotate_selected(root,public):
-    from src.vision.public_annotations import annotate_downloads,contact_sheets
+    from src.visual.public_annotations import annotate_downloads,contact_sheets
     root,public=Path(root),Path(public);short,downloads=selected_inputs(root,public)
     freeze_json(public/'selected_shortlist.json',short)
     annotations=annotate_downloads(downloads,public/'selected_annotations')
@@ -126,7 +128,7 @@ def annotate_selected(root,public):
 
 
 def publish_groups(root,public):
-    from src.vision.public_annotations import apply_reviews
+    from src.visual.public_annotations import apply_reviews
     root,public=Path(root),Path(public);short,downloads=selected_inputs(root,public)
     annotations=read_json(public/'selected_annotations/annotation_manifest.json')
     reviews=read_json(public/'selected_visual_reviews.json')
@@ -139,12 +141,14 @@ def publish_groups(root,public):
             for field in ('id','title','image'):
                 if product[field]!=original[role][field]:raise ValueError('选中图对标注改变了公开身份或原图')
             if 'type_review' in original[role]:product['type_review']=original[role]['type_review']
-            selected[role]=validate_product(product,Path(product['image']).parent,owned=role=='source',public_root=DATA/'public')
+            selected[role]=validate_product(product,Path(product['image']).parent,owned=role=='source',
+                                           public_root=public_root_for(public, extra_roots=(PUBLIC,)))
         selected['annotation_binding']=dict(drawn_pair_sha256=row['selection_sha256'],annotations_sha256=digest(annotations),reviews_sha256=digest(reviews))
         selected_path=root/'groups'/row['key']/'selection/SELECTED_PAIR.json';freeze_json(selected_path,selected)
         # 协议版本目录保护此前已冻结的分组 source/target 及其实验结果。
-        directory=DATA/'public/groups'/root.name/row['key']
-        published=publish_pair(selected_path,directory,DATA/'public')
+        directory=root/'data/groups'/row['key']
+        published=publish_pair(selected_path,directory,root/'data',
+                               input_public_root=public_root_for(public, extra_roots=(PUBLIC,)))
         cfg=pipeline_config(row['key'],catalogs['catalogs'][row['key']],root,
             selection=published['configuration'],models=published['binding']['models_configuration'])
         cfg.pop('public_catalog');cfg['public_pair']=published['pair_manifest']
@@ -179,22 +183,22 @@ def report(root,public):
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage',choices=('calibrate','prepare','select','annotate','publish','report','all'),nargs='?',default='all')
-    parser.add_argument('--config',type=Path,default=CONFIGS/'selection_groups29.example.json')
+    parser.add_argument('--config',type=Path,default=EXPERIMENT_CONFIGS/'selection_groups29.example.json')
     parser.add_argument('--products',type=Path);parser.add_argument('--development',type=Path)
-    parser.add_argument('--index',type=Path,default=DATA/'public/public_products_v2.sqlite')
+    parser.add_argument('--index',type=Path,default=PUBLIC/'public_products_v2.sqlite')
     parser.add_argument('--verify-source',action='store_true')
     parser.add_argument('--root',type=Path,default=OUTPUT/'public_pair_selection/shape_v2')
-    parser.add_argument('--public-root',type=Path,default=DATA/'public/selection_runs/simple_v2')
+    parser.add_argument('--public-root',type=Path,help='默认保存到本次结果目录的数据子目录')
     parser.add_argument('--device',choices=('cpu','cuda'),default='cuda')
-    args=parser.parse_args(argv);config=validate_config(read_json(args.config));root=args.root.resolve();public=public_path(args.public_root)
+    args=parser.parse_args(argv);config=validate_config(read_json(args.config));root=args.root.resolve();public=public_path(args.public_root or root/'data')
     if not root.is_relative_to(OUTPUT.resolve()):parser.error('运行输出须位于当前项目自己的输出目录')
     os.environ.update(HF_HUB_OFFLINE='1',TRANSFORMERS_OFFLINE='1',TOKENIZERS_PARALLELISM='false',PYTHONDONTWRITEBYTECODE='1')
     try:
-        with catalog_training_guard(allowed_output_roots=[root]) as audit:
+        with catalog_training_guard(allowed_output_roots=[root,public,PUBLIC]) as audit:
             if args.stage=='calibrate':
                 if args.development is None:parser.error('校准需要 --development 指定实际公开视觉标签清单')
                 backend=LocalSelectionBackend(config.get('models',{}),public/'calibration_features',args.device)
-                try:calibrate(public_path(args.development),public_path(config['calibration_path']),backend,public_root=DATA/'public')
+                try:calibrate(public_path(args.development),public_path(config['calibration_path']),backend,public_root=PUBLIC)
                 finally:backend.close()
                 save_json(root/'ACCESS_AUDIT_calibrate.json',{k:v for k,v in audit.items() if k!='active'})
                 print('公开开发集门槛已拟合并冻结。');return 0

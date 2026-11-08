@@ -2,7 +2,7 @@
 import copy
 import json
 import os
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import subprocess
 import sys
 import time
@@ -11,16 +11,15 @@ import numpy as np
 import requests
 
 from src.paths import PROJECT, CONFIGS
-from src.vision.audit import read_json, save_json, freeze_json, digest
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json, save_json, freeze_json, digest
+from src.visual.image_utils import sha256_file
 
 PORT = 3017
-CATALOG = PROJECT.parent / 'lage/src/output/nine_group_catalog_full'
-WEBSHOP = PROJECT.parent / 'MINJA-main/rap/webshop'
+from src.webshop.config import CATALOG, WEBSHOP_SOURCE as WEBSHOP
 
 
 def register_goal(root, session, asin, instruction):
-    from src.environment.disk_catalog import DiskCatalog
+    from src.webshop.disk_catalog import DiskCatalog
     with DiskCatalog.open(CATALOG) as catalog:
         product = catalog.product(asin)
     goal = dict(asin=asin, category=product.get('category', ''), query=product.get('query', ''),
@@ -53,7 +52,7 @@ def start_server(root):
     logfile = (root/'shopping/server.log').open('a', encoding='utf-8')
     environment = dict(os.environ, PYTHONDONTWRITEBYTECODE='1', OMP_NUM_THREADS='1', MKL_NUM_THREADS='1',
                        TOKENIZERS_PARALLELISM='false', HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1')
-    process = subprocess.Popen([sys.executable,'-X','utf8','-B','-u','-m','src.environment.full_webshop','serve',
+    process = subprocess.Popen([sys.executable,'-X','utf8','-B','-u','-m','src.webshop.full_webshop','serve',
         '--catalog',str(CATALOG),'--webshop-source',str(WEBSHOP),'--port',str(PORT),
         '--java-mb','512','--task-registry',str(registry),'--asset-root',str(asset_root),
         '--image-overrides',str(overrides)],cwd=PROJECT,env=environment,stdout=logfile,stderr=subprocess.STDOUT,
@@ -78,7 +77,6 @@ def stop_server(process):
 def purchase_source(root, key, source):
     """实际执行一次本地商城购买，不把旧商品轨迹改写成新商品轨迹。"""
     import src.agent.shopping as shopping
-    shopping.WEBSHOP_URL=f'http://127.0.0.1:{PORT}/'
     root=Path(root);path=root/'source_purchases'/(key+'.json')
     if path.exists():
         saved=read_json(path)
@@ -92,7 +90,7 @@ def purchase_source(root, key, source):
     overrides_path=root/'shopping/image_overrides.json'
     overrides=read_json(overrides_path)
     overrides[source['id']]=str(asset.resolve());save_json(overrides_path,overrides)
-    env=shopping.webshopEnv(instruction_overrides={session:instruction})
+    env=shopping.webshopEnv(base_url=f'http://127.0.0.1:{PORT}/',instruction_overrides={session:instruction})
     actions=[]
     def step(action):
         response=env.step(session,action)
@@ -141,7 +139,7 @@ def policy_references(entries):
 
 def prepare_original_cache(root,entries,sources,*,catalog_factory=None):
     """只登记已核验的原商品图片；修改图片不能进入商城原图缓存。"""
-    from src.environment.disk_catalog import DiskCatalog
+    from src.webshop.disk_catalog import DiskCatalog
     root=Path(root);cache=root/'shopping/observed_images'
     known={r['id']:r['image_sha256'] for r in sources}
     prepared=[];skipped=[]
@@ -172,11 +170,11 @@ def prepare_original_cache(root,entries,sources,*,catalog_factory=None):
 
 
 def run_shopping(root,*,device='cuda'):
-    from src.configuration.llm_config import load_model_config
+    from src.agent.config.llm_config import load_model_config
     from src.experiments.shared_evaluation import make_eval_encoder
-    from src.vision.visual_retrieval import VisualMemoryRetriever
+    from src.visual.visual_retrieval import VisualMemoryRetriever
     from src.agent.prompts.webshop_prompt import INITIAL_PROMPTS
-    from src.configuration.shopping_prompt import load_shopping_prompt
+    from src.agent.prompts.loader import load_shopping_prompt
     import src.agent.shopping as shopping
     root=Path(root);plan=read_json(root/'BATCH_PLAN.json')
     verified=read_json(root/'retrieval/INDEPENDENT_VERIFICATION.json')
@@ -195,7 +193,7 @@ def run_shopping(root,*,device='cuda'):
         historical_memory_images_policy='two_simultaneous_substitutions_in_modified_bank',
         complete_purchase_required_for_misleading_metric=True,
         shopping_prompt=guidance,retrieval_device=device))
-    process=None;shopping.WEBSHOP_URL=f'http://127.0.0.1:{PORT}/'
+    process=None
     settings=load_model_config(CONFIGS/'llm.local.json');client=settings.client()
     raw_create=client.chat.completions.create;next_request=[0.]
     def paced_create(**kwargs):
@@ -227,7 +225,7 @@ def run_shopping(root,*,device='cuda'):
                     if key in done_keys:continue
                     session='perlage_'+group['key']+'_'+bank_name+'_'+query['task_id']
                     register_goal(root,session,group['target']['id'],query['instruction'])
-                    env=shopping.webshopEnv(instruction_overrides={session:query['instruction']},
+                    env=shopping.webshopEnv(base_url=f'http://127.0.0.1:{PORT}/',instruction_overrides={session:query['instruction']},
                         image_snapshot_path=bank_file,image_cache_root=root/'shopping/observed_images')
                     budget=sum(len(str(e.get('Instruction','')))+sum(len(str(a)) for a in e.get('Actions',[])) for e in entries)+20000
                     record_path=root/'shopping/episodes'/group['key']/bank_name/(query['task_id']+'.json')

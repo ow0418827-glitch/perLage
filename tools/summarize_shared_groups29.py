@@ -8,8 +8,9 @@ import sys
 
 PROJECT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(PROJECT))
-from src.vision.audit import read_json,save_json
-from src.vision.image_utils import sha256_file
+from src.paths import ProjectPath as Path
+from src.visual.audit import read_json,save_json
+from src.visual.image_utils import sha256_file
 
 
 def summarize(root):
@@ -125,6 +126,6 @@ def summarize(root):
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--root',type=Path,default=PROJECT/'src/output/shared_groups29_20261105_nodefense')
+    parser.add_argument('--root',type=Path,default=PROJECT/'output/shared_groups29_20261105_nodefense')
     args=parser.parse_args();result=summarize(args.root)
     print(f"复核通过：{result['shopping_records_checked']}条购物轨迹；报告：{result['report']}")

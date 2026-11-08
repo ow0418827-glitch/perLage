@@ -10,16 +10,17 @@ import time
 
 PROJECT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PROJECT))
-from src.paths import DATA, OUTPUT, CONFIGS
-from src.vision.audit import read_json, save_json, freeze_json
-from src.vision.image_utils import sha256_file
-from src.memory.shared_pool import build_shared_pool
+from src.paths import ProjectPath as Path
+from src.paths import PUBLIC, PRIVATE, VISUAL_CONFIGS, EXPERIMENT_CONFIGS, public_root_for, DATA, OUTPUT, CONFIGS
+from src.visual.audit import read_json, save_json, freeze_json
+from src.visual.image_utils import sha256_file
+from src.agent.memory.shared_pool import build_shared_pool
 
 ROOT = OUTPUT / 'shared_groups29_20261104_final'
 GROUPS = ('02_chair', '09_toothbrush')
 OLD_POOL = PROJECT.parent / 'lage/src/output/lage_runs/catalog_shared_memory_20261103/shared_memory_pool.json'
-BASE = DATA / 'private/reused_shared_20261104'
-ACTIVE = DATA / 'private/shared_memory.json'
+BASE = PRIVATE / 'reused_shared_20261104'
+ACTIVE = PRIVATE / 'shared_memory.json'
 
 
 def now():return datetime.now(timezone.utc).isoformat()
@@ -97,10 +98,10 @@ def prepare():
     destination = CONFIGS / 'llm.local.json'
     if not destination.exists():shutil.copyfile(source_config, destination)
     for key in GROUPS:
-        config = read_json(DATA / 'public/groups' / key / 'pipeline.json')
+        config = read_json(PUBLIC / 'groups' / key / 'pipeline.json')
         config['run_dir'] = str((ROOT / 'groups' / key).resolve())
         config['evaluation']['shared_pool'] = str(ACTIVE.resolve())
-        config['evaluation']['query_manifest'] = str((DATA / 'private/query_images' / (key+'.json')).resolve())
+        config['evaluation']['query_manifest'] = str((PRIVATE / 'query_images' / (key+'.json')).resolve())
         freeze_json(ROOT / 'configs' / (key+'.json'), config)
     freeze_json(ROOT / 'EXPERIMENT_PLAN.json', dict(schema_version=1, groups=list(GROUPS),
         baseline_pool=str(baseline), baseline_sha256=sha256_file(baseline), active_pool=str(ACTIVE),

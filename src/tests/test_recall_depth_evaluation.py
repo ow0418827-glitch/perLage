@@ -1,10 +1,10 @@
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 import pytest
 
 from src.experiments.recall_depth_evaluation import replace_reused_image,validate_submission
-from src.vision.image_utils import sha256_file
+from src.visual.image_utils import sha256_file
 
 
 def entry(product,key,*,error=False):

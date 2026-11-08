@@ -1,22 +1,23 @@
 """可选的下游购物评估适配；默认停止，复用同一共享池和模糊查询。"""
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import numpy as np
 
-from src.vision.audit import read_json, save_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json, save_json
+from src.visual.image_utils import sha256_file
 
 
 def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
-                            num_steps=15, environment_factory=None, device='cuda'):
+                            num_steps=15, environment_factory=None, device='cuda',
+                            prompt_path=None, prompt_profile=None):
     method_root = Path(method_root).resolve()
     stop = method_root.parents[1] / 'STOP_SHOPPING_REQUESTED.json'
     if not allow_shopping or not stop.is_file() or read_json(stop).get('shopping_allowed') is not True:
         raise PermissionError('购物默认停止；未来正式测试须显式启用，并先更新本次运行的停止购买标记')
-    from src.configuration.llm_config import load_model_config
+    from src.agent.config.llm_config import load_model_config
     from src.agent.shopping import webshopEnv, webshop_run_rap
     from src.agent.prompts.webshop_prompt import INITIAL_PROMPTS
-    from src.configuration.shopping_prompt import load_shopping_prompt
-    from src.vision.visual_retrieval import VisualMemoryRetriever
+    from src.agent.prompts.loader import load_shopping_prompt
+    from src.visual.visual_retrieval import VisualMemoryRetriever
     from src.experiments.shared_evaluation import make_eval_encoder
     plan = read_json(method_root / 'evaluation/evaluation_plan.json')
     from src.experiments.pipeline import load_frozen
@@ -32,7 +33,9 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
     rows = read_json(method_root / 'evaluation/evaluation.json')
     settings = load_model_config(model_config)
     client = settings.client()
-    guidance = load_shopping_prompt()
+    guidance = load_shopping_prompt(prompt_path, profile=prompt_profile)
+    from src.visual.audit import freeze_json
+    freeze_json(method_root / 'shopping/PROMPT.json', guidance)
     encoder = make_eval_encoder(device, plan.get('encoder_config'))
     outcomes = []
     try:

@@ -9,9 +9,10 @@ import time
 
 PROJECT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(PROJECT))
+from src.paths import ProjectPath as Path
 from src.paths import OUTPUT
-from src.vision.audit import read_json,save_json,freeze_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json,save_json,freeze_json
+from src.visual.image_utils import sha256_file
 from src.experiments.pipeline import load_frozen
 
 PREVIOUS=OUTPUT/'shared_groups29_20261104_final'

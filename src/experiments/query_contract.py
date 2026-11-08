@@ -1,7 +1,7 @@
 """模糊文字与独立模糊图的正式查询约定；图片生成有意保留待实现。"""
-from pathlib import Path
-from src.vision.audit import read_json
-from src.vision.image_utils import sha256_file
+from src.paths import ProjectPath as Path
+from src.visual.audit import read_json
+from src.visual.image_utils import sha256_file
 
 
 

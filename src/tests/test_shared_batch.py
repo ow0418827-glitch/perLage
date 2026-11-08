@@ -1,11 +1,11 @@
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 from PIL import Image
 import pytest
 
-from src.vision.audit import read_json,save_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json,save_json
+from src.visual.image_utils import sha256_file
 from src.experiments.shared_batch import replace_source_records,make_banks,evaluate,verify,OLD_ASINS,SharedFeatureCache
 from src.experiments.shared_shopping import policy_references,prepare_original_cache
 from test_shared_pool import ToyEncoder
@@ -13,7 +13,7 @@ from test_shared_pool import ToyEncoder
 
 def test_colored_print_glints_are_preserved_and_not_treated_as_white_paper():
     import numpy as np
-    from src.vision._natural.colour import prepare_print_context,halo_error
+    from src.visual._perlage.components.colour import prepare_print_context,halo_error
     source=np.full((80,80,3),(225,160,175),dtype=np.uint8)
     source[35,35]=255
     parent=source.copy();parent[:20]=np.clip(parent[:20].astype(int)-20,0,255)
@@ -26,7 +26,7 @@ def test_colored_print_glints_are_preserved_and_not_treated_as_white_paper():
 
 def test_white_paper_print_halo_detection_is_still_active():
     import numpy as np
-    from src.vision._natural.colour import prepare_print_context,halo_error
+    from src.visual._perlage.components.colour import prepare_print_context,halo_error
     source=np.full((80,80,3),245,dtype=np.uint8);source[35:42,35:42]=30
     parent=source.copy();parent[:25]=220
     foreground=np.ones((80,80),bool)

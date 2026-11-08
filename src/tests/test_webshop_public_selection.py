@@ -1,15 +1,15 @@
 import copy
 import io
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 import numpy as np
 from PIL import Image,ImageDraw
 import pytest
 
-from src.data_sources.webshop_public import (public_projection,simulated_controlled,
+from src.visual.selection.webshop_public import (public_projection,simulated_controlled,
     extract_public_candidates,random_shortlist,download_public_image)
-from src.vision.audit import save_json,digest
-from src.vision.public_annotations import (object_prior,remove_connected_background,regions_from_ocr,apply_reviews)
+from src.visual.audit import save_json,digest
+from src.visual.public_annotations import (object_prior,remove_connected_background,regions_from_ocr,apply_reviews)
 from src.experiments.public_pair_selection import validate_config,pipeline_config
 
 
@@ -50,7 +50,7 @@ def test_raw_dataset_preparation_keeps_only_public_matching_candidates(tmp_path)
 
 def test_public_index_reuses_scan_across_runs_and_binds_source(tmp_path,monkeypatch):
     import ijson
-    from src.data_sources.webshop_public import build_public_index
+    from src.visual.selection.webshop_public import build_public_index
     path=tmp_path/'products.json';save_json(path,[public_record()])
     index=tmp_path/'public.sqlite';first=build_public_index(path,index)
     monkeypatch.setattr(ijson,'items',lambda *a,**k:(_ for _ in ()).throw(AssertionError('不能重复扫描原始文件')))
@@ -127,7 +127,7 @@ def test_batch_config_rejects_path_traversal():
 
 
 def test_foreground_mask_changes_are_bound_to_core_input_identity(products,tmp_path):
-    from src.vision.pair_selection import validate_product
+    from src.visual.pair_selection import validate_product
     p=dict(products[1]);p.pop('image_sha256')
     mask=tmp_path/'mask.png';Image.new('L',(24,24),255).save(mask);p['foreground_mask']=str(mask)
     first=validate_product(p,tmp_path,owned=True)

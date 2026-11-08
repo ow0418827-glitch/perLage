@@ -1,22 +1,23 @@
 import json
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import pytest
 
 from src.paths import SHARED_MEMORY
-from src.vision.optimization import METHODS, normalize_method
-from src.vision.catalog_training_guard import catalog_training_guard
-from src.vision.audit import save_json, read_json
-from src.vision.image_utils import sha256_file
+from src.visual.optimization import METHODS, normalize_method
+from src.visual.catalog_training_guard import catalog_training_guard
+from src.visual.audit import save_json, read_json
+from src.visual.image_utils import sha256_file
 from src.experiments.query_contract import load_formal_queries, QueryImagePending
 from src.experiments.formal_queries import VAGUE_INSTRUCTIONS
 from src.experiments.pipeline import TRAINING_QUERIES, generation_definition
 from src.experiments.defenses import conditions, table_groups
-from src.vision._perlage.pipeline import validate_definition
+from src.visual._perlage.pipeline import validate_definition
 
 
 def test_method_names_are_unambiguous():
-    assert METHODS == ('lucid', 'PerLAGE')
+    assert METHODS == ('lucid', 'PerLAGE', 'PerLAGE_no_pixel')
     assert normalize_method('perlage') == 'PerLAGE'
+    assert normalize_method('perlage_no_pixel') == 'PerLAGE_no_pixel'
     for old in ('nf_lage', 'nf_lage_opt', 'nf_lage_no_shadow', 'legacy_pixel'):
         with pytest.raises(ValueError): normalize_method(old)
 
@@ -87,7 +88,7 @@ def test_fixed_defense_panel_preserves_all_seeds():
 
 
 def test_evaluation_recomputes_rankings_with_fresh_encoder(pool_inputs, products, tmp_path):
-    from src.memory.shared_pool import build_shared_pool
+    from src.agent.memory.shared_pool import build_shared_pool
     from src.experiments.shared_evaluation import evaluate, report, verify
     from test_shared_pool import ToyEncoder
     pool, _ = pool_inputs

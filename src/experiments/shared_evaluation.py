@@ -1,12 +1,12 @@
 """冻结成图后的共享长期记忆检索评估、真实复算和报告。"""
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 from src.paths import SHARED_MEMORY
-from src.memory.shared_pool import load_shared_pool, evaluation_banks
-from src.vision.audit import freeze_json, read_json, save_json, digest
-from src.vision.image_utils import sha256_file
-from src.vision.visual_retrieval import VisualMemoryRetriever, memory_index_text, resolve_image
+from src.agent.memory.shared_pool import load_shared_pool, evaluation_banks
+from src.visual.audit import freeze_json, read_json, save_json, digest
+from src.visual.image_utils import sha256_file
+from src.visual.visual_retrieval import VisualMemoryRetriever, memory_index_text, resolve_image
 from src.experiments.defenses import Defender, conditions, table_groups
 from src.experiments.query_contract import load_formal_queries
 
@@ -16,7 +16,7 @@ def evaluate(frozen, output, *, pool_path=SHARED_MEMORY, query_manifest,
              defense_factory=None, selected_conditions=None, encoder_config=None):
     """只有此模块读取共享库；对照和修改图始终面对同一个完整共享池。"""
     output = Path(output)
-    from src.vision.attack_completion import validate_attack_completion
+    from src.visual.attack_completion import validate_attack_completion
     if frozen.get('status') != 'frozen':
         raise ValueError('只能评估完成且已经冻结的最终图片')
     validate_attack_completion(frozen['metadata'], frozen['requested_steps'])
@@ -83,19 +83,17 @@ def evaluate(frozen, output, *, pool_path=SHARED_MEMORY, query_manifest,
 
 def make_eval_encoder(device='cuda', config_path=None):
     """默认评估模型独立于两种方法训练时使用的三个代理模型。"""
-    from src.paths import CONFIGS, PRIVATE
-    from src.vision.dual_rag_bridge import activate, DEFAULT_DUAL_ROOT
-    from src.vision.joint_encoder import ChunkedClipEncoder
+    from src.paths import VISUAL_CONFIGS, PRIVATE, PROJECT
+    from src.visual.encoders.joint import ChunkedClipEncoder
     private = PRIVATE / 'evaluator.json'
-    settings = read_json(config_path or (private if private.is_file() else CONFIGS / 'evaluator.example.json'))
+    settings = read_json(config_path or (private if private.is_file() else VISUAL_CONFIGS / 'evaluator.example.json'))
     if settings.get('setting') != 'held_out_public_encoder':
         raise ValueError('当前黑盒评估默认要求独立留出的公开检索器')
-    activate()
-    from dual_rag.original_attack import resolve_optimization
-    from dual_rag.optimization.attack_core.surrogates import resolve_hf_cached_weight
-    from dual_rag.encoder import MatchedClipEncoder
+    from src.visual._lucid.config import resolve_optimization
+    from src.visual._lucid.surrogates import resolve_hf_cached_weight
+    from src.visual.encoders.clip import MatchedClipEncoder
     spec = settings['surrogate']
-    trained = resolve_optimization(CONFIGS / 'optimization.json')
+    trained = resolve_optimization(VISUAL_CONFIGS / 'optimization.json')
     if any((m.name, m.pretrained) == (spec['name'], spec['pretrained']) for m in trained.surrogates):
         raise ValueError('正式留出检索器与训练代理相同，不能作为黑盒迁移评估')
     if spec.get('weight_path'):
@@ -106,7 +104,7 @@ def make_eval_encoder(device='cuda', config_path=None):
     if weight is None or not weight.is_file():
         raise FileNotFoundError('缺少独立留出检索器的本地权重，请先显式准备')
     spec = dict(spec, weight_path=str(weight.resolve()))
-    return ChunkedClipEncoder(MatchedClipEncoder(dict(surrogate=spec, surrogate_number=0, device=device), DEFAULT_DUAL_ROOT))
+    return ChunkedClipEncoder(MatchedClipEncoder(dict(surrogate=spec, surrogate_number=0, device=device), PROJECT))
 
 
 def verify(output, *, encoder_factory=None, device='cuda'):
@@ -120,7 +118,7 @@ def verify(output, *, encoder_factory=None, device='cuda'):
     actual = [(r['condition']['label'], r['bank']) for r in rows]
     if len(actual) != len(set(actual)) or set(actual) != expected:
         raise ValueError('评估条件缺失或重复')
-    encoder = (encoder_factory or (lambda: make_eval_encoder(device)))()
+    encoder = (encoder_factory or (lambda: make_eval_encoder(device, plan.get('encoder_config'))))()
     max_error, count = 0.0, 0
     try:
         for row in rows:

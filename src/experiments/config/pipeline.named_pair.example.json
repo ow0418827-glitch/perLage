@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "method": "PerLAGE",
+  "public_pair": "data/groups/02_chair/pair.json",
+  "run_dir": "output/runs/shape_v2/02_chair",
+  "selection": {},
+  "generation": {
+    "lucid": {"steps": 1000, "epsilon_levels": 16},
+    "PerLAGE": {},
+    "PerLAGE_no_pixel": {}
+  },
+  "evaluation": {
+    "shared_pool": "output/shared_memory/pool_189_v1/shared_memory.json",
+    "query_manifest": "output/datasets/private/query_images/shape_v2/02_chair.json"
+  }
+}

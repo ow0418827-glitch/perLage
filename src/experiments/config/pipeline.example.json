@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "method": "PerLAGE",
+  "public_catalog": "output/runs/default/data/catalog.json",
+  "run_dir": "output/runs/default",
+  "selection": {"seed": 42, "calibration_path": "output/datasets/public/calibration/shape_v2_verified/threshold.json", "min_image_side": 64},
+  "selection_models": {"batch_size": 16},
+  "generation": {
+    "lucid": {"steps": 1000, "epsilon_levels": 16},
+    "PerLAGE": {},
+    "PerLAGE_no_pixel": {}
+  },
+  "evaluation": {
+    "shared_pool": "output/shared_memory/pool_189_v1/shared_memory.json",
+    "query_manifest": "output/datasets/private/query_image.json"
+  }
+}

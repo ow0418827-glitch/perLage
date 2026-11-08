@@ -3,11 +3,11 @@ from dataclasses import replace
 import numpy as np
 from PIL import Image
 import pytest
-from src.vision.audit import read_json,save_json,digest
-from src.vision.pair_selection import SelectionConfig,choose_pair,validate_product,verify_selection,uniform_draw
-from src.vision.product_types import type_compatibility,classify_public_type
-from src.vision.shape_calibration import fit_threshold,load_calibration
-from src.vision.shape_features import shape_input
+from src.visual.audit import read_json,save_json,digest
+from src.visual.pair_selection import SelectionConfig,choose_pair,validate_product,verify_selection,uniform_draw
+from src.visual.product_types import type_compatibility,classify_public_type
+from src.visual.shape_calibration import fit_threshold,load_calibration
+from src.visual.shape_features import shape_input
 
 
 class ShapeBackend:
@@ -114,7 +114,7 @@ def test_only_selected_products_require_generation_annotations(products,tmp_path
 
 
 def test_public_path_boundary_is_checked_before_any_file_content_read(products,tmp_path,monkeypatch):
-    import src.vision.pair_selection as module
+    import src.visual.pair_selection as module
     public=tmp_path/'public';public.mkdir()
     secret=tmp_path/'secret.dat';secret.write_bytes(b'private payload')
     def forbidden(*args):raise AssertionError('不得先读取或计算私有文件摘要')

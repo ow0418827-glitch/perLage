@@ -1,14 +1,14 @@
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 import numpy as np
 from PIL import Image
 import pytest
 
-from src.vision.audit import read_json, save_json
-from src.vision.image_utils import sha256_file
-from src.vision.pair_assets import load_pair, publish_pair
-from src.vision.pair_selection import choose_pair, validate_product
+from src.visual.audit import read_json, save_json
+from src.visual.image_utils import sha256_file
+from src.visual.pair_assets import load_pair, publish_pair
+from src.visual.pair_selection import choose_pair, validate_product
 
 
 @pytest.fixture

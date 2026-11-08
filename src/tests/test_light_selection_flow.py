@@ -1,17 +1,17 @@
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import copy
 import pytest
 from PIL import Image
-from src.vision.audit import save_json,read_json,digest
-from src.vision.image_utils import sha256_file
+from src.visual.audit import save_json,read_json,digest
+from src.visual.image_utils import sha256_file
 from src.experiments import public_pair_selection as flow
-from src.vision.pair_assets import load_pair
+from src.visual.pair_assets import load_pair
 
 
 def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(products,tmp_path,monkeypatch,calibration_factory):
     public=tmp_path/'data/public';public.mkdir(parents=True)
     root=tmp_path/'output/public_pair_selection/simple_v2';working=public/'selection_runs/simple_v2';working.mkdir(parents=True)
-    monkeypatch.setattr(flow,'DATA',public.parent);monkeypatch.setattr(flow,'OUTPUT',tmp_path/'output')
+    monkeypatch.setattr(flow,'PUBLIC',public);monkeypatch.setattr(flow,'OUTPUT',tmp_path/'output')
     cfg=calibration_factory(directory=public/'calibration')
     config=dict(schema_version=2,seed=42,candidate_limit=32,calibration_path=cfg.calibration_path,groups=[dict(key='test_chair',target_id='A000000001')])
     short_products=[];downloads={}
@@ -35,7 +35,7 @@ def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(produ
     assert chosen in {p['id'] for p in short_products[1:]}
     selected,subset=flow.selected_inputs(root,working)
     assert set(subset['records'])=={chosen,'A000000001'} and len(downloads)==3
-    import src.vision.public_annotations as annotation
+    import src.visual.public_annotations as annotation
     def propose(downloads,output):
         assert len(downloads['records'])==2
         proposals={}
@@ -50,8 +50,8 @@ def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(produ
         records={pid:dict(accepted=True,image_sha256=downloads[pid]['image_sha256'],proposal_sha256=digest(proposal)) for pid,proposal in proposed['proposals'].items()}))
     result=flow.publish_groups(root,working)
     assert len(result['groups'])==1
-    directory=public/'groups/simple_v2/test_chair'
-    pair=load_pair(directory/'pair.json',public)
+    directory=root/'data/groups/test_chair'
+    pair=load_pair(directory/'pair.json',root/'data')
     assert Path(pair['source']['image']).name=='source.png' and Path(pair['target']['image']).name=='target.png'
     assert Path(pair['source']['image']).read_bytes()==Path(downloads[chosen]['image']).read_bytes()
     generated=read_json(directory/'pipeline.json')

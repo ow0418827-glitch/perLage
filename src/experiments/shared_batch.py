@@ -2,15 +2,15 @@
 import argparse
 import copy
 import csv
-from pathlib import Path
+from src.paths import PUBLIC, PRIVATE, VISUAL_CONFIGS, EXPERIMENT_CONFIGS, public_root_for, ProjectPath as Path
 import shutil
 
 from src.paths import DATA
-from src.vision.audit import read_json,save_json,freeze_json,digest
-from src.vision.image_utils import sha256_file
-from src.vision.visual_retrieval import VisualMemoryRetriever,memory_index_text,resolve_image,canonical_digest
-from src.memory.shared_pool import load_shared_pool
-from src.memory.multimodal_memory import apply_controlled_image_substitution
+from src.visual.audit import read_json,save_json,freeze_json,digest
+from src.visual.image_utils import sha256_file
+from src.visual.visual_retrieval import VisualMemoryRetriever,memory_index_text,resolve_image,canonical_digest
+from src.agent.memory.shared_pool import load_shared_pool
+from src.agent.memory.multimodal_memory import apply_controlled_image_substitution
 from src.experiments.pipeline import load_frozen
 from src.experiments.query_contract import load_formal_queries
 from src.experiments.defenses import Defender,conditions,table_groups
@@ -112,14 +112,14 @@ def finalize(root):
     for key,record in frozen:
         config=read_json(root/'configs'/(key+'.json'))
         queries=load_formal_queries(config['evaluation']['query_manifest'],record['target'])
-        readable=DATA/'public/groups'/key/'perlage.png'
+        readable=PUBLIC/'groups'/key/'perlage.png'
         if not readable.exists():shutil.copyfile(record['image'],readable)
         if sha256_file(readable)!=record['image_sha256']:raise ValueError('正式方法图片内容改变')
         groups.append(dict(key=key,source=record['source'],target=record['target'],
             frozen_image=record['image'],frozen_image_sha256=record['image_sha256'],queries=queries,
             method_record=str((root/'groups'/key/'methods/PerLAGE/FROZEN_IMAGE.json').resolve())))
     banks,ids=make_banks(active,groups,active_path)
-    poisoned=DATA/'private/shared_memory_perlage.json'
+    poisoned=PRIVATE/'shared_memory_perlage.json'
     freeze_json(poisoned,dict(schema_version=1,scope='shared',state='evaluation_modified',
         entries=banks['modified'],base_pool_sha256=sha256_file(active_path),
         substituted_memory_ids=ids,simultaneous_substitutions=2,source_project_modified=False))

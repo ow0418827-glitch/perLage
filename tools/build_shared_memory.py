@@ -4,7 +4,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from src.memory.shared_pool import build_shared_pool
+from src.paths import ProjectPath as Path
+from src.agent.memory.shared_pool import build_shared_pool
 from src.paths import SHARED_MEMORY
 
 

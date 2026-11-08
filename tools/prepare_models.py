@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from src.paths import ProjectPath as Path
 
 
 def main():
@@ -15,8 +16,8 @@ def main():
     os.environ['HF_ENDPOINT'] = args.endpoint
     os.environ.pop('HF_HUB_OFFLINE', None)
     from huggingface_hub import snapshot_download
-    from src.paths import MODEL_ROOT, CONFIGS
-    from src.vision.audit import read_json, save_json, model_files
+    from src.paths import MODEL_ROOT, VISUAL_CONFIGS
+    from src.visual.audit import read_json, save_json, model_files
     if args.scope in ('generation','all'):
         downloads = [
             ('facebook/sam2.1-hiera-tiny','sam2.1-hiera-tiny-source', ['*.json','model.safetensors','README.md','LICENSE*']),
@@ -32,8 +33,8 @@ def main():
             save_json(root/'download_manifest.json', dict(source=repo, endpoint=args.endpoint, model=model_files(root)))
             print('已准备公开模型：' + name, flush=True)
     if args.scope in ('encoders','all'):
-        specs = read_json(CONFIGS/'optimization.json')['surrogates']
-        specs.append(read_json(CONFIGS/'evaluator.example.json')['surrogate'])
+        specs = read_json(VISUAL_CONFIGS/'optimization.json')['surrogates']
+        specs.append(read_json(VISUAL_CONFIGS/'evaluator.example.json')['surrogate'])
         for spec in specs:
             snapshot_download(spec['hf_repo'], allow_patterns=['open_clip_model.safetensors','open_clip_pytorch_model.safetensors','open_clip_config.json','*.json','*.txt'])
             print('已准备公开编码器：' + spec['name'] + '/' + spec['pretrained'], flush=True)

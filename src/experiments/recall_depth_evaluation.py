@@ -3,15 +3,15 @@ from __future__ import annotations
 
 import argparse
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import time
 
-from src.vision.audit import read_json, save_json, freeze_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json, save_json, freeze_json
+from src.visual.image_utils import sha256_file
 
 
 def replace_reused_image(entries, bank_path, source_asin, image, original_sha):
-    from src.memory.multimodal_memory import apply_controlled_image_substitution
+    from src.agent.memory.multimodal_memory import apply_controlled_image_substitution
     matches=[(i,e) for i,e in enumerate(entries) if e.get('FinalASIN')==source_asin and e.get('EntryType')=='error']
     if len(matches)!=1:raise ValueError('须唯一指定共享库中的原商品购买记录')
     index,entry=matches[0]
@@ -40,7 +40,7 @@ def inputs(root):
 
 
 def ranking_rows(plan,bank,encoder):
-    from src.vision.visual_retrieval import VisualMemoryRetriever
+    from src.visual.visual_retrieval import VisualMemoryRetriever
     ranker=VisualMemoryRetriever(encoder,plan['bank_path'],cache_dir=None)
     lookup={e['Id']:e for e in bank};rows=[]
     for query in plan['queries']:
@@ -109,12 +109,12 @@ def shopping(root,device='cuda'):
     import numpy as np
     import src.agent.shopping as agent
     from src.agent.prompts.webshop_prompt import INITIAL_PROMPTS
-    from src.configuration.llm_config import load_model_config
-    from src.configuration.shopping_prompt import load_shopping_prompt
+    from src.agent.config.llm_config import load_model_config
+    from src.agent.prompts.loader import load_shopping_prompt
     from src.paths import CONFIGS
     from src.experiments.shared_evaluation import make_eval_encoder
     from src.experiments import shared_shopping as service
-    from src.vision.visual_retrieval import VisualMemoryRetriever
+    from src.visual.visual_retrieval import VisualMemoryRetriever
     root=Path(root);plan,bank=inputs(root)
     if plan.get('shopping_authorized') is not True or read_json(root/'SHOPPING_AUTHORIZATION.json').get('shopping_allowed') is not True:
         raise PermissionError('本轮购物尚未明确授权')
@@ -140,7 +140,7 @@ def shopping(root,device='cuda'):
     ranking={r['task_id']:r for r in read_json(root/'retrieval/RANKINGS.json')['rows']}
     encoder=make_eval_encoder(device);process=None
     try:
-        process=service.start_server(root);agent.WEBSHOP_URL=f'http://127.0.0.1:{service.PORT}/'
+        process=service.start_server(root)
         cache=service.prepare_original_cache(root,bank,[plan['source']]);save_json(root/'shopping/PREPARED_ORIGINAL_CACHE.json',cache)
         retriever=VisualMemoryRetriever(encoder,plan['bank_path'],cache_dir=root/'shopping/index')
         budget=sum(len(str(e.get('Instruction','')))+sum(len(str(a)) for a in e.get('Actions',[])) for e in bank)+20000
@@ -149,7 +149,7 @@ def shopping(root,device='cuda'):
                 if (top_k,query['task_id']) in done:continue
                 session=f"perlage_shampoo_visual_k{top_k}_{query['task_id']}"
                 service.register_goal(root,session,plan['target_asin'],query['instruction'])
-                env=agent.webshopEnv(instruction_overrides={session:query['instruction']},
+                env=agent.webshopEnv(base_url=f'http://127.0.0.1:{service.PORT}/',instruction_overrides={session:query['instruction']},
                     image_snapshot_path=plan['bank_path'],image_cache_root=root/'shopping/observed_images')
                 path=root/'shopping/episodes'/f'top{top_k}'/(query['task_id']+'.json')
                 try:

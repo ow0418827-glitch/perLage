@@ -1,10 +1,10 @@
 import numpy as np
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import pytest
 from PIL import Image
 
-from src.vision.audit import save_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import save_json
+from src.visual.image_utils import sha256_file
 
 
 @pytest.fixture
@@ -24,8 +24,8 @@ def products(tmp_path):
 @pytest.fixture
 def calibration_factory(tmp_path):
     """真实跑拟合函数的合成单元夹具；这些标签不是生产开发集。"""
-    from src.vision.shape_calibration import calibrate
-    from src.vision.pair_selection import SelectionConfig
+    from src.visual.shape_calibration import calibrate
+    from src.visual.pair_selection import SelectionConfig
     def factory(snapshot=None,directory=None):
         directory=Path(directory or tmp_path/'public_calibration');directory.mkdir(parents=True,exist_ok=True)
         records=[]

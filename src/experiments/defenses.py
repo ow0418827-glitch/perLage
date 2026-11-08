@@ -1,10 +1,10 @@
 """对共享池所有图片施加相同防御，查询图片保持原样。"""
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import io
 from PIL import Image, ImageFilter
 
-from src.vision.audit import digest, read_json, save_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import digest, read_json, save_json
+from src.visual.image_utils import sha256_file
 
 
 def conditions():
@@ -38,7 +38,7 @@ class Defender:
                         implementation_sha256=sha256_file(__file__), pillow=PIL.__version__)
         if spec['kind'] in ('vae', 'diffusion'):
             if self.purifier is None:
-                from src.vision.diffusion_purification import LatentDiffusionPurifier, PurificationConfig
+                from src.visual.diffusion_purification import LatentDiffusionPurifier, PurificationConfig
                 self.purifier = LatentDiffusionPurifier(PurificationConfig(working_size=512), device=self.device)
             identity['purifier'] = self.purifier.snapshot()
         path = self.output / spec['label'] / (digest(identity) + '.png')
@@ -62,12 +62,12 @@ class Defender:
             with Image.open(stream) as decoded:
                 decoded.convert('RGB').save(path)
         elif spec['kind'] == 'resize':
-            from src.vision.diffusion_purification import working_shape
+            from src.visual.diffusion_purification import working_shape
             h, w = working_shape((image.height, image.width), spec['size'])
             image.resize((w, h), Image.Resampling.BICUBIC).resize(image.size, Image.Resampling.BICUBIC).save(path)
         elif spec['kind'] in ('vae', 'diffusion'):
             import torch
-            from src.vision.image_utils import read_tensor, save_tensor_image
+            from src.visual.image_utils import read_tensor, save_tensor_image
             tensor = read_tensor(image_path, self.purifier.device)
             with torch.no_grad():
                 output = (self.purifier.reconstruct(tensor) if spec['kind'] == 'vae'

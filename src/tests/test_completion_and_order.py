@@ -1,11 +1,11 @@
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import pytest
 
-from src.vision.audit import save_json, read_json, digest
-from src.vision.image_utils import sha256_file
-from src.vision._perlage.evidence import METHOD, DEFINITION, validate_complete
-from src.vision._natural.evidence import STAGES
-from src.vision.retrieval_objective import TRAINING_DATA_POLICY
+from src.visual.audit import save_json, read_json, digest
+from src.visual.image_utils import sha256_file
+from src.visual._perlage.evidence import METHOD, DEFINITION, validate_complete
+from src.visual._perlage.components.evidence import STAGES
+from src.visual.retrieval_objective import TRAINING_DATA_POLICY
 
 
 def complete_fixture(products, tmp_path):
@@ -43,7 +43,7 @@ def test_initialization_alone_and_short_schedule_rejected(products,tmp_path):
 def test_both_methods_use_same_public_selection_before_generation(products,tmp_path,monkeypatch,calibration_factory):
     import numpy as np
     from src.experiments import pipeline
-    from src.vision import optimization
+    from src.visual import optimization
     events=[]
     public=tmp_path/'data/public';public.mkdir(parents=True)
     # 此夹具仅隔离编排行为，真实模型另做本地加载和推理检查。

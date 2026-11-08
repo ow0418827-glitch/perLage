@@ -39,7 +39,7 @@ Some recalled records are public catalog references explicitly marked as having 
 
 ## 入口与输出
 
-运行入口为 `tools/run_shampoo_visual_guidance.py`，输出目录为 `src/output/shampoo_k13_20261106`。
+运行入口为 `tools/run_shampoo_visual_guidance.py`，输出目录为 `output/shampoo_k13_20261106`。
 
 后台依次执行完整排名、独立显卡复核、四十次购物和结果报告；既有有效结果按摘要保留，恢复时跳过。原项目只读，图片复制保持逐字节一致。
 

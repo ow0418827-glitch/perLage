@@ -1,12 +1,12 @@
 import copy
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import numpy as np
 import pytest
 
-from src.memory.shared_pool import build_shared_pool, load_shared_pool, evaluation_banks
-from src.vision.audit import save_json
-from src.vision.image_utils import sha256_file
-from src.vision.visual_retrieval import VisualMemoryRetriever
+from src.agent.memory.shared_pool import build_shared_pool, load_shared_pool, evaluation_banks
+from src.visual.audit import save_json
+from src.visual.image_utils import sha256_file
+from src.visual.visual_retrieval import VisualMemoryRetriever
 
 
 class ToyEncoder:

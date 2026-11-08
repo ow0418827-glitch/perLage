@@ -3,15 +3,15 @@ import argparse
 import copy
 from dataclasses import asdict
 import os
-from pathlib import Path
+from src.paths import PUBLIC, PRIVATE, VISUAL_CONFIGS, EXPERIMENT_CONFIGS, public_root_for, ProjectPath as Path
 import shutil
 
 from src.paths import PROJECT, CONFIGS, DATA, OUTPUT, PRIVATE, SHARED_MEMORY
-from src.vision.audit import digest, freeze_json, read_json, save_json
-from src.vision.image_utils import sha256_file
-from src.vision.optimization import METHODS, normalize_method
-from src.vision.catalog_training_guard import catalog_training_guard
-from src.vision.pair_selection import SelectionConfig, LocalSelectionBackend, choose_pair, validate_product
+from src.visual.audit import digest, freeze_json, read_json, save_json
+from src.visual.image_utils import sha256_file
+from src.visual.optimization import METHODS, NATURAL_METHODS, normalize_method
+from src.visual.catalog_training_guard import catalog_training_guard
+from src.visual.pair_selection import SelectionConfig, LocalSelectionBackend, choose_pair, validate_product
 from src.experiments.query_contract import QueryImagePending, pending_query_spec
 
 
@@ -34,10 +34,10 @@ def project_path(value):
 def source_snapshot():
     # 只记录公共生成及选择所依赖的实现，不在训练进程读取评估请求源码。
     files = [PROJECT / 'src/paths.py', PROJECT / 'src/model_identity.py', Path(__file__)]
-    for directory in ('src/vision', 'src/vendor'):
+    for directory in ('src/visual',):
         files.extend(p for p in (PROJECT / directory).rglob('*.py') if '__pycache__' not in p.parts)
     sources = {p.relative_to(PROJECT).as_posix(): sha256_file(p) for p in sorted(files)}
-    sources['src/configs/optimization.json'] = sha256_file(CONFIGS / 'optimization.json')
+    sources['src/visual/config/optimization.json'] = sha256_file(VISUAL_CONFIGS / 'optimization.json')
     return sources
 
 
@@ -57,9 +57,7 @@ def load_config(path):
 
 def public_inputs(config):
     path = project_path(config['public_catalog'])
-    public_root = (DATA / 'public').resolve()
-    if not path.is_relative_to(public_root):
-        raise ValueError('公开目录清单须置于新项目的公开输入目录')
+    public_root = public_root_for(path, extra_roots=(PUBLIC, DATA))
     document = read_json(path)
     if set(document) != {'schema_version', 'target', 'candidates'} or document['schema_version'] not in (1,2):
         raise ValueError('公开清单仅接受目标商品及攻击者自有候选')
@@ -78,11 +76,14 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                  project_path(evaluation.get('query_manifest', PRIVATE / 'query_image.json')),
                  project_path(evaluation.get('encoder_config', PRIVATE / 'evaluator.json'))]
     root = Path(root)
-    with catalog_training_guard(allowed_output_roots=[root / 'selection'], private_paths=protected):
+    public_input = project_path(config.get('public_pair') or config['public_catalog'])
+    input_root = public_root_for(public_input, extra_roots=(PUBLIC, DATA))
+    with catalog_training_guard(allowed_output_roots=[root, input_root, PUBLIC], private_paths=protected):
         if config.get('public_pair'):
-            from src.vision.pair_assets import load_pair
+            from src.visual.pair_assets import load_pair
             manifest = project_path(config['public_pair'])
-            selected = load_pair(manifest, DATA / 'public')
+            # 图对已经冻结时核验图像及公开筛选证据，无需再次加载选图模型权重。
+            selected = load_pair(manifest, input_root, verify_models=False)
             if config.get('selection') and digest(selected['configuration']) != digest(config['selection']):
                 raise ValueError('分组图对已确定；更改筛选参数须重新执行公开选图')
             original_models = selected.get('binding', {}).get('models_configuration', {})
@@ -96,14 +97,14 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
         raw_settings=dict(config.get('selection',{}))
         if raw_settings.get('calibration_path'):
             calibration=project_path(raw_settings['calibration_path'])
-            if not calibration.is_relative_to((DATA/'public').resolve()):raise ValueError('校准证书须位于公开数据目录')
+            public_root_for(calibration, extra_roots=(PUBLIC, DATA))
             raw_settings['calibration_path']=str(calibration)
         settings = SelectionConfig(**raw_settings)
         settings.validate()
         path, target, candidates = public_inputs(config)
         binding = dict(public_catalog_sha256=sha256_file(path), public_records_sha256=digest([target] + candidates),
                        configuration=digest(asdict(settings)), models_configuration=config.get('selection_models', {}),
-                       selector_code_sha256=sha256_file(PROJECT / 'src/vision/pair_selection.py'),
+                       selector_code_sha256=sha256_file(PROJECT / 'src/visual/pair_selection.py'),
                        calibration_sha256=sha256_file(settings.calibration_path))
         saved_path = root / 'selection' / 'SELECTED_PAIR.json'
         if saved_path.exists():
@@ -112,12 +113,12 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                 raise ValueError('公开候选、筛选配置或实现改变；请使用新的运行目录')
             if saved.get('status') != 'selected':
                 raise ValueError('该公开候选集没有合格图对')
-            from src.vision.audit import verify_model_snapshot
+            from src.visual.audit import verify_model_snapshot
             verify_model_snapshot(saved['models'])
             return saved
         backend = backend_factory(config.get('selection_models', {}), root / 'selection' / 'features', device)
         try:
-            selection = choose_pair(target, candidates, backend, settings,public_root=DATA/'public')
+            selection = choose_pair(target, candidates, backend, settings,public_root=input_root)
         finally:
             backend.close()
         selection.update(binding=binding, target=target)
@@ -138,10 +139,10 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                 raise SelectedAnnotationsPending('轻量选图已完成；仅须核对选中源图与目标图的主体和印刷区，然后继续发布或生成')
             selection['source']=validate_product(selection['source'],path.parent,owned=True)
             selection['target']=validate_product(target,path.parent)
-            from src.vision.pair_assets import publish_pair
+            from src.visual.pair_assets import publish_pair
             scoring_path = root / 'selection' / 'SCORED_PAIR.json'
             freeze_json(scoring_path, selection)
-            selection = publish_pair(scoring_path, DATA / 'public' / 'groups' / root.name, DATA / 'public')
+            selection = publish_pair(scoring_path, root / 'data' / 'pair', root / 'data', input_public_root=input_root)
         freeze_json(saved_path, selection)
         if selection['status'] != 'selected':
             raise ValueError('没有候选通过公开筛选；已保存全部拒绝原因，不自动降低门槛')
@@ -160,24 +161,31 @@ def product_boxes(record):
     return [[int(xs.min()), int(ys.min()), int(xs.max()+1), int(ys.max()+1)]]
 
 
-def generation_definition(selection, options):
-    from src.vision._perlage.evidence import DEFINITION
-    from src.vision.retrieval_objective import TRAINING_DATA_POLICY
-    if set(options) - {'harmonization', 'latent', 'initialization'}:
+def generation_definition(selection, options, method='PerLAGE'):
+    method = normalize_method(method)
+    if method not in NATURAL_METHODS:
+        raise ValueError('只有感知生成方法具有四阶段配置')
+    from src.visual._perlage.evidence import definition_for_method
+    from src.visual.retrieval_objective import TRAINING_DATA_POLICY
+    if set(options) - {'harmonization', 'latent', 'initialization', 'pixel_optimization'}:
         raise ValueError('生成参数只能配置初始化、颜色融合和潜变量细化；不能传入历史成图或记忆')
     source, target = selection['source'], selection['target']
-    definition = dict(method='PerLAGE', definition=DEFINITION, color_scheme='statistics',
-        training_data_policy=TRAINING_DATA_POLICY,
+    is_no_pixel = method == 'PerLAGE_no_pixel'
+    definition = dict(method=method, definition=definition_for_method(method), color_scheme='statistics',
+        training_data_policy=TRAINING_DATA_POLICY, pixel_optimization=False if is_no_pixel else options.get('pixel_optimization', False),
         data=dict(source=source['image'], target=target['image'], source_title=source['title'],
                   training_queries=list(TRAINING_QUERIES)),
         source_boxes=product_boxes(source), target_boxes=product_boxes(target),
         print_regions=source['text_regions'])
     definition.update(copy.deepcopy(options))
+    if is_no_pixel:
+        definition['pixel_optimization'] = False
+        definition.setdefault('latent', {})['auxiliary_levels'] = 0
     return definition
 
 
 def load_frozen(method_root):
-    from src.vision.attack_completion import validate_attack_completion
+    from src.visual.attack_completion import validate_attack_completion
     method_root = Path(method_root)
     frozen = read_json(method_root / 'FROZEN_IMAGE.json')
     binding = read_json(method_root / 'PUBLIC_RUN.json')
@@ -196,12 +204,12 @@ def load_frozen(method_root):
 
 
 def generate(config, root, selection, method, *, device='cuda', generator=None):
-    from src.vision.optimization import generate_attack
-    from src.vision.attack_completion import validate_attack_completion
+    from src.visual.optimization import generate_attack
+    from src.visual.attack_completion import validate_attack_completion
     method = normalize_method(method)
     generation = config.get('generation', {})
-    if set(generation) - {'lucid', 'PerLAGE'}:
-        raise ValueError('只允许两种现用方法的生成设置')
+    if set(generation) - set(METHODS):
+        raise ValueError('生成设置只能使用当前登记的三种方法')
     options = copy.deepcopy(generation.get(method, {}))
     output = Path(root) / 'methods' / method
     source, target = selection['source'], selection['target']
@@ -212,7 +220,8 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
     private_paths = [project_path(evaluation.get('shared_pool', SHARED_MEMORY)),
                      project_path(evaluation.get('query_manifest', PRIVATE / 'query_image.json')),
                      project_path(evaluation.get('encoder_config', PRIVATE / 'evaluator.json'))]
-    with catalog_training_guard(allowed_output_roots=[output, Path(root) / 'selection'], private_paths=private_paths) as audit:
+    with catalog_training_guard(allowed_output_roots=[output, Path(root) / 'selection',
+            Path(source['image']).parent, Path(target['image']).parent], private_paths=private_paths) as audit:
         freeze_json(output / 'PUBLIC_RUN.json', public_binding)
         if (output / 'FROZEN_IMAGE.json').exists():
             frozen = read_json(output / 'FROZEN_IMAGE.json')
@@ -222,11 +231,12 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
                 dict(method=method, source_image_sha256=source['image_sha256'], target_image_sha256=target['image_sha256']))
             freeze_json(output / 'QUERY_IMAGE_REQUEST.json', pending_query_spec(target))
             return frozen
-        if method == 'PerLAGE':
-            definition = generation_definition(selection, options)
+        if method in NATURAL_METHODS:
+            definition = generation_definition(selection, options, method=method)
             freeze_json(output / 'definition.json', definition)
+            parameter = 'perlage_no_pixel_config' if method == 'PerLAGE_no_pixel' else 'perlage_config'
             image, metadata = (generator or generate_attack)(source['image'], target['image'], output / 'generation',
-                method=method, perlage_config=definition, device=device)
+                method=method, device=device, **{parameter: definition})
             steps = metadata['perlage_ready']['stages']['latent_generation_refinement']['steps_requested']
         else:
             if set(options) - {'steps', 'epsilon_levels', 'target_text', 'text_weight'}:
@@ -252,7 +262,7 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage', choices=('select', 'generate', 'evaluate', 'verify', 'report', 'all', 'doctor'), nargs='?', default='all')
-    parser.add_argument('--config', type=Path, default=CONFIGS / 'pipeline.example.json')
+    parser.add_argument('--config', type=Path, default=EXPERIMENT_CONFIGS / 'pipeline.example.json')
     parser.add_argument('--method', choices=METHODS)
     parser.add_argument('--device', choices=('cpu', 'cuda'), default='cuda')
     args = parser.parse_args(argv)
@@ -278,7 +288,7 @@ def main(argv=None):
         if args.stage in ('generate', 'all'):
             generate(config, root, selection, method, device=args.device)
         if args.stage in ('evaluate', 'all'):
-            from src.vision.attack_completion import validate_attack_completion
+            from src.visual.attack_completion import validate_attack_completion
             from src.experiments.shared_evaluation import evaluate, report
             frozen = load_frozen(method_root)
             settings = config.get('evaluation', {})

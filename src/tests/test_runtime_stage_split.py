@@ -1,8 +1,8 @@
 import importlib.util
 import io
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
-from src.vision.audit import read_json,save_json
+from src.visual.audit import read_json,save_json
 
 
 def load_runner(tmp_path,monkeypatch):

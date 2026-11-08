@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "implemented_not_benchmarked",
+  "seed": 42,
+  "device": "cuda",
+  "attack_precision": "fp32",
+  "attack": {
+    "epsilon": 0.06274509803921569,
+    "spatial_step_size": 0.00196078431372549,
+    "reference_steps": 1000,
+    "initialization": "zero",
+    "clusters": 10,
+    "cluster_iterations": 100,
+    "sinkhorn_iterations": 100,
+    "sinkhorn_regularization": 0.1,
+    "sinkhorn_tolerance": 0.01,
+    "detach_transport_plan": true,
+    "local_weight": 0.2,
+    "text_weight": 0.0,
+    "text_model_index": 1,
+    "log_every": 50,
+    "model_weight_update": "softmax_negative_preupdate_global_similarity"
+  },
+  "surrogates": [
+    {
+      "name": "ViT-B-16",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch16_clip_224.openai"
+    },
+    {
+      "name": "ViT-B-32",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch32_clip_224.openai"
+    },
+    {
+      "name": "ViT-B-32",
+      "pretrained": "laion2b_s34b_b79k",
+      "hf_repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K"
+    }
+  ],
+  "runtime": {
+    "allow_downloads": false,
+    "allow_device_fallback": false,
+    "require_true_local_tokens": true,
+    "hash_model_weights": true,
+    "cache_directory": "output/cache",
+    "device_memory_sample_interval_seconds": 0.05
+  }
+}

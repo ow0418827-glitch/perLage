@@ -12,10 +12,11 @@ import time
 
 PROJECT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(PROJECT))
+from src.paths import ProjectPath as Path
 from src.paths import OUTPUT
-from src.configuration.shopping_prompt import DEFAULT_TEMPLATE,load_shopping_prompt
-from src.vision.audit import read_json,save_json,freeze_json
-from src.vision.image_utils import sha256_file
+from src.agent.prompts.loader import DEFAULT_TEMPLATE,load_shopping_prompt
+from src.visual.audit import read_json,save_json,freeze_json
+from src.visual.image_utils import sha256_file
 
 BASELINE=OUTPUT/'shared_groups29_20261105_nodefense'
 DEFAULT_ROOT=OUTPUT/'shared_groups29_20261105_neutral'

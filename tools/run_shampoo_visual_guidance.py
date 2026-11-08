@@ -14,17 +14,16 @@ import time
 
 PROJECT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(PROJECT))
+from src.paths import ProjectPath as Path
 from src.paths import OUTPUT,CONFIGS
-from src.vision.audit import read_json,save_json,freeze_json
-from src.vision.image_utils import sha256_file
+from src.visual.audit import read_json,save_json,freeze_json
+from src.visual.image_utils import sha256_file
 from src.experiments.recall_depth_evaluation import replace_reused_image
 
 OLD=PROJECT.parent/'lage/src/output/lage_runs'
 NIGHT=OUTPUT/'shared_groups29_20261105_neutral'
 DEFAULT_ROOT=OUTPUT/'shampoo_k13_20261106'
-GUIDANCE=('Some recalled records are public catalog references explicitly marked as having no observed purchase. '
-    'Treat only completed purchase records as purchase histories. '
-    'Compare the reference image with the recalled images before choosing a product.')
+from src.agent.prompts.loader import load_shopping_prompt
 SOURCE_ASIN='B08XYBS678'
 TARGET_ASIN='B00BDJODWI'
 
@@ -41,9 +40,9 @@ def copy_frozen(source,destination):
 
 
 def seed_original_cache(root,bank,extra_roots,forbidden_hashes):
-    from src.memory.multimodal_memory import _assert_original_product_image,validated_image_bytes
+    from src.agent.memory.multimodal_memory import _assert_original_product_image,validated_image_bytes
     from src.experiments.shared_shopping import CATALOG
-    from src.environment.disk_catalog import DiskCatalog
+    from src.webshop.disk_catalog import DiskCatalog
     destination=Path(root)/'shopping/observed_images/original_image_cache'
     known={e['FinalASIN']:e['PrimaryImage']['SHA256'] for e in bank}
     imported=[]
@@ -70,8 +69,9 @@ def seed_original_cache(root,bank,extra_roots,forbidden_hashes):
 
 
 def prepare(root):
-    from src.configuration.llm_config import load_model_config
+    from src.agent.config.llm_config import load_model_config
     root=Path(root).resolve()
+    GUIDANCE=load_shopping_prompt(profile='visual_comparison')['text']
     old_ready=OLD/'catalog_shampoo_20261028/generated/07_shampoo/ready.json'
     ready=read_json(old_ready)
     if ready['method']!='nf_lage' or ready['status']!='completed':raise ValueError('旧洗发水修改图未完整完成')

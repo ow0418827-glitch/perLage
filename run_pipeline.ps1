@@ -1,7 +1,7 @@
 param(
     [ValidateSet('select','generate','evaluate','verify','report','all','doctor')][string]$Stage = 'all',
-    [ValidateSet('lucid','PerLAGE')][string]$Method = 'PerLAGE',
-    [string]$Config = 'src/configs/pipeline.example.json',
+    [ValidateSet('lucid','PerLAGE','PerLAGE_no_pixel')][string]$Method = 'PerLAGE',
+    [string]$Config = 'src/experiments/config/pipeline.example.json',
     [ValidateSet('cpu','cuda')][string]$Device = 'cuda'
 )
 $ErrorActionPreference = 'Stop'

@@ -1,7 +1,7 @@
 """离线核查当前项目真实模型和可导入组件。"""
 import importlib
 import json
-from pathlib import Path
+from src.paths import ProjectPath as Path
 
 from src.paths import PROJECT, MODEL_ROOT, SHARED_MEMORY
 

@@ -10,10 +10,10 @@
 
 选图阶段只需要一个冻结的小型视觉模型，准备工具优先使用中国大陆镜像。正式生成的分割、文字识别与生成模型仍在相应阶段准备。
 
-把 `src/configs/shape_development.example.json`（开发标签模板）复制到公开数据目录，填入实际公开图片、来源、核对者、逐对说明及零或一标签。模板中的空标签不能用于校准。正负样本须等量；开发商品及其图片不能作为正式目标或候选。若需隔离同系列变体，可额外登记开发保留商品。
+把 `src/visual/config/shape_development.example.json`（开发标签模板）复制到公开开发校准目录，填入实际公开图片、来源、核对者、逐对说明及零或一标签。模板中的空标签不能用于校准。正负样本须等量；开发商品及其图片不能作为正式目标或候选。若需隔离同系列变体，可额外登记开发保留商品。
 
 ```powershell
-.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py calibrate --development src/data/public/calibration/development.json
+.\.venv\Scripts\python.exe -X utf8 -B tools/select_public_pairs.py calibrate --development output/datasets/public/calibration/development.json
 ```
 
 证书写到配置指定的公开校准路径，包含实际逐对分数、阈值、拟合误差及模型身份。没有真实校准证书时停止，不将旧阈值或合成测试标签当作正式开发结果。更换模型、预处理或标签须另建证书与运行目录。
@@ -56,10 +56,10 @@
 
 ## 正式文件与两种方法
 
-默认运行目录为 `src/output/public_pair_selection/shape_v2/`（选图输出）；公开准备目录为 `src/data/public/selection_runs/simple_v2/`（候选与标注）；正式分组目录如下。
+默认运行目录为 `output/public_pair_selection/shape_v2/`（选图输出）；候选、下载与标注默认保存在该次运行的数据子目录。正式分组目录如下。
 
 ```text
-src/data/public/groups/shape_v2/02_chair/
+output/public_pair_selection/shape_v2/data/groups/02_chair/
   source.jpg
   target.jpg
   pair.json
@@ -67,7 +67,7 @@ src/data/public/groups/shape_v2/02_chair/
   metadata/
 ```
 
-图片保留原始格式与字节，实际扩展名可能为其他受支持格式。协议版本目录保留旧两组已冻结的文件，不覆盖此前 source、target 或生成图。
+图片保留原始格式与字节，实际扩展名可能为其他受支持格式。不同实验使用不同运行目录，既有原商品图、目标商品图与生成图保持冻结。根数据目录暂不填入这些开发图对，待最终九组确认后再显式发布。
 
 生成时使用该目录中的完整流程配置，两种方法共同读取相同 source 与 target；生成准备须已有实际核对的主体和印刷区。新配置的正式模糊查询路径也按运行版本隔离，避免自动复用已经观察过的查询。所有组仍指向一个共享长期记忆池。
 

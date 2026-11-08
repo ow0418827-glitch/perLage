@@ -1,9 +1,9 @@
-from pathlib import Path
+from src.paths import ProjectPath as Path
 import pytest
 
-from src.configuration.shopping_prompt import load_shopping_prompt, DEFAULT_TEMPLATE
-from src.vision.audit import save_json
-from src.vision.image_utils import sha256_file
+from src.agent.prompts.loader import load_shopping_prompt, DEFAULT_TEMPLATE
+from src.visual.audit import save_json
+from src.visual.image_utils import sha256_file
 
 
 def test_prompt_text_is_preserved_verbatim_and_bound_to_file(tmp_path):
