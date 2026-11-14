@@ -1,0 +1,137 @@
+{
+  "status": "running_confirmed",
+  "confirmed_at": "2026-11-11T15:22:40.240971+08:00",
+  "group": "06_jeans",
+  "profile": "rankfocus",
+  "observed_progress": {
+    "status": "running",
+    "profile": "rankfocus",
+    "step": 50,
+    "requested_steps": 1000,
+    "best": {
+      "source_ssim": 0.7814723217133852,
+      "source_mae_levels": 16.083162307739258,
+      "halo_error": 0.0,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 50,
+      "joint_scores": [
+        [
+          0.8480355739593506
+        ]
+      ],
+      "training_utility": 0.7880708575248718,
+      "regularization": 5.129971327733074e-07,
+      "selection_utility": 0.7880703210830688,
+      "halo_ceiling": 12.0,
+      "parent_halo_error": 0.0,
+      "compensated_image_cosine": [
+        [
+          0.7281061410903931
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.8102231621742249
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2514597773551941
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6658992767333984
+        ]
+      ],
+      "selection": [
+        1,
+        0.7880703210830688
+      ]
+    },
+    "accepted_updates": 50,
+    "rejected_updates": 0,
+    "seconds": 104.50621930000125
+  },
+  "encoder": {
+    "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+    "device": "cuda",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+    "image_size": 224,
+    "loading": {
+      "activation": "QuickGELU",
+      "actual_activation_modules": {
+        "GELU": 0,
+        "QuickGELU": 24
+      },
+      "architecture": {
+        "embed_dim": 512,
+        "text_cfg": {
+          "context_length": 77,
+          "heads": 8,
+          "layers": 12,
+          "vocab_size": 49408,
+          "width": 512
+        },
+        "vision_cfg": {
+          "image_size": 224,
+          "layers": 12,
+          "patch_size": 32,
+          "width": 768
+        }
+      },
+      "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+      "loader_version": 2,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "metadata_source": "registered_pretrained_tag",
+      "quick_gelu": true,
+      "registered_preprocess": {
+        "interpolation": "bicubic",
+        "resize_mode": "shortest"
+      },
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ],
+      "strict_state_dict": true
+    },
+    "name": "ViT-B-32",
+    "open_clip_torch_version": "3.3.0",
+    "precision": "fp32",
+    "preprocess": {
+      "align_corners": false,
+      "antialias": true,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "resize": "bicubic_direct_square",
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ]
+    },
+    "pretrained": "openai",
+    "requires_true_local_tokens": true,
+    "role": "attack_surrogate",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+    "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31"
+  },
+  "observed_gpu_memory_mib": 6858,
+  "observed_gpu_total_mib": 8151,
+  "plan_sha256": "145b86be37093686d2b589dd4e90a70f877a6b9c25c414982858fb1edce53936",
+  "previous_audit_sha256": "7e63c623ae65a67a07f4dba7f66dce3bb7a3dd46877f33ecb8ad48ad2bc55764",
+  "detached_queue": true,
+  "current_formal_evaluation_started": false,
+  "final_ranking_improvement_claimed": false
+}

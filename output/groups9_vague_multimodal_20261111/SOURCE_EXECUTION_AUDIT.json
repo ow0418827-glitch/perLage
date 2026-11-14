@@ -1,0 +1,29 @@
+{
+  "captured_at": "2026-11-10T19:57:12.320411+00:00",
+  "files": {
+    "tools/run_groups9_vague_multimodal_20261111.py": "af7ae8653eb73a0581b57fa352f4bbbe1a734c092aea90291bbaeee3e0ad6d03",
+    "tools/groups9_vague_report.py": "b4458ad22a9f474bcc06ab9acb79e7ec269217d740b8052d356f0f59aa7e51db"
+  },
+  "syntax_check": "passed",
+  "frozen_input_sha256": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c",
+  "shopping_calls": 0,
+  "generation_calls": 0,
+  "technical_recoveries": [
+    {
+      "issue": "后台启动绝对脚本路径含空格，参数未加引号；改用项目相对路径",
+      "evidence": [
+        "controller_launch_path_error.log",
+        "LAUNCH_initial_path_error.json"
+      ]
+    },
+    {
+      "issue": "内存快照的元组与落盘列表直接比较不相等；改按既有规范化内容摘要比较，实际模型摘要与上轮一致后继续",
+      "evidence": [
+        "failures",
+        "RECOVERY1_LAUNCH.json"
+      ],
+      "model_or_semantic_inputs_changed": false,
+      "valid_results_resampled": false
+    }
+  ]
+}

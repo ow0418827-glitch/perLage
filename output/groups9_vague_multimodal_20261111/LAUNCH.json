@@ -1,0 +1,15 @@
+{
+  "pid": 41696,
+  "launched_at": "2026-11-11T03:54:30.4505568+08:00",
+  "automation_id": "automation-7",
+  "scope": "retrieval_only",
+  "methods": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "expected_rankings": 720,
+  "expected_independent_scores": 136080,
+  "shopping_enabled": false,
+  "command": "tools/run_groups9_vague_multimodal_20261111.py",
+  "launch_path_quoting_fixed": true
+}

@@ -1,0 +1,188 @@
+{
+  "status": "completed",
+  "method": "perlage_generation_initialization",
+  "candidates": {
+    "generation_only": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\generative_anchor.png",
+      "sha256": "5a5f3b8f3ce19318052693479c82daac6b7200420b042458eb5cae6952db6cb7"
+    },
+    "natural_final": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\adversarial.png",
+      "sha256": "5a5f3b8f3ce19318052693479c82daac6b7200420b042458eb5cae6952db6cb7"
+    }
+  },
+  "run_identity_sha256": "15ed19a118bda4a215f2c6f24e3530a88f9b220ed72e94f8b61b9f77a328eb17",
+  "encoder": {
+    "provider": "clip",
+    "loader": "attack_surrogate",
+    "surrogate_number": 2,
+    "surrogate": {
+      "role": "attack_surrogate",
+      "name": "ViT-B-32",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+      "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+      "requires_true_local_tokens": true,
+      "loading": {
+        "architecture": {
+          "embed_dim": 512,
+          "vision_cfg": {
+            "image_size": 224,
+            "layers": 12,
+            "width": 768,
+            "patch_size": 32
+          },
+          "text_cfg": {
+            "context_length": 77,
+            "vocab_size": 49408,
+            "width": 512,
+            "heads": 8,
+            "layers": 12
+          }
+        },
+        "quick_gelu": true,
+        "activation": "QuickGELU",
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ],
+        "metadata_source": "registered_pretrained_tag",
+        "registered_preprocess": {
+          "interpolation": "bicubic",
+          "resize_mode": "shortest"
+        },
+        "strict_state_dict": true,
+        "actual_activation_modules": {
+          "QuickGELU": 24,
+          "GELU": 0
+        },
+        "loader_version": 2,
+        "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+      }
+    },
+    "fusion": "normalized_image_text_sum",
+    "text_policy": "reject_over_context_without_chunked_adapter"
+  },
+  "purifier": {
+    "kind": "sd15_latent_noise_then_ddim_purification_v1",
+    "config": {
+      "model_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "working_size": 512,
+      "reverse_steps": 10,
+      "start_timestep": 99,
+      "gradient_checkpointing": true
+    },
+    "model": {
+      "local_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "local_files_only": true,
+      "variant": "fp16",
+      "files": {
+        "unet/config.json": {
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+          "bytes": 743
+        },
+        "unet/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+          "bytes": 1719125304
+        },
+        "vae/config.json": {
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+          "bytes": 547
+        },
+        "vae/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+          "bytes": 167335342
+        },
+        "text_encoder/config.json": {
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+          "bytes": 617
+        },
+        "text_encoder/model.fp16.safetensors": {
+          "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+          "bytes": 246144864
+        },
+        "tokenizer/merges.txt": {
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+          "bytes": 524619
+        },
+        "tokenizer/special_tokens_map.json": {
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+          "bytes": 472
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+          "bytes": 806
+        },
+        "tokenizer/vocab.json": {
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+          "bytes": 1059962
+        },
+        "scheduler/scheduler_config.json": {
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+          "bytes": 308
+        }
+      }
+    },
+    "prompt": "",
+    "guidance_scale": 1.0,
+    "posterior": "mode",
+    "eta": 0.0,
+    "resize": "aspect_long_edge_round8_min64_bicubic_antialias_back_to_native",
+    "output_range": [
+      0.0,
+      1.0
+    ],
+    "quantization": "external_eight_bit_save_or_ste",
+    "implementation_sha256": "45e4373c1026a8f4e14de15ed873c635cef9a5a8407d2b8defb16a6bfe1194e0",
+    "not_original_diffpure": true,
+    "not_full_cognitiveguard": true
+  },
+  "generation_seconds": 14.851645700000518,
+  "refinement_and_development_seconds": 317.6164876999974,
+  "necessary_optimization_development_seconds": 332.57983349999995,
+  "content_mask_preparation_seconds": 0.11170010000205366,
+  "content_mask_record": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\mask_record.json",
+  "content_mask_record_sha256": "d705f6af518de647637e42b9b4b2b3010db6f89c980f9563cd850cfc0a298161",
+  "fine_ink_protection": true,
+  "content_semantics_certified": false,
+  "requires_manual_content_and_logo_review": true,
+  "observed_call_wall_seconds": 343.92351719999715,
+  "full_fresh_call_wall_observed": true,
+  "public_bank_preparation_seconds": 0.0,
+  "public_bank_reused": false,
+  "shadow_pool_used": false,
+  "mask_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\generation\\edit_mask.png",
+  "generation_mask_sha256": "2123b25e1e261132f8ad31d7e34ebbfd3c87a0057e77fe068aa254138f03bce2",
+  "hardware": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "purchase_runs": 0
+}

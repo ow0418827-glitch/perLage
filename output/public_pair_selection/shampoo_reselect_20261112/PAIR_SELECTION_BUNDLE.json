@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "status": "selected",
+  "selection_scope": "uniform_draw_after_public_shape_and_type_gates_v2",
+  "groups": [
+    {
+      "key": "07_shampoo",
+      "status": "selected",
+      "selection_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\groups\\07_shampoo\\selection\\DRAWN_PAIR.json",
+      "selection_sha256": "344ff252644d50b9a6b8428aa38760ff4b067d60ecd6656c0c69b4519eb44bc0",
+      "target": {
+        "id": "B00BDJODWI",
+        "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+        "source_url": "https://www.amazon.com/dp/B00BDJODWI",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e.jpg",
+        "image_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e"
+      },
+      "source": {
+        "id": "B09B63YYCW",
+        "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+        "source_url": "https://www.amazon.com/dp/B09B63YYCW",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72.jpg",
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72"
+      },
+      "candidate_count": 32,
+      "eligible_count": 15
+    }
+  ],
+  "public_plan_sha256": "51cd7db2c10c36b3afe142233fd6a3e1617ef0641466710c41941c2e93a19e74",
+  "shared_memory_read": false,
+  "formal_queries_read": false,
+  "generation_runs": 0
+}

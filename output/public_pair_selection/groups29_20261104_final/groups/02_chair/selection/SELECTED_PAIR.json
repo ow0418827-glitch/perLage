@@ -1,0 +1,724 @@
+{
+  "status": "selected",
+  "selected_source_id": "B09FY5Y9G2",
+  "target_id": "B09CYFD5BX",
+  "candidates": [
+    {
+      "source_id": "B01N4IMDJB",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7054199535080188,
+      "log_score": -0.34896197478124347,
+      "components": {
+        "shape": 0.3712315015161799,
+        "semantic": 0.9998501797673742,
+        "cross_modal": 0.9942129829087258,
+        "edit_cost": 0.9936127609955496
+      },
+      "raw": {
+        "shape": 0.43800827743594206,
+        "cls": 0.418110194677467,
+        "symmetric_patches": 0.4579063601944171,
+        "aspect_penalty": 0.8475444886323452,
+        "semantic_cosine": 0.7220772929393275,
+        "cross_modal_gap": 0.002901913378969445,
+        "pilot_recolor_lpips": 0.0016019311733543873
+      }
+    },
+    {
+      "source_id": "B07P9WKGBD",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.721297069969645,
+      "log_score": -0.3267042016329233,
+      "components": {
+        "shape": 0.41262336259163374,
+        "semantic": 0.9999046228324845,
+        "cross_modal": 0.9397032621503696,
+        "edit_cost": 0.987076395251895
+      },
+      "raw": {
+        "shape": 0.551914069687149,
+        "cls": 0.5165323812982878,
+        "symmetric_patches": 0.5872957580760101,
+        "aspect_penalty": 0.7476224746825683,
+        "semantic_cosine": 0.7216574056313269,
+        "cross_modal_gap": 0.031095566059245183,
+        "pilot_recolor_lpips": 0.0032519602682441473
+      }
+    },
+    {
+      "source_id": "B082LNGNQY",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6923542154356792,
+      "log_score": -0.3676575823093822,
+      "components": {
+        "shape": 0.36170853198575437,
+        "semantic": 0.9998291746910063,
+        "cross_modal": 0.9565898471094744,
+        "edit_cost": 0.9941134251237155
+      },
+      "raw": {
+        "shape": 0.4896787287241074,
+        "cls": 0.48590176314394606,
+        "symmetric_patches": 0.4934556943042687,
+        "aspect_penalty": 0.7386649874055415,
+        "semantic_cosine": 0.7177818500597568,
+        "cross_modal_gap": 0.022190280654717565,
+        "pilot_recolor_lpips": 0.0014759922632947564
+      }
+    },
+    {
+      "source_id": "B08BC6DM66",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8693229003052354,
+      "log_score": -0.14004064585834589,
+      "components": {
+        "shape": 0.6729532459020795,
+        "semantic": 0.9995754802658279,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9872276193567799
+      },
+      "raw": {
+        "shape": 0.6854084919779655,
+        "cls": 0.6937165037911297,
+        "symmetric_patches": 0.6771004801648013,
+        "aspect_penalty": 0.9818279956818999,
+        "semantic_cosine": 0.7165030350010742,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.003213662188500166
+      }
+    },
+    {
+      "source_id": "B08TTXMKCN",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8402625602601942,
+      "log_score": -0.17404086424681997,
+      "components": {
+        "shape": 0.6192519751769747,
+        "semantic": 0.9997850263542478,
+        "cross_modal": 0.9781794050391237,
+        "edit_cost": 0.9927686567507137
+      },
+      "raw": {
+        "shape": 0.7058501477287058,
+        "cls": 0.7050463214434803,
+        "symmetric_patches": 0.7066539740139313,
+        "aspect_penalty": 0.8773136581037946,
+        "semantic_cosine": 0.7175116458110073,
+        "cross_modal_gap": 0.011031092517606866,
+        "pilot_recolor_lpips": 0.0018144040368497372
+      }
+    },
+    {
+      "source_id": "B08XX7F1DZ",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7379213863500959,
+      "log_score": -0.30391798261644126,
+      "components": {
+        "shape": 0.44051885280361486,
+        "semantic": 0.9999796154247668,
+        "cross_modal": 0.9362752294445466,
+        "edit_cost": 0.9948164280075356
+      },
+      "raw": {
+        "shape": 0.5899452252875996,
+        "cls": 0.5810038674878386,
+        "symmetric_patches": 0.5988865830873605,
+        "aspect_penalty": 0.7467114469633361,
+        "semantic_cosine": 0.7207662126013346,
+        "cross_modal_gap": 0.03292289858824071,
+        "pilot_recolor_lpips": 0.001299263327382505
+      }
+    },
+    {
+      "source_id": "B08XX9CRWY",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7911011743722676,
+      "log_score": -0.23432941247571182,
+      "components": {
+        "shape": 0.5149188900653329,
+        "semantic": 0.9999361565685392,
+        "cross_modal": 0.99467252643577,
+        "edit_cost": 0.9933842805043297
+      },
+      "raw": {
+        "shape": 0.5429990280094241,
+        "cls": 0.555515761664475,
+        "symmetric_patches": 0.5304822943543731,
+        "aspect_penalty": 0.9482869462086699,
+        "semantic_cosine": 0.72135600498625,
+        "cross_modal_gap": 0.002670857577585728,
+        "pilot_recolor_lpips": 0.0016594250919297338
+      }
+    },
+    {
+      "source_id": "B08ZMJGSSR",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7515577192474844,
+      "log_score": -0.2856072673526164,
+      "components": {
+        "shape": 0.46064029177377314,
+        "semantic": 0.9999828021850415,
+        "cross_modal": 0.9595446765390097,
+        "edit_cost": 0.9609838184527688
+      },
+      "raw": {
+        "shape": 0.583614742621614,
+        "cls": 0.5822846461750568,
+        "symmetric_patches": 0.5849448390681711,
+        "aspect_penalty": 0.7892883063655382,
+        "semantic_cosine": 0.7192962235227953,
+        "cross_modal_gap": 0.02064820115285021,
+        "pilot_recolor_lpips": 0.009949427098035812
+      }
+    },
+    {
+      "source_id": "B093JXX82Z",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.8073092979159463,
+      "log_score": -0.21404841534791652,
+      "components": {
+        "shape": 0.5505738083804722,
+        "semantic": 0.9998630160041967,
+        "cross_modal": 0.9862504490307816,
+        "edit_cost": 0.9834574595005127
+      },
+      "raw": {
+        "shape": 0.6485006384563183,
+        "cls": 0.6619426541147372,
+        "symmetric_patches": 0.6350586227978994,
+        "aspect_penalty": 0.8489950136225775,
+        "semantic_cosine": 0.7219863054433472,
+        "cross_modal_gap": 0.006922475765561709,
+        "pilot_recolor_lpips": 0.004170224070549011
+      }
+    },
+    {
+      "source_id": "B093VHSY5W",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.8191920123912859,
+      "log_score": -0.19943677524334874,
+      "components": {
+        "shape": 0.5677768563773964,
+        "semantic": 0.9991179442892154,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9894296313902876
+      },
+      "raw": {
+        "shape": 0.6401021841268902,
+        "cls": 0.6020204647986627,
+        "symmetric_patches": 0.6781839034551178,
+        "aspect_penalty": 0.887009715725081,
+        "semantic_cosine": 0.7149587288722157,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.002656657947227359
+      }
+    },
+    {
+      "source_id": "B098F1FM1Z",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8804410913705981,
+      "log_score": -0.12733225689492772,
+      "components": {
+        "shape": 0.6968866514619392,
+        "semantic": 0.9999421612744984,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9908567751761042
+      },
+      "raw": {
+        "shape": 0.7487197287563092,
+        "cls": 0.7527843109664825,
+        "symmetric_patches": 0.7446551465461361,
+        "aspect_penalty": 0.930771054503306,
+        "semantic_cosine": 0.7212906600903739,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.0022963201627135277
+      }
+    },
+    {
+      "source_id": "B09CT6ZQF7",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7955555424510812,
+      "log_score": -0.2287146128357699,
+      "components": {
+        "shape": 0.5256331748634743,
+        "semantic": 0.9999969165462712,
+        "cross_modal": 0.9868868843101911,
+        "edit_cost": 0.9968985058432929
+      },
+      "raw": {
+        "shape": 0.5332229397256247,
+        "cls": 0.5586978672989638,
+        "symmetric_patches": 0.5077480121522856,
+        "aspect_penalty": 0.9857662446667131,
+        "semantic_cosine": 0.7202979993360712,
+        "cross_modal_gap": 0.006599925839245568,
+        "pilot_recolor_lpips": 0.0007765784393996
+      }
+    },
+    {
+      "source_id": "B09CTF1PR3",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.726809731212028,
+      "log_score": -0.31909055343028836,
+      "components": {
+        "shape": 0.4028387245517966,
+        "semantic": 0.9999977035873939,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9914049506246773
+      },
+      "raw": {
+        "shape": 0.5511355802038789,
+        "cls": 0.5562648244683913,
+        "symmetric_patches": 0.5460063359393665,
+        "aspect_penalty": 0.7309249103510546,
+        "semantic_cosine": 0.7197428293193383,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.0021580499596893787
+      }
+    },
+    {
+      "source_id": "B09D7L69T3",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.778042848367305,
+      "log_score": -0.25097368129807596,
+      "components": {
+        "shape": 0.4916916024704991,
+        "semantic": 0.9994996358272732,
+        "cross_modal": 0.9939467209708861,
+        "edit_cost": 0.9916415107066789
+      },
+      "raw": {
+        "shape": 0.5554894825691203,
+        "cls": 0.5521848687178501,
+        "symmetric_patches": 0.5587940964203907,
+        "aspect_penalty": 0.8851501565726174,
+        "semantic_cosine": 0.723796589867711,
+        "cross_modal_gap": 0.0030358371975198195,
+        "pilot_recolor_lpips": 0.002098404336720705
+      }
+    },
+    {
+      "source_id": "B09FY3X27Y",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8716654572123576,
+      "log_score": -0.13734957867146996,
+      "components": {
+        "shape": 0.6787394135541477,
+        "semantic": 0.9994689638270318,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9845316450543197
+      },
+      "raw": {
+        "shape": 0.689154852125311,
+        "cls": 0.7072948411588501,
+        "symmetric_patches": 0.6710148630917718,
+        "aspect_penalty": 0.9848866498740555,
+        "semantic_cosine": 0.716088746491049,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.003897309536114335
+      }
+    },
+    {
+      "source_id": "B09FY5Y9G2",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.9194068628732504,
+      "log_score": -0.08402653112487084,
+      "components": {
+        "shape": 0.7872564495693253,
+        "semantic": 0.9998992437907761,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9972450671848082
+      },
+      "raw": {
+        "shape": 0.7970452115968923,
+        "cls": 0.8223437072346174,
+        "symmetric_patches": 0.7717467159591673,
+        "aspect_penalty": 0.9877186866125761,
+        "semantic_cosine": 0.7182964962513727,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.0006896836566738784
+      }
+    },
+    {
+      "source_id": "B09G318HQR",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8964964138771601,
+      "log_score": -0.1092609860819718,
+      "components": {
+        "shape": 0.7565455987574422,
+        "semantic": 0.9990447564882988,
+        "cross_modal": 0.975905750560308,
+        "edit_cost": 0.9490479551895786
+      },
+      "raw": {
+        "shape": 0.7611493245105301,
+        "cls": 0.77139653635016,
+        "symmetric_patches": 0.7509021126709001,
+        "aspect_penalty": 0.9939516129032259,
+        "semantic_cosine": 0.714753652568764,
+        "cross_modal_gap": 0.01219463214040345,
+        "pilot_recolor_lpips": 0.013073987327516079
+      }
+    },
+    {
+      "source_id": "B09GXN689Q",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.8088346126418813,
+      "log_score": -0.21216081713483015,
+      "components": {
+        "shape": 0.5474307765856086,
+        "semantic": 0.9992264616632393,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9895853660810144
+      },
+      "raw": {
+        "shape": 0.6372418346445292,
+        "cls": 0.61510182497995,
+        "symmetric_patches": 0.6593818443091084,
+        "aspect_penalty": 0.859062834270729,
+        "semantic_cosine": 0.7247208606155175,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.002617311431095004
+      }
+    },
+    {
+      "source_id": "B09LVH3W9Q",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7873952994967449,
+      "log_score": -0.23902487014139157,
+      "components": {
+        "shape": 0.5198947844573324,
+        "semantic": 0.9990661565118834,
+        "cross_modal": 0.9646722929830756,
+        "edit_cost": 0.9919546358633448
+      },
+      "raw": {
+        "shape": 0.5861207326600109,
+        "cls": 0.5510264318982895,
+        "symmetric_patches": 0.6212150334217321,
+        "aspect_penalty": 0.887009715725081,
+        "semantic_cosine": 0.7148127793571212,
+        "cross_modal_gap": 0.017983414040741774,
+        "pilot_recolor_lpips": 0.002019475679844618
+      }
+    },
+    {
+      "source_id": "B09NBL7NDY",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6962176265092365,
+      "log_score": -0.3620929857563286,
+      "components": {
+        "shape": 0.3675125206518224,
+        "semantic": 0.9999842598820424,
+        "cross_modal": 0.957339847322016,
+        "edit_cost": 0.9916372291931752
+      },
+      "raw": {
+        "shape": 0.46423249635691366,
+        "cls": 0.4508001043674629,
+        "symmetric_patches": 0.4776648883463644,
+        "aspect_penalty": 0.7916561712846347,
+        "semantic_cosine": 0.7206732896589403,
+        "cross_modal_gap": 0.02179841659977705,
+        "pilot_recolor_lpips": 0.0020994837395846844
+      }
+    },
+    {
+      "source_id": "B09PL6X5MZ",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7752810701078363,
+      "log_score": -0.25452964427117397,
+      "components": {
+        "shape": 0.4962016407048841,
+        "semantic": 0.9999176602885761,
+        "cross_modal": 0.9658020985343102,
+        "edit_cost": 0.9946608765642483
+      },
+      "raw": {
+        "shape": 0.49866918372586577,
+        "cls": 0.49744869281746384,
+        "symmetric_patches": 0.4998896746342677,
+        "aspect_penalty": 0.9950517435175257,
+        "semantic_cosine": 0.718460038531686,
+        "cross_modal_gap": 0.017398166349712696,
+        "pilot_recolor_lpips": 0.0013383568730205297
+      }
+    },
+    {
+      "source_id": "B09PL7BTKQ",
+      "target_id": "B09CYFD5BX",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7379021905366331,
+      "log_score": -0.30394399631315194,
+      "components": {
+        "shape": 0.4321134955162077,
+        "semantic": 0.9996782558343451,
+        "cross_modal": 0.9610754106689181,
+        "edit_cost": 0.9975190270116491
+      },
+      "raw": {
+        "shape": 0.5091866724454164,
+        "cls": 0.52123298800666,
+        "symmetric_patches": 0.49714035688417285,
+        "aspect_penalty": 0.8486347324075519,
+        "semantic_cosine": 0.7169557064910359,
+        "cross_modal_gap": 0.019851201025539278,
+        "pilot_recolor_lpips": 0.0006210139254108071
+      }
+    },
+    {
+      "source_id": "B09SHH4RDN",
+      "target_id": "B09CYFD5BX",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8436865391555436,
+      "log_score": -0.16997425247671494,
+      "components": {
+        "shape": 0.6175145458738834,
+        "semantic": 0.9990446879269846,
+        "cross_modal": 1.0,
+        "edit_cost": 0.9903558783758297
+      },
+      "raw": {
+        "shape": 0.6837638499033004,
+        "cls": 0.7170115266761812,
+        "symmetric_patches": 0.6505161731304197,
+        "aspect_penalty": 0.9031108415006349,
+        "semantic_cosine": 0.7147534642073889,
+        "cross_modal_gap": 0.0,
+        "pilot_recolor_lpips": 0.0024227318353950977
+      }
+    }
+  ],
+  "configuration": {
+    "shape_min": 0.65,
+    "semantic_min": 0.55,
+    "semantic_max": 0.9,
+    "semantic_center": 0.72,
+    "semantic_sigma": 0.12,
+    "duplicate_title_similarity": 0.95,
+    "mismatch_gamma": 2.0,
+    "cost_temperature": 0.25,
+    "aspect_temperature": 1.0,
+    "weights": [
+      0.35,
+      0.3,
+      0.25,
+      0.1
+    ]
+  },
+  "calibration": "provisional_public_only_heuristics_not_success_probabilities",
+  "models": {
+    "dino": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\dinov2-small",
+      "files": {
+        ".cache/huggingface/trees/ed25f3a31f01632728cabb09d1542f84ab7b0056.json": "697aca0fad1dc794b13170a0e0c6628b0cfe53af9b4435fecc7833131abb3a91",
+        "config.json": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+        "model.safetensors": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+        "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+      }
+    },
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "clip": {
+      "provider": "clip",
+      "loader": "attack_surrogate",
+      "surrogate_number": 1,
+      "surrogate": {
+        "role": "attack_surrogate",
+        "name": "ViT-B-16",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+        "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+        "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+        "requires_true_local_tokens": true
+      },
+      "fusion": "equal_unit_image_plus_unit_full_text",
+      "text_policy": {
+        "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+        "context_length": 77,
+        "payload_tokens_per_chunk": 75,
+        "special_tokens_per_chunk": 2,
+        "coverage": "all_token_ids_no_truncation",
+        "aggregation": "unit_token_count_weighted_mean_then_unit",
+        "tokenizer": "SimpleTokenizer"
+      },
+      "weighted_fusion": {
+        "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+        "default_image_weight": 0.5,
+        "equal_weight_path": "exact_legacy_image_plus_text",
+        "empty_text": "image_only_except_text_only_weight_rejected"
+      }
+    },
+    "lpips": {
+      "backbone_path": "C:\\Users\\22106\\.cache\\torch\\hub\\checkpoints\\alexnet-owt-7be5be79.pth",
+      "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "implementation": "lpips_alex_v0.1"
+    },
+    "implementation_sha256": "78af2d953af0b89fdf59aff45acd4163ab3310ba320a539d67e793eb26cbf63e",
+    "text_files": {
+      "path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--sentence-transformers--all-MiniLM-L6-v2\\snapshots\\1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "files": {
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+        "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+        "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+        "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "openvino/openvino_model.bin": "8b86cab4722e2aefab310cf96d4d5a9eb3b187f7d9670a082afc55c7fa0d392a",
+        "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+        "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    }
+  },
+  "victim_memory_used": false,
+  "victim_queries_used": false,
+  "target_system_probed": false,
+  "binding": {
+    "public_catalog_sha256": "c1d7e319b25c91c4469b5f46c29b4d6479ceda1cca477b038372ec11acfca6c4",
+    "public_records_sha256": "76081eb13dad8f9bf337e7f6b36a47fabab9134e5a529487e82358f97d88231a",
+    "configuration": "ac56bc007187292130dde0ab44979e7a454a4808b3200d7e9fd1aee3a4c41fe5",
+    "models_configuration": {
+      "text_model": "sentence-transformers/all-MiniLM-L6-v2"
+    },
+    "selector_code_sha256": "78af2d953af0b89fdf59aff45acd4163ab3310ba320a539d67e793eb26cbf63e"
+  },
+  "target": {
+    "id": "B09CYFD5BX",
+    "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d.jpg",
+    "source_url": "https://www.amazon.com/dp/B09CYFD5BX",
+    "boxes": [
+      [
+        3,
+        4,
+        399,
+        496
+      ]
+    ],
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09CYFD5BX\\foreground.png",
+    "text_regions": [],
+    "text_regions_reviewed": true,
+    "image_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+    "foreground_mask_sha256": "827d24f9247cd406fe487dc8996ec26ebec43000737628ca50f5a2781cfae542"
+  },
+  "source": {
+    "id": "B09FY5Y9G2",
+    "title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa.jpg",
+    "source_url": "https://www.amazon.com/dp/B09FY5Y9G2",
+    "boxes": [
+      [
+        75,
+        15,
+        458,
+        485
+      ]
+    ],
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09FY5Y9G2\\foreground.png",
+    "text_regions": [],
+    "text_regions_reviewed": true,
+    "owned": true,
+    "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+    "image_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+    "foreground_mask_sha256": "7942b29e8230203ec3575094083a1891390d3c7491fddfdf5d0b4c59d747d688"
+  }
+}

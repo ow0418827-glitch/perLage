@@ -1,0 +1,9 @@
+{
+  "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+  "positive_point_from_public_pixels": true,
+  "remove_border_connected_background": true,
+  "background_color_tolerance": 12,
+  "actual_visual_review_required": true,
+  "source_image_index": 0,
+  "private_evaluation_used": false
+}

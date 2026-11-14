@@ -1,0 +1,106 @@
+[
+  {
+    "model": "old_B32",
+    "encoder": {
+      "provider": "clip",
+      "loader": "attack_surrogate",
+      "surrogate_number": 2,
+      "surrogate": {
+        "role": "attack_surrogate",
+        "name": "ViT-B-32",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+        "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+        "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+        "requires_true_local_tokens": true
+      },
+      "fusion": "normalized_image_text_sum",
+      "text_policy": "clip_context_truncate"
+    },
+    "text_encoding_calls": 0,
+    "image_encoding_calls": 197,
+    "bank_titles_removed": true,
+    "query_instruction_empty": true,
+    "feature_file_sha256": "1e4ca664d8e25ad43544e490c855eec6762380cdb374650f299c99e7d7b9c9cc"
+  },
+  {
+    "model": "current_g14",
+    "encoder": {
+      "provider": "clip",
+      "loader": "attack_surrogate",
+      "surrogate_number": 0,
+      "surrogate": {
+        "role": "attack_surrogate",
+        "name": "ViT-g-14",
+        "pretrained": "laion2b_s12b_b42k",
+        "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+        "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+        "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+        "requires_true_local_tokens": true
+      },
+      "fusion": "equal_unit_image_plus_unit_full_text",
+      "text_policy": {
+        "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+        "context_length": 77,
+        "payload_tokens_per_chunk": 75,
+        "special_tokens_per_chunk": 2,
+        "coverage": "all_token_ids_no_truncation",
+        "aggregation": "unit_token_count_weighted_mean_then_unit",
+        "tokenizer": "SimpleTokenizer"
+      },
+      "weighted_fusion": {
+        "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+        "default_image_weight": 0.5,
+        "equal_weight_path": "exact_legacy_image_plus_text",
+        "empty_text": "image_only_except_text_only_weight_rejected"
+      }
+    },
+    "text_encoding_calls": 0,
+    "image_encoding_calls": 197,
+    "bank_titles_removed": true,
+    "query_instruction_empty": true,
+    "feature_file_sha256": "8b2427661aa34e0abe345c94a7ce0403b5152cf02b687da61b017ad85361de62"
+  }
+]

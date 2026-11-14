@@ -1,0 +1,19 @@
+{
+  "review_completed": true,
+  "image_files_reviewed": [
+    "v1/07_shampoo/candidate.png",
+    "v1/09_toothbrush/candidate.png",
+    "v2/07_shampoo/forced_full_color.png",
+    "v2/09_toothbrush/forced_full_color.png",
+    "COLOR_VS_SIMILARITY.png"
+  ],
+  "findings_zh": [
+    "第一版洗发水瓶身转为浅杏色，文字与图案主体仍可辨；向量分数下降。",
+    "第一版牙刷错误选到灰色刷头作为源底材，粉色手柄未被有效改色。",
+    "第二版强制诊断图中牙刷手柄确实转为蓝色，说明解锁底材有效；边缘仍有粉色残留，自动底材与印刷划分仍有瑕疵。",
+    "第二版强制洗发水图瓶身已明显向米橙色移动，但超出平均绝对误差门槛。",
+    "相似度曲线图中文清晰、无重叠，展示的是固定明度与饱和度下的主编码器数值。"
+  ],
+  "adoption_approved": false,
+  "all_semantic_print_content_certified": false
+}

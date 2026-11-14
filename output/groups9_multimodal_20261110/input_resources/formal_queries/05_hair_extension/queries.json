@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B01460C2I2",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "hair extensions",
+  "core_attributes": [
+    "real human hair",
+    "double wefts",
+    "a clip-in design"
+  ],
+  "instructions": [
+    "I want to buy hair extensions with real human hair and double wefts.",
+    "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+    "Looking to buy hair extensions with double wefts and a clip-in design.",
+    "I am looking to buy hair extensions with real human hair and double wefts.",
+    "Please help me buy hair extensions featuring real human hair and a clip-in design.",
+    "I am shopping for hair extensions with double wefts and a clip-in design.",
+    "I would like to buy hair extensions with real human hair and double wefts.",
+    "Help me purchase hair extensions featuring real human hair and a clip-in design.",
+    "I am looking for hair extensions with double wefts and a clip-in design.",
+    "Please find hair extensions with real human hair and double wefts for me to buy.",
+    "I want to purchase hair extensions featuring real human hair and a clip-in design.",
+    "Please help me purchase hair extensions with double wefts and a clip-in design.",
+    "I need to buy hair extensions with real human hair and double wefts.",
+    "I would like help finding hair extensions featuring real human hair and a clip-in design.",
+    "Find me hair extensions with double wefts and a clip-in design to purchase.",
+    "Please look for hair extensions with real human hair and double wefts that I can buy.",
+    "I am interested in buying hair extensions featuring real human hair and a clip-in design.",
+    "I would like to shop for hair extensions with double wefts and a clip-in design.",
+    "Help me find hair extensions with real human hair and double wefts to buy.",
+    "I am ready to purchase hair extensions featuring real human hair and a clip-in design."
+  ],
+  "instructions_sha256": "9bd16c4a666d9fac75fb971cde10e2b23c5f9212dcc151c576db9cacde12379d",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\05_hair_extension\\query.png",
+  "sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：黑色接发片及固定夹，未见品牌、标志或可读商品名。",
+    "image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

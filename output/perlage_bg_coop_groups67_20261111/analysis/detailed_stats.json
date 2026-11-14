@@ -1,0 +1,102 @@
+{
+  "rankfocus": {
+    "06_jeans": {
+      "dist": {
+        "1": 3,
+        "2": 3,
+        "3": 6,
+        "4": 3,
+        "5": 4,
+        "6": 1
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 3,
+      "non_overlap_top3": 12,
+      "non_overlap_top5": 19,
+      "count": 20
+    },
+    "07_shampoo": {
+      "dist": {
+        "1": 20
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 20,
+      "non_overlap_top3": 20,
+      "non_overlap_top5": 20,
+      "count": 20
+    },
+    "non_overlap_overall": {
+      "count": 40,
+      "top1": 23,
+      "top3": 32,
+      "top5": 39,
+      "mean_rank": 2.125
+    }
+  },
+  "fg64_bg16": {
+    "06_jeans": {
+      "dist": {
+        "1": 12,
+        "2": 2,
+        "3": 1,
+        "4": 3,
+        "5": 2
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 12,
+      "non_overlap_top3": 15,
+      "non_overlap_top5": 20,
+      "count": 20
+    },
+    "07_shampoo": {
+      "dist": {
+        "1": 20
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 20,
+      "non_overlap_top3": 20,
+      "non_overlap_top5": 20,
+      "count": 20
+    },
+    "non_overlap_overall": {
+      "count": 40,
+      "top1": 32,
+      "top3": 35,
+      "top5": 40,
+      "mean_rank": 1.525
+    }
+  },
+  "fg48_bg12": {
+    "06_jeans": {
+      "dist": {
+        "1": 9,
+        "2": 3,
+        "3": 2,
+        "4": 3,
+        "5": 3
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 9,
+      "non_overlap_top3": 14,
+      "non_overlap_top5": 20,
+      "count": 20
+    },
+    "07_shampoo": {
+      "dist": {
+        "1": 20
+      },
+      "overlap_ids": [],
+      "non_overlap_top1": 20,
+      "non_overlap_top3": 20,
+      "non_overlap_top5": 20,
+      "count": 20
+    },
+    "non_overlap_overall": {
+      "count": 40,
+      "top1": 29,
+      "top3": 34,
+      "top5": 40,
+      "mean_rank": 1.7
+    }
+  }
+}

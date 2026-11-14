@@ -1,0 +1,93 @@
+{
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "data": {
+    "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+    "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\target.jpg",
+    "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "training_queries": [
+      "Find a product with a similar overall visual appearance.",
+      "Use the reference picture as a broad visual guide for product matching.",
+      "Look for an item with a comparable general shape and finish."
+    ]
+  },
+  "source_boxes": [
+    [
+      20,
+      70,
+      178,
+      411
+    ],
+    [
+      110,
+      47,
+      310,
+      435
+    ],
+    [
+      260,
+      65,
+      402,
+      412
+    ],
+    [
+      360,
+      96,
+      485,
+      390
+    ]
+  ],
+  "target_boxes": [
+    [
+      0,
+      0,
+      159,
+      499
+    ]
+  ],
+  "print_regions": [
+    [
+      0.07,
+      0.48,
+      0.26,
+      0.76
+    ],
+    [
+      0.27,
+      0.48,
+      0.55,
+      0.8
+    ],
+    [
+      0.56,
+      0.48,
+      0.77,
+      0.76
+    ],
+    [
+      0.77,
+      0.48,
+      0.92,
+      0.71
+    ]
+  ],
+  "initialization": {
+    "plan": {
+      "instruction": "Match the unprinted material surfaces to the target product dominant color RGB [220, 194, 160]. Preserve the product shape, every original word, number, drawing and brand mark exactly. Preserve the scene.",
+      "editable_regions": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "protected_regions": [],
+      "reason": "目标前景主色引导完整生成；保护实际印刷核心并释放可改底材。",
+      "region_policy": "label_protected",
+      "feather_pixels": 3.0
+    }
+  }
+}

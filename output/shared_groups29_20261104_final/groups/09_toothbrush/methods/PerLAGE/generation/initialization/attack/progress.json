@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "phase": "finished",
+  "phase_step": 0,
+  "seconds": 724.6348794000005,
+  "latest": null,
+  "accepted_updates": 160,
+  "rejected_updates": 0,
+  "ray_repairs": 51
+}

@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-11-06T10:07:16.924672+00:00",
+  "status": "failed",
+  "stage": "dominant_07_shampoo_finish",
+  "exit_code": 1,
+  "elapsed_seconds": 135.21569429999727,
+  "completed_at": "2026-11-06T10:07:16.922652+00:00",
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\logs\\dominant_07_shampoo_finish.log"
+}

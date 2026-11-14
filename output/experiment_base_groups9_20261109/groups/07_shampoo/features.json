@@ -1,0 +1,142 @@
+{
+  "group": "07_shampoo",
+  "category": "personal_care",
+  "target": {
+    "asin": "B00BDJODWI",
+    "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+    "brand": "Aveda",
+    "brand_evidence": {
+      "verified": true,
+      "field": "BulletPoints",
+      "index": 3,
+      "quote": "Manufacturer: Aveda",
+      "basis": "Explicit manufacturer attribution."
+    },
+    "category": "shampoo",
+    "attributes": [
+      "plant-based haircare ingredients",
+      "a balancing formula",
+      "plant and flower essences",
+      "scalp care",
+      "plant based"
+    ],
+    "canonical_sentence": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "training_queries": [
+      "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+      "I am looking for shampoo with a balancing formula and scalp care."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "plant-based haircare ingredients",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "High Performance Plant Based Haircare"
+      },
+      {
+        "feature": "a balancing formula",
+        "field": "Title",
+        "quote": "Balancing Shampoo"
+      },
+      {
+        "feature": "plant and flower essences",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "Pure Plant And Flower Essences"
+      },
+      {
+        "feature": "scalp care",
+        "field": "Title",
+        "quote": "Scalp Benefits"
+      },
+      {
+        "feature": "plant based",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "plant based"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "plant-based haircare ingredients",
+      "a balancing formula",
+      "plant and flower essences",
+      "scalp care"
+    ]
+  },
+  "source": {
+    "asin": "B08XYBS678",
+    "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "brand": "Dove",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Dove",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "hand wash",
+    "attributes": [
+      "a foaming cleanser",
+      "coconut and almond milk",
+      "a cruelty-free formula",
+      "a moisturizing blend",
+      "cruelty free",
+      "plant based"
+    ],
+    "canonical_sentence": "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+    "training_queries": [
+      "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+      "I would like to purchase hand wash featuring a foaming cleanser and a cruelty-free formula.",
+      "I am looking for hand wash with coconut and almond milk and a moisturizing blend."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a foaming cleanser",
+        "field": "Title",
+        "quote": "Foaming Hand Wash"
+      },
+      {
+        "feature": "coconut and almond milk",
+        "field": "Title",
+        "quote": "Coconut and Almond Milk"
+      },
+      {
+        "feature": "a cruelty-free formula",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "cruelty free"
+      },
+      {
+        "feature": "a moisturizing blend",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "5X MOISTURIZER BLEND"
+      },
+      {
+        "feature": "cruelty free",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "cruelty free"
+      },
+      {
+        "feature": "plant based",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "plant based"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a foaming cleanser",
+      "coconut and almond milk",
+      "a cruelty-free formula",
+      "a moisturizing blend"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+  "alignment_training_queries": [
+    "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "I am looking for shampoo with a balancing formula and scalp care."
+  ]
+}

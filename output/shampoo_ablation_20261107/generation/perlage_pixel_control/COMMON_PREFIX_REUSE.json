@@ -1,0 +1,18 @@
+{
+  "protocol": "paired_counterfactual_from_completed_public_latent_prefix_v1",
+  "parent_ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_latent_only\\initialization\\ready.json",
+  "parent_ready_sha256": "cd1139830ef31e00d77c0660f9eaa9803c96399c5d92503fe0826cdc7d4fcfbf",
+  "parent_checkpoint_sha256": "36dd81dab60e3e6eb23291c753db77b29ea58a1f76aecdd69ef8692475528506",
+  "common_prefix_image_sha256": "4c0e7458fc83daa6b1e49daabb1d079ddcb6c8cb334766ae401471f675f2f4f5",
+  "completed_latent_steps_reused": 80,
+  "completed_instruction_generation_steps_reused": 30,
+  "fork_phase": "pixel_clean",
+  "pixel_steps_to_execute": [
+    20,
+    60
+  ],
+  "final_latent_steps_to_execute": 40,
+  "private_memory_used": false,
+  "formal_queries_used": false,
+  "not_a_fresh_prefix_generation": true
+}

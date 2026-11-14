@@ -1,0 +1,12 @@
+{
+  "version": "v2",
+  "scope": "公开颜色子步骤的第二次固定方案",
+  "changes": [
+    "以源图印刷区域内的主色识别塑料或纸面底材，防止刷头略大时取错源底材",
+    "以同一固定初始化颜色输出为输入，只改底材低维颜色，不丢弃已有生成细节",
+    "搜索十七档强度、三档明度、三档饱和度，保持目标主色相及原有质量门槛"
+  ],
+  "background_reference_clarification": "颜色子步骤不得修改其输入锚点的背景。第一版输入为原图，第二版输入为冻结的公开颜色初始化；同时报告相对原始源图的背景差异，避免把保留既有背景残差误称为新增编辑。",
+  "numerical_promotion_thresholds_changed": false,
+  "private_or_shopping_evaluation_access": false
+}

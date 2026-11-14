@@ -1,0 +1,167 @@
+{
+  "group": "05_hair_extension",
+  "category": "hair_extensions",
+  "target": {
+    "asin": "B01460C2I2",
+    "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+    "brand": "S-noilite",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "S-noilite",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "hair extensions",
+    "attributes": [
+      "real human hair",
+      "double wefts",
+      "a clip-in design",
+      "rubber-lined clips",
+      "hair extensions",
+      "hair styling",
+      "hair cutting"
+    ],
+    "canonical_sentence": "I want to buy hair extensions with real human hair and double wefts.",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts.",
+      "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+      "I am looking for hair extensions with double wefts and rubber-lined clips."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "real human hair",
+        "field": "Title",
+        "quote": "Real Human Hair"
+      },
+      {
+        "feature": "double wefts",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "double wefts"
+      },
+      {
+        "feature": "a clip-in design",
+        "field": "Title",
+        "quote": "Clip in Hair Extension"
+      },
+      {
+        "feature": "rubber-lined clips",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "Rubber lined"
+      },
+      {
+        "feature": "hair extensions",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "hair extensions"
+      },
+      {
+        "feature": "hair styling",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "hair styling"
+      },
+      {
+        "feature": "hair cutting",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "hair cutting"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "real human hair",
+      "double wefts",
+      "a clip-in design",
+      "rubber-lined clips"
+    ]
+  },
+  "source": {
+    "asin": "B07Z7MQSM1",
+    "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "reason": "The title starts with the hair texture, not an identifiable brand; no explicit brand field exists."
+    },
+    "category": "hair extensions",
+    "attributes": [
+      "kinky straight human hair",
+      "double wefts",
+      "a natural black color",
+      "stainless steel clips",
+      "hair extensions",
+      "hair clips",
+      "natural hair",
+      "stainless steel"
+    ],
+    "canonical_sentence": "I want to buy hair extensions with kinky straight human hair and double wefts.",
+    "training_queries": [
+      "I want to buy hair extensions with kinky straight human hair and double wefts.",
+      "I would like to purchase hair extensions featuring kinky straight human hair and a natural black color.",
+      "I am looking for hair extensions with double wefts and stainless steel clips."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "kinky straight human hair",
+        "field": "Title",
+        "quote": "Kinky Straight Clip In Human Hair"
+      },
+      {
+        "feature": "double wefts",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "Double Wefts"
+      },
+      {
+        "feature": "a natural black color",
+        "field": "Title",
+        "quote": "Natural Black"
+      },
+      {
+        "feature": "stainless steel clips",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "Stainless Steel Clips"
+      },
+      {
+        "feature": "hair extensions",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "hair extensions"
+      },
+      {
+        "feature": "hair clips",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "hair clips"
+      },
+      {
+        "feature": "natural hair",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "natural hair"
+      },
+      {
+        "feature": "stainless steel",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "stainless steel"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "kinky straight human hair",
+      "double wefts",
+      "a natural black color",
+      "stainless steel clips"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy hair extensions with real human hair and double wefts.",
+  "alignment_training_queries": [
+    "I want to buy hair extensions with real human hair and double wefts.",
+    "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+    "I am looking for hair extensions with double wefts and rubber-lined clips."
+  ]
+}

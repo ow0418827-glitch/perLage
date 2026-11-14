@@ -1,0 +1,1148 @@
+{
+  "settings": {
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "steps": 1000,
+    "method": "legacy_pixel",
+    "epsilon_levels": 16,
+    "optimization_config_sha256": "e8a36417368010c245ab29f7f354e9cffdef79f08bac348513e4c708ce2fcd18"
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\lucid_shampoo_full_retest_20261027\\groups\\07_shampoo\\attack\\adversarial.png",
+  "sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852",
+  "pixel_audit": {
+    "max_pixel_difference": 16,
+    "epsilon_levels": 16,
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "adversarial_sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852"
+  },
+  "metadata": {
+    "schema_version": 1,
+    "status": "success",
+    "method": "legacy_pixel",
+    "seed": 42,
+    "target_text": null,
+    "source_shape_bchw": [
+      1,
+      3,
+      500,
+      500
+    ],
+    "target_shape_bchw": [
+      1,
+      3,
+      500,
+      160
+    ],
+    "attack": {
+      "epsilon": 0.06274509803921569,
+      "spatial_step_size": 0.00196078431372549,
+      "steps_requested": 1000,
+      "steps_completed": 1000,
+      "discarded_over_budget_steps": 0,
+      "stop_reason": "requested_steps_completed",
+      "time_budget_seconds": null,
+      "clusters": 10,
+      "cluster_iterations": 100,
+      "sinkhorn_iterations": 100,
+      "sinkhorn_regularization": 0.1,
+      "sinkhorn_tolerance": 0.01,
+      "detach_transport_plan": true,
+      "local_weight": 0.2,
+      "text_weight": 0.0,
+      "text_model_index": 1,
+      "zero_gradient_steps": 0,
+      "initialization": "zero",
+      "gradient_execution": "joint_three_surrogate_graph",
+      "target_cluster_centers_cached": false
+    },
+    "frequency": {
+      "enabled": false,
+      "axis_ratio_final": null,
+      "height_frequencies_final": null,
+      "width_frequencies_final": null,
+      "coefficient_count": null,
+      "spatial_parameter_count": 750000,
+      "optimized_parameter_count": 750000,
+      "constant_component_kept": null,
+      "projection": null,
+      "maximum_reprojection_iterations": null,
+      "reprojection_tolerance": null,
+      "progressive_schedule_basis": "not_applicable",
+      "transitions": [],
+      "reprojection_summary": {
+        "count": 0,
+        "steps_with_spatial_clip": 0,
+        "fraction_of_steps_with_spatial_clip": null,
+        "mean_iterations": null,
+        "maximum_iterations": null,
+        "mean_initial_clipped_element_fraction": null,
+        "maximum_initial_clipped_element_fraction": null,
+        "fraction_clipped_steps_converged_before_fallback": null
+      },
+      "radial_scale_summary": {
+        "count": 0,
+        "minimum": null,
+        "mean": null,
+        "fraction_scaled": null,
+        "counterfactual_direct_scale_mean": null,
+        "mean_fallback_minus_counterfactual_direct_scale": null
+      },
+      "saved_image_claimed_strictly_bandlimited": false
+    },
+    "timing": {
+      "cold_model_loading_seconds": 6.77101140000741,
+      "sample_preparation_seconds": 0.5558227000001352,
+      "optimization_loop_seconds": 1424.3941442000068,
+      "final_surrogate_recompute_seconds": 0.9121455999993486,
+      "final_output_seconds_before_metadata": 0.4781574999942677,
+      "total_attack_seconds_before_metadata": 1426.3404462000035,
+      "metadata_final_write_included": false,
+      "step_seconds_median": 1.432686600004672,
+      "step_seconds_minimum": 1.014031899991096,
+      "step_seconds_maximum": 3.361581400007708,
+      "last_committed_state_ready_loop_seconds": 1424.3930286999966,
+      "metadata_first_write_seconds": 0.003387100005056709,
+      "total_attack_seconds_through_first_metadata_write": 1426.345813299995
+    },
+    "memory": {
+      "device": "cuda",
+      "framework_peak_allocated_bytes": 1979436544,
+      "framework_peak_reserved_bytes": 2126512128,
+      "device_used_baseline_bytes": 3130589184,
+      "device_used_peak_sampled_bytes": 3331915776,
+      "device_sample_interval_seconds": 0.05,
+      "device_sample_count": 22721,
+      "device_sampling_error": null
+    },
+    "cache": {
+      "target_before": {
+        "hits": {
+          "image": 0,
+          "centers": 0,
+          "text": 0
+        },
+        "misses": {
+          "image": 0,
+          "centers": 0,
+          "text": 0
+        },
+        "entries": {
+          "image": 0,
+          "centers": 0,
+          "text": 0
+        }
+      },
+      "target_after": {
+        "hits": {
+          "image": 0,
+          "centers": 0,
+          "text": 0
+        },
+        "misses": {
+          "image": 3,
+          "centers": 0,
+          "text": 0
+        },
+        "entries": {
+          "image": 3,
+          "centers": 0,
+          "text": 0
+        }
+      },
+      "basis": {
+        "entries": 1,
+        "hits": 1,
+        "misses": 1,
+        "bytes": 250000
+      }
+    },
+    "history_semantics": {
+      "objective_is_before_that_step_update": true,
+      "linf_is_after_that_step_update": true,
+      "final_objective_is_recomputed_after_last_update": true
+    },
+    "history": [
+      {
+        "step": 1,
+        "requested_step": 1,
+        "loss": 0.7163597345352173,
+        "global_similarity": [
+          0.6488989591598511,
+          0.6722704768180847,
+          0.3777954578399658
+        ],
+        "local_similarity": [
+          0.7252680063247681,
+          0.7398041486740112,
+          0.7855002284049988
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "weights_for_next_step": [
+          0.30410757660865784,
+          0.2970825135707855,
+          0.39880993962287903
+        ],
+        "linf_after_update": 0.0019608139991760254,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.0019607844296842813,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1.532009400005336
+      },
+      {
+        "step": 50,
+        "requested_step": 50,
+        "loss": 1.0571736097335815,
+        "global_similarity": [
+          0.941001832485199,
+          0.9137809872627258,
+          0.8425791263580322
+        ],
+        "local_similarity": [
+          0.8308085203170776,
+          0.764828085899353,
+          0.8020377159118652
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.31937462091445923,
+          0.3274605870246887,
+          0.35316479206085205
+        ],
+        "weights_for_next_step": [
+          0.3193843364715576,
+          0.3281976580619812,
+          0.3524179756641388
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 52.63247209999827
+      },
+      {
+        "step": 100,
+        "requested_step": 100,
+        "loss": 1.0951682329177856,
+        "global_similarity": [
+          0.9663667678833008,
+          0.9430900812149048,
+          0.8936017751693726
+        ],
+        "local_similarity": [
+          0.8381441831588745,
+          0.7852716445922852,
+          0.8015866279602051
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.324321985244751,
+          0.32937613129615784,
+          0.3463018536567688
+        ],
+        "weights_for_next_step": [
+          0.32268187403678894,
+          0.33028092980384827,
+          0.3470371961593628
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 107.28233760000148
+      },
+      {
+        "step": 150,
+        "requested_step": 150,
+        "loss": 1.110845923423767,
+        "global_similarity": [
+          0.9726243615150452,
+          0.9579195976257324,
+          0.9176706075668335
+        ],
+        "local_similarity": [
+          0.8481613397598267,
+          0.7867743968963623,
+          0.7968100905418396
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32400453090667725,
+          0.32929378747940063,
+          0.34670162200927734
+        ],
+        "weights_for_next_step": [
+          0.3255944550037384,
+          0.3304176330566406,
+          0.3439878821372986
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 159.24090859999706
+      },
+      {
+        "step": 200,
+        "requested_step": 200,
+        "loss": 1.1230599880218506,
+        "global_similarity": [
+          0.979098916053772,
+          0.9642460942268372,
+          0.9342052936553955
+        ],
+        "local_similarity": [
+          0.8549023866653442,
+          0.7995503544807434,
+          0.8091741800308228
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3262382447719574,
+          0.331777960062027,
+          0.34198373556137085
+        ],
+        "weights_for_next_step": [
+          0.32670342922210693,
+          0.3315920829772949,
+          0.34170451760292053
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 217.20986830000766
+      },
+      {
+        "step": 250,
+        "requested_step": 250,
+        "loss": 1.126020908355713,
+        "global_similarity": [
+          0.9807473421096802,
+          0.9624289870262146,
+          0.9455885291099548
+        ],
+        "local_similarity": [
+          0.8424067497253418,
+          0.8036469221115112,
+          0.8038913011550903
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32715287804603577,
+          0.33255481719970703,
+          0.3402923047542572
+        ],
+        "weights_for_next_step": [
+          0.32741034030914307,
+          0.333463191986084,
+          0.33912643790245056
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 283.3128668999998
+      },
+      {
+        "step": 300,
+        "requested_step": 300,
+        "loss": 1.1303844451904297,
+        "global_similarity": [
+          0.9793142080307007,
+          0.9722726345062256,
+          0.9475422501564026
+        ],
+        "local_similarity": [
+          0.8608705997467041,
+          0.8002654910087585,
+          0.8024866580963135
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.327041357755661,
+          0.3319772779941559,
+          0.3409813642501831
+        ],
+        "weights_for_next_step": [
+          0.32901787757873535,
+          0.331342875957489,
+          0.33963924646377563
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 355.07976960000815
+      },
+      {
+        "step": 350,
+        "requested_step": 350,
+        "loss": 1.134102463722229,
+        "global_similarity": [
+          0.9841533899307251,
+          0.9744230508804321,
+          0.9551883339881897
+        ],
+        "local_similarity": [
+          0.8487816452980042,
+          0.8052369356155396,
+          0.7908813953399658
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3279798626899719,
+          0.33381813764572144,
+          0.33820199966430664
+        ],
+        "weights_for_next_step": [
+          0.329037606716156,
+          0.33225488662719727,
+          0.3387075662612915
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 426.8035288000101
+      },
+      {
+        "step": 400,
+        "requested_step": 400,
+        "loss": 1.1341326236724854,
+        "global_similarity": [
+          0.9871397614479065,
+          0.9719967842102051,
+          0.9518707990646362
+        ],
+        "local_similarity": [
+          0.8597949743270874,
+          0.8013720512390137,
+          0.7988325357437134
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3286294639110565,
+          0.33148646354675293,
+          0.33988410234451294
+        ],
+        "weights_for_next_step": [
+          0.32774460315704346,
+          0.33274537324905396,
+          0.339510053396225
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 497.82837540000037
+      },
+      {
+        "step": 450,
+        "requested_step": 450,
+        "loss": 1.1391493082046509,
+        "global_similarity": [
+          0.9852750301361084,
+          0.9770299196243286,
+          0.9624183177947998
+        ],
+        "local_similarity": [
+          0.8598240613937378,
+          0.799242377281189,
+          0.806502640247345
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32865720987319946,
+          0.3317759335041046,
+          0.3395668566226959
+        ],
+        "weights_for_next_step": [
+          0.3298806846141815,
+          0.3326118290424347,
+          0.3375075161457062
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 570.0731106000021
+      },
+      {
+        "step": 500,
+        "requested_step": 500,
+        "loss": 1.140612244606018,
+        "global_similarity": [
+          0.9884101152420044,
+          0.9801018238067627,
+          0.9548381567001343
+        ],
+        "local_similarity": [
+          0.8609840869903564,
+          0.8208149671554565,
+          0.8133913278579712
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32859286665916443,
+          0.3323531746864319,
+          0.3390539586544037
+        ],
+        "weights_for_next_step": [
+          0.3286787271499634,
+          0.3314208686351776,
+          0.3399004340171814
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 641.6262480000005
+      },
+      {
+        "step": 550,
+        "requested_step": 550,
+        "loss": 1.139603614807129,
+        "global_similarity": [
+          0.989716649055481,
+          0.9790400862693787,
+          0.9568732380867004
+        ],
+        "local_similarity": [
+          0.8404948711395264,
+          0.8153957724571228,
+          0.8121935129165649
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32875925302505493,
+          0.3335513174533844,
+          0.33768942952156067
+        ],
+        "weights_for_next_step": [
+          0.3285019099712372,
+          0.33202797174453735,
+          0.33947017788887024
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 717.7974164000043
+      },
+      {
+        "step": 600,
+        "requested_step": 600,
+        "loss": 1.1391685009002686,
+        "global_similarity": [
+          0.9848983883857727,
+          0.978132963180542,
+          0.9627122282981873
+        ],
+        "local_similarity": [
+          0.841335117816925,
+          0.8065400123596191,
+          0.8121564388275146
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3304011821746826,
+          0.3322678208351135,
+          0.33733102679252625
+        ],
+        "weights_for_next_step": [
+          0.33011770248413086,
+          0.3323586881160736,
+          0.33752360939979553
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 806.8204062000004
+      },
+      {
+        "step": 650,
+        "requested_step": 650,
+        "loss": 1.1393465995788574,
+        "global_similarity": [
+          0.988074779510498,
+          0.9784544110298157,
+          0.9612821936607361
+        ],
+        "local_similarity": [
+          0.8440049886703491,
+          0.8114796876907349,
+          0.7975509166717529
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32952114939689636,
+          0.33193284273147583,
+          0.3385459780693054
+        ],
+        "weights_for_next_step": [
+          0.3292916715145111,
+          0.33247485756874084,
+          0.33823350071907043
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 882.4342945000099
+      },
+      {
+        "step": 700,
+        "requested_step": 700,
+        "loss": 1.140821099281311,
+        "global_similarity": [
+          0.9881687760353088,
+          0.976164698600769,
+          0.9662423729896545
+        ],
+        "local_similarity": [
+          0.8400341272354126,
+          0.8069266676902771,
+          0.8134618997573853
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.33074748516082764,
+          0.3324239253997803,
+          0.3368286192417145
+        ],
+        "weights_for_next_step": [
+          0.32957127690315247,
+          0.3335513174533844,
+          0.33687737584114075
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 958.7106638999976
+      },
+      {
+        "step": 750,
+        "requested_step": 750,
+        "loss": 1.1433629989624023,
+        "global_similarity": [
+          0.9898946285247803,
+          0.9803147315979004,
+          0.967555582523346
+        ],
+        "local_similarity": [
+          0.842613935470581,
+          0.8169873952865601,
+          0.8034422397613525
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.329498827457428,
+          0.3326071500778198,
+          0.3378940224647522
+        ],
+        "weights_for_next_step": [
+          0.329791784286499,
+          0.33296632766723633,
+          0.33724191784858704
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1033.1587279000087
+      },
+      {
+        "step": 800,
+        "requested_step": 800,
+        "loss": 1.1447150707244873,
+        "global_similarity": [
+          0.9855965971946716,
+          0.9823254346847534,
+          0.9692838788032532
+        ],
+        "local_similarity": [
+          0.8564284443855286,
+          0.8149005174636841,
+          0.8139905333518982
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.33076170086860657,
+          0.3333701491355896,
+          0.33586814999580383
+        ],
+        "weights_for_next_step": [
+          0.3311561942100525,
+          0.3322412371635437,
+          0.3366025686264038
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1112.6824245000025
+      },
+      {
+        "step": 850,
+        "requested_step": 850,
+        "loss": 1.1460130214691162,
+        "global_similarity": [
+          0.9907321333885193,
+          0.9826205372810364,
+          0.965405285358429
+        ],
+        "local_similarity": [
+          0.8648292422294617,
+          0.8208993673324585,
+          0.8123471736907959
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.32980918884277344,
+          0.33204934000968933,
+          0.33814144134521484
+        ],
+        "weights_for_next_step": [
+          0.3296201825141907,
+          0.33230477571487427,
+          0.33807504177093506
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1197.9493280000024
+      },
+      {
+        "step": 900,
+        "requested_step": 900,
+        "loss": 1.1437796354293823,
+        "global_similarity": [
+          0.985736608505249,
+          0.982965350151062,
+          0.9665256142616272
+        ],
+        "local_similarity": [
+          0.8524168133735657,
+          0.8141827583312988,
+          0.8151734471321106
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.33013245463371277,
+          0.3321443200111389,
+          0.3377231955528259
+        ],
+        "weights_for_next_step": [
+          0.3308878540992737,
+          0.33180615305900574,
+          0.33730602264404297
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1277.7088108000025
+      },
+      {
+        "step": 950,
+        "requested_step": 950,
+        "loss": 1.1432979106903076,
+        "global_similarity": [
+          0.9890551567077637,
+          0.9808292984962463,
+          0.9661599397659302
+        ],
+        "local_similarity": [
+          0.8546099662780762,
+          0.800493597984314,
+          0.8153289556503296
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.3297893702983856,
+          0.33347445726394653,
+          0.33673614263534546
+        ],
+        "weights_for_next_step": [
+          0.3298785090446472,
+          0.33260321617126465,
+          0.33751827478408813
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1349.4341756000067
+      },
+      {
+        "step": 1000,
+        "requested_step": 1000,
+        "loss": 1.1447317600250244,
+        "global_similarity": [
+          0.9871745109558105,
+          0.9815514087677002,
+          0.9653342962265015
+        ],
+        "local_similarity": [
+          0.8624985218048096,
+          0.8220676779747009,
+          0.8172032237052917
+        ],
+        "text_similarity": 0.0,
+        "weights_used_for_this_step": [
+          0.330608606338501,
+          0.33250370621681213,
+          0.3368876874446869
+        ],
+        "weights_for_next_step": [
+          0.3302815854549408,
+          0.33214402198791504,
+          0.3375743627548218
+        ],
+        "linf_after_update": 0.0627451241016388,
+        "zero_gradient": false,
+        "direction_linf": 1.0,
+        "proposed_linf": 0.062745101749897,
+        "projection_iterations": null,
+        "initial_clipped_fraction": null,
+        "post_reprojection_linf": null,
+        "converged_before_fallback": null,
+        "direct_radial_scale": null,
+        "radial_scale": null,
+        "axis_ratio": null,
+        "frequency_shape": null,
+        "state_ready_loop_seconds": 1424.3930286999966
+      }
+    ],
+    "final_objective": {
+      "loss": 1.1455373764038086,
+      "global_similarity": [
+        0.9894163608551025,
+        0.9859198927879333,
+        0.9668996930122375
+      ],
+      "local_similarity": [
+        0.8563742637634277,
+        0.8059496879577637,
+        0.8109266757965088
+      ],
+      "text_similarity": 0.0
+    },
+    "final_model_weights": [
+      0.3302815854549408,
+      0.33214402198791504,
+      0.3375743627548218
+    ],
+    "perturbation_diagnostics": {
+      "raw_synthesized": {
+        "linf": 0.0627451241016388,
+        "mean_absolute": 0.03235848620533943,
+        "mean_squared": 0.001517947530373931,
+        "out_of_band_energy_ratio": 0.34347780832431846
+      },
+      "after_range_clip": {
+        "linf": 0.0627451241016388,
+        "mean_absolute": 0.03235848620533943,
+        "mean_squared": 0.001517947530373931,
+        "out_of_band_energy_ratio": 0.34347780832431846
+      },
+      "after_png_reload": {
+        "linf": 0.0627451241016388,
+        "mean_absolute": 0.03225718066096306,
+        "mean_squared": 0.0015127705410122871,
+        "out_of_band_energy_ratio": 0.34617768957608613
+      },
+      "range_clipped_element_fraction": 0.0,
+      "diagnostic_band": {
+        "axis_ratio": 0.25,
+        "height_frequencies": 125,
+        "width_frequencies": 125,
+        "meaning": "shared_reference_band_for_spectral_diagnostics_only"
+      }
+    },
+    "decoded_image_audit": {
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "max_absolute_pixel_difference_levels": 16,
+      "mean_absolute_pixel_difference_levels": 8.225581333333333,
+      "mean_squared_pixel_difference_levels": 98.367912,
+      "budget_levels": 16,
+      "within_budget": true
+    },
+    "checkpoints": [
+      {
+        "label": "budget_0250",
+        "budget_fraction": 0.25,
+        "completed_steps": 250,
+        "loop_elapsed_seconds": 283.3128668999998,
+        "axis_ratio": null,
+        "height_frequencies": null,
+        "width_frequencies": null,
+        "image": "D:\\Material\\Literature Reading\\code\\minja\\src\\output\\nine_groups_attacker_history_joint\\groups\\07_shampoo\\attack\\checkpoints\\budget_0250.png",
+        "image_sha256": "d93b482d18a1d6f4d4457719a72ecfc20c4ed8e64cd800109ecc3340ff523dfa",
+        "decoded_audit": {
+          "shape": [
+            500,
+            500,
+            3
+          ],
+          "max_absolute_pixel_difference_levels": 16,
+          "mean_absolute_pixel_difference_levels": 6.015106666666667,
+          "mean_squared_pixel_difference_levels": 59.790968,
+          "budget_levels": 16,
+          "within_budget": true
+        }
+      },
+      {
+        "label": "budget_0500",
+        "budget_fraction": 0.5,
+        "completed_steps": 500,
+        "loop_elapsed_seconds": 641.6262480000005,
+        "axis_ratio": null,
+        "height_frequencies": null,
+        "width_frequencies": null,
+        "image": "D:\\Material\\Literature Reading\\code\\minja\\src\\output\\nine_groups_attacker_history_joint\\groups\\07_shampoo\\attack\\checkpoints\\budget_0500.png",
+        "image_sha256": "3034a7842dc147da545d1d9e2c1d22e3e97ab277875d83f6c59394dae38e46fd",
+        "decoded_audit": {
+          "shape": [
+            500,
+            500,
+            3
+          ],
+          "max_absolute_pixel_difference_levels": 16,
+          "mean_absolute_pixel_difference_levels": 7.262812,
+          "mean_squared_pixel_difference_levels": 81.33733733333334,
+          "budget_levels": 16,
+          "within_budget": true
+        }
+      },
+      {
+        "label": "budget_0750",
+        "budget_fraction": 0.75,
+        "completed_steps": 750,
+        "loop_elapsed_seconds": 1033.1587279000087,
+        "axis_ratio": null,
+        "height_frequencies": null,
+        "width_frequencies": null,
+        "image": "D:\\Material\\Literature Reading\\code\\minja\\src\\output\\nine_groups_attacker_history_joint\\groups\\07_shampoo\\attack\\checkpoints\\budget_0750.png",
+        "image_sha256": "56e2799799f06171851d69ead15fc302d7b4ebcfea87414714e74b77e7ee377e",
+        "decoded_audit": {
+          "shape": [
+            500,
+            500,
+            3
+          ],
+          "max_absolute_pixel_difference_levels": 16,
+          "mean_absolute_pixel_difference_levels": 7.875208,
+          "mean_squared_pixel_difference_levels": 92.20635466666667,
+          "budget_levels": 16,
+          "within_budget": true
+        }
+      },
+      {
+        "label": "budget_1000",
+        "budget_fraction": 1.0,
+        "completed_steps": 1000,
+        "loop_elapsed_seconds": 1424.3930286999966,
+        "axis_ratio": null,
+        "height_frequencies": null,
+        "width_frequencies": null,
+        "image": "D:\\Material\\Literature Reading\\code\\minja\\src\\output\\nine_groups_attacker_history_joint\\groups\\07_shampoo\\attack\\checkpoints\\budget_1000.png",
+        "image_sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852",
+        "decoded_audit": {
+          "shape": [
+            500,
+            500,
+            3
+          ],
+          "max_absolute_pixel_difference_levels": 16,
+          "mean_absolute_pixel_difference_levels": 8.225581333333333,
+          "mean_squared_pixel_difference_levels": 98.367912,
+          "budget_levels": 16,
+          "within_budget": true
+        }
+      }
+    ],
+    "output_image": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\lucid_shampoo_full_retest_20261027\\groups\\07_shampoo\\attack\\adversarial.png",
+    "output_image_sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852",
+    "primary_evaluator_used_during_attack": false,
+    "output_metadata": "D:\\Material\\Literature Reading\\code\\minja\\src\\output\\nine_groups_attacker_history_joint\\groups\\07_shampoo\\attack\\attack_metrics.json",
+    "history_reuse": {
+      "source_root": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\nine_groups_attacker_history_joint",
+      "new_optimization_steps": 0,
+      "original_attack_ready_sha256": "e7bf89e1af4a984de8f7780809ff8e7ecb4598e4b1f2151055951b8b072ba3e1"
+    }
+  },
+  "history_binding_sha256": "e4951cfecc5fc2cd6244ab1805ee5500db3c5205f1c093dc51146b3e86d2a490"
+}

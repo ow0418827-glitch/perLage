@@ -1,0 +1,460 @@
+{
+  "status": "completed",
+  "config": {
+    "steps": 160,
+    "check_every": 10,
+    "latent_levels": 64,
+    "latent_working_size": 256,
+    "latent_limit": 1.0,
+    "latent_learning_rate": 0.02,
+    "latent_smoothing_mix": 0.06,
+    "source_ssim_floor": 0.75,
+    "source_mae_ceiling": 24.0,
+    "temperature": 0.04,
+    "macro_l2_weight": 5e-05,
+    "macro_tv_weight": 0.0003,
+    "halo_parent_multiplier": 1.0,
+    "halo_floor": 12.0,
+    "guard_backtracks": 8,
+    "auxiliary_levels": 0,
+    "feature_weight": 0.0,
+    "diffusion_weight": 0.0,
+    "seed": 42
+  },
+  "history": [
+    {
+      "source_ssim": 0.9760313297477161,
+      "source_mae_levels": 4.671575546264648,
+      "halo_error": 5.360787718460605,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 0,
+      "joint_scores": [
+        [
+          0.6402631998062134
+        ]
+      ],
+      "training_utility": 0.6402631998062134,
+      "regularization": 0.0,
+      "selection_utility": 0.6402631998062134,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.6402631998062134
+      ]
+    },
+    {
+      "source_ssim": 0.9440649653186307,
+      "source_mae_levels": 4.9669904708862305,
+      "halo_error": 9.275645716270935,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 10,
+      "joint_scores": [
+        [
+          0.6769484281539917
+        ]
+      ],
+      "training_utility": 0.6769484281539917,
+      "regularization": 7.711648322583642e-06,
+      "selection_utility": 0.6769407391548157,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.6769407391548157
+      ]
+    },
+    {
+      "source_ssim": 0.9314368432035195,
+      "source_mae_levels": 5.419106960296631,
+      "halo_error": 11.69469793854884,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 20,
+      "joint_scores": [
+        [
+          0.6919814944267273
+        ]
+      ],
+      "training_utility": 0.6919814944267273,
+      "regularization": 9.72933503362583e-06,
+      "selection_utility": 0.6919717788696289,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.6919717788696289
+      ]
+    },
+    {
+      "source_ssim": 0.9262653122849165,
+      "source_mae_levels": 5.656384468078613,
+      "halo_error": 12.856438564005915,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 30,
+      "joint_scores": [
+        [
+          0.7016346454620361
+        ]
+      ],
+      "training_utility": 0.7016346454620361,
+      "regularization": 1.0576284694252536e-05,
+      "selection_utility": 0.7016240954399109,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7016240954399109
+      ]
+    },
+    {
+      "source_ssim": 0.9262589304375616,
+      "source_mae_levels": 5.655981063842773,
+      "halo_error": 12.857964832987859,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 40,
+      "joint_scores": [
+        [
+          0.70172119140625
+        ]
+      ],
+      "training_utility": 0.70172119140625,
+      "regularization": 1.0577413377177436e-05,
+      "selection_utility": 0.7017106413841248,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7017106413841248
+      ]
+    },
+    {
+      "source_ssim": 0.9262589304375616,
+      "source_mae_levels": 5.655981063842773,
+      "halo_error": 12.857964832987859,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 50,
+      "joint_scores": [
+        [
+          0.70172119140625
+        ]
+      ],
+      "training_utility": 0.70172119140625,
+      "regularization": 1.0577413377177436e-05,
+      "selection_utility": 0.7017106413841248,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7017106413841248
+      ]
+    },
+    {
+      "source_ssim": 0.9265271810389548,
+      "source_mae_levels": 5.643413066864014,
+      "halo_error": 12.860665963654872,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 60,
+      "joint_scores": [
+        [
+          0.7022310495376587
+        ]
+      ],
+      "training_utility": 0.7022310495376587,
+      "regularization": 1.0549661965342239e-05,
+      "selection_utility": 0.7022204995155334,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7022204995155334
+      ]
+    },
+    {
+      "source_ssim": 0.9265434660359387,
+      "source_mae_levels": 5.640823841094971,
+      "halo_error": 12.86051513860025,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 70,
+      "joint_scores": [
+        [
+          0.7023369669914246
+        ]
+      ],
+      "training_utility": 0.7023369669914246,
+      "regularization": 1.0549596481723711e-05,
+      "selection_utility": 0.7023264169692993,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7023264169692993
+      ]
+    },
+    {
+      "source_ssim": 0.926541373601997,
+      "source_mae_levels": 5.640815734863281,
+      "halo_error": 12.860823218966093,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 80,
+      "joint_scores": [
+        [
+          0.7023444175720215
+        ]
+      ],
+      "training_utility": 0.7023444175720215,
+      "regularization": 1.0550176739343442e-05,
+      "selection_utility": 0.7023338675498962,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7023338675498962
+      ]
+    },
+    {
+      "source_ssim": 0.926541373601997,
+      "source_mae_levels": 5.640815734863281,
+      "halo_error": 12.860823218966093,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 90,
+      "joint_scores": [
+        [
+          0.7023444175720215
+        ]
+      ],
+      "training_utility": 0.7023444175720215,
+      "regularization": 1.0550176739343442e-05,
+      "selection_utility": 0.7023338675498962,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7023338675498962
+      ]
+    },
+    {
+      "source_ssim": 0.926541373601997,
+      "source_mae_levels": 5.640815734863281,
+      "halo_error": 12.860823218966093,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 100,
+      "joint_scores": [
+        [
+          0.7023444175720215
+        ]
+      ],
+      "training_utility": 0.7023444175720215,
+      "regularization": 1.0550176739343442e-05,
+      "selection_utility": 0.7023338675498962,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7023338675498962
+      ]
+    },
+    {
+      "source_ssim": 0.9287695845945315,
+      "source_mae_levels": 5.520748138427734,
+      "halo_error": 12.832864426158421,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 110,
+      "joint_scores": [
+        [
+          0.7028115391731262
+        ]
+      ],
+      "training_utility": 0.7028114795684814,
+      "regularization": 1.0315345207345672e-05,
+      "selection_utility": 0.7028011679649353,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7028011679649353
+      ]
+    },
+    {
+      "source_ssim": 0.9289430211131704,
+      "source_mae_levels": 5.509350299835205,
+      "halo_error": 12.860290338723955,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 120,
+      "joint_scores": [
+        [
+          0.7031086087226868
+        ]
+      ],
+      "training_utility": 0.7031086087226868,
+      "regularization": 1.0290812497260049e-05,
+      "selection_utility": 0.7030982971191406,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7030982971191406
+      ]
+    },
+    {
+      "source_ssim": 0.9289768295373465,
+      "source_mae_levels": 5.507745265960693,
+      "halo_error": 12.859970565284264,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 130,
+      "joint_scores": [
+        [
+          0.7031582593917847
+        ]
+      ],
+      "training_utility": 0.7031582593917847,
+      "regularization": 1.0286245924362447e-05,
+      "selection_utility": 0.7031479477882385,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7031479477882385
+      ]
+    },
+    {
+      "source_ssim": 0.9289864242718914,
+      "source_mae_levels": 5.5074262619018555,
+      "halo_error": 12.861543411257792,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 140,
+      "joint_scores": [
+        [
+          0.7031767964363098
+        ]
+      ],
+      "training_utility": 0.7031767964363098,
+      "regularization": 1.0284372365276795e-05,
+      "selection_utility": 0.7031664848327637,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.7031664848327637
+      ]
+    },
+    {
+      "source_ssim": 0.9296223289639862,
+      "source_mae_levels": 5.488903522491455,
+      "halo_error": 12.86203105634467,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 150,
+      "joint_scores": [
+        [
+          0.7031148076057434
+        ]
+      ],
+      "training_utility": 0.7031147480010986,
+      "regularization": 1.0196702532994095e-05,
+      "selection_utility": 0.703104555606842,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.703104555606842
+      ]
+    },
+    {
+      "source_ssim": 0.9355497399027403,
+      "source_mae_levels": 5.269423961639404,
+      "halo_error": 12.576277223529356,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "step": 160,
+      "joint_scores": [
+        [
+          0.6999797821044922
+        ]
+      ],
+      "training_utility": 0.6999797821044922,
+      "regularization": 9.479690561420284e-06,
+      "selection_utility": 0.6999703049659729,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "selection": [
+        1,
+        0.6999703049659729
+      ]
+    }
+  ],
+  "steps_completed": 160,
+  "best": {
+    "source_ssim": 0.9289864242718914,
+    "source_mae_levels": 5.5074262619018555,
+    "halo_error": 12.861543411257792,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "step": 140,
+    "joint_scores": [
+      [
+        0.7031767964363098
+      ]
+    ],
+    "training_utility": 0.7031767964363098,
+    "regularization": 1.0284372365276795e-05,
+    "selection_utility": 0.7031664848327637,
+    "halo_ceiling": 12.8620334353522,
+    "parent_halo_error": 12.8620334353522,
+    "selection": [
+      1,
+      0.7031664848327637
+    ]
+  },
+  "final_check": {
+    "source_ssim": 0.9289864242718914,
+    "source_mae_levels": 5.5074262619018555,
+    "halo_error": 12.861543411257792,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "step": 140,
+    "joint_scores": [
+      [
+        0.7031767964363098
+      ]
+    ],
+    "training_utility": 0.7031767964363098,
+    "regularization": 1.0284372365276795e-05,
+    "selection_utility": 0.7031664848327637,
+    "halo_ceiling": 12.8620334353522,
+    "parent_halo_error": 12.8620334353522,
+    "selection": [
+      1,
+      0.7031664848327637
+    ]
+  },
+  "accepted_updates": 64,
+  "rejected_updates": 96,
+  "latent_max_levels": 64,
+  "latent_mae_levels": 3.1121173333333334,
+  "auxiliary_max_levels": 0,
+  "auxiliary_mae_levels": 0.0,
+  "pixel_optimization": false,
+  "no_pixel_optimization": true,
+  "diffusion_calls": 0,
+  "printed_region_fixed_to_harmonized_anchor": true,
+  "foreground_limited": true,
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "elapsed_seconds": 177.95099109999956,
+  "output_sha256": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e"
+}

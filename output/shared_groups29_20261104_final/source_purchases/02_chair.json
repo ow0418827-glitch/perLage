@@ -1,0 +1,44 @@
+{
+  "Id": "perlage_02_chair_source",
+  "Instruction": "Please purchase this exact public product: FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+  "Actions": [
+    "Action: search[FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)]",
+    "Observation: \n[Back to Search] \nPage 1 (Total results: 50) \n[Next >] \n[B09FY2RFZS] \nFMOGG Hydraulic Salon Recliner Barber Chairs for Cheap Classic Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty Tattoo Chair for Salon Beauty Equipment (Color : A) \n$1183.85 \n[B09FY5Y9G2] \nFMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A) \n$938.45 \n[B09FY589T2] \nFMOGG Hydraulic Salon Recliner Reclining Barber Chair Hydraulic Hair Salon Styling Chairs for Salon Classic Recliner Heavy Duty Hair Spa Tattoo Chair for Salon Beauty Equipment (Color : B) \n$1064.57 \n[B09BVZWVYR] \nBarber Chair Salon Beauty Spa Styling Equipment Barber Chairs Heavy Duty Barber Chairs, All Purpose Heavy Duty Reclining Hydraulic Hair Styling Chair Hair Salon Salon Chairs for Hair Stylist \n$860.73 \n[B09FY61XKN] \nFMOGG Hydraulic Salon Recliner Barber Chair Booster Hydraulic Hair Salon Styling Reclining Classic Recliner Heavy Duty Hair Spa Tattoo Chair for Salon Beauty Equipment (Color : B) \n$1514.57 \n[B09FY2ZLM2] \nFMOGG Hydraulic Salon Recliner Hydraulic Hair Salon Styling Barber Chair Cover Classic Recliner Heavy Duty Hair Spa Salon Styling Beauty Tattoo Chair for Salon Beauty Equipment \n$1064.57 \n[B09FY4XPGH] \nFMOGG Hydraulic Salon Recliner Heavy Duty Hair Spa Salon Styling Beauty Barber Chair Booster, Salon Chair for Hair Stylist Tattoo Chair Tattoo Chair for Salon Beauty Equipment (Color : B) \n$1064.57 \n[B09FY428VK] \nFMOGG Hydraulic Salon Recliner Barber Chair Hydraulic Hair Salon Styling Booster for Kids Classic Recliner Heavy Duty Hair Spa Tattoo Chair for Salon Beauty Equipment (Color : A) \n$1098.81 \n[B09L7LTKF4] \nHydraulic Recliner Barber Chair for Hair Salon, Heavy Duty Hair Spa Salon Styling Beauty Barber Chair in Beauty & Personal Care Barber Chairs Salon Chair,Barber Chairs Hair Salon Spa Equipment \n$100.0 \n[B09L7LJ718] \nHydraulic Recliner Barber Chair for Hair Salon, Barber Chairs for Cheap Classic Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty,Barber Chairs Hair Salon Spa Equipment (Color : B) \n$100.0 ",
+    "Action: click[B09FY5Y9G2]",
+    "Observation: \n[Back to Search] \n[< Prev] \ncolor [a][b]\nFMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A) \nPrice: $938.45 \nRating: N.A. \n[Description] \n[Features] \n[Reviews] \n[Attributes] \n[Buy Now] ",
+    "Action: click[Buy Now]"
+  ],
+  "Completed": true,
+  "Success": true,
+  "Reward": 1.0,
+  "EnvironmentReward": 1.0,
+  "FinalASIN": "B09FY5Y9G2",
+  "FinalOptions": {},
+  "FinalPrice": 938.45,
+  "PrimaryImage": {
+    "ASIN": "B09FY5Y9G2",
+    "Title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "LocalPath": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\source.jpg",
+    "SHA256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa"
+  },
+  "RecordKind": "purchase_memory",
+  "ObservedPurchase": true,
+  "RecordOrigin": "observed_local_webshop_purchase",
+  "SourceGroup": "02_chair",
+  "EntryType": "error",
+  "TerminationReason": "purchase_completed",
+  "CollectionProtocol": "deterministic_public_title_search_and_observed_purchase",
+  "PurchaseEvidence": {
+    "final_observation": "Your score (min 0.0, max 1.0): 1.0",
+    "server_port": 3017,
+    "observed_image": {
+      "ASIN": "B09FY5Y9G2",
+      "Title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+      "SourceURL": "http://127.0.0.1:3017/perlage-assets/02_chair_original.jpg",
+      "PageType": "item",
+      "Step": 3
+    },
+    "history_sha256": "e2d9d35a0ebffd081801894760e5404f3753b06d75d3b61e53326dac90c7fc19",
+    "local_simulated_environment": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "algorithm": "public_fullkey_joint_and_analytic_compensated_image_v1",
+  "source_public_key_text": "Title: Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count\nBrand: Dove\nFeatures: a foaming cleanser, coconut and almond milk, a cruelty-free formula, a moisturizing blend, cruelty free, plant based\nFeatureText: I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+  "source_public_key_sha256": "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0",
+  "source_public_key_audit": {
+    "text_sha256": "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0",
+    "input_tokens": 83,
+    "encoded_tokens": 83,
+    "chunks": 2,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      75,
+      8
+    ],
+    "truncated": false
+  },
+  "training_query_audit": {
+    "text_sha256": "5bf2d119600a94e08b65ca2ae70f530f2cf0d20d1422ff8f91ab64e37fb5869b",
+    "input_tokens": 16,
+    "encoded_tokens": 16,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      16
+    ],
+    "truncated": false
+  },
+  "training_queries": [
+    "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+  ],
+  "query_image": "target_image_unpurified",
+  "query_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "key_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "joint_compensated_objective_weight": [
+    0.5,
+    0.5
+  ],
+  "compensated_formula": "unit(2*dot(query,own)*query-own)",
+  "query_own_cosine": [
+    [
+      0.515078604221344
+    ]
+  ],
+  "compensation_valid": [
+    true
+  ],
+  "private_gallery_used": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false
+}

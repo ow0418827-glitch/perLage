@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "query_mode": "text",
+  "target_public_id": "B09CYFD5BX",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "barber chair",
+  "core_attributes": [
+    "a heavy-duty hydraulic pump",
+    "360-degree rotation",
+    "an adjustable seat height"
+  ],
+  "instructions": [
+    "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "I would like to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "Looking to buy a barber chair with 360-degree rotation and an adjustable seat height.",
+    "I am looking to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "Please help me buy a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "I am shopping for a barber chair with 360-degree rotation and an adjustable seat height.",
+    "I would like to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "Help me purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "I am looking for a barber chair with 360-degree rotation and an adjustable seat height.",
+    "Please find a barber chair with a heavy-duty hydraulic pump and 360-degree rotation for me to buy.",
+    "I want to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "Please help me purchase a barber chair with 360-degree rotation and an adjustable seat height.",
+    "I need to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "I would like help finding a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "Find me a barber chair with 360-degree rotation and an adjustable seat height to purchase.",
+    "Please look for a barber chair with a heavy-duty hydraulic pump and 360-degree rotation that I can buy.",
+    "I am interested in buying a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "I would like to shop for a barber chair with 360-degree rotation and an adjustable seat height.",
+    "Help me find a barber chair with a heavy-duty hydraulic pump and 360-degree rotation to buy.",
+    "I am ready to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height."
+  ],
+  "instructions_sha256": "29dd9dd9b222797bca9a2f78a68516535d293a2500e99d0a23ccd6a9c4891e33",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": false,
+  "query_images_generated": false,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection"
+}

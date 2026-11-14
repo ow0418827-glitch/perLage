@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "phase": "prepare",
+  "elapsed_seconds": 10.097709800000302,
+  "audit": {
+    "active": false,
+    "checked_accesses": 10489,
+    "blocked_accesses": []
+  },
+  "error": null,
+  "public_images_and_names_only": true,
+  "prior_color_step_decision_used_to_stop_full_generation": false
+}

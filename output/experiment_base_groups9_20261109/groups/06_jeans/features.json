@@ -1,0 +1,205 @@
+{
+  "group": "06_jeans",
+  "category": "apparel",
+  "target": {
+    "asin": "B09HH96NJY",
+    "title": "Womens High Rise Jeans Wide Leg Pants Patchwork Straight Boyfriend Jeans Y2K 90s E-Girl Wild Baggy Trousers Denim Pants",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "reason": "Womens and Bell Bottom are not evidenced brands; no explicit brand attribution is present."
+    },
+    "category": "jeans",
+    "attributes": [
+      "a high waist",
+      "a baggy straight-leg cut",
+      "flap pockets",
+      "a zipper fly",
+      "denim pants",
+      "straight leg",
+      "wide leg",
+      "teen girls",
+      "high waist",
+      "polyester spandex",
+      "daily wear",
+      "hand wash",
+      "machine wash"
+    ],
+    "canonical_sentence": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+    "training_queries": [
+      "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+      "I would like to purchase jeans featuring a high waist and flap pockets.",
+      "I am looking for jeans with a baggy straight-leg cut and a zipper fly."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a high waist",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "high waist"
+      },
+      {
+        "feature": "a baggy straight-leg cut",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "baggy straight leg"
+      },
+      {
+        "feature": "flap pockets",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "flap pockets"
+      },
+      {
+        "feature": "a zipper fly",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "zipper fly closure"
+      },
+      {
+        "feature": "denim pants",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "denim pants"
+      },
+      {
+        "feature": "straight leg",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "straight leg"
+      },
+      {
+        "feature": "wide leg",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "wide leg"
+      },
+      {
+        "feature": "teen girls",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "teen girls"
+      },
+      {
+        "feature": "high waist",
+        "field": "Attributes",
+        "index": 4,
+        "quote": "high waist"
+      },
+      {
+        "feature": "polyester spandex",
+        "field": "Attributes",
+        "index": 5,
+        "quote": "polyester spandex"
+      },
+      {
+        "feature": "daily wear",
+        "field": "Attributes",
+        "index": 6,
+        "quote": "daily wear"
+      },
+      {
+        "feature": "hand wash",
+        "field": "Attributes",
+        "index": 7,
+        "quote": "hand wash"
+      },
+      {
+        "feature": "machine wash",
+        "field": "Attributes",
+        "index": 8,
+        "quote": "machine wash"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a high waist",
+      "a baggy straight-leg cut",
+      "flap pockets",
+      "a zipper fly"
+    ]
+  },
+  "source": {
+    "asin": "B07FRKQNFV",
+    "title": "Cinch Men's Bronze Label Tapered Slim Fit Jeans Dark Stone 29W x 32L",
+    "brand": "Cinch",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Cinch",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "jeans",
+    "attributes": [
+      "a tapered slim fit",
+      "cotton denim",
+      "a button closure",
+      "a zipper fly",
+      "button closure",
+      "slim fit",
+      "machine wash"
+    ],
+    "canonical_sentence": "I want to buy jeans with a tapered slim fit and cotton denim.",
+    "training_queries": [
+      "I want to buy jeans with a tapered slim fit and cotton denim.",
+      "I would like to purchase jeans featuring a tapered slim fit and a button closure.",
+      "I am looking for jeans with cotton denim and a zipper fly."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a tapered slim fit",
+        "field": "Title",
+        "quote": "Tapered Slim Fit"
+      },
+      {
+        "feature": "cotton denim",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "100% Cotton"
+      },
+      {
+        "feature": "a button closure",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "Button closure"
+      },
+      {
+        "feature": "a zipper fly",
+        "field": "BulletPoints",
+        "index": 5,
+        "quote": "zip fly"
+      },
+      {
+        "feature": "button closure",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "button closure"
+      },
+      {
+        "feature": "slim fit",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "slim fit"
+      },
+      {
+        "feature": "machine wash",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "machine wash"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a tapered slim fit",
+      "cotton denim",
+      "a button closure",
+      "a zipper fly"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+  "alignment_training_queries": [
+    "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+    "I would like to purchase jeans featuring a high waist and flap pockets.",
+    "I am looking for jeans with a baggy straight-leg cut and a zipper fly."
+  ]
+}

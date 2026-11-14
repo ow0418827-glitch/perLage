@@ -1,0 +1,163 @@
+{
+  "method": "PerLAGE_no_pixel_bg_coop_experiment",
+  "definition": "frozen_perlage_no_pixel_subject_locked_background_latent_v2",
+  "profile": "fg_lock_bg24",
+  "status": "completed",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "first_three_stages_reused": true,
+  "fresh_first_three_stages_executed": false,
+  "initialization_reused": true,
+  "previous_final_refinement_reused": false,
+  "subject_identical_to_perlage_no_pixel": true,
+  "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\method_identity.json",
+  "method_identity_sha256": "f17949d0d6156b26fa3b9ce69486f977aacffc34caab3d55ce694a57217fdf44",
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "source_title_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+  "stages": {
+    "color_harmonization": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "7f91854fc899b2449d150b927dd221bf3971e448551c852054620b8c988b8d10",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "942479f6a29c7ce0875ea5e1084a0ad31af606b25ee8d36d4121fdb7340ef9c9"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_segmentation": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "a71669806f2713f09484ca72bf3214cef5025c388c23736fe1e8a5963dfccbd0",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "a6bba796a0cde81c45edb3301f26d47030077af2a493bfd8335a7ac54b996d78",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "893ea70f1edb4489d07f6ce844ff7df8826f7a0eb715eec3d07269d0bd7df8ba",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "6a190d25f7216b088b9137d457a8f25c5a03f4c79ec5a20ef0b6708f88b3c09f"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_statistics": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "75dd6d205b9d34fb5b131b525ce91f6c161a894750631661c97b6373114028a8",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "4f3f0e36332c467cd884989000576bb6bee3f2cb79f9a08f26ed1224d676ae2f"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "latent_generation_refinement": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\method_identity.json": "f17949d0d6156b26fa3b9ce69486f977aacffc34caab3d55ce694a57217fdf44",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\metadata.json": "ab277bd477fef808be74b74e28b21cd60542de2f6eecadbc5a78fe0378ad79dc",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\adversarial.png": "423b95dc232c6282817009032c46f06a6f913d692a36ba6ec19621002a78c5b0",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\generative_anchor.png": "423b95dc232c6282817009032c46f06a6f913d692a36ba6ec19621002a78c5b0",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\latent_edit_mask.png": "8f265195684d81c97ac3db4a600ddc70f46f2507208f4c03e34d1afe750d60f5",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\public_title_encoding_audit.json": "9eb747b15e11d820c355cf8568fe0199371e95cb8e7fa5a2e69901c364ed72f1"
+      },
+      "steps_completed": 350,
+      "steps_requested": 350,
+      "execution_mode": "fresh_full_refinement"
+    }
+  },
+  "latent_config": {
+    "steps": 350,
+    "check_every": 10,
+    "latent_levels": 0,
+    "background_levels": 24,
+    "latent_working_size": 512,
+    "latent_limit": 6.0,
+    "latent_learning_rate": 0.06,
+    "latent_smoothing_mix": 0.0,
+    "source_ssim_floor": 0.75,
+    "source_mae_ceiling": 24.0,
+    "temperature": 0.04,
+    "macro_l2_weight": 0.0,
+    "macro_tv_weight": 0.0,
+    "bg_l2_weight": 0.0001,
+    "bg_tv_weight": 0.0005,
+    "overflow_weight": 0.05,
+    "halo_soft_weight": 0.0001,
+    "edge_feather_pixels": 2.0,
+    "joint_weight": 0.5,
+    "compensated_weight": 0.5,
+    "halo_parent_multiplier": 1.0,
+    "halo_floor": 12.0,
+    "guard_backtracks": 8,
+    "auxiliary_levels": 0,
+    "feature_weight": 0.0,
+    "diffusion_weight": 0.0,
+    "seed": 42
+  },
+  "source_public_key_text": "Title: Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count\nBrand: Dove\nFeatures: a foaming cleanser, coconut and almond milk, a cruelty-free formula, a moisturizing blend, cruelty free, plant based\nFeatureText: I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+  "candidates": {
+    "final": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\adversarial.png",
+      "sha256": "423b95dc232c6282817009032c46f06a6f913d692a36ba6ec19621002a78c5b0"
+    }
+  },
+  "generative_anchor": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\generative_anchor.png",
+  "prefix_binding": {
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "7f91854fc899b2449d150b927dd221bf3971e448551c852054620b8c988b8d10",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "a71669806f2713f09484ca72bf3214cef5025c388c23736fe1e8a5963dfccbd0",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\adversarial.png": "7fa6e636c76432c52f9bed2beb3cd5cc962f5c3ab60b4cf92feeb9a5d95c6907",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\generative_anchor.png": "7fa6e636c76432c52f9bed2beb3cd5cc962f5c3ab60b4cf92feeb9a5d95c6907",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "c961d0d7614ac0ccc5d5b1546039b16152ddabfea2b1960993ce35472d36cac2",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "f50b5c461d7c39a3894f610a27a768c6b1b79f21194a90c87eadbd58ae29e99d",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "e8591180e6f95a1923981263271b01c8f6f4071b5e17133c906eceeeeef30664",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\ready.json": "62fa66c0df5ebc9a110f17e8b448582f57732df61ee290fdf996bdfa7f3dfa7f"
+    },
+    "first_three_stages_reused": true,
+    "fresh_first_three_stages_executed": false,
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "c961d0d7614ac0ccc5d5b1546039b16152ddabfea2b1960993ce35472d36cac2",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "f50b5c461d7c39a3894f610a27a768c6b1b79f21194a90c87eadbd58ae29e99d",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "e8591180e6f95a1923981263271b01c8f6f4071b5e17133c906eceeeeef30664"
+    },
+    "initialization_reused": true,
+    "perlage_no_pixel_final_sha256": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "ready_sha256": "62fa66c0df5ebc9a110f17e8b448582f57732df61ee290fdf996bdfa7f3dfa7f",
+    "root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation",
+    "stages": {
+      "color_harmonization": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "7f91854fc899b2449d150b927dd221bf3971e448551c852054620b8c988b8d10",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "942479f6a29c7ce0875ea5e1084a0ad31af606b25ee8d36d4121fdb7340ef9c9"
+        },
+        "status": "completed"
+      },
+      "foreground_segmentation": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "a71669806f2713f09484ca72bf3214cef5025c388c23736fe1e8a5963dfccbd0",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "a6bba796a0cde81c45edb3301f26d47030077af2a493bfd8335a7ac54b996d78",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "893ea70f1edb4489d07f6ce844ff7df8826f7a0eb715eec3d07269d0bd7df8ba",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "6a190d25f7216b088b9137d457a8f25c5a03f4c79ec5a20ef0b6708f88b3c09f"
+        },
+        "status": "completed"
+      },
+      "foreground_statistics": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "75dd6d205b9d34fb5b131b525ce91f6c161a894750631661c97b6373114028a8",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "4f3f0e36332c467cd884989000576bb6bee3f2cb79f9a08f26ed1224d676ae2f"
+        },
+        "status": "completed"
+      }
+    },
+    "subject_locked_to_perlage_no_pixel": true
+  },
+  "pixel_optimization": false,
+  "auxiliary_max_levels": 0,
+  "optimization_mode": "latent_only",
+  "victim_memory_used": false,
+  "formal_queries_used": false,
+  "shadow_pool_used": false,
+  "true_rank_used": false,
+  "purchase_history_used": false,
+  "diffusion_calls": 0,
+  "observed_seconds": 790.0427668000048
+}

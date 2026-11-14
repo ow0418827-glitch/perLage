@@ -1,0 +1,67 @@
+{
+  "schema_version": 2,
+  "group": "04_curtain",
+  "name": "第四组窗帘",
+  "category": "curtains",
+  "shape_similarity": 0.5703,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": false,
+  "selection_status": "screened_high_similarity",
+  "selection_notes": "目标为木质纹理印花单片窗帘。在受控公开池木纹窗帘中筛选出最高外形相似度源商品（0.5703）。短名单未达0.601081硬门槛，保留候选供人工评估。",
+  "target": {
+    "id": "B086PW7TWX",
+    "title": "Windows Treatment Blackout Curtains Grommet Drapes for Boys/Girls Kids Bedroom DRINKES ARE ON ME Vintage Wood Board Texture Printed Room Darkening Curtains for Livingroom/Office, 1 Panel 52x45in",
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        65,
+        7,
+        438,
+        494
+      ]
+    ],
+    "text_regions": [
+      [
+        0.292,
+        0.222,
+        0.704,
+        0.386
+      ],
+      [
+        0.388,
+        0.414,
+        0.58,
+        0.532
+      ],
+      [
+        0.296,
+        0.576,
+        0.664,
+        0.74
+      ]
+    ]
+  },
+  "source": {
+    "id": "B09PHLS2QD",
+    "title": "Window Treatment Semi-Sheer Curtain Valance for Living Room, Bedroom, Kitchen, Bathroom, Rustic Wood Board Texture Printed Valances Rod Pocket Small Windows Curtains, 54x18 Inch, 1 Panel",
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        23,
+        24,
+        479,
+        487
+      ]
+    ],
+    "text_regions": [
+      [
+        0.316,
+        0.342,
+        0.704,
+        0.62
+      ]
+    ]
+  }
+}

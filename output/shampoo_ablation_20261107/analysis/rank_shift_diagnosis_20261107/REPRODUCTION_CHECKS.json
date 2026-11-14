@@ -1,0 +1,16 @@
+[
+  {
+    "model": "old_B32",
+    "bank": "old15",
+    "status": "passed",
+    "scores_rechecked": 20,
+    "max_absolute_error": 0.0
+  },
+  {
+    "model": "current_g14",
+    "bank": "new189",
+    "status": "passed",
+    "scores_rechecked": 20,
+    "max_absolute_error": 0.0
+  }
+]

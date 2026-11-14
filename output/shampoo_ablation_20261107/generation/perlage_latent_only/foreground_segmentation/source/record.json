@@ -1,0 +1,88 @@
+{
+  "identity": {
+    "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "boxes": [
+      [
+        20,
+        70,
+        178,
+        411
+      ],
+      [
+        110,
+        47,
+        310,
+        435
+      ],
+      [
+        260,
+        65,
+        402,
+        412
+      ],
+      [
+        360,
+        96,
+        485,
+        390
+      ]
+    ],
+    "model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+    "code_sha256": "f354b7277d0cc2099488a9cd98060ea8e2e3acdccecd5736f3def5da5d3fec4a",
+    "private_gallery_used": false
+  },
+  "seconds": 2.3300536000006105,
+  "pixels": 115002,
+  "scores": [
+    [
+      0.9088826775550842,
+      0.9219396114349365,
+      0.9444431066513062
+    ],
+    [
+      0.9617455005645752,
+      0.9485129714012146,
+      0.9704084992408752
+    ],
+    [
+      0.9581974744796753,
+      0.9228829145431519,
+      0.9677266478538513
+    ],
+    [
+      0.9674255847930908,
+      0.9365805387496948,
+      0.9753009080886841
+    ]
+  ],
+  "mask_sha256": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+  "selection": "maximum_model_iou_among_masks_containing_owned_box_center",
+  "selected_indices": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "candidate_center_flags": [
+    [
+      true,
+      false,
+      true
+    ],
+    [
+      true,
+      false,
+      true
+    ],
+    [
+      true,
+      true,
+      true
+    ],
+    [
+      true,
+      false,
+      true
+    ]
+  ]
+}

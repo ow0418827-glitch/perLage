@@ -1,0 +1,46 @@
+{
+  "group": "08_speaker",
+  "category": "audio",
+  "target": {
+    "asin": "B01N47U1VI",
+    "brand": "Touch of ECO",
+    "category": "bluetooth speaker",
+    "attributes": [
+      "water resistant",
+      "stereo sound",
+      "bluetooth speaker",
+      "solar powered"
+    ],
+    "canonical_sentence": "I want to buy a bluetooth speaker with water resistant and stereo sound.",
+    "training_queries": [
+      "I want to buy a bluetooth speaker with water resistant and stereo sound.",
+      "I would like to purchase a bluetooth speaker featuring solar powered battery and splashproof body.",
+      "Looking to buy a bluetooth speaker with portable wireless design and stereo sound."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B01590FHS0",
+    "brand": "Kicker",
+    "category": "bluetooth speaker",
+    "attributes": [
+      "outdoor marine speakers",
+      "2-way full range",
+      "mounting system",
+      "high efficiency"
+    ],
+    "canonical_sentence": "I want to buy outdoor speakers with 2-way full range and mounting system.",
+    "training_queries": [
+      "I want to buy outdoor speakers with 2-way full range and mounting system.",
+      "I would like to purchase outdoor speakers featuring marine surface mount and horn tweeters.",
+      "Looking to buy outdoor speakers with high efficiency sound and durable enclosure."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy a bluetooth speaker with water resistant and stereo sound.",
+  "alignment_training_queries": [
+    "I want to buy a bluetooth speaker with water resistant and stereo sound.",
+    "I would like to purchase a bluetooth speaker featuring solar powered battery and splashproof body.",
+    "Looking to buy a bluetooth speaker with portable wireless design and stereo sound."
+  ]
+}

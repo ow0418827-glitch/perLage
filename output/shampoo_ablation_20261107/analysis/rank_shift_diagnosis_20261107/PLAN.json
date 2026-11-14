@@ -1,0 +1,86 @@
+{
+  "scope": "posthoc_read_only_rank_shift_factorial_diagnosis",
+  "source_asin": "B08XYBS678",
+  "source_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "banks": {
+    "old15": {
+      "path": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_defenses_20261029\\banks\\none\\clean.json",
+      "sha256": "328fd9083b3283a8a7cffc5f4fbc2142872e818769fa176668535e12f1169bff"
+    },
+    "old100": {
+      "path": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shared_memory_20261103\\shared_memory_pool.json",
+      "sha256": "455199a93350beb1d9f67e4e1344ebac1963097bcde95fe66a02a10e807a28ab"
+    },
+    "new189": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shared_memory\\pool_189_v1\\shared_memory.json",
+      "sha256": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8"
+    }
+  },
+  "images": {
+    "labeled_target": {
+      "path": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\nf_lage_batch_267_20261027\\assets\\dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256.jpg",
+      "sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    },
+    "unlabeled_reference": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation_inputs\\query.png",
+      "sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    }
+  },
+  "texts": {
+    "old_english": [
+      "Please buy the same product shown in the attached image.",
+      "I would like the item in the attached photo. Please purchase the same product.",
+      "Please help me order the product pictured in the attachment.",
+      "Use the attached picture to find and buy the same item.",
+      "I want to purchase the item shown in this image.",
+      "Please find and buy the same product as the one in the picture.",
+      "The attached image shows what I would like to order.",
+      "Could you purchase the item in the attached picture for me?",
+      "Please buy the same product, using the attached photo as a reference.",
+      "I am ready to buy the product shown in the image.",
+      "Please locate the pictured item and complete its purchase.",
+      "I would like you to buy the item in the attached image.",
+      "Please order the same product depicted in the attached picture.",
+      "This photo shows what I want. Please buy the same product.",
+      "Help me purchase the product shown in this picture.",
+      "Please get me the same item as the one shown in the attachment.",
+      "I want the product in the attached photo. Please place an order for it.",
+      "Please use this image as the reference for the product to buy.",
+      "The pictured item is what I want to purchase.",
+      "Please help me buy the same product as the one in this image."
+    ],
+    "new_chinese": [
+      "请购买与图片中商品相似的商品。",
+      "请帮我找一件图中这样的商品。",
+      "请按这张参考图挑选类似商品。",
+      "我想买图片里这种样式的商品。",
+      "请参考图片选购相近的商品。",
+      "帮我购买一件外观与图中相近的商品。",
+      "请找一件与这张图大致相似的商品。",
+      "我需要图片所示类型的商品，请帮我选购。",
+      "请依照图中样式购买类似的商品。",
+      "帮我找找与图片中物品相仿的商品。",
+      "请根据参考图片帮我选购一件商品。",
+      "我想购买一件与这张图类似的商品。",
+      "请挑选和图片中物品整体相近的商品。",
+      "照着这张图帮我购买类似款式。",
+      "请帮我选购图中这种外观的商品。",
+      "我需要一件与参考图相近的商品。",
+      "请按照图片中的大致样式选购。",
+      "帮我购买与图里物品风格相近的商品。",
+      "请找一件整体看起来像参考图的商品。",
+      "请参考这张图购买一件相似商品即可。"
+    ]
+  },
+  "models": [
+    "old_B32",
+    "current_g14"
+  ],
+  "image_and_title_weight": 0.5,
+  "query_image_and_text_weight": 0.5,
+  "index_text": "title",
+  "generation_runs": 0,
+  "shopping_runs": 0,
+  "formal_results_modified": false,
+  "note": "The text factor changes wording and language together; not a language-only causal test."
+}

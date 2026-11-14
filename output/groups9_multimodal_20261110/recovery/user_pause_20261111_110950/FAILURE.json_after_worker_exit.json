@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error_type": "RuntimeError",
+  "message": "购物已显式暂停；先完成两方法检索比例报告，不能自动启动或恢复购物",
+  "stage": "shopping",
+  "method": "lucid",
+  "failed_at": "2026-11-11T03:10:08Z"
+}

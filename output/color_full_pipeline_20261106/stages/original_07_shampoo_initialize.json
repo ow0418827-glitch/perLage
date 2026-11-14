@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "stage": "original_07_shampoo_initialize",
+  "exit_code": 1,
+  "elapsed_seconds": 45.05057599999782,
+  "completed_at": "2026-11-06T11:08:49.690239+00:00",
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\logs\\original_07_shampoo_initialize.log"
+}

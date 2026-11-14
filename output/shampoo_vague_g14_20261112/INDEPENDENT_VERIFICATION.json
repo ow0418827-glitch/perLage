@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "no_disk_vector_cache_read": true,
+  "score_comparisons": 15120,
+  "rankings_recomputed": 80,
+  "max_score_error": 0.0,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "0e00685c6a9fde3e1a74a0283845f7c33ad57d4f806566670cc810a47057045b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "a3f1874d49711acef96954c2e9de25352032853bd6b3f6153418b05a411b6d1b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "867f2b1fe032d4dcb00160ac5208753751fd176ac1bf8f1a8397657a37a97728",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f2cf195fda42107e134c95ed46cf3f14fca82144c32213d2dadb99f4ced77abf"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "focused_tests": 64,
+  "test_files": [
+    "test_text_query_interface.py",
+    "test_product_feature_retrieval_contract.py",
+    "test_flow_boundaries.py",
+    "test_shopping_prompt.py",
+    "test_policy_reasoning_logging.py",
+    "test_groups9_multimodal_queue.py"
+  ],
+  "all_360_instructions_and_task_ids_equal_to_previous": true,
+  "all_9_generated_images_visually_reviewed": true,
+  "prepare_only_idempotence_passed": true
+}

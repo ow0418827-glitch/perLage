@@ -1,0 +1,19 @@
+{
+  "source_size": [
+    500,
+    500,
+    3
+  ],
+  "raw_foreground_pixels": 47549,
+  "cleaned_foreground_pixels": 47513,
+  "background_in_foreground": 36,
+  "original_halo_pixels": 11,
+  "halo_pixels_on_connected_background": 0,
+  "corrected_halo_pixels": 11,
+  "old_parent_halo": 28.59646472235851,
+  "new_parent_halo": 28.59646472235851,
+  "new_proposed_halo": 24.2531863487288,
+  "background_tolerance": 10,
+  "source_image_changed": false,
+  "private_memory_or_queries_used": false
+}

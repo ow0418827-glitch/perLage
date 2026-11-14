@@ -1,0 +1,10 @@
+{
+  "status": "running",
+  "phase": "shopping",
+  "current_group": "09_toothbrush",
+  "progress": "20/20",
+  "updated_at": "2026-11-10T08:31:51Z",
+  "total_episodes_done": 180,
+  "total_expected": 180,
+  "misleading_rate": "20.6%"
+}

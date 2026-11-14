@@ -1,0 +1,23 @@
+{
+  "status": "running",
+  "seed": 42,
+  "completed_steps": 5,
+  "total_steps": 30,
+  "last": {
+    "step": 5,
+    "timestep": 825,
+    "guided": true,
+    "condition_image_cosines": [
+      0.688051700592041,
+      0.7045210599899292,
+      0.6719208359718323
+    ],
+    "gradient_rms": 0.001677755848504603,
+    "guidance_displacement_linf": 0.04,
+    "guidance_clip_factor": 0.001848415365326435,
+    "zero_gradient": false,
+    "image_score": 0.6719208359718323,
+    "joint_score": 0.6954731345176697,
+    "preservation": 0.020286664366722107
+  }
+}

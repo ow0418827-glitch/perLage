@@ -1,0 +1,35 @@
+{
+  "status": "running_confirmed",
+  "confirmed_at": "2026-11-12T04:34:03.913421+00:00",
+  "launch_record": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\LATEST_LAUNCH.json",
+  "status_record": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\RUN_STATUS.json",
+  "controller_pid": 13596,
+  "worker_launcher_pid": 6996,
+  "worker_pid": 28688,
+  "current_stage": "generate_prefix",
+  "completed_substages": [
+    "foreground_segmentation",
+    "foreground_statistics"
+  ],
+  "active_phase": "latent_clean",
+  "observed_step": 40,
+  "phase_seconds": 10.26299580000341,
+  "gpu_observation": {
+    "utilization_percent": 44,
+    "memory_used_mib": 5406,
+    "memory_total_mib": 8151
+  },
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\logs\\generate_prefix.log",
+  "log_tail": [
+    "Loading weights:   0%|          | 0/196 [00:00<?, ?it/s]",
+    "Loading weights: 100%|██████████| 196/196 [00:00<00:00, 5621.01it/s]",
+    "The config attributes {'skip_prk_steps': True} were passed to DDIMInverseScheduler, but are not expected and will be ignored. Please verify your scheduler_config.json configuration file.",
+    "{\"phase\": \"latent_clean\", \"step\": 20, \"best_step\": 20, \"timestep\": null, \"ssim\": 0.9521440021307035, \"mae\": 4.1732988357543945, \"selection\": [1, 1, 0, 0.7118427843670361], \"seconds\": 5.496827399998438}",
+    "{\"phase\": \"latent_clean\", \"step\": 40, \"best_step\": 20, \"timestep\": null, \"ssim\": 0.954937153490678, \"mae\": 4.072798252105713, \"selection\": [1, 1, 0, 0.7110879362444393], \"seconds\": 10.26299580000341}"
+  ],
+  "formal_evaluation_not_started": true,
+  "shopping_enabled": false,
+  "model_api_calls_enabled": false,
+  "continued_monitoring": false,
+  "queue_continues_detached": true
+}

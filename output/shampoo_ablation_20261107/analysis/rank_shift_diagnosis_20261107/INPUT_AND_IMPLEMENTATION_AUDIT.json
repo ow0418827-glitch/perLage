@@ -1,0 +1,76 @@
+{
+  "source_asin": "B08XYBS678",
+  "source_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "source_title_unchanged": true,
+  "old15_decoded_images_equal_originals": [
+    {
+      "asin": "B09R7XC49B",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B001B3RFK8",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B0789VCBF6",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B07NB7SJ1Y",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B08KXFNV1X",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B08443XV9W",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B07S523DJC",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B07HY8DHQ7",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B00WONI1AW",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B0048F5ATO",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B08P5Y9KQG",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B09K4RG9V4",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B084LHV2M1",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B09JZXYXRK",
+      "maximum_rgb_difference": 0
+    },
+    {
+      "asin": "B08XYBS678",
+      "maximum_rgb_difference": 0
+    }
+  ],
+  "old100_shampoo_normal_entries_retained_exactly": 14,
+  "all_source_pool_other_entries_not_assumed_unchanged": true,
+  "original_rankings_unchanged": true,
+  "diagnosis_results_sha256": "a310b63ae20fc8166bb208c3da12ea0d72c7467acbbfa94e94c860cbe29922c2",
+  "query_text_change": "Both language and same-product versus similar-product wording change; not language alone.",
+  "default_model_config": "src/visual/config/evaluator.example.json",
+  "default_loader": "src/experiments/shared_evaluation.py:88",
+  "ranking_sort": "src/visual/visual_retrieval.py:310",
+  "no_forced_source_first": true
+}

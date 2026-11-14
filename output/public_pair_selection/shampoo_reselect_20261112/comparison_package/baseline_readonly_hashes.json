@@ -1,0 +1,66 @@
+{
+  "captured_at_utc": "2026-11-12T03:04:00Z",
+  "purpose": "Read-only baseline hashes prior to shampoo_reselect_20261112 execution to verify zero mutation to existing experiments and shared datasets.",
+  "files": {
+    "output/datasets/public/public_products_v2.sqlite": {
+      "size": 319516672,
+      "sha256": "60843908735fa497ca381f9c8801dfc16050c8f5155e1f53d97bd366e2fb29c0"
+    },
+    "output/datasets/public/calibration/shape_v2_verified/threshold.json": {
+      "size": 59329,
+      "sha256": "bd483cca45f83c19d545d3d04f8ce45b47f75f25188f2dc58d9fbb3a052a50cd"
+    },
+    "output/datasets/public/calibration/shape_v2_dev_20261105/development.json": {
+      "size": 136102,
+      "sha256": "d424aae4f76d405cda6f63d2aa22fc1887be0ba634ded05382f3f0e783d9e644"
+    },
+    "output/public_pair_selection/groups9_review_20261108/REVIEW_MANIFEST.json": {
+      "size": 20266,
+      "sha256": "a87acc317359847ec14576885c55dac8b534563f21c9803b9efe8e07c95d72fc"
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/definition.json": {
+      "size": 3228,
+      "sha256": "ab1fd8616f5a3af4993b8dab106c050ac033bf0e13ec288fc53acef3b587abc2"
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/source.jpg": {
+      "size": 19104,
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/target.jpg": {
+      "size": 7453,
+      "sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    },
+    "output/experiment_base_groups9_20261109/manifest.json": {
+      "size": 22199,
+      "sha256": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7"
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/definition.json": {
+      "size": 7024,
+      "sha256": "06e888751c34659f7cc85ad372405850f9739790a774a615302956d2ed9c3d4e"
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/source.jpg": {
+      "size": 19104,
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/target.jpg": {
+      "size": 7453,
+      "sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    },
+    "output/experiment_base_groups9_20261109/shared_memory/shared_memory.json": {
+      "size": 10471661,
+      "sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235"
+    },
+    "output/shared_memory/pool_189_v1/shared_memory.json": {
+      "size": 10462661,
+      "sha256": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8"
+    },
+    "data/public/product_metadata.json": {
+      "size": 615517,
+      "sha256": "2cd05d919c05ef0eda28cbcb646b9fa560e01a79ac39a77a02bdffde22ddb691"
+    },
+    "data/public/product_feature_review.json": {
+      "size": 34013,
+      "sha256": "8868444f2d14a02a68c6d0b23cfa5bcfa3cf48bbe96a84cd2468fb61e1eeab78"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "plan_sha256": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c",
+  "methods": 2,
+  "groups": 9,
+  "queries_per_group": 20,
+  "model_calls": 0,
+  "source_sha256": "77389b6eba62a833de940dcff233c3dc92db463650236c185b945a7d98eb5c6b"
+}

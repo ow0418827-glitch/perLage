@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "query_mode": "text",
+  "target_public_id": "B08Z8MHWVS",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "cookie dough",
+  "core_attributes": [
+    "natural ingredients",
+    "chocolate chips",
+    "an egg-free recipe"
+  ],
+  "instructions": [
+    "I want to buy cookie dough with natural ingredients and chocolate chips.",
+    "I would like to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Looking to buy cookie dough with chocolate chips and an egg-free recipe.",
+    "I am looking to buy cookie dough with natural ingredients and chocolate chips.",
+    "Please help me buy cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I am shopping for cookie dough with chocolate chips and an egg-free recipe.",
+    "I would like to buy cookie dough with natural ingredients and chocolate chips.",
+    "Help me purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I am looking for cookie dough with chocolate chips and an egg-free recipe.",
+    "Please find cookie dough with natural ingredients and chocolate chips for me to buy.",
+    "I want to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Please help me purchase cookie dough with chocolate chips and an egg-free recipe.",
+    "I need to buy cookie dough with natural ingredients and chocolate chips.",
+    "I would like help finding cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Find me cookie dough with chocolate chips and an egg-free recipe to purchase.",
+    "Please look for cookie dough with natural ingredients and chocolate chips that I can buy.",
+    "I am interested in buying cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I would like to shop for cookie dough with chocolate chips and an egg-free recipe.",
+    "Help me find cookie dough with natural ingredients and chocolate chips to buy.",
+    "I am ready to purchase cookie dough featuring natural ingredients and an egg-free recipe."
+  ],
+  "instructions_sha256": "86512b6947c56ad97319243295f836299043954f0af069e07a947c88dcc34f23",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": false,
+  "query_images_generated": false,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection"
+}

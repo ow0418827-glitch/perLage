@@ -1,0 +1,204 @@
+{
+  "scope": "offline_failure_diagnosis_only_not_full_method_results",
+  "original_frozen_evidence_unchanged": true,
+  "evidence_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\color_harmonization\\rejection.json": "bd8a948d82b4e15b6898808b0b11e562d8bd591fc44116a15794bd4fc9749882",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\initialization\\ready.json": "3821a77c32cfb784b42fc5d65d6a810deecc2d916e96b4683466195661b3c12d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\initialization\\attack\\metadata.json": "1902592a74f6654dfa2260f61c811c7e62b48627f2e4d6333141fb2675676f2d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\RUN_STATUS.json": "780b341c9b2351f00cee7f4f23494b4c512271c44061be3625e3f72ff5cecc5f"
+  },
+  "halo_pixels": 1289,
+  "halo_pixels_restored_by_final_protection": 1289,
+  "halo_pixels_overlapping_raw_ink": 0,
+  "printed_core_pixels_without_white_padding": 9827,
+  "parent_halo": 16.457029367256773,
+  "required_halo_maximum": 8.228514693628387,
+  "trials": [
+    {
+      "strength": 0.0,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.9302160550617594,
+      "source_mae": 5.355382442474365,
+      "halo_error": 16.457029367256773,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.0,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9302904569956132,
+      "source_mae": 5.381181716918945,
+      "halo_error": 8.115908875315975,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 0.0,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.9302310997618927,
+      "source_mae": 5.397242069244385,
+      "halo_error": 0.4641154654691582,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 0.03125,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.929918433565516,
+      "source_mae": 5.620326995849609,
+      "halo_error": 18.118984656620327,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.03125,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9300094168331814,
+      "source_mae": 5.649620056152344,
+      "halo_error": 8.433504960678805,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.03125,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.9299441168958918,
+      "source_mae": 5.666098594665527,
+      "halo_error": 0.3145183968676285,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 0.25,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.9268771424618232,
+      "source_mae": 7.061281204223633,
+      "halo_error": 27.286817189814837,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.25,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9270791270649308,
+      "source_mae": 7.106136798858643,
+      "halo_error": 10.919790227119718,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.25,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.9269898559017158,
+      "source_mae": 7.128079414367676,
+      "halo_error": 0.48021722265321953,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 0.5,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.9198277787033959,
+      "source_mae": 9.167807579040527,
+      "halo_error": 40.20665500166645,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.5,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9202028427596579,
+      "source_mae": 9.230974197387695,
+      "halo_error": 15.522848062145702,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.5,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.9200579416280459,
+      "source_mae": 9.263288497924805,
+      "halo_error": 1.0783553141970519,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 0.78125,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.9096540612766163,
+      "source_mae": 11.800665855407715,
+      "halo_error": 55.60342701070768,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.78125,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9102001895922032,
+      "source_mae": 11.884778022766113,
+      "halo_error": 21.42958649454562,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 0.78125,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.9099454112201664,
+      "source_mae": 11.929938316345215,
+      "halo_error": 1.5903801396431343,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": true
+    },
+    {
+      "strength": 1.0,
+      "processing": "current_restore_all_protected",
+      "source_ssim": 0.9009759077825074,
+      "source_mae": 13.873050689697266,
+      "halo_error": 67.30881434295344,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 1.0,
+      "processing": "diagnostic_keep_white_padding_recomposition",
+      "source_ssim": 0.9015998859388317,
+      "source_mae": 13.973586082458496,
+      "halo_error": 26.021974187107073,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    },
+    {
+      "strength": 1.0,
+      "processing": "diagnostic_consistent_padding_transfer",
+      "source_ssim": 0.901235248915751,
+      "source_mae": 14.028916358947754,
+      "halo_error": 1.8944918541505043,
+      "halo_limit": 8.228514693628387,
+      "printed_core_max_difference": 0,
+      "passes_fixed_limits": false
+    }
+  ],
+  "conclusion_zh": "新融合实现先补偿印刷边缘底色，随后又把扩张保护范围内的白色边缘恢复原像素，抵消了补偿。该位置在既有光晕采样点中，导致保护与光晕减半要求冲突。",
+  "final_latent_refinement_started": false,
+  "full_new_image_available": false,
+  "final_similarity_computed": false,
+  "new_training_runs": 0,
+  "main_program_modified": false
+}

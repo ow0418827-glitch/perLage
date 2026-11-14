@@ -1,0 +1,126 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "status": "success",
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\adversarial.png",
+  "output_image_sha256": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805",
+  "source_image_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+  "target_image_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+  "perlage_ready": {
+    "method": "PerLAGE_no_pixel",
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "status": "completed",
+    "color_scheme": "statistics",
+    "training_data_policy": "catalog_image_and_public_title_only_v1",
+    "shadow_pool_used": false,
+    "purchase_history_used": false,
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "configuration_sha256": "04dce057b0883b6ce8b0febeec75d88edabfb4aa643c88e88041e0f3e67ee207",
+    "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\method_identity.json",
+    "method_identity_sha256": "835b893b52a00144d4df8a5ecda721e2a61063a9c675637aaf0f4dfbac604eb1",
+    "source_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+    "target_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+    "source_title_sha256": "860276d75a7e096e71d428e292cf557cc73d11a2ecd0bf4e8d26ea7f8eb7c184",
+    "candidates": {
+      "final": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\adversarial.png",
+        "sha256": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805"
+      }
+    },
+    "initialization_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\initialization\\run_identity.json",
+    "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\initialization\\attack\\identity.json",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\initialization\\run_identity.json": "c147eb02737e532594d2a39aad5a6b56c7850b2937ad77a1525def0821be1f2c",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\initialization\\attack\\identity.json": "cf62de61b6e1ed469dc1b57ad7da5bdcd94b5150edfbf8b35b284f1bd199a0d2",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\initialization\\ready.json": "8e2ca58ff22d7bf3dfbc199a6e53f2494672171c28e895cf93426b1b541906db"
+    },
+    "stages": {
+      "foreground_segmentation": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_segmentation\\source\\record.json": "3446b7038df5f7b7c5dc5f8912e4cfd7ca5d840544d0a19e2c95e254dceef278",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_segmentation\\source\\foreground.png": "5abf29a982dd92ec2c54d36d4bd2d70fcae3f827cf23ee83d576e90a559d9f63",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_segmentation\\target\\record.json": "9e663ccda7bb8151e2b878eeca55576972b8e911597aff17fcfd4cc1f06eb0f8",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_segmentation\\target\\foreground.png": "ec5f2d6da66e6a53d1cf4fab787c7ff47efc1a7f43f3c01e24ba1c805589b4a5"
+        }
+      },
+      "foreground_statistics": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_statistics\\statistics.json": "ecca301e8cebf3318172538bb416f8d787115a8a64c890ac802f143c2d96cec3",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\foreground_statistics\\body_samples.png": "579985334a22f82dc20f64e8f08b8a2642e7bce091c42c2d2e56fb8fd86fb779"
+        }
+      },
+      "color_harmonization": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\color_harmonization\\metadata.json": "796e8435967b391e2ce9259405238454332f3c08039a55be70a2a60dafabf24b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\color_harmonization\\generative_anchor.png": "db43d5993940f79367264ed79bca8109154cc2753b45a7d997d20a09a7ba322e",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\color_harmonization\\initial.png": "db43d5993940f79367264ed79bca8109154cc2753b45a7d997d20a09a7ba322e",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153"
+        }
+      },
+      "latent_generation_refinement": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\latent_generation_refinement\\metadata.json": "e46cd05f31a23c978d739ff75a4dbf333083bea42c46c7ec24dce6c352815d1f",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\latent_generation_refinement\\identity.json": "8cd387dfa16bd64b460ed2eac0ab37f81e67df220682311b2564d25c7fd50571",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\adversarial.png": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\chair_ablation_20261108\\generation\\generative_anchor.png": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805"
+        },
+        "steps_completed": 60,
+        "steps_requested": 60
+      }
+    },
+    "observed_seconds": 1585.5254180000047,
+    "auxiliary_max_levels": 0,
+    "latent_config": {
+      "steps": 60,
+      "check_every": 10,
+      "latent_levels": 24,
+      "latent_working_size": 256,
+      "latent_limit": 0.5,
+      "latent_learning_rate": 0.01,
+      "latent_smoothing_mix": 0.12,
+      "auxiliary_levels": 0,
+      "source_ssim_floor": 0.85,
+      "source_mae_ceiling": 12.0,
+      "ordinary_tolerance": 0.01,
+      "temperature": 0.01,
+      "desired_owned_score_gain": 0.02,
+      "feature_weight": 0.02,
+      "diffusion_weight": 3.0,
+      "macro_l2_weight": 0.001,
+      "macro_tv_weight": 0.003,
+      "guard_backtracks": 8,
+      "full_eot_samples": 2,
+      "training_seed_base": 720300000,
+      "timesteps": [
+        99,
+        199,
+        399
+      ],
+      "development_seeds": [
+        9401,
+        9402,
+        9403,
+        9404,
+        9405,
+        9406,
+        9407,
+        9408
+      ],
+      "selection_seeds": [
+        9301,
+        9302
+      ],
+      "retention_tolerance": 0.0005
+    },
+    "pixel_optimization": false,
+    "optimization_mode": "latent_only",
+    "source_method": "four_natural_stages_with_perceptual_latent_optimization_no_pixel"
+  },
+  "shadow_pool_used": false,
+  "completion_policy": "four_natural_stages_with_perceptual_latent_optimization_complete"
+}

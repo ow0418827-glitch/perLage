@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "all_ranks_match": true,
+  "max_score_error": 0.0,
+  "scores_checked": 5292,
+  "text_encoding_calls": 0,
+  "results_sha256": "09b1d61259d8c8283810ae5a0b95661607bd7429ab909dbe2bb6827b8689a4ca",
+  "features_verified_without_text_or_model_reloading": true
+}

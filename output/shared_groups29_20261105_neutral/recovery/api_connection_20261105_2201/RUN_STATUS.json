@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "stage": "shopping",
+  "failed_at": "2026-11-05T14:01:35.201671+00:00",
+  "error": "阶段失败，已保存日志并停止：shopping"
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B09HH96NJY",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "jeans",
+  "core_attributes": [
+    "a high waist",
+    "a baggy straight-leg cut",
+    "flap pockets"
+  ],
+  "instructions": [
+    "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+    "I would like to purchase jeans featuring a high waist and flap pockets.",
+    "Looking to buy jeans with a baggy straight-leg cut and flap pockets.",
+    "I am looking to buy jeans with a high waist and a baggy straight-leg cut.",
+    "Please help me buy jeans featuring a high waist and flap pockets.",
+    "I am shopping for jeans with a baggy straight-leg cut and flap pockets.",
+    "I would like to buy jeans with a high waist and a baggy straight-leg cut.",
+    "Help me purchase jeans featuring a high waist and flap pockets.",
+    "I am looking for jeans with a baggy straight-leg cut and flap pockets.",
+    "Please find jeans with a high waist and a baggy straight-leg cut for me to buy.",
+    "I want to purchase jeans featuring a high waist and flap pockets.",
+    "Please help me purchase jeans with a baggy straight-leg cut and flap pockets.",
+    "I need to buy jeans with a high waist and a baggy straight-leg cut.",
+    "I would like help finding jeans featuring a high waist and flap pockets.",
+    "Find me jeans with a baggy straight-leg cut and flap pockets to purchase.",
+    "Please look for jeans with a high waist and a baggy straight-leg cut that I can buy.",
+    "I am interested in buying jeans featuring a high waist and flap pockets.",
+    "I would like to shop for jeans with a baggy straight-leg cut and flap pockets.",
+    "Help me find jeans with a high waist and a baggy straight-leg cut to buy.",
+    "I am ready to purchase jeans featuring a high waist and flap pockets."
+  ],
+  "instructions_sha256": "c18df1962e79991298ccaf6f8dc704495cd8844453085c78f88565d09f7d6738",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+  "sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：蓝色高腰宽直筒牛仔裤、翻盖口袋，无腰标、品牌或文字。",
+    "image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

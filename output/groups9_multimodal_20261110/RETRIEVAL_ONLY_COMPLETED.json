@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "methods": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "query_rankings": 720,
+  "candidate_scores": 136080,
+  "summary_sha256": "bcec160edc8ae9b60d0c3522d0fd4220bed3dbe3b3a6cc487bff0bfd0e7abb20",
+  "plan_sha256": "8821a4e55e26c7edac4c1ddfe8058ae0136bcac9f24c4727fc0c2c890d2010b3",
+  "shopping_executed": false
+}

@@ -1,0 +1,240 @@
+{
+  "method": "perlage_generation_initialization",
+  "config": {
+    "latent_clean_steps": 40,
+    "latent_diffusion_steps": 40,
+    "pixel_clean_steps": 20,
+    "pixel_diffusion_steps": 60,
+    "latent_levels": 32,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.012,
+    "latent_smoothing_mix": 0.1,
+    "pixel_levels": 4,
+    "pixel_start_levels": 0.5,
+    "pixel_end_levels": 0.08,
+    "momentum": 0.85,
+    "temperature": 0.04,
+    "teacher_weight": 0.5,
+    "semantic_image_weight": 1.0,
+    "semantic_joint_weight": 0.5,
+    "semantic_teacher_weight": 0.05,
+    "image_weight": 0.05,
+    "diffusion_weight": 3.0,
+    "shadow_weight": 0.0,
+    "guard_tolerance": 0.01,
+    "latent_guard_tolerance": 0.04,
+    "development_temperature": 0.01,
+    "guard_backtracks": 4,
+    "source_ssim_floor": 0.93,
+    "ordinary_ssim_floor": 0.95,
+    "source_mae_ceiling": 6.0,
+    "ssim_safety_buffer": 1e-05,
+    "tv_weight": 0.003,
+    "l2_weight": 0.001,
+    "check_every": 20,
+    "full_eot_samples": 1,
+    "diffusion_timesteps": [
+      99,
+      199,
+      399
+    ],
+    "validation_seeds": [
+      9301,
+      9302
+    ],
+    "training_seed_base": 710000000,
+    "ray_repair_iterations": 8
+  },
+  "inputs": {
+    "source": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "target": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+    "anchor": "63391dbf0975755b956d284aa8fa82aecd04fd561e29db01119bde7216e087fb",
+    "mask": "0e4cbb88e040daf343c0b65fb56a19b0d6ef280a4fda60dada9a0bc9f7cf4a25"
+  },
+  "source_title_sha256": "c82169a4fe0ceba2e78797f3e278c0332a9e2e268caf071af3d846ecb18c8096",
+  "training_queries": [
+    "Find a product with a similar overall visual appearance.",
+    "Use the reference picture as a broad visual guide for product matching.",
+    "Look for an item with a comparable general shape and finish."
+  ],
+  "encoder": {
+    "role": "attack_surrogate",
+    "name": "ViT-B-32",
+    "pretrained": "openai",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "device": "cuda",
+    "precision": "fp32",
+    "image_size": 224,
+    "preprocess": {
+      "resize": "bicubic_direct_square",
+      "align_corners": false,
+      "antialias": true,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ]
+    },
+    "open_clip_torch_version": "3.3.0",
+    "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+    "requires_true_local_tokens": true
+  },
+  "purifier": {
+    "kind": "sd15_latent_noise_then_ddim_purification_v1",
+    "config": {
+      "model_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "working_size": 512,
+      "reverse_steps": 10,
+      "start_timestep": 99,
+      "gradient_checkpointing": true
+    },
+    "model": {
+      "local_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "local_files_only": true,
+      "variant": "fp16",
+      "files": {
+        "unet/config.json": {
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+          "bytes": 743
+        },
+        "unet/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+          "bytes": 1719125304
+        },
+        "vae/config.json": {
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+          "bytes": 547
+        },
+        "vae/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+          "bytes": 167335342
+        },
+        "text_encoder/config.json": {
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+          "bytes": 617
+        },
+        "text_encoder/model.fp16.safetensors": {
+          "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+          "bytes": 246144864
+        },
+        "tokenizer/merges.txt": {
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+          "bytes": 524619
+        },
+        "tokenizer/special_tokens_map.json": {
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+          "bytes": 472
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+          "bytes": 806
+        },
+        "tokenizer/vocab.json": {
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+          "bytes": 1059962
+        },
+        "scheduler/scheduler_config.json": {
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+          "bytes": 308
+        }
+      }
+    },
+    "prompt": "",
+    "guidance_scale": 1.0,
+    "posterior": "mode",
+    "eta": 0.0,
+    "resize": "aspect_long_edge_round8_min64_bicubic_antialias_back_to_native",
+    "output_range": [
+      0.0,
+      1.0
+    ],
+    "quantization": "external_eight_bit_save_or_ste",
+    "implementation_sha256": "e2eaf12ca5ef148a4e538af666fc7965cca2663e0961be6bb1db572ccf3410d3",
+    "not_original_diffpure": true,
+    "not_full_cognitiveguard": true
+  },
+  "public_bank_sha256": null,
+  "code_sha256": "8cb393af0eaf80042881942f0f6ec11c376da26d3d8312213e083a52cb9db20b",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "pixel_budget_reference": "frozen_refined_generative_anchor",
+  "source_linf_budget_enforced": false,
+  "sequence": "instruction_edit_then_latent_only_then_frozen_generation_plus_small_pixel",
+  "natural_manifold_certified": false,
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "purchase_history_used": false,
+  "victim_memory_used": false,
+  "objective": {
+    "algorithm": "unit_image_plus_public_product_title_v1",
+    "training_data_policy": "catalog_image_and_public_title_only_v1",
+    "source_title_sha256": "c82169a4fe0ceba2e78797f3e278c0332a9e2e268caf071af3d846ecb18c8096",
+    "public_title_audit": {
+      "text_sha256": "c82169a4fe0ceba2e78797f3e278c0332a9e2e268caf071af3d846ecb18c8096",
+      "input_tokens": 33,
+      "encoded_tokens": 33,
+      "chunks": 1,
+      "payload_tokens_per_chunk": 75,
+      "chunk_token_counts": [
+        33
+      ],
+      "truncated": false
+    },
+    "training_query_audits": [
+      {
+        "text_sha256": "0f47e94bc3d90129e5221d686bb2df45515a12abab641dd9ffeb926545ba6100",
+        "input_tokens": 10,
+        "encoded_tokens": 10,
+        "chunks": 1,
+        "payload_tokens_per_chunk": 75,
+        "chunk_token_counts": [
+          10
+        ],
+        "truncated": false
+      },
+      {
+        "text_sha256": "6ada4607716ff218c43feb5cc6c5ebaa75827793918fb3cc2f6888ab7d4b1832",
+        "input_tokens": 13,
+        "encoded_tokens": 13,
+        "chunks": 1,
+        "payload_tokens_per_chunk": 75,
+        "chunk_token_counts": [
+          13
+        ],
+        "truncated": false
+      },
+      {
+        "text_sha256": "08f9ab1500977cdd1c2bef14b968f7f57cb006ba1c44ebc40bc178982290623d",
+        "input_tokens": 12,
+        "encoded_tokens": 12,
+        "chunks": 1,
+        "payload_tokens_per_chunk": 75,
+        "chunk_token_counts": [
+          12
+        ],
+        "truncated": false
+      }
+    ],
+    "training_query_normalized_sha256": [
+      "1e01a968b9e65de870edd18e6a440658f61390934debdd3c409c86779a954ecd",
+      "5ed224b963cd66d611ca82bcf341df34aadd0410b1797279533774420b4a2cf1",
+      "d4680f3768fc23a6accc51a6f3649acd2943039eccc4f0bf8ec8e01f6718d42c"
+    ],
+    "excluded_query_normalized_sha256": [],
+    "query_image": "target_image_unpurified",
+    "image_weight": 0.5,
+    "victim_memory_used": false,
+    "purchase_history_used": false,
+    "test_ranking_used": false,
+    "query_disjointness": "normalized_exact_text_only_not_semantic_independence",
+    "encoder_source_sha256": "1c3c886bca47505b7807b69d98dc98eee3893e4ee4add908234a20bbc61b31f6"
+  }
+}

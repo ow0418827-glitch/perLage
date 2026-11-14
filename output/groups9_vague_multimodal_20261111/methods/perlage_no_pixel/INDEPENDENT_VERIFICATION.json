@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "no_original_vector_cache_read": true,
+  "score_comparisons": 68040,
+  "rankings_recomputed": 360,
+  "max_score_error": 0.0,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\01_camera\\clean.json": "2dfd62483d4385d7bddcc259027457ceeeb8b404af3865cac49bf87e79e6b312",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\01_camera\\modified.json": "49f957c89ab866001ebcb04f4f8caa50a2eaa556d98b7d72f489d891091eb16f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\02_chair\\clean.json": "a7746c4c8011a9df8ca24a72c9e2ce320669f11088c5ebe8d3ac3ec67f8aef11",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\02_chair\\modified.json": "498f0d7b342aba4ec612b0b48227734d8d4c903cbe9aa45f09a1477f072300a3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\03_cookies\\clean.json": "9498f05b0b70019919089f66a55314a02cad9d6ebddadedc90c42d052131dd50",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\03_cookies\\modified.json": "2b371e97b641f081836f87fd61302c6100cec3ccccf219417eefe388df45de7e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\04_curtain\\clean.json": "6d2bd74c7c7b6d7719772092ba5289296fe2f02940d08ac500278ff41a4ce464",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\04_curtain\\modified.json": "87e21fcb2eeb196cd6d2bcd9e548477ec343c31cfeb3611fad30e2d9d98b4fc8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\05_hair_extension\\clean.json": "d09ff618e786af163a60080c74dab744dc4e9b7569d2b10e4ffe43dde1de938a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\05_hair_extension\\modified.json": "8b68c6031cbeadcdf01df0fec678f9e0a1fd6d6ffbb300f0889ce67dfa2e1a94",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\06_jeans\\clean.json": "7d457633eb4a9ea79d925f2f14527a3276a57a70f0a77fd7570504779e37dd93",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\06_jeans\\modified.json": "1a4a3cd602423aa93d4a5e4d3204557a33873e7d8300f0b2005a463baf07bd99",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "855a18b6af1c14dbbdacd34cb1c554bcd1050e094e4b2875fa3e5bcde78b0d57",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f80b00e006fcb1584ae1469fedf11327ee22ce692b9888ac1fb9d5ea410b8b5b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\08_speaker\\clean.json": "0b129f630f7bc0090cbae8d3767eefc7f068504dd84a317192d8ae29f47c6749",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\08_speaker\\modified.json": "4ec15bec6ebdee6ccdb6bf79804b3004214b7471d6387baf367d296202d336a6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\09_toothbrush\\clean.json": "a1be35b6a977a984b6dfbf0e770b863f4a2563fdcf7eccf748ee37072d3485d7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\09_toothbrush\\modified.json": "d5b9e06058cb434f52355c7d35f5841c7707cfc61b1cb6ad22382ec58d92c361"
+  },
+  "plan_sha256": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c"
+}

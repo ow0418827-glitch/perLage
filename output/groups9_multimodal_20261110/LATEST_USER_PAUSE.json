@@ -1,0 +1,16 @@
+{
+  "pause_directory": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\recovery\\user_pause_20261111_110950",
+  "marker": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\SHOPPING_PAUSED.json",
+  "stopped_controller_pids": [
+    14172,
+    32604
+  ],
+  "inflight_worker_pids": [
+    14076,
+    28584
+  ],
+  "owned_server_pids": [
+    32088,
+    2916
+  ]
+}

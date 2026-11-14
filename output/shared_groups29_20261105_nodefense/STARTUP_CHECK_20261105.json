@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "checked_at": "2026-11-05T01:36:33.875715+00:00",
+  "retrieval_rankings": 80,
+  "max_score_error": 0.0,
+  "checked_initial_episodes": [
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_01",
+      "record_hash_valid": true,
+      "completed": true,
+      "actions": 7,
+      "policy_trace_entries": 4,
+      "final_asin_consistent": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_02",
+      "record_hash_valid": true,
+      "completed": true,
+      "actions": 7,
+      "policy_trace_entries": 4,
+      "final_asin_consistent": true
+    }
+  ],
+  "shopping_results_at_check": 2,
+  "expected_shopping_episodes": 80,
+  "continues_unattended": true
+}

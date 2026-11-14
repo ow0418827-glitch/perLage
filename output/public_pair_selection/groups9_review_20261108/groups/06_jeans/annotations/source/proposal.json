@@ -1,0 +1,61 @@
+{
+  "id": "B07FRKQNFV",
+  "identity": {
+    "image_sha256": "a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\06_jeans\\source.jpg",
+  "title": "Cinch Men's Bronze Label Tapered Slim Fit Jeans",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\06_jeans\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "7894ce4082b0270098b336e3c0f3b2e4cebd0bb2066ae5d2381a89d60a720cfd",
+  "boxes": [
+    [
+      90,
+      0,
+      311,
+      495
+    ]
+  ],
+  "text_regions": [],
+  "ocr": [],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9768489003181458,
+      "foreground_ratio": 0.3223359173126615,
+      "rough_coverage": 0.9797457613802423,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.8413754105567932,
+      "foreground_ratio": 0.1599173126614987,
+      "rough_coverage": 0.48622743200138274,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.9568889141082764,
+      "foreground_ratio": 0.2894987080103359,
+      "rough_coverage": 0.8800458823714272,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\06_jeans\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 2.950561600002402
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "pid": 3544,
+  "retrieval_pid": 19812,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "rankings_recomputed": 240,
+  "score_comparisons": 45360,
+  "max_score_error": 0.0,
+  "persistent_vector_cache_read": false,
+  "inputs_sha256": "0781b28f7b9787cdf880dd036868139ded64270d76a9d94064f3cc5ebfa55b22",
+  "retrieval_certificate_sha256": "71bd6c59181d96a1559041ef5cfbadd427b756c74f1ac783f72f3701d949975e",
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\clean\\06_jeans.json": "081821e73fb093d6680ed149f2f0deec4d43cf3e99caafbfb2616bab5f682797",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\clean\\07_shampoo.json": "35d2f9e366f3bace67c26bcff68ce117cb3090b91ff34656c871096ab3c54f37",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\baseline\\06_jeans.json": "4e01e886c22f6679afcd06b02ad1c689b689d27833df67faae3f9fc81f5287a8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\baseline\\07_shampoo.json": "01b3d5a40dedbeab9e1db08644769df9f5ab63ef7b17346b3c6006586aec3b0d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\lucid\\06_jeans.json": "c46bb9e76ac9751050bac997f4c77b005b9dc81dfa8fcbf939cf6331fa819d75",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\lucid\\07_shampoo.json": "6df293f237f9da7b09fbcc78fd3817aade4d29a286b1fe9c6e029d63b7e27b2c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\previous_strong\\06_jeans.json": "058c6c457f786ea20abfd9ff0192b1f9a4ef1ae8b293915ac48921a67c87aba4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\previous_strong\\07_shampoo.json": "8caca1e2a14fb72ad99c05f714718e1653af167e76a5f904aedb41e0db73b86a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\rankfocus\\06_jeans.json": "c7ebe71292a712d9d6c9c08921ba3c76f82bef768ea258dfae6c928a8044a9d0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\rankfocus\\07_shampoo.json": "59ec5fa4a92f00f241cacd118f6f0d8c53c3fd9002bd875475df1dec72fa90db",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\rankfocus_wide\\06_jeans.json": "749e1e37e4f0a815bd0f8e6b154b977290ddd9c43194d14e0920deaac97b460a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\retrieval\\rankfocus_wide\\07_shampoo.json": "ed1908dab46dd973510f7ef7ea50f4c10c665bf656056a234945fe6c80027450"
+  }
+}

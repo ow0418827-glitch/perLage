@@ -1,0 +1,42 @@
+{
+  "identity": {
+    "source_sha256": "a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d",
+    "regions": [],
+    "config": {
+      "closing_pixels": 9,
+      "local_ink_contrast": 3.0,
+      "dark_luminance": 180.0,
+      "colored_chroma": 12.0,
+      "ink_margin_pixels": 1,
+      "feather_pixels": 2.0
+    },
+    "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "56aeee333821fa63a3e50c868d9c22baaa473a5a3e9d774156dcb3094307d190"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "97c098c571c23d0309bb1740455f26e32ccace99e878d96ef14965960bc89e19"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "97c098c571c23d0309bb1740455f26e32ccace99e878d96ef14965960bc89e19"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "97c098c571c23d0309bb1740455f26e32ccace99e878d96ef14965960bc89e19"
+    }
+  },
+  "legacy_protected_pixels": 0,
+  "protected_ink_pixels": 0,
+  "protected_core_pixels": 0,
+  "released_legacy_pixels": 0,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Source contrast identifies candidate printed marks, not semantic recognition or proof that every character is covered."
+}

@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "plan_sha256": "ccaf4c2a8c6795055c7968d5b0940923af2a464f35a3d2509e31414227d4e569",
+  "rankings": 360,
+  "execution_device": "cuda"
+}

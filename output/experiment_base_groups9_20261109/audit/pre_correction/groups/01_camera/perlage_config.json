@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": true,
+  "target_feature_text": "I want to buy a security camera with optical zoom and motion detection.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera 20x Optical Zoom, Auto Tracking & Humanoid Detection, Night Vision up to 1000ft, RTMP/RTSP 1080P/3MP 60FPS Speed Dome (Illuminati-20X)",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection."
+    ]
+  },
+  "source_boxes": [
+    [
+      75,
+      43,
+      347,
+      440
+    ]
+  ],
+  "target_boxes": [
+    [
+      15,
+      65,
+      490,
+      465
+    ]
+  ],
+  "print_regions": [
+    [
+      0.488,
+      0.488,
+      0.636,
+      0.542
+    ]
+  ]
+}

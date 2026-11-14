@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "total_episodes_done": 180,
+  "completed_purchases": 180,
+  "misleading_purchases": 49,
+  "misleading_rate": "49/180 (27.2%)",
+  "exact_target_purchases": 11,
+  "target_purchase_rate": "11/180 (6.1%)",
+  "report": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\SHOPPING_REPORT.md",
+  "completed_at": "2026-11-09T12:12:41Z"
+}

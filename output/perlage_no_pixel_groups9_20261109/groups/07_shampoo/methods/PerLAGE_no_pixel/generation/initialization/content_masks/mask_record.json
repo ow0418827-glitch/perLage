@@ -1,0 +1,133 @@
+{
+  "identity": {
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "regions": [
+      [
+        0.072,
+        0.572,
+        0.19,
+        0.638
+      ],
+      [
+        0.266,
+        0.58,
+        0.404,
+        0.66
+      ],
+      [
+        0.07,
+        0.624,
+        0.156,
+        0.66
+      ],
+      [
+        0.782,
+        0.614,
+        0.838,
+        0.65
+      ],
+      [
+        0.068,
+        0.636,
+        0.21,
+        0.68
+      ],
+      [
+        0.272,
+        0.644,
+        0.364,
+        0.68
+      ],
+      [
+        0.58,
+        0.638,
+        0.65,
+        0.678
+      ],
+      [
+        0.08,
+        0.662,
+        0.218,
+        0.692
+      ],
+      [
+        0.266,
+        0.66,
+        0.428,
+        0.704
+      ],
+      [
+        0.276,
+        0.684,
+        0.468,
+        0.72
+      ],
+      [
+        0.146,
+        0.712,
+        0.246,
+        0.752
+      ],
+      [
+        0.286,
+        0.708,
+        0.43,
+        0.74
+      ],
+      [
+        0.302,
+        0.72,
+        0.468,
+        0.754
+      ],
+      [
+        0.586,
+        0.712,
+        0.69,
+        0.752
+      ],
+      [
+        0.356,
+        0.746,
+        0.472,
+        0.788
+      ]
+    ],
+    "config": {
+      "closing_pixels": 9,
+      "local_ink_contrast": 3.0,
+      "dark_luminance": 180.0,
+      "colored_chroma": 12.0,
+      "ink_margin_pixels": 1,
+      "feather_pixels": 2.0
+    },
+    "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "7f91854fc899b2449d150b927dd221bf3971e448551c852054620b8c988b8d10"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "bce640e2e16afca33d004006f9948ac47d6235a2d0b8bce0f0c5b19b70f205ff"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "2ab41b3a0c1c306ba3ecd6567a8801c9ee791ed4baf7ae117e833239c6b41b0f"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "0b706e45b94c3e751beeeedcb5808dad20abba063ecb346deffa66463a6459bf"
+    }
+  },
+  "legacy_protected_pixels": 15145,
+  "protected_ink_pixels": 9539,
+  "protected_core_pixels": 14020,
+  "released_legacy_pixels": 1609,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Source contrast identifies candidate printed marks, not semantic recognition or proof that every character is covered."
+}

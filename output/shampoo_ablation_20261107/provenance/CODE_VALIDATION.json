@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "pytest_passed": 99,
+  "pytest_failed": 0,
+  "pytest_command": "python -X utf8 -B -m pytest --basetemp tmp/pytest_99_final",
+  "source_snapshot_files_checked": 57,
+  "source_snapshot_changes": [],
+  "original_git_revision": "9d80e64ae3e75606dfd248bec9b0c0325b1e8a6c",
+  "whitespace_check": "passed",
+  "neutral_guidance_preserved": true,
+  "numerical_core_ast_comparison": "passed"
+}

@@ -1,0 +1,146 @@
+{
+  "status": "completed",
+  "method": "perlage_generation_initialization",
+  "candidates": {
+    "generation_only": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\initialization\\attack\\generative_anchor.png",
+      "sha256": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e"
+    },
+    "natural_final": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\initialization\\attack\\adversarial.png",
+      "sha256": "cf774e111778fa9c3314939b76f86224350c74f4c15fde3c6a79f0adb25011a6"
+    }
+  },
+  "run_identity_sha256": "adf9ef3cab75429f9ebe889e86ddeeec618c01a424d2a12a5450576bf807200f",
+  "encoder": {
+    "provider": "clip",
+    "loader": "attack_surrogate",
+    "surrogate_number": 2,
+    "surrogate": {
+      "role": "attack_surrogate",
+      "name": "ViT-B-32",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+      "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+      "requires_true_local_tokens": true
+    },
+    "fusion": "normalized_image_text_sum",
+    "text_policy": "clip_context_truncate"
+  },
+  "purifier": {
+    "kind": "sd15_latent_noise_then_ddim_purification_v1",
+    "config": {
+      "model_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "working_size": 512,
+      "reverse_steps": 10,
+      "start_timestep": 99,
+      "gradient_checkpointing": true
+    },
+    "model": {
+      "local_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "local_files_only": true,
+      "variant": "fp16",
+      "files": {
+        "unet/config.json": {
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+          "bytes": 743
+        },
+        "unet/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+          "bytes": 1719125304
+        },
+        "vae/config.json": {
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+          "bytes": 547
+        },
+        "vae/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+          "bytes": 167335342
+        },
+        "text_encoder/config.json": {
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+          "bytes": 617
+        },
+        "text_encoder/model.fp16.safetensors": {
+          "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+          "bytes": 246144864
+        },
+        "tokenizer/merges.txt": {
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+          "bytes": 524619
+        },
+        "tokenizer/special_tokens_map.json": {
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+          "bytes": 472
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+          "bytes": 806
+        },
+        "tokenizer/vocab.json": {
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+          "bytes": 1059962
+        },
+        "scheduler/scheduler_config.json": {
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+          "bytes": 308
+        }
+      }
+    },
+    "prompt": "",
+    "guidance_scale": 1.0,
+    "posterior": "mode",
+    "eta": 0.0,
+    "resize": "aspect_long_edge_round8_min64_bicubic_antialias_back_to_native",
+    "output_range": [
+      0.0,
+      1.0
+    ],
+    "quantization": "external_eight_bit_save_or_ste",
+    "implementation_sha256": "e2eaf12ca5ef148a4e538af666fc7965cca2663e0961be6bb1db572ccf3410d3",
+    "not_original_diffpure": true,
+    "not_full_cognitiveguard": true
+  },
+  "generation_seconds": 27.247637100001157,
+  "refinement_and_development_seconds": 724.606620700004,
+  "necessary_optimization_development_seconds": 751.9553655000054,
+  "content_mask_preparation_seconds": 0.10110770000028424,
+  "content_mask_record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\initialization\\content_masks\\mask_record.json",
+  "content_mask_record_sha256": "2a825899d6bcbb9507b09d51bee1563b42c8cdd33eaf29c3880ab7f89f9e0d87",
+  "fine_ink_protection": true,
+  "content_semantics_certified": false,
+  "requires_manual_content_and_logo_review": true,
+  "observed_call_wall_seconds": 768.6677010999992,
+  "full_fresh_call_wall_observed": true,
+  "public_bank_preparation_seconds": 0.0,
+  "public_bank_reused": false,
+  "shadow_pool_used": false,
+  "mask_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\initialization\\generation\\edit_mask.png",
+  "generation_mask_sha256": "0e4cbb88e040daf343c0b65fb56a19b0d6ef280a4fda60dada9a0bc9f7cf4a25",
+  "hardware": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "purchase_runs": 0
+}

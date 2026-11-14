@@ -1,0 +1,177 @@
+{
+  "status": "passed_before_formal_evaluation",
+  "initialization_parameter_differences": {
+    "pixel_diffusion_steps": [
+      60,
+      0
+    ],
+    "pixel_clean_steps": [
+      20,
+      0
+    ],
+    "pixel_levels": [
+      4,
+      0
+    ]
+  },
+  "final_latent_parameter_differences": {
+    "auxiliary_levels": [
+      4,
+      0
+    ]
+  },
+  "source_title_and_training_queries_equal": true,
+  "generation_settings_equal": true,
+  "generation_plan_equal": true,
+  "print_mask_settings_equal": true,
+  "archived_base_model_files_equal": true,
+  "live_historical_editor_files_equal": true,
+  "expected_initialization_config": {
+    "latent_clean_steps": 40,
+    "latent_diffusion_steps": 40,
+    "pixel_clean_steps": 0,
+    "pixel_diffusion_steps": 0,
+    "latent_levels": 32,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.012,
+    "latent_smoothing_mix": 0.1,
+    "pixel_levels": 0,
+    "pixel_start_levels": 0.5,
+    "pixel_end_levels": 0.08,
+    "momentum": 0.85,
+    "temperature": 0.04,
+    "teacher_weight": 0.5,
+    "semantic_image_weight": 1.0,
+    "semantic_joint_weight": 0.5,
+    "semantic_teacher_weight": 0.05,
+    "image_weight": 0.05,
+    "diffusion_weight": 3.0,
+    "shadow_weight": 0.0,
+    "guard_tolerance": 0.01,
+    "latent_guard_tolerance": 0.04,
+    "development_temperature": 0.01,
+    "guard_backtracks": 4,
+    "source_ssim_floor": 0.93,
+    "ordinary_ssim_floor": 0.95,
+    "source_mae_ceiling": 6.0,
+    "ssim_safety_buffer": 1e-05,
+    "tv_weight": 0.003,
+    "l2_weight": 0.001,
+    "check_every": 20,
+    "full_eot_samples": 1,
+    "diffusion_timesteps": [
+      99,
+      199,
+      399
+    ],
+    "validation_seeds": [
+      9301,
+      9302
+    ],
+    "training_seed_base": 710000000,
+    "ray_repair_iterations": 8
+  },
+  "expected_latent_config": {
+    "steps": 40,
+    "check_every": 10,
+    "latent_levels": 16,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.008,
+    "latent_smoothing_mix": 0.1,
+    "auxiliary_levels": 0,
+    "source_ssim_floor": 0.93,
+    "source_mae_ceiling": 8.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.002,
+    "feature_weight": 0.1,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 4,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "selection_seeds": [
+      9301,
+      9302
+    ],
+    "retention_tolerance": 0.0005
+  },
+  "base_model_files": {
+    "unet/config.json": {
+      "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+      "bytes": 743
+    },
+    "unet/diffusion_pytorch_model.fp16.safetensors": {
+      "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+      "bytes": 1719125304
+    },
+    "vae/config.json": {
+      "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+      "bytes": 547
+    },
+    "vae/diffusion_pytorch_model.fp16.safetensors": {
+      "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+      "bytes": 167335342
+    },
+    "text_encoder/config.json": {
+      "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+      "bytes": 617
+    },
+    "text_encoder/model.fp16.safetensors": {
+      "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+      "bytes": 246144864
+    },
+    "tokenizer/merges.txt": {
+      "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+      "bytes": 524619
+    },
+    "tokenizer/special_tokens_map.json": {
+      "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+      "bytes": 472
+    },
+    "tokenizer/tokenizer_config.json": {
+      "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+      "bytes": 806
+    },
+    "tokenizer/vocab.json": {
+      "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+      "bytes": 1059962
+    },
+    "scheduler/scheduler_config.json": {
+      "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+      "bytes": 308
+    }
+  },
+  "editor_model_files": {
+    "unet/config.json": {
+      "sha256": "f6c4ea486da4d813c389de1fc405fcb64139ca18f0729733dc177dad17854347",
+      "bytes": 1021
+    },
+    "unet/diffusion_pytorch_model.fp16.safetensors": {
+      "sha256": "0d6bbc0a95dd125196d327a660b43d24c56f433eb30d2776f1327fb86bd38f78",
+      "bytes": 1719148344
+    },
+    "scheduler/scheduler_config.json": {
+      "sha256": "81fe3f35ef35556fed140f94a61fbefcb3982cbd771686014c9be00435c3bbcc",
+      "bytes": 569
+    }
+  }
+}

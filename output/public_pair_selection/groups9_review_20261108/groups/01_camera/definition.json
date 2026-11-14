@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "group": "01_camera",
+  "name": "第一组相机",
+  "category": "camera",
+  "shape_similarity": 0.7198,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": true,
+  "selection_status": "screened_high_similarity",
+  "selection_notes": "通过公开粗类型兼容性门槛与灰度外形特征门槛（0.7198 >= 0.601081）。受限于粗筛预算hash截断，本组系在模拟可控公开池中筛查出的高质量PTZ监控球机同构对。",
+  "target": {
+    "id": "B08V134QWR",
+    "title": "PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio IP66 Waterproof",
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        15,
+        65,
+        490,
+        465
+      ]
+    ],
+    "text_regions": [
+      [
+        0.466,
+        0.53,
+        0.634,
+        0.584
+      ]
+    ]
+  },
+  "source": {
+    "id": "B071ZFHTZN",
+    "title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera 20x Optical Zoom, Auto Tracking & Humanoid Detection, Night Vision up to 1000ft, RTMP/RTSP 1080P/3MP 60FPS Speed Dome (Illuminati-20X)",
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        75,
+        43,
+        347,
+        440
+      ]
+    ],
+    "text_regions": [
+      [
+        0.488,
+        0.488,
+        0.636,
+        0.542
+      ]
+    ]
+  }
+}

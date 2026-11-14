@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "pid": 16512,
+  "retrieval_pid": 35956,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "rankings_recomputed": 80,
+  "score_comparisons": 15120,
+  "max_score_error": 0.0,
+  "persistent_vector_cache_read": false,
+  "inputs_sha256": "b7ddcdc348eb721bd4733786aaf3581f80007f124b741d057ebc0b7781947e60",
+  "retrieval_certificate_sha256": "27c6c22b6b819560d21355f55bd99c72d1834eb1695c57557486a253a80d6f08",
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\retrieval\\joint\\clean.json": "4cb0c16d04e6897dcfbf4fbcc07ee370d0b7b91be289e9443b5c68b6b9be2777",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\retrieval\\joint\\lucid.json": "610376c8518705fb35ded2205695480127c75833237f7fd60e0d88eda2498209",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\retrieval\\text\\clean.json": "11ab6c2eebc22a07bbf399224a234fb90cbf2a2442ac58f58858ee66a419fe17",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\retrieval\\text\\lucid.json": "d987d9886fd623275003b3d2469aff95a5d20e901ba8bc84e54c858589e9b8c2"
+  }
+}

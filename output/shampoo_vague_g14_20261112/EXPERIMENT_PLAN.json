@@ -1,0 +1,783 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-12T02:05:20Z",
+  "scope": "single_group_encoder_intervention",
+  "baseline_plan": {
+    "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\SCHEDULED_INPUTS.json",
+    "sha256": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c"
+  },
+  "group": "07_shampoo",
+  "methods": {
+    "lucid": {
+      "key": "07_shampoo",
+      "name": "第七组洗发水",
+      "source": {
+        "id": "B08XYBS678",
+        "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg",
+        "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+      },
+      "target": {
+        "id": "B00BDJODWI",
+        "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+        "feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+        "image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+      },
+      "source_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+      "banks": {
+        "clean": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_clean.json",
+          "sha256": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f"
+        },
+        "modified": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_modified.json",
+          "sha256": "d7a9456f591accf588801382635e41ce1ff06ea84284a5db492446560657b117"
+        }
+      },
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png",
+      "frozen_image_sha256": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+      "frozen_file": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\FROZEN_IMAGE.json",
+      "frozen_file_sha256": "55e7f27cb3039979ad2a8203d0e761f2523a1ac87db321a8148fb52ea442e4f9",
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "instruction": "请购买与图片中商品相似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_02",
+          "instruction": "请帮我找一件图中这样的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_03",
+          "instruction": "请按这张参考图挑选类似商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_04",
+          "instruction": "我想买图片里这种样式的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_05",
+          "instruction": "请参考图片选购相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_06",
+          "instruction": "帮我购买一件外观与图中相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_07",
+          "instruction": "请找一件与这张图大致相似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_08",
+          "instruction": "我需要图片所示类型的商品，请帮我选购。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_09",
+          "instruction": "请依照图中样式购买类似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_10",
+          "instruction": "帮我找找与图片中物品相仿的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_11",
+          "instruction": "请根据参考图片帮我选购一件商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_12",
+          "instruction": "我想购买一件与这张图类似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_13",
+          "instruction": "请挑选和图片中物品整体相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_14",
+          "instruction": "照着这张图帮我购买类似款式。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_15",
+          "instruction": "请帮我选购图中这种外观的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_16",
+          "instruction": "我需要一件与参考图相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_17",
+          "instruction": "请按照图片中的大致样式选购。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_18",
+          "instruction": "帮我购买与图里物品风格相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_19",
+          "instruction": "请找一件整体看起来像参考图的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_20",
+          "instruction": "请参考这张图购买一件相似商品即可。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        }
+      ]
+    },
+    "perlage_no_pixel": {
+      "key": "07_shampoo",
+      "name": "第七组洗发水",
+      "source": {
+        "id": "B08XYBS678",
+        "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+        "brand": "Dove",
+        "attributes": [
+          "a foaming cleanser",
+          "coconut and almond milk",
+          "a cruelty-free formula",
+          "a moisturizing blend",
+          "cruelty free",
+          "plant based"
+        ],
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg",
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source_foreground.png",
+        "boxes": [
+          [
+            20,
+            59,
+            478,
+            428
+          ]
+        ],
+        "text_regions": [
+          [
+            0.072,
+            0.572,
+            0.19,
+            0.638
+          ],
+          [
+            0.266,
+            0.58,
+            0.404,
+            0.66
+          ],
+          [
+            0.07,
+            0.624,
+            0.156,
+            0.66
+          ],
+          [
+            0.782,
+            0.614,
+            0.838,
+            0.65
+          ],
+          [
+            0.068,
+            0.636,
+            0.21,
+            0.68
+          ],
+          [
+            0.272,
+            0.644,
+            0.364,
+            0.68
+          ],
+          [
+            0.58,
+            0.638,
+            0.65,
+            0.678
+          ],
+          [
+            0.08,
+            0.662,
+            0.218,
+            0.692
+          ],
+          [
+            0.266,
+            0.66,
+            0.428,
+            0.704
+          ],
+          [
+            0.276,
+            0.684,
+            0.468,
+            0.72
+          ],
+          [
+            0.146,
+            0.712,
+            0.246,
+            0.752
+          ],
+          [
+            0.286,
+            0.708,
+            0.43,
+            0.74
+          ],
+          [
+            0.302,
+            0.72,
+            0.468,
+            0.754
+          ],
+          [
+            0.586,
+            0.712,
+            0.69,
+            0.752
+          ],
+          [
+            0.356,
+            0.746,
+            0.472,
+            0.788
+          ]
+        ],
+        "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+        "foreground_mask_sha256": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671"
+      },
+      "target": {
+        "id": "B00BDJODWI",
+        "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+        "brand": "Aveda",
+        "attributes": [
+          "plant-based haircare ingredients",
+          "a balancing formula",
+          "plant and flower essences",
+          "scalp care",
+          "plant based"
+        ],
+        "feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "training_queries": [
+          "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "I am looking for shampoo with a balancing formula and scalp care."
+        ],
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target_foreground.png",
+        "boxes": [
+          [
+            2,
+            5,
+            158,
+            494
+          ]
+        ],
+        "text_regions": [
+          [
+            0.275,
+            0.314,
+            0.68125,
+            0.356
+          ],
+          [
+            0.20625,
+            0.352,
+            0.675,
+            0.38
+          ],
+          [
+            0.21875,
+            0.344,
+            0.70625,
+            0.37
+          ],
+          [
+            0.1375,
+            0.454,
+            0.8375,
+            0.502
+          ],
+          [
+            0.2,
+            0.528,
+            0.78125,
+            0.562
+          ],
+          [
+            0.1375,
+            0.554,
+            0.84375,
+            0.588
+          ],
+          [
+            0.20625,
+            0.818,
+            0.75,
+            0.852
+          ],
+          [
+            0.24375,
+            0.856,
+            0.7,
+            0.882
+          ],
+          [
+            0.25,
+            0.842,
+            0.7,
+            0.87
+          ],
+          [
+            0.2,
+            0.9,
+            0.75625,
+            0.94
+          ]
+        ],
+        "image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+        "foreground_mask_sha256": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54"
+      },
+      "source_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+      "banks": {
+        "clean": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_clean.json",
+          "sha256": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f"
+        },
+        "modified": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_modified.json",
+          "sha256": "1ae9b2908d4db681b1a5d381f3a9f7ee1173939672caff199c0d932f5ba70de8"
+        }
+      },
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png",
+      "frozen_image_sha256": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+      "frozen_file": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json",
+      "frozen_file_sha256": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "instruction": "请购买与图片中商品相似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_02",
+          "instruction": "请帮我找一件图中这样的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_03",
+          "instruction": "请按这张参考图挑选类似商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_04",
+          "instruction": "我想买图片里这种样式的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_05",
+          "instruction": "请参考图片选购相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_06",
+          "instruction": "帮我购买一件外观与图中相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_07",
+          "instruction": "请找一件与这张图大致相似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_08",
+          "instruction": "我需要图片所示类型的商品，请帮我选购。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_09",
+          "instruction": "请依照图中样式购买类似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_10",
+          "instruction": "帮我找找与图片中物品相仿的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_11",
+          "instruction": "请根据参考图片帮我选购一件商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_12",
+          "instruction": "我想购买一件与这张图类似的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_13",
+          "instruction": "请挑选和图片中物品整体相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_14",
+          "instruction": "照着这张图帮我购买类似款式。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_15",
+          "instruction": "请帮我选购图中这种外观的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_16",
+          "instruction": "我需要一件与参考图相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_17",
+          "instruction": "请按照图片中的大致样式选购。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_18",
+          "instruction": "帮我购买与图里物品风格相近的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_19",
+          "instruction": "请找一件整体看起来像参考图的商品。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "vague_20",
+          "instruction": "请参考这张图购买一件相似商品即可。",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        }
+      ]
+    }
+  },
+  "condition": "none",
+  "pool_count": 189,
+  "queries_per_bank": 20,
+  "expected_rankings": 80,
+  "expected_score_checks": 15120,
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\evaluation_encoder.json",
+  "encoder_config_sha256": "734ba8aec37d5f19848dc42e7040c6f0846213483e5ae249e9e26c828e9fc006",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "index_text": "product_feature",
+  "device": "cuda",
+  "precision": "fp32",
+  "training_enabled": false,
+  "generation_enabled": false,
+  "shopping_enabled": false,
+  "only_semantic_change": "evaluation_encoder_B32_to_native_g14",
+  "input_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\SCHEDULED_INPUTS.json": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\FROZEN_IMAGE.json": "55e7f27cb3039979ad2a8203d0e761f2523a1ac87db321a8148fb52ea442e4f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0e729be776b396357b9fbca2f5e10efe82bfe7842f953c197541a6e83c958431.jpg": "0e729be776b396357b9fbca2f5e10efe82bfe7842f953c197541a6e83c958431",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\d675fcdc22b5a7491a3dc93d36d6a4777e9bd980fc6a5d2d636d1347222c210c.jpg": "d675fcdc22b5a7491a3dc93d36d6a4777e9bd980fc6a5d2d636d1347222c210c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3fe8968a3d9d2323041f2292ff7fb0805638bdb028c94273d02925c939bbe84b.jpg": "3fe8968a3d9d2323041f2292ff7fb0805638bdb028c94273d02925c939bbe84b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\16967ce33735d0e80ba6685b649f7dcbec93ff15590225a4ef011f1765695f66.jpg": "16967ce33735d0e80ba6685b649f7dcbec93ff15590225a4ef011f1765695f66",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3830af247c5e65517dd07289ee5ed713a718f1ec8626118b830b37fe0acabd56.jpg": "3830af247c5e65517dd07289ee5ed713a718f1ec8626118b830b37fe0acabd56",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f7a4ef388c515f9a5fb47c7026bc733b44dc0ebb613328c24564685512a44436.jpg": "f7a4ef388c515f9a5fb47c7026bc733b44dc0ebb613328c24564685512a44436",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f6389f237adfb1b7a5bdb415db453b92004656c26d58405925e3a3d7a4ba672e.jpg": "f6389f237adfb1b7a5bdb415db453b92004656c26d58405925e3a3d7a4ba672e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\255d808ac979970a47352e525788315ee248290611c9ee5f8101e28aab35a1b6.jpg": "255d808ac979970a47352e525788315ee248290611c9ee5f8101e28aab35a1b6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ffe7002259e26baef7d4c1e308ab3a4526dd2f92991fc15e3c35bbcd01a29d80.jpg": "ffe7002259e26baef7d4c1e308ab3a4526dd2f92991fc15e3c35bbcd01a29d80",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\fd0a8ea1f473365acdeed505c29bbda10f7d051162a2d5c30aff94df414e9ef7.jpg": "fd0a8ea1f473365acdeed505c29bbda10f7d051162a2d5c30aff94df414e9ef7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\5a272328c5b9e429f38df7ca8d5d43a7b8d09a5d6cda752462f454583445367a.jpg": "5a272328c5b9e429f38df7ca8d5d43a7b8d09a5d6cda752462f454583445367a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8b7d283ad57811781f8ef72ab4b65969592872f1941a7a46d6cd01b4573e900c.jpg": "8b7d283ad57811781f8ef72ab4b65969592872f1941a7a46d6cd01b4573e900c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a8482ccd27535de2b26ab86dd5feb620f135d22ae8b27eb75f0b1ca55fbb3a60.jpg": "a8482ccd27535de2b26ab86dd5feb620f135d22ae8b27eb75f0b1ca55fbb3a60",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f38268fb879d12ee11f841d8af2c6347f814b8d033f91bd1a76f2511698394f7.jpg": "f38268fb879d12ee11f841d8af2c6347f814b8d033f91bd1a76f2511698394f7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2d6a6d3e43802a3fbf5b70362b31c927347b80d64d35b8fd3391fb19b7809f60.jpg": "2d6a6d3e43802a3fbf5b70362b31c927347b80d64d35b8fd3391fb19b7809f60",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\665a72b85f408a821b57fb9be43d8b909575555f835df49783005bd8ceb81f58.jpg": "665a72b85f408a821b57fb9be43d8b909575555f835df49783005bd8ceb81f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ca8eebb1f36f6fdd22dfa9e08991b93649d063cf13066d0b3755359af1cb6d98.jpg": "ca8eebb1f36f6fdd22dfa9e08991b93649d063cf13066d0b3755359af1cb6d98",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\1ec6432ae18a4689710ec0e6da8188d5e132c09d6bd4b4e91493376e5b71a56d.jpg": "1ec6432ae18a4689710ec0e6da8188d5e132c09d6bd4b4e91493376e5b71a56d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3c7e37f5a8b422bb7896b83cc61ca73bae10aa1e7e1336ea4a8ec3eb597b444f.jpg": "3c7e37f5a8b422bb7896b83cc61ca73bae10aa1e7e1336ea4a8ec3eb597b444f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\29a402fc4d96f35262489def42764ec77c01a35d1cdf1b1ec78fa99fe41c0a82.jpg": "29a402fc4d96f35262489def42764ec77c01a35d1cdf1b1ec78fa99fe41c0a82",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\eb5f729dbce74e5ea97f9b3af6eb902f947c9c8442b74acbf450bce12d1104cd.jpg": "eb5f729dbce74e5ea97f9b3af6eb902f947c9c8442b74acbf450bce12d1104cd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\eb59d5d6fc90460297c10778b064d40a134a551f8697215277ab74b6ae19073a.jpg": "eb59d5d6fc90460297c10778b064d40a134a551f8697215277ab74b6ae19073a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\e6254db0a97b2abc5c09c4adb3aa008bdf4a0d79664a3bedb0c400bf469dba01.jpg": "e6254db0a97b2abc5c09c4adb3aa008bdf4a0d79664a3bedb0c400bf469dba01",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\24a2ae3964328ce5bf08f93b696b947995dda3673cbf4d38a48e866ef2eba5e1.jpg": "24a2ae3964328ce5bf08f93b696b947995dda3673cbf4d38a48e866ef2eba5e1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\c48625d1bd8d7473e2515fdf090cfb90b1bdce3668040adfd009a10129bfb640.jpg": "c48625d1bd8d7473e2515fdf090cfb90b1bdce3668040adfd009a10129bfb640",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8ed5472aad3d2db4e7c7deadee391170231b3aaaac483d4f247cf9d02327b5de.jpg": "8ed5472aad3d2db4e7c7deadee391170231b3aaaac483d4f247cf9d02327b5de",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\69db64b31422fd3c771663d5b590ff57623b7fa954c9687ae5bc90d062612efd.jpg": "69db64b31422fd3c771663d5b590ff57623b7fa954c9687ae5bc90d062612efd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6c4e58fbdb3e5848ae45cc31efa09b2de9d541f8eed05546a198395457d2b735.jpg": "6c4e58fbdb3e5848ae45cc31efa09b2de9d541f8eed05546a198395457d2b735",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\98ac40864dc6e45058bd22e00e70171ad3bd62e6ae59701bcd84f843fc460a0f.jpg": "98ac40864dc6e45058bd22e00e70171ad3bd62e6ae59701bcd84f843fc460a0f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\62a2cb6e4067987e94ebe125f79f28214933cfaa5382aec5c06a454e6a991eba.jpg": "62a2cb6e4067987e94ebe125f79f28214933cfaa5382aec5c06a454e6a991eba",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b935405a57e9084d869109c06b704c5538a81832608fbf9b0b45e5ac9f582fb1.jpg": "b935405a57e9084d869109c06b704c5538a81832608fbf9b0b45e5ac9f582fb1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f5fc542ce28f788e6812353a4f1b6cfa04ffe8c882d92e10f356ac162038391a.jpg": "f5fc542ce28f788e6812353a4f1b6cfa04ffe8c882d92e10f356ac162038391a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\809bea25e58cd0c1bef23df20f15de1e9e265a71669154d52dfd574fe3e1d7f0.jpg": "809bea25e58cd0c1bef23df20f15de1e9e265a71669154d52dfd574fe3e1d7f0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0ab581e7d8ce9ec060a9cacf5fa566f3bd4241dce8660596e4f4615baff53598.jpg": "0ab581e7d8ce9ec060a9cacf5fa566f3bd4241dce8660596e4f4615baff53598",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\34c45b9208aa82921fa58beedc287ef31ab9138cba59e81f8c917443171a1cf1.jpg": "34c45b9208aa82921fa58beedc287ef31ab9138cba59e81f8c917443171a1cf1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a78c33050d72e7749102830c12298a0c8129d685e93e3cb6af4acd2f40f92d2a.jpg": "a78c33050d72e7749102830c12298a0c8129d685e93e3cb6af4acd2f40f92d2a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\d1b845ee6165d44545fbf86be271ae53e309ee8cef466d1402b2097f3f94f86c.jpg": "d1b845ee6165d44545fbf86be271ae53e309ee8cef466d1402b2097f3f94f86c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ca2727178210a045d44b29359a0d8c77bc75aa2b66b574b2e5c1eec58577d1c5.jpg": "ca2727178210a045d44b29359a0d8c77bc75aa2b66b574b2e5c1eec58577d1c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\59d4586f5ff1da36941a5883ea269491b5404fc3dee27a2436162f601d97157e.jpg": "59d4586f5ff1da36941a5883ea269491b5404fc3dee27a2436162f601d97157e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8f9c783520c412fe93cbd1e54cfc5d43b6acbc4af3eac89ca734cda0f3fa1e8f.jpg": "8f9c783520c412fe93cbd1e54cfc5d43b6acbc4af3eac89ca734cda0f3fa1e8f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0cf9385f46a7d53939eb6e2a433964667222df2eea995c1b418c853fcd7592fd.jpg": "0cf9385f46a7d53939eb6e2a433964667222df2eea995c1b418c853fcd7592fd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7a06ed70b92dc60b6cf37d29631bcfe52f8735adba0253b791350f464ca56d6b.jpg": "7a06ed70b92dc60b6cf37d29631bcfe52f8735adba0253b791350f464ca56d6b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ce30088a2310805080c816ed7e4ec6d922e7fc4e026db13b79646767b6c7cc50.jpg": "ce30088a2310805080c816ed7e4ec6d922e7fc4e026db13b79646767b6c7cc50",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\48844ab468bea295a60e3c6c08d5098cddbe394151df244519e870dd1a1595b9.jpg": "48844ab468bea295a60e3c6c08d5098cddbe394151df244519e870dd1a1595b9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0488aab0e487b4e486b6ea7a1de6ba10e4e5998e4d80b7c6715ef2460b72c349.jpg": "0488aab0e487b4e486b6ea7a1de6ba10e4e5998e4d80b7c6715ef2460b72c349",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\5aa5f091d8212e8230304947f8cd6188254e6fa601359c056de2fe114a3a4dbd.jpg": "5aa5f091d8212e8230304947f8cd6188254e6fa601359c056de2fe114a3a4dbd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\870a6a5f7cd868b4c48fd63fb0fa88d3c1a533c8d8e3b216b48f2a606a2c8ea0.jpg": "870a6a5f7cd868b4c48fd63fb0fa88d3c1a533c8d8e3b216b48f2a606a2c8ea0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2c9ad68c012fd7254652a76d6f4a827c7d387b561ab9b756728b84800738930e.jpg": "2c9ad68c012fd7254652a76d6f4a827c7d387b561ab9b756728b84800738930e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3f96a152d64ebbc4f688d2650b73312ac4df70ab045cd54a5b66b6a6d05b3df4.jpg": "3f96a152d64ebbc4f688d2650b73312ac4df70ab045cd54a5b66b6a6d05b3df4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6621d31e2f3db0acaf3a5155ce984ecf279f3e8c25199af1ded60dcdf80093c6.jpg": "6621d31e2f3db0acaf3a5155ce984ecf279f3e8c25199af1ded60dcdf80093c6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2220cf6dff525da141815326ad2aadf4556890d0fff928b9ab691b1e7974eb26.jpg": "2220cf6dff525da141815326ad2aadf4556890d0fff928b9ab691b1e7974eb26",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\78f5f7b79aa2a93981de4543e163108b7f01b6006630ec1b3c4a91f7c561ef43.jpg": "78f5f7b79aa2a93981de4543e163108b7f01b6006630ec1b3c4a91f7c561ef43",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\440b7a55a198fb511f8190ff5ec48257a261f8e2398fb89c1e01c86c87bf0a71.jpg": "440b7a55a198fb511f8190ff5ec48257a261f8e2398fb89c1e01c86c87bf0a71",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\c463d81c59a66b9f7d4cca173bed98ae3e584cf30373fb96e9f7983333e5cefe.jpg": "c463d81c59a66b9f7d4cca173bed98ae3e584cf30373fb96e9f7983333e5cefe",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f8eefd6ca9466762f0211cf4f231d23045881ed6023031f0a26c2e4fd8be788b.jpg": "f8eefd6ca9466762f0211cf4f231d23045881ed6023031f0a26c2e4fd8be788b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\1aa0dc4faec7d8a5040c391069d0e65fe0c922291c35149a7e48511c43c1451e.jpg": "1aa0dc4faec7d8a5040c391069d0e65fe0c922291c35149a7e48511c43c1451e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0cb9c1ab18e77d4a61672d00890eda8de7df78455f22db781460f308600f3576.jpg": "0cb9c1ab18e77d4a61672d00890eda8de7df78455f22db781460f308600f3576",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\91451c0627439d57f5577e404433af9a42f1517c17d3c3c525bc2c39d66222b9.jpg": "91451c0627439d57f5577e404433af9a42f1517c17d3c3c525bc2c39d66222b9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\93ad17ba7690b396a034ed7941c4ef41c4fd01f9ebb6a3eb968398685a8363b0.jpg": "93ad17ba7690b396a034ed7941c4ef41c4fd01f9ebb6a3eb968398685a8363b0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b9a83571200498a76382c42e0acc33b44865e8d7c05e48334bc59716162a14c5.jpg": "b9a83571200498a76382c42e0acc33b44865e8d7c05e48334bc59716162a14c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6af8f461095d0daad61cefb2c875e51b55aca2871dbc88e4f4b47923b7890904.jpg": "6af8f461095d0daad61cefb2c875e51b55aca2871dbc88e4f4b47923b7890904",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8a7d59820c2d4b445166847966f74b3061eea1a21fcf9ddb622a305d5e176446.jpg": "8a7d59820c2d4b445166847966f74b3061eea1a21fcf9ddb622a305d5e176446",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28.jpg": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7ceaafcfd6a9e435dc7bc65297d028821abdf7c39196fef9e3eddd3f5d05e187.jpg": "7ceaafcfd6a9e435dc7bc65297d028821abdf7c39196fef9e3eddd3f5d05e187",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8d53feb47f12287884188ca0f1cc0b1537c49070eef9fb73ebc6ec489021ba98.jpg": "8d53feb47f12287884188ca0f1cc0b1537c49070eef9fb73ebc6ec489021ba98",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7b793dda7d58d2e66a7dff843619f1814e590bc691a8830f5472414820bb3a2f.jpg": "7b793dda7d58d2e66a7dff843619f1814e590bc691a8830f5472414820bb3a2f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0e49b394a725929e46869a010944d19eb11780676f4a2d0543e0901ea98d6172.jpg": "0e49b394a725929e46869a010944d19eb11780676f4a2d0543e0901ea98d6172",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3cb1220de322180da50182c979f985a80974b0a899406a38588389bbb4fb6ed7.jpg": "3cb1220de322180da50182c979f985a80974b0a899406a38588389bbb4fb6ed7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\eac27baef37bd7c9cf003ef0e87e73d242173e722e2722a6810a567d76c51f39.jpg": "eac27baef37bd7c9cf003ef0e87e73d242173e722e2722a6810a567d76c51f39",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\14e8a857c73c2ab5cf59a81542202c6d17ce6e6ff5ca87839460e042418cc29a.jpg": "14e8a857c73c2ab5cf59a81542202c6d17ce6e6ff5ca87839460e042418cc29a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2e61b0f2b3d4a7423bb3c9b4d74151eaeab4c637dcb7cb089fd22b0d84399922.jpg": "2e61b0f2b3d4a7423bb3c9b4d74151eaeab4c637dcb7cb089fd22b0d84399922",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\96ca7da97c7b1db585061a432af9fa4c85b4d9057333a6e8699510055f403428.jpg": "96ca7da97c7b1db585061a432af9fa4c85b4d9057333a6e8699510055f403428",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\fe5b37a4819799ffd9c4587011d07217d3e5c6bd36b3b601f7764acc372b14b1.jpg": "fe5b37a4819799ffd9c4587011d07217d3e5c6bd36b3b601f7764acc372b14b1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ec4d6f9e976d34365fafc530f395711eab7ed2dab086fc8df1f2bafb51eede6d.jpg": "ec4d6f9e976d34365fafc530f395711eab7ed2dab086fc8df1f2bafb51eede6d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\282dbebb7375e41057d7cb8b335e8305c14e9a82b74527b6fb708f9e7aff7981.jpg": "282dbebb7375e41057d7cb8b335e8305c14e9a82b74527b6fb708f9e7aff7981",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a1e848f3c3dd6106eb000a863aa0647bf7c8deed2899af34c7becff1afac7f7d.jpg": "a1e848f3c3dd6106eb000a863aa0647bf7c8deed2899af34c7becff1afac7f7d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7fcfdf2f35893e57481cfae22af0fa2c8af46823f7315764fa8f399a8641d960.jpg": "7fcfdf2f35893e57481cfae22af0fa2c8af46823f7315764fa8f399a8641d960",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\86e38c5a6911474bb71a72e74701a0f6489eff6d45ce3ceac51ddd6862d0d530.jpg": "86e38c5a6911474bb71a72e74701a0f6489eff6d45ce3ceac51ddd6862d0d530",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\85ac93b1628f02e67ad035a4909345c776fde3272865d2b0ee1effc83abc3c7e.jpg": "85ac93b1628f02e67ad035a4909345c776fde3272865d2b0ee1effc83abc3c7e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\4a8461309a624fee90b0a305091518e34da6c88a45f138ea97d9428c1162a87e.jpg": "4a8461309a624fee90b0a305091518e34da6c88a45f138ea97d9428c1162a87e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\45c24f33888234bb3ff49117a1921ed0ddc8246be75e0ae0685c75fd99a0375e.jpg": "45c24f33888234bb3ff49117a1921ed0ddc8246be75e0ae0685c75fd99a0375e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b23b05dd431224c89c73c79e3231205998fdcc3d4608aed1260eb231632a0926.jpg": "b23b05dd431224c89c73c79e3231205998fdcc3d4608aed1260eb231632a0926",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\44501b1d5f29e96b31d0dab90c4e97111057207af4e22c20244bd8e20bfcfa6d.jpg": "44501b1d5f29e96b31d0dab90c4e97111057207af4e22c20244bd8e20bfcfa6d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2eaea983aa4b1ab928567e1aeb57a255fa133f0b9fa2b9a4a6eeccd43d62d967.jpg": "2eaea983aa4b1ab928567e1aeb57a255fa133f0b9fa2b9a4a6eeccd43d62d967",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\399323c6e0b0564bc63c9702d96ff48d48ba1971fbe826364b9f5a603c642048.jpg": "399323c6e0b0564bc63c9702d96ff48d48ba1971fbe826364b9f5a603c642048",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2ba8b9d46b959e56e709aaa9feedd972deb6c1e048134df4ea479713a2bb97bc.jpg": "2ba8b9d46b959e56e709aaa9feedd972deb6c1e048134df4ea479713a2bb97bc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\fa7fbabe9f7da22f5968316196e3db13dc4f35ca134bfb7c364ee52b65759d1a.jpg": "fa7fbabe9f7da22f5968316196e3db13dc4f35ca134bfb7c364ee52b65759d1a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\568d725ad53e8a4af97be0338819537e708bfa1d29270ca90fbbab8218efaefe.jpg": "568d725ad53e8a4af97be0338819537e708bfa1d29270ca90fbbab8218efaefe",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b0c82546f60b4a7a7fcd69ebe9aa11dffb4c3bbbb4418d7f013ba9cc58e01c18.jpg": "b0c82546f60b4a7a7fcd69ebe9aa11dffb4c3bbbb4418d7f013ba9cc58e01c18",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\4c12fab83748628e06f94f75288bb6f7f7707a63f8f2847a04fe69237d317621.jpg": "4c12fab83748628e06f94f75288bb6f7f7707a63f8f2847a04fe69237d317621",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7b3d555a5cd05da0478c8aa602143f3cfbe372ba913c015fa353fbf3497af8ac.jpg": "7b3d555a5cd05da0478c8aa602143f3cfbe372ba913c015fa353fbf3497af8ac",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\508c37eb3b75de2cc84d1aa43706d96b639475eb77fff0de792397ee6116b111.jpg": "508c37eb3b75de2cc84d1aa43706d96b639475eb77fff0de792397ee6116b111",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\15917362cbc0a22214ac8cc634832b4e883a7a50f381a80ae0042228416a605b.jpg": "15917362cbc0a22214ac8cc634832b4e883a7a50f381a80ae0042228416a605b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f3b9a9fa2c1c00afade970f176878b76fef8fb0ab0f1284195dd2e5535bdcb73.jpg": "f3b9a9fa2c1c00afade970f176878b76fef8fb0ab0f1284195dd2e5535bdcb73",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\235efc68a71e90280873a8942f394eb1639878174b173fc376e406961dda5c62.jpg": "235efc68a71e90280873a8942f394eb1639878174b173fc376e406961dda5c62",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f0cd42a16162235bb5cdb042fbbd82b4acaa8bb8b684f3df24a253b84d75007c.jpg": "f0cd42a16162235bb5cdb042fbbd82b4acaa8bb8b684f3df24a253b84d75007c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\cc4a35cc8309ced59ba7b4777f93cace66bf2a395fa57a719f7af19e92518613.jpg": "cc4a35cc8309ced59ba7b4777f93cace66bf2a395fa57a719f7af19e92518613",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2e216dcad678305f7933003f5ef67c519c2cb941c9986ec1d0c00344a7a01764.jpg": "2e216dcad678305f7933003f5ef67c519c2cb941c9986ec1d0c00344a7a01764",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7887debef4116671483305223bf4d9fa9669f2f8e3dd66619cc3ea1be51e9d8b.jpg": "7887debef4116671483305223bf4d9fa9669f2f8e3dd66619cc3ea1be51e9d8b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\064e2aa4f5c3369d16418a9c721cf8f172698a00bdcc34a09c94f422f0c605a7.jpg": "064e2aa4f5c3369d16418a9c721cf8f172698a00bdcc34a09c94f422f0c605a7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\495abd99231cf5c323f47d1b6bda132ebf26582422f77866ef8f72a7a955b4f4.jpg": "495abd99231cf5c323f47d1b6bda132ebf26582422f77866ef8f72a7a955b4f4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\636e51eae6a3cc01742b5f7525da2be546d92446f743a62f820aa815cd5fd4e2.jpg": "636e51eae6a3cc01742b5f7525da2be546d92446f743a62f820aa815cd5fd4e2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\99aa1378734ff06aa7e7237f779b4dae001c2204543dba4b9ae86c45ec10e93b.jpg": "99aa1378734ff06aa7e7237f779b4dae001c2204543dba4b9ae86c45ec10e93b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\eec6ff8039637c9f851cc30c60f4223b3a3238b0ce0add7172ba046556e29292.jpg": "eec6ff8039637c9f851cc30c60f4223b3a3238b0ce0add7172ba046556e29292",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe.jpg": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\19af9d80c4ed029c9ed71a5e097f205e6518df159fa4714cf9b89d2b9771a8c7.jpg": "19af9d80c4ed029c9ed71a5e097f205e6518df159fa4714cf9b89d2b9771a8c7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\d8d48281817054878f9e32b2f48d8eacaa45d45146dc1bf0c28fb06fbb27bbb4.jpg": "d8d48281817054878f9e32b2f48d8eacaa45d45146dc1bf0c28fb06fbb27bbb4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6ff542a10714f463353a642f56dedfa481e926e75cae4939ddca4d805d3c1bb7.jpg": "6ff542a10714f463353a642f56dedfa481e926e75cae4939ddca4d805d3c1bb7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\d868003d24bfb0651cdc9fee5359035ed6e4bb7b23b7c6898f8d173cc54a4c39.jpg": "d868003d24bfb0651cdc9fee5359035ed6e4bb7b23b7c6898f8d173cc54a4c39",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\dd48dc5e2443044c20f239e966a2bf048ee061821cda24eec797d77fd1bfbef5.jpg": "dd48dc5e2443044c20f239e966a2bf048ee061821cda24eec797d77fd1bfbef5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\daed204f468da83a49d7a4a4472d4a46f6b433698674f1c2457c5362239988a2.jpg": "daed204f468da83a49d7a4a4472d4a46f6b433698674f1c2457c5362239988a2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b2c937bd2112acb35f6d824193d9e59dfac81c0043b002674793c67a58ee7151.jpg": "b2c937bd2112acb35f6d824193d9e59dfac81c0043b002674793c67a58ee7151",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\af211bc4f504ddeb1a48817c442e121aabbd5f3f1d79b2ee511ace6c94678158.jpg": "af211bc4f504ddeb1a48817c442e121aabbd5f3f1d79b2ee511ace6c94678158",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\aae624ddb6eba891ffb6a04f243e849c28d3f5c6efbfdfb46aef6b3f607171bb.jpg": "aae624ddb6eba891ffb6a04f243e849c28d3f5c6efbfdfb46aef6b3f607171bb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ee25dcb16c0b962c48dcb0b7ca1d93df27d2ef9409420a35845147246cd01fb6.jpg": "ee25dcb16c0b962c48dcb0b7ca1d93df27d2ef9409420a35845147246cd01fb6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\77a01e9f642d119d72ec3ab7a901c5067cf2c60fa9669ccde0a9e50f4269affc.jpg": "77a01e9f642d119d72ec3ab7a901c5067cf2c60fa9669ccde0a9e50f4269affc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\30ea0da51b8ee22f52b4312895cb173860297412fef17bc9423dcfee78c728c3.jpg": "30ea0da51b8ee22f52b4312895cb173860297412fef17bc9423dcfee78c728c3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\088251645e745a0c4fc4b380f35e2aaca4e69fa03ba53a2289a10f9cd3f8d779.jpg": "088251645e745a0c4fc4b380f35e2aaca4e69fa03ba53a2289a10f9cd3f8d779",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b524fbf86b1c2e5027905dfb68052fd97077e79a17ba7f54024b7c20e349df60.jpg": "b524fbf86b1c2e5027905dfb68052fd97077e79a17ba7f54024b7c20e349df60",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\904ee63fcd55f859208d88ad2ca4a93cbec007d4b38a52cf265ecd32a992b51d.jpg": "904ee63fcd55f859208d88ad2ca4a93cbec007d4b38a52cf265ecd32a992b51d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\9a8a868dcc4e0a6b14bdd786c54ec06373950aaff9c45d1e65fa7aa23e5f0a2d.jpg": "9a8a868dcc4e0a6b14bdd786c54ec06373950aaff9c45d1e65fa7aa23e5f0a2d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a434553c3339cbb61072d257b55dde90dc4384341d81571f9ebc5e6b224dad22.jpg": "a434553c3339cbb61072d257b55dde90dc4384341d81571f9ebc5e6b224dad22",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\e4abd34c3e1c6cc6a1ce5339a3382865d55cfd549286e85d28b8c71e362a6a4d.jpg": "e4abd34c3e1c6cc6a1ce5339a3382865d55cfd549286e85d28b8c71e362a6a4d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\778df5621c348f21e92159817648f9b212e72a0a4ac4dc16ffad559717e21e60.jpg": "778df5621c348f21e92159817648f9b212e72a0a4ac4dc16ffad559717e21e60",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\c16f1da5466cf42b576b877044fb7f1a50bdb64fff8fac840e08ecfc3f97b71a.jpg": "c16f1da5466cf42b576b877044fb7f1a50bdb64fff8fac840e08ecfc3f97b71a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d.jpg": "a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b50c15efedd2d3d6eb55f8878a16dcce16bad91ac0fee11c8225e2d735a7ab3e.jpg": "b50c15efedd2d3d6eb55f8878a16dcce16bad91ac0fee11c8225e2d735a7ab3e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ee594bb1284a13c2fd70f3e6e7f38233f2ce69b1bacd075239123841dbe7481d.jpg": "ee594bb1284a13c2fd70f3e6e7f38233f2ce69b1bacd075239123841dbe7481d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a07da607aaf75a17016434a224022c6ae8aa3f0ba7cb5f96be1de8ecbed97331.jpg": "a07da607aaf75a17016434a224022c6ae8aa3f0ba7cb5f96be1de8ecbed97331",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7c38d9af504ed51950e153c5fe369de054b1de4fbfff391a86e5cf0e3e5c82b0.jpg": "7c38d9af504ed51950e153c5fe369de054b1de4fbfff391a86e5cf0e3e5c82b0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7ebfc6409bb361e954829261208633b2fc6ebfc184f63df62277570fced40ed3.jpg": "7ebfc6409bb361e954829261208633b2fc6ebfc184f63df62277570fced40ed3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\319d1df3d4c2f2a1a23dcee6008c3b80b1cdf48095d5cfafa7b58082f62321c4.jpg": "319d1df3d4c2f2a1a23dcee6008c3b80b1cdf48095d5cfafa7b58082f62321c4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8aad608c7738862ab658970d3c0d90ae74dcca642a4730d32b6ed2b7fdba0ce7.jpg": "8aad608c7738862ab658970d3c0d90ae74dcca642a4730d32b6ed2b7fdba0ce7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\1b468e689efd00128c6db19337bb7a40d580f98cbc9c1e6e54d0f4b57ab2c7e3.jpg": "1b468e689efd00128c6db19337bb7a40d580f98cbc9c1e6e54d0f4b57ab2c7e3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\e5ac9647709cb6da3646f6ee2bee1184c3fa9ded9ceab2e09fe18739d08cb5eb.jpg": "e5ac9647709cb6da3646f6ee2bee1184c3fa9ded9ceab2e09fe18739d08cb5eb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\2d817243317edb06194fe457158f8abe6ed87c6b4c1a6ee1b6ca3e9245cdb8b3.jpg": "2d817243317edb06194fe457158f8abe6ed87c6b4c1a6ee1b6ca3e9245cdb8b3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a39879a7c3fa7199f86c5959f28b0316396ea0b8059e556f614c1d5f920c4ee2.jpg": "a39879a7c3fa7199f86c5959f28b0316396ea0b8059e556f614c1d5f920c4ee2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\dda66f55c6baa6a886880bd3305310d201f3eae2cc7445471d95f39f9da61de8.jpg": "dda66f55c6baa6a886880bd3305310d201f3eae2cc7445471d95f39f9da61de8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\5c12663a5f069b61a830d74d73f3278174de5769376af9cec1ada74183375372.jpg": "5c12663a5f069b61a830d74d73f3278174de5769376af9cec1ada74183375372",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\19722ea94a0808707c67a68e843603cdb409d30818529ba76633640784213307.jpg": "19722ea94a0808707c67a68e843603cdb409d30818529ba76633640784213307",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\c9298810eb26e10fcf0bca870b29f04301f2eec664d4f7cd3531f34b482f0dc5.jpg": "c9298810eb26e10fcf0bca870b29f04301f2eec664d4f7cd3531f34b482f0dc5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\84efd3337aafba1c0de6d8e37e7c10f3c49e30ef92dea0223694a94d155cc3fd.jpg": "84efd3337aafba1c0de6d8e37e7c10f3c49e30ef92dea0223694a94d155cc3fd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\cf36ade4c7decf252decfbdd8eae433478edcc377a64e031180f92852f615c27.jpg": "cf36ade4c7decf252decfbdd8eae433478edcc377a64e031180f92852f615c27",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b99db856829dba661a31413a41ad6db5a8f0ad6bd35a8dda0cd81cc32e31f3d7.jpg": "b99db856829dba661a31413a41ad6db5a8f0ad6bd35a8dda0cd81cc32e31f3d7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3e2c5fff51ae3ea13183606a0a7268a829dca571e39292b468df23d5c25cf140.jpg": "3e2c5fff51ae3ea13183606a0a7268a829dca571e39292b468df23d5c25cf140",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\78d3702446e3e17bb3722d8a1787b42c5d61f96ef967899910cb702fb73dc804.jpg": "78d3702446e3e17bb3722d8a1787b42c5d61f96ef967899910cb702fb73dc804",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\f72d671514632369b2033b4287cf6c4f632053d0d7d62b43d7aba8736718f989.jpg": "f72d671514632369b2033b4287cf6c4f632053d0d7d62b43d7aba8736718f989",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\7e96d573a7645054a01d5a3b8960eb19659a7194ea3bbe9d1969ea4d7b97b496.jpg": "7e96d573a7645054a01d5a3b8960eb19659a7194ea3bbe9d1969ea4d7b97b496",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\c26205654edf8488ad1ee225b96766fd925458833f5aa92e486622a49be8fd52.jpg": "c26205654edf8488ad1ee225b96766fd925458833f5aa92e486622a49be8fd52",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\5022d2f381b8676fb1a0cfb81968fd25439d2d143501d5ab7ee2e640f2fbc6c4.jpg": "5022d2f381b8676fb1a0cfb81968fd25439d2d143501d5ab7ee2e640f2fbc6c4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\24acb56e5bf0432da027cbc862f72456f39f363df78727cb17513baf1c7ab2bb.jpg": "24acb56e5bf0432da027cbc862f72456f39f363df78727cb17513baf1c7ab2bb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8cf9de9594da6924dbad928a3b0a5a85c54964bb1a30b5aad944b9867dd1cf07.jpg": "8cf9de9594da6924dbad928a3b0a5a85c54964bb1a30b5aad944b9867dd1cf07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\31b4ff915360c9e26ae017176ae3c3110fd0239236f0ed42a6fcb6bb9d9a52c6.jpg": "31b4ff915360c9e26ae017176ae3c3110fd0239236f0ed42a6fcb6bb9d9a52c6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\78fc193fcbc177462170681d2d4464b1791075de1bd6c643f402e3a67ad79f05.jpg": "78fc193fcbc177462170681d2d4464b1791075de1bd6c643f402e3a67ad79f05",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\251f5dd16b229af973409eb5b6a6918d91bc0b3ba547c5d0413601ea490d5205.jpg": "251f5dd16b229af973409eb5b6a6918d91bc0b3ba547c5d0413601ea490d5205",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\39ac579e9c06b0ebfc0309b695dd8b0f384b81ce95b4c4a317656f0a34a15839.jpg": "39ac579e9c06b0ebfc0309b695dd8b0f384b81ce95b4c4a317656f0a34a15839",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\07450ed960d856f942b85a6edb9fb4142804d3093f43572370ebcc6031004771.jpg": "07450ed960d856f942b85a6edb9fb4142804d3093f43572370ebcc6031004771",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6fbb2c54033ab2cfe5daebc724f530402da7155cab37cf39566e3365c74027bd.jpg": "6fbb2c54033ab2cfe5daebc724f530402da7155cab37cf39566e3365c74027bd",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\d728d53da4467cf9740d3abfb3087893a82007f93518d20d4ae0b92481b6f368.jpg": "d728d53da4467cf9740d3abfb3087893a82007f93518d20d4ae0b92481b6f368",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\bef8c22e47e328de86fdeb4e86549a650887732a2c5fa8d3d6c25c9d2e6d8ee3.jpg": "bef8c22e47e328de86fdeb4e86549a650887732a2c5fa8d3d6c25c9d2e6d8ee3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\e374d47a02ae0da5615541487cf65d0523a3bff50ca7edfc363b8bb0612d6f50.jpg": "e374d47a02ae0da5615541487cf65d0523a3bff50ca7edfc363b8bb0612d6f50",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b46c3c71ba64505fd4d879ad95a1f337326abf31512cdb295061375744ffcac3.jpg": "b46c3c71ba64505fd4d879ad95a1f337326abf31512cdb295061375744ffcac3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8c69cff760481e4f74f19c594649b85aac015cc494503eea6bde3310f52fc301.jpg": "8c69cff760481e4f74f19c594649b85aac015cc494503eea6bde3310f52fc301",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\1e6e1152cee7c3e177391bd2cb45aa8d993b100df222af235aa997570c5cefa2.jpg": "1e6e1152cee7c3e177391bd2cb45aa8d993b100df222af235aa997570c5cefa2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a4460d337e03b4b7d2d8eff64bd7f6e3b4955a19c37d1aa4ebb3eb4f03b944f2.jpg": "a4460d337e03b4b7d2d8eff64bd7f6e3b4955a19c37d1aa4ebb3eb4f03b944f2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\19aeffb30a7b5098e1411ac19c63145b0fca58aef3dd1de602122721b23582c2.jpg": "19aeffb30a7b5098e1411ac19c63145b0fca58aef3dd1de602122721b23582c2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ead324b33b443daba5e0abe9c6ed59157e164d67b302f65a7661d53810be6390.jpg": "ead324b33b443daba5e0abe9c6ed59157e164d67b302f65a7661d53810be6390",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\23bdad29015eab1c68e8a48bd2bd16090786e6984f47abea44ad6b6970b6a103.jpg": "23bdad29015eab1c68e8a48bd2bd16090786e6984f47abea44ad6b6970b6a103",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\1ad0e999c822247a4b462e178722b72af3b8e5bfb0d3b9d5ef3542482948cf4a.jpg": "1ad0e999c822247a4b462e178722b72af3b8e5bfb0d3b9d5ef3542482948cf4a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ab5818cb2d2c594cc0752c2fbf19cbd7dec4b37aa66f4e0af4af2a1243061d97.jpg": "ab5818cb2d2c594cc0752c2fbf19cbd7dec4b37aa66f4e0af4af2a1243061d97",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\64b48374c1b708cbd6d5e9b6d9bc2e1a708b6128e222d71815f5f217d24a763b.jpg": "64b48374c1b708cbd6d5e9b6d9bc2e1a708b6128e222d71815f5f217d24a763b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\b553807f7e22da1b7a37cedc092e1feb435d7c12b5a569ccdaec474cad58f421.jpg": "b553807f7e22da1b7a37cedc092e1feb435d7c12b5a569ccdaec474cad58f421",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\ea4134603d689d05fcd186c184bc5c6e0aa2947ba0c35062cd511e2cbef258ac.jpg": "ea4134603d689d05fcd186c184bc5c6e0aa2947ba0c35062cd511e2cbef258ac",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\320692614c1d37c22e2144e641e954f62864005e2af1ca971761dcf693ab4f8b.jpg": "320692614c1d37c22e2144e641e954f62864005e2af1ca971761dcf693ab4f8b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\557a65d8e9fc6b93133113d0ea126e2fb764b94824afa16f7b1f5f31f64b748b.jpg": "557a65d8e9fc6b93133113d0ea126e2fb764b94824afa16f7b1f5f31f64b748b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\6188a7c68886a58caff249f90beeba57f05dcb9f28735f6285edde1bd6f20f94.jpg": "6188a7c68886a58caff249f90beeba57f05dcb9f28735f6285edde1bd6f20f94",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\18c9af053586e72cc3ebbd0fafccdb30b4cd1ff0e411265749c3fb83717131b1.jpg": "18c9af053586e72cc3ebbd0fafccdb30b4cd1ff0e411265749c3fb83717131b1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\4e54ea2e404c896da45c23a075c5959295f4b923be22c20ddf9785cca9c81b7d.jpg": "4e54ea2e404c896da45c23a075c5959295f4b923be22c20ddf9785cca9c81b7d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\a85d0a943ab0b372c948dd310e2ca052093eced1a90695d48741cd16459b6ca6.jpg": "a85d0a943ab0b372c948dd310e2ca052093eced1a90695d48741cd16459b6ca6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\0edd0e17aba1f3eb513093b92ee02b802db6825f6c800a860cf6629f087e8f0d.jpg": "0edd0e17aba1f3eb513093b92ee02b802db6825f6c800a860cf6629f087e8f0d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3a4bd5ad0f29abcd48f0b78e73a11f317836d6707202c72990e363b940f60604.jpg": "3a4bd5ad0f29abcd48f0b78e73a11f317836d6707202c72990e363b940f60604",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\9553726882cb16409afca313d0e725b3625feeeed000a30489c56f13daa17a0b.jpg": "9553726882cb16409afca313d0e725b3625feeeed000a30489c56f13daa17a0b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\3c6147cbd4783a6bb3d56ea7d2e3b15a46d516e83b6c287c737bef9e2cdaeff1.jpg": "3c6147cbd4783a6bb3d56ea7d2e3b15a46d516e83b6c287c737bef9e2cdaeff1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\752e97fc01e9031ec7501cd66c821fdd8d1119a940c5e85ef980d1fabeb785ca.jpg": "752e97fc01e9031ec7501cd66c821fdd8d1119a940c5e85ef980d1fabeb785ca",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\8a019f4d12b9c5aaadc48f88f14d68509a8a98cfeef1f6658aa122d754b1a0db.jpg": "8a019f4d12b9c5aaadc48f88f14d68509a8a98cfeef1f6658aa122d754b1a0db",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\460adca4d36adf2bcccb7c60ee6bb4b7f4afd8cd04dd5fafb143681f467d924b.jpg": "460adca4d36adf2bcccb7c60ee6bb4b7f4afd8cd04dd5fafb143681f467d924b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\76550940c32b6af4c99c67105a401b6c5ec1cde1d6a7b21f74c5ed1d073654c6.jpg": "76550940c32b6af4c99c67105a401b6c5ec1cde1d6a7b21f74c5ed1d073654c6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\images\\74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f.jpg": "74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "d31990bfafe4effc615067ea2afbb9f19973209d6b2ecff5cdc6df9ad77cb418",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_modified.json": "d7a9456f591accf588801382635e41ce1ff06ea84284a5db492446560657b117",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "2e6355de7cdd4495c2df4c7f626b905049da93c20c79aa5a202bef7ca1145218",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "855a18b6af1c14dbbdacd34cb1c554bcd1050e094e4b2875fa3e5bcde78b0d57",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_modified.json": "1ae9b2908d4db681b1a5d381f3a9f7ee1173939672caff199c0d932f5ba70de8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f80b00e006fcb1584ae1469fedf11327ee22ce692b9888ac1fb9d5ea410b8b5b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\retrieval\\RANKINGS.json": "298c12c8d59cc6f2a9fc89b5154ec9a49d4963ad3a1504ec5dea981ddc77f4ef",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\evaluation_encoder.json": "734ba8aec37d5f19848dc42e7040c6f0846213483e5ae249e9e26c828e9fc006",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_shampoo_vague_g14_20261112.py": "da027ab204d444a7fecf1e34ff2924255a43fddb5278f601d94ee76768992d11",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\shampoo_g14_encoder.py": "91345c2f924b4ace10c4da9f577f1cbc855d1559cc77a6c8bb0ed06d85b0e586",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\visual_retrieval.py": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\joint.py": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e"
+  }
+}

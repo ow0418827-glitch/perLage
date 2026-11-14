@@ -1,0 +1,30 @@
+{
+  "status": "completed",
+  "episodes": 40,
+  "summary": [
+    {
+      "retrieval_top_k": 1,
+      "episodes": 20,
+      "source_recalled": 20,
+      "completed": 20,
+      "source_purchases": 19,
+      "fixed_target_purchases": 0,
+      "other_purchases": 1
+    },
+    {
+      "retrieval_top_k": 3,
+      "episodes": 20,
+      "source_recalled": 20,
+      "completed": 20,
+      "source_purchases": 13,
+      "fixed_target_purchases": 0,
+      "other_purchases": 7
+    }
+  ],
+  "actual_policy_actions": 131,
+  "invalid_format_actions": 0,
+  "modified_only": true,
+  "new_generation_runs": 0,
+  "legacy_image_method": "nf_lage",
+  "guidance_sha256": "541527b3f3e13fb1d3a073bfd00a114b5bc6e0c8d400c61b15e7094d2e9c34fe"
+}

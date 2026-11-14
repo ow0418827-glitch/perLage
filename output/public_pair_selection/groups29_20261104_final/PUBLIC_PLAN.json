@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "config": {
+    "schema_version": 1,
+    "seed": 42,
+    "lexical_limit": 2000,
+    "candidate_limit": 30,
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "groups": [
+      {
+        "key": "02_chair",
+        "target_id": "B09CYFD5BX",
+        "title_pattern": "\\b(?:barber|salon|stylist|hydraulic|beauty)\\b.{0,60}\\b(?:chair|stool)\\b|\\bbar\\s+stools?\\b"
+      },
+      {
+        "key": "09_toothbrush",
+        "target_id": "B09J81RMLD",
+        "title_pattern": "\\btoothbrush(?:es)?\\b"
+      }
+    ]
+  },
+  "selection": {
+    "shape_min": 0.65,
+    "semantic_min": 0.55,
+    "semantic_max": 0.9,
+    "semantic_center": 0.72,
+    "semantic_sigma": 0.12,
+    "duplicate_title_similarity": 0.95,
+    "mismatch_gamma": 2.0,
+    "cost_temperature": 0.25,
+    "aspect_temperature": 1.0,
+    "weights": [
+      0.35,
+      0.3,
+      0.25,
+      0.1
+    ]
+  },
+  "ownership_policy": "simulated_controlled_public_subset_sha256_even_v1",
+  "ownership_is_simulated": true,
+  "target_ids_fixed": [
+    "B09CYFD5BX",
+    "B09J81RMLD"
+  ],
+  "formal_queries_used": false,
+  "victim_memory_used": false,
+  "shopping_allowed": false
+}

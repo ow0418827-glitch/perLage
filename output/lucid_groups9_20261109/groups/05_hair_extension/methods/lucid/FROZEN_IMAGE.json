@@ -1,0 +1,974 @@
+{
+  "schema_version": 1,
+  "method": "lucid",
+  "status": "frozen",
+  "group": "05_hair_extension",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\05_hair_extension\\methods\\lucid\\frozen.png",
+  "image_sha256": "f23a8e7a1ae0b1919fea527ff25ab776b1d4370760a3afe15ac0e888582bad0f",
+  "source": {
+    "id": "B07Z7MQSM1",
+    "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source.jpg",
+    "image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe"
+  },
+  "target": {
+    "id": "B01460C2I2",
+    "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+    "feature_text": "I want to buy hair extensions with real human hair and double wefts.",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\target.jpg",
+    "image_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4"
+  },
+  "metadata": {
+    "schema_version": 2,
+    "method": "lucid",
+    "status": "success",
+    "seed": 42,
+    "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\05_hair_extension\\methods\\lucid\\generation\\adversarial.png",
+    "output_image_sha256": "f23a8e7a1ae0b1919fea527ff25ab776b1d4370760a3afe15ac0e888582bad0f",
+    "output_metadata": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\05_hair_extension\\methods\\lucid\\generation\\attack_metrics.json",
+    "attack": {
+      "epsilon": 0.03137254901960784,
+      "spatial_step_size": 0.00196078431372549,
+      "reference_steps": 1000,
+      "initialization": "zero",
+      "clusters": 10,
+      "cluster_iterations": 100,
+      "sinkhorn_iterations": 100,
+      "sinkhorn_regularization": 0.1,
+      "sinkhorn_tolerance": 0.01,
+      "detach_transport_plan": true,
+      "local_weight": 0.2,
+      "text_weight": 1.0,
+      "text_model_index": 1,
+      "log_every": 50,
+      "model_weight_update": "softmax_negative_preupdate_global_similarity",
+      "steps_requested": 1000,
+      "steps_completed": 1000,
+      "stop_reason": "requested_steps_completed",
+      "selected_step": 1000,
+      "gradient_execution": "joint_three_surrogate_graph",
+      "target_cluster_centers_cached": false
+    },
+    "history": [
+      {
+        "step": 1,
+        "loss": 1.3629642724990845,
+        "global_similarity": [
+          0.8787649869918823,
+          0.8625159859657288,
+          0.8896039724349976
+        ],
+        "local_similarity": [
+          0.8167548775672913,
+          0.8137155771255493,
+          0.8069186210632324
+        ],
+        "text_similarity": 0.3235100209712982,
+        "linf_after_update": 0.0019608139991760254,
+        "weights_used_for_this_step": [
+          0.3333333432674408,
+          0.3333333432674408,
+          0.3333333432674408
+        ],
+        "weights_for_next_step": [
+          0.3327121436595917,
+          0.33816254138946533,
+          0.329125314950943
+        ]
+      },
+      {
+        "step": 50,
+        "loss": 1.5412698984146118,
+        "global_similarity": [
+          0.9892019033432007,
+          0.9064813852310181,
+          0.9767129421234131
+        ],
+        "local_similarity": [
+          0.8636318445205688,
+          0.8200300931930542,
+          0.8521362543106079
+        ],
+        "text_similarity": 0.41628172993659973,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3216246962547302,
+          0.35304126143455505,
+          0.32533401250839233
+        ],
+        "weights_for_next_step": [
+          0.3227050006389618,
+          0.35053449869155884,
+          0.32676050066947937
+        ]
+      },
+      {
+        "step": 100,
+        "loss": 1.5619230270385742,
+        "global_similarity": [
+          0.9901211261749268,
+          0.8889172673225403,
+          0.9818611741065979
+        ],
+        "local_similarity": [
+          0.8722854852676392,
+          0.8239892721176147,
+          0.8546608686447144
+        ],
+        "text_similarity": 0.44085174798965454,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3185083568096161,
+          0.3602515757083893,
+          0.32124006748199463
+        ],
+        "weights_for_next_step": [
+          0.3210482597351074,
+          0.3552406132221222,
+          0.323711097240448
+        ]
+      },
+      {
+        "step": 150,
+        "loss": 1.579921007156372,
+        "global_similarity": [
+          0.9931309819221497,
+          0.8893964290618896,
+          0.9833561182022095
+        ],
+        "local_similarity": [
+          0.87134850025177,
+          0.8273441791534424,
+          0.8572282195091248
+        ],
+        "text_similarity": 0.45747047662734985,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.315597265958786,
+          0.36595815420150757,
+          0.3184446096420288
+        ],
+        "weights_for_next_step": [
+          0.3206023573875427,
+          0.3556461036205292,
+          0.3237515687942505
+        ]
+      },
+      {
+        "step": 200,
+        "loss": 1.587836503982544,
+        "global_similarity": [
+          0.9942840337753296,
+          0.8398575782775879,
+          0.9810049533843994
+        ],
+        "local_similarity": [
+          0.8740544319152832,
+          0.8064925074577332,
+          0.8572789430618286
+        ],
+        "text_similarity": 0.48378974199295044,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3196426331996918,
+          0.3570103943347931,
+          0.32334694266319275
+        ],
+        "weights_for_next_step": [
+          0.3144301772117615,
+          0.36693641543388367,
+          0.31863340735435486
+        ]
+      },
+      {
+        "step": 250,
+        "loss": 1.5845452547073364,
+        "global_similarity": [
+          0.9913487434387207,
+          0.8346662521362305,
+          0.9841839671134949
+        ],
+        "local_similarity": [
+          0.8706061840057373,
+          0.8186748027801514,
+          0.8564997911453247
+        ],
+        "text_similarity": 0.48255953192710876,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31731116771698,
+          0.3624347746372223,
+          0.32025402784347534
+        ],
+        "weights_for_next_step": [
+          0.31478068232536316,
+          0.36817511916160583,
+          0.31704413890838623
+        ]
+      },
+      {
+        "step": 300,
+        "loss": 1.5898985862731934,
+        "global_similarity": [
+          0.9927511215209961,
+          0.8654407262802124,
+          0.9824221134185791
+        ],
+        "local_similarity": [
+          0.8729571104049683,
+          0.8236083984375,
+          0.8605668544769287
+        ],
+        "text_similarity": 0.4768977761268616,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31413593888282776,
+          0.3687896132469177,
+          0.31707438826560974
+        ],
+        "weights_for_next_step": [
+          0.3178485929965973,
+          0.36100271344184875,
+          0.32114866375923157
+        ]
+      },
+      {
+        "step": 350,
+        "loss": 1.5975983142852783,
+        "global_similarity": [
+          0.9934058785438538,
+          0.8365287184715271,
+          0.9837520122528076
+        ],
+        "local_similarity": [
+          0.8757038712501526,
+          0.8196101784706116,
+          0.8609660863876343
+        ],
+        "text_similarity": 0.4939463138580322,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3167524039745331,
+          0.36391374468803406,
+          0.31933385133743286
+        ],
+        "weights_for_next_step": [
+          0.31450968980789185,
+          0.36792972683906555,
+          0.3175606429576874
+        ]
+      },
+      {
+        "step": 400,
+        "loss": 1.5968141555786133,
+        "global_similarity": [
+          0.9950411319732666,
+          0.8629442453384399,
+          0.9843477606773376
+        ],
+        "local_similarity": [
+          0.8750412464141846,
+          0.8179445266723633,
+          0.8587865829467773
+        ],
+        "text_similarity": 0.48378831148147583,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31389424204826355,
+          0.36899006366729736,
+          0.3171157240867615
+        ],
+        "weights_for_next_step": [
+          0.3172619342803955,
+          0.36206531524658203,
+          0.32067275047302246
+        ]
+      },
+      {
+        "step": 450,
+        "loss": 1.5939637422561646,
+        "global_similarity": [
+          0.9943683743476868,
+          0.874717652797699,
+          0.9849846363067627
+        ],
+        "local_similarity": [
+          0.8723137378692627,
+          0.8252607583999634,
+          0.859918475151062
+        ],
+        "text_similarity": 0.47693824768066406,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31091248989105225,
+          0.37523698806762695,
+          0.3138505220413208
+        ],
+        "weights_for_next_step": [
+          0.31882354617118835,
+          0.35934704542160034,
+          0.3218294084072113
+        ]
+      },
+      {
+        "step": 500,
+        "loss": 1.602262258529663,
+        "global_similarity": [
+          0.9935333728790283,
+          0.824365496635437,
+          0.9846261739730835
+        ],
+        "local_similarity": [
+          0.8721330165863037,
+          0.8115277290344238,
+          0.8589389324188232
+        ],
+        "text_similarity": 0.5030519366264343,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3183549642562866,
+          0.3604016900062561,
+          0.3212433159351349
+        ],
+        "weights_for_next_step": [
+          0.3131590187549591,
+          0.3708801567554474,
+          0.3159608244895935
+        ]
+      },
+      {
+        "step": 550,
+        "loss": 1.6027135848999023,
+        "global_similarity": [
+          0.9928709268569946,
+          0.8450582027435303,
+          0.9841561317443848
+        ],
+        "local_similarity": [
+          0.87405925989151,
+          0.8155257105827332,
+          0.8580396175384521
+        ],
+        "text_similarity": 0.49679580330848694,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3160202205181122,
+          0.3654549717903137,
+          0.31852486729621887
+        ],
+        "weights_for_next_step": [
+          0.31565171480178833,
+          0.36593371629714966,
+          0.3184145987033844
+        ]
+      },
+      {
+        "step": 600,
+        "loss": 1.599530816078186,
+        "global_similarity": [
+          0.9930900931358337,
+          0.8642560839653015,
+          0.9832111597061157
+        ],
+        "local_similarity": [
+          0.8742358684539795,
+          0.8077348470687866,
+          0.8571949005126953
+        ],
+        "text_similarity": 0.4882487952709198,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3123864531517029,
+          0.37235012650489807,
+          0.31526342034339905
+        ],
+        "weights_for_next_step": [
+          0.31771960854530334,
+          0.36140647530555725,
+          0.320873886346817
+        ]
+      },
+      {
+        "step": 650,
+        "loss": 1.6082894802093506,
+        "global_similarity": [
+          0.9941304922103882,
+          0.8373215198516846,
+          0.9826263189315796
+        ],
+        "local_similarity": [
+          0.8739969730377197,
+          0.8124470710754395,
+          0.859766960144043
+        ],
+        "text_similarity": 0.5052298903465271,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3163169324398041,
+          0.36442679166793823,
+          0.3192562758922577
+        ],
+        "weights_for_next_step": [
+          0.3143326938152313,
+          0.3676976263523102,
+          0.31796973943710327
+        ]
+      },
+      {
+        "step": 700,
+        "loss": 1.6027071475982666,
+        "global_similarity": [
+          0.9927858710289001,
+          0.8657712936401367,
+          0.9844045639038086
+        ],
+        "local_similarity": [
+          0.8728355169296265,
+          0.8154824376106262,
+          0.8590832948684692
+        ],
+        "text_similarity": 0.49027740955352783,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3114962875843048,
+          0.37436673045158386,
+          0.3141370117664337
+        ],
+        "weights_for_next_step": [
+          0.3180813193321228,
+          0.36116018891334534,
+          0.3207584619522095
+        ]
+      },
+      {
+        "step": 750,
+        "loss": 1.60404372215271,
+        "global_similarity": [
+          0.9923350811004639,
+          0.8338100910186768,
+          0.9839961528778076
+        ],
+        "local_similarity": [
+          0.8769237995147705,
+          0.8113157153129578,
+          0.8538337349891663
+        ],
+        "text_similarity": 0.5030069947242737,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31480124592781067,
+          0.3665845990180969,
+          0.31861412525177
+        ],
+        "weights_for_next_step": [
+          0.31445008516311646,
+          0.36846670508384705,
+          0.3170832395553589
+        ]
+      },
+      {
+        "step": 800,
+        "loss": 1.6088539361953735,
+        "global_similarity": [
+          0.9940774440765381,
+          0.8209630250930786,
+          0.9841368794441223
+        ],
+        "local_similarity": [
+          0.8723467588424683,
+          0.8148416876792908,
+          0.8570277690887451
+        ],
+        "text_similarity": 0.5116620063781738,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3152603507041931,
+          0.3658258318901062,
+          0.31891384720802307
+        ],
+        "weights_for_next_step": [
+          0.31259843707084656,
+          0.37168020009994507,
+          0.3157213628292084
+        ]
+      },
+      {
+        "step": 850,
+        "loss": 1.6122677326202393,
+        "global_similarity": [
+          0.9937717318534851,
+          0.7992184162139893,
+          0.9849128723144531
+        ],
+        "local_similarity": [
+          0.8749899864196777,
+          0.8082051277160645,
+          0.8595819473266602
+        ],
+        "text_similarity": 0.521735429763794,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31892824172973633,
+          0.359323650598526,
+          0.32174813747406006
+        ],
+        "weights_for_next_step": [
+          0.3102057874202728,
+          0.376828134059906,
+          0.31296607851982117
+        ]
+      },
+      {
+        "step": 900,
+        "loss": 1.6038322448730469,
+        "global_similarity": [
+          0.9942623376846313,
+          0.8627294898033142,
+          0.9845900535583496
+        ],
+        "local_similarity": [
+          0.8758083581924438,
+          0.810343861579895,
+          0.856830894947052
+        ],
+        "text_similarity": 0.49261027574539185,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31023356318473816,
+          0.37666910886764526,
+          0.31309738755226135
+        ],
+        "weights_for_next_step": [
+          0.31743064522743225,
+          0.3620535731315613,
+          0.32051581144332886
+        ]
+      },
+      {
+        "step": 950,
+        "loss": 1.6111950874328613,
+        "global_similarity": [
+          0.994606077671051,
+          0.8344537019729614,
+          0.9849256277084351
+        ],
+        "local_similarity": [
+          0.873986542224884,
+          0.8016840219497681,
+          0.8573179244995117
+        ],
+        "text_similarity": 0.5094651579856873,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.31513622403144836,
+          0.3662618398666382,
+          0.31860190629959106
+        ],
+        "weights_for_next_step": [
+          0.3141278624534607,
+          0.3686886429786682,
+          0.3171835243701935
+        ]
+      },
+      {
+        "step": 1000,
+        "loss": 1.6156227588653564,
+        "global_similarity": [
+          0.993715226650238,
+          0.831398606300354,
+          0.9843875765800476
+        ],
+        "local_similarity": [
+          0.8697184324264526,
+          0.8101547360420227,
+          0.8627209663391113
+        ],
+        "text_similarity": 0.5144633054733276,
+        "linf_after_update": 0.03137257695198059,
+        "weights_used_for_this_step": [
+          0.3165498673915863,
+          0.3639933466911316,
+          0.3194567561149597
+        ],
+        "weights_for_next_step": [
+          0.3139122426509857,
+          0.3692338168621063,
+          0.31685400009155273
+        ]
+      }
+    ],
+    "final_objective": {
+      "loss": 1.6075661182403564,
+      "global_similarity": [
+        0.9914194941520691,
+        0.8408066034317017,
+        0.9816494584083557
+      ],
+      "local_similarity": [
+        0.8710851669311523,
+        0.81578528881073,
+        0.860518217086792
+      ],
+      "text_similarity": 0.505027711391449
+    },
+    "final_model_weights": [
+      0.3139122426509857,
+      0.3692338168621063,
+      0.31685400009155273
+    ],
+    "decoded_image_audit": {
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "max_absolute_pixel_difference_levels": 8,
+      "mean_absolute_pixel_difference_levels": 5.878457333333333,
+      "mean_squared_pixel_difference_levels": 40.27526266666667,
+      "budget_levels": 8,
+      "within_budget": true
+    },
+    "surrogates": [
+      {
+        "role": "attack_surrogate",
+        "name": "ViT-B-16",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+        "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+        "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "e1425dba977fa886574ff393d7e65556edebe9186e20627b6228b1b952e0a796",
+        "requires_true_local_tokens": true,
+        "loading": {
+          "architecture": {
+            "embed_dim": 512,
+            "vision_cfg": {
+              "image_size": 224,
+              "layers": 12,
+              "width": 768,
+              "patch_size": 16
+            },
+            "text_cfg": {
+              "context_length": 77,
+              "vocab_size": 49408,
+              "width": 512,
+              "heads": 8,
+              "layers": 12
+            }
+          },
+          "quick_gelu": true,
+          "activation": "QuickGELU",
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "metadata_source": "registered_pretrained_tag",
+          "registered_preprocess": {
+            "interpolation": "bicubic",
+            "resize_mode": "shortest"
+          },
+          "strict_state_dict": true,
+          "actual_activation_modules": {
+            "QuickGELU": 24,
+            "GELU": 0
+          },
+          "loader_version": 2,
+          "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+        }
+      },
+      {
+        "role": "attack_surrogate",
+        "name": "ViT-B-32",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+        "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+        "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+        "requires_true_local_tokens": true,
+        "loading": {
+          "architecture": {
+            "embed_dim": 512,
+            "vision_cfg": {
+              "image_size": 224,
+              "layers": 12,
+              "width": 768,
+              "patch_size": 32
+            },
+            "text_cfg": {
+              "context_length": 77,
+              "vocab_size": 49408,
+              "width": 512,
+              "heads": 8,
+              "layers": 12
+            }
+          },
+          "quick_gelu": true,
+          "activation": "QuickGELU",
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "metadata_source": "registered_pretrained_tag",
+          "registered_preprocess": {
+            "interpolation": "bicubic",
+            "resize_mode": "shortest"
+          },
+          "strict_state_dict": true,
+          "actual_activation_modules": {
+            "QuickGELU": 24,
+            "GELU": 0
+          },
+          "loader_version": 2,
+          "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+        }
+      },
+      {
+        "role": "attack_surrogate",
+        "name": "ViT-B-32",
+        "pretrained": "laion2b_s34b_b79k",
+        "hf_repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K\\snapshots\\1a25a446712ba5ee05982a381eed697ef9b435cf\\open_clip_model.safetensors",
+        "weight_sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6",
+        "weight_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "7d5a6610a96e6b428ff7947fd0cd5c309a231c50d6edd06de9f6fecdc705faa7",
+        "requires_true_local_tokens": true,
+        "loading": {
+          "architecture": {
+            "embed_dim": 512,
+            "vision_cfg": {
+              "image_size": 224,
+              "layers": 12,
+              "width": 768,
+              "patch_size": 32
+            },
+            "text_cfg": {
+              "context_length": 77,
+              "vocab_size": 49408,
+              "width": 512,
+              "heads": 8,
+              "layers": 12
+            }
+          },
+          "quick_gelu": true,
+          "activation": "QuickGELU",
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "metadata_source": "registered_pretrained_tag",
+          "registered_preprocess": {
+            "interpolation": "bicubic",
+            "resize_mode": "shortest"
+          },
+          "strict_state_dict": true,
+          "actual_activation_modules": {
+            "QuickGELU": 24,
+            "GELU": 0
+          },
+          "loader_version": 2,
+          "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+        }
+      }
+    ],
+    "timing": {
+      "optimization_loop_seconds": 402.71033929999976,
+      "total_seconds": 402.7524169999997
+    },
+    "primary_evaluator_used_during_attack": false,
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "private_gallery_used": false,
+    "after_attack_saved": {
+      "loss": 1.6084316968917847,
+      "global_similarity": [
+        0.9914582967758179,
+        0.8399850726127625,
+        0.9820619821548462
+      ],
+      "local_similarity": [
+        0.8731236457824707,
+        0.8156548738479614,
+        0.8603450059890747
+      ],
+      "text_similarity": 0.5059380531311035
+    },
+    "text_alignment": {
+      "enabled": true,
+      "source": "target_product_features",
+      "text_sha256": "e7f582ecfaaa172e5296d45cfd1fb24840065f423cf9383f7ed22e74c9d5793e",
+      "weight": 1.0,
+      "model_index": 1,
+      "model_snapshot": {
+        "role": "attack_surrogate",
+        "name": "ViT-B-32",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+        "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+        "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+        "requires_true_local_tokens": true,
+        "loading": {
+          "architecture": {
+            "embed_dim": 512,
+            "vision_cfg": {
+              "image_size": 224,
+              "layers": 12,
+              "width": 768,
+              "patch_size": 32
+            },
+            "text_cfg": {
+              "context_length": 77,
+              "vocab_size": 49408,
+              "width": 512,
+              "heads": 8,
+              "layers": 12
+            }
+          },
+          "quick_gelu": true,
+          "activation": "QuickGELU",
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ],
+          "metadata_source": "registered_pretrained_tag",
+          "registered_preprocess": {
+            "interpolation": "bicubic",
+            "resize_mode": "shortest"
+          },
+          "strict_state_dict": true,
+          "actual_activation_modules": {
+            "QuickGELU": 24,
+            "GELU": 0
+          },
+          "loader_version": 2,
+          "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+        }
+      },
+      "token_audit": {
+        "tokenizer_class": "open_clip.tokenizer.SimpleTokenizer",
+        "model_context_length": 77,
+        "tokenizer_default_context_length": 77,
+        "content_token_count": 15,
+        "special_token_count": 2,
+        "total_token_count": 17,
+        "input_sequence_length": 77,
+        "truncated": false,
+        "complete_sequence_verified": true,
+        "token_ids_sha256": "08bb5450efa93f59bbc322ed2585bea07d856d8edf29f4a9be9cc0b6998bb7f7"
+      },
+      "text_encoder_frozen": true,
+      "candidate_selection": "last_completed_step",
+      "surrogate_loading_and_title_audit_seconds": 0.0049127000020234846,
+      "implementation_sha256": "74d9ef36473a6132e34431a15213ae7f08e54f48c59a6b2413136e117c6e3d67"
+    },
+    "source_image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+    "target_image_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4"
+  },
+  "requested_steps": 1000,
+  "public_binding_sha256": "b25a3495a652140fae3039022e6624a60ea45e8d0f9c2d714cba3ad56efd1fc3",
+  "shared_pool_scope": "shared",
+  "victim_memory_used": false,
+  "formal_queries_used": false
+}

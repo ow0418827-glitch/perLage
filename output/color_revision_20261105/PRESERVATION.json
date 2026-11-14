@@ -1,0 +1,38 @@
+{
+  "active_implementation_unchanged": true,
+  "original_public_inputs_unchanged": true,
+  "method_files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\perlage.py": {
+      "backup_sha256": "9c6395ad562fe1898da761669c5e8430e11b88aa5316cfeeb4543956b71e757a",
+      "current_sha256": "9c6395ad562fe1898da761669c5e8430e11b88aa5316cfeeb4543956b71e757a"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_natural\\colour.py": {
+      "backup_sha256": "1ba7fada3e2e00003ce37162b487d191d498c0e2e4aa4b5f71217ef00021838e",
+      "current_sha256": "1ba7fada3e2e00003ce37162b487d191d498c0e2e4aa4b5f71217ef00021838e"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_natural\\mask.py": {
+      "backup_sha256": "c1f923ec423db6ce18bca1632a7e6f64c4fbd9528bba8d432e0817aeaf0ce36a",
+      "current_sha256": "c1f923ec423db6ce18bca1632a7e6f64c4fbd9528bba8d432e0817aeaf0ce36a"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_perlage\\evidence.py": {
+      "backup_sha256": "6b7ea102d3bf16f3abef637d8dacfdfdf53920338f78912a263c76378b14ba40",
+      "current_sha256": "6b7ea102d3bf16f3abef637d8dacfdfdf53920338f78912a263c76378b14ba40"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_perlage\\harmonization.py": {
+      "backup_sha256": "26f38cd42385b229315eee47b7c885992f764914f7d3ad6d5c3144c08115f2fa",
+      "current_sha256": "26f38cd42385b229315eee47b7c885992f764914f7d3ad6d5c3144c08115f2fa"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_perlage\\initialization.py": {
+      "backup_sha256": "bd17f7b443a532971e29bdc84427e77b07c59726096f5b7219d06e9e5eb6dffd",
+      "current_sha256": "bd17f7b443a532971e29bdc84427e77b07c59726096f5b7219d06e9e5eb6dffd"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_perlage\\latent.py": {
+      "backup_sha256": "d7a8376bfe810b640cdec59175584b4cc6ca2584ce9c3236606c3ebf14adb754",
+      "current_sha256": "d7a8376bfe810b640cdec59175584b4cc6ca2584ce9c3236606c3ebf14adb754"
+    },
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\vision\\_perlage\\pipeline.py": {
+      "backup_sha256": "333d5829ce2d82af5fff2912bb5d31d08600974160ae2c8ea3248576132b9313",
+      "current_sha256": "333d5829ce2d82af5fff2912bb5d31d08600974160ae2c8ea3248576132b9313"
+    }
+  }
+}

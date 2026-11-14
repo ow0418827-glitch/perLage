@@ -1,0 +1,540 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "groups": [
+    {
+      "key": "02_chair",
+      "source": {
+        "id": "B09FY5Y9G2",
+        "title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\source.jpg",
+        "source_url": "https://www.amazon.com/dp/B09FY5Y9G2",
+        "boxes": [
+          [
+            75,
+            15,
+            458,
+            485
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\metadata\\source_foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+        "foreground_mask_sha256": "7942b29e8230203ec3575094083a1891390d3c7491fddfdf5d0b4c59d747d688"
+      },
+      "target": {
+        "id": "B09CYFD5BX",
+        "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\target.jpg",
+        "source_url": "https://www.amazon.com/dp/B09CYFD5BX",
+        "boxes": [
+          [
+            3,
+            4,
+            399,
+            496
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\metadata\\target_foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "image_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+        "foreground_mask_sha256": "827d24f9247cd406fe487dc8996ec26ebec43000737628ca50f5a2781cfae542"
+      },
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104\\groups\\02_chair\\methods\\PerLAGE\\frozen.png",
+      "frozen_image_sha256": "3bd4367cc0f1b3b8064ea405a319d5269dbe9758345bfab799e7358b21f4567f",
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "instruction": "请购买与图片中商品相似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_02",
+          "instruction": "请帮我找一件图中这样的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_03",
+          "instruction": "请按这张参考图挑选类似商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_04",
+          "instruction": "我想买图片里这种样式的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_05",
+          "instruction": "请参考图片选购相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_06",
+          "instruction": "帮我购买一件外观与图中相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_07",
+          "instruction": "请找一件与这张图大致相似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_08",
+          "instruction": "我需要图片所示类型的商品，请帮我选购。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_09",
+          "instruction": "请依照图中样式购买类似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_10",
+          "instruction": "帮我找找与图片中物品相仿的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_11",
+          "instruction": "请根据参考图片帮我选购一件商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_12",
+          "instruction": "我想购买一件与这张图类似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_13",
+          "instruction": "请挑选和图片中物品整体相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_14",
+          "instruction": "照着这张图帮我购买类似款式。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_15",
+          "instruction": "请帮我选购图中这种外观的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_16",
+          "instruction": "我需要一件与参考图相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_17",
+          "instruction": "请按照图片中的大致样式选购。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_18",
+          "instruction": "帮我购买与图里物品风格相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_19",
+          "instruction": "请找一件整体看起来像参考图的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        },
+        {
+          "task_id": "vague_20",
+          "instruction": "请参考这张图购买一件相似商品即可。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\02_chair.png",
+          "query_image_sha256": "92db4482eb4ea28aed7bec1ab4039b4757525dc854d9a1f191ae03118b1503cf"
+        }
+      ],
+      "method_record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\FROZEN_IMAGE.json"
+    },
+    {
+      "key": "09_toothbrush",
+      "source": {
+        "id": "B09LVD5J4B",
+        "title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg",
+        "source_url": "https://www.amazon.com/dp/B09LVD5J4B",
+        "boxes": [
+          [
+            128,
+            59,
+            338,
+            441
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\metadata\\source_foreground.png",
+        "text_regions": [
+          [
+            0.22,
+            0.4,
+            0.78,
+            0.95
+          ]
+        ],
+        "text_regions_reviewed": true,
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+        "foreground_mask_sha256": "848c53bf0a57ec0a1e7cea28ee90330295dce44563344d292be4328f831323ea"
+      },
+      "target": {
+        "id": "B09J81RMLD",
+        "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg",
+        "source_url": "https://www.amazon.com/dp/B09J81RMLD",
+        "boxes": [
+          [
+            135,
+            51,
+            350,
+            446
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\metadata\\target_foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "image_sha256": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+        "foreground_mask_sha256": "ace202b3e0475bd5322713259eb09953919dbc2917bd029a0c90d1e3adcf50ca"
+      },
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\frozen.png",
+      "frozen_image_sha256": "f0ea5ca8ede2cf2d0ac547949f959f98f02b9f84ae76ad44f8c71602fd77dcd8",
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "instruction": "请购买与图片中商品相似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_02",
+          "instruction": "请帮我找一件图中这样的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_03",
+          "instruction": "请按这张参考图挑选类似商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_04",
+          "instruction": "我想买图片里这种样式的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_05",
+          "instruction": "请参考图片选购相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_06",
+          "instruction": "帮我购买一件外观与图中相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_07",
+          "instruction": "请找一件与这张图大致相似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_08",
+          "instruction": "我需要图片所示类型的商品，请帮我选购。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_09",
+          "instruction": "请依照图中样式购买类似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_10",
+          "instruction": "帮我找找与图片中物品相仿的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_11",
+          "instruction": "请根据参考图片帮我选购一件商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_12",
+          "instruction": "我想购买一件与这张图类似的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_13",
+          "instruction": "请挑选和图片中物品整体相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_14",
+          "instruction": "照着这张图帮我购买类似款式。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_15",
+          "instruction": "请帮我选购图中这种外观的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_16",
+          "instruction": "我需要一件与参考图相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_17",
+          "instruction": "请按照图片中的大致样式选购。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_18",
+          "instruction": "帮我购买与图里物品风格相近的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_19",
+          "instruction": "请找一件整体看起来像参考图的商品。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        },
+        {
+          "task_id": "vague_20",
+          "instruction": "请参考这张图购买一件相似商品即可。",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.png",
+          "query_image_sha256": "a0ad77b4c090ac0ef97759ed85d0399b987d6dc33ee6ffcdfd156198aa532026"
+        }
+      ],
+      "method_record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\FROZEN_IMAGE.json"
+    }
+  ],
+  "source_memory_ids": {
+    "02_chair": "perlage_02_chair_source",
+    "09_toothbrush": "perlage_09_toothbrush_source"
+  },
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\shared_memory.json",
+  "pool_sha256": "cf3df8eff8feb5ea02be76690763dc91f7a88585bcb0cc9435b1ee68a712e1d3",
+  "pool_count": 100,
+  "poisoned_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\shared_memory_perlage.json",
+  "poisoned_pool_sha256": "af9ce754c4362a446fe4b3a36b581285f21299ea6ecd18514e07ad2aeb52581d",
+  "conditions": [
+    {
+      "label": "none",
+      "kind": "none",
+      "size": 512
+    },
+    {
+      "label": "blur0p5",
+      "kind": "blur",
+      "radius": 0.5,
+      "size": 512
+    },
+    {
+      "label": "blur1",
+      "kind": "blur",
+      "radius": 1,
+      "size": 512
+    },
+    {
+      "label": "blur2",
+      "kind": "blur",
+      "radius": 2,
+      "size": 512
+    },
+    {
+      "label": "blur4",
+      "kind": "blur",
+      "radius": 4,
+      "size": 512
+    },
+    {
+      "label": "jpeg90",
+      "kind": "jpeg",
+      "quality": 90,
+      "size": 512
+    },
+    {
+      "label": "jpeg75",
+      "kind": "jpeg",
+      "quality": 75,
+      "size": 512
+    },
+    {
+      "label": "jpeg50",
+      "kind": "jpeg",
+      "quality": 50,
+      "size": 512
+    },
+    {
+      "label": "jpeg25",
+      "kind": "jpeg",
+      "quality": 25,
+      "size": 512
+    },
+    {
+      "label": "resize512",
+      "kind": "resize",
+      "size": 512
+    },
+    {
+      "label": "vae512",
+      "kind": "vae",
+      "size": 512
+    },
+    {
+      "label": "diff512_t99_s1001",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 99,
+      "seed": 1001
+    },
+    {
+      "label": "diff512_t99_s1002",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 99,
+      "seed": 1002
+    },
+    {
+      "label": "diff512_t99_s1003",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 99,
+      "seed": 1003
+    },
+    {
+      "label": "diff512_t99_s1004",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 99,
+      "seed": 1004
+    },
+    {
+      "label": "diff512_t99_s1005",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 99,
+      "seed": 1005
+    },
+    {
+      "label": "diff512_t199_s1001",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 199,
+      "seed": 1001
+    },
+    {
+      "label": "diff512_t199_s1002",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 199,
+      "seed": 1002
+    },
+    {
+      "label": "diff512_t199_s1003",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 199,
+      "seed": 1003
+    },
+    {
+      "label": "diff512_t199_s1004",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 199,
+      "seed": 1004
+    },
+    {
+      "label": "diff512_t199_s1005",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 199,
+      "seed": 1005
+    },
+    {
+      "label": "diff512_t399_s1001",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 399,
+      "seed": 1001
+    },
+    {
+      "label": "diff512_t399_s1002",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 399,
+      "seed": 1002
+    },
+    {
+      "label": "diff512_t399_s1003",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 399,
+      "seed": 1003
+    },
+    {
+      "label": "diff512_t399_s1004",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 399,
+      "seed": 1004
+    },
+    {
+      "label": "diff512_t399_s1005",
+      "kind": "diffusion",
+      "size": 512,
+      "timestep": 399,
+      "seed": 1005
+    }
+  ],
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "index_text": "title",
+  "shopping_authorized": true,
+  "shopping_conditions": [
+    "none"
+  ],
+  "shopping_top_k": 3,
+  "record_kinds": {
+    "purchase_memory": 61,
+    "simulated_gallery": 39
+  }
+}

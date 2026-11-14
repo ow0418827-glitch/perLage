@@ -1,0 +1,17 @@
+{
+  "schema_version": 2,
+  "status": "published",
+  "groups": [
+    {
+      "key": "07_shampoo",
+      "directory": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\target.jpg",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\pair.json",
+      "pipeline_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\pipeline.json"
+    }
+  ],
+  "bundle_sha256": "fc03145a6c18cf2df5c69d65db4ad7bdfb9ff1f29db15782bdfe79a21af56f20",
+  "generation_runs": 0,
+  "shared_memory_read": false
+}

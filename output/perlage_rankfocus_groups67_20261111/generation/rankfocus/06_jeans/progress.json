@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "profile": "rankfocus",
+  "step": 1000,
+  "requested_steps": 1000,
+  "best": {
+    "source_ssim": 0.7366386054353043,
+    "source_mae_levels": 21.002750396728516,
+    "halo_error": 0.0,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "halo_hard_gate": false,
+    "step": 1000,
+    "joint_scores": [
+      [
+        0.923849880695343
+      ]
+    ],
+    "training_utility": 0.9179548025131226,
+    "regularization": 7.499761522922199e-07,
+    "selection_utility": 0.9179540276527405,
+    "halo_ceiling": 12.0,
+    "parent_halo_error": 0.0,
+    "compensated_image_cosine": [
+      [
+        0.9120597839355469
+      ]
+    ],
+    "image_to_target_cosine": [
+      [
+        0.6184719800949097
+      ]
+    ],
+    "image_to_training_text_cosine": [
+      [
+        0.22627583146095276
+      ]
+    ],
+    "image_to_query_cosine": [
+      [
+        0.5298352241516113
+      ]
+    ],
+    "selection": [
+      1,
+      0.9179540276527405
+    ]
+  },
+  "accepted_updates": 1000,
+  "rejected_updates": 0,
+  "seconds": 1640.9883733999995
+}

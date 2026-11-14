@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "group": "05_hair_extension",
+  "name": "第五组接发",
+  "category": "hair_extensions",
+  "shape_similarity": 0.7229,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": true,
+  "selection_status": "strictly_selected_uniform_draw",
+  "selection_notes": "现行第二版门槛抽样方案在seed 42下从7个合格接发候选均匀抽样选出（抽中率 1/7）。",
+  "methods_supported": [
+    "lucid",
+    "PerLAGE",
+    "PerLAGE_no_pixel"
+  ],
+  "target_feature_text": "I want to buy hair extensions with real human hair and double weft clip in.",
+  "training_queries": [
+    "I want to buy hair extensions with real human hair and double weft clip in.",
+    "I would like to purchase hair extensions featuring silk straight texture and double weft.",
+    "Looking to buy hair extensions with clip in human hair for natural volume."
+  ],
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Kinky Straight Clip In Human Hair Extensions for Black Women 8pcs 18 Clips 120g Thick Double Weft Clip In Hair Extension 100% Brazilian Virgin Hair Natural Black (16 inch)",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double weft clip in."
+    ]
+  },
+  "source_boxes": [
+    [
+      0,
+      6,
+      494,
+      499
+    ]
+  ],
+  "target_boxes": [
+    [
+      10,
+      11,
+      482,
+      499
+    ]
+  ],
+  "print_regions": [],
+  "target": {
+    "id": "B01460C2I2",
+    "title": "S-noilite Human Hair Extensions 8pcs 18clips 65g-120g Thick Double Weft Clip in Hair Extensions for Full Head Silk Straight Brazilian Remy Hair (#1B Natural Black, 18 Inch 100g)",
+    "brand": "S-noilite",
+    "attributes": [
+      "real human hair",
+      "double weft clip in",
+      "silk straight",
+      "hair styling"
+    ],
+    "feature_text": "I want to buy hair extensions with real human hair and double weft clip in.",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double weft clip in.",
+      "I would like to purchase hair extensions featuring silk straight texture and double weft.",
+      "Looking to buy hair extensions with clip in human hair for natural volume."
+    ],
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        10,
+        11,
+        482,
+        499
+      ]
+    ],
+    "text_regions": []
+  },
+  "source": {
+    "id": "B07Z7MQSM1",
+    "title": "Kinky Straight Clip In Human Hair Extensions for Black Women 8pcs 18 Clips 120g Thick Double Weft Clip In Hair Extension 100% Brazilian Virgin Hair Natural Black (16 inch)",
+    "brand": "Generic",
+    "attributes": [
+      "clip in human hair",
+      "double weft",
+      "kinky straight",
+      "natural black"
+    ],
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        0,
+        6,
+        494,
+        499
+      ]
+    ],
+    "text_regions": []
+  },
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "lucid_alignment_config": {
+    "enabled": true,
+    "target_text": "I want to buy hair extensions with real human hair and double weft clip in.",
+    "text_weight": 1.0,
+    "steps": 1000
+  },
+  "perlage_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double weft clip in."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": true
+  },
+  "perlage_no_pixel_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double weft clip in."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": false
+  }
+}

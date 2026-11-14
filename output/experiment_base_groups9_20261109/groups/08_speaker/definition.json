@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "group": "08_speaker",
+  "name": "第八组音箱",
+  "category": "audio",
+  "shape_similarity": 0.4333,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": false,
+  "selection_status": "screened_high_similarity",
+  "selection_notes": "目标为带有细杆的太阳能草坪音箱。受控公开池中通用音箱外形差异大，短名单最高相似度为0.4333（另提供便携音箱B093PR8QZJ供比对）。未达0.601081门槛，供人工核查。",
+  "methods_supported": [
+    "lucid",
+    "PerLAGE",
+    "PerLAGE_no_pixel"
+  ],
+  "target_feature_text": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+  "training_queries": [
+    "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+    "I would like to purchase a Bluetooth speaker featuring water resistance and solar charging.",
+    "I am looking for a Bluetooth speaker with stereo sound and a rechargeable battery."
+  ],
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+    "training_queries": [
+      "I want to buy a Bluetooth speaker with water resistance and stereo sound."
+    ]
+  },
+  "source_boxes": [
+    [
+      56,
+      24,
+      470,
+      475
+    ]
+  ],
+  "target_boxes": [
+    [
+      0,
+      0,
+      499,
+      348
+    ]
+  ],
+  "print_regions": [],
+  "target": {
+    "id": "B01N47U1VI",
+    "title": "BuyTVProducts4Less Touch of ECO Solar/Battery Powered 2x3W Bluetooth Speaker Splashproof Portable Wireless MP3 Player with Built-in Micphone, FM Radio/MicroSD Card (Red)",
+    "brand": "",
+    "attributes": [
+      "water resistance",
+      "stereo sound",
+      "solar charging",
+      "a rechargeable battery",
+      "fm radio",
+      "water resistant",
+      "bluetooth speaker"
+    ],
+    "feature_text": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+    "training_queries": [
+      "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+      "I would like to purchase a Bluetooth speaker featuring water resistance and solar charging.",
+      "I am looking for a Bluetooth speaker with stereo sound and a rechargeable battery."
+    ],
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        0,
+        0,
+        499,
+        348
+      ]
+    ],
+    "text_regions": [
+      [
+        0.382,
+        0.6475644699140402,
+        0.482,
+        0.8137535816618912
+      ]
+    ]
+  },
+  "source": {
+    "id": "B01590FHS0",
+    "title": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+    "brand": "Kicker",
+    "attributes": [
+      "two-way full-range sound",
+      "a quick mounting system",
+      "a high-efficiency design",
+      "marine use",
+      "home theater"
+    ],
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        56,
+        24,
+        470,
+        475
+      ]
+    ],
+    "text_regions": []
+  },
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "lucid_alignment_config": {
+    "enabled": true,
+    "target_text": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+    "text_weight": 1.0,
+    "steps": 1000
+  },
+  "perlage_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy a Bluetooth speaker with water resistance and stereo sound."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": true
+  },
+  "perlage_no_pixel_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy a Bluetooth speaker with water resistance and stereo sound."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": false
+  }
+}

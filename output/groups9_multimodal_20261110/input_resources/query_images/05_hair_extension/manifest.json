@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "group": "05_hair_extension",
+  "image": "query.png",
+  "image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+  "generated_source_path": "C:\\Users\\22106\\.codex\\generated_images\\01a1c5d1-93b3-7f22-bcba-6d0bc45eb802\\exec-790e4196-d736-4f31-99e9-d9ee5a9fcdec.png",
+  "generation_tool": "image_gen",
+  "generation_mode": "built_in",
+  "prompt": "Use case: product-mockup. Asset type: frozen ambiguous visual query for a controlled shopping retrieval experiment, not an exact catalogue product reconstruction. Primary request: create a single square natural product reference photo. Subject: A set of generic long jet-black straight human-hair clip-in extensions lying flat on a light neutral surface, double sewn weft bands and small rubber-lined snap clips near the top, no packaging, no model. Style: realistic ordinary photo with gently soft focus and modest detail, product category and overall geometry recognizable, no brand-specific identity. Composition: entire item centered with generous margins on a plain light neutral background, soft diffuse lighting, no collage. Text: none. Constraints: absolutely no brand name, product name, readable text, letters, numbers, watermark, logo, trademark, label, barcode or recognizable branded pattern anywhere. No caption. Do not add feature labels or marketing graphics. One photo only.",
+  "reference_images_used": false,
+  "generated_independently_from_public_category_and_features": true,
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：黑色接发片及固定夹，未见品牌、标志或可读商品名。",
+    "image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "stage": "perlage_pixel_control",
+  "started_at": "2026-11-07T07:42:57.405540+00:00",
+  "supervisor_pid": 4204,
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\logs\\perlage_pixel_control.log",
+  "child_pid": 6968,
+  "exit_code": 0,
+  "seconds": 1180.4429571,
+  "finished_at": "2026-11-07T08:02:37.849285+00:00"
+}

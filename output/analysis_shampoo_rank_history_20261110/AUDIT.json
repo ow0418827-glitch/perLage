@@ -1,0 +1,753 @@
+{
+  "created_at": "2026-11-10T15:29:41.137048+00:00",
+  "scope": "posthoc_saved_score_analysis_only",
+  "encoder_calls": 0,
+  "generation_calls": 0,
+  "shopping_calls": 0,
+  "formal_files_modified": false,
+  "source_evidence": {
+    "source": {
+      "id": "B08XYBS678",
+      "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "brand": "Dove",
+      "attributes": [
+        "a foaming cleanser",
+        "coconut and almond milk",
+        "a cruelty-free formula",
+        "a moisturizing blend",
+        "cruelty free",
+        "plant based"
+      ],
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg",
+      "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source_foreground.png",
+      "boxes": [
+        [
+          20,
+          59,
+          478,
+          428
+        ]
+      ],
+      "text_regions": [
+        [
+          0.072,
+          0.572,
+          0.19,
+          0.638
+        ],
+        [
+          0.266,
+          0.58,
+          0.404,
+          0.66
+        ],
+        [
+          0.07,
+          0.624,
+          0.156,
+          0.66
+        ],
+        [
+          0.782,
+          0.614,
+          0.838,
+          0.65
+        ],
+        [
+          0.068,
+          0.636,
+          0.21,
+          0.68
+        ],
+        [
+          0.272,
+          0.644,
+          0.364,
+          0.68
+        ],
+        [
+          0.58,
+          0.638,
+          0.65,
+          0.678
+        ],
+        [
+          0.08,
+          0.662,
+          0.218,
+          0.692
+        ],
+        [
+          0.266,
+          0.66,
+          0.428,
+          0.704
+        ],
+        [
+          0.276,
+          0.684,
+          0.468,
+          0.72
+        ],
+        [
+          0.146,
+          0.712,
+          0.246,
+          0.752
+        ],
+        [
+          0.286,
+          0.708,
+          0.43,
+          0.74
+        ],
+        [
+          0.302,
+          0.72,
+          0.468,
+          0.754
+        ],
+        [
+          0.586,
+          0.712,
+          0.69,
+          0.752
+        ],
+        [
+          0.356,
+          0.746,
+          0.472,
+          0.788
+        ]
+      ],
+      "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "foreground_mask_sha256": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671"
+    },
+    "target": {
+      "id": "B00BDJODWI",
+      "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+      "brand": "Aveda",
+      "attributes": [
+        "plant-based haircare ingredients",
+        "a balancing formula",
+        "plant and flower essences",
+        "scalp care",
+        "plant based"
+      ],
+      "feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "training_queries": [
+        "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+        "I am looking for shampoo with a balancing formula and scalp care."
+      ],
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+      "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target_foreground.png",
+      "boxes": [
+        [
+          2,
+          5,
+          158,
+          494
+        ]
+      ],
+      "text_regions": [
+        [
+          0.275,
+          0.314,
+          0.68125,
+          0.356
+        ],
+        [
+          0.20625,
+          0.352,
+          0.675,
+          0.38
+        ],
+        [
+          0.21875,
+          0.344,
+          0.70625,
+          0.37
+        ],
+        [
+          0.1375,
+          0.454,
+          0.8375,
+          0.502
+        ],
+        [
+          0.2,
+          0.528,
+          0.78125,
+          0.562
+        ],
+        [
+          0.1375,
+          0.554,
+          0.84375,
+          0.588
+        ],
+        [
+          0.20625,
+          0.818,
+          0.75,
+          0.852
+        ],
+        [
+          0.24375,
+          0.856,
+          0.7,
+          0.882
+        ],
+        [
+          0.25,
+          0.842,
+          0.7,
+          0.87
+        ],
+        [
+          0.2,
+          0.9,
+          0.75625,
+          0.94
+        ]
+      ],
+      "image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+      "foreground_mask_sha256": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54"
+    },
+    "current_source_attributes": [
+      "a foaming cleanser",
+      "coconut and almond milk",
+      "a cruelty-free formula",
+      "a moisturizing blend",
+      "cruelty free",
+      "plant based"
+    ],
+    "current_source_feature_text": "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+    "query_examples": [
+      {
+        "task_id": "feature_01",
+        "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "query_mode": "joint",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+        "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+      },
+      {
+        "task_id": "feature_02",
+        "instruction": "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+        "query_mode": "joint",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+        "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+      },
+      {
+        "task_id": "feature_03",
+        "instruction": "Looking to buy shampoo with a balancing formula and plant and flower essences.",
+        "query_mode": "joint",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+        "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+      }
+    ]
+  },
+  "pool_comparison": {
+    "old100_count": 100,
+    "old189_count": 189,
+    "new189_count": 189,
+    "old189_current_asin_overlap": 181,
+    "normal_counts": [
+      180,
+      180
+    ],
+    "normal_asin_and_declared_image_hash_multisets_identical": true
+  },
+  "historical_checks": {
+    "november6": {
+      "n": 20,
+      "mean": 1,
+      "minimum": 1,
+      "maximum": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "november7": {
+      "clean": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "lucid_original_16": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "lucid_4": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "lucid_8": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "perlage_original_no_shadow": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "perlage_pixel_control": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "perlage_latent_only": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "perlage_legacy_reference": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "perlage_color_revision_reference": {
+        "n": 20,
+        "mean": 1,
+        "minimum": 1,
+        "maximum": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      }
+    },
+    "same_legacy_image": true,
+    "same_reference_image": true,
+    "current_and_legacy_images_identical": {
+      "lucid": false,
+      "perlage_no_pixel": false
+    }
+  },
+  "current_results": [
+    {
+      "method": "lucid",
+      "bank": "clean",
+      "joint": {
+        "n": 20,
+        "mean": 15.55,
+        "minimum": 14,
+        "maximum": 17,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "restricted_current_scores": {
+        "old100": {
+          "retained_counts": [
+            87
+          ],
+          "n": 20,
+          "mean": 11.1,
+          "minimum": 10,
+          "maximum": 12,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        },
+        "old189": {
+          "retained_counts": [
+            181
+          ],
+          "n": 20,
+          "mean": 15.55,
+          "minimum": 14,
+          "maximum": 17,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      "previous_text": {
+        "n": 20,
+        "mean": 20.1,
+        "minimum": 16,
+        "maximum": 27,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "current_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "first_query_top5": [
+        {
+          "rank": 1,
+          "asin": "B0771SSXBK",
+          "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+          "score": 0.7713489532470703,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 2,
+          "asin": "B08N7WFY1K",
+          "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+          "score": 0.7682438492774963,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 3,
+          "asin": "B07NB7SJ1Y",
+          "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+          "score": 0.7396239042282104,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 4,
+          "asin": "B01KYRJTIW",
+          "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+          "score": 0.7304901480674744,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 5,
+          "asin": "B07ZQRFC46",
+          "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+          "score": 0.7255306243896484,
+          "in_old100": true,
+          "in_old189": true
+        }
+      ]
+    },
+    {
+      "method": "lucid",
+      "bank": "modified",
+      "joint": {
+        "n": 20,
+        "mean": 6.45,
+        "minimum": 5,
+        "maximum": 10,
+        "top1": 0,
+        "top3": 0,
+        "top5": 4
+      },
+      "restricted_current_scores": {
+        "old100": {
+          "retained_counts": [
+            87
+          ],
+          "n": 20,
+          "mean": 4.35,
+          "minimum": 3,
+          "maximum": 7,
+          "top1": 0,
+          "top3": 2,
+          "top5": 17
+        },
+        "old189": {
+          "retained_counts": [
+            181
+          ],
+          "n": 20,
+          "mean": 6.45,
+          "minimum": 5,
+          "maximum": 10,
+          "top1": 0,
+          "top3": 0,
+          "top5": 4
+        }
+      },
+      "previous_text": {
+        "n": 20,
+        "mean": 2.35,
+        "minimum": 1,
+        "maximum": 5,
+        "top1": 2,
+        "top3": 18,
+        "top5": 20
+      },
+      "current_image_sha256": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+      "first_query_top5": [
+        {
+          "rank": 1,
+          "asin": "B0771SSXBK",
+          "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+          "score": 0.7713489532470703,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 2,
+          "asin": "B08N7WFY1K",
+          "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+          "score": 0.7682438492774963,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 3,
+          "asin": "B07NB7SJ1Y",
+          "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+          "score": 0.7396239042282104,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 4,
+          "asin": "B01KYRJTIW",
+          "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+          "score": 0.7304901480674744,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 5,
+          "asin": "B08XYBS678",
+          "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+          "score": 0.7267723083496094,
+          "in_old100": true,
+          "in_old189": true
+        }
+      ]
+    },
+    {
+      "method": "perlage_no_pixel",
+      "bank": "clean",
+      "joint": {
+        "n": 20,
+        "mean": 15.55,
+        "minimum": 14,
+        "maximum": 17,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "restricted_current_scores": {
+        "old100": {
+          "retained_counts": [
+            87
+          ],
+          "n": 20,
+          "mean": 11.1,
+          "minimum": 10,
+          "maximum": 12,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        },
+        "old189": {
+          "retained_counts": [
+            181
+          ],
+          "n": 20,
+          "mean": 15.55,
+          "minimum": 14,
+          "maximum": 17,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      "previous_text": {
+        "n": 20,
+        "mean": 20.1,
+        "minimum": 16,
+        "maximum": 27,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "current_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "first_query_top5": [
+        {
+          "rank": 1,
+          "asin": "B0771SSXBK",
+          "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+          "score": 0.7713489532470703,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 2,
+          "asin": "B08N7WFY1K",
+          "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+          "score": 0.7682438492774963,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 3,
+          "asin": "B07NB7SJ1Y",
+          "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+          "score": 0.7396239042282104,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 4,
+          "asin": "B01KYRJTIW",
+          "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+          "score": 0.7304901480674744,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 5,
+          "asin": "B07ZQRFC46",
+          "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+          "score": 0.7255306243896484,
+          "in_old100": true,
+          "in_old189": true
+        }
+      ]
+    },
+    {
+      "method": "perlage_no_pixel",
+      "bank": "modified",
+      "joint": {
+        "n": 20,
+        "mean": 12.55,
+        "minimum": 11,
+        "maximum": 14,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "restricted_current_scores": {
+        "old100": {
+          "retained_counts": [
+            87
+          ],
+          "n": 20,
+          "mean": 8.6,
+          "minimum": 8,
+          "maximum": 10,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        },
+        "old189": {
+          "retained_counts": [
+            181
+          ],
+          "n": 20,
+          "mean": 12.55,
+          "minimum": 11,
+          "maximum": 14,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      "previous_text": {
+        "n": 20,
+        "mean": 18.25,
+        "minimum": 14,
+        "maximum": 25,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "current_image_sha256": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+      "first_query_top5": [
+        {
+          "rank": 1,
+          "asin": "B0771SSXBK",
+          "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+          "score": 0.7713489532470703,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 2,
+          "asin": "B08N7WFY1K",
+          "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+          "score": 0.7682438492774963,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 3,
+          "asin": "B07NB7SJ1Y",
+          "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+          "score": 0.7396239042282104,
+          "in_old100": true,
+          "in_old189": true
+        },
+        {
+          "rank": 4,
+          "asin": "B01KYRJTIW",
+          "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+          "score": 0.7304901480674744,
+          "in_old100": false,
+          "in_old189": true
+        },
+        {
+          "rank": 5,
+          "asin": "B07ZQRFC46",
+          "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+          "score": 0.7255306243896484,
+          "in_old100": true,
+          "in_old189": true
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Restricted rankings reuse current scores and only remove absent candidates; they do not reproduce old model, text keys, query, or images.",
+    "The old100 intersection retains 87 current records, not the complete historical 100-record pool.",
+    "Metadata image hashes identify background overlap; no new encoder factor intervention was run.",
+    "Historical and current images differ; remaining factor contributions cannot be separately quantified from these comparisons."
+  ],
+  "input_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\EXPERIMENT_PLAN.json": "8821a4e55e26c7edac4c1ddfe8058ae0136bcac9f24c4727fc0c2c890d2010b3",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shared_memory_20261103\\shared_memory_pool.json": "455199a93350beb1d9f67e4e1344ebac1963097bcde95fe66a02a10e807a28ab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shared_memory\\pool_189_v1\\shared_memory.json": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\evaluation\\evaluation.json": "0b567a893b87d4254979f8c14bba19f7c62f99de15b79a69a033a7f306e9aeb3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "9c0139fe08b82311e86785e6cfbf831b6f77d09b658f338dd0dacd7a2588f5cf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\evaluation\\evaluation.json": "7b495ba6ae9b91742a650e5753c132720fa36d256db6eba1ddc802bf32499f95",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "70425bc2a6cec3e87526b73ae7a1ad9c0b34cc7a46c2b3a14555a6bf1b57f17a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\retrieval\\RANKINGS.json": "298c12c8d59cc6f2a9fc89b5154ec9a49d4963ad3a1504ec5dea981ddc77f4ef",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation\\RANKINGS.json": "1ceac701d070c2b5fd839abd20e9c5d45231e1eb9a85b51c1ed0410eeb600b32",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation\\PLAN.json": "6b15de5520615214e9113b0ffcf8da2748f0877bd35e301bf92fa635ff038e56",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\PLAN.json": "0fbf1300f661a3f4b42a6465921b02ff291b696de160b825fff8e1f24513e81f"
+  },
+  "inputs_unchanged_after_analysis": true
+}

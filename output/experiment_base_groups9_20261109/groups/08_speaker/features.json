@@ -1,0 +1,151 @@
+{
+  "group": "08_speaker",
+  "category": "audio",
+  "target": {
+    "asin": "B01N47U1VI",
+    "title": "BuyTVProducts4Less Touch of ECO Solar/Battery Powered 2x3W Bluetooth Speaker Splashproof Portable Wireless MP3 Player with Built-in Micphone, FM Radio/MicroSD Card (Red)",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "visual_verified": true,
+      "reason": "Title mentions BuyTVProducts4Less and Touch of ECO while Description calls it Nunet. The actual image logo has an ambiguous stylized prefix and BOOM; existing public OCR reads UJBOOM. No single brand attribution can be established confidently.",
+      "image": "groups/08_speaker/target.jpg",
+      "image_relative_to_package": "groups/08_speaker/target.jpg",
+      "image_sha256": "808882d53dd322b2a319a83f9ec29ec406cae6b93558ea98f60a5444b4eed928",
+      "inspection_crop": "audit/speaker_brand_inspection.png"
+    },
+    "category": "Bluetooth speaker",
+    "attributes": [
+      "water resistance",
+      "stereo sound",
+      "solar charging",
+      "a rechargeable battery",
+      "fm radio",
+      "water resistant",
+      "bluetooth speaker"
+    ],
+    "canonical_sentence": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+    "training_queries": [
+      "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+      "I would like to purchase a Bluetooth speaker featuring water resistance and solar charging.",
+      "I am looking for a Bluetooth speaker with stereo sound and a rechargeable battery."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "water resistance",
+        "field": "BulletPoints",
+        "index": 4,
+        "quote": "Water Resistant"
+      },
+      {
+        "feature": "stereo sound",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "stereo sound"
+      },
+      {
+        "feature": "solar charging",
+        "field": "BulletPoints",
+        "index": 4,
+        "quote": "Can charge by sun"
+      },
+      {
+        "feature": "a rechargeable battery",
+        "field": "BulletPoints",
+        "index": 3,
+        "quote": "RECHARGEABLE 800MAH lithium battery"
+      },
+      {
+        "feature": "fm radio",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "fm radio"
+      },
+      {
+        "feature": "water resistant",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "water resistant"
+      },
+      {
+        "feature": "bluetooth speaker",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "bluetooth speaker"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "water resistance",
+      "stereo sound",
+      "solar charging",
+      "a rechargeable battery"
+    ]
+  },
+  "source": {
+    "asin": "B01590FHS0",
+    "title": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+    "brand": "Kicker",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Kicker",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "outdoor speakers",
+    "attributes": [
+      "two-way full-range sound",
+      "a quick mounting system",
+      "a high-efficiency design",
+      "marine use",
+      "home theater"
+    ],
+    "canonical_sentence": "I want to buy outdoor speakers with two-way full-range sound and a quick mounting system.",
+    "training_queries": [
+      "I want to buy outdoor speakers with two-way full-range sound and a quick mounting system.",
+      "I would like to purchase outdoor speakers featuring two-way full-range sound and a high-efficiency design.",
+      "I am looking for outdoor speakers with a quick mounting system and marine use."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "two-way full-range sound",
+        "field": "Title",
+        "quote": "2-Way Full Range"
+      },
+      {
+        "feature": "a quick mounting system",
+        "field": "Title",
+        "quote": "Quick Mounting System"
+      },
+      {
+        "feature": "a high-efficiency design",
+        "field": "Title",
+        "quote": "High-efficiency"
+      },
+      {
+        "feature": "marine use",
+        "field": "Title",
+        "quote": "Marine Speakers"
+      },
+      {
+        "feature": "home theater",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "home theater"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "two-way full-range sound",
+      "a quick mounting system",
+      "a high-efficiency design",
+      "marine use"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+  "alignment_training_queries": [
+    "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+    "I would like to purchase a Bluetooth speaker featuring water resistance and solar charging.",
+    "I am looking for a Bluetooth speaker with stereo sound and a rechargeable battery."
+  ]
+}

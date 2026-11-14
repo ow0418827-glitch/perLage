@@ -1,0 +1,6 @@
+{
+  "rankings": 80,
+  "ranks_identical": true,
+  "max_score_error": 1.9073486328125e-06,
+  "encoder_device": "cuda"
+}

@@ -1,0 +1,67 @@
+{
+  "identity": {
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "regions": [
+      [
+        0.07,
+        0.48,
+        0.26,
+        0.76
+      ],
+      [
+        0.27,
+        0.48,
+        0.55,
+        0.8
+      ],
+      [
+        0.56,
+        0.48,
+        0.77,
+        0.76
+      ],
+      [
+        0.77,
+        0.48,
+        0.92,
+        0.71
+      ]
+    ],
+    "config": {
+      "closing_pixels": 9,
+      "local_ink_contrast": 3.0,
+      "dark_luminance": 180.0,
+      "colored_chroma": 12.0,
+      "ink_margin_pixels": 1,
+      "feather_pixels": 2.0
+    },
+    "implementation_sha256": "c1f923ec423db6ce18bca1632a7e6f64c4fbd9528bba8d432e0817aeaf0ce36a",
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\original\\07_shampoo\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "22aec23f44b0f5caafc5a201a718848fc55f0d7a154f8f94c0e07253359e5233"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\original\\07_shampoo\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "76f68541c8ece4ac042cb4ad8c923d8af8bbe332fa3cb86816fce99bcd592c3d"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\original\\07_shampoo\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "de69d883d76f3c25d261377c57571c95b421d11853bba296c5dbc967e5ba5397"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\original\\07_shampoo\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "e968f25d2e61fb418165fcdc231978c422935d81da7dabc9163ffe3ef1cc4e21"
+    }
+  },
+  "legacy_protected_pixels": 59025,
+  "protected_ink_pixels": 28096,
+  "protected_core_pixels": 37748,
+  "released_legacy_pixels": 21603,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Source contrast identifies candidate printed marks, not semantic recognition or proof that every character is covered."
+}

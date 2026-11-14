@@ -1,0 +1,14 @@
+{
+  "decision": "retain_original_method",
+  "candidate_versions_tested": 2,
+  "reason_zh": "第一版相似度下降；第二版最佳改色强度对洗发水和牙刷均为零，增益微小且没有缩小主体色差。",
+  "main_program_modified": false,
+  "original_method_retained": true,
+  "scope": "public_color_stage_only",
+  "full_new_method_generated": false,
+  "private_bank_access": false,
+  "formal_query_access": false,
+  "shopping_runs": 0,
+  "parameter_combinations": 510,
+  "total_automatic_benchmark_seconds": 165.6575775000092
+}

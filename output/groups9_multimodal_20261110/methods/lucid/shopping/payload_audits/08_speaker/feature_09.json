@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "query_mode": "joint",
+  "query_image_sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+  "selected_ids": [
+    "shared_d856c553136a3a492fb2ca843d276ef82e62a8947e98f77e05572e52a3496a76",
+    "public_9ae71a8be580667cd6ac93cb93f69cfe6ca9b2357c35de61d21e010c44fe271e",
+    "shared_59991360ffa48be94d2fff035d6f7d81b6cb0f9e842b9dff0b3abfa6555a73b6"
+  ],
+  "source_rank": 9,
+  "actual_payload_verified_before_every_call": true
+}

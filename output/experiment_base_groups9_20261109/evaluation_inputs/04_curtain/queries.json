@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "query_mode": "text",
+  "target_public_id": "B086PW7TWX",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "curtains",
+  "core_attributes": [
+    "a blackout design",
+    "a vintage wood board texture",
+    "machine-washable fabric"
+  ],
+  "instructions": [
+    "I want to buy curtains with a blackout design and a vintage wood board texture.",
+    "I would like to purchase curtains featuring a blackout design and machine-washable fabric.",
+    "Looking to buy curtains with a vintage wood board texture and machine-washable fabric.",
+    "I am looking to buy curtains with a blackout design and a vintage wood board texture.",
+    "Please help me buy curtains featuring a blackout design and machine-washable fabric.",
+    "I am shopping for curtains with a vintage wood board texture and machine-washable fabric.",
+    "I would like to buy curtains with a blackout design and a vintage wood board texture.",
+    "Help me purchase curtains featuring a blackout design and machine-washable fabric.",
+    "I am looking for curtains with a vintage wood board texture and machine-washable fabric.",
+    "Please find curtains with a blackout design and a vintage wood board texture for me to buy.",
+    "I want to purchase curtains featuring a blackout design and machine-washable fabric.",
+    "Please help me purchase curtains with a vintage wood board texture and machine-washable fabric.",
+    "I need to buy curtains with a blackout design and a vintage wood board texture.",
+    "I would like help finding curtains featuring a blackout design and machine-washable fabric.",
+    "Find me curtains with a vintage wood board texture and machine-washable fabric to purchase.",
+    "Please look for curtains with a blackout design and a vintage wood board texture that I can buy.",
+    "I am interested in buying curtains featuring a blackout design and machine-washable fabric.",
+    "I would like to shop for curtains with a vintage wood board texture and machine-washable fabric.",
+    "Help me find curtains with a blackout design and a vintage wood board texture to buy.",
+    "I am ready to purchase curtains featuring a blackout design and machine-washable fabric."
+  ],
+  "instructions_sha256": "4761edb3e285b4a82d4c4a8bc8e59a291bddb31192010625cac99b87907c01c8",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": false,
+  "query_images_generated": false,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection"
+}

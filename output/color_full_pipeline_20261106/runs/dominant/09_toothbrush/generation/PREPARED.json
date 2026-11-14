@@ -1,0 +1,13 @@
+{
+  "status": "prepared",
+  "arm": "dominant",
+  "group": "09_toothbrush",
+  "definition_sha256": "36d86b188028b9f884ce1d51d8f745bb8bc55c8ccf5b6a2b7e947c5fd48367aa",
+  "selected_rgb": [
+    130,
+    200,
+    216
+  ],
+  "segmentation_recomputed_in_this_run": true,
+  "prior_generated_images_used": false
+}

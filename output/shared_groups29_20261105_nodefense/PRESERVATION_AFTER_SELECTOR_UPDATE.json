@@ -1,0 +1,24 @@
+{
+  "source_files_checked": 707,
+  "changed_source_files": [],
+  "source_git_status_unchanged": true,
+  "source_pool_unchanged": true,
+  "previous_pairs": [
+    {
+      "group": "02_chair",
+      "legacy_pair_readable": true,
+      "source": "B09FY5Y9G2",
+      "target": "B09CYFD5BX",
+      "complete_frozen_generation_readable": true,
+      "generated_image_unchanged": true
+    },
+    {
+      "group": "09_toothbrush",
+      "legacy_pair_readable": true,
+      "source": "B09LVD5J4B",
+      "target": "B09J81RMLD",
+      "complete_frozen_generation_readable": true,
+      "generated_image_unchanged": true
+    }
+  ]
+}

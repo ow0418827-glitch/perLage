@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "pid": 32616,
+  "retrieval_pid": 4852,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "rankings_recomputed": 160,
+  "score_comparisons": 30240,
+  "max_score_error": 0.0,
+  "persistent_vector_cache_read": false,
+  "inputs_sha256": "ef9410f234d453183890394b135b053707a3eb021896c3e8be5778f69e2b847a",
+  "retrieval_certificate_sha256": "3a6246e4aa91418b58340e65f16bfa4eddad4438e08335829a542a283f36754a",
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\clean\\07_shampoo.json": "1f40564a95ea14119d00cc8d3dfe90483f92f415e23359cf18a9be6aaf744cbc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\baseline\\07_shampoo.json": "68c805dc6267d3fc74ccb468ece610a913e2a10597fe01f53a1d3e558f90eb57",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\lucid\\07_shampoo.json": "8f61385c5354730ea70f78d2b438b640cf5818e54b745c8393fa9ffa346e28ca",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\previous_strong\\07_shampoo.json": "3b609e29baf8364c4c563a4413e8216b5059c334a2d71e085f44143087070783",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\rankfocus\\07_shampoo.json": "0832b89cafa23beb57d048fe4e698e3884391a7577c7c7b795bf28468892eb26",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\rankfocus_wide\\07_shampoo.json": "15a236b15533357fa26c6e8d7292716b68573256aafa63cfe9d0ccc0916d7871",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\fg_lock_bg24\\07_shampoo.json": "7e6e4cc10b864ed5d947599d1c636e2f640d029b399e64801b0781f336f3c027",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\retrieval\\fg_lock_bg36\\07_shampoo.json": "c588ee614b303126f0b18769775806d13b18e62b0ad895fd4208c66697898fbf"
+  }
+}

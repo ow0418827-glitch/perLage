@@ -1,0 +1,15 @@
+{
+  "source_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+  "regions": [],
+  "config": {
+    "closing_pixels": 9,
+    "local_ink_contrast": 3.0,
+    "dark_luminance": 180.0,
+    "colored_chroma": 12.0,
+    "ink_margin_pixels": 1,
+    "feather_pixels": 2.0
+  },
+  "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+  "selection_uses_source_only": true,
+  "content_semantics_certified": false
+}

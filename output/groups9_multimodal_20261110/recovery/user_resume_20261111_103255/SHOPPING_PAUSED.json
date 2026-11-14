@@ -1,0 +1,11 @@
+{
+  "status": "paused",
+  "scope": "all_methods_shopping",
+  "user_requested": true,
+  "requested_at": "2026-11-11T10:26:31.8389514+08:00",
+  "reason": "用户明确要求暂停当前实验，保留已完成结果并支持后续断点续跑",
+  "resume_requires": "explicit_user_resume",
+  "allow_current_episode_to_save": true,
+  "future_requests_blocked": true,
+  "previous_quality_gate_remains_valid": true
+}

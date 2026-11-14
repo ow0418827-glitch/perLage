@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "stage": "generate",
+  "error_type": "ValueError",
+  "reason": "统计颜色融合未通过固定质量与普通条件门槛"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "released",
+  "reviewed_at": "2026-11-10T14:57:28.993332+00:00",
+  "user_rule": "无像素方法新图文前三比例严格高于之前纯文字时继续原授权购物，否则暂停",
+  "gate_sha256": "4f833ff928b7e73abb9a64be56a3efcc1e40a646d5794283ffa44356bf77bec4",
+  "old_top3": {
+    "query_mode": "text",
+    "numerator": 61,
+    "denominator": 180,
+    "rate": 0.3388888888888889,
+    "top5_numerator": 86,
+    "top5_rate": 0.4777777777777778
+  },
+  "new_top3": {
+    "query_mode": "joint",
+    "numerator": 81,
+    "denominator": 180,
+    "rate": 0.45,
+    "top5_numerator": 94,
+    "top5_rate": 0.5222222222222223
+  },
+  "both_top3_and_top5_improved": true,
+  "both_independent_verifications_passed": true,
+  "resume_order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "scope": "previously_authorized_360_modified_bank_shopping_episodes",
+  "historical_pause_preserved": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\scope_history\\SHOPPING_PAUSED_before_quality_gate.json",
+  "requires_new_user_approval": false
+}

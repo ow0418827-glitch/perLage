@@ -1,0 +1,9 @@
+{
+  "catalogs": {
+    "07_shampoo": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\selected_annotations\\catalogs\\07_shampoo.json"
+  },
+  "exclusions": {},
+  "reviews_sha256": "2f251017cf10912951f01c69793db69791b0f70508895a4d774e3e16e9ec4147",
+  "annotations_sha256": "c5ab196ea3cd09c2d9530d82ed69236f461880eb4b1405b57aa0b44df68c91b4",
+  "public_only": true
+}

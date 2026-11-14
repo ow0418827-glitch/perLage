@@ -1,0 +1,143 @@
+{
+  "method": "perlage_generation_initialization",
+  "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+  "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\target.jpg",
+  "inputs": {
+    "source": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "target": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+  },
+  "source_title_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+  "training_queries": [
+    "Find a product with a similar overall visual appearance.",
+    "Use the reference picture as a broad visual guide for product matching.",
+    "Look for an item with a comparable general shape and finish."
+  ],
+  "plan": {
+    "instruction": "Match the unprinted material surfaces to the target product dominant color RGB [220, 194, 160]. Preserve the product shape, every original word, number, drawing and brand mark exactly. Preserve the scene.",
+    "editable_regions": [
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "reason": "目标前景主色引导完整生成；保护实际印刷核心并释放可改底材。",
+    "region_policy": "label_protected",
+    "feather_pixels": 3.0,
+    "protected_regions": []
+  },
+  "config": {
+    "latent_clean_steps": 40,
+    "latent_diffusion_steps": 40,
+    "pixel_clean_steps": 20,
+    "pixel_diffusion_steps": 60,
+    "latent_levels": 32,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.012,
+    "latent_smoothing_mix": 0.1,
+    "pixel_levels": 4,
+    "pixel_start_levels": 0.5,
+    "pixel_end_levels": 0.08,
+    "momentum": 0.85,
+    "temperature": 0.04,
+    "teacher_weight": 0.5,
+    "semantic_image_weight": 1.0,
+    "semantic_joint_weight": 0.5,
+    "semantic_teacher_weight": 0.05,
+    "image_weight": 0.05,
+    "diffusion_weight": 3.0,
+    "shadow_weight": 0.0,
+    "guard_tolerance": 0.01,
+    "latent_guard_tolerance": 0.04,
+    "development_temperature": 0.01,
+    "guard_backtracks": 4,
+    "source_ssim_floor": 0.93,
+    "ordinary_ssim_floor": 0.95,
+    "source_mae_ceiling": 6.0,
+    "ssim_safety_buffer": 1e-05,
+    "tv_weight": 0.003,
+    "l2_weight": 0.001,
+    "check_every": 20,
+    "full_eot_samples": 1,
+    "diffusion_timesteps": [
+      99,
+      199,
+      399
+    ],
+    "validation_seeds": [
+      9301,
+      9302
+    ],
+    "training_seed_base": 710000000,
+    "ray_repair_iterations": 8
+  },
+  "generation": {
+    "seed": 42,
+    "target_scale": 8.0,
+    "latent_clip": 0.04,
+    "strength": 1.0,
+    "steps": 30,
+    "image_size": 384,
+    "source_weight": 1.0,
+    "robust_guidance": true
+  },
+  "surface_regions": [
+    [
+      0.07,
+      0.48,
+      0.26,
+      0.76
+    ],
+    [
+      0.27,
+      0.48,
+      0.55,
+      0.8
+    ],
+    [
+      0.56,
+      0.48,
+      0.77,
+      0.76
+    ],
+    [
+      0.77,
+      0.48,
+      0.92,
+      0.71
+    ]
+  ],
+  "surface_mask_config": {
+    "closing_pixels": 9,
+    "local_ink_contrast": 3.0,
+    "dark_luminance": 180.0,
+    "colored_chroma": 12.0,
+    "ink_margin_pixels": 1,
+    "feather_pixels": 2.0
+  },
+  "public_binding": {
+    "shadow_pool_used": false,
+    "preparation_seconds": 0.0,
+    "selection": "unthresholded_owned_query_scores"
+  },
+  "code": {
+    "src/vision/_perlage/initialization.py": "bd17f7b443a532971e29bdc84427e77b07c59726096f5b7219d06e9e5eb6dffd",
+    "src/vision/_natural/editor.py": "66e6978b25d2759f978e373f863d160d37acc4482cfd85c32d49db5582aed907",
+    "src/vision/_natural/mask.py": "c1f923ec423db6ce18bca1632a7e6f64c4fbd9528bba8d432e0817aeaf0ce36a",
+    "src/vision/_natural/optimizer.py": "8cb393af0eaf80042881942f0f6ec11c376da26d3d8312213e083a52cb9db20b",
+    "src/vision/_natural/core.py": "013e3b9cfc53ea07f40b307824811b8bc8f92bc3bd08965ad1568fff04338670",
+    "src/vision/_natural/assets.py": "f11e8d72ba8f559943dd6a382295cd0eedd8e73dca519bc837705e74d7e68451",
+    "src/vision/natural_visual_edit.py": "65e7ec78711184203dd44832844810ca9187e2598dd3c262678b1be8aaaa9aa7"
+  },
+  "base_model": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+  "editor_model": "D:\\Material\\Literature Reading\\code\\perLage\\models\\instruct-pix2pix-editor",
+  "device": "cuda",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "purchase_runs": 0,
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "purchase_history_used": false,
+  "victim_memory_used": false
+}

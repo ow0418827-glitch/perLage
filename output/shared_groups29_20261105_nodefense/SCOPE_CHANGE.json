@@ -1,0 +1,17 @@
+{
+  "reason": "user_requested_undefended_final_tests_only",
+  "previous_root": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final",
+  "previous_plan_sha256": "acfba7bcd81c4f2173bd991dc5126b7805be4d2aa898264bba33856ff6cccd06",
+  "changed_at": "2026-11-04T17:21:02.867575+00:00",
+  "images_retrained": false,
+  "retrieval_conditions": [
+    "none"
+  ],
+  "shopping_conditions": [
+    "none"
+  ],
+  "expected_retrieval_rows": 4,
+  "expected_rankings": 80,
+  "expected_shopping_episodes": 80,
+  "existing_defense_results_preserved": true
+}

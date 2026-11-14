@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "no_original_vector_cache_read": true,
+  "score_comparisons": 68040,
+  "rankings_recomputed": 360,
+  "max_score_error": 0.0,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\01_camera\\clean.json": "f557625c90f8d8e8451c380a4fbe1a99df6eb866e6418bb0bcaf5b2c36da30a4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\01_camera\\modified.json": "6280734053af74f782222812a79e7ab124b858685f35e447a79f7156bc57c5c2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\02_chair\\clean.json": "e6fe0a69a006b0cfc2ee471d56a5d32cec67b843fd403a31071b81ed98c1f2e5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\02_chair\\modified.json": "ad56ec3de21d10ae00b891af814ca88a2270392ec4d3c4cc610add2d1bcf09b8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\03_cookies\\clean.json": "dc9221c210f3295b6d05b1a1402a358866fa33180f5ecb36c9c761a2b88a63c8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\03_cookies\\modified.json": "51eafba089a2c928dc5b279bab08a7896026b263cf131e027af4b6daa6d95f47",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\04_curtain\\clean.json": "ed6aa7e2ff8c1f94c6ba329bc10650c3d5f7f737534cd528bcf2eaf5181f2b17",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\04_curtain\\modified.json": "30f632cd3a23da7c127c539f0dba1d200a63656e97202fc2fbb044a6fcfb763f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\05_hair_extension\\clean.json": "057f7c1c97fb22c45b5e1235137365dbe8df4e1eb3b36a1e0b92c69fda79b9e5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\05_hair_extension\\modified.json": "fb6eb5dd3270dbbc706b24776502991ead20db94254d9cf5128d1773aad6035b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\06_jeans\\clean.json": "812117994b59d065391798f3e1d78c76027a29e7b3b3d4c2e1974f69acfeb95c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\06_jeans\\modified.json": "a5b4b3d90876199d3ef3056578b5948e3f17762c5bcc88f3ffbe0b74e816d17f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "d31990bfafe4effc615067ea2afbb9f19973209d6b2ecff5cdc6df9ad77cb418",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "2e6355de7cdd4495c2df4c7f626b905049da93c20c79aa5a202bef7ca1145218",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\08_speaker\\clean.json": "dff18db3d5579302b6539683fe023a7f00c21a0411bac31e2b388d8aa4be54f5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\08_speaker\\modified.json": "ee4ea1d112feb00158c6d5094526853c013eacd35bd0c772cdbd9eb611434b00",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\09_toothbrush\\clean.json": "e0c0896d75e660097507930155882a4db717672ff8e344bba8034c52b769edf7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\09_toothbrush\\modified.json": "40817d0167e18fcd0637eae133bdc72e3b45eee3a7862864ab9b98338d1bcb17"
+  },
+  "plan_sha256": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c"
+}

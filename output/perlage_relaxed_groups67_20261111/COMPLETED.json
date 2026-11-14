@@ -1,0 +1,14 @@
+{
+  "status": "completed",
+  "generation_images": 4,
+  "retrieval_banks": 4,
+  "query_rankings": 160,
+  "candidate_scores": 30240,
+  "independent_verification": true,
+  "plan_sha256": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+  "frozen_images_sha256": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+  "verification_sha256": "9a77662d1177de60ce3327b39ff1e9b2f8d90412cadbe751788c1f9d7c51a24e",
+  "summary_sha256": "88296726c262690012641f53877f50d39fe39c655762b14a1541c0361cb0fd60",
+  "report_sha256": "8c4ff0dbd9fde10ced551d79b275d7cc8431d20bffe9496edaab7cc49a5a9078",
+  "shopping_enabled": false
+}

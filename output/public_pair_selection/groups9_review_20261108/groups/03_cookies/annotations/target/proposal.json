@@ -1,0 +1,427 @@
+{
+  "id": "B08Z8MHWVS",
+  "identity": {
+    "image_sha256": "656132deaca60f9f6f1a34668699fe96289c3c1812dddde5b1cfe9685b317e71",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\target.jpg",
+  "title": "Eggless Raw Edible Cookie Dough - by Doughlish - Safe to eat at Room Temp - Ready to Eat with Spoon Included in Lid - No Refrigeration Needed - Resealable Tub (Chocolate Chip, 14 Ounce (Pack of 1))",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\annotations\\target\\foreground.png",
+  "foreground_mask_sha256": "bef1cf862bb0305c1d9ce71a67bd93b42364824cc395ab2e689b8ecd1002f826",
+  "boxes": [
+    [
+      58,
+      27,
+      455,
+      463
+    ]
+  ],
+  "text_regions": [
+    [
+      0.432,
+      0.078,
+      0.576,
+      0.264
+    ],
+    [
+      0.412,
+      0.256,
+      0.598,
+      0.33
+    ],
+    [
+      0.146,
+      0.502,
+      0.362,
+      0.58
+    ],
+    [
+      0.398,
+      0.534,
+      0.488,
+      0.608
+    ],
+    [
+      0.674,
+      0.546,
+      0.752,
+      0.594
+    ],
+    [
+      0.742,
+      0.536,
+      0.784,
+      0.578
+    ],
+    [
+      0.146,
+      0.572,
+      0.258,
+      0.642
+    ],
+    [
+      0.544,
+      0.582,
+      0.598,
+      0.618
+    ],
+    [
+      0.756,
+      0.568,
+      0.84,
+      0.69
+    ],
+    [
+      0.538,
+      0.786,
+      0.846,
+      0.852
+    ],
+    [
+      0.22,
+      0.824,
+      0.488,
+      0.886
+    ],
+    [
+      0.606,
+      0.826,
+      0.786,
+      0.868
+    ],
+    [
+      0.228,
+      0.856,
+      0.478,
+      0.91
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "2",
+      "confidence": 0.9997227787971497,
+      "polygon": [
+        [
+          219.0,
+          42.0
+        ],
+        [
+          285.0,
+          42.0
+        ],
+        [
+          285.0,
+          129.0
+        ],
+        [
+          219.0,
+          129.0
+        ]
+      ]
+    },
+    {
+      "text": "PINTS",
+      "confidence": 0.9286351084709168,
+      "polygon": [
+        [
+          209.0,
+          131.0
+        ],
+        [
+          296.0,
+          131.0
+        ],
+        [
+          296.0,
+          162.0
+        ],
+        [
+          209.0,
+          162.0
+        ]
+      ]
+    },
+    {
+      "text": "Binipper",
+      "confidence": 0.8286685943603516,
+      "polygon": [
+        [
+          77.0,
+          254.0
+        ],
+        [
+          178.0,
+          257.0
+        ],
+        [
+          177.0,
+          287.0
+        ],
+        [
+          76.0,
+          284.0
+        ]
+      ]
+    },
+    {
+      "text": "EDIBL",
+      "confidence": 0.9740824818611145,
+      "polygon": [
+        [
+          209.0,
+          270.0
+        ],
+        [
+          241.0,
+          286.0
+        ],
+        [
+          234.0,
+          301.0
+        ],
+        [
+          202.0,
+          285.0
+        ]
+      ]
+    },
+    {
+      "text": "cOO",
+      "confidence": 0.5796540975570679,
+      "polygon": [
+        [
+          341.0,
+          276.0
+        ],
+        [
+          373.0,
+          279.0
+        ],
+        [
+          371.0,
+          294.0
+        ],
+        [
+          340.0,
+          291.0
+        ]
+      ]
+    },
+    {
+      "text": "ED",
+      "confidence": 0.9760159552097321,
+      "polygon": [
+        [
+          374.0,
+          271.0
+        ],
+        [
+          389.0,
+          271.0
+        ],
+        [
+          389.0,
+          286.0
+        ],
+        [
+          374.0,
+          286.0
+        ]
+      ]
+    },
+    {
+      "text": "OONCO",
+      "confidence": 0.6785581588745118,
+      "polygon": [
+        [
+          79.0,
+          289.0
+        ],
+        [
+          126.0,
+          294.0
+        ],
+        [
+          124.0,
+          318.0
+        ],
+        [
+          76.0,
+          312.0
+        ]
+      ]
+    },
+    {
+      "text": "HCO.",
+      "confidence": 0.8850615322589874,
+      "polygon": [
+        [
+          276.0,
+          294.0
+        ],
+        [
+          296.0,
+          296.0
+        ],
+        [
+          296.0,
+          306.0
+        ],
+        [
+          275.0,
+          304.0
+        ]
+      ]
+    },
+    {
+      "text": "DOUGH",
+      "confidence": 0.9768646836280823,
+      "polygon": [
+        [
+          398.0,
+          287.0
+        ],
+        [
+          417.0,
+          336.0
+        ],
+        [
+          400.0,
+          342.0
+        ],
+        [
+          381.0,
+          293.0
+        ]
+      ]
+    },
+    {
+      "text": "GALACTIC FUSION",
+      "confidence": 0.9221944292386373,
+      "polygon": [
+        [
+          272.0,
+          397.0
+        ],
+        [
+          420.0,
+          396.0
+        ],
+        [
+          420.0,
+          421.0
+        ],
+        [
+          273.0,
+          423.0
+        ]
+      ]
+    },
+    {
+      "text": "ROCKET CHIP",
+      "confidence": 0.9685127247463573,
+      "polygon": [
+        [
+          113.0,
+          416.0
+        ],
+        [
+          241.0,
+          415.0
+        ],
+        [
+          241.0,
+          439.0
+        ],
+        [
+          114.0,
+          440.0
+        ]
+      ]
+    },
+    {
+      "text": "COOKIESN'CREAN",
+      "confidence": 0.924864126103265,
+      "polygon": [
+        [
+          306.0,
+          417.0
+        ],
+        [
+          390.0,
+          416.0
+        ],
+        [
+          390.0,
+          430.0
+        ],
+        [
+          306.0,
+          431.0
+        ]
+      ]
+    },
+    {
+      "text": "CHOCOLATECHIPCOOKIE",
+      "confidence": 0.9916264006966039,
+      "polygon": [
+        [
+          117.0,
+          434.0
+        ],
+        [
+          235.0,
+          431.0
+        ],
+        [
+          236.0,
+          450.0
+        ],
+        [
+          118.0,
+          452.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9335931539535522,
+      "foreground_ratio": 0.482956,
+      "rough_coverage": 0.9790331539807161,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.8291715383529663,
+      "foreground_ratio": 0.15094,
+      "rough_coverage": 0.3124466294696524,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.8669572472572327,
+      "foreground_ratio": 0.271308,
+      "rough_coverage": 0.5499216541340917,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\annotations\\target\\review_overlay.png",
+  "observed_seconds": 3.201037399998313
+}

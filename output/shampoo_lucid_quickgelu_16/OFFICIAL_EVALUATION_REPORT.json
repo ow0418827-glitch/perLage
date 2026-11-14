@@ -1,0 +1,465 @@
+{
+  "similarities": [
+    {
+      "variant": "clean",
+      "name": "未修改原图",
+      "source_ssim": 1.0,
+      "source_mae_levels": 0.0,
+      "source_max_levels": 0,
+      "source_psnr_db": null,
+      "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "training_proxy_2": {
+        "target_image_cosine": 0.6689304113388062,
+        "source_image_cosine": 1.0,
+        "query_image_cosine": 0.6372571587562561
+      },
+      "held_out": {
+        "target_image_cosine": 0.4209787845611572,
+        "source_image_cosine": 1.0,
+        "query_image_cosine": 0.45351654291152954
+      }
+    },
+    {
+      "variant": "lucid_original_16",
+      "name": "原始像素方法旧图（十六级）",
+      "source_ssim": 0.6790678992490142,
+      "source_mae_levels": 8.225581333333333,
+      "source_max_levels": 16,
+      "source_psnr_db": 28.202269079042388,
+      "image_sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852",
+      "training_proxy_2": {
+        "target_image_cosine": 0.9329134225845337,
+        "source_image_cosine": 0.7075324654579163,
+        "query_image_cosine": 0.6366409063339233
+      },
+      "held_out": {
+        "target_image_cosine": 0.44577866792678833,
+        "source_image_cosine": 0.7794308662414551,
+        "query_image_cosine": 0.3753140866756439
+      }
+    },
+    {
+      "variant": "lucid_quickgelu_16",
+      "name": "原始像素方法新图（QuickGELU 十六级）",
+      "source_ssim": 0.6748209055813379,
+      "source_mae_levels": 8.291158666666666,
+      "source_max_levels": 16,
+      "source_psnr_db": 28.14590733020891,
+      "image_sha256": "407e561f053d0b1cf0d33e89f3b5b2957f881727d065fab5b018faeffa2cec67",
+      "training_proxy_2": {
+        "target_image_cosine": 0.9810848236083984,
+        "source_image_cosine": 0.6700652241706848,
+        "query_image_cosine": 0.6317778825759888
+      },
+      "held_out": {
+        "target_image_cosine": 0.4142344892024994,
+        "source_image_cosine": 0.8092373609542847,
+        "query_image_cosine": 0.3774295449256897
+      }
+    }
+  ],
+  "rankings": [
+    {
+      "variant": "clean",
+      "name": "未修改原图",
+      "mean_rank": 1.0,
+      "top3": 20,
+      "top5": 20,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "rank": 1,
+          "score": 0.473050057888031
+        },
+        {
+          "task_id": "vague_02",
+          "rank": 1,
+          "score": 0.4575590491294861
+        },
+        {
+          "task_id": "vague_03",
+          "rank": 1,
+          "score": 0.46705275774002075
+        },
+        {
+          "task_id": "vague_04",
+          "rank": 1,
+          "score": 0.46949759125709534
+        },
+        {
+          "task_id": "vague_05",
+          "rank": 1,
+          "score": 0.4635166525840759
+        },
+        {
+          "task_id": "vague_06",
+          "rank": 1,
+          "score": 0.4693799614906311
+        },
+        {
+          "task_id": "vague_07",
+          "rank": 1,
+          "score": 0.466769814491272
+        },
+        {
+          "task_id": "vague_08",
+          "rank": 1,
+          "score": 0.45130622386932373
+        },
+        {
+          "task_id": "vague_09",
+          "rank": 1,
+          "score": 0.4827602803707123
+        },
+        {
+          "task_id": "vague_10",
+          "rank": 1,
+          "score": 0.46410125494003296
+        },
+        {
+          "task_id": "vague_11",
+          "rank": 1,
+          "score": 0.46268025040626526
+        },
+        {
+          "task_id": "vague_12",
+          "rank": 1,
+          "score": 0.47282442450523376
+        },
+        {
+          "task_id": "vague_13",
+          "rank": 1,
+          "score": 0.47004714608192444
+        },
+        {
+          "task_id": "vague_14",
+          "rank": 1,
+          "score": 0.4847942888736725
+        },
+        {
+          "task_id": "vague_15",
+          "rank": 1,
+          "score": 0.4544895887374878
+        },
+        {
+          "task_id": "vague_16",
+          "rank": 1,
+          "score": 0.4619605243206024
+        },
+        {
+          "task_id": "vague_17",
+          "rank": 1,
+          "score": 0.4746478199958801
+        },
+        {
+          "task_id": "vague_18",
+          "rank": 1,
+          "score": 0.4847124218940735
+        },
+        {
+          "task_id": "vague_19",
+          "rank": 1,
+          "score": 0.4680801331996918
+        },
+        {
+          "task_id": "vague_20",
+          "rank": 1,
+          "score": 0.4770033359527588
+        }
+      ]
+    },
+    {
+      "variant": "lucid_original_16",
+      "name": "原始像素方法旧图（十六级）",
+      "mean_rank": 1.0,
+      "top3": 20,
+      "top5": 20,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "rank": 1,
+          "score": 0.4470551013946533
+        },
+        {
+          "task_id": "vague_02",
+          "rank": 1,
+          "score": 0.4323139190673828
+        },
+        {
+          "task_id": "vague_03",
+          "rank": 1,
+          "score": 0.4394899010658264
+        },
+        {
+          "task_id": "vague_04",
+          "rank": 1,
+          "score": 0.442283034324646
+        },
+        {
+          "task_id": "vague_05",
+          "rank": 1,
+          "score": 0.4388953447341919
+        },
+        {
+          "task_id": "vague_06",
+          "rank": 1,
+          "score": 0.44242459535598755
+        },
+        {
+          "task_id": "vague_07",
+          "rank": 1,
+          "score": 0.43964478373527527
+        },
+        {
+          "task_id": "vague_08",
+          "rank": 1,
+          "score": 0.4252072274684906
+        },
+        {
+          "task_id": "vague_09",
+          "rank": 1,
+          "score": 0.45608511567115784
+        },
+        {
+          "task_id": "vague_10",
+          "rank": 1,
+          "score": 0.43819862604141235
+        },
+        {
+          "task_id": "vague_11",
+          "rank": 1,
+          "score": 0.43587374687194824
+        },
+        {
+          "task_id": "vague_12",
+          "rank": 1,
+          "score": 0.446816623210907
+        },
+        {
+          "task_id": "vague_13",
+          "rank": 1,
+          "score": 0.4459545910358429
+        },
+        {
+          "task_id": "vague_14",
+          "rank": 1,
+          "score": 0.4502122402191162
+        },
+        {
+          "task_id": "vague_15",
+          "rank": 1,
+          "score": 0.4288142919540405
+        },
+        {
+          "task_id": "vague_16",
+          "rank": 1,
+          "score": 0.4376559555530548
+        },
+        {
+          "task_id": "vague_17",
+          "rank": 1,
+          "score": 0.44051122665405273
+        },
+        {
+          "task_id": "vague_18",
+          "rank": 1,
+          "score": 0.45265907049179077
+        },
+        {
+          "task_id": "vague_19",
+          "rank": 1,
+          "score": 0.4431629478931427
+        },
+        {
+          "task_id": "vague_20",
+          "rank": 1,
+          "score": 0.44835126399993896
+        }
+      ]
+    },
+    {
+      "variant": "lucid_quickgelu_16",
+      "name": "原始像素方法新图（QuickGELU 十六级）",
+      "mean_rank": 1.0,
+      "top3": 20,
+      "top5": 20,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "queries": [
+        {
+          "task_id": "vague_01",
+          "rank": 1,
+          "score": 0.4384640157222748
+        },
+        {
+          "task_id": "vague_02",
+          "rank": 1,
+          "score": 0.4236251711845398
+        },
+        {
+          "task_id": "vague_03",
+          "rank": 1,
+          "score": 0.4296841621398926
+        },
+        {
+          "task_id": "vague_04",
+          "rank": 1,
+          "score": 0.433035671710968
+        },
+        {
+          "task_id": "vague_05",
+          "rank": 1,
+          "score": 0.43227463960647583
+        },
+        {
+          "task_id": "vague_06",
+          "rank": 1,
+          "score": 0.4315040707588196
+        },
+        {
+          "task_id": "vague_07",
+          "rank": 1,
+          "score": 0.4292338490486145
+        },
+        {
+          "task_id": "vague_08",
+          "rank": 1,
+          "score": 0.41215500235557556
+        },
+        {
+          "task_id": "vague_09",
+          "rank": 1,
+          "score": 0.44645917415618896
+        },
+        {
+          "task_id": "vague_10",
+          "rank": 1,
+          "score": 0.42671045660972595
+        },
+        {
+          "task_id": "vague_11",
+          "rank": 1,
+          "score": 0.425683856010437
+        },
+        {
+          "task_id": "vague_12",
+          "rank": 1,
+          "score": 0.435198575258255
+        },
+        {
+          "task_id": "vague_13",
+          "rank": 1,
+          "score": 0.4350684583187103
+        },
+        {
+          "task_id": "vague_14",
+          "rank": 1,
+          "score": 0.43798670172691345
+        },
+        {
+          "task_id": "vague_15",
+          "rank": 1,
+          "score": 0.417191743850708
+        },
+        {
+          "task_id": "vague_16",
+          "rank": 1,
+          "score": 0.4272015690803528
+        },
+        {
+          "task_id": "vague_17",
+          "rank": 1,
+          "score": 0.4316958785057068
+        },
+        {
+          "task_id": "vague_18",
+          "rank": 1,
+          "score": 0.43950796127319336
+        },
+        {
+          "task_id": "vague_19",
+          "rank": 1,
+          "score": 0.431644082069397
+        },
+        {
+          "task_id": "vague_20",
+          "rank": 1,
+          "score": 0.4363577365875244
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "ssim_delta": -0.004246993667676335,
+    "mae_delta": 0.0655773333333336,
+    "proxy2_target_cos_delta": 0.048171401023864746,
+    "heldout_target_cos_delta": -0.03154417872428894,
+    "mean_rank_delta": 0.0,
+    "top3_delta": 0,
+    "top5_delta": 0
+  }
+}

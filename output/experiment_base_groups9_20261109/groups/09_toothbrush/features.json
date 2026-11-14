@@ -1,0 +1,153 @@
+{
+  "group": "09_toothbrush",
+  "category": "oral_care",
+  "target": {
+    "asin": "B09J81RMLD",
+    "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "reason": "Baby U describes the intended user and brush shape; no explicit brand attribution is present."
+    },
+    "category": "toothbrush",
+    "attributes": [
+      "a U-shaped design",
+      "soft silicone brush heads",
+      "360-degree cleaning",
+      "a handle designed for small hands",
+      "brush head",
+      "teeth whitening",
+      "easy use"
+    ],
+    "canonical_sentence": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+    "training_queries": [
+      "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+      "I would like to purchase a toothbrush featuring a U-shaped design and 360-degree cleaning.",
+      "I am looking for a toothbrush with soft silicone brush heads and a handle designed for small hands."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a U-shaped design",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "U-Shaped Design"
+      },
+      {
+        "feature": "soft silicone brush heads",
+        "field": "Title",
+        "quote": "Soft Silicone Brush Heads"
+      },
+      {
+        "feature": "360-degree cleaning",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "360 Cleansing Method"
+      },
+      {
+        "feature": "a handle designed for small hands",
+        "field": "BulletPoints",
+        "index": 5,
+        "quote": "Easy for small hands to grip"
+      },
+      {
+        "feature": "brush head",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "brush head"
+      },
+      {
+        "feature": "teeth whitening",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "teeth whitening"
+      },
+      {
+        "feature": "easy use",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "easy use"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a U-shaped design",
+      "soft silicone brush heads",
+      "360-degree cleaning",
+      "a handle designed for small hands"
+    ]
+  },
+  "source": {
+    "asin": "B09PNNXYJ4",
+    "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+    "brand": "Tthxqing",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Tthxqing",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "toothbrush",
+    "attributes": [
+      "a U-shaped design",
+      "soft silicone brush heads",
+      "360-degree cleaning",
+      "food-grade silicone",
+      "brush head",
+      "easy use"
+    ],
+    "canonical_sentence": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+    "training_queries": [
+      "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+      "I would like to purchase a toothbrush featuring a U-shaped design and 360-degree cleaning.",
+      "I am looking for a toothbrush with soft silicone brush heads and food-grade silicone."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a U-shaped design",
+        "field": "Title",
+        "quote": "U shaped Toothbrush"
+      },
+      {
+        "feature": "soft silicone brush heads",
+        "field": "Title",
+        "quote": "Soft Silicone Brush Head"
+      },
+      {
+        "feature": "360-degree cleaning",
+        "field": "Title",
+        "quote": "360 Degrees"
+      },
+      {
+        "feature": "food-grade silicone",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "food grade silicone"
+      },
+      {
+        "feature": "brush head",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "brush head"
+      },
+      {
+        "feature": "easy use",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "easy use"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a U-shaped design",
+      "soft silicone brush heads",
+      "360-degree cleaning",
+      "food-grade silicone"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "alignment_training_queries": [
+    "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+    "I would like to purchase a toothbrush featuring a U-shaped design and 360-degree cleaning.",
+    "I am looking for a toothbrush with soft silicone brush heads and a handle designed for small hands."
+  ]
+}

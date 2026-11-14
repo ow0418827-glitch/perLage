@@ -1,0 +1,10 @@
+{
+  "status": "completed_in_fresh_process",
+  "protocol": "runtime_release_after_completed_initialization_v1",
+  "initial_ready_sha256": "1e674f12b654875104bd49d4405fb164b1f58eb4e553eca4e9799c505b2b8a32",
+  "checkpoint_sha256": "3467055036f8916b79d7745dda3a2ca6272918095e08c540849b38b468789dc8",
+  "completed_latent_steps": 0,
+  "resumed_at": "2026-11-04T15:48:59.149186+00:00",
+  "numeric_defaults_unchanged": true,
+  "completed_at": "2026-11-04T16:15:29.444780+00:00"
+}

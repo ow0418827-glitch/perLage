@@ -1,0 +1,20 @@
+{
+  "pid": 6448,
+  "command": [
+    "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-u",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_target_image_20261111.py",
+    "--run",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111",
+    "--stage",
+    "verify",
+    "--method",
+    "perlage_no_pixel"
+  ],
+  "stage": "verify",
+  "method": "perlage_no_pixel",
+  "launched_at": "2026-11-11T10:47:28Z"
+}

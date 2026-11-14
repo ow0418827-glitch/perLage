@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "task_id": "feature_19",
+  "selected_ids": [
+    "public_912593f46bfd7a1bcaa4feaacebdca085de196325bc8d38b9bdbe3b1f88f4c3f",
+    "public_ab151ab449ce85ee45b82ba5f0dc96ddc030c96c663351e64188b4ee7fcb1b34",
+    "public_30b247653dadaa6e1cd9faffba4bf1791991b30ffa411114ca056535ab01ae40"
+  ],
+  "source_rank": 5,
+  "query_unchanged": true,
+  "model_and_guidance_unchanged": true,
+  "images_verified_before_each_api_call": true,
+  "memory_count": 3
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": true,
+  "target_feature_text": "I want to buy curtains with blackout drapes and vintage wood board texture.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Window Treatment Semi-Sheer Curtain Valance for Living Room, Bedroom, Kitchen, Bathroom, Rustic Wood Board Texture Printed Valances Rod Pocket Small Windows Curtains, 54x18 Inch, 1 Panel",
+    "training_queries": [
+      "I want to buy curtains with blackout drapes and vintage wood board texture."
+    ]
+  },
+  "source_boxes": [
+    [
+      23,
+      24,
+      479,
+      487
+    ]
+  ],
+  "target_boxes": [
+    [
+      65,
+      7,
+      438,
+      494
+    ]
+  ],
+  "print_regions": [
+    [
+      0.316,
+      0.342,
+      0.704,
+      0.62
+    ]
+  ]
+}

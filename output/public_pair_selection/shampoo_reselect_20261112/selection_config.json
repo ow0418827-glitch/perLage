@@ -1,0 +1,22 @@
+{
+  "schema_version": 2,
+  "seed": 42,
+  "candidate_limit": 32,
+  "calibration_path": "output/public_pair_selection/shampoo_reselect_20261112/data/calibration/threshold.json",
+  "models": {
+    "batch_size": 16
+  },
+  "groups": [
+    {
+      "key": "07_shampoo",
+      "target_id": "B00BDJODWI"
+    }
+  ],
+  "subtype_filters": {
+    "07_shampoo": {
+      "policy": "shampoo_human_hair_only_v1",
+      "include": "\\bshampoos?\\b|洗发",
+      "exclude": "\\b(?:carpet|rug|upholstery|auto|car|pet|dog|cat|puppy|horse|equine|floor|machine|extracter|extractor|empty|wig|doll|cape|basin|station)\\b|\\bshampoo\\s+(?:brush|bowl|sink|mat|tray|cap|dispenser|bottles?\\s+set)s?\\b|\\brefillable\\b.*\\bbottles?\\b"
+    }
+  }
+}

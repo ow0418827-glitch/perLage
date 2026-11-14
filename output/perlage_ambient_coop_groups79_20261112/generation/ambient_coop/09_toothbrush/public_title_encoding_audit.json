@@ -1,0 +1,56 @@
+{
+  "algorithm": "public_fullkey_joint_and_analytic_compensated_image_v1",
+  "source_public_key_text": "Title: Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)\nBrand: Tthxqing\nFeatures: a U-shaped design, soft silicone brush heads, 360-degree cleaning, food-grade silicone, brush head, easy use\nFeatureText: I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "source_public_key_sha256": "7a9d1b9bb1fc81c4dc16871e4906690c647a1d5eda87a5f1c93fcbceee6ccdb8",
+  "source_public_key_audit": {
+    "text_sha256": "7a9d1b9bb1fc81c4dc16871e4906690c647a1d5eda87a5f1c93fcbceee6ccdb8",
+    "input_tokens": 98,
+    "encoded_tokens": 98,
+    "chunks": 2,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      75,
+      23
+    ],
+    "truncated": false
+  },
+  "training_query_audit": {
+    "text_sha256": "26774577d537636d47e2575be221c779ae5c3047468c0f8563e94a0fa92d9636",
+    "input_tokens": 18,
+    "encoded_tokens": 18,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      18
+    ],
+    "truncated": false
+  },
+  "training_queries": [
+    "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads."
+  ],
+  "query_image": "target_image_unpurified",
+  "query_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "key_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "joint_compensated_objective_weight": [
+    0.5,
+    0.5
+  ],
+  "compensated_formula": "unit(2*dot(query,own)*query-own)",
+  "query_own_cosine": [
+    [
+      0.6431514024734497
+    ]
+  ],
+  "compensation_valid": [
+    true
+  ],
+  "private_gallery_used": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false
+}

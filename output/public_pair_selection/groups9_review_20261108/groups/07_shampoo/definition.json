@@ -1,0 +1,193 @@
+{
+  "schema_version": 2,
+  "group": "07_shampoo",
+  "name": "第七组洗发水",
+  "category": "personal_care",
+  "shape_similarity": 0.6185,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": true,
+  "selection_status": "frozen_historical_reuse",
+  "selection_notes": "按公子明确指示：直接复用既有洗发水图对（多芬洗手液作为源商品，艾凡达洗发水作为目标商品），不重新选图。",
+  "target": {
+    "id": "B00BDJODWI",
+    "title": "Aveda Invati Advanced Exfoliating Shampoo Rich - 6.7 oz",
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        2,
+        5,
+        158,
+        494
+      ]
+    ],
+    "text_regions": [
+      [
+        0.275,
+        0.314,
+        0.68125,
+        0.356
+      ],
+      [
+        0.20625,
+        0.352,
+        0.675,
+        0.38
+      ],
+      [
+        0.21875,
+        0.344,
+        0.70625,
+        0.37
+      ],
+      [
+        0.1375,
+        0.454,
+        0.8375,
+        0.502
+      ],
+      [
+        0.2,
+        0.528,
+        0.78125,
+        0.562
+      ],
+      [
+        0.1375,
+        0.554,
+        0.84375,
+        0.588
+      ],
+      [
+        0.20625,
+        0.818,
+        0.75,
+        0.852
+      ],
+      [
+        0.24375,
+        0.856,
+        0.7,
+        0.882
+      ],
+      [
+        0.25,
+        0.842,
+        0.7,
+        0.87
+      ],
+      [
+        0.2,
+        0.9,
+        0.75625,
+        0.94
+      ]
+    ]
+  },
+  "source": {
+    "id": "B08XYBS678",
+    "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        20,
+        59,
+        478,
+        428
+      ]
+    ],
+    "text_regions": [
+      [
+        0.072,
+        0.572,
+        0.19,
+        0.638
+      ],
+      [
+        0.266,
+        0.58,
+        0.404,
+        0.66
+      ],
+      [
+        0.07,
+        0.624,
+        0.156,
+        0.66
+      ],
+      [
+        0.782,
+        0.614,
+        0.838,
+        0.65
+      ],
+      [
+        0.068,
+        0.636,
+        0.21,
+        0.68
+      ],
+      [
+        0.272,
+        0.644,
+        0.364,
+        0.68
+      ],
+      [
+        0.58,
+        0.638,
+        0.65,
+        0.678
+      ],
+      [
+        0.08,
+        0.662,
+        0.218,
+        0.692
+      ],
+      [
+        0.266,
+        0.66,
+        0.428,
+        0.704
+      ],
+      [
+        0.276,
+        0.684,
+        0.468,
+        0.72
+      ],
+      [
+        0.146,
+        0.712,
+        0.246,
+        0.752
+      ],
+      [
+        0.286,
+        0.708,
+        0.43,
+        0.74
+      ],
+      [
+        0.302,
+        0.72,
+        0.468,
+        0.754
+      ],
+      [
+        0.586,
+        0.712,
+        0.69,
+        0.752
+      ],
+      [
+        0.356,
+        0.746,
+        0.472,
+        0.788
+      ]
+    ]
+  }
+}

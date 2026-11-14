@@ -1,0 +1,18 @@
+{
+  "status": "frozen",
+  "images": {
+    "lucid": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\generation\\lucid\\07_shampoo\\frozen.png",
+        "raw_adversarial": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\generation\\lucid\\07_shampoo\\generation\\adversarial.png",
+        "sha256": "dfd43aa9e1b45cefacb6adac7641712ca416cf539a64a6831f21acc6ed4aa800",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\generation\\lucid\\07_shampoo\\generation\\generation_result.json",
+        "ready_sha256": "6ee7fd70d78ec5413e08823d5d6022ddcbcb775fe3e822ced8d9768997227c97",
+        "frozen_json": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\generation\\lucid\\07_shampoo\\FROZEN_IMAGE.json",
+        "frozen_json_sha256": "b65bc6db71c6232c8aed26fa91bc67ff3438e9a4a3460fe7d2f39ece339f4b7c"
+      }
+    }
+  },
+  "plan_sha256": "cabdb7ca2d9f7db10f53eaef1bd656e9be5daa957e63d58cecfbecbb793af579",
+  "formal_rankings_used": false
+}

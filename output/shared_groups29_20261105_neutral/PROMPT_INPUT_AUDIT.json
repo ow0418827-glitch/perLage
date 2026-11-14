@@ -1,0 +1,891 @@
+{
+  "episodes": 80,
+  "policy_actions": 451,
+  "all_actions_format_valid": false,
+  "exact_neutral_guidance": true,
+  "base_system_prompt_unchanged": true,
+  "requested_first_three_order_count": 58,
+  "action_orders": [
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_01",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_02",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_03",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_04",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_05",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_06",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_07",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_08",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_09",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_10",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_11",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_12",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_13",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_14",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_15",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_16",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_17",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_18",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_19",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "clean",
+      "task_id": "vague_20",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_01",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_02",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_03",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_04",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_05",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_06",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_07",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_08",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_09",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_10",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_11",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_12",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_13",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_14",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_15",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_16",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_17",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_18",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_19",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "clean",
+      "task_id": "vague_20",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_01",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_02",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_03",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_04",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_05",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_06",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_07",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_08",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_09",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_10",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_11",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_12",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_13",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_14",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_15",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_16",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_17",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_18",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_19",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "02_chair",
+      "bank": "modified",
+      "task_id": "vague_20",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_01",
+      "first_three": [
+        "think",
+        "think",
+        "search"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_02",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_03",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_04",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_05",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_06",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_07",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_08",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_09",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_10",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_11",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_12",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_13",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_14",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_15",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_16",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_17",
+      "first_three": [
+        "think",
+        "search",
+        "__invalid_action_format__"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_18",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_19",
+      "first_three": [
+        "think",
+        "search",
+        "think"
+      ],
+      "follows_requested_order": true
+    },
+    {
+      "group": "09_toothbrush",
+      "bank": "modified",
+      "task_id": "vague_20",
+      "first_three": [
+        "think",
+        "search",
+        "click"
+      ],
+      "follows_requested_order": false
+    }
+  ],
+  "original_inputs_unchanged": true
+}

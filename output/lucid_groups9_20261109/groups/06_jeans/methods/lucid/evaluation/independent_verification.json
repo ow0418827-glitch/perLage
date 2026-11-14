@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "rows": 2,
+  "rankings_recomputed": 40,
+  "max_score_error": 0.0,
+  "evaluated_file_sha256": "02b910e247c301198890620314928874e4a8b665f701be5d2722aec909f9e4fd",
+  "evaluation_plan_sha256": "b2490611c3a3f9c872c1a59dca55d99b43d017c616baf153b0f5aa3a799218e6",
+  "fresh_encoder": true,
+  "recomputed_embeddings_and_rankings": true
+}

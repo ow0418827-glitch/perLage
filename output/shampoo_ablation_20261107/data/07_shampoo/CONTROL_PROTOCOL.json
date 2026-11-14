@@ -1,0 +1,16 @@
+{
+  "primary_baseline": "perlage_original_no_shadow",
+  "same_public_pair": true,
+  "same_public_title": true,
+  "same_training_queries": true,
+  "same_generation_plan_and_seed": true,
+  "same_latent_schedule_and_quality_limits": true,
+  "changed_factors": [
+    "remove_initialization_pixel_stages",
+    "remove_fixed_auxiliary_pixel_residual"
+  ],
+  "final_latent_steps": 40,
+  "initialization_latent_steps": 80,
+  "later_color_revision_is_secondary_reference": true,
+  "shopping_runs": 0
+}

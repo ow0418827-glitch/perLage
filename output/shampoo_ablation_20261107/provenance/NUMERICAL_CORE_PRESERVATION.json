@@ -1,0 +1,37 @@
+{
+  "method": "AST comparison of mathematical functions",
+  "functions": [
+    {
+      "function": "pixel_update",
+      "ast_identical": true
+    },
+    {
+      "function": "token_kmeans",
+      "ast_identical": true
+    },
+    {
+      "function": "sinkhorn_plan",
+      "ast_identical": true
+    },
+    {
+      "function": "local_ot_similarity_from_centers",
+      "ast_identical": true
+    },
+    {
+      "function": "local_ot_similarity",
+      "ast_identical": true
+    },
+    {
+      "function": "prepare_targets",
+      "ast_identical": true
+    },
+    {
+      "function": "joint_objective",
+      "ast_identical": true
+    },
+    {
+      "function": "evaluate_objective",
+      "ast_identical": true
+    }
+  ]
+}

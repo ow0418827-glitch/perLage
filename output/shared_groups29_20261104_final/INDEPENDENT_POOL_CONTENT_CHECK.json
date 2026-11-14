@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "retained_records": 98,
+  "retained_history_title_image_content_unchanged": true,
+  "image_locations_rebased_to_new_project": true,
+  "image_hashes_checked": 196,
+  "retained_order_unchanged": true,
+  "pool_count": 100,
+  "modified_pool_count": 100,
+  "removed_ids": [
+    "shared_384fa8fb34b4075ba3d8b8ffb83ce243e21c386bc3ef7d5773ad38f1d977c38f",
+    "shared_2486f6d40745289c1e715506a537c98841bb64440910403aea3da9be4cae3aec"
+  ],
+  "new_source_ids": [
+    "perlage_02_chair_source",
+    "perlage_09_toothbrush_source"
+  ],
+  "new_sources_all_completed": true,
+  "record_kinds": {
+    "purchase_memory": 61,
+    "simulated_gallery": 39
+  },
+  "modified_image_count": 2,
+  "old_bad_source_asins_remaining": 0,
+  "issues": []
+}

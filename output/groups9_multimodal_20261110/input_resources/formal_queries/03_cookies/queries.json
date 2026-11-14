@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B08Z8MHWVS",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "cookie dough",
+  "core_attributes": [
+    "natural ingredients",
+    "chocolate chips",
+    "an egg-free recipe"
+  ],
+  "instructions": [
+    "I want to buy cookie dough with natural ingredients and chocolate chips.",
+    "I would like to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Looking to buy cookie dough with chocolate chips and an egg-free recipe.",
+    "I am looking to buy cookie dough with natural ingredients and chocolate chips.",
+    "Please help me buy cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I am shopping for cookie dough with chocolate chips and an egg-free recipe.",
+    "I would like to buy cookie dough with natural ingredients and chocolate chips.",
+    "Help me purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I am looking for cookie dough with chocolate chips and an egg-free recipe.",
+    "Please find cookie dough with natural ingredients and chocolate chips for me to buy.",
+    "I want to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Please help me purchase cookie dough with chocolate chips and an egg-free recipe.",
+    "I need to buy cookie dough with natural ingredients and chocolate chips.",
+    "I would like help finding cookie dough featuring natural ingredients and an egg-free recipe.",
+    "Find me cookie dough with chocolate chips and an egg-free recipe to purchase.",
+    "Please look for cookie dough with natural ingredients and chocolate chips that I can buy.",
+    "I am interested in buying cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I would like to shop for cookie dough with chocolate chips and an egg-free recipe.",
+    "Help me find cookie dough with natural ingredients and chocolate chips to buy.",
+    "I am ready to purchase cookie dough featuring natural ingredients and an egg-free recipe."
+  ],
+  "instructions_sha256": "86512b6947c56ad97319243295f836299043954f0af069e07a947c88dcc34f23",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\03_cookies\\query.png",
+  "sha256": "a36d3ba149035824b5a06edda53774239a7f970f9001df99d53ae15207e8353c",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：透明无标签容器内巧克力豆面团与小勺，无品牌、商品名或包装文字。",
+    "image_sha256": "a36d3ba149035824b5a06edda53774239a7f970f9001df99d53ae15207e8353c",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error_type": "RuntimeError",
+  "message": "串行阶段失败：lucid shopping，退出码1，见对应阶段日志",
+  "stage": "queue",
+  "method": null,
+  "failed_at": "2026-11-11T04:14:53Z"
+}

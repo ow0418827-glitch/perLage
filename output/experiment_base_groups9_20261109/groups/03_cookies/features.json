@@ -1,0 +1,171 @@
+{
+  "group": "03_cookies",
+  "category": "cookies",
+  "target": {
+    "asin": "B08Z8MHWVS",
+    "title": "Eggless Raw Edible Cookie Dough, Edible Frozen Cookie Dough - Big Dipper Dough Co: (2 Pints-ChocoChip & CookienCream)",
+    "brand": "Big Dipper Dough Co",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Big Dipper Dough Co",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "cookie dough",
+    "attributes": [
+      "natural ingredients",
+      "chocolate chips",
+      "an egg-free recipe",
+      "a ready-to-eat recipe",
+      "chocolate chip",
+      "wheat flour",
+      "ready eat",
+      "sea salt",
+      "ice cream"
+    ],
+    "canonical_sentence": "I want to buy cookie dough with natural ingredients and chocolate chips.",
+    "training_queries": [
+      "I want to buy cookie dough with natural ingredients and chocolate chips.",
+      "I would like to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+      "I am looking for cookie dough with chocolate chips and a ready-to-eat recipe."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "natural ingredients",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "All-natural Ingredients"
+      },
+      {
+        "feature": "chocolate chips",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "chocolate chips"
+      },
+      {
+        "feature": "an egg-free recipe",
+        "field": "BulletPoints",
+        "index": 3,
+        "quote": "egg-free"
+      },
+      {
+        "feature": "a ready-to-eat recipe",
+        "field": "BulletPoints",
+        "index": 4,
+        "quote": "Ready to Eat"
+      },
+      {
+        "feature": "chocolate chip",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "chocolate chip"
+      },
+      {
+        "feature": "wheat flour",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "wheat flour"
+      },
+      {
+        "feature": "ready eat",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "ready eat"
+      },
+      {
+        "feature": "sea salt",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "sea salt"
+      },
+      {
+        "feature": "ice cream",
+        "field": "Attributes",
+        "index": 5,
+        "quote": "ice cream"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "natural ingredients",
+      "chocolate chips",
+      "an egg-free recipe",
+      "a ready-to-eat recipe"
+    ]
+  },
+  "source": {
+    "asin": "B07BBLWTLM",
+    "title": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+    "brand": "Natural Decadence",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Natural Decadence",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "cookie dough",
+    "attributes": [
+      "chocolate chips",
+      "a nut-free recipe",
+      "a gluten-free recipe",
+      "a vegan recipe",
+      "chocolate chip",
+      "nut free"
+    ],
+    "canonical_sentence": "I want to buy cookie dough with chocolate chips and a nut-free recipe.",
+    "training_queries": [
+      "I want to buy cookie dough with chocolate chips and a nut-free recipe.",
+      "I would like to purchase cookie dough featuring chocolate chips and a gluten-free recipe.",
+      "I am looking for cookie dough with a nut-free recipe and a vegan recipe."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "chocolate chips",
+        "field": "Title",
+        "quote": "Chocolate Chip"
+      },
+      {
+        "feature": "a nut-free recipe",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "Nut-free"
+      },
+      {
+        "feature": "a gluten-free recipe",
+        "field": "Description",
+        "quote": "gluten-free"
+      },
+      {
+        "feature": "a vegan recipe",
+        "field": "BulletPoints",
+        "index": 4,
+        "quote": "Vegan"
+      },
+      {
+        "feature": "chocolate chip",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "chocolate chip"
+      },
+      {
+        "feature": "nut free",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "nut free"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "chocolate chips",
+      "a nut-free recipe",
+      "a gluten-free recipe",
+      "a vegan recipe"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy cookie dough with natural ingredients and chocolate chips.",
+  "alignment_training_queries": [
+    "I want to buy cookie dough with natural ingredients and chocolate chips.",
+    "I would like to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+    "I am looking for cookie dough with chocolate chips and a ready-to-eat recipe."
+  ]
+}

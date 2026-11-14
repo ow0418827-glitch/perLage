@@ -1,0 +1,483 @@
+{
+  "id": "B08XYBS678",
+  "identity": {
+    "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\source.jpg",
+  "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "79f5354921f485908634917e469bae4d8be3904ba9ee4af409eda3ec9218f727",
+  "boxes": [
+    [
+      20,
+      59,
+      478,
+      428
+    ]
+  ],
+  "text_regions": [
+    [
+      0.072,
+      0.572,
+      0.19,
+      0.638
+    ],
+    [
+      0.266,
+      0.58,
+      0.404,
+      0.66
+    ],
+    [
+      0.07,
+      0.624,
+      0.156,
+      0.66
+    ],
+    [
+      0.782,
+      0.614,
+      0.838,
+      0.65
+    ],
+    [
+      0.068,
+      0.636,
+      0.21,
+      0.68
+    ],
+    [
+      0.272,
+      0.644,
+      0.364,
+      0.68
+    ],
+    [
+      0.58,
+      0.638,
+      0.65,
+      0.678
+    ],
+    [
+      0.08,
+      0.662,
+      0.218,
+      0.692
+    ],
+    [
+      0.266,
+      0.66,
+      0.428,
+      0.704
+    ],
+    [
+      0.276,
+      0.684,
+      0.468,
+      0.72
+    ],
+    [
+      0.146,
+      0.712,
+      0.246,
+      0.752
+    ],
+    [
+      0.286,
+      0.708,
+      0.43,
+      0.74
+    ],
+    [
+      0.302,
+      0.72,
+      0.468,
+      0.754
+    ],
+    [
+      0.586,
+      0.712,
+      0.69,
+      0.752
+    ],
+    [
+      0.356,
+      0.746,
+      0.472,
+      0.788
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "Dove",
+      "confidence": 0.9978113174438477,
+      "polygon": [
+        [
+          41.0,
+          289.0
+        ],
+        [
+          92.0,
+          293.0
+        ],
+        [
+          90.0,
+          316.0
+        ],
+        [
+          39.0,
+          311.0
+        ]
+      ]
+    },
+    {
+      "text": "Dove",
+      "confidence": 0.9988384246826172,
+      "polygon": [
+        [
+          140.0,
+          293.0
+        ],
+        [
+          199.0,
+          300.0
+        ],
+        [
+          196.0,
+          327.0
+        ],
+        [
+          136.0,
+          320.0
+        ]
+      ]
+    },
+    {
+      "text": "coconut",
+      "confidence": 0.8743793538638523,
+      "polygon": [
+        [
+          38.0,
+          315.0
+        ],
+        [
+          75.0,
+          315.0
+        ],
+        [
+          75.0,
+          327.0
+        ],
+        [
+          38.0,
+          327.0
+        ]
+      ]
+    },
+    {
+      "text": "milk",
+      "confidence": 0.8438950330018997,
+      "polygon": [
+        [
+          394.0,
+          310.0
+        ],
+        [
+          416.0,
+          310.0
+        ],
+        [
+          416.0,
+          322.0
+        ],
+        [
+          394.0,
+          322.0
+        ]
+      ]
+    },
+    {
+      "text": "&almondmilk",
+      "confidence": 0.9642099033702504,
+      "polygon": [
+        [
+          37.0,
+          321.0
+        ],
+        [
+          102.0,
+          323.0
+        ],
+        [
+          102.0,
+          337.0
+        ],
+        [
+          37.0,
+          335.0
+        ]
+      ]
+    },
+    {
+      "text": "coconut",
+      "confidence": 0.9758759822164264,
+      "polygon": [
+        [
+          139.0,
+          325.0
+        ],
+        [
+          179.0,
+          325.0
+        ],
+        [
+          179.0,
+          337.0
+        ],
+        [
+          139.0,
+          337.0
+        ]
+      ]
+    },
+    {
+      "text": "Imilk",
+      "confidence": 0.8800926923751831,
+      "polygon": [
+        [
+          293.0,
+          322.0
+        ],
+        [
+          322.0,
+          322.0
+        ],
+        [
+          322.0,
+          336.0
+        ],
+        [
+          293.0,
+          336.0
+        ]
+      ]
+    },
+    {
+      "text": "VURWNG ROONC HVO",
+      "confidence": 0.6436749994754791,
+      "polygon": [
+        [
+          43.0,
+          334.0
+        ],
+        [
+          106.0,
+          334.0
+        ],
+        [
+          106.0,
+          343.0
+        ],
+        [
+          43.0,
+          343.0
+        ]
+      ]
+    },
+    {
+      "text": "&almondmilk",
+      "confidence": 0.935550798069347,
+      "polygon": [
+        [
+          137.0,
+          333.0
+        ],
+        [
+          211.0,
+          334.0
+        ],
+        [
+          210.0,
+          349.0
+        ],
+        [
+          136.0,
+          347.0
+        ]
+      ]
+    },
+    {
+      "text": "NUHNGIOINGHNEWISE",
+      "confidence": 0.5903842133634231,
+      "polygon": [
+        [
+          141.0,
+          345.0
+        ],
+        [
+          231.0,
+          346.0
+        ],
+        [
+          231.0,
+          357.0
+        ],
+        [
+          141.0,
+          357.0
+        ]
+      ]
+    },
+    {
+      "text": "|300m",
+      "confidence": 0.7465424597263336,
+      "polygon": [
+        [
+          76.0,
+          359.0
+        ],
+        [
+          120.0,
+          359.0
+        ],
+        [
+          120.0,
+          373.0
+        ],
+        [
+          76.0,
+          373.0
+        ]
+      ]
+    },
+    {
+      "text": "NTOYNT NOSSANT",
+      "confidence": 0.75667847267219,
+      "polygon": [
+        [
+          146.0,
+          357.0
+        ],
+        [
+          212.0,
+          357.0
+        ],
+        [
+          212.0,
+          367.0
+        ],
+        [
+          146.0,
+          367.0
+        ]
+      ]
+    },
+    {
+      "text": "RUUSSNNSNOUSNT",
+      "confidence": 0.6339653528162411,
+      "polygon": [
+        [
+          154.0,
+          363.0
+        ],
+        [
+          231.0,
+          363.0
+        ],
+        [
+          231.0,
+          374.0
+        ],
+        [
+          154.0,
+          374.0
+        ]
+      ]
+    },
+    {
+      "text": "300",
+      "confidence": 0.646708607673645,
+      "polygon": [
+        [
+          296.0,
+          359.0
+        ],
+        [
+          342.0,
+          359.0
+        ],
+        [
+          342.0,
+          373.0
+        ],
+        [
+          296.0,
+          373.0
+        ]
+      ]
+    },
+    {
+      "text": "011Sz|300ml",
+      "confidence": 0.7052643922242251,
+      "polygon": [
+        [
+          181.0,
+          376.0
+        ],
+        [
+          233.0,
+          376.0
+        ],
+        [
+          233.0,
+          391.0
+        ],
+        [
+          181.0,
+          391.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.8872794508934021,
+      "foreground_ratio": 0.43606,
+      "rough_coverage": 0.9573231886564068,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.6599765419960022,
+      "foreground_ratio": 0.089336,
+      "rough_coverage": 0.3089054124157012,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.7988888025283813,
+      "foreground_ratio": 0.398156,
+      "rough_coverage": 0.8092339616116203,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 3.0916388999976334
+}

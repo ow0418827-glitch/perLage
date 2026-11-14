@@ -1,0 +1,12 @@
+[
+  {
+    "ProcessId": 14172,
+    "ParentProcessId": 32692,
+    "CommandLine": "\"D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe\" -X utf8 -B -u tools/run_groups9_multimodal_20261110.py"
+  },
+  {
+    "ProcessId": 32604,
+    "ParentProcessId": 14172,
+    "CommandLine": "\"D:\\Anaconda\\envs\\minja-vision\\python.exe\" -X utf8 -B -u tools/run_groups9_multimodal_20261110.py"
+  }
+]

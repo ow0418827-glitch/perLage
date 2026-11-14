@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "source_sha256": "2eaea983aa4b1ab928567e1aeb57a255fa133f0b9fa2b9a4a6eeccd43d62d967",
+    "regions": [
+      [
+        0.316,
+        0.342,
+        0.704,
+        0.62
+      ]
+    ],
+    "config": {
+      "closing_pixels": 9,
+      "local_ink_contrast": 3.0,
+      "dark_luminance": 180.0,
+      "colored_chroma": 12.0,
+      "ink_margin_pixels": 1,
+      "feather_pixels": 2.0
+    },
+    "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "2123b25e1e261132f8ad31d7e34ebbfd3c87a0057e77fe068aa254138f03bce2"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "4d124f4bdfaed9f32ac0abdd1f6c73628c9bbaa8273a53c1eeae56063cd837de"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "ab96680dbc6f03c78be871e382e6efcaf2c49fb0dae6810265e1a3848f281d36"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "4d124f4bdfaed9f32ac0abdd1f6c73628c9bbaa8273a53c1eeae56063cd837de"
+    }
+  },
+  "legacy_protected_pixels": 26966,
+  "protected_ink_pixels": 26966,
+  "protected_core_pixels": 27632,
+  "released_legacy_pixels": 0,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Source contrast identifies candidate printed marks, not semantic recognition or proof that every character is covered."
+}

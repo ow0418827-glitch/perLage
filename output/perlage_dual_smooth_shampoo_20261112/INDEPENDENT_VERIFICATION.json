@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "pid": 6468,
+  "retrieval_pid": 25064,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "rankings_recomputed": 160,
+  "score_comparisons": 30240,
+  "max_score_error": 0.0,
+  "persistent_vector_cache_read": false,
+  "inputs_sha256": "11912aae99f880b09280e4f60cec8850a5ec2eb50c7cf9fc89a9611dbd7dce28",
+  "retrieval_certificate_sha256": "42230b6e11869322d47c723fae26ff2f5682eab43387e090507bcddf24026d16",
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\clean\\07_shampoo.json": "566030fc20ef9840ea9294f37c59443d0e484efc26dde18f7fe600b34858eea3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\baseline\\07_shampoo.json": "6c50cbb7f9e8eca4befcaaa6aa43e8a53c347805e364fe6732cf34e1a42bdc02",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\lucid\\07_shampoo.json": "4bf0df65b40c121b65b1a870891164984878b30cbf3f2e4529cf8dc43d86bb9f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\rankfocus\\07_shampoo.json": "0bb5a7376f2220a29895a38a1b3fac08809f39744b031d6b6608c26d0938725b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\fg48_bg12\\07_shampoo.json": "cb1d0ba50bdda7acb11a4c53a97736d6ac5d5b19bf8412776d4591f556f060c9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\fg_lock_bg24\\07_shampoo.json": "9ce9faded9d7c916c29e7be4c60b7eec327509159a0e4d942dae2a9d67dd3489",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\bg_smooth\\07_shampoo.json": "fb5595dd27cb09bcf3f67b0760424a6fa1d250756c22e65dd5b201552f1285ce",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\retrieval\\dual_smooth\\07_shampoo.json": "faae7fcc975ed6f0f037d51b5cf82dfe09df771d168c502c7809d99fc284ac52"
+  }
+}

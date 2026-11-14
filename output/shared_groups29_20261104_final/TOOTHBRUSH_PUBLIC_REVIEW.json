@@ -1,0 +1,8 @@
+{
+  "status": "reviewed",
+  "reviewer": "助手实际查看完整冻结图",
+  "image_sha256": "f0ea5ca8ede2cf2d0ac547949f959f98f02b9f84ae76ad44f8c71602fd77dcd8",
+  "foreground_printed_area_max_pixel_difference": 0,
+  "whole_rectangle_including_background_max_pixel_difference": 17,
+  "observations": "牙刷轮廓及卡通印刷图案保留，刷头和背景可见细纹变化；仅记录质量，不更换图像或调参"
+}

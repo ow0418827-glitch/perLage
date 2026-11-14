@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "method": "lucid",
+  "target_text": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "text_weight": 1.0,
+  "steps": 1000,
+  "epsilon_levels": 8,
+  "source": "source.jpg",
+  "target": "target.jpg"
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "policy": "coarse_type_and_public_hash_sample_v2",
+  "extraction_sha256": "a1796f26e98453f382a59297a1a988c6dba6afeae749d296913abfd158c72525",
+  "groups": [
+    {
+      "key": "07_shampoo",
+      "target": {
+        "id": "B00BDJODWI",
+        "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+        "image_url": "https://m.media-amazon.com/images/I/21uH+5ERbCL.jpg",
+        "source_url": "https://www.amazon.com/dp/B00BDJODWI"
+      },
+      "candidates": [
+        {
+          "id": "B0040QC9YK",
+          "title": "L'Oreal Paris Kids Extra Gentle 2-in-1 Shampoo, Sunny Orange Swim, Citrus, 9 Fl Oz",
+          "image_url": "https://m.media-amazon.com/images/I/41LM2kX0knL.jpg",
+          "source_url": "https://www.amazon.com/dp/B0040QC9YK"
+        },
+        {
+          "id": "B07ZHW33PQ",
+          "title": "Head & Shoulders Itchy Scalp Care Anti-Dandruff Shampoo, Infused with Eucalyptus, 23.7 Fl Oz, Twin Pack",
+          "image_url": "https://m.media-amazon.com/images/I/51wQI0qh6RL.jpg",
+          "source_url": "https://www.amazon.com/dp/B07ZHW33PQ"
+        },
+        {
+          "id": "B01CYDXMSW",
+          "title": "Batiste Dry Shampoo, Original, 3 Pack, 20.19 fl. oz.",
+          "image_url": "https://m.media-amazon.com/images/I/41QFawbGKHL.jpg",
+          "source_url": "https://www.amazon.com/dp/B01CYDXMSW"
+        },
+        {
+          "id": "B078NHY3P6",
+          "title": "TAHE Keratin Gold Shampoo 800ml + Mask 800ml + Keratin Gold Serum 125ml",
+          "image_url": "https://m.media-amazon.com/images/I/41O53BQ7TqL.jpg",
+          "source_url": "https://www.amazon.com/dp/B078NHY3P6"
+        },
+        {
+          "id": "B07B3R86ND",
+          "title": "Fanola Botugen Botolife Ph 6.5 Reconstructive Shampoo & Mask 1000ml",
+          "image_url": "https://m.media-amazon.com/images/I/517s473cutL.jpg",
+          "source_url": "https://www.amazon.com/dp/B07B3R86ND"
+        },
+        {
+          "id": "B018ZI0A3K",
+          "title": "Pure Nature's Vitamins Hydrating Shampoo - Infused with Natural Sage & Argan Oil, Keratin, Collagen, Vitamins & Nutrients Reparative Shampoo - Sulfate, Sodium Chloride & Paraben Free - 8.5 Oz",
+          "image_url": "https://m.media-amazon.com/images/I/31Ai0QXRe6L.jpg",
+          "source_url": "https://www.amazon.com/dp/B018ZI0A3K"
+        },
+        {
+          "id": "B0019LRD9A",
+          "title": "Enjoy Color Holding Hydrating Shampoo and Conditioner Duo (33.8)",
+          "image_url": "https://m.media-amazon.com/images/I/41A8mrA+gRL.jpg",
+          "source_url": "https://www.amazon.com/dp/B0019LRD9A"
+        },
+        {
+          "id": "B08XD7VWPZ",
+          "title": "NAVY Search and Rescue Shampoo - Paraben-Free Biotin and Hair Vitamin Enriched Fortifying Hair Shampoo - 16 fl oz",
+          "image_url": "https://m.media-amazon.com/images/I/41YkLuPEvnL.jpg",
+          "source_url": "https://www.amazon.com/dp/B08XD7VWPZ"
+        },
+        {
+          "id": "B09B63YYCW",
+          "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+          "image_url": "https://m.media-amazon.com/images/I/31tnwBk3RML.jpg",
+          "source_url": "https://www.amazon.com/dp/B09B63YYCW"
+        },
+        {
+          "id": "B075VDZWNF",
+          "title": "VO5 Moisture Milks Moisturizing Shampoo - 12.5 Fl Oz - Strawberries and Cream - 5 Essential Vitamins Will Nourish, Moisturize and Hydrate for Healthy and Beautiful Hair",
+          "image_url": "https://m.media-amazon.com/images/I/413WK-gyT0L.jpg",
+          "source_url": "https://www.amazon.com/dp/B075VDZWNF"
+        },
+        {
+          "id": "B099C2278T",
+          "title": "Alaffia EveryDay Coconut Shampoo and Conditioner - For Normal to Dry Hair, Cleanses, Hydrates and Moisturizes with Shea Butter & Ginger, Coconut Lime, 32 Fl Oz Each",
+          "image_url": "https://m.media-amazon.com/images/I/41lPSMBLq0S.jpg",
+          "source_url": "https://www.amazon.com/dp/B099C2278T"
+        },
+        {
+          "id": "B07PDHTDF2",
+          "title": "Nature's Spirit Coconut Shampoo 33.8 ounce, Conditioner 33.8 ounce, Hair Mask 8 ounce and Hair Oil 8 ounce (4-Piece Set)",
+          "image_url": "https://m.media-amazon.com/images/I/51z4L77igfS.jpg",
+          "source_url": "https://www.amazon.com/dp/B07PDHTDF2"
+        },
+        {
+          "id": "B0994Q18Q6",
+          "title": "2 PC-ONIYEA Natural Handmade Shampoo Bar Soap, Enhance Hair Toughness, Moisturize Dry Hair, 100% Organic Plant Extract Hair Wash, Women Men, Eco-friendly 1.92 Oz Each (OLIVE)",
+          "image_url": "https://m.media-amazon.com/images/I/51h5KohOg2L.jpg",
+          "source_url": "https://www.amazon.com/dp/B0994Q18Q6"
+        },
+        {
+          "id": "B079YZR1JC",
+          "title": "ODE SOFIA Color Care Shampoo and Conditioner,for women, men and teens, used for chemically treated of coloured hair and all hair types, 23Fl OZ, 680ml (Set of Shampoo and Conditioner)",
+          "image_url": "https://m.media-amazon.com/images/I/31a6CsBwojL.jpg",
+          "source_url": "https://www.amazon.com/dp/B079YZR1JC"
+        },
+        {
+          "id": "B087WL7H2X",
+          "title": "FoxyBae Maliboo Smooth Anti-frizz Shampoo - Infused with Shea Butter, Biotin & Argan Oil - Shampoo for Fine Color Treated Hair - Cruelty Free Hair Volumizing Shampoo - 300 ml/ 10 Fl. OZ, MSRP $18.95",
+          "image_url": "https://m.media-amazon.com/images/I/41U8YuVvNDL.jpg",
+          "source_url": "https://www.amazon.com/dp/B087WL7H2X"
+        },
+        {
+          "id": "B07L4V1P2S",
+          "title": "WOW Activated Charcoal & Keratin Shampoo - Full Scalp Detox Cleanse - Restore Dry, Damaged Strands For Soft, Smooth, Shiny Hair- Sulfate & Paraben Free - All Hair Types, Adults & Children - 500 mL",
+          "image_url": "https://m.media-amazon.com/images/I/4197z9LUuXL.jpg",
+          "source_url": "https://www.amazon.com/dp/B07L4V1P2S"
+        },
+        {
+          "id": "B00WONI1AW",
+          "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+          "image_url": "https://m.media-amazon.com/images/I/41MGevKGl2L.jpg",
+          "source_url": "https://www.amazon.com/dp/B00WONI1AW"
+        },
+        {
+          "id": "B0847RZ2SF",
+          "title": "TSUBAKI Premium Moist Shampoo Refill 660ml Refill 660mL",
+          "image_url": "https://m.media-amazon.com/images/I/417lJzJBiyL.jpg",
+          "source_url": "https://www.amazon.com/dp/B0847RZ2SF"
+        },
+        {
+          "id": "B08NRLS7CH",
+          "title": "Old Spice Swagger 2in1 Shampoo & Conditioner for Men, 22 Fl Oz, 21.9 Fl Oz",
+          "image_url": "https://m.media-amazon.com/images/I/41tKFzXvIFL.jpg",
+          "source_url": "https://www.amazon.com/dp/B08NRLS7CH"
+        },
+        {
+          "id": "B00MEPOWM6",
+          "title": "RUSK Sensories Purify Cucurbita and Tea Tree Deep Cleansing Shampoo, 33.8 Oz, Deep-Cleansing Shampoo, Rids Hair of Impurities and Styling Product Buildup",
+          "image_url": "https://m.media-amazon.com/images/I/31bDOCHVFhL.jpg",
+          "source_url": "https://www.amazon.com/dp/B00MEPOWM6"
+        },
+        {
+          "id": "B07P48FLMK",
+          "title": "AQUAGE SeaExtend Volumizing Shampoo, Gentle, SeaExtend Thermal-V Technology Seals Heat Out, Luxurious Shampoo That Prevents Haircolor Fade and Thermal Styling Damage",
+          "image_url": "https://m.media-amazon.com/images/I/31QxEUxmPCL.jpg",
+          "source_url": "https://www.amazon.com/dp/B07P48FLMK"
+        },
+        {
+          "id": "B00MQURNGG",
+          "title": "Pharmaceris H-Hair and Scalp H-Stimupurin Shampoo to Support Hair Growth and Against Hair Loss 5.0 oz",
+          "image_url": "https://m.media-amazon.com/images/I/31MCMPLUIzL.jpg",
+          "source_url": "https://www.amazon.com/dp/B00MQURNGG"
+        },
+        {
+          "id": "B087FBL23H",
+          "title": "Joico Defy Damage Protective Shampoo | Strengthen Bond & Preserve Hair Color | For Bond Strengthening & Color Longevity",
+          "image_url": "https://m.media-amazon.com/images/I/219ogZ-QrCL.jpg",
+          "source_url": "https://www.amazon.com/dp/B087FBL23H"
+        },
+        {
+          "id": "B086PFX6VP",
+          "title": "Aquableu Natural Lavender Vanilla Shampoo & Conditioner Set - Gentle Ultra Calming Multitasking Cleanser - Nourishing & Restorative - Jojoba Oil - Sulfate & Paraben Free - For color treated hair 16 oz",
+          "image_url": "https://m.media-amazon.com/images/I/41iVi25THxL.jpg",
+          "source_url": "https://www.amazon.com/dp/B086PFX6VP"
+        },
+        {
+          "id": "B09D66PWBL",
+          "title": "RGIII RG3 PREMIUM SHAMPOO AND TREATMENT SET 2X RED GINSENG HAIR LOSS PREVENTION",
+          "image_url": "https://m.media-amazon.com/images/I/41p3-ehEUAL.jpg",
+          "source_url": "https://www.amazon.com/dp/B09D66PWBL"
+        },
+        {
+          "id": "B076DL1VLG",
+          "title": "Luseta Biotin & Collagen Shampoo & Conditioner Set 2 x 16.9oz - Thickening for Hair Loss & Fast Hair Growth - Infused with Argan Oil to Repair Damaged Dry Hair - Sulfate Free Paraben Free",
+          "image_url": "https://m.media-amazon.com/images/I/417URT9p6jL.jpg",
+          "source_url": "https://www.amazon.com/dp/B076DL1VLG"
+        },
+        {
+          "id": "B00FZVXZ3I",
+          "title": "Nexxus Hydralight Weightless Moisture, 13.5 Ounce, Set of Shampoo and Conditioner",
+          "image_url": "https://m.media-amazon.com/images/I/5134qkO027L.jpg",
+          "source_url": "https://www.amazon.com/dp/B00FZVXZ3I"
+        },
+        {
+          "id": "B007KSWBP2",
+          "title": "ALOXXI Hydrating Shampoo for Color Treated Hair - Removes Buildup & Residue - Paraben & Sulfate Free Shampoo",
+          "image_url": "https://m.media-amazon.com/images/I/21O9QfVuP-L.jpg",
+          "source_url": "https://www.amazon.com/dp/B007KSWBP2"
+        },
+        {
+          "id": "B09HSRMYDQ",
+          "title": "The Body Shop Tea Tree Purifying & Balancing Shampoo for Oily Hair & Scalp, Vegan",
+          "image_url": "https://m.media-amazon.com/images/I/31ocw2TDOZL.jpg",
+          "source_url": "https://www.amazon.com/dp/B09HSRMYDQ"
+        },
+        {
+          "id": "B00S1S2SRQ",
+          "title": "Best Clarifying Shampoo for Keratin Hair Treatment Straightening Opens the Cuticle for Optimum Receptivity of The Keratin Treatment. Deep Cleans the Hair Cuticle Remove all Residues that Cling to the hair (4oz)",
+          "image_url": "https://m.media-amazon.com/images/I/41N4VKh6vwL.jpg",
+          "source_url": "https://www.amazon.com/dp/B00S1S2SRQ"
+        },
+        {
+          "id": "B00FRDPQRW",
+          "title": "Old Spice Fiji 2in1 Shampoo And Conditioner 12 Fl Oz, 12.000-Fluid Ounce",
+          "image_url": "https://m.media-amazon.com/images/I/51cHtLv18CL.jpg",
+          "source_url": "https://www.amazon.com/dp/B00FRDPQRW"
+        },
+        {
+          "id": "B09F525LBT",
+          "title": "Moehair Protein Infused Shampoo and Conditioner with Hair Serum Pack | Sulfate and Paraben Free Shampoo | Revitalize Dull, Weak and Damaged Hair | Made in the USA",
+          "image_url": "https://m.media-amazon.com/images/I/41iep3Vw9lL.jpg",
+          "source_url": "https://www.amazon.com/dp/B09F525LBT"
+        }
+      ],
+      "counts": {
+        "type_compatible": 9781,
+        "simulated_controlled": 4839,
+        "development_excluded": 0,
+        "subtype_filtered": 22089,
+        "retained_for_images": 32
+      }
+    }
+  ],
+  "text_model_used": false,
+  "visual_score_used": false
+}

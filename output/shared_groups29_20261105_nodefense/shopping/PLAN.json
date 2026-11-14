@@ -1,0 +1,8 @@
+{
+  "condition": "none",
+  "retrieval_top_k": 3,
+  "episodes": 80,
+  "catalog_images_policy": "original_catalog_same_in_both_banks",
+  "historical_memory_images_policy": "two_simultaneous_substitutions_in_modified_bank",
+  "complete_purchase_required_for_misleading_metric": true
+}

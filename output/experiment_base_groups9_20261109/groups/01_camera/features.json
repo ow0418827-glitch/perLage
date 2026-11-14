@@ -1,0 +1,151 @@
+{
+  "group": "01_camera",
+  "category": "camera",
+  "target": {
+    "asin": "B08V134QWR",
+    "title": "PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio IP66 Waterproof",
+    "brand": "HXVIEW",
+    "brand_evidence": {
+      "verified": true,
+      "visual_verified": true,
+      "field": "PrimaryImage",
+      "quote": "HXVIEW",
+      "image": "groups/01_camera/target.jpg",
+      "image_relative_to_package": "groups/01_camera/target.jpg",
+      "image_sha256": "3e640007088747b83c734fe3a612c241f88b370490d99b3aca717f92f4dd0126",
+      "review_note": "Direct visual inspection of the original selected target image: HXVIEW is printed on the white camera housing. PTZ is the camera mechanism, not its brand."
+    },
+    "category": "security camera",
+    "attributes": [
+      "optical zoom",
+      "motion detection",
+      "night vision",
+      "waterproof construction",
+      "security camera",
+      "sd card",
+      "mobile phone"
+    ],
+    "canonical_sentence": "I want to buy a security camera with optical zoom and motion detection.",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection.",
+      "I would like to purchase a security camera featuring optical zoom and night vision.",
+      "I am looking for a security camera with motion detection and waterproof construction."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "optical zoom",
+        "field": "Title",
+        "quote": "30X Optical Zoom"
+      },
+      {
+        "feature": "motion detection",
+        "field": "Attributes",
+        "index": 4,
+        "quote": "motion detection"
+      },
+      {
+        "feature": "night vision",
+        "field": "Title",
+        "quote": "1000FT Night Vision"
+      },
+      {
+        "feature": "waterproof construction",
+        "field": "Title",
+        "quote": "IP66 Waterproof"
+      },
+      {
+        "feature": "security camera",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "security camera"
+      },
+      {
+        "feature": "sd card",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "sd card"
+      },
+      {
+        "feature": "mobile phone",
+        "field": "Attributes",
+        "index": 5,
+        "quote": "mobile phone"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "optical zoom",
+      "motion detection",
+      "night vision",
+      "waterproof construction"
+    ]
+  },
+  "source": {
+    "asin": "B071ZFHTZN",
+    "title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+    "brand": "SUNBA",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "SUNBA",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "security camera",
+    "attributes": [
+      "optical zoom",
+      "night vision",
+      "a high-speed pan and tilt mechanism",
+      "an outdoor waterproof housing",
+      "high speed"
+    ],
+    "canonical_sentence": "I want to buy a security camera with optical zoom and night vision.",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and night vision.",
+      "I would like to purchase a security camera featuring optical zoom and a high-speed pan and tilt mechanism.",
+      "I am looking for a security camera with night vision and an outdoor waterproof housing."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "optical zoom",
+        "field": "Title",
+        "quote": "20x Optical Zoom"
+      },
+      {
+        "feature": "night vision",
+        "field": "Title",
+        "quote": "Infrared Night Vision"
+      },
+      {
+        "feature": "a high-speed pan and tilt mechanism",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "high speed"
+      },
+      {
+        "feature": "an outdoor waterproof housing",
+        "field": "BulletPoints",
+        "index": 3,
+        "quote": "Outdoor IP66 rated aluminum"
+      },
+      {
+        "feature": "high speed",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "high speed"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "optical zoom",
+      "night vision",
+      "a high-speed pan and tilt mechanism",
+      "an outdoor waterproof housing"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy a security camera with optical zoom and motion detection.",
+  "alignment_training_queries": [
+    "I want to buy a security camera with optical zoom and motion detection.",
+    "I would like to purchase a security camera featuring optical zoom and night vision.",
+    "I am looking for a security camera with motion detection and waterproof construction."
+  ]
+}

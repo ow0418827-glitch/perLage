@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "tests": 54,
+  "command": ".venv/Scripts/python.exe -X utf8 -B -m pytest src/tests/test_perlage_rankfocus_experiment.py src/tests/test_perlage_relaxed_experiment.py src/tests/test_perlage_no_pixel.py -q",
+  "plan_sha256": "145b86be37093686d2b589dd4e90a70f877a6b9c25c414982858fb1edce53936"
+}

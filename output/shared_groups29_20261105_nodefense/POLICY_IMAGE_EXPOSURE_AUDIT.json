@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "episodes": 80,
+  "policy_calls_checked": 312,
+  "source_image_exposures": {
+    "02_chair/clean": 79,
+    "09_toothbrush/clean": 77,
+    "02_chair/modified": 75,
+    "09_toothbrush/modified": 81
+  },
+  "query_images_consistent": true,
+  "audit_metadata_names_in_policy_text": {},
+  "errors": []
+}

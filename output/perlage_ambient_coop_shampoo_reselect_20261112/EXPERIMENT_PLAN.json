@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "experiment": "perlage_ambient_coop_shampoo_reselect_20261112",
+  "group": "07_shampoo",
+  "groups": [
+    "07_shampoo"
+  ],
+  "profiles": [
+    "ambient_coop"
+  ],
+  "profile_configs": {
+    "ambient_coop": {
+      "steps": 350,
+      "check_every": 10,
+      "latent_levels": 6,
+      "background_levels": 28,
+      "anchor_source": "perlage_final",
+      "fg_edge_feather_pixels": 8.0,
+      "edge_feather_pixels": 12.0,
+      "ambient_feather_pixels": 3.0,
+      "roi_feather_pixels": 6.0,
+      "edge_feather_mode": "cosine",
+      "fg_luma_smooth_sigma": 5.0,
+      "fg_chroma_smooth_sigma": 9.0,
+      "fg_chroma_keep": 0.3,
+      "bg_luma_smooth_sigma": 2.2,
+      "bg_chroma_smooth_sigma": 4.5,
+      "bg_chroma_keep": 0.75,
+      "ambient_smooth_sigma": 14.0,
+      "ambient_grid_size": 8,
+      "ambient_init_bias": 0.3,
+      "tau_scale": 0.75,
+      "latent_working_size": 512,
+      "latent_limit": 6.0,
+      "latent_learning_rate": 0.06,
+      "ambient_learning_rate": 0.004,
+      "ambient_limit": 0.15,
+      "latent_smoothing_mix": 0.05,
+      "source_ssim_floor": 0.78,
+      "source_mae_ceiling": 20.0,
+      "temperature": 0.04,
+      "fg_l2_weight": 0.0001,
+      "fg_tv_weight": 0.0004,
+      "bg_l2_weight": 5e-05,
+      "bg_tv_weight": 0.0012,
+      "bg_chroma_tv_weight": 0.002,
+      "overflow_weight": 0.05,
+      "halo_soft_weight": 0.0001,
+      "halo_parent_multiplier": 1.0,
+      "halo_floor": 12.0,
+      "guard_backtracks": 8,
+      "auxiliary_levels": 0,
+      "pixel_optimization": false,
+      "feature_weight": 0.0,
+      "diffusion_weight": 0.0,
+      "joint_weight": 0.5,
+      "compensated_weight": 0.5,
+      "seed": 42
+    }
+  },
+  "source_id": "B09B63YYCW",
+  "target_id": "B00BDJODWI",
+  "replaces_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+  "new_memory_id": "groups9_reference_07_shampoo_B09B63YYCW",
+  "generation_inputs": {
+    "07_shampoo": {
+      "definition": {
+        "schema_version": 2,
+        "method": "PerLAGE_no_pixel",
+        "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+        "color_scheme": "statistics",
+        "training_data_policy": "catalog_image_and_public_title_only_v1",
+        "pixel_optimization": false,
+        "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "data": {
+          "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\source.jpg",
+          "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\target.jpg",
+          "source_title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+          ]
+        },
+        "source_boxes": [
+          [
+            1,
+            1,
+            180,
+            497
+          ]
+        ],
+        "target_boxes": [
+          [
+            2,
+            5,
+            158,
+            494
+          ]
+        ],
+        "print_regions": [
+          [
+            0.4199,
+            0.224,
+            0.6188,
+            0.294
+          ],
+          [
+            0.16022099447513813,
+            0.304,
+            0.856353591160221,
+            0.36
+          ],
+          [
+            0.12154696132596685,
+            0.52,
+            0.49171270718232046,
+            0.558
+          ],
+          [
+            0.12154696132596685,
+            0.554,
+            0.8950276243093923,
+            0.608
+          ],
+          [
+            0.11602209944751381,
+            0.678,
+            0.5082872928176796,
+            0.72
+          ],
+          [
+            0.1270718232044199,
+            0.712,
+            0.7237569060773481,
+            0.75
+          ],
+          [
+            0.13259668508287292,
+            0.73,
+            0.7513812154696132,
+            0.772
+          ],
+          [
+            0.12154696132596685,
+            0.752,
+            0.6353591160220995,
+            0.794
+          ],
+          [
+            0.10497237569060773,
+            0.812,
+            0.8176795580110497,
+            0.862
+          ],
+          [
+            0.11602209944751381,
+            0.87,
+            0.569060773480663,
+            0.916
+          ]
+        ]
+      },
+      "public_definition": {
+        "schema_version": 2,
+        "group": "07_shampoo",
+        "name": "第七组洗发水（重选真人洗发水原图对比版）",
+        "category": "personal_care",
+        "subtype_policy": {
+          "policy": "shampoo_human_hair_only_v1",
+          "include": "\\bshampoos?\\b|洗发",
+          "exclude": "\\b(?:carpet|rug|upholstery|auto|car|pet|dog|cat|puppy|horse|equine|floor|machine|extracter|extractor|empty|wig|doll|cape|basin|station)\\b|\\bshampoo\\s+(?:brush|bowl|sink|mat|tray|cap|dispenser|bottles?\\s+set)s?\\b|\\brefillable\\b.*\\bbottles?\\b"
+        },
+        "shape_similarity": 0.6974290898357522,
+        "calibrated_threshold": 0.6010808269912873,
+        "passes_calibrated_threshold": true,
+        "selection_status": "uniform_draw_reselected_isolated_20261112",
+        "selection_notes": "遵循 public_shape_gate_uniform_v2 与 shampoo_human_hair_only_v1 在隔离目录独立重选：从32个真人洗发水候选中通过外形门槛15个，seed=42均匀抽样选中 B09B63YYCW（BELLISSO Biotin Shampoo），目标仍为 B00BDJODWI。",
+        "methods_supported": [
+          "lucid",
+          "PerLAGE",
+          "PerLAGE_no_pixel"
+        ],
+        "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "training_queries": [
+          "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "I am looking for shampoo with a balancing formula and scalp care."
+        ],
+        "data": {
+          "source": "source.jpg",
+          "target": "target.jpg",
+          "source_title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+          ]
+        },
+        "source_boxes": [
+          [
+            1,
+            1,
+            180,
+            497
+          ]
+        ],
+        "target_boxes": [
+          [
+            2,
+            5,
+            158,
+            494
+          ]
+        ],
+        "print_regions": [
+          [
+            0.4199,
+            0.224,
+            0.6188,
+            0.294
+          ],
+          [
+            0.16022099447513813,
+            0.304,
+            0.856353591160221,
+            0.36
+          ],
+          [
+            0.12154696132596685,
+            0.52,
+            0.49171270718232046,
+            0.558
+          ],
+          [
+            0.12154696132596685,
+            0.554,
+            0.8950276243093923,
+            0.608
+          ],
+          [
+            0.11602209944751381,
+            0.678,
+            0.5082872928176796,
+            0.72
+          ],
+          [
+            0.1270718232044199,
+            0.712,
+            0.7237569060773481,
+            0.75
+          ],
+          [
+            0.13259668508287292,
+            0.73,
+            0.7513812154696132,
+            0.772
+          ],
+          [
+            0.12154696132596685,
+            0.752,
+            0.6353591160220995,
+            0.794
+          ],
+          [
+            0.10497237569060773,
+            0.812,
+            0.8176795580110497,
+            0.862
+          ],
+          [
+            0.11602209944751381,
+            0.87,
+            0.569060773480663,
+            0.916
+          ]
+        ],
+        "target": {
+          "id": "B00BDJODWI",
+          "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+          "brand": "Aveda",
+          "attributes": [
+            "plant-based haircare ingredients",
+            "a balancing formula",
+            "plant and flower essences",
+            "scalp care",
+            "plant based"
+          ],
+          "feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+            "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+            "I am looking for shampoo with a balancing formula and scalp care."
+          ],
+          "image": "target.jpg",
+          "foreground_mask": "target_foreground.png",
+          "boxes": [
+            [
+              2,
+              5,
+              158,
+              494
+            ]
+          ],
+          "text_regions": [
+            [
+              0.275,
+              0.314,
+              0.68125,
+              0.356
+            ],
+            [
+              0.20625,
+              0.352,
+              0.675,
+              0.38
+            ],
+            [
+              0.21875,
+              0.344,
+              0.70625,
+              0.37
+            ],
+            [
+              0.1375,
+              0.454,
+              0.8375,
+              0.502
+            ],
+            [
+              0.2,
+              0.528,
+              0.78125,
+              0.562
+            ],
+            [
+              0.1375,
+              0.554,
+              0.84375,
+              0.588
+            ],
+            [
+              0.3688,
+              0.746,
+              0.5813,
+              0.81
+            ],
+            [
+              0.20625,
+              0.818,
+              0.75,
+              0.852
+            ],
+            [
+              0.24375,
+              0.856,
+              0.7,
+              0.882
+            ],
+            [
+              0.25,
+              0.842,
+              0.7,
+              0.87
+            ],
+            [
+              0.2,
+              0.9,
+              0.75625,
+              0.94
+            ]
+          ]
+        },
+        "source": {
+          "id": "B09B63YYCW",
+          "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+          "brand": "BELLISSO",
+          "attributes": [
+            "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+            "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+            "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+          ],
+          "image": "source.jpg",
+          "foreground_mask": "source_foreground.png",
+          "boxes": [
+            [
+              1,
+              1,
+              180,
+              497
+            ]
+          ],
+          "text_regions": [
+            [
+              0.4199,
+              0.224,
+              0.6188,
+              0.294
+            ],
+            [
+              0.16022099447513813,
+              0.304,
+              0.856353591160221,
+              0.36
+            ],
+            [
+              0.12154696132596685,
+              0.52,
+              0.49171270718232046,
+              0.558
+            ],
+            [
+              0.12154696132596685,
+              0.554,
+              0.8950276243093923,
+              0.608
+            ],
+            [
+              0.11602209944751381,
+              0.678,
+              0.5082872928176796,
+              0.72
+            ],
+            [
+              0.1270718232044199,
+              0.712,
+              0.7237569060773481,
+              0.75
+            ],
+            [
+              0.13259668508287292,
+              0.73,
+              0.7513812154696132,
+              0.772
+            ],
+            [
+              0.12154696132596685,
+              0.752,
+              0.6353591160220995,
+              0.794
+            ],
+            [
+              0.10497237569060773,
+              0.812,
+              0.8176795580110497,
+              0.862
+            ],
+            [
+              0.11602209944751381,
+              0.87,
+              0.569060773480663,
+              0.916
+            ]
+          ]
+        },
+        "color_scheme": "statistics",
+        "training_data_policy": "catalog_image_and_public_title_only_v1",
+        "lucid_alignment_config": {
+          "enabled": true,
+          "target_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "text_weight": 1.0,
+          "steps": 1000
+        },
+        "perlage_alignment_config": {
+          "enabled": true,
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+          ],
+          "color_scheme": "statistics",
+          "pixel_optimization": true
+        },
+        "perlage_no_pixel_alignment_config": {
+          "enabled": true,
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+          ],
+          "color_scheme": "statistics",
+          "pixel_optimization": false
+        }
+      },
+      "source_public_record": {
+        "id": "B09B63YYCW",
+        "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+        "brand": "BELLISSO",
+        "attributes": [
+          "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+          "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+          "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+        ],
+        "feature_text": "I want to buy a shampoo & conditioner with this advanced biotin shampoo from bellisso is rich in powerful ingredients to help fight hair loss and the secret to our hair loss shampoo is biotin, a form of vitamin b7 that can help stimulate keratin production and promote follicle growth.",
+        "provenance": "local_public_catalog_fields",
+        "feature_evidence": [
+          {
+            "feature": "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+            "field": "BulletPoints",
+            "index": 0,
+            "quote": "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss"
+          },
+          {
+            "feature": "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+            "field": "BulletPoints",
+            "index": 0,
+            "quote": "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth"
+          },
+          {
+            "feature": "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men",
+            "field": "BulletPoints",
+            "index": 0,
+            "quote": "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+          }
+        ]
+      },
+      "prefix_method_root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo",
+      "prefix_root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation",
+      "ambient_coop_root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\generation\\ambient_coop\\07_shampoo",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\perlage_no_pixel_config.json": "5a84682ecea9c6b5725078f16e16a4ecdf4771118b22074688e35cf75d3d0c70",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\definition.json": "65c17ab892f85abf87d6739a30589bd606dab5c157cdf5802d2300f2150ae58a",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\features.json": "dfc0f2e579c61c7f581dc3ee1a3e8462e660160bc8c21f7f0d5de728b68a20a4",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\public_metadata\\source_and_target_public_metadata.json": "9226c6d8519eaa748c76865d5b971f5bc68be1990969a8ff7cf5577f793f4f04",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\source.jpg": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\target.jpg": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e"
+      }
+    }
+  },
+  "implementation": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\agent\\memory\\shared_pool.py": "cec91008704cdffc6e7b066c64a2d9bc05bb7bf1a5912f7eff2e0ab19b9a3c47",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\query_contract.py": "56e1dd563dba5931f28a24de2d6baaa67ba00c5a5b76099e550400f81a283a44",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\shared_evaluation.py": "59a1ab5fd2e962a7a60c535d72e592bca772d279beb72b08515d4f9c813b92b8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\colour.py": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\core.py": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\mask.py": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\segmentation.py": "ade4e558d7f9deccf4f426db52b2a64459a84d894d73e8841138cff11840d271",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\harmonization.py": "89a5cdc05db78be8e94c4cd0d2391b0bcf964fc7b174cc4ebb45c9ee3646673d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\initialization.py": "bc515d21feec1bc24745c4c098438383e36784ead8fe9fa30029a4887ba0b8c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\latent.py": "355fc39a9eca8572755dc053f1596ea9ad70620248f25f572e0c25f12d888e87",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_ambient_coop\\__init__.py": "39eb923db065b1b4626a7ae569447a5afd9db5ab42d3c78b2ad3bb958d1367eb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_ambient_coop\\pipeline.py": "ac699b7e65ae843ebdee8e5e3337563e3039fc481ff41337afd6ae257817405a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel\\__init__.py": "663080ed35c078d99b7f54dc94e2044dd98dc0b3d28a5e49170bc0958752eb0d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel\\evidence.py": "d118167595580a7e967813a76d32b38082cff0783bab54fe6454ca444d905d83",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel\\pipeline.py": "14c08c27c42d60554edff51a356a3c8966a53ac0edbfb90b2e5d5910e111121d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\attack_completion.py": "9624e6031a0ca3f3e134863eebb1082bf90eadf450083bd5c01e2e7b981285bb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\catalog_training_guard.py": "9c442302d38898a74d649c85c5648d3f5f1369358373c11f8a349b53c6ecde40",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\backbone.py": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\clip.py": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\joint.py": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\optimization.py": "c638159219e3ceffd0e9a60c1e041f145175e399e489bfb4381fb01842236684",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\retrieval_objective.py": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\robust_objectives.py": "1c73c01a4c2c3e465c26661e0607bf4e17fc6edf68eff9e8bd0f3c25200e3bb5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\target_features.py": "87538faaed0f9614423b886b8c83c88c1ded928c8165651115ed6b8fabf83c55",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\visual_retrieval.py": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_ambient_coop_shampoo_reselect_20261112.py": "a9622f030c3d3853fc1a0004b3299748d515b89f65041c0ed5dbbf6a9d739d9c"
+  },
+  "generation_seed": 42,
+  "training": "original_frozen_single_target_feature_sentence",
+  "training_key": "own_public_title_brand_attributes_feature_text_reconstructed_without_pool",
+  "prefix_policy": "fresh_four_stage_perlage_no_pixel_on_reselected_source_no_pixel_optimization",
+  "query_modes": [
+    "joint",
+    "text"
+  ],
+  "query_weights": {
+    "joint": 0.5,
+    "text": 0.0
+  },
+  "key_image_weight": 0.5,
+  "index_text": "product_feature",
+  "shared_pool_count": 189,
+  "pool_replacement_scope": "single_group_07_shampoo_B08XYBS678_replaced_with_B09B63YYCW_in_isolated_copy",
+  "all_images_frozen_before_evaluation": true,
+  "pixel_optimization": false,
+  "shopping_enabled": false,
+  "model_api_calls_enabled": false,
+  "formal_rankings_used_for_parameter_selection": false,
+  "training_reads_shared_pool": false,
+  "caveats": [
+    "本轮使用独立隔离重选的真人类洗发水原商品 B09B63YYCW（BELLISSO Biotin Shampoo）替代原误选的洗手液 B08XYBS678（Dove Hand Wash），目标商品保持 Aveda B00BDJODWI 不变。",
+    "因 B09B63YYCW 尚未生成过 PerLAGE_no_pixel 成图，本流水线先在隔离目录从头完整运行四阶段 PerLAGE_no_pixel（60 步潜变量细化，零像素扰动）作为锚点前缀，再运行 ambient_coop（350 步，主体 6 级微光影＋背景 28 级环境光协同，ROI 印刷区零改动）。",
+    "评测阶段在复制的 189 条共享长期记忆池隔离副本中，仅替换 07_shampoo 原条目为 B09B63YYCW 模拟参考条目（ObservedPurchase=false, RecordKind=simulated_gallery），其余 188 条及原有数据文件保持严格只读不变。",
+    "同时评测 multimodal joint（图文各半，复用 20261110 独立模糊照片与 20 条特点句）与 text（纯文字，复用 20261109 同 20 条特点句）；仅统计检索排名，不执行购物。",
+    "训练代理与指定评估编码器均为 ViT-B-32 (openai)，属于同编码器评估而非独立留出黑盒迁移；正式 20 条特点问句中有 1 条与唯一训练正文精确重合。"
+  ]
+}

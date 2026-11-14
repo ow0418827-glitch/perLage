@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-11-10T17:53:19.242735+08:00",
+  "status": "background_queue_running_startup_verified",
+  "episodes_completed_at_verification": 1,
+  "expected_episodes": 180,
+  "next_group": "01_camera",
+  "next_task": "feature_02",
+  "first_episode_completed": true,
+  "first_episode_sha256": "65880fa30acc68609fc3ba4137ef6f27de67a755376acd5997d524392564cc9c",
+  "first_episode_policy_steps": 5,
+  "first_episode_returned_reasoning_saved": 5,
+  "payload_audit_status": "passed",
+  "readable_reasoning": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_clean_shopping_20261110\\shopping\\episodes\\01_camera\\feature_01.reasoning.md",
+  "supervisor_monitoring_ended_as_requested": true,
+  "queue_continues_independently": true,
+  "automatic_report": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_clean_shopping_20261110\\COMPARISON_REPORT.md"
+}

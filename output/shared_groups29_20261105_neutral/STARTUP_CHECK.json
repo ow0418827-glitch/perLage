@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-05T13:14:05.578142+00:00",
+  "completed_episodes": 5,
+  "all_completed": true,
+  "exact_neutral_guidance_in_completed_episodes": true,
+  "model": "MiniMax-M3",
+  "gpu_retrieval_and_fresh_verification_passed": true,
+  "unattended_queue_has_auto_comparison_report": true,
+  "new_completion_automation_created": false,
+  "automation_note_zh": "应用任务规则要求单次实验的完成跟进留在当前任务，不另建完成监控自动任务。",
+  "regression_tests_passed": 79,
+  "git_diff_check_passed": true
+}

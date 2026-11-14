@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "stage": "report",
+  "command_stage": "report",
+  "exit_code": 0,
+  "completed_at": "2026-11-05T03:07:31.257285+00:00",
+  "seconds": 18.04596460000903,
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_nodefense\\logs\\report.log"
+}

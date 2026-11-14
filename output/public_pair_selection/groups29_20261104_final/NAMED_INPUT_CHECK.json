@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "groups": [
+    {
+      "group": "02_chair",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\target.jpg",
+      "original_bytes_preserved": true
+    },
+    {
+      "group": "09_toothbrush",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg",
+      "original_bytes_preserved": true
+    }
+  ],
+  "source_baseline_unchanged": 707,
+  "shared_pool_paths": 1,
+  "generation_runs": 0,
+  "private_memory_read": false
+}

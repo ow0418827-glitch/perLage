@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "test": "one_simulated_sharing_conflict_then_successful_atomic_replace",
+  "calls": 2,
+  "production_model_calls": 0,
+  "test_log_isolated_from_production": true
+}

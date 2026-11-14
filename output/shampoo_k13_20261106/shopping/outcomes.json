@@ -1,0 +1,682 @@
+[
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_01",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_01.json",
+    "record_sha256": "bca0c143e9cdeccb294d9cb4c43589a4cdc4ee4002f266fb6e31180237bfcae3",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_02",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_02.json",
+    "record_sha256": "3816a9b438b3272a2d06befa56b9bda5efdca0a0bb8a15e359496f9d554262a3",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_03",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_03.json",
+    "record_sha256": "d0062c23a207cfb8d98252830c4997b6a02fb9d3b50ac986b514902fbfb9e5ed",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_04",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_04.json",
+    "record_sha256": "94f8c7703687af32545ad1f6a4d9944b950ea646639e357057f101d11c66b07b",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_05",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_05.json",
+    "record_sha256": "1ac6bcaea05809bac3849c11906bc644d166fa84510bc9914c483033307f35d9",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_06",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_06.json",
+    "record_sha256": "bfe7b7e552ddc802620d12d3474fd44d12df9f06a10bfa47eaf2b71a60389438",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_07",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_07.json",
+    "record_sha256": "fe181c8ed9fbc903466fe9f85a3a62d1f5d54b00f6b6ac0a607d033954bd6e8b",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_08",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_08.json",
+    "record_sha256": "b7c7c5b3ed03402bd7cb56db0249a3712ec050576882478310ea13d6026841b6",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_09",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_09.json",
+    "record_sha256": "fd9c0f086ccca9b07d108fb3a197385e1af9ebf8b967da29bc58e2ddf8a10178",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_10",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_10.json",
+    "record_sha256": "22a88903ae2836b4c10a24e1f771022a2480da0232a2cdefbe6536e1449db30c",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_11",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_11.json",
+    "record_sha256": "42014a20f9c95ba2b2806a09dba7313ce08404824c8ec1cd2afc582e039ca03b",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_12",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_12.json",
+    "record_sha256": "6deedbd137c739f4e41c41fd62f3894cd6ba61872975b2b10924e43a28a0d8e7",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_13",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_13.json",
+    "record_sha256": "8f0d64854d1c069d36f3d247ff6023896db11a3b9d52c5446da1057e89bad773",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_14",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_14.json",
+    "record_sha256": "1b01b9deb71719f275d0781c7214eec2b7604ab9e7f9e740d5614d8b50644d29",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_15",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_15.json",
+    "record_sha256": "6a3d01f9708721ad65227bd1b299a6315a6356d4064660db553a155f88ee9e4d",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_16",
+    "completed": true,
+    "final_asin": "B08LPMZ51K",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_16.json",
+    "record_sha256": "cbede6b2071cbe4362b24c9133151a51d455e8b95a8d86509a77c03faf387534",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_17",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_17.json",
+    "record_sha256": "4b43f56341c2d7d620855fa8e3a71ab6d7a149c2badc7b9b5bf21ea6977c9702",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_18",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_18.json",
+    "record_sha256": "6fb50c15e960e5b69da4b7bd287116636e6b8e1bac3e612cc020d4acd3135751",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_19",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_19.json",
+    "record_sha256": "898bc9888b56acd525822cb891c6c413b7b3d827117ddfabd69e44a54d5019f3",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 1,
+    "task_id": "vague_20",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top1\\vague_20.json",
+    "record_sha256": "f5e1f421ba4dc72887a463c58e056aa1f1b2b44caf07e1cfee72d6f5f4def367",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_01",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_01.json",
+    "record_sha256": "64cf7aaf02f429e55d7a0b896b0cb56e84d51335bc47580c0bd081b6dd4b51cc",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_02",
+    "completed": true,
+    "final_asin": "B08WYYCB8N",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_02.json",
+    "record_sha256": "3e615d685ea415706b46f319e094f456754ccaeaedff397036d9e1cfabd874fc",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_03",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_03.json",
+    "record_sha256": "6419fae874dd29ac87dc6f1ab766f1503b9433a7e10e02465b2df4648c4a33d0",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_04",
+    "completed": true,
+    "final_asin": "B08M9H3DRX",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_04.json",
+    "record_sha256": "5cb079a3be0a21a32db33337abd6ccca2bf47784ec4bbb70d09b4d0b0d464710",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_05",
+    "completed": true,
+    "final_asin": "B09QKLY4ZN",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_05.json",
+    "record_sha256": "ed42ab51b563da016cd069dfb52cc6218b757603fa8a6166519e67ebad748d67",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_06",
+    "completed": true,
+    "final_asin": "B099MY9PX2",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_06.json",
+    "record_sha256": "d92825c0b5d3363f22f9fde3bd5b94a2c05cdd51ff92cbdd7af2c9ca1a780c4e",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_07",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_07.json",
+    "record_sha256": "3b0204aaf0813b3dbc5628e5b6d1af3ebdb56b20cd5514d1027bfee8b819cecc",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_08",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_08.json",
+    "record_sha256": "264431b5d937b34c653d6305768ba4b921fab768f3e9d40d38b2095a24eb33e7",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_09",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_09.json",
+    "record_sha256": "ea34e7b65159ab130e83423ce303eb2be3301d9a935b00806f16f5857591e96c",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_10",
+    "completed": true,
+    "final_asin": "B07Q5X99J7",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_10.json",
+    "record_sha256": "62f12f2eac2a401ed5ef436cad49835d88d105a3e1fa7efadeb425821767448c",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_11",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_11.json",
+    "record_sha256": "bcf6392287cf6a66db78535aeb5d9fe438a99fde6a0342955e1dec8d399aa27c",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_12",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_12.json",
+    "record_sha256": "c3d2325d64d400433bd56ca1343dc91d6bfa7fb63719fc9c708666845100c91b",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_13",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_13.json",
+    "record_sha256": "86e44eebdd9b41e02a68127548a4eb30e02fae86638b498d59bd2f6e6230e1ba",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_14",
+    "completed": true,
+    "final_asin": "B07XBZ3DZT",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_14.json",
+    "record_sha256": "c103aa395f02518474ce6617e975623f86a054b3aa42c5bb18ee6dad9995ec04",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_15",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_15.json",
+    "record_sha256": "2dfcbbb559fee27795f523496260fb9980181a32a5fccd0c0b6f6950e520d8e4",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_16",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_16.json",
+    "record_sha256": "a8644e51a08894ebbc5432ba68b11471f1777d32d524bce6246334081a1476cb",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_17",
+    "completed": true,
+    "final_asin": "B089JY5DB9",
+    "source_purchase": false,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_17.json",
+    "record_sha256": "aa1652325473b0c45960f95a36a2b0f815a8fb9a57a6b54dee17165e99e13801",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_18",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_18.json",
+    "record_sha256": "adcf5089675cc626f3cdea0102bc6c99f9643113175e94ee239b950ed9663cae",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_19",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_19.json",
+    "record_sha256": "d82028c6deb23729eeb89fe6701711a9de11ee99ad699ddf23ef47bfebe976c3",
+    "termination_reason": "purchase_completed"
+  },
+  {
+    "retrieval_top_k": 3,
+    "task_id": "vague_20",
+    "completed": true,
+    "final_asin": "B08XYBS678",
+    "source_purchase": true,
+    "fixed_target_purchase": false,
+    "source_recalled": true,
+    "source_rank": 1,
+    "selected_memory_ids": [
+      "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "shared_e218f650603f3452883bfe54b087e1e8ce8969e1544310a4f30679842e8d65ae",
+      "shared_2002d56e45d2074106b45a44233f9f40137db5b84608aeb1d2cf63f9e59d0e7f"
+    ],
+    "record_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\shopping\\episodes\\top3\\vague_20.json",
+    "record_sha256": "c0f68a61d9c5afae33252cf7df48207ea823e450dfbcbf982ed0733ec619dba4",
+    "termination_reason": "purchase_completed"
+  }
+]

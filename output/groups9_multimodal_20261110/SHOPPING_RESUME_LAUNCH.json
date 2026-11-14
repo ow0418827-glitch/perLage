@@ -1,0 +1,11 @@
+{
+  "pid": 44144,
+  "launched_at": "2026-11-10T22:57:49.2256987+08:00",
+  "scope": "shopping_after_passed_relative_quality_gate",
+  "order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "gate": "GATE_DECISION.json",
+  "release": "SHOPPING_RELEASE_DECISION.json"
+}

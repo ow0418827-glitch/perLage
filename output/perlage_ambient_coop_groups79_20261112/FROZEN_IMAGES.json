@@ -1,0 +1,21 @@
+{
+  "status": "frozen",
+  "images": {
+    "ambient_coop": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\07_shampoo\\adversarial.png",
+        "sha256": "d9c0360e8ded854bbac17c41879a42695d0d0ec53b3b84e6d201d06fdca4e1f9",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\07_shampoo\\ready.json",
+        "ready_sha256": "921476d442164c2f2277d4a4d445c6f0736c5965c15574ab573d66629ded139a"
+      },
+      "09_toothbrush": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\adversarial.png",
+        "sha256": "2eeb719ffac5f2c947f4e7e8221ee89ab579775fbb6434e2e8c506bb4c6d9ddb",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\ready.json",
+        "ready_sha256": "5080ebab6b07adea634922b165d54530a50c6cb08210e801cfaa8a2a4f351ce0"
+      }
+    }
+  },
+  "plan_sha256": "3ca66b6fa080a67a0a1cdac23f53ef0edda730b22490f90be90d57fe04fcec23",
+  "formal_rankings_used": false
+}

@@ -1,0 +1,10 @@
+{
+  "full_new_image_verified": true,
+  "final_sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+  "completed_steps": 60,
+  "selected_step": 50,
+  "independent_scores_verified": true,
+  "maximum_score_error": 0.0,
+  "main_vision_sources_unchanged": true,
+  "original_control_still_pending": true
+}

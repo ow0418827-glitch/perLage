@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "updated_at": "2026-11-11T04:14:53Z",
+  "pid": 22392,
+  "error_type": "RuntimeError",
+  "stage": "queue",
+  "method": null
+}

@@ -1,0 +1,156 @@
+{
+  "status": "completed_diagnostic_only",
+  "changed_factor": "GELU_to_pretrained_QuickGELU",
+  "all_weight_tensors_bitwise_equal": true,
+  "original_activation_counts": {
+    "CLIP": 1,
+    "VisionTransformer": 1,
+    "Conv2d": 1,
+    "Identity": 49,
+    "LayerNorm": 51,
+    "Transformer": 2,
+    "ModuleList": 2,
+    "ResidualAttentionBlock": 24,
+    "MultiheadAttention": 24,
+    "NonDynamicallyQuantizableLinear": 24,
+    "Sequential": 24,
+    "Linear": 48,
+    "GELU": 24,
+    "Embedding": 1
+  },
+  "corrected_activation_counts": {
+    "CLIP": 1,
+    "VisionTransformer": 1,
+    "Conv2d": 1,
+    "Identity": 49,
+    "LayerNorm": 51,
+    "Transformer": 2,
+    "ModuleList": 2,
+    "ResidualAttentionBlock": 24,
+    "MultiheadAttention": 24,
+    "NonDynamicallyQuantizableLinear": 24,
+    "Sequential": 24,
+    "Linear": 48,
+    "QuickGELU": 24,
+    "Embedding": 1
+  },
+  "text_used": false,
+  "source_code_modified": false,
+  "formal_results_modified": false,
+  "existing_image_files_modified": false,
+  "bank_count": 189,
+  "rows": [
+    {
+      "variant": "clean",
+      "query": "target_original",
+      "cosine": 0.6689304113388062,
+      "rank": 6,
+      "original_GELU_cosine": 0.6722689867019653,
+      "original_GELU_rank": 5
+    },
+    {
+      "variant": "clean",
+      "query": "unlabeled_reference",
+      "cosine": 0.6372571587562561,
+      "rank": 78,
+      "original_GELU_cosine": 0.682672381401062,
+      "original_GELU_rank": 43
+    },
+    {
+      "variant": "lucid_4",
+      "query": "target_original",
+      "cosine": 0.8508482575416565,
+      "rank": 1,
+      "original_GELU_cosine": 0.9018582701683044,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "lucid_4",
+      "query": "unlabeled_reference",
+      "cosine": 0.6694273948669434,
+      "rank": 52,
+      "original_GELU_cosine": 0.7234952449798584,
+      "original_GELU_rank": 12
+    },
+    {
+      "variant": "lucid_8",
+      "query": "target_original",
+      "cosine": 0.8895797729492188,
+      "rank": 1,
+      "original_GELU_cosine": 0.9545208215713501,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "lucid_8",
+      "query": "unlabeled_reference",
+      "cosine": 0.6468430161476135,
+      "rank": 74,
+      "original_GELU_cosine": 0.6950553059577942,
+      "original_GELU_rank": 31
+    },
+    {
+      "variant": "lucid_original_16",
+      "query": "target_original",
+      "cosine": 0.9329134821891785,
+      "rank": 1,
+      "original_GELU_cosine": 0.9855914115905762,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "lucid_original_16",
+      "query": "unlabeled_reference",
+      "cosine": 0.6366409063339233,
+      "rank": 78,
+      "original_GELU_cosine": 0.6617368459701538,
+      "original_GELU_rank": 71
+    },
+    {
+      "variant": "perlage_original_no_shadow",
+      "query": "target_original",
+      "cosine": 0.7469086050987244,
+      "rank": 1,
+      "original_GELU_cosine": 0.7706466913223267,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "perlage_original_no_shadow",
+      "query": "unlabeled_reference",
+      "cosine": 0.7111174464225769,
+      "rank": 13,
+      "original_GELU_cosine": 0.7584594488143921,
+      "original_GELU_rank": 3
+    },
+    {
+      "variant": "perlage_pixel_control",
+      "query": "target_original",
+      "cosine": 0.7431469559669495,
+      "rank": 2,
+      "original_GELU_cosine": 0.763097882270813,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "perlage_pixel_control",
+      "query": "unlabeled_reference",
+      "cosine": 0.7094334363937378,
+      "rank": 14,
+      "original_GELU_cosine": 0.7568619251251221,
+      "original_GELU_rank": 3
+    },
+    {
+      "variant": "perlage_latent_only",
+      "query": "target_original",
+      "cosine": 0.7329612970352173,
+      "rank": 2,
+      "original_GELU_cosine": 0.7565293312072754,
+      "original_GELU_rank": 1
+    },
+    {
+      "variant": "perlage_latent_only",
+      "query": "unlabeled_reference",
+      "cosine": 0.7040750980377197,
+      "rank": 16,
+      "original_GELU_cosine": 0.7478330135345459,
+      "original_GELU_rank": 5
+    }
+  ]
+}

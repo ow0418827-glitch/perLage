@@ -1,0 +1,356 @@
+{
+  "series": {
+    "20261104_top1": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 20,
+      "target_purchases": 0,
+      "source_exposed_episodes": 20,
+      "policy_steps": 83,
+      "source_exposure_steps": 83,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 3,
+        "max": 3,
+        "mean": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20
+      },
+      "mean_environment_reward": 0.3333333333333333,
+      "final_asin_counts": {
+        "B08XYBS678": 20
+      }
+    },
+    "20261104_top3": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 19,
+      "target_purchases": 0,
+      "source_exposed_episodes": 20,
+      "policy_steps": 88,
+      "source_exposure_steps": 88,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 3,
+        "max": 3,
+        "mean": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20
+      },
+      "mean_environment_reward": 0.3333333333333333,
+      "final_asin_counts": {
+        "B08XYBS678": 19,
+        "B0789VCBF6": 1
+      }
+    },
+    "20261106_top1": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 19,
+      "target_purchases": 0,
+      "source_exposed_episodes": 20,
+      "policy_steps": 60,
+      "source_exposure_steps": 60,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "mean_environment_reward": 0.3333333333333333,
+      "final_asin_counts": {
+        "B08XYBS678": 19,
+        "B08LPMZ51K": 1
+      }
+    },
+    "20261106_top3": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 13,
+      "target_purchases": 0,
+      "source_exposed_episodes": 20,
+      "policy_steps": 71,
+      "source_exposure_steps": 71,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 1,
+        "max": 1,
+        "mean": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20
+      },
+      "mean_environment_reward": 0.2583333333333333,
+      "final_asin_counts": {
+        "B08XYBS678": 13,
+        "B08WYYCB8N": 1,
+        "B08M9H3DRX": 1,
+        "B09QKLY4ZN": 1,
+        "B099MY9PX2": 1,
+        "B07Q5X99J7": 1,
+        "B07XBZ3DZT": 1,
+        "B089JY5DB9": 1
+      }
+    },
+    "current_no_pixel": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 0,
+      "target_purchases": 6,
+      "source_exposed_episodes": 0,
+      "policy_steps": 128,
+      "source_exposure_steps": 0,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 14,
+        "max": 25,
+        "mean": 18.25,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "mean_environment_reward": 0.95,
+      "final_asin_counts": {
+        "B001B1R6RC": 5,
+        "B08JCJ2KFB": 6,
+        "B00BDJODWI": 6,
+        "B0016JDLO6": 1,
+        "B08XQ74Y4Y": 2
+      }
+    },
+    "current_lucid": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 0,
+      "target_purchases": 6,
+      "source_exposed_episodes": 18,
+      "policy_steps": 121,
+      "source_exposure_steps": 105,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 1,
+        "max": 5,
+        "mean": 2.35,
+        "top1": 2,
+        "top3": 18,
+        "top5": 20
+      },
+      "mean_environment_reward": 0.8333333333333334,
+      "final_asin_counts": {
+        "B001B1R6RC": 4,
+        "B07ZQRFC46": 3,
+        "B00BDJODWI": 6,
+        "B07B2JDP3H": 1,
+        "B08XQ74Y4Y": 2,
+        "B08JCJ2KFB": 3,
+        "B07L6TJZ7Z": 1
+      }
+    },
+    "current_clean_shopping_control": {
+      "n": 20,
+      "completed": 20,
+      "source_purchases": 0,
+      "target_purchases": 5,
+      "source_exposed_episodes": 0,
+      "policy_steps": 129,
+      "source_exposure_steps": 0,
+      "actual_first_retrieval_source_ranks": {
+        "n": 20,
+        "min": 16,
+        "max": 27,
+        "mean": 20.1,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0
+      },
+      "mean_environment_reward": 0.8833333333333333,
+      "final_asin_counts": {
+        "B08XQ74Y4Y": 2,
+        "B07ZQRFC46": 3,
+        "B00BDJODWI": 5,
+        "B001B1R6RC": 5,
+        "B08JCJ2KFB": 4,
+        "B0771SSXBK": 1
+      }
+    }
+  },
+  "retrieval": {
+    "current_no_pixel_clean": {
+      "n": 20,
+      "min": 16,
+      "max": 27,
+      "mean": 20.1,
+      "top1": 0,
+      "top3": 0,
+      "top5": 0
+    },
+    "current_no_pixel_modified": {
+      "n": 20,
+      "min": 14,
+      "max": 25,
+      "mean": 18.25,
+      "top1": 0,
+      "top3": 0,
+      "top5": 0
+    },
+    "current_lucid_clean": {
+      "n": 20,
+      "min": 16,
+      "max": 27,
+      "mean": 20.1,
+      "top1": 0,
+      "top3": 0,
+      "top5": 0
+    },
+    "current_lucid_modified": {
+      "n": 20,
+      "min": 1,
+      "max": 5,
+      "mean": 2.35,
+      "top1": 2,
+      "top3": 18,
+      "top5": 20
+    },
+    "20261106_modified": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_clean": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_lucid_original_16": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_lucid_4": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_lucid_8": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_perlage_original_no_shadow": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_perlage_pixel_control": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_perlage_latent_only": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_perlage_legacy_reference": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    },
+    "20261107_perlage_color_revision_reference": {
+      "n": 20,
+      "min": 1,
+      "max": 1,
+      "mean": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20
+    }
+  },
+  "source_records": {
+    "20261104": {
+      "pool_count": 15,
+      "Id": "fixed_nine_p7_history_0_None",
+      "RecordKind": null,
+      "ObservedPurchase": null,
+      "Completed": true,
+      "Success": true,
+      "actions_count": 7,
+      "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "FeatureText": null,
+      "Attributes": null
+    },
+    "20261106": {
+      "pool_count": 100,
+      "Id": "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+      "RecordKind": "purchase_memory",
+      "ObservedPurchase": null,
+      "Completed": true,
+      "Success": true,
+      "actions_count": 7,
+      "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "FeatureText": null,
+      "Attributes": null
+    },
+    "current": {
+      "pool_count": 189,
+      "Id": "groups9_reference_07_shampoo_B08XYBS678",
+      "RecordKind": "simulated_gallery",
+      "ObservedPurchase": false,
+      "Completed": false,
+      "Success": false,
+      "actions_count": 0,
+      "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "FeatureText": "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+      "Attributes": [
+        "a foaming cleanser",
+        "coconut and almond milk",
+        "a cruelty-free formula",
+        "a moisturizing blend",
+        "cruelty free",
+        "plant based"
+      ]
+    }
+  },
+  "input_files_verified": 120
+}

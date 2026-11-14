@@ -1,0 +1,56 @@
+{
+  "status": "completed",
+  "profile": "fg48_bg12",
+  "step": 350,
+  "requested_steps": 350,
+  "best": {
+    "source_ssim": 0.7489784536203433,
+    "source_mae_levels": 11.79394245147705,
+    "fg_source_mae_levels": 20.787248611450195,
+    "bg_source_mae_levels": 3.3686230182647705,
+    "fg_anchor_mae_levels": 17.117116928100586,
+    "bg_anchor_mae_levels": 3.0632333755493164,
+    "halo_error": 13.354239545676554,
+    "quality_ok": true,
+    "natural_halo_gate": false,
+    "halo_hard_gate": false,
+    "step": 350,
+    "joint_scores": [
+      [
+        0.9660340547561646
+      ]
+    ],
+    "training_utility": 0.9595564007759094,
+    "regularization": 0.0013649616157636046,
+    "selection_utility": 0.958191454410553,
+    "halo_ceiling": 12.8620334353522,
+    "parent_halo_error": 12.8620334353522,
+    "compensated_image_cosine": [
+      [
+        0.9530787467956543
+      ]
+    ],
+    "image_to_target_cosine": [
+      [
+        0.6368089914321899
+      ]
+    ],
+    "image_to_training_text_cosine": [
+      [
+        0.31136205792427063
+      ]
+    ],
+    "image_to_query_cosine": [
+      [
+        0.5927164554595947
+      ]
+    ],
+    "selection": [
+      1,
+      0.958191454410553
+    ]
+  },
+  "accepted_updates": 350,
+  "rejected_updates": 0,
+  "seconds": 765.7124913000007
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-10T14:23:25.521829+00:00",
+  "image_count": 9,
+  "same_images_for_both_methods": true,
+  "image_reselection_by_rank": false,
+  "groups": [
+    {
+      "group": "01_camera",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\01_camera\\query.png",
+      "image_sha256": "0f88116eed2a9493fcf0a8fc002c6309483b9c6b7e90da23e8c4b9458052c50d",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\01_camera\\manifest.json"
+    },
+    {
+      "group": "02_chair",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\02_chair\\query.png",
+      "image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\02_chair\\manifest.json"
+    },
+    {
+      "group": "03_cookies",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\03_cookies\\query.png",
+      "image_sha256": "a36d3ba149035824b5a06edda53774239a7f970f9001df99d53ae15207e8353c",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\03_cookies\\manifest.json"
+    },
+    {
+      "group": "04_curtain",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\04_curtain\\query.png",
+      "image_sha256": "1a45b6e3b4dc5e9ba763d84288d25367daeb30370c5f87a04668a0758fb8ebb7",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\04_curtain\\manifest.json"
+    },
+    {
+      "group": "05_hair_extension",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\05_hair_extension\\query.png",
+      "image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\05_hair_extension\\manifest.json"
+    },
+    {
+      "group": "06_jeans",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+      "image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\manifest.json"
+    },
+    {
+      "group": "07_shampoo",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\manifest.json"
+    },
+    {
+      "group": "08_speaker",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\08_speaker\\query.png",
+      "image_sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\08_speaker\\manifest.json"
+    },
+    {
+      "group": "09_toothbrush",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+      "image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\manifest.json"
+    }
+  ]
+}

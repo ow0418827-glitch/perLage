@@ -1,0 +1,128 @@
+{
+  "schema_version": 2,
+  "group": "05_hair_extension",
+  "name": "第五组接发",
+  "category": "hair_extensions",
+  "shape_similarity": 0.7229,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": true,
+  "selection_status": "strictly_selected_uniform_draw",
+  "selection_notes": "现行第二版门槛抽样方案在seed 42下从7个合格接发候选均匀抽样选出（抽中率 1/7）。",
+  "methods_supported": [
+    "lucid",
+    "PerLAGE",
+    "PerLAGE_no_pixel"
+  ],
+  "target_feature_text": "I want to buy hair extensions with real human hair and double wefts.",
+  "training_queries": [
+    "I want to buy hair extensions with real human hair and double wefts.",
+    "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+    "I am looking for hair extensions with double wefts and rubber-lined clips."
+  ],
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts."
+    ]
+  },
+  "source_boxes": [
+    [
+      0,
+      6,
+      494,
+      499
+    ]
+  ],
+  "target_boxes": [
+    [
+      10,
+      11,
+      482,
+      499
+    ]
+  ],
+  "print_regions": [],
+  "target": {
+    "id": "B01460C2I2",
+    "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+    "brand": "S-noilite",
+    "attributes": [
+      "real human hair",
+      "double wefts",
+      "a clip-in design",
+      "rubber-lined clips",
+      "hair extensions",
+      "hair styling",
+      "hair cutting"
+    ],
+    "feature_text": "I want to buy hair extensions with real human hair and double wefts.",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts.",
+      "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+      "I am looking for hair extensions with double wefts and rubber-lined clips."
+    ],
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        10,
+        11,
+        482,
+        499
+      ]
+    ],
+    "text_regions": []
+  },
+  "source": {
+    "id": "B07Z7MQSM1",
+    "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+    "brand": "",
+    "attributes": [
+      "kinky straight human hair",
+      "double wefts",
+      "a natural black color",
+      "stainless steel clips",
+      "hair extensions",
+      "hair clips",
+      "natural hair",
+      "stainless steel"
+    ],
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        0,
+        6,
+        494,
+        499
+      ]
+    ],
+    "text_regions": []
+  },
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "lucid_alignment_config": {
+    "enabled": true,
+    "target_text": "I want to buy hair extensions with real human hair and double wefts.",
+    "text_weight": 1.0,
+    "steps": 1000
+  },
+  "perlage_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": true
+  },
+  "perlage_no_pixel_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": false
+  }
+}

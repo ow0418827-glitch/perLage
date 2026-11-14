@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "phase": "finish",
+  "elapsed_seconds": 122.92588790000082,
+  "audit": {
+    "active": false,
+    "checked_accesses": 11040,
+    "blocked_accesses": []
+  },
+  "error": {
+    "type": "ValueError",
+    "message": "所有非零主色融合强度均未通过原有质量及印刷光晕限制"
+  },
+  "public_images_and_names_only": true,
+  "prior_color_step_decision_used_to_stop_full_generation": false
+}

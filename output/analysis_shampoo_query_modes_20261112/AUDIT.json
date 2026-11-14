@@ -1,0 +1,3117 @@
+{
+  "created_at_utc": "2026-11-12T01:23:33.162881+00:00",
+  "scope": "saved_scores_and_frozen_inputs_only",
+  "encoder_calls": 0,
+  "generation_calls": 0,
+  "shopping_calls": 0,
+  "results": {
+    "perlage_no_pixel": {
+      "A_feature_text": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 16,
+            "maximum": 27,
+            "mean": 20.1,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "rank": 20,
+              "score": 0.5125839710235596
+            },
+            {
+              "task_id": "feature_02",
+              "rank": 20,
+              "score": 0.5187329649925232
+            },
+            {
+              "task_id": "feature_03",
+              "rank": 19,
+              "score": 0.5395674109458923
+            },
+            {
+              "task_id": "feature_04",
+              "rank": 20,
+              "score": 0.5391727089881897
+            },
+            {
+              "task_id": "feature_05",
+              "rank": 16,
+              "score": 0.5303010940551758
+            },
+            {
+              "task_id": "feature_06",
+              "rank": 24,
+              "score": 0.5055874586105347
+            },
+            {
+              "task_id": "feature_07",
+              "rank": 22,
+              "score": 0.5200503468513489
+            },
+            {
+              "task_id": "feature_08",
+              "rank": 17,
+              "score": 0.5388401746749878
+            },
+            {
+              "task_id": "feature_09",
+              "rank": 21,
+              "score": 0.5368765592575073
+            },
+            {
+              "task_id": "feature_10",
+              "rank": 20,
+              "score": 0.5230228304862976
+            },
+            {
+              "task_id": "feature_11",
+              "rank": 19,
+              "score": 0.522458553314209
+            },
+            {
+              "task_id": "feature_12",
+              "rank": 22,
+              "score": 0.5263822078704834
+            },
+            {
+              "task_id": "feature_13",
+              "rank": 27,
+              "score": 0.4942181706428528
+            },
+            {
+              "task_id": "feature_14",
+              "rank": 17,
+              "score": 0.5382429361343384
+            },
+            {
+              "task_id": "feature_15",
+              "rank": 19,
+              "score": 0.5388360619544983
+            },
+            {
+              "task_id": "feature_16",
+              "rank": 18,
+              "score": 0.5268044471740723
+            },
+            {
+              "task_id": "feature_17",
+              "rank": 19,
+              "score": 0.5309736132621765
+            },
+            {
+              "task_id": "feature_18",
+              "rank": 22,
+              "score": 0.5161254405975342
+            },
+            {
+              "task_id": "feature_19",
+              "rank": 20,
+              "score": 0.530092716217041
+            },
+            {
+              "task_id": "feature_20",
+              "rank": 20,
+              "score": 0.5225501656532288
+            }
+          ]
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 14,
+            "maximum": 25,
+            "mean": 18.25,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "rank": 19,
+              "score": 0.5179986953735352
+            },
+            {
+              "task_id": "feature_02",
+              "rank": 17,
+              "score": 0.5288039445877075
+            },
+            {
+              "task_id": "feature_03",
+              "rank": 19,
+              "score": 0.5402673482894897
+            },
+            {
+              "task_id": "feature_04",
+              "rank": 19,
+              "score": 0.5423433184623718
+            },
+            {
+              "task_id": "feature_05",
+              "rank": 15,
+              "score": 0.5372658967971802
+            },
+            {
+              "task_id": "feature_06",
+              "rank": 22,
+              "score": 0.5123907923698425
+            },
+            {
+              "task_id": "feature_07",
+              "rank": 17,
+              "score": 0.5268635153770447
+            },
+            {
+              "task_id": "feature_08",
+              "rank": 14,
+              "score": 0.5454010963439941
+            },
+            {
+              "task_id": "feature_09",
+              "rank": 21,
+              "score": 0.5419803857803345
+            },
+            {
+              "task_id": "feature_10",
+              "rank": 18,
+              "score": 0.5242558717727661
+            },
+            {
+              "task_id": "feature_11",
+              "rank": 15,
+              "score": 0.5312525629997253
+            },
+            {
+              "task_id": "feature_12",
+              "rank": 22,
+              "score": 0.5284875631332397
+            },
+            {
+              "task_id": "feature_13",
+              "rank": 25,
+              "score": 0.4984823167324066
+            },
+            {
+              "task_id": "feature_14",
+              "rank": 15,
+              "score": 0.5449751019477844
+            },
+            {
+              "task_id": "feature_15",
+              "rank": 17,
+              "score": 0.5466575026512146
+            },
+            {
+              "task_id": "feature_16",
+              "rank": 16,
+              "score": 0.530759871006012
+            },
+            {
+              "task_id": "feature_17",
+              "rank": 15,
+              "score": 0.5412914156913757
+            },
+            {
+              "task_id": "feature_18",
+              "rank": 21,
+              "score": 0.5238775610923767
+            },
+            {
+              "task_id": "feature_19",
+              "rank": 20,
+              "score": 0.528869092464447
+            },
+            {
+              "task_id": "feature_20",
+              "rank": 18,
+              "score": 0.5313292741775513
+            }
+          ]
+        }
+      },
+      "B_feature_photo": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 14,
+            "maximum": 17,
+            "mean": 15.55,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 15,
+              "source_score": 0.673881471157074,
+              "source_minus_third": -0.06574243307113647
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 16,
+              "source_score": 0.6784445643424988,
+              "source_minus_third": -0.06681305170059204
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 16,
+              "source_score": 0.6869259476661682,
+              "source_minus_third": -0.07561546564102173
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 15,
+              "source_score": 0.6870214939117432,
+              "source_minus_third": -0.07251626253128052
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 15,
+              "source_score": 0.6847548484802246,
+              "source_minus_third": -0.06672096252441406
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 16,
+              "source_score": 0.6721014976501465,
+              "source_minus_third": -0.07161867618560791
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 15,
+              "source_score": 0.677681028842926,
+              "source_minus_third": -0.06625860929489136
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 15,
+              "source_score": 0.690266489982605,
+              "source_minus_third": -0.06618070602416992
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 17,
+              "source_score": 0.6878043413162231,
+              "source_minus_third": -0.07800590991973877
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 15,
+              "source_score": 0.6767852306365967,
+              "source_minus_third": -0.06849992275238037
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 15,
+              "source_score": 0.6800910830497742,
+              "source_minus_third": -0.06385546922683716
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 16,
+              "source_score": 0.6793088912963867,
+              "source_minus_third": -0.07925814390182495
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 17,
+              "source_score": 0.6653610467910767,
+              "source_minus_third": -0.06932109594345093
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 16,
+              "source_score": 0.6874368190765381,
+              "source_minus_third": -0.06851720809936523
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 16,
+              "source_score": 0.6892322301864624,
+              "source_minus_third": -0.07125520706176758
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 15,
+              "source_score": 0.6817780137062073,
+              "source_minus_third": -0.0692223310470581
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 14,
+              "source_score": 0.6865296363830566,
+              "source_minus_third": -0.0680273175239563
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 16,
+              "source_score": 0.6766133308410645,
+              "source_minus_third": -0.06860804557800293
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 15,
+              "source_score": 0.6799788475036621,
+              "source_minus_third": -0.0720221996307373
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 16,
+              "source_score": 0.6807135343551636,
+              "source_minus_third": -0.06394696235656738
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.06960029900074005,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7713489532470703
+            },
+            {
+              "rank": 2,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7682438492774963
+            },
+            {
+              "rank": 3,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7396239042282104
+            },
+            {
+              "rank": 4,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.7304901480674744
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7255306243896484
+            },
+            {
+              "rank": 6,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7150106430053711
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7124655246734619
+            },
+            {
+              "rank": 8,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.707069456577301
+            },
+            {
+              "rank": 9,
+              "asin": "B07S523DJC",
+              "title": "Infuse My. Colour Quartz Color Enhancing Shampoo - For Chemically Treated Hair - Soft Dusty Pink Champagne Tones - Vegan And Cruelty Free - No Parabens, Silicones, Sulfates - 8.5 Oz",
+              "score": 0.7053901553153992
+            },
+            {
+              "rank": 10,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.6944030523300171
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B0771SSXBK": 20,
+            "B08N7WFY1K": 20,
+            "B07NB7SJ1Y": 19,
+            "B01KYRJTIW": 1
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 11,
+            "maximum": 14,
+            "mean": 12.55,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 13,
+              "source_score": 0.6895847320556641,
+              "source_minus_third": -0.05003917217254639
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 12,
+              "source_score": 0.6970643401145935,
+              "source_minus_third": -0.048193275928497314
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 13,
+              "source_score": 0.6996273994445801,
+              "source_minus_third": -0.06291401386260986
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 13,
+              "source_score": 0.7012584805488586,
+              "source_minus_third": -0.05827927589416504
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 12,
+              "source_score": 0.7014187574386597,
+              "source_minus_third": -0.050057053565979004
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 13,
+              "source_score": 0.6887321472167969,
+              "source_minus_third": -0.05498802661895752
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 11,
+              "source_score": 0.6942335367202759,
+              "source_minus_third": -0.049706101417541504
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 12,
+              "source_score": 0.7066839933395386,
+              "source_minus_third": -0.04976320266723633
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 13,
+              "source_score": 0.7032876014709473,
+              "source_minus_third": -0.06252264976501465
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 13,
+              "source_score": 0.689818263053894,
+              "source_minus_third": -0.05546689033508301
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 12,
+              "source_score": 0.697898268699646,
+              "source_minus_third": -0.04604828357696533
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 13,
+              "source_score": 0.6928907036781311,
+              "source_minus_third": -0.06567633152008057
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 14,
+              "source_score": 0.6804143786430359,
+              "source_minus_third": -0.0542677640914917
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 12,
+              "source_score": 0.7039021253585815,
+              "source_minus_third": -0.05205190181732178
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 12,
+              "source_score": 0.7064083218574524,
+              "source_minus_third": -0.05407911539077759
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 12,
+              "source_score": 0.6965530514717102,
+              "source_minus_third": -0.054447293281555176
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 12,
+              "source_score": 0.7053157091140747,
+              "source_minus_third": -0.04924124479293823
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 13,
+              "source_score": 0.6937839984893799,
+              "source_minus_third": -0.0514373779296875
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 14,
+              "source_score": 0.6914719939231873,
+              "source_minus_third": -0.06052905321121216
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 12,
+              "source_score": 0.69852614402771,
+              "source_minus_third": -0.046134352684020996
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.05379211902618408,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7713489532470703
+            },
+            {
+              "rank": 2,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7682438492774963
+            },
+            {
+              "rank": 3,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7396239042282104
+            },
+            {
+              "rank": 4,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.7304901480674744
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7255306243896484
+            },
+            {
+              "rank": 6,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7150106430053711
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7124655246734619
+            },
+            {
+              "rank": 8,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.707069456577301
+            },
+            {
+              "rank": 9,
+              "asin": "B07S523DJC",
+              "title": "Infuse My. Colour Quartz Color Enhancing Shampoo - For Chemically Treated Hair - Soft Dusty Pink Champagne Tones - Vegan And Cruelty Free - No Parabens, Silicones, Sulfates - 8.5 Oz",
+              "score": 0.7053901553153992
+            },
+            {
+              "rank": 10,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.6944030523300171
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B0771SSXBK": 20,
+            "B08N7WFY1K": 20,
+            "B07NB7SJ1Y": 19,
+            "B01KYRJTIW": 1
+          }
+        }
+      },
+      "C_vague_photo": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 47,
+            "maximum": 67,
+            "mean": 56.35,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "vague_01",
+              "source_rank": 60,
+              "source_score": 0.6061134338378906,
+              "source_minus_third": -0.0761520266532898
+            },
+            {
+              "task_id": "vague_02",
+              "source_rank": 55,
+              "source_score": 0.6183086037635803,
+              "source_minus_third": -0.0749741792678833
+            },
+            {
+              "task_id": "vague_03",
+              "source_rank": 52,
+              "source_score": 0.6179084181785583,
+              "source_minus_third": -0.07127141952514648
+            },
+            {
+              "task_id": "vague_04",
+              "source_rank": 57,
+              "source_score": 0.6150617599487305,
+              "source_minus_third": -0.07625842094421387
+            },
+            {
+              "task_id": "vague_05",
+              "source_rank": 53,
+              "source_score": 0.6146894097328186,
+              "source_minus_third": -0.07513654232025146
+            },
+            {
+              "task_id": "vague_06",
+              "source_rank": 56,
+              "source_score": 0.6104349493980408,
+              "source_minus_third": -0.07287049293518066
+            },
+            {
+              "task_id": "vague_07",
+              "source_rank": 57,
+              "source_score": 0.6132867932319641,
+              "source_minus_third": -0.07833874225616455
+            },
+            {
+              "task_id": "vague_08",
+              "source_rank": 47,
+              "source_score": 0.6182734370231628,
+              "source_minus_third": -0.07202708721160889
+            },
+            {
+              "task_id": "vague_09",
+              "source_rank": 56,
+              "source_score": 0.6100594997406006,
+              "source_minus_third": -0.07494348287582397
+            },
+            {
+              "task_id": "vague_10",
+              "source_rank": 57,
+              "source_score": 0.6146199107170105,
+              "source_minus_third": -0.0782167911529541
+            },
+            {
+              "task_id": "vague_11",
+              "source_rank": 58,
+              "source_score": 0.6132930517196655,
+              "source_minus_third": -0.08079981803894043
+            },
+            {
+              "task_id": "vague_12",
+              "source_rank": 54,
+              "source_score": 0.6125271320343018,
+              "source_minus_third": -0.07555001974105835
+            },
+            {
+              "task_id": "vague_13",
+              "source_rank": 62,
+              "source_score": 0.6063786149024963,
+              "source_minus_third": -0.08038491010665894
+            },
+            {
+              "task_id": "vague_14",
+              "source_rank": 56,
+              "source_score": 0.6106117963790894,
+              "source_minus_third": -0.07350414991378784
+            },
+            {
+              "task_id": "vague_15",
+              "source_rank": 53,
+              "source_score": 0.6187383532524109,
+              "source_minus_third": -0.06957495212554932
+            },
+            {
+              "task_id": "vague_16",
+              "source_rank": 58,
+              "source_score": 0.6144014000892639,
+              "source_minus_third": -0.08221656084060669
+            },
+            {
+              "task_id": "vague_17",
+              "source_rank": 53,
+              "source_score": 0.6149141192436218,
+              "source_minus_third": -0.07159918546676636
+            },
+            {
+              "task_id": "vague_18",
+              "source_rank": 61,
+              "source_score": 0.6068931818008423,
+              "source_minus_third": -0.07569682598114014
+            },
+            {
+              "task_id": "vague_19",
+              "source_rank": 67,
+              "source_score": 0.6082113981246948,
+              "source_minus_third": -0.08402252197265625
+            },
+            {
+              "task_id": "vague_20",
+              "source_rank": 55,
+              "source_score": 0.6090841889381409,
+              "source_minus_third": -0.074268639087677
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.07589033842086793,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7113537192344666
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.6963991522789001
+            },
+            {
+              "rank": 3,
+              "asin": "B091CJT1V9",
+              "title": "Blacksherbet Edible Glitter Dust Spray, (10g) | 100% Edible | Cakes, Cupcakes, Decorating, Cake Pops, Cookies, Drinks, Chocolate. Food Grade Coloring Glitter & Dusts. Kosher (Light Lavender)",
+              "score": 0.6822654604911804
+            },
+            {
+              "rank": 4,
+              "asin": "B093BNSSHW",
+              "title": "LVOD Soundbar TV Home Theater System Wired Speakers Bluetooth Speakers Computer Speaker Subwoofer Speakers",
+              "score": 0.6811685562133789
+            },
+            {
+              "rank": 5,
+              "asin": "B09M8CQDJ9",
+              "title": "Electric Toothbrush Waterproof Electric Toothbrush Set Oral Care Battery Powered Tooth Cleaning Tools (Color : Gray)",
+              "score": 0.6794247627258301
+            },
+            {
+              "rank": 6,
+              "asin": "B09MLNK8JZ",
+              "title": "Kids Aldult Electric Toothbrushes, Electric Wireless Charging Toothbrush, 3 Optional Modes, 2 Minutes Timer, 4 Hours Charge for 60 Days, Smart Timer",
+              "score": 0.6790261268615723
+            },
+            {
+              "rank": 7,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6632431745529175
+            },
+            {
+              "rank": 8,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.662113606929779
+            },
+            {
+              "rank": 9,
+              "asin": "B08P52BN3V",
+              "title": "Levi's Men's 501 Original Fit Jeans",
+              "score": 0.6617532968521118
+            },
+            {
+              "rank": 10,
+              "asin": "B09RPPFMX4",
+              "title": "Kids Toothbrush 4.0 Food Grade Soft Brush Head Whole Mouth Toothbrush 360 Degree Oral Teeth Cleaning Design for Toddlers and Children(1-6 Years Old/6-12 Years Old)",
+              "score": 0.660700798034668
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B08N7WFY1K": 20,
+            "B0771SSXBK": 20,
+            "B091CJT1V9": 7,
+            "B093BNSSHW": 12,
+            "B09M8CQDJ9": 1
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 39,
+            "maximum": 60,
+            "mean": 49.55,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "vague_01",
+              "source_rank": 54,
+              "source_score": 0.6135058999061584,
+              "source_minus_third": -0.06875956058502197
+            },
+            {
+              "task_id": "vague_02",
+              "source_rank": 50,
+              "source_score": 0.6250978708267212,
+              "source_minus_third": -0.06818491220474243
+            },
+            {
+              "task_id": "vague_03",
+              "source_rank": 39,
+              "source_score": 0.6262635588645935,
+              "source_minus_third": -0.06291627883911133
+            },
+            {
+              "task_id": "vague_04",
+              "source_rank": 52,
+              "source_score": 0.6223841309547424,
+              "source_minus_third": -0.0689360499382019
+            },
+            {
+              "task_id": "vague_05",
+              "source_rank": 44,
+              "source_score": 0.622780978679657,
+              "source_minus_third": -0.06704497337341309
+            },
+            {
+              "task_id": "vague_06",
+              "source_rank": 53,
+              "source_score": 0.6159289479255676,
+              "source_minus_third": -0.06737649440765381
+            },
+            {
+              "task_id": "vague_07",
+              "source_rank": 53,
+              "source_score": 0.6204349994659424,
+              "source_minus_third": -0.07119053602218628
+            },
+            {
+              "task_id": "vague_08",
+              "source_rank": 41,
+              "source_score": 0.6263174414634705,
+              "source_minus_third": -0.06398308277130127
+            },
+            {
+              "task_id": "vague_09",
+              "source_rank": 50,
+              "source_score": 0.617165207862854,
+              "source_minus_third": -0.06783777475357056
+            },
+            {
+              "task_id": "vague_10",
+              "source_rank": 51,
+              "source_score": 0.6228624582290649,
+              "source_minus_third": -0.06997424364089966
+            },
+            {
+              "task_id": "vague_11",
+              "source_rank": 51,
+              "source_score": 0.620587944984436,
+              "source_minus_third": -0.07350492477416992
+            },
+            {
+              "task_id": "vague_12",
+              "source_rank": 51,
+              "source_score": 0.6190274953842163,
+              "source_minus_third": -0.0690496563911438
+            },
+            {
+              "task_id": "vague_13",
+              "source_rank": 55,
+              "source_score": 0.615491509437561,
+              "source_minus_third": -0.07127201557159424
+            },
+            {
+              "task_id": "vague_14",
+              "source_rank": 48,
+              "source_score": 0.61857670545578,
+              "source_minus_third": -0.06553924083709717
+            },
+            {
+              "task_id": "vague_15",
+              "source_rank": 44,
+              "source_score": 0.6261628270149231,
+              "source_minus_third": -0.06215047836303711
+            },
+            {
+              "task_id": "vague_16",
+              "source_rank": 53,
+              "source_score": 0.6204479336738586,
+              "source_minus_third": -0.07617002725601196
+            },
+            {
+              "task_id": "vague_17",
+              "source_rank": 41,
+              "source_score": 0.6229867935180664,
+              "source_minus_third": -0.06352651119232178
+            },
+            {
+              "task_id": "vague_18",
+              "source_rank": 53,
+              "source_score": 0.6142727136611938,
+              "source_minus_third": -0.06831729412078857
+            },
+            {
+              "task_id": "vague_19",
+              "source_rank": 60,
+              "source_score": 0.6162583827972412,
+              "source_minus_third": -0.07597553730010986
+            },
+            {
+              "task_id": "vague_20",
+              "source_rank": 48,
+              "source_score": 0.6165739297866821,
+              "source_minus_third": -0.06677889823913574
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.06842442452907563,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7113537192344666
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.6963991522789001
+            },
+            {
+              "rank": 3,
+              "asin": "B091CJT1V9",
+              "title": "Blacksherbet Edible Glitter Dust Spray, (10g) | 100% Edible | Cakes, Cupcakes, Decorating, Cake Pops, Cookies, Drinks, Chocolate. Food Grade Coloring Glitter & Dusts. Kosher (Light Lavender)",
+              "score": 0.6822654604911804
+            },
+            {
+              "rank": 4,
+              "asin": "B093BNSSHW",
+              "title": "LVOD Soundbar TV Home Theater System Wired Speakers Bluetooth Speakers Computer Speaker Subwoofer Speakers",
+              "score": 0.6811685562133789
+            },
+            {
+              "rank": 5,
+              "asin": "B09M8CQDJ9",
+              "title": "Electric Toothbrush Waterproof Electric Toothbrush Set Oral Care Battery Powered Tooth Cleaning Tools (Color : Gray)",
+              "score": 0.6794247627258301
+            },
+            {
+              "rank": 6,
+              "asin": "B09MLNK8JZ",
+              "title": "Kids Aldult Electric Toothbrushes, Electric Wireless Charging Toothbrush, 3 Optional Modes, 2 Minutes Timer, 4 Hours Charge for 60 Days, Smart Timer",
+              "score": 0.6790261268615723
+            },
+            {
+              "rank": 7,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6632431745529175
+            },
+            {
+              "rank": 8,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.662113606929779
+            },
+            {
+              "rank": 9,
+              "asin": "B08P52BN3V",
+              "title": "Levi's Men's 501 Original Fit Jeans",
+              "score": 0.6617532968521118
+            },
+            {
+              "rank": 10,
+              "asin": "B09RPPFMX4",
+              "title": "Kids Toothbrush 4.0 Food Grade Soft Brush Head Whole Mouth Toothbrush 360 Degree Oral Teeth Cleaning Design for Toddlers and Children(1-6 Years Old/6-12 Years Old)",
+              "score": 0.660700798034668
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B08N7WFY1K": 20,
+            "B0771SSXBK": 20,
+            "B091CJT1V9": 7,
+            "B093BNSSHW": 12,
+            "B09M8CQDJ9": 1
+          }
+        }
+      },
+      "D_feature_target": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 12,
+            "maximum": 15,
+            "mean": 13.9,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 14,
+              "source_score": 0.6666556000709534,
+              "source_minus_third": -0.06358808279037476
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 14,
+              "source_score": 0.6719244122505188,
+              "source_minus_third": -0.06188291311264038
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 13,
+              "source_score": 0.682991623878479,
+              "source_minus_third": -0.061911940574645996
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 14,
+              "source_score": 0.6784512996673584,
+              "source_minus_third": -0.06455361843109131
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 14,
+              "source_score": 0.6798796653747559,
+              "source_minus_third": -0.060524702072143555
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 13,
+              "source_score": 0.6662622690200806,
+              "source_minus_third": -0.055660247802734375
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 14,
+              "source_score": 0.6696885824203491,
+              "source_minus_third": -0.0632811188697815
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 14,
+              "source_score": 0.6826707720756531,
+              "source_minus_third": -0.058436691761016846
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 13,
+              "source_score": 0.6791839599609375,
+              "source_minus_third": -0.061193645000457764
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 14,
+              "source_score": 0.6719456911087036,
+              "source_minus_third": -0.06658852100372314
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 15,
+              "source_score": 0.6751381754875183,
+              "source_minus_third": -0.05885028839111328
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 13,
+              "source_score": 0.6740254163742065,
+              "source_minus_third": -0.0617484450340271
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 14,
+              "source_score": 0.6576129198074341,
+              "source_minus_third": -0.06910181045532227
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 15,
+              "source_score": 0.6804784536361694,
+              "source_minus_third": -0.06236755847930908
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 14,
+              "source_score": 0.6813196539878845,
+              "source_minus_third": -0.05610090494155884
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 14,
+              "source_score": 0.6733094453811646,
+              "source_minus_third": -0.06549942493438721
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 14,
+              "source_score": 0.6791408658027649,
+              "source_minus_third": -0.060913920402526855
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 12,
+              "source_score": 0.6696126461029053,
+              "source_minus_third": -0.0589451789855957
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 15,
+              "source_score": 0.6735085844993591,
+              "source_minus_third": -0.06590700149536133
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 15,
+              "source_score": 0.6778669953346252,
+              "source_minus_third": -0.061749279499053955
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.06194026470184326,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7466436624526978
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7334991693496704
+            },
+            {
+              "rank": 3,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7302436828613281
+            },
+            {
+              "rank": 4,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.730226993560791
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7187360525131226
+            },
+            {
+              "rank": 6,
+              "asin": "B073GFGWWJ",
+              "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+              "score": 0.7106539011001587
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7096086740493774
+            },
+            {
+              "rank": 8,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.7067021131515503
+            },
+            {
+              "rank": 9,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6889311075210571
+            },
+            {
+              "rank": 10,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.6885077953338623
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B07NB7SJ1Y": 20,
+            "B0771SSXBK": 17,
+            "B0048F5ATO": 9,
+            "B08N7WFY1K": 11,
+            "B07ZQRFC46": 3
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 8,
+            "maximum": 12,
+            "mean": 9.25,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 9,
+              "source_score": 0.7022600769996643,
+              "source_minus_third": -0.02798360586166382
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 9,
+              "source_score": 0.7105214595794678,
+              "source_minus_third": -0.023285865783691406
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 10,
+              "source_score": 0.7156234383583069,
+              "source_minus_third": -0.029280126094818115
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 9,
+              "source_score": 0.7124114036560059,
+              "source_minus_third": -0.030593514442443848
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 9,
+              "source_score": 0.7165690660476685,
+              "source_minus_third": -0.023835301399230957
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 11,
+              "source_score": 0.7029539346694946,
+              "source_minus_third": -0.018968582153320312
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 9,
+              "source_score": 0.7060785293579102,
+              "source_minus_third": -0.02689117193222046
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 9,
+              "source_score": 0.7189705967903137,
+              "source_minus_third": -0.0221368670463562
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 12,
+              "source_score": 0.7144559621810913,
+              "source_minus_third": -0.025921642780303955
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 9,
+              "source_score": 0.7048755884170532,
+              "source_minus_third": -0.033658623695373535
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 9,
+              "source_score": 0.712984561920166,
+              "source_minus_third": -0.021003901958465576
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 10,
+              "source_score": 0.7074988484382629,
+              "source_minus_third": -0.028275012969970703
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 9,
+              "source_score": 0.692628026008606,
+              "source_minus_third": -0.03408670425415039
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 9,
+              "source_score": 0.7167882919311523,
+              "source_minus_third": -0.026057720184326172
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 9,
+              "source_score": 0.7183338403701782,
+              "source_minus_third": -0.019086718559265137
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 9,
+              "source_score": 0.707886815071106,
+              "source_minus_third": -0.0309220552444458
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 8,
+              "source_score": 0.7178666591644287,
+              "source_minus_third": -0.022188127040863037
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 8,
+              "source_score": 0.7067193984985352,
+              "source_minus_third": -0.02183842658996582
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 9,
+              "source_score": 0.7047733068466187,
+              "source_minus_third": -0.03464227914810181
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 9,
+              "source_score": 0.715853750705719,
+              "source_minus_third": -0.023762524127960205
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.02622093856334686,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7466436624526978
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7334991693496704
+            },
+            {
+              "rank": 3,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7302436828613281
+            },
+            {
+              "rank": 4,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.730226993560791
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7187360525131226
+            },
+            {
+              "rank": 6,
+              "asin": "B073GFGWWJ",
+              "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+              "score": 0.7106539011001587
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7096086740493774
+            },
+            {
+              "rank": 8,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.7067021131515503
+            },
+            {
+              "rank": 9,
+              "asin": "B08XYBS678",
+              "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+              "score": 0.7022600769996643
+            },
+            {
+              "rank": 10,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6889311075210571
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B07NB7SJ1Y": 20,
+            "B0771SSXBK": 17,
+            "B0048F5ATO": 9,
+            "B08N7WFY1K": 11,
+            "B07ZQRFC46": 3
+          }
+        }
+      }
+    },
+    "lucid": {
+      "A_feature_text": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 16,
+            "maximum": 27,
+            "mean": 20.1,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "rank": 20,
+              "score": 0.5125839710235596
+            },
+            {
+              "task_id": "feature_02",
+              "rank": 20,
+              "score": 0.5187329649925232
+            },
+            {
+              "task_id": "feature_03",
+              "rank": 19,
+              "score": 0.5395674109458923
+            },
+            {
+              "task_id": "feature_04",
+              "rank": 20,
+              "score": 0.5391727089881897
+            },
+            {
+              "task_id": "feature_05",
+              "rank": 16,
+              "score": 0.5303010940551758
+            },
+            {
+              "task_id": "feature_06",
+              "rank": 24,
+              "score": 0.5055874586105347
+            },
+            {
+              "task_id": "feature_07",
+              "rank": 22,
+              "score": 0.5200503468513489
+            },
+            {
+              "task_id": "feature_08",
+              "rank": 17,
+              "score": 0.5388401746749878
+            },
+            {
+              "task_id": "feature_09",
+              "rank": 21,
+              "score": 0.5368765592575073
+            },
+            {
+              "task_id": "feature_10",
+              "rank": 20,
+              "score": 0.5230228304862976
+            },
+            {
+              "task_id": "feature_11",
+              "rank": 19,
+              "score": 0.522458553314209
+            },
+            {
+              "task_id": "feature_12",
+              "rank": 22,
+              "score": 0.5263822078704834
+            },
+            {
+              "task_id": "feature_13",
+              "rank": 27,
+              "score": 0.4942181706428528
+            },
+            {
+              "task_id": "feature_14",
+              "rank": 17,
+              "score": 0.5382429361343384
+            },
+            {
+              "task_id": "feature_15",
+              "rank": 19,
+              "score": 0.5388360619544983
+            },
+            {
+              "task_id": "feature_16",
+              "rank": 18,
+              "score": 0.5268044471740723
+            },
+            {
+              "task_id": "feature_17",
+              "rank": 19,
+              "score": 0.5309736132621765
+            },
+            {
+              "task_id": "feature_18",
+              "rank": 22,
+              "score": 0.5161254405975342
+            },
+            {
+              "task_id": "feature_19",
+              "rank": 20,
+              "score": 0.530092716217041
+            },
+            {
+              "task_id": "feature_20",
+              "rank": 20,
+              "score": 0.5225501656532288
+            }
+          ]
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 1,
+            "maximum": 5,
+            "mean": 2.35,
+            "top1": 2,
+            "top3": 18,
+            "top5": 20
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "rank": 1,
+              "score": 0.6366695761680603
+            },
+            {
+              "task_id": "feature_02",
+              "rank": 2,
+              "score": 0.6398319005966187
+            },
+            {
+              "task_id": "feature_03",
+              "rank": 5,
+              "score": 0.6402521729469299
+            },
+            {
+              "task_id": "feature_04",
+              "rank": 2,
+              "score": 0.657639741897583
+            },
+            {
+              "task_id": "feature_05",
+              "rank": 2,
+              "score": 0.6565099954605103
+            },
+            {
+              "task_id": "feature_06",
+              "rank": 3,
+              "score": 0.5984607338905334
+            },
+            {
+              "task_id": "feature_07",
+              "rank": 1,
+              "score": 0.6410071849822998
+            },
+            {
+              "task_id": "feature_08",
+              "rank": 2,
+              "score": 0.6587613821029663
+            },
+            {
+              "task_id": "feature_09",
+              "rank": 4,
+              "score": 0.6331157088279724
+            },
+            {
+              "task_id": "feature_10",
+              "rank": 2,
+              "score": 0.6461310386657715
+            },
+            {
+              "task_id": "feature_11",
+              "rank": 2,
+              "score": 0.6479443311691284
+            },
+            {
+              "task_id": "feature_12",
+              "rank": 2,
+              "score": 0.637580156326294
+            },
+            {
+              "task_id": "feature_13",
+              "rank": 3,
+              "score": 0.613055944442749
+            },
+            {
+              "task_id": "feature_14",
+              "rank": 2,
+              "score": 0.6734884977340698
+            },
+            {
+              "task_id": "feature_15",
+              "rank": 3,
+              "score": 0.6339621543884277
+            },
+            {
+              "task_id": "feature_16",
+              "rank": 2,
+              "score": 0.6501457691192627
+            },
+            {
+              "task_id": "feature_17",
+              "rank": 2,
+              "score": 0.645315408706665
+            },
+            {
+              "task_id": "feature_18",
+              "rank": 3,
+              "score": 0.6114069223403931
+            },
+            {
+              "task_id": "feature_19",
+              "rank": 2,
+              "score": 0.6466336250305176
+            },
+            {
+              "task_id": "feature_20",
+              "rank": 2,
+              "score": 0.6408483982086182
+            }
+          ]
+        }
+      },
+      "B_feature_photo": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 14,
+            "maximum": 17,
+            "mean": 15.55,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 15,
+              "source_score": 0.673881471157074,
+              "source_minus_third": -0.06574243307113647
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 16,
+              "source_score": 0.6784445643424988,
+              "source_minus_third": -0.06681305170059204
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 16,
+              "source_score": 0.6869259476661682,
+              "source_minus_third": -0.07561546564102173
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 15,
+              "source_score": 0.6870214939117432,
+              "source_minus_third": -0.07251626253128052
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 15,
+              "source_score": 0.6847548484802246,
+              "source_minus_third": -0.06672096252441406
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 16,
+              "source_score": 0.6721014976501465,
+              "source_minus_third": -0.07161867618560791
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 15,
+              "source_score": 0.677681028842926,
+              "source_minus_third": -0.06625860929489136
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 15,
+              "source_score": 0.690266489982605,
+              "source_minus_third": -0.06618070602416992
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 17,
+              "source_score": 0.6878043413162231,
+              "source_minus_third": -0.07800590991973877
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 15,
+              "source_score": 0.6767852306365967,
+              "source_minus_third": -0.06849992275238037
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 15,
+              "source_score": 0.6800910830497742,
+              "source_minus_third": -0.06385546922683716
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 16,
+              "source_score": 0.6793088912963867,
+              "source_minus_third": -0.07925814390182495
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 17,
+              "source_score": 0.6653610467910767,
+              "source_minus_third": -0.06932109594345093
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 16,
+              "source_score": 0.6874368190765381,
+              "source_minus_third": -0.06851720809936523
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 16,
+              "source_score": 0.6892322301864624,
+              "source_minus_third": -0.07125520706176758
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 15,
+              "source_score": 0.6817780137062073,
+              "source_minus_third": -0.0692223310470581
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 14,
+              "source_score": 0.6865296363830566,
+              "source_minus_third": -0.0680273175239563
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 16,
+              "source_score": 0.6766133308410645,
+              "source_minus_third": -0.06860804557800293
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 15,
+              "source_score": 0.6799788475036621,
+              "source_minus_third": -0.0720221996307373
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 16,
+              "source_score": 0.6807135343551636,
+              "source_minus_third": -0.06394696235656738
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.06960029900074005,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7713489532470703
+            },
+            {
+              "rank": 2,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7682438492774963
+            },
+            {
+              "rank": 3,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7396239042282104
+            },
+            {
+              "rank": 4,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.7304901480674744
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7255306243896484
+            },
+            {
+              "rank": 6,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7150106430053711
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7124655246734619
+            },
+            {
+              "rank": 8,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.707069456577301
+            },
+            {
+              "rank": 9,
+              "asin": "B07S523DJC",
+              "title": "Infuse My. Colour Quartz Color Enhancing Shampoo - For Chemically Treated Hair - Soft Dusty Pink Champagne Tones - Vegan And Cruelty Free - No Parabens, Silicones, Sulfates - 8.5 Oz",
+              "score": 0.7053901553153992
+            },
+            {
+              "rank": 10,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.6944030523300171
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B0771SSXBK": 20,
+            "B08N7WFY1K": 20,
+            "B07NB7SJ1Y": 19,
+            "B01KYRJTIW": 1
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 5,
+            "maximum": 10,
+            "mean": 6.45,
+            "top1": 0,
+            "top3": 0,
+            "top5": 4
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 5,
+              "source_score": 0.7267723083496094,
+              "source_minus_third": -0.012851595878601074
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 6,
+              "source_score": 0.7295332551002502,
+              "source_minus_third": -0.015724360942840576
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 7,
+              "source_score": 0.7250535488128662,
+              "source_minus_third": -0.03748786449432373
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 6,
+              "source_score": 0.7361743450164795,
+              "source_minus_third": -0.02336341142654419
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 5,
+              "source_score": 0.7389549016952515,
+              "source_minus_third": -0.012520909309387207
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 10,
+              "source_score": 0.7057063579559326,
+              "source_minus_third": -0.03801381587982178
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 5,
+              "source_score": 0.7285623550415039,
+              "source_minus_third": -0.015377283096313477
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 6,
+              "source_score": 0.7405709624290466,
+              "source_minus_third": -0.01587623357772827
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 10,
+              "source_score": 0.7233129143714905,
+              "source_minus_third": -0.042497336864471436
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 6,
+              "source_score": 0.7287923097610474,
+              "source_minus_third": -0.016492843627929688
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 6,
+              "source_score": 0.7338584065437317,
+              "source_minus_third": -0.010088145732879639
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 7,
+              "source_score": 0.7239758968353271,
+              "source_minus_third": -0.03459113836288452
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 6,
+              "source_score": 0.7152051329612732,
+              "source_minus_third": -0.019477009773254395
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 5,
+              "source_score": 0.7470608949661255,
+              "source_minus_third": -0.008893132209777832
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 6,
+              "source_score": 0.7240604758262634,
+              "source_minus_third": -0.03642696142196655
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 6,
+              "source_score": 0.7341331243515015,
+              "source_minus_third": -0.016867220401763916
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 6,
+              "source_score": 0.7334423065185547,
+              "source_minus_third": -0.021114647388458252
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 9,
+              "source_score": 0.7116149663925171,
+              "source_minus_third": -0.03360641002655029
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 6,
+              "source_score": 0.727839469909668,
+              "source_minus_third": -0.024161577224731445
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 6,
+              "source_score": 0.7300504446029663,
+              "source_minus_third": -0.014610052108764648
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.022502097487449645,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7713489532470703
+            },
+            {
+              "rank": 2,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7682438492774963
+            },
+            {
+              "rank": 3,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7396239042282104
+            },
+            {
+              "rank": 4,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.7304901480674744
+            },
+            {
+              "rank": 5,
+              "asin": "B08XYBS678",
+              "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+              "score": 0.7267723083496094
+            },
+            {
+              "rank": 6,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7255306243896484
+            },
+            {
+              "rank": 7,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7150106430053711
+            },
+            {
+              "rank": 8,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7124655246734619
+            },
+            {
+              "rank": 9,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.707069456577301
+            },
+            {
+              "rank": 10,
+              "asin": "B07S523DJC",
+              "title": "Infuse My. Colour Quartz Color Enhancing Shampoo - For Chemically Treated Hair - Soft Dusty Pink Champagne Tones - Vegan And Cruelty Free - No Parabens, Silicones, Sulfates - 8.5 Oz",
+              "score": 0.7053901553153992
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B0771SSXBK": 20,
+            "B08N7WFY1K": 20,
+            "B07NB7SJ1Y": 19,
+            "B01KYRJTIW": 1
+          }
+        }
+      },
+      "C_vague_photo": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 47,
+            "maximum": 67,
+            "mean": 56.35,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "vague_01",
+              "source_rank": 60,
+              "source_score": 0.6061134338378906,
+              "source_minus_third": -0.0761520266532898
+            },
+            {
+              "task_id": "vague_02",
+              "source_rank": 55,
+              "source_score": 0.6183086037635803,
+              "source_minus_third": -0.0749741792678833
+            },
+            {
+              "task_id": "vague_03",
+              "source_rank": 52,
+              "source_score": 0.6179084181785583,
+              "source_minus_third": -0.07127141952514648
+            },
+            {
+              "task_id": "vague_04",
+              "source_rank": 57,
+              "source_score": 0.6150617599487305,
+              "source_minus_third": -0.07625842094421387
+            },
+            {
+              "task_id": "vague_05",
+              "source_rank": 53,
+              "source_score": 0.6146894097328186,
+              "source_minus_third": -0.07513654232025146
+            },
+            {
+              "task_id": "vague_06",
+              "source_rank": 56,
+              "source_score": 0.6104349493980408,
+              "source_minus_third": -0.07287049293518066
+            },
+            {
+              "task_id": "vague_07",
+              "source_rank": 57,
+              "source_score": 0.6132867932319641,
+              "source_minus_third": -0.07833874225616455
+            },
+            {
+              "task_id": "vague_08",
+              "source_rank": 47,
+              "source_score": 0.6182734370231628,
+              "source_minus_third": -0.07202708721160889
+            },
+            {
+              "task_id": "vague_09",
+              "source_rank": 56,
+              "source_score": 0.6100594997406006,
+              "source_minus_third": -0.07494348287582397
+            },
+            {
+              "task_id": "vague_10",
+              "source_rank": 57,
+              "source_score": 0.6146199107170105,
+              "source_minus_third": -0.0782167911529541
+            },
+            {
+              "task_id": "vague_11",
+              "source_rank": 58,
+              "source_score": 0.6132930517196655,
+              "source_minus_third": -0.08079981803894043
+            },
+            {
+              "task_id": "vague_12",
+              "source_rank": 54,
+              "source_score": 0.6125271320343018,
+              "source_minus_third": -0.07555001974105835
+            },
+            {
+              "task_id": "vague_13",
+              "source_rank": 62,
+              "source_score": 0.6063786149024963,
+              "source_minus_third": -0.08038491010665894
+            },
+            {
+              "task_id": "vague_14",
+              "source_rank": 56,
+              "source_score": 0.6106117963790894,
+              "source_minus_third": -0.07350414991378784
+            },
+            {
+              "task_id": "vague_15",
+              "source_rank": 53,
+              "source_score": 0.6187383532524109,
+              "source_minus_third": -0.06957495212554932
+            },
+            {
+              "task_id": "vague_16",
+              "source_rank": 58,
+              "source_score": 0.6144014000892639,
+              "source_minus_third": -0.08221656084060669
+            },
+            {
+              "task_id": "vague_17",
+              "source_rank": 53,
+              "source_score": 0.6149141192436218,
+              "source_minus_third": -0.07159918546676636
+            },
+            {
+              "task_id": "vague_18",
+              "source_rank": 61,
+              "source_score": 0.6068931818008423,
+              "source_minus_third": -0.07569682598114014
+            },
+            {
+              "task_id": "vague_19",
+              "source_rank": 67,
+              "source_score": 0.6082113981246948,
+              "source_minus_third": -0.08402252197265625
+            },
+            {
+              "task_id": "vague_20",
+              "source_rank": 55,
+              "source_score": 0.6090841889381409,
+              "source_minus_third": -0.074268639087677
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.07589033842086793,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7113537192344666
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.6963991522789001
+            },
+            {
+              "rank": 3,
+              "asin": "B091CJT1V9",
+              "title": "Blacksherbet Edible Glitter Dust Spray, (10g) | 100% Edible | Cakes, Cupcakes, Decorating, Cake Pops, Cookies, Drinks, Chocolate. Food Grade Coloring Glitter & Dusts. Kosher (Light Lavender)",
+              "score": 0.6822654604911804
+            },
+            {
+              "rank": 4,
+              "asin": "B093BNSSHW",
+              "title": "LVOD Soundbar TV Home Theater System Wired Speakers Bluetooth Speakers Computer Speaker Subwoofer Speakers",
+              "score": 0.6811685562133789
+            },
+            {
+              "rank": 5,
+              "asin": "B09M8CQDJ9",
+              "title": "Electric Toothbrush Waterproof Electric Toothbrush Set Oral Care Battery Powered Tooth Cleaning Tools (Color : Gray)",
+              "score": 0.6794247627258301
+            },
+            {
+              "rank": 6,
+              "asin": "B09MLNK8JZ",
+              "title": "Kids Aldult Electric Toothbrushes, Electric Wireless Charging Toothbrush, 3 Optional Modes, 2 Minutes Timer, 4 Hours Charge for 60 Days, Smart Timer",
+              "score": 0.6790261268615723
+            },
+            {
+              "rank": 7,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6632431745529175
+            },
+            {
+              "rank": 8,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.662113606929779
+            },
+            {
+              "rank": 9,
+              "asin": "B08P52BN3V",
+              "title": "Levi's Men's 501 Original Fit Jeans",
+              "score": 0.6617532968521118
+            },
+            {
+              "rank": 10,
+              "asin": "B09RPPFMX4",
+              "title": "Kids Toothbrush 4.0 Food Grade Soft Brush Head Whole Mouth Toothbrush 360 Degree Oral Teeth Cleaning Design for Toddlers and Children(1-6 Years Old/6-12 Years Old)",
+              "score": 0.660700798034668
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B08N7WFY1K": 20,
+            "B0771SSXBK": 20,
+            "B091CJT1V9": 7,
+            "B093BNSSHW": 12,
+            "B09M8CQDJ9": 1
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 57,
+            "maximum": 76,
+            "mean": 66.7,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "vague_01",
+              "source_rank": 69,
+              "source_score": 0.5974676609039307,
+              "source_minus_third": -0.08479779958724976
+            },
+            {
+              "task_id": "vague_02",
+              "source_rank": 67,
+              "source_score": 0.6067699193954468,
+              "source_minus_third": -0.08651286363601685
+            },
+            {
+              "task_id": "vague_03",
+              "source_rank": 60,
+              "source_score": 0.6099832653999329,
+              "source_minus_third": -0.07919657230377197
+            },
+            {
+              "task_id": "vague_04",
+              "source_rank": 67,
+              "source_score": 0.6056222915649414,
+              "source_minus_third": -0.08569788932800293
+            },
+            {
+              "task_id": "vague_05",
+              "source_rank": 65,
+              "source_score": 0.6044542789459229,
+              "source_minus_third": -0.08537167310714722
+            },
+            {
+              "task_id": "vague_06",
+              "source_rank": 70,
+              "source_score": 0.5984619855880737,
+              "source_minus_third": -0.0848434567451477
+            },
+            {
+              "task_id": "vague_07",
+              "source_rank": 68,
+              "source_score": 0.6024210453033447,
+              "source_minus_third": -0.08920449018478394
+            },
+            {
+              "task_id": "vague_08",
+              "source_rank": 59,
+              "source_score": 0.6112881302833557,
+              "source_minus_third": -0.07901239395141602
+            },
+            {
+              "task_id": "vague_09",
+              "source_rank": 63,
+              "source_score": 0.6032249927520752,
+              "source_minus_third": -0.08177798986434937
+            },
+            {
+              "task_id": "vague_10",
+              "source_rank": 71,
+              "source_score": 0.6027233600616455,
+              "source_minus_third": -0.09011334180831909
+            },
+            {
+              "task_id": "vague_11",
+              "source_rank": 68,
+              "source_score": 0.6044577360153198,
+              "source_minus_third": -0.08963513374328613
+            },
+            {
+              "task_id": "vague_12",
+              "source_rank": 66,
+              "source_score": 0.602990984916687,
+              "source_minus_third": -0.0850861668586731
+            },
+            {
+              "task_id": "vague_13",
+              "source_rank": 72,
+              "source_score": 0.5966560244560242,
+              "source_minus_third": -0.0901075005531311
+            },
+            {
+              "task_id": "vague_14",
+              "source_rank": 63,
+              "source_score": 0.6045325994491577,
+              "source_minus_third": -0.07958334684371948
+            },
+            {
+              "task_id": "vague_15",
+              "source_rank": 66,
+              "source_score": 0.6080491542816162,
+              "source_minus_third": -0.080264151096344
+            },
+            {
+              "task_id": "vague_16",
+              "source_rank": 72,
+              "source_score": 0.6010945439338684,
+              "source_minus_third": -0.0955234169960022
+            },
+            {
+              "task_id": "vague_17",
+              "source_rank": 57,
+              "source_score": 0.6074899435043335,
+              "source_minus_third": -0.07902336120605469
+            },
+            {
+              "task_id": "vague_18",
+              "source_rank": 71,
+              "source_score": 0.5969348549842834,
+              "source_minus_third": -0.08565515279769897
+            },
+            {
+              "task_id": "vague_19",
+              "source_rank": 76,
+              "source_score": 0.5981882810592651,
+              "source_minus_third": -0.09404563903808594
+            },
+            {
+              "task_id": "vague_20",
+              "source_rank": 64,
+              "source_score": 0.6011276245117188,
+              "source_minus_third": -0.08222520351409912
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.08538387715816498,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.7113537192344666
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.6963991522789001
+            },
+            {
+              "rank": 3,
+              "asin": "B091CJT1V9",
+              "title": "Blacksherbet Edible Glitter Dust Spray, (10g) | 100% Edible | Cakes, Cupcakes, Decorating, Cake Pops, Cookies, Drinks, Chocolate. Food Grade Coloring Glitter & Dusts. Kosher (Light Lavender)",
+              "score": 0.6822654604911804
+            },
+            {
+              "rank": 4,
+              "asin": "B093BNSSHW",
+              "title": "LVOD Soundbar TV Home Theater System Wired Speakers Bluetooth Speakers Computer Speaker Subwoofer Speakers",
+              "score": 0.6811685562133789
+            },
+            {
+              "rank": 5,
+              "asin": "B09M8CQDJ9",
+              "title": "Electric Toothbrush Waterproof Electric Toothbrush Set Oral Care Battery Powered Tooth Cleaning Tools (Color : Gray)",
+              "score": 0.6794247627258301
+            },
+            {
+              "rank": 6,
+              "asin": "B09MLNK8JZ",
+              "title": "Kids Aldult Electric Toothbrushes, Electric Wireless Charging Toothbrush, 3 Optional Modes, 2 Minutes Timer, 4 Hours Charge for 60 Days, Smart Timer",
+              "score": 0.6790261268615723
+            },
+            {
+              "rank": 7,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6632431745529175
+            },
+            {
+              "rank": 8,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.662113606929779
+            },
+            {
+              "rank": 9,
+              "asin": "B08P52BN3V",
+              "title": "Levi's Men's 501 Original Fit Jeans",
+              "score": 0.6617532968521118
+            },
+            {
+              "rank": 10,
+              "asin": "B09RPPFMX4",
+              "title": "Kids Toothbrush 4.0 Food Grade Soft Brush Head Whole Mouth Toothbrush 360 Degree Oral Teeth Cleaning Design for Toddlers and Children(1-6 Years Old/6-12 Years Old)",
+              "score": 0.660700798034668
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B08N7WFY1K": 20,
+            "B0771SSXBK": 20,
+            "B091CJT1V9": 7,
+            "B093BNSSHW": 12,
+            "B09M8CQDJ9": 1
+          }
+        }
+      },
+      "D_feature_target": {
+        "clean": {
+          "stats": {
+            "n": 20,
+            "minimum": 12,
+            "maximum": 15,
+            "mean": 13.9,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 14,
+              "source_score": 0.6666556000709534,
+              "source_minus_third": -0.06358808279037476
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 14,
+              "source_score": 0.6719244122505188,
+              "source_minus_third": -0.06188291311264038
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 13,
+              "source_score": 0.682991623878479,
+              "source_minus_third": -0.061911940574645996
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 14,
+              "source_score": 0.6784512996673584,
+              "source_minus_third": -0.06455361843109131
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 14,
+              "source_score": 0.6798796653747559,
+              "source_minus_third": -0.060524702072143555
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 13,
+              "source_score": 0.6662622690200806,
+              "source_minus_third": -0.055660247802734375
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 14,
+              "source_score": 0.6696885824203491,
+              "source_minus_third": -0.0632811188697815
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 14,
+              "source_score": 0.6826707720756531,
+              "source_minus_third": -0.058436691761016846
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 13,
+              "source_score": 0.6791839599609375,
+              "source_minus_third": -0.061193645000457764
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 14,
+              "source_score": 0.6719456911087036,
+              "source_minus_third": -0.06658852100372314
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 15,
+              "source_score": 0.6751381754875183,
+              "source_minus_third": -0.05885028839111328
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 13,
+              "source_score": 0.6740254163742065,
+              "source_minus_third": -0.0617484450340271
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 14,
+              "source_score": 0.6576129198074341,
+              "source_minus_third": -0.06910181045532227
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 15,
+              "source_score": 0.6804784536361694,
+              "source_minus_third": -0.06236755847930908
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 14,
+              "source_score": 0.6813196539878845,
+              "source_minus_third": -0.05610090494155884
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 14,
+              "source_score": 0.6733094453811646,
+              "source_minus_third": -0.06549942493438721
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 14,
+              "source_score": 0.6791408658027649,
+              "source_minus_third": -0.060913920402526855
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 12,
+              "source_score": 0.6696126461029053,
+              "source_minus_third": -0.0589451789855957
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 15,
+              "source_score": 0.6735085844993591,
+              "source_minus_third": -0.06590700149536133
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 15,
+              "source_score": 0.6778669953346252,
+              "source_minus_third": -0.061749279499053955
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": -0.06194026470184326,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7466436624526978
+            },
+            {
+              "rank": 2,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7334991693496704
+            },
+            {
+              "rank": 3,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7302436828613281
+            },
+            {
+              "rank": 4,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.730226993560791
+            },
+            {
+              "rank": 5,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7187360525131226
+            },
+            {
+              "rank": 6,
+              "asin": "B073GFGWWJ",
+              "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+              "score": 0.7106539011001587
+            },
+            {
+              "rank": 7,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7096086740493774
+            },
+            {
+              "rank": 8,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.7067021131515503
+            },
+            {
+              "rank": 9,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6889311075210571
+            },
+            {
+              "rank": 10,
+              "asin": "B01KYRJTIW",
+              "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+              "score": 0.6885077953338623
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B07NB7SJ1Y": 20,
+            "B0771SSXBK": 17,
+            "B0048F5ATO": 9,
+            "B08N7WFY1K": 11,
+            "B07ZQRFC46": 3
+          }
+        },
+        "modified": {
+          "stats": {
+            "n": 20,
+            "minimum": 1,
+            "maximum": 2,
+            "mean": 1.05,
+            "top1": 19,
+            "top3": 20,
+            "top5": 20
+          },
+          "rankings": [
+            {
+              "task_id": "feature_01",
+              "source_rank": 1,
+              "source_score": 0.7749435901641846,
+              "source_minus_third": 0.04144442081451416
+            },
+            {
+              "task_id": "feature_02",
+              "source_rank": 1,
+              "source_score": 0.7785715460777283,
+              "source_minus_third": 0.04246711730957031
+            },
+            {
+              "task_id": "feature_03",
+              "source_rank": 1,
+              "source_score": 0.7765784859657288,
+              "source_minus_third": 0.02737140655517578
+            },
+            {
+              "task_id": "feature_04",
+              "source_rank": 1,
+              "source_score": 0.7824869751930237,
+              "source_minus_third": 0.035389065742492676
+            },
+            {
+              "task_id": "feature_05",
+              "source_rank": 1,
+              "source_score": 0.789842426776886,
+              "source_minus_third": 0.04510849714279175
+            },
+            {
+              "task_id": "feature_06",
+              "source_rank": 1,
+              "source_score": 0.7555723786354065,
+              "source_minus_third": 0.024349451065063477
+            },
+            {
+              "task_id": "feature_07",
+              "source_rank": 1,
+              "source_score": 0.7757617831230164,
+              "source_minus_third": 0.03885561227798462
+            },
+            {
+              "task_id": "feature_08",
+              "source_rank": 1,
+              "source_score": 0.7882938385009766,
+              "source_minus_third": 0.04060721397399902
+            },
+            {
+              "task_id": "feature_09",
+              "source_rank": 2,
+              "source_score": 0.7697101831436157,
+              "source_minus_third": 0.023728489875793457
+            },
+            {
+              "task_id": "feature_10",
+              "source_rank": 1,
+              "source_score": 0.7794249653816223,
+              "source_minus_third": 0.03883326053619385
+            },
+            {
+              "task_id": "feature_11",
+              "source_rank": 1,
+              "source_score": 0.7846761345863342,
+              "source_minus_third": 0.04959219694137573
+            },
+            {
+              "task_id": "feature_12",
+              "source_rank": 1,
+              "source_score": 0.7740706205368042,
+              "source_minus_third": 0.03434562683105469
+            },
+            {
+              "task_id": "feature_13",
+              "source_rank": 1,
+              "source_score": 0.7630110383033752,
+              "source_minus_third": 0.03317469358444214
+            },
+            {
+              "task_id": "feature_14",
+              "source_rank": 1,
+              "source_score": 0.7953683733940125,
+              "source_minus_third": 0.05105799436569214
+            },
+            {
+              "task_id": "feature_15",
+              "source_rank": 1,
+              "source_score": 0.7712739706039429,
+              "source_minus_third": 0.026008546352386475
+            },
+            {
+              "task_id": "feature_16",
+              "source_rank": 1,
+              "source_score": 0.7807751893997192,
+              "source_minus_third": 0.04024547338485718
+            },
+            {
+              "task_id": "feature_17",
+              "source_rank": 1,
+              "source_score": 0.7814867496490479,
+              "source_minus_third": 0.04029899835586548
+            },
+            {
+              "task_id": "feature_18",
+              "source_rank": 1,
+              "source_score": 0.7599948644638062,
+              "source_minus_third": 0.027753353118896484
+            },
+            {
+              "task_id": "feature_19",
+              "source_rank": 1,
+              "source_score": 0.7764546275138855,
+              "source_minus_third": 0.03151458501815796
+            },
+            {
+              "task_id": "feature_20",
+              "source_rank": 1,
+              "source_score": 0.7833119034767151,
+              "source_minus_third": 0.04140877723693848
+            }
+          ],
+          "source_text_sha256": [
+            "ec0ae4a250922baaab0994b7ab7e194436d6e6042757a4422c92f8b6fc05ebb0"
+          ],
+          "mean_source_minus_third": 0.03667773902416229,
+          "first_query_top10": [
+            {
+              "rank": 1,
+              "asin": "B08XYBS678",
+              "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+              "score": 0.7749435901641846
+            },
+            {
+              "rank": 2,
+              "asin": "B07NB7SJ1Y",
+              "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+              "score": 0.7466436624526978
+            },
+            {
+              "rank": 3,
+              "asin": "B0771SSXBK",
+              "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+              "score": 0.7334991693496704
+            },
+            {
+              "rank": 4,
+              "asin": "B0048F5ATO",
+              "title": "OGX Renewing + Argan Oil of Morocco Hydrating Hair Shampoo, Cold-Pressed Argan Oil to Help Moisturize, Soften & Strengthen Hair, Paraben-Free with Sulfate-Free Surfactants, 13 fl oz",
+              "score": 0.7302436828613281
+            },
+            {
+              "rank": 5,
+              "asin": "B08N7WFY1K",
+              "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+              "score": 0.730226993560791
+            },
+            {
+              "rank": 6,
+              "asin": "B07ZQRFC46",
+              "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+              "score": 0.7187360525131226
+            },
+            {
+              "rank": 7,
+              "asin": "B073GFGWWJ",
+              "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+              "score": 0.7106539011001587
+            },
+            {
+              "rank": 8,
+              "asin": "B00BDJMLK4",
+              "title": "Suela Y Canela 16 Oz, Conditioner, Rinse and Shampoo!!! by laboratorios capilo",
+              "score": 0.7096086740493774
+            },
+            {
+              "rank": 9,
+              "asin": "B07ZV213NS",
+              "title": "KUNDAL Sulfate Free Moisturizing Shampoo for Dry Damaged Hair with Argan Oil, AMBER VANILLA, 16.9 oz(500ml), Sulfate Free Paraben Free",
+              "score": 0.7067021131515503
+            },
+            {
+              "rank": 10,
+              "asin": "B00WONI1AW",
+              "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+              "score": 0.6889311075210571
+            }
+          ],
+          "top3_asin_frequencies": {
+            "B08XYBS678": 20,
+            "B07NB7SJ1Y": 20,
+            "B0771SSXBK": 14,
+            "B08N7WFY1K": 5,
+            "B07ZQRFC46": 1
+          }
+        }
+      }
+    }
+  },
+  "controlled_comparisons": {
+    "lucid": {
+      "stable_group_fields": true,
+      "B_C_query_images_identical": true,
+      "B_D_query_texts_identical": true,
+      "C_texts_equal_old_20_vague_instructions": true,
+      "protocols_identical_except_query_text_encoding_audit": true,
+      "mean_rank_improvement_by_modification": {
+        "A_feature_text": 17.75,
+        "B_feature_photo": 9.100000000000001,
+        "C_vague_photo": -10.350000000000001,
+        "D_feature_target": 12.85
+      }
+    },
+    "perlage_no_pixel": {
+      "stable_group_fields": true,
+      "B_C_query_images_identical": true,
+      "B_D_query_texts_identical": true,
+      "C_texts_equal_old_20_vague_instructions": true,
+      "protocols_identical_except_query_text_encoding_audit": true,
+      "mean_rank_improvement_by_modification": {
+        "A_feature_text": 1.8500000000000014,
+        "B_feature_photo": 3.0,
+        "C_vague_photo": 6.800000000000004,
+        "D_feature_target": 4.65
+      }
+    }
+  },
+  "query_images": {
+    "new_independent_photo": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+    },
+    "old_label_removed_photo": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\inputs\\07_shampoo\\query.png",
+      "sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    "current_no_pixel_frozen": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png",
+      "sha256": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f"
+    },
+    "target_original": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+      "sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    }
+  },
+  "first_queries": {
+    "perlage_no_pixel_B_feature_photo": {
+      "task_id": "feature_01",
+      "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+    },
+    "perlage_no_pixel_C_vague_photo": {
+      "task_id": "vague_01",
+      "instruction": "请购买与图片中商品相似的商品。",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+    },
+    "perlage_no_pixel_D_feature_target": {
+      "task_id": "feature_01",
+      "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+      "query_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    },
+    "lucid_B_feature_photo": {
+      "task_id": "feature_01",
+      "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+    },
+    "lucid_C_vague_photo": {
+      "task_id": "vague_01",
+      "instruction": "请购买与图片中商品相似的商品。",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+    },
+    "lucid_D_feature_target": {
+      "task_id": "feature_01",
+      "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "query_mode": "joint",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+      "query_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    }
+  },
+  "saved_independent_verification": {
+    "B_feature_photo_lucid": {
+      "status": "passed",
+      "max_score_error": 2.384185791015625e-07,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    },
+    "B_feature_photo_perlage_no_pixel": {
+      "status": "passed",
+      "max_score_error": 2.384185791015625e-07,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    },
+    "C_vague_photo_lucid": {
+      "status": "passed",
+      "max_score_error": 0.0,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    },
+    "C_vague_photo_perlage_no_pixel": {
+      "status": "passed",
+      "max_score_error": 0.0,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    },
+    "D_feature_target_lucid": {
+      "status": "passed",
+      "max_score_error": 0.0,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    },
+    "D_feature_target_perlage_no_pixel": {
+      "status": "passed",
+      "max_score_error": 0.0,
+      "score_comparisons": 68040,
+      "rankings_recomputed": 360
+    }
+  },
+  "input_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\EXPERIMENT_PLAN.json": "8821a4e55e26c7edac4c1ddfe8058ae0136bcac9f24c4727fc0c2c890d2010b3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\SCHEDULED_INPUTS.json": "849951c38a3109deebcd318b50d242a4909c125aaca4ac0f68e208c2b9dbdd6c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\SCHEDULED_INPUTS.json": "ccaf4c2a8c6795055c7968d5b0940923af2a464f35a3d2509e31414227d4e569",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\evaluation\\evaluation.json": "7b495ba6ae9b91742a650e5753c132720fa36d256db6eba1ddc802bf32499f95",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "70425bc2a6cec3e87526b73ae7a1ad9c0b34cc7a46c2b3a14555a6bf1b57f17a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\banks\\07_shampoo_modified.json": "1ae9b2908d4db681b1a5d381f3a9f7ee1173939672caff199c0d932f5ba70de8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "855a18b6af1c14dbbdacd34cb1c554bcd1050e094e4b2875fa3e5bcde78b0d57",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f80b00e006fcb1584ae1469fedf11327ee22ce692b9888ac1fb9d5ea410b8b5b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "57ccd0fece95830f476cf76e2628e4cf73f10a49059ca650c6f85ea9dca26dce",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f9d365a5cd21bb29597857ea3d397dfe7fb37fc28550b62c731b655ecb085b9e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\evaluation\\evaluation.json": "0b567a893b87d4254979f8c14bba19f7c62f99de15b79a69a033a7f306e9aeb3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_clean.json": "acb05eb38b1abb855990065812bd8b1ce1cd965ccda29093b2a31576efee2b3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "9c0139fe08b82311e86785e6cfbf831b6f77d09b658f338dd0dacd7a2588f5cf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\banks\\07_shampoo_modified.json": "d7a9456f591accf588801382635e41ce1ff06ea84284a5db492446560657b117",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "d31990bfafe4effc615067ea2afbb9f19973209d6b2ecff5cdc6df9ad77cb418",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "2e6355de7cdd4495c2df4c7f626b905049da93c20c79aa5a202bef7ca1145218",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "64c6840f62d82ee1a9f9fa9c877678f22c40316f118d5ce2794e14be963affab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "1a4f0cb4bddcb8fb2607359b990d92c275f34805ca3f83437479a9665fc9e5b0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\PLAN.json": "0fbf1300f661a3f4b42a6465921b02ff291b696de160b825fff8e1f24513e81f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_k13_20261106\\inputs\\07_shampoo\\query.png": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\INDEPENDENT_VERIFICATION.json": "f0fc97c5d0b5362733e4ecba3a1ad4da537e06c822175039b99bf90c3c3eccb2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\INDEPENDENT_VERIFICATION.json": "da602929f36f127e875d7e00a93a52c73c6e64d97b593a543841882de792a338",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\lucid\\INDEPENDENT_VERIFICATION.json": "519bf7462af940fc7689491f308ee21a019b44c985b64367310e48719241682c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_vague_multimodal_20261111\\methods\\perlage_no_pixel\\INDEPENDENT_VERIFICATION.json": "8eaf2b2bf5d40b3102779ce38d47a2a5692c5f5de2cd57a71fe70ea3c2c83e80",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\INDEPENDENT_VERIFICATION.json": "07f39a593460dba968c471233b0b21a1a2e53b720b1f9d60178d6f1ffd993684",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\INDEPENDENT_VERIFICATION.json": "bd5f3ab4886a3e5037c8d7a51823f5254f9317f6b453a9385c6332cfce58d288"
+  },
+  "inputs_unchanged_after_analysis": true,
+  "limits": [
+    "B to C changes both language and semantic specificity.",
+    "C and D are retrieval-only, not shopping outcomes.",
+    "The old label-removed photo has not been tested in an otherwise identical current configuration."
+  ]
+}

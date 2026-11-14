@@ -1,0 +1,16 @@
+{
+  "status": "failed",
+  "phase": "initialize",
+  "elapsed_seconds": 36.23969069999657,
+  "audit": {
+    "active": false,
+    "checked_accesses": 12056,
+    "blocked_accesses": []
+  },
+  "error": {
+    "type": "PermissionError",
+    "message": "[WinError 5] 拒绝访问。: 'D:\\\\Material\\\\Literature Reading\\\\code\\\\perLage\\\\src\\\\output\\\\color_full_pipeline_20261106\\\\runs\\\\original\\\\07_shampoo\\\\generation\\\\initialization\\\\generation\\\\progress.json.tmp' -> 'D:\\\\Material\\\\Literature Reading\\\\code\\\\perLage\\\\src\\\\output\\\\color_full_pipeline_20261106\\\\runs\\\\original\\\\07_shampoo\\\\generation\\\\initialization\\\\generation\\\\progress.json'"
+  },
+  "public_images_and_names_only": true,
+  "prior_color_step_decision_used_to_stop_full_generation": false
+}

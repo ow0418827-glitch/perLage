@@ -1,0 +1,61 @@
+{
+  "id": "B09PNNXYJ4",
+  "identity": {
+    "image_sha256": "74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\09_toothbrush\\source.jpg",
+  "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Brush Head, 360° Oral Teeth Cleaning Design for Toddlers and Kids (Pink 2-6 years)",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\09_toothbrush\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "f82ad9667299881ef7dd5a1cd2268b6c80f86d4834550780a03906db468696ee",
+  "boxes": [
+    [
+      121,
+      40,
+      391,
+      465
+    ]
+  ],
+  "text_regions": [],
+  "ocr": [],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9574271440505981,
+      "foreground_ratio": 0.259856,
+      "rough_coverage": 0.9842786778600415,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.701030433177948,
+      "foreground_ratio": 0.082764,
+      "rough_coverage": 0.32028128000991296,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.9336770176887512,
+      "foreground_ratio": 0.227244,
+      "rough_coverage": 0.8659428146587776,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\09_toothbrush\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 2.606486799999402
+}

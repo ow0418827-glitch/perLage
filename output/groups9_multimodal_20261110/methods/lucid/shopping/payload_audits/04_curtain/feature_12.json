@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "query_mode": "joint",
+  "query_image_sha256": "1a45b6e3b4dc5e9ba763d84288d25367daeb30370c5f87a04668a0758fb8ebb7",
+  "selected_ids": [
+    "shared_23ba0b9d9e8330356abb362ffd116d90a095e8b4691592d55f16a887ce52a76a",
+    "groups9_reference_04_curtain_B09PHLS2QD",
+    "public_d987f8934d77eceab645e3837652b2605bd03bd7d826bca0a069721bffa0cad5"
+  ],
+  "source_rank": 2,
+  "actual_payload_verified_before_every_call": true
+}

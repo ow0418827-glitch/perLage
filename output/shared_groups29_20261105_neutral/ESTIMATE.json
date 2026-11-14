@@ -1,0 +1,7 @@
+{
+  "previous_shopping_seconds": 5740.220179299999,
+  "estimate_seconds": 8610,
+  "safety_buffer_seconds": 1800,
+  "new_episodes": 80,
+  "rationale": "旧轮约九十六分钟，恢复额外思考可能增加调用，按一点五倍估算再加三十分钟余量。"
+}

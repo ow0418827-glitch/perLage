@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "stage": "lucid_8",
+  "started_at": "2026-11-07T06:34:18.333757+00:00",
+  "supervisor_pid": 27212,
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\logs\\lucid_8.log",
+  "child_pid": 6080,
+  "exit_code": 0,
+  "seconds": 2120.0312434000007,
+  "finished_at": "2026-11-07T07:09:38.367653+00:00"
+}

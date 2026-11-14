@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "episodes": 40,
+  "outcomes_sha256": "22a939b71c12f7728cf5c02dc15ad24a0a4804e8cf0a3d376f2f6d42eea77e14",
+  "condition": "none",
+  "bank": "modified",
+  "recall_counts": [
+    1,
+    3
+  ]
+}

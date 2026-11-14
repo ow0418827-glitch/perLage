@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "groups": [
+    {
+      "key": "02_chair",
+      "candidates": 23,
+      "eligible": 7
+    },
+    {
+      "key": "09_toothbrush",
+      "candidates": 26,
+      "eligible": 5
+    }
+  ],
+  "score_arithmetic_rows": 49,
+  "max_score_arithmetic_error": 0.0,
+  "public_images_and_mask_dimensions_checked": 51,
+  "shared_pool_paths": 1,
+  "shared_pool_read": false,
+  "formal_queries_read": false,
+  "model_inference_repeated": false,
+  "source_files_unchanged": 707,
+  "source_git_status_unchanged": true,
+  "frozen_bundle_sha256": "0fbbb927a2a2fbb17eac23c16c1396640cfdbae1d5a3998979eeddea157fdb60"
+}

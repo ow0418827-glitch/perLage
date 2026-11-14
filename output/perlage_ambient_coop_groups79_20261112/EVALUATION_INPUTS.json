@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "groups": {
+    "07_shampoo": {
+      "name": "第七组洗发水",
+      "source_id": "B08XYBS678",
+      "target_id": "B00BDJODWI",
+      "source_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+      "queries": [
+        {
+          "task_id": "feature_01",
+          "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_02",
+          "instruction": "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_03",
+          "instruction": "Looking to buy shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_04",
+          "instruction": "I am looking to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_05",
+          "instruction": "Please help me buy shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_06",
+          "instruction": "I am shopping for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_07",
+          "instruction": "I would like to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_08",
+          "instruction": "Help me purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_09",
+          "instruction": "I am looking for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_10",
+          "instruction": "Please find shampoo with plant-based haircare ingredients and a balancing formula for me to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_11",
+          "instruction": "I want to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_12",
+          "instruction": "Please help me purchase shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_13",
+          "instruction": "I need to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_14",
+          "instruction": "I would like help finding shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_15",
+          "instruction": "Find me shampoo with a balancing formula and plant and flower essences to purchase.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_16",
+          "instruction": "Please look for shampoo with plant-based haircare ingredients and a balancing formula that I can buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_17",
+          "instruction": "I am interested in buying shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_18",
+          "instruction": "I would like to shop for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_19",
+          "instruction": "Help me find shampoo with plant-based haircare ingredients and a balancing formula to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_20",
+          "instruction": "I am ready to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        }
+      ],
+      "training_overlap": {
+        "normalized_exact_overlap_count": 1,
+        "query_numbers": [
+          1
+        ],
+        "normalization": "whitespace_and_casefold",
+        "policy": "user_requested_templates_overlap_allowed_reported",
+        "semantic_independence_claimed": false
+      }
+    },
+    "09_toothbrush": {
+      "name": "第九组牙刷",
+      "source_id": "B09PNNXYJ4",
+      "target_id": "B09J81RMLD",
+      "source_memory_id": "groups9_reference_09_toothbrush_B09PNNXYJ4",
+      "queries": [
+        {
+          "task_id": "feature_01",
+          "instruction": "I want to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_02",
+          "instruction": "I would like to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_03",
+          "instruction": "Looking to buy a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_04",
+          "instruction": "I am looking to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_05",
+          "instruction": "Please help me buy a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_06",
+          "instruction": "I am shopping for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_07",
+          "instruction": "I would like to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_08",
+          "instruction": "Help me purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_09",
+          "instruction": "I am looking for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_10",
+          "instruction": "Please find a toothbrush with a u-shaped design and soft silicone brush heads for me to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_11",
+          "instruction": "I want to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_12",
+          "instruction": "Please help me purchase a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_13",
+          "instruction": "I need to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_14",
+          "instruction": "I would like help finding a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_15",
+          "instruction": "Find me a toothbrush with soft silicone brush heads and 360-degree cleaning to purchase.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_16",
+          "instruction": "Please look for a toothbrush with a u-shaped design and soft silicone brush heads that I can buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_17",
+          "instruction": "I am interested in buying a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_18",
+          "instruction": "I would like to shop for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_19",
+          "instruction": "Help me find a toothbrush with a u-shaped design and soft silicone brush heads to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        },
+        {
+          "task_id": "feature_20",
+          "instruction": "I am ready to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+          "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d"
+        }
+      ],
+      "training_overlap": {
+        "normalized_exact_overlap_count": 1,
+        "query_numbers": [
+          1
+        ],
+        "normalization": "whitespace_and_casefold",
+        "policy": "user_requested_templates_overlap_allowed_reported",
+        "semantic_independence_claimed": false
+      }
+    }
+  },
+  "bank_order": [
+    "clean",
+    "baseline",
+    "lucid",
+    "ambient_coop"
+  ],
+  "pool_count": 189,
+  "banks": {
+    "clean": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\clean.json",
+      "sha256": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a"
+    },
+    "baseline": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\baseline.json",
+      "sha256": "673a0f20904a83b56792a979619f56d4c301a3e69a4d2669001af786c2f47019"
+    },
+    "lucid": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\lucid.json",
+      "sha256": "9011448ff0fd8f8d24b5b23e8146471de49ea368fccffcb62cd46e3222401825"
+    },
+    "ambient_coop": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\ambient_coop.json",
+      "sha256": "1acc5a069233834841ff91c337df1da42844af8bca5f6194e65ac06616bccf12"
+    }
+  },
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "encoder_config_sha256": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+  "bindings": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\manifest.json": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\EXPERIMENT_PLAN.json": "3ca66b6fa080a67a0a1cdac23f53ef0edda730b22490f90be90d57fe04fcec23",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\FROZEN_IMAGES.json": "3d9e5920c2fd26749a914263992bfd8056c0a6a6a8d143049d2b0f50eeee4f42",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\FROZEN_IMAGE.json": "55e7f27cb3039979ad2a8203d0e761f2523a1ac87db321a8148fb52ea442e4f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\07_shampoo\\adversarial.png": "d9c0360e8ded854bbac17c41879a42695d0d0ec53b3b84e6d201d06fdca4e1f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\07_shampoo\\ready.json": "921476d442164c2f2277d4a4d445c6f0736c5965c15574ab573d66629ded139a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\07_shampoo\\queries.json": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\07_shampoo\\queries.json": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "60313be8205ca9e479c163159217334db3aa16979d029fa852cd743b94a30055",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\frozen.png": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\09_toothbrush\\methods\\lucid\\FROZEN_IMAGE.json": "5bff1a19b3aa3a83427518961f3f39eda28f03c0b6b06549ef30e7a07c5a9781",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\09_toothbrush\\methods\\lucid\\frozen.png": "74c6404754e18b3481de5552cfedd846d5a47e5efb2de263bfa1f47d19b1c1b6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\adversarial.png": "2eeb719ffac5f2c947f4e7e8221ee89ab579775fbb6434e2e8c506bb4c6d9ddb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\ready.json": "5080ebab6b07adea634922b165d54530a50c6cb08210e801cfaa8a2a4f351ce0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\09_toothbrush\\queries.json": "6c2304660b49c066e01ddd42fc7c128a14640fbe7827431a54bf6cd749ce0f52",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\09_toothbrush\\queries.json": "adf6578bb0084ea5c0b144210ebb6e5110659740f6f185f34e86e2cd69b40386",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\clean.json": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\baseline.json": "673a0f20904a83b56792a979619f56d4c301a3e69a4d2669001af786c2f47019",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\lucid.json": "9011448ff0fd8f8d24b5b23e8146471de49ea368fccffcb62cd46e3222401825",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\banks\\ambient_coop.json": "1acc5a069233834841ff91c337df1da42844af8bca5f6194e65ac06616bccf12"
+  },
+  "query_mode": "joint",
+  "query_image_weight": 0.5,
+  "key_image_weight": 0.5,
+  "index_text": "product_feature",
+  "condition": "none",
+  "shopping_allowed": false,
+  "simultaneous_replacements_per_modified_bank": 2,
+  "expected_rankings": 160,
+  "expected_score_comparisons": 30240,
+  "baseline_policy": "recompute_all_reference_banks_in_same_complete_pool",
+  "current_round_rankings_used_for_selection": false,
+  "historical_group_results_seen_for_development": true,
+  "input_read_only_after_all_complete_images": true
+}

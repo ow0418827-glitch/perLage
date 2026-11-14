@@ -1,0 +1,17 @@
+{
+  "status": "released_by_explicit_user_instruction",
+  "resumed_at": "2026-11-11T02:32:55.201708+00:00",
+  "user_instruction": "继续实验吧",
+  "preserved_valid_episodes": 116,
+  "first_pending_group": "06_jeans",
+  "first_pending_task": "feature_17",
+  "resume_order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "pause_archive": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\recovery\\user_resume_20261111_103255\\SHOPPING_PAUSED.json",
+  "checkpoint_sha256": "13447fe98ab4ee75b00104f6cffe9fdbaea3544edd944fa3dbed7d2123f3ccc9",
+  "gate_sha256": "4f833ff928b7e73abb9a64be56a3efcc1e40a646d5794283ffa44356bf77bec4",
+  "original_inputs_and_sampling_unchanged": true,
+  "no_new_automation": true
+}

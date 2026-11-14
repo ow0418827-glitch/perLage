@@ -1,0 +1,61 @@
+{
+  "perlage_prepare_02_chair": {
+    "asin": "B09FY5Y9G2",
+    "category": "beauty",
+    "query": "salon & spa equipment",
+    "name": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "product_category": "Beauty & Personal Care › Salon & Spa Equipment › Professional Massage Equipment › Salon & Spa Chairs",
+    "instruction_text": "Please purchase this exact public product: FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "attributes": [],
+    "price_upper": 1000000,
+    "goal_options": {}
+  },
+  "perlage_prepare_v2_02_chair": {
+    "asin": "B09FY5Y9G2",
+    "category": "beauty",
+    "query": "salon & spa equipment",
+    "name": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "product_category": "Beauty & Personal Care › Salon & Spa Equipment › Professional Massage Equipment › Salon & Spa Chairs",
+    "instruction_text": "Please purchase this exact public product: FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "attributes": [
+      "barber chair",
+      "heavy duty",
+      "beauty salon",
+      "stainless steel"
+    ],
+    "price_upper": 1000000,
+    "goal_options": {}
+  },
+  "perlage_prepare_v2_09_toothbrush": {
+    "asin": "B09LVD5J4B",
+    "category": "beauty",
+    "query": "children's dental care",
+    "name": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+    "product_category": "Beauty & Personal Care › Oral Care › Toothbrushes & Accessories › Manual Toothbrushes",
+    "instruction_text": "Please purchase this exact public product: Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+    "attributes": [
+      "brush head",
+      "electric toothbrush",
+      "easy clean",
+      "high quality"
+    ],
+    "price_upper": 1000000,
+    "goal_options": {}
+  },
+  "perlage_original_cache_preflight": {
+    "asin": "B09FY5Y9G2",
+    "category": "beauty",
+    "query": "salon & spa equipment",
+    "name": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "product_category": "Beauty & Personal Care › Salon & Spa Equipment › Professional Massage Equipment › Salon & Spa Chairs",
+    "instruction_text": "Inspect this exact public product: FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "attributes": [
+      "barber chair",
+      "heavy duty",
+      "beauty salon",
+      "stainless steel"
+    ],
+    "price_upper": 1000000,
+    "goal_options": {}
+  }
+}

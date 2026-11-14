@@ -1,0 +1,20 @@
+  File "D:\Material\Literature Reading\code\perLage\src\agent\shopping.py", line 264, in llm
+    raise e
+  File "D:\Material\Literature Reading\code\perLage\src\agent\shopping.py", line 247, in llm
+    completion = client.chat.completions.create(**request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Material\Literature Reading\code\perLage\tools\run_groups9_multimodal_20261110.py", line 508, in paced_create
+    return raw_create(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\minja-vision\Lib\site-packages\openai\_utils\_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\minja-vision\Lib\site-packages\openai\resources\chat\completions\completions.py", line 1251, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "D:\Anaconda\envs\minja-vision\Lib\site-packages\openai\_base_client.py", line 1332, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Anaconda\envs\minja-vision\Lib\site-packages\openai\_base_client.py", line 1105, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'rate_limit_error', 'message': '已达到 Token Plan 用量上限：请升级 Token Plan 套餐或购买积分补充用量。 (2056)', 'http_code': '429'}, 'request_id': '07432e745f7dc34ca4fa3b0479a94789'}

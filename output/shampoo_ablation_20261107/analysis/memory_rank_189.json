@@ -1,0 +1,68 @@
+{
+  "source_asin": "B08XYBS678",
+  "query": {
+    "task_id": "vague_01",
+    "instruction": "请购买与图片中商品相似的商品。"
+  },
+  "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation_inputs\\query.png",
+  "source_memory_id": "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+  "rank_extracted_from_complete_ranking": true,
+  "rows": [
+    {
+      "label": "未修改源图",
+      "variant": "clean",
+      "rank": 1,
+      "total": 189,
+      "score": 0.4962345063686371,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\source.jpg"
+    },
+    {
+      "label": "原始像素方法，4/255",
+      "variant": "lucid_4",
+      "rank": 1,
+      "total": 189,
+      "score": 0.5046073794364929,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_4\\adversarial.png"
+    },
+    {
+      "label": "原始像素方法，8/255",
+      "variant": "lucid_8",
+      "rank": 1,
+      "total": 189,
+      "score": 0.5132260918617249,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_8\\adversarial.png"
+    },
+    {
+      "label": "原始像素方法，旧16/255",
+      "variant": "lucid_original_16",
+      "rank": 1,
+      "total": 189,
+      "score": 0.5095608830451965,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\lucid_original_16.png"
+    },
+    {
+      "label": "感知方法，原有历史完整图",
+      "variant": "perlage_original_no_shadow",
+      "rank": 1,
+      "total": 189,
+      "score": 0.5281233787536621,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_original_no_shadow.png"
+    },
+    {
+      "label": "感知方法，本轮含像素配对对照",
+      "variant": "perlage_pixel_control",
+      "rank": 1,
+      "total": 189,
+      "score": 0.524649977684021,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_pixel_control\\adversarial.png"
+    },
+    {
+      "label": "感知方法，本轮无像素版本",
+      "variant": "perlage_latent_only",
+      "rank": 1,
+      "total": 189,
+      "score": 0.5242003202438354,
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_latent_only\\adversarial.png"
+    }
+  ]
+}

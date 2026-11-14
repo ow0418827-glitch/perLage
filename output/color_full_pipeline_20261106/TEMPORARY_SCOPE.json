@@ -1,0 +1,26 @@
+{
+  "protocol": "temporary_relaxed_halo_shampoo_v1",
+  "authorized_by_user": true,
+  "groups": [
+    "07_shampoo"
+  ],
+  "excluded_groups": [
+    "09_toothbrush",
+    "02_chair"
+  ],
+  "temporary_halo_multiplier": 2.0,
+  "default_halo_multiplier": 0.5,
+  "source_ssim_floor": 0.85,
+  "source_mae_ceiling": 12.0,
+  "protected_core_max_difference": 0,
+  "main_program_defaults_changed": false,
+  "reuse_completed_initialization_from_this_same_run": true,
+  "initial_ready_sha256": "3821a77c32cfb784b42fc5d65d6a810deecc2d916e96b4683466195661b3c12d",
+  "initial_completion_sha256": "c8f3eb6cc87bed4e831bbab80877734425ecef094ad147a9b40eb2944984abc0",
+  "comparison_scope": "same_shampoo_pair_full_original_method_vs_full_temporary_relaxed_dominant_recipe",
+  "original_control_keeps_default_halo_limit": true,
+  "final_latent_steps": 60,
+  "private_memory_used": false,
+  "shopping_runs": 0,
+  "failure_archive": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\failure_archive\\strict_first_attempt"
+}

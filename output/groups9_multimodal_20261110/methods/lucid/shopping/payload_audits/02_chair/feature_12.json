@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "query_mode": "joint",
+  "query_image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+  "selected_ids": [
+    "shared_ff8a65ecfdcd02a3d962488c0a345375daec0c7ba1de70fe1215b94fa6ccf7e0",
+    "shared_e66dd2baeaf4fe7e2c7988e342391cd77ad740025aabffa1792a05c4f08302fa",
+    "groups9_reference_02_chair_B08GCSRXKS"
+  ],
+  "source_rank": 3,
+  "actual_payload_verified_before_every_call": true
+}

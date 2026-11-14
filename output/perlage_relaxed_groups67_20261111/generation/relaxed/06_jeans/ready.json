@@ -1,0 +1,151 @@
+{
+  "method": "PerLAGE_no_pixel_relaxed_experiment",
+  "definition": "frozen_three_stage_prefix_absolute_joint_latent_relaxation_v1",
+  "profile": "relaxed",
+  "status": "completed",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "first_three_stages_reused": true,
+  "fresh_first_three_stages_executed": false,
+  "initialization_reused": true,
+  "previous_final_refinement_reused": false,
+  "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\method_identity.json",
+  "method_identity_sha256": "7a294951810a5ca4786589c30bc87c4ee7c9cdce1f2445c9654e8f388709bd25",
+  "source_sha256": "a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d",
+  "target_sha256": "a64dbac4b78d2062f4bd84eade0de023dc4d17162a455b1244f221fb7dea9241",
+  "source_title_sha256": "c9c9f657f488b5586619d3a7e5e15adf23cbb843051a22af1db5100d71c00791",
+  "stages": {
+    "color_harmonization": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "56aeee333821fa63a3e50c868d9c22baaa473a5a3e9d774156dcb3094307d190",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "2e0ca46017db24d78429b900f8c86be296d85054b42e7733c3a2cb4065a9b908"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_segmentation": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "90fb349b3a5197ce13996ca4e6eb945a8c0425c18056fda9e9811c620dcebbcf",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "b45d8386e216a81d6f34e0c257d06568a6ab3b26c1363e88f84107519a0d370a",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "566f68d5ceb6cce699f292beeac24779dcc30217deaec37714bbfc5831cb69a9",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "b3bd87d970d8f2f53c25db703566dd44d9157d739a7caf2b24c857ff719d8779"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_statistics": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "767d35a79f4dc7dd1ce62249c417cb4d8e74b4131dcdd409fc2ecddb2235840f",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "ef64893087a74a205b6dd9bc82e92749de4d7b2d2b5d22dc286d5e98f6dd8ded"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "latent_generation_refinement": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\method_identity.json": "7a294951810a5ca4786589c30bc87c4ee7c9cdce1f2445c9654e8f388709bd25",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\metadata.json": "732d113736588acc6b20a1ca659379ffad254efdbfaba9682838df0c30b42796",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\adversarial.png": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\generative_anchor.png": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\latent_edit_mask.png": "90fb349b3a5197ce13996ca4e6eb945a8c0425c18056fda9e9811c620dcebbcf",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\public_title_encoding_audit.json": "93a942a894fe3df993256ada07d26620d7357c11a1f7b090095978f65a3d2f2f"
+      },
+      "steps_completed": 160,
+      "steps_requested": 160,
+      "execution_mode": "fresh_full_refinement"
+    }
+  },
+  "latent_config": {
+    "steps": 160,
+    "check_every": 10,
+    "latent_levels": 64,
+    "latent_working_size": 256,
+    "latent_limit": 1.0,
+    "latent_learning_rate": 0.02,
+    "latent_smoothing_mix": 0.06,
+    "source_ssim_floor": 0.75,
+    "source_mae_ceiling": 24.0,
+    "temperature": 0.04,
+    "macro_l2_weight": 5e-05,
+    "macro_tv_weight": 0.0003,
+    "halo_parent_multiplier": 1.0,
+    "halo_floor": 12.0,
+    "guard_backtracks": 8,
+    "auxiliary_levels": 0,
+    "feature_weight": 0.0,
+    "diffusion_weight": 0.0,
+    "seed": 42
+  },
+  "candidates": {
+    "final": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\adversarial.png",
+      "sha256": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671"
+    }
+  },
+  "generative_anchor": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\generative_anchor.png",
+  "prefix_binding": {
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "56aeee333821fa63a3e50c868d9c22baaa473a5a3e9d774156dcb3094307d190",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "90fb349b3a5197ce13996ca4e6eb945a8c0425c18056fda9e9811c620dcebbcf",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\adversarial.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\generative_anchor.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "c6807e81868987e4f19b322c27d060754aad64fafe2581e0013bddf73786802f",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "537ad50b28ff6d7fd911a2a48cee0cc21282d2d9c433eeee0a33ce77fe873b01",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "93e79d561aec4e1b8c50da84e376b497b595e478fcb6fa5487e89caa79ba8a9b",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\ready.json": "b3df6885b821c2062f99d14f49c6fd7f1379c5810978a2d9034ed3d618d1abe9"
+    },
+    "first_three_stages_reused": true,
+    "fresh_first_three_stages_executed": false,
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "c6807e81868987e4f19b322c27d060754aad64fafe2581e0013bddf73786802f",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "537ad50b28ff6d7fd911a2a48cee0cc21282d2d9c433eeee0a33ce77fe873b01",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "93e79d561aec4e1b8c50da84e376b497b595e478fcb6fa5487e89caa79ba8a9b"
+    },
+    "initialization_reused": true,
+    "previous_final_refinement_reused": false,
+    "ready_sha256": "b3df6885b821c2062f99d14f49c6fd7f1379c5810978a2d9034ed3d618d1abe9",
+    "root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation",
+    "stages": {
+      "color_harmonization": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "56aeee333821fa63a3e50c868d9c22baaa473a5a3e9d774156dcb3094307d190",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "73881d344d3ea9f6337104c85248ebe098e850be4fc4e6d6c5d5ef9ff187b8c3",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "2e0ca46017db24d78429b900f8c86be296d85054b42e7733c3a2cb4065a9b908"
+        },
+        "status": "completed"
+      },
+      "foreground_segmentation": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "90fb349b3a5197ce13996ca4e6eb945a8c0425c18056fda9e9811c620dcebbcf",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "b45d8386e216a81d6f34e0c257d06568a6ab3b26c1363e88f84107519a0d370a",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "566f68d5ceb6cce699f292beeac24779dcc30217deaec37714bbfc5831cb69a9",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "b3bd87d970d8f2f53c25db703566dd44d9157d739a7caf2b24c857ff719d8779"
+        },
+        "status": "completed"
+      },
+      "foreground_statistics": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "767d35a79f4dc7dd1ce62249c417cb4d8e74b4131dcdd409fc2ecddb2235840f",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "ef64893087a74a205b6dd9bc82e92749de4d7b2d2b5d22dc286d5e98f6dd8ded"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "pixel_optimization": false,
+  "auxiliary_max_levels": 0,
+  "optimization_mode": "latent_only",
+  "victim_memory_used": false,
+  "formal_queries_used": false,
+  "shadow_pool_used": false,
+  "true_rank_used": false,
+  "purchase_history_used": false,
+  "diffusion_calls": 0,
+  "observed_seconds": 176.39885270000013
+}

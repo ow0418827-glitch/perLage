@@ -1,0 +1,13 @@
+{
+  "pid": 29620,
+  "attempt": 2,
+  "started_at": "2026-11-10T17:49:15.2882104+08:00",
+  "executable": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "script": "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_lucid_groups9_clean_shopping_20261110.py",
+  "output_directory": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_clean_shopping_20261110",
+  "expected_episodes": 180,
+  "hidden_window": true,
+  "stdout_log": "queue.attempt2.stdout.log",
+  "stderr_log": "queue.attempt2.stderr.log",
+  "user_requested_no_continuous_monitoring": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "task_id": "feature_14",
+  "selected_ids": [
+    "groups9_reference_05_hair_extension_B07Z7MQSM1",
+    "shared_038a6022e0eedbbbc6d70b38312f90728a79cee8b753b1ccf6e31a2949e7748c",
+    "shared_65a9536160945f3d1463ee1eadec326db0d099bc32b10122330c3f1652065046"
+  ],
+  "source_rank": 1,
+  "query_unchanged": true,
+  "model_and_guidance_unchanged": true,
+  "images_verified_before_each_api_call": true,
+  "memory_count": 3
+}

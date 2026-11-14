@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "shared",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+  "pool_sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+  "pool_count": 189,
+  "source_memory_id": "groups9_reference_09_toothbrush_B09PNNXYJ4",
+  "frozen_image_sha256": "74c6404754e18b3481de5552cfedd846d5a47e5efb2de263bfa1f47d19b1c1b6",
+  "method": "lucid",
+  "queries": [
+    {
+      "task_id": "feature_01",
+      "instruction": "I want to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_02",
+      "instruction": "I would like to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_03",
+      "instruction": "Looking to buy a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_04",
+      "instruction": "I am looking to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_05",
+      "instruction": "Please help me buy a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_06",
+      "instruction": "I am shopping for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_07",
+      "instruction": "I would like to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_08",
+      "instruction": "Help me purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_09",
+      "instruction": "I am looking for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_10",
+      "instruction": "Please find a toothbrush with a u-shaped design and soft silicone brush heads for me to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_11",
+      "instruction": "I want to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_12",
+      "instruction": "Please help me purchase a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_13",
+      "instruction": "I need to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_14",
+      "instruction": "I would like help finding a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_15",
+      "instruction": "Find me a toothbrush with soft silicone brush heads and 360-degree cleaning to purchase.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_16",
+      "instruction": "Please look for a toothbrush with a u-shaped design and soft silicone brush heads that I can buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_17",
+      "instruction": "I am interested in buying a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_18",
+      "instruction": "I would like to shop for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_19",
+      "instruction": "Help me find a toothbrush with a u-shaped design and soft silicone brush heads to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_20",
+      "instruction": "I am ready to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "none",
+      "label": "none"
+    }
+  ],
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "query_mode": "text",
+  "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\09_toothbrush\\queries.json",
+  "query_manifest_sha256": "adf6578bb0084ea5c0b144210ebb6e5110659740f6f185f34e86e2cd69b40386",
+  "index_text": "product_feature",
+  "query_image_defended": false,
+  "all_memory_images_equally_defended": true,
+  "shopping_allowed": false,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  }
+}

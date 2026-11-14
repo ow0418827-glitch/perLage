@@ -1,0 +1,159 @@
+{
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "data": {
+    "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\source.jpg",
+    "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\target.jpg",
+    "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "training_queries": [
+      "Find this exact pictured item and place an order for a matching unit.",
+      "Use the supplied photograph to identify the item I intend to purchase.",
+      "I need an identical replacement for the object in this reference photograph."
+    ]
+  },
+  "source_boxes": [
+    [
+      20,
+      70,
+      178,
+      411
+    ],
+    [
+      110,
+      47,
+      310,
+      435
+    ],
+    [
+      260,
+      65,
+      402,
+      412
+    ],
+    [
+      360,
+      96,
+      485,
+      390
+    ]
+  ],
+  "target_boxes": [
+    [
+      0,
+      0,
+      159,
+      499
+    ]
+  ],
+  "print_regions": [
+    [
+      0.07,
+      0.48,
+      0.26,
+      0.76
+    ],
+    [
+      0.27,
+      0.48,
+      0.55,
+      0.8
+    ],
+    [
+      0.56,
+      0.48,
+      0.77,
+      0.76
+    ],
+    [
+      0.77,
+      0.48,
+      0.92,
+      0.71
+    ]
+  ],
+  "initialization": {
+    "optimizer": {
+      "shadow_weight": 0.0,
+      "pixel_clean_steps": 20,
+      "pixel_diffusion_steps": 60,
+      "pixel_levels": 4
+    },
+    "plan": {
+      "instruction": "Give only unprinted product surfaces a subtle coherent natural finish inspired by RGB [220, 195, 162]. Preserve the product shape, every original word, number, drawing and brand mark exactly. Preserve the scene.",
+      "editable_regions": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "reason": "主体统计选色后的统一生成步骤。",
+      "region_policy": "label_protected",
+      "feather_pixels": 3.0,
+      "protected_regions": []
+    },
+    "generation": {
+      "seed": 42,
+      "target_scale": 8.0,
+      "latent_clip": 0.04,
+      "strength": 1.0,
+      "steps": 30,
+      "image_size": 384,
+      "source_weight": 1.0,
+      "robust_guidance": true
+    }
+  },
+  "harmonization": {
+    "smoothing_sigma": 12.0,
+    "print_ring_sigma": 7.0,
+    "selected_color_mix": 0.25,
+    "strength": 0.75,
+    "blend_mode": "matte"
+  },
+  "latent": {
+    "steps": 40,
+    "check_every": 10,
+    "latent_levels": 16,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.008,
+    "latent_smoothing_mix": 0.1,
+    "auxiliary_levels": 4,
+    "source_ssim_floor": 0.93,
+    "source_mae_ceiling": 8.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.002,
+    "feature_weight": 0.1,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 4,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "retention_tolerance": 0.0005,
+    "selection_seeds": [
+      9301,
+      9302
+    ]
+  },
+  "pixel_optimization": true
+}

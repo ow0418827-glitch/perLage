@@ -1,0 +1,594 @@
+{
+  "scope": "Read-only historical audit; current primary frozen images and results unchanged.",
+  "current_original_top1": 20,
+  "historical_15_protocol": {
+    "model": "ViT-B-32",
+    "weights": "openai",
+    "query_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "instruction_language": "English",
+    "memory_count": 15
+  },
+  "current_189_protocol": {
+    "model": "ViT-g-14",
+    "weights": "laion2b_s12b_b42k",
+    "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+    "instruction_language": "Chinese",
+    "memory_count": 189
+  },
+  "old_baseline_images_titles_and_queries_match_across_two_reports": true,
+  "old_common_all_26_conditions_match": true,
+  "historical_15": [
+    {
+      "condition": "无防御",
+      "labels": [
+        "none"
+      ],
+      "clean": {
+        "mean_rank": 8.65,
+        "min_rank": 7,
+        "max_rank": 12,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 20,
+        "mean_score": 0.6871641278266907
+      },
+      "lucid": {
+        "mean_rank": 1,
+        "min_rank": 1,
+        "max_rank": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.8294204711914063
+      },
+      "nf_lage": {
+        "mean_rank": 2.5,
+        "min_rank": 2,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7348854184150696
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 2.5,
+        "min_rank": 2,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7359757035970688
+      }
+    },
+    {
+      "condition": "压缩质量50",
+      "labels": [
+        "jpeg50"
+      ],
+      "clean": {
+        "mean_rank": 7.65,
+        "min_rank": 7,
+        "max_rank": 12,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 20,
+        "mean_score": 0.6861040472984314
+      },
+      "lucid": {
+        "mean_rank": 1,
+        "min_rank": 1,
+        "max_rank": 1,
+        "top1": 20,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7655708640813828
+      },
+      "nf_lage": {
+        "mean_rank": 3.15,
+        "min_rank": 3,
+        "max_rank": 4,
+        "top1": 0,
+        "top3": 17,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7200615376234054
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 3,
+        "min_rank": 3,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.722283348441124
+      }
+    },
+    {
+      "condition": "压缩质量25",
+      "labels": [
+        "jpeg25"
+      ],
+      "clean": {
+        "mean_rank": 6.95,
+        "min_rank": 6,
+        "max_rank": 11,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 20,
+        "mean_score": 0.6844195127487183
+      },
+      "lucid": {
+        "mean_rank": 2.5,
+        "min_rank": 2,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7318886548280716
+      },
+      "nf_lage": {
+        "mean_rank": 3.55,
+        "min_rank": 3,
+        "max_rank": 5,
+        "top1": 0,
+        "top3": 13,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7148537456989288
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 3.75,
+        "min_rank": 3,
+        "max_rank": 5,
+        "top1": 0,
+        "top3": 11,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7134785950183868
+      }
+    },
+    {
+      "condition": "变分自编码重建",
+      "labels": [
+        "vae512"
+      ],
+      "clean": {
+        "mean_rank": 9.6,
+        "min_rank": 7,
+        "max_rank": 10,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 20,
+        "mean_score": 0.688020008802414
+      },
+      "lucid": {
+        "mean_rank": 3.6,
+        "min_rank": 3,
+        "max_rank": 6,
+        "top1": 0,
+        "top3": 13,
+        "top5": 19,
+        "total": 20,
+        "mean_score": 0.71491559445858
+      },
+      "nf_lage": {
+        "mean_rank": 3,
+        "min_rank": 3,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7424461454153061
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 2.75,
+        "min_rank": 2,
+        "max_rank": 3,
+        "top1": 0,
+        "top3": 20,
+        "top5": 20,
+        "total": 20,
+        "mean_score": 0.7445971995592118
+      }
+    },
+    {
+      "condition": "扩散起点99",
+      "labels": [
+        "diff512_t99_s1001",
+        "diff512_t99_s1002",
+        "diff512_t99_s1003",
+        "diff512_t99_s1004",
+        "diff512_t99_s1005"
+      ],
+      "clean": {
+        "mean_rank": 9.27,
+        "min_rank": 7,
+        "max_rank": 12,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6873830413818359
+      },
+      "lucid": {
+        "mean_rank": 7.35,
+        "min_rank": 6,
+        "max_rank": 11,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6975553452968597
+      },
+      "nf_lage": {
+        "mean_rank": 2.99,
+        "min_rank": 2,
+        "max_rank": 4,
+        "top1": 0,
+        "top3": 88,
+        "top5": 100,
+        "total": 100,
+        "mean_score": 0.7327566760778427
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 2.89,
+        "min_rank": 2,
+        "max_rank": 4,
+        "top1": 0,
+        "top3": 93,
+        "top5": 100,
+        "total": 100,
+        "mean_score": 0.7335872930288315
+      }
+    },
+    {
+      "condition": "扩散起点199",
+      "labels": [
+        "diff512_t199_s1001",
+        "diff512_t199_s1002",
+        "diff512_t199_s1003",
+        "diff512_t199_s1004",
+        "diff512_t199_s1005"
+      ],
+      "clean": {
+        "mean_rank": 9.14,
+        "min_rank": 6,
+        "max_rank": 12,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6901355493068695
+      },
+      "lucid": {
+        "mean_rank": 9.69,
+        "min_rank": 7,
+        "max_rank": 12,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6854666304588318
+      },
+      "nf_lage": {
+        "mean_rank": 3.92,
+        "min_rank": 3,
+        "max_rank": 6,
+        "top1": 0,
+        "top3": 35,
+        "top5": 99,
+        "total": 100,
+        "mean_score": 0.726052428483963
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 3.9,
+        "min_rank": 3,
+        "max_rank": 5,
+        "top1": 0,
+        "top3": 36,
+        "top5": 100,
+        "total": 100,
+        "mean_score": 0.7268663948774338
+      }
+    },
+    {
+      "condition": "扩散起点399",
+      "labels": [
+        "diff512_t399_s1001",
+        "diff512_t399_s1002",
+        "diff512_t399_s1003",
+        "diff512_t399_s1004",
+        "diff512_t399_s1005"
+      ],
+      "clean": {
+        "mean_rank": 8.97,
+        "min_rank": 7,
+        "max_rank": 11,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6975677537918091
+      },
+      "lucid": {
+        "mean_rank": 10.86,
+        "min_rank": 8,
+        "max_rank": 14,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "total": 100,
+        "mean_score": 0.6724264335632324
+      },
+      "nf_lage": {
+        "mean_rank": 5.54,
+        "min_rank": 2,
+        "max_rank": 9,
+        "top1": 0,
+        "top3": 2,
+        "top5": 52,
+        "total": 100,
+        "mean_score": 0.7175115460157394
+      },
+      "nf_lage_no_shadow": {
+        "mean_rank": 4.66,
+        "min_rank": 2,
+        "max_rank": 7,
+        "top1": 0,
+        "top3": 19,
+        "top5": 76,
+        "total": 100,
+        "mean_score": 0.7211968010663986
+      }
+    }
+  ],
+  "historical_100_no_defense": {
+    "clean": {
+      "mean_rank": 8.3,
+      "min_rank": 7,
+      "max_rank": 13,
+      "top1": 0,
+      "top3": 0,
+      "top5": 0,
+      "total": 20,
+      "mean_score": 0.6871641278266907
+    },
+    "nf_lage_no_shadow": {
+      "mean_rank": 2.5,
+      "min_rank": 2,
+      "max_rank": 3,
+      "top1": 0,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.7359757035970688
+    }
+  },
+  "current_189": [
+    {
+      "variant": "clean",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.48772444725036623,
+      "source_similarity": 1.0,
+      "source_mae": 0.0,
+      "source_max": 0,
+      "proxy_target_cosine": 0.6722689270973206,
+      "heldout_target_cosine": 0.5467913150787354,
+      "mean_margin_over_runner_up": 0.041147030889987946
+    },
+    {
+      "variant": "lucid_original_16",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.5019143640995025,
+      "source_similarity": 0.6790678992490142,
+      "source_mae": 8.225581333333333,
+      "source_max": 16,
+      "proxy_target_cosine": 0.9855914115905762,
+      "heldout_target_cosine": 0.5579169392585754,
+      "mean_margin_over_runner_up": 0.0553369477391243
+    },
+    {
+      "variant": "lucid_4",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.4979181319475174,
+      "source_similarity": 0.954075257473225,
+      "source_mae": 2.5578666666666665,
+      "source_max": 4,
+      "proxy_target_cosine": 0.9018582701683044,
+      "heldout_target_cosine": 0.5405657291412354,
+      "mean_margin_over_runner_up": 0.05134071558713913
+    },
+    {
+      "variant": "lucid_8",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.5050048843026161,
+      "source_similarity": 0.8564362700783074,
+      "source_mae": 4.851657333333334,
+      "source_max": 8,
+      "proxy_target_cosine": 0.9545207023620605,
+      "heldout_target_cosine": 0.5492539405822754,
+      "mean_margin_over_runner_up": 0.058427467942237854
+    },
+    {
+      "variant": "perlage_original_no_shadow",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.5211406022310257,
+      "source_similarity": 0.9386441023376575,
+      "source_mae": 7.025369333333333,
+      "source_max": 145,
+      "proxy_target_cosine": 0.7706465721130371,
+      "heldout_target_cosine": 0.5664548873901367,
+      "mean_margin_over_runner_up": 0.07456318587064743
+    },
+    {
+      "variant": "perlage_pixel_control",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.5173484146595001,
+      "source_similarity": 0.9416649351158669,
+      "source_mae": 6.639373333333333,
+      "source_max": 143,
+      "proxy_target_cosine": 0.7630977630615234,
+      "heldout_target_cosine": 0.5574206113815308,
+      "mean_margin_over_runner_up": 0.07077099829912185
+    },
+    {
+      "variant": "perlage_latent_only",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.5181518852710724,
+      "source_similarity": 0.9615633083464434,
+      "source_mae": 6.526029333333334,
+      "source_max": 145,
+      "proxy_target_cosine": 0.7565293312072754,
+      "heldout_target_cosine": 0.5546683669090271,
+      "mean_margin_over_runner_up": 0.07157446891069412
+    },
+    {
+      "variant": "perlage_legacy_reference",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.516993522644043,
+      "source_similarity": 0.9396276501400859,
+      "source_mae": 7.204726666666667,
+      "source_max": 151,
+      "proxy_target_cosine": 0.7664899826049805,
+      "heldout_target_cosine": 0.566074013710022,
+      "mean_margin_over_runner_up": 0.07041610628366471
+    },
+    {
+      "variant": "perlage_color_revision_reference",
+      "mean_rank": 1,
+      "min_rank": 1,
+      "max_rank": 1,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "total": 20,
+      "mean_score": 0.510353472828865,
+      "source_similarity": 0.9210716089746579,
+      "source_mae": 7.732976,
+      "source_max": 135,
+      "proxy_target_cosine": 0.7964666485786438,
+      "heldout_target_cosine": 0.5624802112579346,
+      "mean_margin_over_runner_up": 0.06377605646848679
+    }
+  ],
+  "actual_opaque_ink_protection": {
+    "mask_definition": "Actual color harmonization opaque-ink mask; not the larger initialization candidate core.",
+    "pixels": 9173,
+    "mask_sha256": "fbfc0622840a492c71f3cac8dc989bca2fad1a7440e0b9faaaad94b9c8b813cf",
+    "maximum_source_difference": {
+      "lucid_original_16": 16,
+      "lucid_4": 4,
+      "lucid_8": 8,
+      "perlage_original_no_shadow": 0,
+      "perlage_pixel_control": 0,
+      "perlage_latent_only": 0
+    }
+  },
+  "paired_control": {
+    "perlage_latent_only": {
+      "prefix_sha256": "4c0e7458fc83daa6b1e49daabb1d079ddcb6c8cb334766ae401471f675f2f4f5",
+      "initial_latent_steps": [
+        40,
+        40
+      ],
+      "pixel_steps": [
+        0,
+        0
+      ],
+      "pixel_levels": 0,
+      "auxiliary_levels": 0,
+      "actual_final_steps": 40,
+      "selected_final_step": 20
+    },
+    "perlage_pixel_control": {
+      "prefix_sha256": "4c0e7458fc83daa6b1e49daabb1d079ddcb6c8cb334766ae401471f675f2f4f5",
+      "initial_latent_steps": [
+        40,
+        40
+      ],
+      "pixel_steps": [
+        20,
+        60
+      ],
+      "pixel_levels": 4,
+      "auxiliary_levels": 4,
+      "actual_final_steps": 40,
+      "selected_final_step": 0
+    }
+  },
+  "limitations": [
+    "Historical defense results are full methods including pixel stages and residual, not current latent-only ablation.",
+    "No paired lucid four/eight-level defense runs in these historical tables.",
+    "Current clean ranks are saturated; no rank-based incremental success.",
+    "Multiple protocol changes prevent causal attribution of historical versus current rank shift."
+  ],
+  "source_files": {
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_defenses_20261029\\results.json": "5dbdeb0fa37c6c884056875bfafc3ce86f21ce0e8ea082f0bb2bd9bd4325377d",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\results.json": "9069de82118898187c86171cc0f5b3542994dc9d2244b4d0baddd237944af4be",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shared_memory_20261103\\evaluation\\07_shampoo\\results.json": "07ffbf7bf86385c0b8a6aff5f51e1b1b11cb4fde09a566f8085f9d80de9fa0b1",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_defenses_20261029\\tasks.json": "2d55f4c315c4817f8d1a337291bc433c323b77aa6e2daffbc8f3ba98dc6277e4",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\tasks.json": "136d12f11024d24e4af36caecaf8b7b1becaef289a9f820c4a39a0eaeab10a07",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation\\PLAN.json": "6b15de5520615214e9113b0ffcf8da2748f0877bd35e301bf92fa635ff038e56",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation\\RANKINGS.json": "1ceac701d070c2b5fd839abd20e9c5d45231e1eb9a85b51c1ed0410eeb600b32",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\SUMMARY.json": "30612adcce03fda9eed0fcc781d076052d8dd01aaf1f8fde99403cc8b5696d5f"
+  }
+}

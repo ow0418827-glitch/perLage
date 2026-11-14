@@ -1,0 +1,12 @@
+{
+  "group": "09_toothbrush",
+  "bank": "clean",
+  "task_id": "vague_06",
+  "error_type": "RecoverableImageDownloadError",
+  "http_status": null,
+  "model": {
+    "provider": "minimax",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimax.cn/v1"
+  }
+}

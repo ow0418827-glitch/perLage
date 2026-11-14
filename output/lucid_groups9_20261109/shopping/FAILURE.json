@@ -1,0 +1,6 @@
+{
+  "group": "07_shampoo",
+  "task_id": "feature_13",
+  "error_type": "RecoverableImageDownloadError",
+  "error_message": "Image download failed after 2 attempts (image_secure_connection_interrupted)"
+}

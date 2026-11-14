@@ -1,0 +1,15 @@
+{
+  "status": "paused",
+  "scope": "shopping_only",
+  "requested_at": "2026-11-10T22:32:17.7476295+08:00",
+  "reason": "用户要求先计算两方法错误记忆进入前三和前五比例；购物暂不放行，等待完整检索结果",
+  "resume_requires": "explicit_review_after_both_methods_retrieval",
+  "old_controller_pids": [
+    43216,
+    43412
+  ],
+  "retained_retrieval_worker_pids": [
+    37736,
+    44480
+  ]
+}

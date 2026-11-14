@@ -1,0 +1,10 @@
+{
+  "scope": "07_shampoo_only_temporary_relaxation",
+  "files": {
+    "temporary_relaxed_implementation/latent_relaxed.py": "0eab5979bc895c468369892074627195e8a6f36fb2059c06aac49515a49292e7",
+    "temporary_relaxed_implementation/trial_components_relaxed.py": "143e7ea8a31a160426ecf0e26229cdc298a99e811f9e401fa2b70ecfb51c987d",
+    "worker_temporary_relaxed.py": "88301b24b7a2ef81e6a818c48032afcb0814ce569b2a69abb0611527c8553126",
+    "compare_shampoo_temporary.py": "6cb90ba4d6d24a8367cbae916e0fcc925da4251024a513f5cc1cfd05d5fe5ebd",
+    "coordinator_shampoo_temporary.py": "4dad095ab3849eba7a86c863e2766caacd83c559f94ae9a7409ef42b55603aee"
+  }
+}

@@ -1,0 +1,2310 @@
+{
+  "group": "07_shampoo",
+  "version": "v2",
+  "scope": "color_stage_only",
+  "baseline": {
+    "image_cosine": 0.7649683952331543,
+    "joint_mean": 0.7337958812713623
+  },
+  "source": {
+    "image_cosine": 0.6722689867019653,
+    "joint_mean": 0.6860269904136658
+  },
+  "candidate": {
+    "params": {
+      "alpha": 0.0,
+      "palette_index": 0,
+      "lightness_mix": 0.0,
+      "chroma_scale": 0.75
+    },
+    "source_ssim": 0.9419814359796534,
+    "source_mae": 6.769750595092773,
+    "image_cosine": 0.765254020690918,
+    "joint_mean": 0.7337653636932373,
+    "feasible": true,
+    "utility": 1.1321367025375366
+  },
+  "image_gain": 0.0002856254577636719,
+  "joint_gain": -3.0517578125e-05,
+  "source_palette": [
+    {
+      "lab": [
+        95.10882802302818,
+        -0.011924982175229151,
+        0.16850844812579518
+      ],
+      "rgb": [
+        241,
+        241,
+        241
+      ],
+      "pixels": 102951,
+      "fraction": 0.9230210602759622
+    },
+    {
+      "lab": [
+        55.20796555293048,
+        3.58752557806875,
+        8.573035159902137
+      ],
+      "rgb": [
+        145,
+        130,
+        118
+      ],
+      "pixels": 4296,
+      "fraction": 0.03851636676618521
+    },
+    {
+      "lab": [
+        40.41842033751757,
+        13.762761160370527,
+        26.86857520107803
+      ],
+      "rgb": [
+        128,
+        86,
+        52
+      ],
+      "pixels": 1799,
+      "fraction": 0.016129176865076162
+    },
+    {
+      "lab": [
+        25.286058967915366,
+        13.216124739816909,
+        16.994146627880582
+      ],
+      "rgb": [
+        86,
+        52,
+        35
+      ],
+      "pixels": 1759,
+      "fraction": 0.015770551476191757
+    },
+    {
+      "lab": [
+        27.27287805047043,
+        5.6736976481135555,
+        -12.080412833702374
+      ],
+      "rgb": [
+        64,
+        62,
+        83
+      ],
+      "pixels": 732,
+      "fraction": 0.006562844616584631
+    }
+  ],
+  "target_palette": [
+    {
+      "lab": [
+        79.88450084297854,
+        4.141058054284303,
+        20.670464212026975
+      ],
+      "rgb": [
+        220,
+        194,
+        160
+      ],
+      "pixels": 43138,
+      "fraction": 0.8899938106044977
+    },
+    {
+      "lab": [
+        83.34691032090512,
+        -0.6710904398504806,
+        8.048909733388125
+      ],
+      "rgb": [
+        213,
+        207,
+        193
+      ],
+      "pixels": 3356,
+      "fraction": 0.06923870435320817
+    },
+    {
+      "lab": [
+        72.15566184832231,
+        8.447599120096084,
+        28.011654550409077
+      ],
+      "rgb": [
+        209,
+        170,
+        126
+      ],
+      "pixels": 1976,
+      "fraction": 0.0407674850422942
+    }
+  ],
+  "material_pixels": 103613,
+  "protected_pixels": 11116,
+  "protected_max_difference": 0,
+  "background_max_difference": 0,
+  "background_reference": "fixed_color_input_anchor",
+  "background_difference_from_original_source": 86,
+  "color_distance_before": 16.89627583478437,
+  "color_distance_after": 16.89627583478437,
+  "color_distance_reduction": 0.0,
+  "trials": [
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9419814359796534,
+      "source_mae": 6.769750595092773,
+      "image_cosine": 0.765254020690918,
+      "joint_mean": 0.7337653636932373,
+      "feasible": true,
+      "utility": 1.1321367025375366
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9418230619225894,
+      "source_mae": 6.7764458656311035,
+      "image_cosine": 0.7645525932312012,
+      "joint_mean": 0.7332519888877869,
+      "feasible": true,
+      "utility": 1.1311785876750946
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9415799649607967,
+      "source_mae": 6.824015140533447,
+      "image_cosine": 0.7629622220993042,
+      "joint_mean": 0.7319951057434082,
+      "feasible": true,
+      "utility": 1.1289597749710083
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9417847640104754,
+      "source_mae": 6.800289630889893,
+      "image_cosine": 0.7631086111068726,
+      "joint_mean": 0.7320852279663086,
+      "feasible": true,
+      "utility": 1.1291512250900269
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9413551687396892,
+      "source_mae": 7.162865161895752,
+      "image_cosine": 0.7646217346191406,
+      "joint_mean": 0.7332393527030945,
+      "feasible": true,
+      "utility": 1.1312414109706879
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9411752958152217,
+      "source_mae": 7.229450702667236,
+      "image_cosine": 0.7632575035095215,
+      "joint_mean": 0.7321419715881348,
+      "feasible": true,
+      "utility": 1.1293284893035889
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.941335236594353,
+      "source_mae": 7.220056533813477,
+      "image_cosine": 0.7630610466003418,
+      "joint_mean": 0.7319828867912292,
+      "feasible": true,
+      "utility": 1.1290524899959564
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9407364538463387,
+      "source_mae": 7.545409202575684,
+      "image_cosine": 0.7647722959518433,
+      "joint_mean": 0.7332750558853149,
+      "feasible": true,
+      "utility": 1.1314098238945007
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.940583410385301,
+      "source_mae": 7.634294509887695,
+      "image_cosine": 0.7637928128242493,
+      "joint_mean": 0.7324645519256592,
+      "feasible": true,
+      "utility": 1.1300250887870789
+    },
+    {
+      "params": {
+        "alpha": 0.0625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9407176701117299,
+      "source_mae": 7.608650207519531,
+      "image_cosine": 0.762846827507019,
+      "joint_mean": 0.7318741679191589,
+      "feasible": true,
+      "utility": 1.1287839114665985
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9414890956455965,
+      "source_mae": 6.8817620277404785,
+      "image_cosine": 0.7627271413803101,
+      "joint_mean": 0.7319183349609375,
+      "feasible": true,
+      "utility": 1.1286863088607788
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9408448409296591,
+      "source_mae": 7.046329975128174,
+      "image_cosine": 0.762120246887207,
+      "joint_mean": 0.731377363204956,
+      "feasible": true,
+      "utility": 1.127808928489685
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9405408220224647,
+      "source_mae": 7.061742782592773,
+      "image_cosine": 0.7607068419456482,
+      "joint_mean": 0.730516791343689,
+      "feasible": true,
+      "utility": 1.1259652376174927
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9405390999432701,
+      "source_mae": 7.656275272369385,
+      "image_cosine": 0.7627884149551392,
+      "joint_mean": 0.7318345308303833,
+      "feasible": true,
+      "utility": 1.1287056803703308
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9396961588898004,
+      "source_mae": 7.804953098297119,
+      "image_cosine": 0.76252281665802,
+      "joint_mean": 0.7315952181816101,
+      "feasible": true,
+      "utility": 1.128320425748825
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9394644284836002,
+      "source_mae": 7.819607257843018,
+      "image_cosine": 0.7610976696014404,
+      "joint_mean": 0.7307834029197693,
+      "feasible": true,
+      "utility": 1.126489371061325
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9393442936435313,
+      "source_mae": 8.494418144226074,
+      "image_cosine": 0.7633334398269653,
+      "joint_mean": 0.731846272945404,
+      "feasible": true,
+      "utility": 1.1292565762996674
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.938289131971661,
+      "source_mae": 8.578083992004395,
+      "image_cosine": 0.7624619007110596,
+      "joint_mean": 0.7315112948417664,
+      "feasible": true,
+      "utility": 1.1282175481319427
+    },
+    {
+      "params": {
+        "alpha": 0.125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9380830752309894,
+      "source_mae": 8.586398124694824,
+      "image_cosine": 0.7612766027450562,
+      "joint_mean": 0.7308446764945984,
+      "feasible": true,
+      "utility": 1.1266989409923553
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9408648181479172,
+      "source_mae": 7.040036201477051,
+      "image_cosine": 0.7621184587478638,
+      "joint_mean": 0.7312704920768738,
+      "feasible": true,
+      "utility": 1.1277537047863007
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9402202885420363,
+      "source_mae": 7.144405841827393,
+      "image_cosine": 0.7587054967880249,
+      "joint_mean": 0.7292298078536987,
+      "feasible": true,
+      "utility": 1.1233204007148743
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9400265446102454,
+      "source_mae": 7.178905963897705,
+      "image_cosine": 0.7563048601150513,
+      "joint_mean": 0.727728545665741,
+      "feasible": true,
+      "utility": 1.1201691329479218
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9390726762693646,
+      "source_mae": 8.192052841186523,
+      "image_cosine": 0.762620210647583,
+      "joint_mean": 0.7315723299980164,
+      "feasible": true,
+      "utility": 1.1284063756465912
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9385185689223281,
+      "source_mae": 8.285466194152832,
+      "image_cosine": 0.7595582008361816,
+      "joint_mean": 0.7297388315200806,
+      "feasible": true,
+      "utility": 1.124427616596222
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.938282774857928,
+      "source_mae": 8.310590744018555,
+      "image_cosine": 0.756589412689209,
+      "joint_mean": 0.7279443740844727,
+      "feasible": true,
+      "utility": 1.1205615997314453
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9366112436795999,
+      "source_mae": 9.356267929077148,
+      "image_cosine": 0.7626292109489441,
+      "joint_mean": 0.7314666509628296,
+      "feasible": true,
+      "utility": 1.1283625364303589
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9362155118802674,
+      "source_mae": 9.468428611755371,
+      "image_cosine": 0.7601791620254517,
+      "joint_mean": 0.730197548866272,
+      "feasible": true,
+      "utility": 1.1252779364585876
+    },
+    {
+      "params": {
+        "alpha": 0.1875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9360608017904601,
+      "source_mae": 9.49250602722168,
+      "image_cosine": 0.7568267583847046,
+      "joint_mean": 0.7280365824699402,
+      "feasible": true,
+      "utility": 1.1208450496196747
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9405891127928349,
+      "source_mae": 7.039572715759277,
+      "image_cosine": 0.7599761486053467,
+      "joint_mean": 0.7298690676689148,
+      "feasible": true,
+      "utility": 1.124910682439804
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9400129647148475,
+      "source_mae": 7.1873779296875,
+      "image_cosine": 0.7565528154373169,
+      "joint_mean": 0.7278103828430176,
+      "feasible": true,
+      "utility": 1.1204580068588257
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9385468959181854,
+      "source_mae": 7.454936981201172,
+      "image_cosine": 0.7526431083679199,
+      "joint_mean": 0.72552490234375,
+      "feasible": true,
+      "utility": 1.115405559539795
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9381295596656714,
+      "source_mae": 8.57748794555664,
+      "image_cosine": 0.7612342834472656,
+      "joint_mean": 0.7307440638542175,
+      "feasible": true,
+      "utility": 1.1266063153743744
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9376330754889557,
+      "source_mae": 8.676060676574707,
+      "image_cosine": 0.7569136619567871,
+      "joint_mean": 0.7281413078308105,
+      "feasible": true,
+      "utility": 1.1209843158721924
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9362624904756585,
+      "source_mae": 8.865213394165039,
+      "image_cosine": 0.7535573244094849,
+      "joint_mean": 0.7260472178459167,
+      "feasible": true,
+      "utility": 1.1165809333324432
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9346427382260033,
+      "source_mae": 10.149184226989746,
+      "image_cosine": 0.7611308693885803,
+      "joint_mean": 0.7305060625076294,
+      "feasible": true,
+      "utility": 1.126383900642395
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9342820622074028,
+      "source_mae": 10.233168601989746,
+      "image_cosine": 0.7570004463195801,
+      "joint_mean": 0.7280665636062622,
+      "feasible": true,
+      "utility": 1.1210337281227112
+    },
+    {
+      "params": {
+        "alpha": 0.25,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9329471068677596,
+      "source_mae": 10.461862564086914,
+      "image_cosine": 0.7538977861404419,
+      "joint_mean": 0.7261261343955994,
+      "feasible": true,
+      "utility": 1.1169608533382416
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9402257660132736,
+      "source_mae": 7.054730415344238,
+      "image_cosine": 0.7578307390213013,
+      "joint_mean": 0.7285453081130981,
+      "feasible": true,
+      "utility": 1.1221033930778503
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9389970595573547,
+      "source_mae": 7.332067489624023,
+      "image_cosine": 0.7537780404090881,
+      "joint_mean": 0.7260912656784058,
+      "feasible": true,
+      "utility": 1.116823673248291
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9374058623887166,
+      "source_mae": 7.792976379394531,
+      "image_cosine": 0.7495800852775574,
+      "joint_mean": 0.7236361503601074,
+      "feasible": true,
+      "utility": 1.111398160457611
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9371901987312238,
+      "source_mae": 8.960403442382812,
+      "image_cosine": 0.7591091394424438,
+      "joint_mean": 0.7293238043785095,
+      "feasible": true,
+      "utility": 1.1237710416316986
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.936040355355414,
+      "source_mae": 9.176065444946289,
+      "image_cosine": 0.7541702389717102,
+      "joint_mean": 0.7262830138206482,
+      "feasible": true,
+      "utility": 1.1173117458820343
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.934392279883129,
+      "source_mae": 9.449738502502441,
+      "image_cosine": 0.7505138516426086,
+      "joint_mean": 0.7241462469100952,
+      "feasible": true,
+      "utility": 1.1125869750976562
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9324853414495349,
+      "source_mae": 10.937641143798828,
+      "image_cosine": 0.7590497136116028,
+      "joint_mean": 0.7291293144226074,
+      "feasible": true,
+      "utility": 1.1236143708229065
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9315807578431139,
+      "source_mae": 11.18116569519043,
+      "image_cosine": 0.7551445960998535,
+      "joint_mean": 0.7266520261764526,
+      "feasible": true,
+      "utility": 1.1184706091880798
+    },
+    {
+      "params": {
+        "alpha": 0.3125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9299317034124589,
+      "source_mae": 11.378273010253906,
+      "image_cosine": 0.751061737537384,
+      "joint_mean": 0.7242549657821655,
+      "feasible": true,
+      "utility": 1.1131892204284668
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9395884125348941,
+      "source_mae": 7.206908702850342,
+      "image_cosine": 0.7545955777168274,
+      "joint_mean": 0.7266820669174194,
+      "feasible": true,
+      "utility": 1.117936611175537
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9377515082165842,
+      "source_mae": 7.651679515838623,
+      "image_cosine": 0.7510741353034973,
+      "joint_mean": 0.7243417501449585,
+      "feasible": true,
+      "utility": 1.1132450103759766
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9355549775741775,
+      "source_mae": 8.159707069396973,
+      "image_cosine": 0.7465600967407227,
+      "joint_mean": 0.7219126224517822,
+      "feasible": true,
+      "utility": 1.1075164079666138
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9361151952212431,
+      "source_mae": 9.435114860534668,
+      "image_cosine": 0.7551299333572388,
+      "joint_mean": 0.7270054817199707,
+      "feasible": true,
+      "utility": 1.1186326742172241
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9339467545776045,
+      "source_mae": 9.703520774841309,
+      "image_cosine": 0.7516420483589172,
+      "joint_mean": 0.7247191667556763,
+      "feasible": true,
+      "utility": 1.1140016317367554
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9319873671586983,
+      "source_mae": 9.989323616027832,
+      "image_cosine": 0.7475451231002808,
+      "joint_mean": 0.7225064039230347,
+      "feasible": true,
+      "utility": 1.108798325061798
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9302382782276021,
+      "source_mae": 11.844663619995117,
+      "image_cosine": 0.7555333375930786,
+      "joint_mean": 0.7267249822616577,
+      "feasible": true,
+      "utility": 1.1188958287239075
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9282616854010654,
+      "source_mae": 12.059144020080566,
+      "image_cosine": 0.7514173984527588,
+      "joint_mean": 0.7242776155471802,
+      "feasible": false,
+      "utility": 1.1135562062263489
+    },
+    {
+      "params": {
+        "alpha": 0.375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9264998676561573,
+      "source_mae": 12.29649543762207,
+      "image_cosine": 0.7477048635482788,
+      "joint_mean": 0.7223652601242065,
+      "feasible": false,
+      "utility": 1.108887493610382
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9385461563133627,
+      "source_mae": 7.4010539054870605,
+      "image_cosine": 0.7534475326538086,
+      "joint_mean": 0.7256709337234497,
+      "feasible": true,
+      "utility": 1.1162829995155334
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9366786944022689,
+      "source_mae": 7.898919582366943,
+      "image_cosine": 0.7484745383262634,
+      "joint_mean": 0.7229793071746826,
+      "feasible": true,
+      "utility": 1.1099641919136047
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9343265354415391,
+      "source_mae": 8.496731758117676,
+      "image_cosine": 0.7437028288841248,
+      "joint_mean": 0.7203196883201599,
+      "feasible": true,
+      "utility": 1.1038626730442047
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9340414958260403,
+      "source_mae": 9.959269523620605,
+      "image_cosine": 0.7538158893585205,
+      "joint_mean": 0.7259224653244019,
+      "feasible": true,
+      "utility": 1.1167771220207214
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9322129946975758,
+      "source_mae": 10.190488815307617,
+      "image_cosine": 0.7496142983436584,
+      "joint_mean": 0.7236344814300537,
+      "feasible": true,
+      "utility": 1.1114315390586853
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9302645710501285,
+      "source_mae": 10.550222396850586,
+      "image_cosine": 0.7443751692771912,
+      "joint_mean": 0.7205268740653992,
+      "feasible": true,
+      "utility": 1.1046386063098907
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9267564571046125,
+      "source_mae": 12.727779388427734,
+      "image_cosine": 0.7541329860687256,
+      "joint_mean": 0.7256965637207031,
+      "feasible": false,
+      "utility": 1.1169812679290771
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9251831472248776,
+      "source_mae": 12.92708683013916,
+      "image_cosine": 0.7500032186508179,
+      "joint_mean": 0.7233419418334961,
+      "feasible": false,
+      "utility": 1.111674189567566
+    },
+    {
+      "params": {
+        "alpha": 0.4375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9235466288011676,
+      "source_mae": 13.255119323730469,
+      "image_cosine": 0.7459698915481567,
+      "joint_mean": 0.7208354473114014,
+      "feasible": false,
+      "utility": 1.1063876152038574
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9381305623240251,
+      "source_mae": 7.524442195892334,
+      "image_cosine": 0.7517526149749756,
+      "joint_mean": 0.7246457934379578,
+      "feasible": true,
+      "utility": 1.1140755116939545
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9354317925497698,
+      "source_mae": 8.183361053466797,
+      "image_cosine": 0.7457351088523865,
+      "joint_mean": 0.7215091586112976,
+      "feasible": true,
+      "utility": 1.1064896881580353
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.931961667730008,
+      "source_mae": 9.056120872497559,
+      "image_cosine": 0.741675078868866,
+      "joint_mean": 0.7191547155380249,
+      "feasible": true,
+      "utility": 1.1012524366378784
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9327206831614364,
+      "source_mae": 10.365909576416016,
+      "image_cosine": 0.7524126172065735,
+      "joint_mean": 0.7249936461448669,
+      "feasible": true,
+      "utility": 1.114909440279007
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9303887454719942,
+      "source_mae": 10.681286811828613,
+      "image_cosine": 0.7467453479766846,
+      "joint_mean": 0.7219417095184326,
+      "feasible": true,
+      "utility": 1.1077162027359009
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9273189342196565,
+      "source_mae": 11.18453311920166,
+      "image_cosine": 0.7419353723526001,
+      "joint_mean": 0.7194053530693054,
+      "feasible": true,
+      "utility": 1.1016380488872528
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9239799163634663,
+      "source_mae": 13.532898902893066,
+      "image_cosine": 0.7524197101593018,
+      "joint_mean": 0.7245019674301147,
+      "feasible": false,
+      "utility": 1.1146706938743591
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9221169675593903,
+      "source_mae": 13.846439361572266,
+      "image_cosine": 0.7470872402191162,
+      "joint_mean": 0.7215442061424255,
+      "feasible": false,
+      "utility": 1.107859343290329
+    },
+    {
+      "params": {
+        "alpha": 0.5,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9196741513896429,
+      "source_mae": 14.216300964355469,
+      "image_cosine": 0.7426542043685913,
+      "joint_mean": 0.7193872928619385,
+      "feasible": false,
+      "utility": 1.1023478507995605
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9376253387706052,
+      "source_mae": 7.641875743865967,
+      "image_cosine": 0.7502090930938721,
+      "joint_mean": 0.7237915396690369,
+      "feasible": true,
+      "utility": 1.1121048629283905
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9337816126662527,
+      "source_mae": 8.552839279174805,
+      "image_cosine": 0.7448972463607788,
+      "joint_mean": 0.7204352617263794,
+      "feasible": true,
+      "utility": 1.1051148772239685
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9304803390369331,
+      "source_mae": 9.442253112792969,
+      "image_cosine": 0.7388768792152405,
+      "joint_mean": 0.7175593376159668,
+      "feasible": true,
+      "utility": 1.0976565480232239
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9315164799587659,
+      "source_mae": 10.773765563964844,
+      "image_cosine": 0.7507627010345459,
+      "joint_mean": 0.724010169506073,
+      "feasible": true,
+      "utility": 1.1127677857875824
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9282369424417992,
+      "source_mae": 11.272366523742676,
+      "image_cosine": 0.7447936534881592,
+      "joint_mean": 0.7207726836204529,
+      "feasible": true,
+      "utility": 1.1051799952983856
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9253537360358111,
+      "source_mae": 11.708619117736816,
+      "image_cosine": 0.7393828630447388,
+      "joint_mean": 0.7181839942932129,
+      "feasible": true,
+      "utility": 1.0984748601913452
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9212514899746104,
+      "source_mae": 14.341911315917969,
+      "image_cosine": 0.7500019073486328,
+      "joint_mean": 0.7230696678161621,
+      "feasible": false,
+      "utility": 1.1115367412567139
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9188614710359047,
+      "source_mae": 14.77584457397461,
+      "image_cosine": 0.7446348667144775,
+      "joint_mean": 0.720173716545105,
+      "feasible": false,
+      "utility": 1.10472172498703
+    },
+    {
+      "params": {
+        "alpha": 0.5625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9163023332899662,
+      "source_mae": 15.110595703125,
+      "image_cosine": 0.7401371002197266,
+      "joint_mean": 0.7180927991867065,
+      "feasible": false,
+      "utility": 1.0991834998130798
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.93667185034205,
+      "source_mae": 7.875798225402832,
+      "image_cosine": 0.7478525042533875,
+      "joint_mean": 0.7225350737571716,
+      "feasible": true,
+      "utility": 1.1091200411319733
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.932514439524622,
+      "source_mae": 8.90823745727539,
+      "image_cosine": 0.7423186302185059,
+      "joint_mean": 0.7194692492485046,
+      "feasible": true,
+      "utility": 1.1020532548427582
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9280331381093393,
+      "source_mae": 9.917019844055176,
+      "image_cosine": 0.7358918190002441,
+      "joint_mean": 0.7162238955497742,
+      "feasible": true,
+      "utility": 1.0940037667751312
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9300940284818812,
+      "source_mae": 11.232638359069824,
+      "image_cosine": 0.7480301856994629,
+      "joint_mean": 0.7224884033203125,
+      "feasible": true,
+      "utility": 1.1092743873596191
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.92642976362605,
+      "source_mae": 11.759756088256836,
+      "image_cosine": 0.7425190806388855,
+      "joint_mean": 0.7195409536361694,
+      "feasible": true,
+      "utility": 1.1022895574569702
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9227482259010347,
+      "source_mae": 12.373008728027344,
+      "image_cosine": 0.7369523644447327,
+      "joint_mean": 0.7167879939079285,
+      "feasible": false,
+      "utility": 1.095346361398697
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.918354112530335,
+      "source_mae": 15.206409454345703,
+      "image_cosine": 0.7473748922348022,
+      "joint_mean": 0.7213107943534851,
+      "feasible": false,
+      "utility": 1.1080302894115448
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.915501285558249,
+      "source_mae": 15.640336990356445,
+      "image_cosine": 0.7427821159362793,
+      "joint_mean": 0.7190241813659668,
+      "feasible": false,
+      "utility": 1.1022942066192627
+    },
+    {
+      "params": {
+        "alpha": 0.625,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9127866763419943,
+      "source_mae": 16.103347778320312,
+      "image_cosine": 0.7375613451004028,
+      "joint_mean": 0.7166451811790466,
+      "feasible": false,
+      "utility": 1.0958839356899261
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9358632231593598,
+      "source_mae": 8.04947280883789,
+      "image_cosine": 0.7466447353363037,
+      "joint_mean": 0.7218007445335388,
+      "feasible": true,
+      "utility": 1.1075451076030731
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9312834549019218,
+      "source_mae": 9.22872257232666,
+      "image_cosine": 0.7398451566696167,
+      "joint_mean": 0.7181293964385986,
+      "feasible": true,
+      "utility": 1.098909854888916
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9260537573943372,
+      "source_mae": 10.441024780273438,
+      "image_cosine": 0.7334307432174683,
+      "joint_mean": 0.7148070335388184,
+      "feasible": true,
+      "utility": 1.0908342599868774
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9281851159742246,
+      "source_mae": 11.758610725402832,
+      "image_cosine": 0.7480087280273438,
+      "joint_mean": 0.7221443057060242,
+      "feasible": true,
+      "utility": 1.1090808808803558
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9246347785919569,
+      "source_mae": 12.2240629196167,
+      "image_cosine": 0.7405787110328674,
+      "joint_mean": 0.7184657454490662,
+      "feasible": false,
+      "utility": 1.0998115837574005
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9201249314096206,
+      "source_mae": 12.95789909362793,
+      "image_cosine": 0.7344543933868408,
+      "joint_mean": 0.7158675193786621,
+      "feasible": false,
+      "utility": 1.0923881530761719
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9152569009597071,
+      "source_mae": 16.087186813354492,
+      "image_cosine": 0.7463228702545166,
+      "joint_mean": 0.7208496928215027,
+      "feasible": false,
+      "utility": 1.106747716665268
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9122232875508522,
+      "source_mae": 16.519031524658203,
+      "image_cosine": 0.7411209940910339,
+      "joint_mean": 0.7181700468063354,
+      "feasible": false,
+      "utility": 1.1002060174942017
+    },
+    {
+      "params": {
+        "alpha": 0.6875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9086877750377255,
+      "source_mae": 17.04983139038086,
+      "image_cosine": 0.7340354919433594,
+      "joint_mean": 0.7155372500419617,
+      "feasible": false,
+      "utility": 1.0918041169643402
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9348575192600299,
+      "source_mae": 8.334868431091309,
+      "image_cosine": 0.7460793256759644,
+      "joint_mean": 0.7211802005767822,
+      "feasible": true,
+      "utility": 1.1066694259643555
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9299874188596043,
+      "source_mae": 9.53085708618164,
+      "image_cosine": 0.7378692030906677,
+      "joint_mean": 0.7169668674468994,
+      "feasible": true,
+      "utility": 1.0963526368141174
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9234793710165627,
+      "source_mae": 10.903651237487793,
+      "image_cosine": 0.7303869724273682,
+      "joint_mean": 0.7136927843093872,
+      "feasible": true,
+      "utility": 1.0872333645820618
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9262741001975056,
+      "source_mae": 12.199589729309082,
+      "image_cosine": 0.7465639114379883,
+      "joint_mean": 0.7213965654373169,
+      "feasible": false,
+      "utility": 1.1072621941566467
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9226772095997304,
+      "source_mae": 12.758271217346191,
+      "image_cosine": 0.7393099069595337,
+      "joint_mean": 0.7177242040634155,
+      "feasible": false,
+      "utility": 1.0981720089912415
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9177642058021859,
+      "source_mae": 13.556727409362793,
+      "image_cosine": 0.7307532429695129,
+      "joint_mean": 0.7142895460128784,
+      "feasible": false,
+      "utility": 1.0878980159759521
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9116072337340669,
+      "source_mae": 16.942541122436523,
+      "image_cosine": 0.7446966171264648,
+      "joint_mean": 0.7200273275375366,
+      "feasible": false,
+      "utility": 1.1047102808952332
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.908744942480083,
+      "source_mae": 17.4429931640625,
+      "image_cosine": 0.7390357255935669,
+      "joint_mean": 0.717399001121521,
+      "feasible": false,
+      "utility": 1.0977352261543274
+    },
+    {
+      "params": {
+        "alpha": 0.75,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9050816305015015,
+      "source_mae": 17.981666564941406,
+      "image_cosine": 0.7302813529968262,
+      "joint_mean": 0.7140650749206543,
+      "feasible": false,
+      "utility": 1.0873138904571533
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9341396443372906,
+      "source_mae": 8.514288902282715,
+      "image_cosine": 0.7446386814117432,
+      "joint_mean": 0.7204212546348572,
+      "feasible": true,
+      "utility": 1.1048493087291718
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9281533182502917,
+      "source_mae": 9.962736129760742,
+      "image_cosine": 0.7367385029792786,
+      "joint_mean": 0.7161643505096436,
+      "feasible": true,
+      "utility": 1.0948206782341003
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9213617504910199,
+      "source_mae": 11.31293773651123,
+      "image_cosine": 0.7278103232383728,
+      "joint_mean": 0.7123734354972839,
+      "feasible": true,
+      "utility": 1.0839970409870148
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9248952987942863,
+      "source_mae": 12.628154754638672,
+      "image_cosine": 0.7450337409973145,
+      "joint_mean": 0.7204868197441101,
+      "feasible": false,
+      "utility": 1.1052771508693695
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9201649200779806,
+      "source_mae": 13.296305656433105,
+      "image_cosine": 0.7373342514038086,
+      "joint_mean": 0.7170480489730835,
+      "feasible": false,
+      "utility": 1.0958582758903503
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9150637701280313,
+      "source_mae": 14.200247764587402,
+      "image_cosine": 0.7295724153518677,
+      "joint_mean": 0.7136666774749756,
+      "feasible": false,
+      "utility": 1.0864057540893555
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9083780990720044,
+      "source_mae": 17.763994216918945,
+      "image_cosine": 0.7434454560279846,
+      "joint_mean": 0.7195549011230469,
+      "feasible": false,
+      "utility": 1.103222906589508
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9050494480174922,
+      "source_mae": 18.357460021972656,
+      "image_cosine": 0.735934853553772,
+      "joint_mean": 0.7163205146789551,
+      "feasible": false,
+      "utility": 1.0940951108932495
+    },
+    {
+      "params": {
+        "alpha": 0.8125,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9014186484252682,
+      "source_mae": 18.95745277404785,
+      "image_cosine": 0.7282806634902954,
+      "joint_mean": 0.7134990692138672,
+      "feasible": false,
+      "utility": 1.085030198097229
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9330308322764488,
+      "source_mae": 8.798917770385742,
+      "image_cosine": 0.7425805330276489,
+      "joint_mean": 0.719396710395813,
+      "feasible": true,
+      "utility": 1.1022788882255554
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9263769148204206,
+      "source_mae": 10.302119255065918,
+      "image_cosine": 0.7339901924133301,
+      "joint_mean": 0.715201735496521,
+      "feasible": true,
+      "utility": 1.0915910601615906
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9185459606690083,
+      "source_mae": 11.85429573059082,
+      "image_cosine": 0.7256506681442261,
+      "joint_mean": 0.7117251753807068,
+      "feasible": true,
+      "utility": 1.0815132558345795
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9233135058271267,
+      "source_mae": 13.078585624694824,
+      "image_cosine": 0.7428110837936401,
+      "joint_mean": 0.7193284034729004,
+      "feasible": false,
+      "utility": 1.1024752855300903
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9179968003589535,
+      "source_mae": 13.796993255615234,
+      "image_cosine": 0.7354443073272705,
+      "joint_mean": 0.7162044048309326,
+      "feasible": false,
+      "utility": 1.0935465097427368
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9123715614700095,
+      "source_mae": 14.83280086517334,
+      "image_cosine": 0.7249953746795654,
+      "joint_mean": 0.7119039297103882,
+      "feasible": false,
+      "utility": 1.0809473395347595
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9052567771755415,
+      "source_mae": 18.606159210205078,
+      "image_cosine": 0.741600751876831,
+      "joint_mean": 0.7186838984489441,
+      "feasible": false,
+      "utility": 1.100942701101303
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9015870336183684,
+      "source_mae": 19.233402252197266,
+      "image_cosine": 0.7329338788986206,
+      "joint_mean": 0.7152506709098816,
+      "feasible": false,
+      "utility": 1.0905592143535614
+    },
+    {
+      "params": {
+        "alpha": 0.875,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.8972026683350208,
+      "source_mae": 19.928224563598633,
+      "image_cosine": 0.7258358001708984,
+      "joint_mean": 0.7129918336868286,
+      "feasible": false,
+      "utility": 1.0823317170143127
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9319246164394639,
+      "source_mae": 9.005114555358887,
+      "image_cosine": 0.741378664970398,
+      "joint_mean": 0.7186948657035828,
+      "feasible": true,
+      "utility": 1.1007260978221893
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9245772091585311,
+      "source_mae": 10.643027305603027,
+      "image_cosine": 0.7319381237030029,
+      "joint_mean": 0.7142869830131531,
+      "feasible": true,
+      "utility": 1.0890816152095795
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9164905485942809,
+      "source_mae": 12.24042797088623,
+      "image_cosine": 0.7232404947280884,
+      "joint_mean": 0.7108141779899597,
+      "feasible": false,
+      "utility": 1.0786475837230682
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9214847074724252,
+      "source_mae": 13.568197250366211,
+      "image_cosine": 0.7418279647827148,
+      "joint_mean": 0.7188052535057068,
+      "feasible": false,
+      "utility": 1.1012305915355682
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.915966417842663,
+      "source_mae": 14.321063041687012,
+      "image_cosine": 0.7326145172119141,
+      "joint_mean": 0.7148175239562988,
+      "feasible": false,
+      "utility": 1.0900232791900635
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9096525671087371,
+      "source_mae": 15.423506736755371,
+      "image_cosine": 0.7225640416145325,
+      "joint_mean": 0.7111153602600098,
+      "feasible": false,
+      "utility": 1.0781217217445374
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.901859190028762,
+      "source_mae": 19.469242095947266,
+      "image_cosine": 0.7391111850738525,
+      "joint_mean": 0.7175949811935425,
+      "feasible": false,
+      "utility": 1.0979086756706238
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.8978961386031048,
+      "source_mae": 20.142139434814453,
+      "image_cosine": 0.7302244901657104,
+      "joint_mean": 0.7142703533172607,
+      "feasible": false,
+      "utility": 1.0873596668243408
+    },
+    {
+      "params": {
+        "alpha": 0.9375,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.893379631059384,
+      "source_mae": 20.870357513427734,
+      "image_cosine": 0.7237915396690369,
+      "joint_mean": 0.7125057578086853,
+      "feasible": false,
+      "utility": 1.0800444185733795
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9306994144956056,
+      "source_mae": 9.26941204071045,
+      "image_cosine": 0.7406062483787537,
+      "joint_mean": 0.7177536487579346,
+      "feasible": true,
+      "utility": 1.099483072757721
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9224747582084328,
+      "source_mae": 11.0258150100708,
+      "image_cosine": 0.7301010489463806,
+      "joint_mean": 0.7133101224899292,
+      "feasible": true,
+      "utility": 1.0867561101913452
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9134414794400935,
+      "source_mae": 12.680418968200684,
+      "image_cosine": 0.7212308049201965,
+      "joint_mean": 0.7102770209312439,
+      "feasible": false,
+      "utility": 1.0763693153858185
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.9194362225642756,
+      "source_mae": 14.05290699005127,
+      "image_cosine": 0.7415428161621094,
+      "joint_mean": 0.7186380624771118,
+      "feasible": false,
+      "utility": 1.1008618474006653
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.9138258170106097,
+      "source_mae": 14.880081176757812,
+      "image_cosine": 0.7310458421707153,
+      "joint_mean": 0.7142094373703003,
+      "feasible": false,
+      "utility": 1.0881505608558655
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 0.5,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.9070656895654545,
+      "source_mae": 16.0920352935791,
+      "image_cosine": 0.720386266708374,
+      "joint_mean": 0.7101446986198425,
+      "feasible": false,
+      "utility": 1.0754586160182953
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 0.75
+      },
+      "source_ssim": 0.8985960367524339,
+      "source_mae": 20.325298309326172,
+      "image_cosine": 0.7373465299606323,
+      "joint_mean": 0.7169550657272339,
+      "feasible": false,
+      "utility": 1.0958240628242493
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.0
+      },
+      "source_ssim": 0.8943164475166131,
+      "source_mae": 21.063364028930664,
+      "image_cosine": 0.7298703193664551,
+      "joint_mean": 0.7145401239395142,
+      "feasible": false,
+      "utility": 1.0871403813362122
+    },
+    {
+      "params": {
+        "alpha": 1.0,
+        "palette_index": 0,
+        "lightness_mix": 1.0,
+        "chroma_scale": 1.25
+      },
+      "source_ssim": 0.8895252175808334,
+      "source_mae": 21.842906951904297,
+      "image_cosine": 0.7235888242721558,
+      "joint_mean": 0.7132586240768433,
+      "feasible": false,
+      "utility": 1.0802181363105774
+    }
+  ],
+  "secondary": {
+    "candidate": {
+      "image_cosine": 0.6719921827316284,
+      "joint_mean": 0.6878702044487
+    },
+    "baseline": {
+      "image_cosine": 0.6713429689407349,
+      "joint_mean": 0.6874632835388184
+    },
+    "image_gain": 0.0006492137908935547,
+    "joint_gain": 0.0004069209098815918
+  }
+}

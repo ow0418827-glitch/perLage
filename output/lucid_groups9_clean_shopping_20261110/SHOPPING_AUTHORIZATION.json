@@ -1,0 +1,6 @@
+{
+  "shopping_allowed": true,
+  "external_model_calls_allowed": true,
+  "scope": "groups9_clean_180_20261110",
+  "user_instruction": "用户明确选择九组各二十次原图库购物对照，正文不变仅恢复源图；正常启动后无需持续监听"
+}

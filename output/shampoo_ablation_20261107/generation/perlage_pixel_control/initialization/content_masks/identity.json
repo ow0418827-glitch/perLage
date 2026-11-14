@@ -1,0 +1,40 @@
+{
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "regions": [
+    [
+      0.07,
+      0.48,
+      0.26,
+      0.76
+    ],
+    [
+      0.27,
+      0.48,
+      0.55,
+      0.8
+    ],
+    [
+      0.56,
+      0.48,
+      0.77,
+      0.76
+    ],
+    [
+      0.77,
+      0.48,
+      0.92,
+      0.71
+    ]
+  ],
+  "config": {
+    "closing_pixels": 9,
+    "local_ink_contrast": 3.0,
+    "dark_luminance": 180.0,
+    "colored_chroma": 12.0,
+    "ink_margin_pixels": 1,
+    "feather_pixels": 2.0
+  },
+  "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+  "selection_uses_source_only": true,
+  "content_semantics_certified": false
+}

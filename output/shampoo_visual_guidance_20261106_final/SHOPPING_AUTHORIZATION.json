@@ -1,0 +1,11 @@
+{
+  "shopping_allowed": true,
+  "condition": "none",
+  "bank": "modified",
+  "recall_counts": [
+    1,
+    3
+  ],
+  "episodes": 40,
+  "source": "user_requested_reuse_of_shampoo_test_images"
+}

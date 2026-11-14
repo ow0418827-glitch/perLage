@@ -1,0 +1,6 @@
+{
+  "status": "generated",
+  "method": "PerLAGE",
+  "shared_pool_scope": "shared",
+  "stage": "generate"
+}

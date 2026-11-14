@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-11-06T13:01:49.611731+00:00",
+  "status": "running",
+  "stage": "original_07_shampoo_initialize",
+  "scope": "07_shampoo_only_temporary_relaxation",
+  "temporary_halo_multiplier": 2.0,
+  "default_halo_multiplier": 0.5,
+  "supervisor_pid": 31540,
+  "child_pid": 34776,
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\logs\\original_07_shampoo_initialize.log",
+  "progress": "初始化 pixel_diffusion，已完成 0 步"
+}

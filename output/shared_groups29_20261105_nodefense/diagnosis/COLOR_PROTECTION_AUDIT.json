@@ -1,0 +1,51 @@
+{
+  "scope": "offline_color_protection_diagnosis",
+  "new_training_or_shopping_runs": 0,
+  "group": "09_toothbrush",
+  "selected_target_rgb": [
+    169,
+    211,
+    221
+  ],
+  "print_rect_normalized": [
+    [
+      0.22,
+      0.4,
+      0.78,
+      0.95
+    ]
+  ],
+  "print_rect_pixels": [
+    110,
+    200,
+    390,
+    475
+  ],
+  "source_foreground_in_print_rect_pixels": 29888,
+  "protected_pixels_in_that_foreground": 29888,
+  "final_changed_pixels_in_that_foreground": 0,
+  "final_max_channel_difference_in_that_foreground": 0,
+  "color_fusion_anchor_identical_to_input": true,
+  "fusion_chosen": {
+    "fraction": 1.0,
+    "source_ssim": 0.9399265842355141,
+    "source_mae_levels": 2.8924903869628906,
+    "ordinary_guard_slack": 0.0025497078895568848,
+    "halo_error": 0.0,
+    "accepted": true
+  },
+  "final_file": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\frozen.png",
+  "easy_view_file": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\perlage.png",
+  "easy_view_identical_to_frozen": true,
+  "files_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\frozen.png": "f0ea5ca8ede2cf2d0ac547949f959f98f02b9f84ae76ad44f8c71602fd77dcd8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\initialization\\attack\\generative_anchor.png": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\color_harmonization\\generative_anchor.png": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\color_harmonization\\edit_mask.png": "34ee50cfc70d49c5dc2a27cdaba1e1689209aeca8bfe426a0541ec9199134b76",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\foreground_statistics\\statistics.json": "5731bbb9f413bba705528fd62932c261ddcb6568529d3bfecd9bcc1f9486ec76",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\definition.json": "8396808a945daa60118c087373897e0c5cad451d15ff4237722c4042838b1231"
+  },
+  "conclusion_zh": "已取到目标浅蓝统计色；当前印刷保护区域包含整个卡通手柄，颜色融合后该区全部被锁定，最终区内商品前景29888像素与原图逐像素一致。不能将完成取色与融合步骤等同于主体已整体改成目标色。"
+}

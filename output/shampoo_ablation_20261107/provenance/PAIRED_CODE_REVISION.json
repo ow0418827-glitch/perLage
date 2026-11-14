@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "pytest_passed": 100,
+  "pytest_failed": 0,
+  "pytest_command": "python -X utf8 -B -m pytest -q --basetemp tmp/pytest_100_paired",
+  "generation_math_and_models_unchanged": true,
+  "unchanged_original_snapshot_files": 56,
+  "changed_original_snapshot_files": [
+    "src/experiments/shampoo_ablation.py"
+  ],
+  "paired_protocol_frozen_before_formal_evaluation": true,
+  "scope": "Add shared-prefix paired-control coordinator and exhaustive similarity verification; no changes to image optimization math.",
+  "revision_files": {
+    "src/experiments/shampoo_ablation.py": "93e4a961cd3c4196005e6be4534b8106becda916f29945231054450e5dd6e72a",
+    "src/experiments/shampoo_ablation_evaluation.py": "97e512397a63cf4e746113577349c7345528f57ed150a2be250eb117bc6945de",
+    "src/tests/test_refactored_architecture.py": "d4bfded4c457edca28d1c4bd010924a260436216e181f67c29671988b98fb2c4",
+    "docs/SHAMPOO_ABLATION.md": "c850a2f7000a58ab1d0fc2df468d3f76ce770421d1af4c326ce435df382555b6"
+  }
+}

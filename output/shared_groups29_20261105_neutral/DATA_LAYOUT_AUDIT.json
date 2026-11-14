@@ -1,0 +1,82 @@
+{
+  "original": [
+    {
+      "name": "indication_prompt_template.json",
+      "kind": "file",
+      "bytes": 963
+    },
+    {
+      "name": "indication_prompt_template_neutral.json",
+      "kind": "file",
+      "bytes": 206
+    },
+    {
+      "name": "merged_instructions.json",
+      "kind": "file",
+      "bytes": 0
+    },
+    {
+      "name": "reference_overrides_identity_126.json",
+      "kind": "file",
+      "bytes": 1198
+    },
+    {
+      "name": "smoke_instructions.json",
+      "kind": "file",
+      "bytes": 472
+    },
+    {
+      "name": "victim_target_pair",
+      "kind": "directory",
+      "files": 1,
+      "bytes": 2079,
+      "samples": [
+        "victim_target.json"
+      ]
+    },
+    {
+      "name": "webshop_instructions.json",
+      "kind": "file",
+      "bytes": 1956280
+    }
+  ],
+  "current": [
+    {
+      "name": "indication_prompt_template_neutral.json",
+      "kind": "file",
+      "bytes": 206
+    },
+    {
+      "name": "private",
+      "kind": "directory",
+      "files": 107,
+      "bytes": 63805443,
+      "samples": [
+        "shared_memory.json",
+        "shared_memory_perlage.json",
+        "query_images/02_chair.generation.json",
+        "query_images/02_chair.json",
+        "query_images/02_chair.png",
+        "query_images/09_toothbrush.generation.json",
+        "query_images/09_toothbrush.json",
+        "query_images/09_toothbrush.png"
+      ]
+    },
+    {
+      "name": "public",
+      "kind": "directory",
+      "files": 1130,
+      "bytes": 352596818,
+      "samples": [
+        "catalog.example.json",
+        "public_products_v2.sqlite",
+        "calibration/shape_v2/threshold.json",
+        "calibration/shape_v2_dev_20261105/development.json",
+        "calibration/shape_v2_dev_20261105/pair_review_1.jpg",
+        "calibration/shape_v2_dev_20261105/pair_review_2.jpg",
+        "calibration/shape_v2_dev_20261105/pair_review_3.jpg",
+        "calibration/shape_v2_dev_20261105/pair_review_4.jpg"
+      ]
+    }
+  ]
+}

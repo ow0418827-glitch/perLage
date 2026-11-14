@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-11-07T04:00:54.659543+00:00",
+  "scope": "existing_complete_images_same_metric_public_target_comparison",
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "images": {
+    "source": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "old_actual_tested_complete": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_k13_20261106\\inputs\\07_shampoo\\modified.png",
+      "sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529"
+    },
+    "old_no_shadow_complete": {
+      "path": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\adversarial.png",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80"
+    },
+    "new_temporary_relaxed_complete": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\frozen.png",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb"
+    }
+  },
+  "old_actual_method": "nf_lage",
+  "old_no_shadow_method": "nf_lage_no_shadow",
+  "old_actual_quality": {
+    "step": 10,
+    "source_ssim": 0.9396277251235465,
+    "source_mae_levels": 7.2047200202941895,
+    "halo_error": 7.821167535872532,
+    "parent_halo_error": 24.31977830460114,
+    "quality_ok": true,
+    "natural_halo_gate": true
+  },
+  "old_no_shadow_quality": {
+    "step": 30,
+    "source_ssim": 0.938644193901135,
+    "source_mae_levels": 7.025364398956299,
+    "halo_error": 8.495472886074653,
+    "parent_halo_error": 23.781293754605663,
+    "quality_ok": true,
+    "natural_halo_gate": true
+  },
+  "new_quality": {
+    "step": 50,
+    "source_ssim": 0.9210717327664737,
+    "source_mae_levels": 7.732970714569092,
+    "halo_error": 31.789411660100015,
+    "parent_halo_error": 16.457029367256773,
+    "quality_ok": true,
+    "natural_halo_gate": true
+  },
+  "existing_old_report": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\REPORT.md",
+  "new_generation_runs": 0,
+  "original_project_modified": false,
+  "formal_queries_used": false
+}

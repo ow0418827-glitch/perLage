@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "method": "PerLAGE",
+  "run_dir": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104\\groups\\09_toothbrush",
+  "selection": {
+    "shape_min": 0.65,
+    "semantic_min": 0.55,
+    "semantic_max": 0.9,
+    "semantic_center": 0.72,
+    "semantic_sigma": 0.12,
+    "duplicate_title_similarity": 0.95,
+    "mismatch_gamma": 2.0,
+    "cost_temperature": 0.25,
+    "aspect_temperature": 1.0,
+    "weights": [
+      0.35,
+      0.3,
+      0.25,
+      0.1
+    ]
+  },
+  "selection_models": {
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "generation": {
+    "lucid": {
+      "steps": 1000,
+      "epsilon_levels": 16
+    },
+    "PerLAGE": {}
+  },
+  "evaluation": {
+    "shared_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\shared_memory.json",
+    "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\query_images\\09_toothbrush.json"
+  },
+  "public_pair": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\pair.json"
+}

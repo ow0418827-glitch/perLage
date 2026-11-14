@@ -1,0 +1,46 @@
+{
+  "group": "06_jeans",
+  "category": "apparel",
+  "target": {
+    "asin": "B09HH96NJY",
+    "brand": "Bell Bottom",
+    "category": "jeans",
+    "attributes": [
+      "high rise",
+      "stretch bell bottom",
+      "wide leg",
+      "flare jeans"
+    ],
+    "canonical_sentence": "I want to buy jeans with high rise and stretch bell bottom flare.",
+    "training_queries": [
+      "I want to buy jeans with high rise and stretch bell bottom flare.",
+      "I would like to purchase jeans featuring wide leg fit and high waist denim.",
+      "Looking to buy jeans with flare bottom and comfortable stretch."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B07FRKQNFV",
+    "brand": "Cinch",
+    "category": "jeans",
+    "attributes": [
+      "tapered slim fit",
+      "bronze label",
+      "denim jeans",
+      "button closure"
+    ],
+    "canonical_sentence": "I want to buy jeans with tapered slim fit and bronze label denim.",
+    "training_queries": [
+      "I want to buy jeans with tapered slim fit and bronze label denim.",
+      "I would like to purchase jeans featuring classic denim and button closure.",
+      "Looking to buy jeans with tapered slim fit and durable denim."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy jeans with high rise and stretch bell bottom flare.",
+  "alignment_training_queries": [
+    "I want to buy jeans with high rise and stretch bell bottom flare.",
+    "I would like to purchase jeans featuring wide leg fit and high waist denim.",
+    "Looking to buy jeans with flare bottom and comfortable stretch."
+  ]
+}

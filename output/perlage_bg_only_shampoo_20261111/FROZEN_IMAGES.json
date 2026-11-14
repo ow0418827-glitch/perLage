@@ -1,0 +1,23 @@
+{
+  "status": "frozen",
+  "images": {
+    "fg_lock_bg24": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\adversarial.png",
+        "sha256": "423b95dc232c6282817009032c46f06a6f913d692a36ba6ec19621002a78c5b0",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\ready.json",
+        "ready_sha256": "2f8b3bfa0d7eaaffb7714945aaa758a40edbd95495ce0e4e1d5b235104b36cba"
+      }
+    },
+    "fg_lock_bg36": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg36\\07_shampoo\\adversarial.png",
+        "sha256": "eb6e4276924e20e0d411c876724fff434d2ae936e63fe5d780e5f97fb322f7f4",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg36\\07_shampoo\\ready.json",
+        "ready_sha256": "0b7a9225cc83c4f0b00294f178c06bfbc8c7a016d48c97e09c951b21c8f06503"
+      }
+    }
+  },
+  "plan_sha256": "9a6c2db305be0fd7fe8aad6540b14fe7b76cfa8d0e070e10857b7bf89f7f950c",
+  "formal_rankings_used": false
+}

@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": true,
+  "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "training_queries": [
+      "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+    ]
+  },
+  "source_boxes": [
+    [
+      20,
+      59,
+      478,
+      428
+    ]
+  ],
+  "target_boxes": [
+    [
+      2,
+      5,
+      158,
+      494
+    ]
+  ],
+  "print_regions": [
+    [
+      0.072,
+      0.572,
+      0.19,
+      0.638
+    ],
+    [
+      0.266,
+      0.58,
+      0.404,
+      0.66
+    ],
+    [
+      0.07,
+      0.624,
+      0.156,
+      0.66
+    ],
+    [
+      0.782,
+      0.614,
+      0.838,
+      0.65
+    ],
+    [
+      0.068,
+      0.636,
+      0.21,
+      0.68
+    ],
+    [
+      0.272,
+      0.644,
+      0.364,
+      0.68
+    ],
+    [
+      0.58,
+      0.638,
+      0.65,
+      0.678
+    ],
+    [
+      0.08,
+      0.662,
+      0.218,
+      0.692
+    ],
+    [
+      0.266,
+      0.66,
+      0.428,
+      0.704
+    ],
+    [
+      0.276,
+      0.684,
+      0.468,
+      0.72
+    ],
+    [
+      0.146,
+      0.712,
+      0.246,
+      0.752
+    ],
+    [
+      0.286,
+      0.708,
+      0.43,
+      0.74
+    ],
+    [
+      0.302,
+      0.72,
+      0.468,
+      0.754
+    ],
+    [
+      0.586,
+      0.712,
+      0.69,
+      0.752
+    ],
+    [
+      0.356,
+      0.746,
+      0.472,
+      0.788
+    ]
+  ]
+}

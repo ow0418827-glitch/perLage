@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "initialization_config_matches_frozen_control": true,
+  "pixel_update_steps": 0,
+  "pixel_residual_max_levels": 0.0,
+  "completed_latent_phases": {
+    "latent_clean": 40,
+    "latent_diffusion": 40
+  },
+  "common_latent_prefix_pixels_exactly_equal": false,
+  "common_prefix_file_sha256_equal": false,
+  "new_common_prefix_sha256": "4c0e7458fc83daa6b1e49daabb1d079ddcb6c8cb334766ae401471f675f2f4f5",
+  "original_common_prefix_sha256": "d0325b4b298c256bd9f42718db60bec661ba5cbbe2fa8a85770c09c25f3e9d09"
+}

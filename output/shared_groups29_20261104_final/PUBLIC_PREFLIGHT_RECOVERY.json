@@ -1,0 +1,38 @@
+{
+  "status": "verified",
+  "public_only": true,
+  "old_run": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104",
+  "old_colour_sha256": "34ffa7b3b91900abb6f0f3e8acfa51a564c1dc5275ee83cd254caf1bfd7e2eb2",
+  "new_colour_sha256": "1ba7fada3e2e00003ce37162b487d191d498c0e2e4aa4b5f71217ef00021838e",
+  "proof": {
+    "02_chair": {
+      "old_halo_pixels": 0,
+      "new_halo_pixels": 0,
+      "old_parent_halo": 0.0,
+      "new_parent_halo": 0.0,
+      "numeric_context_identical": true,
+      "print_regions": [],
+      "source_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa"
+    },
+    "09_toothbrush": {
+      "old_halo_pixels": 11,
+      "new_halo_pixels": 0,
+      "old_parent_halo": 28.59646472235851,
+      "new_parent_halo": 0.0,
+      "numeric_context_identical": false,
+      "print_regions": [
+        [
+          0.22,
+          0.4,
+          0.78,
+          0.95
+        ]
+      ],
+      "source_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc"
+    }
+  },
+  "initialization_and_latent_numeric_defaults_unchanged": true,
+  "quality_thresholds_unchanged": true,
+  "private_rankings_used": false,
+  "toothbrush_requires_full_generation": true
+}

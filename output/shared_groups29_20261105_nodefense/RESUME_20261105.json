@@ -1,0 +1,8 @@
+{
+  "status": "resume_authorized_by_user_now",
+  "requested_at": "2026-11-05T01:27:35.890276+00:00",
+  "previous_pause": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_nodefense\\pause_archive\\PAUSED_BY_USER_20261105T012857.json",
+  "scheduled_automation": "automation-5",
+  "scheduled_automation_status": "PAUSED_to_prevent_duplicate_start",
+  "scope": "undefended_verification_and_final_shopping_only"
+}

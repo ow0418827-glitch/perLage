@@ -1,0 +1,23 @@
+{
+  "status": "completed",
+  "experiment": "perlage_ambient_coop_shampoo_reselect_20261112",
+  "group": "07_shampoo",
+  "source_id": "B09B63YYCW",
+  "target_id": "B00BDJODWI",
+  "prefix_ready_sha256": "892a21bf5337fc3491bc87bc383caf0e28a6b5175b3d8b8084f5d27a9254af6d",
+  "ambient_ready_sha256": "59c7bb85bc359e3a79842fced6d69c09d6d21c5437e9fe8ebdce054f699f03f3",
+  "retrieval_banks": 3,
+  "query_modes": [
+    "joint",
+    "text"
+  ],
+  "query_rankings": 120,
+  "candidate_scores": 22680,
+  "independent_verification": true,
+  "plan_sha256": "057391d92899d76be882984966823b626d5f80d5b53686fae23b21cf1d91036f",
+  "frozen_images_sha256": "d178acae0473edd0296aec8768140a0fb5b2537f4e744d77c89df04e3d64c27b",
+  "verification_sha256": "c08a49402206636779834cf4ad7c36ea64c677dff079842c76084afa793fdd10",
+  "summary_sha256": "fef012781517ff84d3a38881bda6a0c0c60ca11847941d1960935713072f833b",
+  "report_sha256": "16894fa7600ad4a768b7c4d8c7dcd5a4a1c9bf1ee5eaf9780ea4fcdd745508c2",
+  "shopping_enabled": false
+}

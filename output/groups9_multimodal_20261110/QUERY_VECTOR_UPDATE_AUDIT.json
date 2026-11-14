@@ -1,0 +1,648 @@
+{
+  "schema_version": 1,
+  "status": "both_vector_audits_fresh_encoder_verifications_and_strict_gate_passed",
+  "updated_at": "2026-11-10T14:57:40.501323+00:00",
+  "audit_scope": "independent_read_only_input_vector_and_result_audit_no_encoder_or_experiment_execution",
+  "experiment_plan_sha256": "8821a4e55e26c7edac4c1ddfe8058ae0136bcac9f24c4727fc0c2c890d2010b3",
+  "checks": {
+    "all_360_lucid_rankings_and_68040_candidate_rows_checked": true,
+    "all_query_modes_joint": true,
+    "all_query_image_hashes_match_new_nine_images": true,
+    "key_and_query_image_weight_both_half": true,
+    "original_twenty_texts_preserved_per_group": true,
+    "model_identity_matches_old_text_experiments": true,
+    "new_joint_query_cache_keys_reconstructed_with_new_image_text_model_decoder_and_query_scope": true,
+    "all_180_joint_query_vector_keys_present": true,
+    "old_text_only_query_keys_absent_from_new_caches": true,
+    "all_180_joint_query_vectors_differ_from_old_text_only_vectors": true,
+    "all_new_cache_vector_content_digests_verified": true,
+    "modified_full_candidate_scores_independently_recomputed_from_new_joint_cache": true,
+    "all_720_rankings_and_136080_candidate_rows_checked": true,
+    "all_360_joint_query_vector_instances_present_and_different_from_old_text": true,
+    "both_methods_share_same_180_joint_query_inputs": true
+  },
+  "lucid": {
+    "status": "passed_input_vector_cache_and_result_audit",
+    "ranking_count": 360,
+    "candidate_rows_checked": 68040,
+    "new_joint_query_vectors": 180,
+    "query_vectors_differ_from_old_text": 180,
+    "joint_to_old_text_vector_cosine_min": 0.7977262139320374,
+    "joint_to_old_text_vector_cosine_max": 0.8222979307174683,
+    "modified_cached_dot_products_recomputed": 34020,
+    "max_cached_score_difference": 0.0,
+    "model_sha256": "46a02e2e7855b17a2e034aa149a7ce1442f77c482b39392862bf8d18af215877",
+    "encoder_name": "ViT-B-32",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "clean_top3": 91,
+    "clean_top5": 100,
+    "modified_top3": 91,
+    "modified_top5": 124,
+    "query_denominator_per_bank": 180,
+    "old_text_clean_top3": 54,
+    "old_text_clean_top5": 77,
+    "old_text_modified_top3": 145,
+    "old_text_modified_top5": 154,
+    "independent_fresh_encoder_verification_status": "passed",
+    "groups": [
+      {
+        "group": "01_camera",
+        "query_image_sha256": "0f88116eed2a9493fcf0a8fc002c6309483b9c6b7e90da23e8c4b9458052c50d",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\01_camera\\query.png",
+        "joint_manifest_sha256": "2fc95ae3c9695f40256a5c1cc85c8afcec56107ac8c1a24c50742986152b573f",
+        "original_text_manifest_sha256": "200b897bee1af328fa26542df283fbd92270da8748f4520432fe3bdf721dddf8",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "6205c89ac7a0008f13e297274a69039a295e0bdd50a0b6bcb32d3beb2620a8ce",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "93cea9bc84612b5a8108e78edaa757b75069490961d998b1fa5d643401471c0f"
+        },
+        "old_text_clean": {
+          "top3": 13,
+          "top5": 19
+        },
+        "modified": {
+          "top3": 9,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "209ab528d6f8be0f4ec78c6b7db2b46863d2601ddbae2f745b863964162d692f"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "02_chair",
+        "query_image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\02_chair\\query.png",
+        "joint_manifest_sha256": "246c7efc04baf0b1fe58d4c1a507992085b66cb4631a66eb97e54e89d33ae4b1",
+        "original_text_manifest_sha256": "f323c3e60313628434b4021e967919645b47ceb3d97bf7eea629dae207077999",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "4733932d86458c3f4c242e1207f0e5b6b6a33ae0db80b3f7760d570b69e11f36",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "b0cc503f17b0a70e6d3457bb6bc43d787de6c9f55577500544eff22747e0b156"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 13
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "07e966868f2bc8577888ca081d651923d20c5ff7ac836225b7d132472c3cee95"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "03_cookies",
+        "query_image_sha256": "a36d3ba149035824b5a06edda53774239a7f970f9001df99d53ae15207e8353c",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\03_cookies\\query.png",
+        "joint_manifest_sha256": "f2656cccb0ff98e7ebeb5d90f2da832732ab1201d7bc3b0fd3178feca562104f",
+        "original_text_manifest_sha256": "24c631dac7b7a5b91c94a372bcc9cba6df91bfd1fdfe8110b0481b7f88727adf",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "5f28893995cd6b8a77f049f1d86a56e92ae774ef714136dd797c9eb2e18e3e38",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "4c1e83d1caf07fbd189e6fafa529302a5820c6ed4d946c33b553ddf0a74ab853"
+        },
+        "old_text_clean": {
+          "top3": 20,
+          "top5": 20
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "90217085dcfec39291707d11acb43b3b3f673ebd7ac2c835235a761a8468a3ea"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "04_curtain",
+        "query_image_sha256": "1a45b6e3b4dc5e9ba763d84288d25367daeb30370c5f87a04668a0758fb8ebb7",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\04_curtain\\query.png",
+        "joint_manifest_sha256": "e08f838b06efc16c18858b651a3e8a2f07fae1b9b9128a4d4c0074ca5755cf4d",
+        "original_text_manifest_sha256": "405c37efe0ececf765acc783be4ebd28c753b2212b4ad2226a328a0612a8b671",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "e4b89aa8ff54b20e02af8b9dbd3dedd418bb1d00f8ed1c1e4bb15423f5c9e855",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "0f134bebb4c522b8ee2600f999401f941f5868b5b8377b762997dc1e6d650212"
+        },
+        "old_text_clean": {
+          "top3": 1,
+          "top5": 4
+        },
+        "modified": {
+          "top3": 13,
+          "top5": 16,
+          "queries": 20,
+          "ranking_file_sha256": "f713713fde63d51aa5848e55ea769ed802c83c43b0bdfe12d461c53181819f33"
+        },
+        "old_text_modified": {
+          "top3": 13,
+          "top5": 19
+        }
+      },
+      {
+        "group": "05_hair_extension",
+        "query_image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\05_hair_extension\\query.png",
+        "joint_manifest_sha256": "5f3d04d9c38f2c002d0356e8f88580f9f134c43af11c77560212cb626612c14a",
+        "original_text_manifest_sha256": "2876d0ae3011a08ba8493dafb3e538194bfdf9394d24cc23e123a6fe084c2790",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "fbd09f176496a42cbd4199f5b5e9cb983677c079d183c8655e2023a7834a6b3c",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "0bd11f62d7a347b976f8aebf8b5b7cd15cd25962067459f3bf8c971d8299351a"
+        },
+        "old_text_clean": {
+          "top3": 20,
+          "top5": 20
+        },
+        "modified": {
+          "top3": 12,
+          "top5": 18,
+          "queries": 20,
+          "ranking_file_sha256": "4e68d24b8f6889b693089b4acee2b3fa1e5c1b39a4dd9c663c0d87e24745b5ce"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "06_jeans",
+        "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+        "joint_manifest_sha256": "9a810a48cc4c7d4cbf9a2b5be5248303e0542ec7a05c7846fd4fb8cc457dfc79",
+        "original_text_manifest_sha256": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "3e44db90f9630e81e8415e3e2471456f94811753ed483e87ef0ef611c875cac6",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "fe7d83675e7e184108a9613f9c48a1fe2f6b4d0ebc9a588fbd731248a415749c"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "8f6e515346592b476f6446d459dbd658b3a2fbad342c1ad6624a0d4352238fc8"
+        },
+        "old_text_modified": {
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      {
+        "group": "07_shampoo",
+        "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+        "joint_manifest_sha256": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+        "original_text_manifest_sha256": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "79705f9f919d21077247ad2cf5db2420fa6cfbd92774410ca927992fce3fb151",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 4,
+          "queries": 20,
+          "ranking_file_sha256": "9c0139fe08b82311e86785e6cfbf831b6f77d09b658f338dd0dacd7a2588f5cf"
+        },
+        "old_text_modified": {
+          "top3": 18,
+          "top5": 20
+        }
+      },
+      {
+        "group": "08_speaker",
+        "query_image_sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\08_speaker\\query.png",
+        "joint_manifest_sha256": "b3ab4d53a66814850ea7232f886b8dd6969c2ec182578db51e05752dd3192d28",
+        "original_text_manifest_sha256": "c3c1e31f0f17904793c57dc0350ce9d1f2e5a23572f4ff820a681cbd7eb2ab8c",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "0d32a6691acc47f9e10515b3d9d4714bd21b5b0b101f915168e68f6893b818f0",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "6ef19f13a3173e4f9091ada18717d28e186f257c0eb186950d00bb827b2c80d4"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 12,
+          "top5": 16,
+          "queries": 20,
+          "ranking_file_sha256": "383d03b16a7a0989edfa1ca12f67ee911b63b4be9147740a2b7068a59032da95"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "09_toothbrush",
+        "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+        "joint_manifest_sha256": "6c2304660b49c066e01ddd42fc7c128a14640fbe7827431a54bf6cd749ce0f52",
+        "original_text_manifest_sha256": "adf6578bb0084ea5c0b144210ebb6e5110659740f6f185f34e86e2cd69b40386",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "9362e6c38a228ba35558adc75ef2e316a61a8f34edaefc7e4dda642b131f0050",
+        "clean": {
+          "top3": 11,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "11af3e3923a41402c82bd275011354524b772d48ef0fdbd636d77240844b5294"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 1
+        },
+        "modified": {
+          "top3": 5,
+          "top5": 10,
+          "queries": 20,
+          "ranking_file_sha256": "f33c874c98a8a49a03f4edda8b0224ab059849106f9746d4840688f6a7d56463"
+        },
+        "old_text_modified": {
+          "top3": 14,
+          "top5": 15
+        }
+      }
+    ],
+    "independent_verification_certificate_sha256": "f0fc97c5d0b5362733e4ecba3a1ad4da537e06c822175039b99bf90c3c3eccb2",
+    "independent_verification_candidate_scores": 68040,
+    "independent_verification_max_score_error": 2.384185791015625e-07
+  },
+  "perlage_no_pixel": {
+    "status": "passed_input_vector_cache_and_result_audit",
+    "ranking_count": 360,
+    "candidate_rows_checked": 68040,
+    "new_joint_query_vectors": 180,
+    "query_vectors_differ_from_old_text": 180,
+    "joint_to_old_text_vector_cosine_min": 0.7977262139320374,
+    "joint_to_old_text_vector_cosine_max": 0.8222979307174683,
+    "modified_cached_dot_products_recomputed": 34020,
+    "max_cached_score_difference": 0.0,
+    "model_sha256": "46a02e2e7855b17a2e034aa149a7ce1442f77c482b39392862bf8d18af215877",
+    "encoder_name": "ViT-B-32",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "query_denominator_per_bank": 180,
+    "groups": [
+      {
+        "group": "01_camera",
+        "query_image_sha256": "0f88116eed2a9493fcf0a8fc002c6309483b9c6b7e90da23e8c4b9458052c50d",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\01_camera\\query.png",
+        "joint_manifest_sha256": "2fc95ae3c9695f40256a5c1cc85c8afcec56107ac8c1a24c50742986152b573f",
+        "original_text_manifest_sha256": "200b897bee1af328fa26542df283fbd92270da8748f4520432fe3bdf721dddf8",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "d89936e55929130b18858ab674665dfb7c452e14b8f4661871fd35269f4c5cb8",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "93cea9bc84612b5a8108e78edaa757b75069490961d998b1fa5d643401471c0f"
+        },
+        "old_text_clean": {
+          "top3": 13,
+          "top5": 19
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "2eaba7c20b23f06aaeae87a97b6354c7ff2b09e84b64b1ed05b9e09191d28868"
+        },
+        "old_text_modified": {
+          "top3": 13,
+          "top5": 20
+        }
+      },
+      {
+        "group": "02_chair",
+        "query_image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\02_chair\\query.png",
+        "joint_manifest_sha256": "246c7efc04baf0b1fe58d4c1a507992085b66cb4631a66eb97e54e89d33ae4b1",
+        "original_text_manifest_sha256": "f323c3e60313628434b4021e967919645b47ceb3d97bf7eea629dae207077999",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "5cd8bb3c86d0880cf2ac2a95c03a29b855bbfbff3899033a7956a0c6e8ae6d57",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "b0cc503f17b0a70e6d3457bb6bc43d787de6c9f55577500544eff22747e0b156"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 13
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "17e88d184f2efc639e13377c3d005d674fed5759c3560eac44ba6f26b963d731"
+        },
+        "old_text_modified": {
+          "top3": 7,
+          "top5": 20
+        }
+      },
+      {
+        "group": "03_cookies",
+        "query_image_sha256": "a36d3ba149035824b5a06edda53774239a7f970f9001df99d53ae15207e8353c",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\03_cookies\\query.png",
+        "joint_manifest_sha256": "f2656cccb0ff98e7ebeb5d90f2da832732ab1201d7bc3b0fd3178feca562104f",
+        "original_text_manifest_sha256": "24c631dac7b7a5b91c94a372bcc9cba6df91bfd1fdfe8110b0481b7f88727adf",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "2ef73a544358b3e2b212f654b65edcd930179fbb9f5414f1a4583c7d16973430",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "4c1e83d1caf07fbd189e6fafa529302a5820c6ed4d946c33b553ddf0a74ab853"
+        },
+        "old_text_clean": {
+          "top3": 20,
+          "top5": 20
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "d8a429fca312ec39b57f41f86c999b0e30b6fbd7b34c1fa378cf75e64f9c84e3"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "04_curtain",
+        "query_image_sha256": "1a45b6e3b4dc5e9ba763d84288d25367daeb30370c5f87a04668a0758fb8ebb7",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\04_curtain\\query.png",
+        "joint_manifest_sha256": "e08f838b06efc16c18858b651a3e8a2f07fae1b9b9128a4d4c0074ca5755cf4d",
+        "original_text_manifest_sha256": "405c37efe0ececf765acc783be4ebd28c753b2212b4ad2226a328a0612a8b671",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "38f009dd5b1eace2a04eb017e5f999ea9639a8f20587fb35a3e1c87957255d63",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "0f134bebb4c522b8ee2600f999401f941f5868b5b8377b762997dc1e6d650212"
+        },
+        "old_text_clean": {
+          "top3": 1,
+          "top5": 4
+        },
+        "modified": {
+          "top3": 1,
+          "top5": 1,
+          "queries": 20,
+          "ranking_file_sha256": "d6a47ad1da88a7a84790b52e4e476499aa5b48ee928c553f0d2359472ae737d8"
+        },
+        "old_text_modified": {
+          "top3": 1,
+          "top5": 6
+        }
+      },
+      {
+        "group": "05_hair_extension",
+        "query_image_sha256": "93f8894807fae7ce02e9c1a8ce9de9a2a0f9b3e1a4a21ed0af070206790c558a",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\05_hair_extension\\query.png",
+        "joint_manifest_sha256": "5f3d04d9c38f2c002d0356e8f88580f9f134c43af11c77560212cb626612c14a",
+        "original_text_manifest_sha256": "2876d0ae3011a08ba8493dafb3e538194bfdf9394d24cc23e123a6fe084c2790",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "57fb06ce43a07357ee438f46410d5163d94085158e4c33119d8c762844549618",
+        "clean": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "0bd11f62d7a347b976f8aebf8b5b7cd15cd25962067459f3bf8c971d8299351a"
+        },
+        "old_text_clean": {
+          "top3": 20,
+          "top5": 20
+        },
+        "modified": {
+          "top3": 20,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "1cf45ac7d4ff3140ed926112e7c43c11340c85f879ebd64304601ff549e66233"
+        },
+        "old_text_modified": {
+          "top3": 20,
+          "top5": 20
+        }
+      },
+      {
+        "group": "06_jeans",
+        "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+        "joint_manifest_sha256": "9a810a48cc4c7d4cbf9a2b5be5248303e0542ec7a05c7846fd4fb8cc457dfc79",
+        "original_text_manifest_sha256": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "41d644db0d96846e949633aa4e3cd9dfac5f7991faff8637d853452f9ada432b",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "fe7d83675e7e184108a9613f9c48a1fe2f6b4d0ebc9a588fbd731248a415749c"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "899e07cc9313f87a3feba413e6cc058dd60dbf9954839677652185eb8ffdf862"
+        },
+        "old_text_modified": {
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      {
+        "group": "07_shampoo",
+        "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+        "joint_manifest_sha256": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+        "original_text_manifest_sha256": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "829f4acbd7d5dd4fe5956a88935e71c9ac2da79a7fd87bfb649a4f57282d6b93",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "b52bd151681fa29fc1156bc1901b9307c94ddbd17c205b7d99f5a4d074fc1c07"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "70425bc2a6cec3e87526b73ae7a1ad9c0b34cc7a46c2b3a14555a6bf1b57f17a"
+        },
+        "old_text_modified": {
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      {
+        "group": "08_speaker",
+        "query_image_sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\08_speaker\\query.png",
+        "joint_manifest_sha256": "b3ab4d53a66814850ea7232f886b8dd6969c2ec182578db51e05752dd3192d28",
+        "original_text_manifest_sha256": "c3c1e31f0f17904793c57dc0350ce9d1f2e5a23572f4ff820a681cbd7eb2ab8c",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "4a8f097c1a24cb13f09c4153dfd80e16f2d78bf1a7679a13173a17f8320bbb86",
+        "clean": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "6ef19f13a3173e4f9091ada18717d28e186f257c0eb186950d00bb827b2c80d4"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 0
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 0,
+          "queries": 20,
+          "ranking_file_sha256": "58e19981157bbd10362c1090c9862a72fa4c08e7aa73e7a654cb6d81d2152cea"
+        },
+        "old_text_modified": {
+          "top3": 0,
+          "top5": 0
+        }
+      },
+      {
+        "group": "09_toothbrush",
+        "query_image_sha256": "c316d786b423b7d2786839b45a85fa459963c179aab9e288dc6b9b2094136f7d",
+        "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\09_toothbrush\\query.png",
+        "joint_manifest_sha256": "6c2304660b49c066e01ddd42fc7c128a14640fbe7827431a54bf6cd749ce0f52",
+        "original_text_manifest_sha256": "adf6578bb0084ea5c0b144210ebb6e5110659740f6f185f34e86e2cd69b40386",
+        "new_joint_query_vectors_checked": 20,
+        "cache_vector_count": 209,
+        "cache_sha256": "aab9cd8cd1b0d6f3b34367e9e1c55dbf80f6a6124697ccacbc928d97adfa284b",
+        "clean": {
+          "top3": 11,
+          "top5": 20,
+          "queries": 20,
+          "ranking_file_sha256": "11af3e3923a41402c82bd275011354524b772d48ef0fdbd636d77240844b5294"
+        },
+        "old_text_clean": {
+          "top3": 0,
+          "top5": 1
+        },
+        "modified": {
+          "top3": 0,
+          "top5": 13,
+          "queries": 20,
+          "ranking_file_sha256": "e77b62e2029edd7412108bdbd4d5feded97d4d9224dfea4c6b46a2fdc39bec4f"
+        },
+        "old_text_modified": {
+          "top3": 0,
+          "top5": 0
+        }
+      }
+    ],
+    "clean_top3": 91,
+    "old_text_clean_top3": 54,
+    "clean_top5": 100,
+    "old_text_clean_top5": 77,
+    "modified_top3": 81,
+    "old_text_modified_top3": 61,
+    "modified_top5": 94,
+    "old_text_modified_top5": 86,
+    "strict_shopping_gate": "new_modified_top3_count_must_be_greater_than_61_after_independent_verification",
+    "top3_count_condition_passed": true,
+    "shopping_gate_evaluated": true,
+    "shopping_allowed_by_this_audit": false,
+    "independent_fresh_encoder_verification_status": "passed",
+    "independent_verification_certificate_sha256": "da602929f36f127e875d7e00a93a52c73c6e64d97b593a543841882de792a338",
+    "independent_verification_candidate_scores": 68040,
+    "independent_verification_max_score_error": 2.384185791015625e-07,
+    "shopping_gate_condition_passed": true
+  },
+  "limitations": [
+    "本证据缓存点积核验与两方法各六万八千零四十分数的独立新编码器复算均通过，证书内容与绑定文件摘要已核对。",
+    "本审计只验证检索结果和用户指定的严格改进条件，不执行购物，也不修改购物授权或暂停文件。"
+  ],
+  "gate_evidence": {
+    "status": "passed_read_only_validation",
+    "gate_decision_sha256": "4f833ff928b7e73abb9a64be56a3efcc1e40a646d5794283ffa44356bf77bec4",
+    "retrieval_summary_sha256": "bcec160edc8ae9b60d0c3522d0fd4220bed3dbe3b3a6cc487bff0bfd0e7abb20",
+    "retrieval_only_completed_sha256": "c57d76366da1dc3b513f3bbdf30a5508a96fdd2c6ae0832162875ff56b5fbbd8",
+    "old_top3_numerator": 61,
+    "new_top3_numerator": 81,
+    "denominator": 180,
+    "old_top5_numerator": 86,
+    "new_top5_numerator": 94,
+    "strict_top3_improvement": true,
+    "independent_verifications_both_passed": true,
+    "shopping_authorization_modified_by_this_audit": false,
+    "pause_file_modified_by_this_audit": false,
+    "shopping_started_by_this_audit": false,
+    "authorization_action": "本审计只核对用户购物条件与已完成证据，不直接修改购物授权、暂停文件或运行状态。"
+  }
+}

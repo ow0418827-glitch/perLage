@@ -1,0 +1,138 @@
+{
+  "group": "02_chair",
+  "category": "seating",
+  "target": {
+    "asin": "B09CYFD5BX",
+    "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+    "brand": "LTHDD",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "LTHDD",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "barber chair",
+    "attributes": [
+      "a heavy-duty hydraulic pump",
+      "360-degree rotation",
+      "an adjustable seat height",
+      "a high-density foam cushion",
+      "barber chair",
+      "beauty salon",
+      "heavy duty"
+    ],
+    "canonical_sentence": "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "training_queries": [
+      "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+      "I would like to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+      "I am looking for a barber chair with 360-degree rotation and a high-density foam cushion."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a heavy-duty hydraulic pump",
+        "field": "Description",
+        "quote": "Heavy-duty hydraulic pump"
+      },
+      {
+        "feature": "360-degree rotation",
+        "field": "Description",
+        "quote": "360 degree rotating barber chair"
+      },
+      {
+        "feature": "an adjustable seat height",
+        "field": "BulletPoints",
+        "index": 2,
+        "quote": "seat height can be adjusted between 49-65cm"
+      },
+      {
+        "feature": "a high-density foam cushion",
+        "field": "Description",
+        "quote": "High density foam cushion"
+      },
+      {
+        "feature": "barber chair",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "barber chair"
+      },
+      {
+        "feature": "beauty salon",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "beauty salon"
+      },
+      {
+        "feature": "heavy duty",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "heavy duty"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a heavy-duty hydraulic pump",
+      "360-degree rotation",
+      "an adjustable seat height",
+      "a high-density foam cushion"
+    ]
+  },
+  "source": {
+    "asin": "B08GCSRXKS",
+    "title": "Buy-Rite Chelsea Styling Chair for Salons and Stylists, Tufted Seat-Back and Brass Nail Head Trim Detailing, Steel Frame with Hydraulic Pump, 3.5” Thick Removable Seat Cushion, NIN-9902 (Black)",
+    "brand": "Buy-Rite",
+    "brand_evidence": {
+      "verified": true,
+      "field": "Title",
+      "quote": "Buy-Rite",
+      "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+    },
+    "category": "styling chair",
+    "attributes": [
+      "a removable seat cushion",
+      "a hydraulic pump",
+      "a steel frame",
+      "a tufted seat back"
+    ],
+    "canonical_sentence": "I want to buy a styling chair with a removable seat cushion and a hydraulic pump.",
+    "training_queries": [
+      "I want to buy a styling chair with a removable seat cushion and a hydraulic pump.",
+      "I would like to purchase a styling chair featuring a removable seat cushion and a steel frame.",
+      "I am looking for a styling chair with a hydraulic pump and a tufted seat back."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a removable seat cushion",
+        "field": "Title",
+        "quote": "Removable Seat Cushion"
+      },
+      {
+        "feature": "a hydraulic pump",
+        "field": "Title",
+        "quote": "Hydraulic Pump"
+      },
+      {
+        "feature": "a steel frame",
+        "field": "Title",
+        "quote": "Steel Frame"
+      },
+      {
+        "feature": "a tufted seat back",
+        "field": "Title",
+        "quote": "Tufted Seat-Back"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a removable seat cushion",
+      "a hydraulic pump",
+      "a steel frame",
+      "a tufted seat back"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+  "alignment_training_queries": [
+    "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+    "I would like to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+    "I am looking for a barber chair with 360-degree rotation and a high-density foam cushion."
+  ]
+}

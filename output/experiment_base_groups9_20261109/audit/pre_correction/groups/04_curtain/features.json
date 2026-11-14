@@ -1,0 +1,46 @@
+{
+  "group": "04_curtain",
+  "category": "curtains",
+  "target": {
+    "asin": "B086PW7TWX",
+    "brand": "Windows Treatment",
+    "category": "curtains",
+    "attributes": [
+      "blackout curtains",
+      "vintage wood board texture",
+      "machine washable",
+      "eco friendly"
+    ],
+    "canonical_sentence": "I want to buy curtains with blackout drapes and vintage wood board texture.",
+    "training_queries": [
+      "I want to buy curtains with blackout drapes and vintage wood board texture.",
+      "I would like to purchase curtains featuring machine washable fabric and room darkening.",
+      "Looking to buy curtains with vintage wood board texture and blackout protection."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B09PHLS2QD",
+    "brand": "Windows Treatment",
+    "category": "curtains",
+    "attributes": [
+      "rustic wood board texture",
+      "curtain valance",
+      "rod pocket",
+      "semi sheer"
+    ],
+    "canonical_sentence": "I want to buy curtains with rustic wood board texture and curtain valance.",
+    "training_queries": [
+      "I want to buy curtains with rustic wood board texture and curtain valance.",
+      "I would like to purchase curtains featuring rod pocket and semi sheer fabric.",
+      "Looking to buy curtains with rustic wood board texture and window treatment."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy curtains with blackout drapes and vintage wood board texture.",
+  "alignment_training_queries": [
+    "I want to buy curtains with blackout drapes and vintage wood board texture.",
+    "I would like to purchase curtains featuring machine washable fabric and room darkening.",
+    "Looking to buy curtains with vintage wood board texture and blackout protection."
+  ]
+}

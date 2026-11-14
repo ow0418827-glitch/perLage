@@ -1,0 +1,133 @@
+{
+  "identity": {
+    "source_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+    "regions": [
+      [
+        0.10967741935483871,
+        0.382,
+        0.17204301075268819,
+        0.432
+      ],
+      [
+        0.1032258064516129,
+        0.402,
+        0.18494623655913978,
+        0.46
+      ],
+      [
+        0.09462365591397849,
+        0.526,
+        0.210752688172043,
+        0.596
+      ],
+      [
+        0.3333333333333333,
+        0.53,
+        0.6774193548387096,
+        0.614
+      ],
+      [
+        0.11397849462365592,
+        0.554,
+        0.1956989247311828,
+        0.614
+      ],
+      [
+        0.28817204301075267,
+        0.592,
+        0.7225806451612903,
+        0.67
+      ],
+      [
+        0.12688172043010754,
+        0.684,
+        0.1978494623655914,
+        0.738
+      ],
+      [
+        0.12903225806451613,
+        0.706,
+        0.2,
+        0.756
+      ],
+      [
+        0.35698924731182796,
+        0.714,
+        0.6559139784946236,
+        0.774
+      ],
+      [
+        0.2924731182795699,
+        0.746,
+        0.7096774193548387,
+        0.818
+      ],
+      [
+        0.13548387096774195,
+        0.826,
+        0.2064516129032258,
+        0.878
+      ],
+      [
+        0.13548387096774195,
+        0.844,
+        0.2129032258064516,
+        0.898
+      ],
+      [
+        0.3247311827956989,
+        0.858,
+        0.6774193548387096,
+        0.918
+      ],
+      [
+        0.3032258064516129,
+        0.956,
+        0.46236559139784944,
+        1.0
+      ],
+      [
+        0.4645161290322581,
+        0.954,
+        0.7075268817204301,
+        1.0
+      ]
+    ],
+    "config": {
+      "closing_pixels": 9,
+      "local_ink_contrast": 3.0,
+      "dark_luminance": 180.0,
+      "colored_chroma": 12.0,
+      "ink_margin_pixels": 1,
+      "feather_pixels": 2.0
+    },
+    "implementation_sha256": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "a5a4a55798dd0ff002cb5b29299a43f2ae34357fa0c6d0c6962070ec6bd65a1e"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "2a8a3ab77c7a0c8dbf08849a79f30bfb0791953ffd38cc2cf5ac25e44cbf7eb9"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "7b44c8362b0f2e02c59a63173074c1ef4709d60b4fa53b514563ebf5328f5d21"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "6231f35d7a606fbc8fd204c5c9d3cf401a81a7dd08626146af17b960bbd91316"
+    }
+  },
+  "legacy_protected_pixels": 37290,
+  "protected_ink_pixels": 32391,
+  "protected_core_pixels": 37405,
+  "released_legacy_pixels": 1599,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Source contrast identifies candidate printed marks, not semantic recognition or proof that every character is covered."
+}

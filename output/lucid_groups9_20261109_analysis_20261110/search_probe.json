@@ -1,0 +1,328 @@
+{
+  "scope": "Read-only local catalog search; no model calls, no shopping sessions",
+  "catalog_diagnostics": {
+    "disk_backed": true,
+    "database_read_only": true,
+    "scope": "full_catalog",
+    "products": 1181430,
+    "decoded_products": 450,
+    "search_backend": "lucene",
+    "bundle_id": "59625aaf1ed3fd46a4afe288cd981267e7e8f24ac06190aa9d2a6cc0544dbd70",
+    "goals_sha256": "d7b0d8d306927419cc4bf912fc887aa0dad95731ceb8e040567e8361530ca3ab",
+    "database": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\nine_group_catalog_full\\catalog.sqlite",
+    "mmap_bytes": 0,
+    "sqlite_cache_kib": 16384
+  },
+  "index_documents": 1181370,
+  "query_protocol": "Same DiskCatalog.search as full_webshop; k=50; first page10; no exact-ASIN shortcut",
+  "results": [
+    {
+      "group": "01_camera",
+      "source_id": "B071ZFHTZN",
+      "source_title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B071ZFHTZN",
+            "B09KXQWM1F",
+            "B07ZFYMXPM",
+            "B07HG3154B",
+            "B06XD2PZJ8",
+            "B096DQ93QT",
+            "B07RTG6M92",
+            "B07DTBDV2K",
+            "B09NHNJP39",
+            "B09NHPKWLZ"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B071ZFHTZN",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "02_chair",
+      "source_id": "B08GCSRXKS",
+      "source_title": "Buy-Rite Chelsea Styling Chair for Salons and Stylists, Tufted Seat-Back and Brass Nail Head Trim Detailing, Steel Frame with Hydraulic Pump, 3.5” Thick Removable Seat Cushion, NIN-9902 (Black)",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Buy-Rite Chelsea Styling Chair for Salons and Stylists, Tufted Seat-Back and Brass Nail Head Trim Detailing, Steel Frame with Hydraulic Pump, 3.5” Thick Removable Seat Cushion, NIN-9902 (Black)",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B08GCSRXKS",
+            "B01CINCENC",
+            "B01CINCCO8",
+            "B08S79XPZR",
+            "B077Y1FFX9",
+            "B08S79R5Y1",
+            "B00NH2AE6I",
+            "B077Y531SF",
+            "B07NDJ7W3P",
+            "B01CIN96OM"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B08GCSRXKS",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "03_cookies",
+      "source_id": "B07BBLWTLM",
+      "source_title": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B07BBLWTLM",
+            "B00RLSWOKS",
+            "B015C3KUSQ",
+            "B073XZG1VV",
+            "B07L75Y8MD",
+            "B00CHU4HMS",
+            "B085NZFMC4",
+            "B00DLDH1N2",
+            "B089YBBFB7",
+            "B08M89QD6Y"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B07BBLWTLM",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "04_curtain",
+      "source_id": "B09PHLS2QD",
+      "source_title": "Window Treatment Semi-Sheer Curtain Valentine's Day Red Flower Love Rose,Privacy Drapes for Kitchen/Living Room/Bathroom,Vintage Brown Wood Grain Light Filtering Curtains 52x84in",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Window Treatment Semi-Sheer Curtain Valentine's Day Red Flower Love Rose,Privacy Drapes for Kitchen/Living Room/Bathroom,Vintage Brown Wood Grain Light Filtering Curtains 52x84in",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B09PHLS2QD",
+            "B09R4QTRGT",
+            "B09PHLTD8W",
+            "B09QSR9RCZ",
+            "B09Q6G764D",
+            "B09QSR4YTZ",
+            "B09QSRPM3F",
+            "B09P1G2Z3D",
+            "B09PG89PYJ",
+            "B09P1FL4G9"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B09PHLS2QD",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "05_hair_extension",
+      "source_id": "B07Z7MQSM1",
+      "source_title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B07Z7MQSM1",
+            "B099FK8HK3",
+            "B08SM9QQJJ",
+            "B093DR13SR",
+            "B07PH51RJ9",
+            "B08L4ZNNK6",
+            "B07G5B53KS",
+            "B093HFK1HR",
+            "B07M63GLBD",
+            "B093DR9NX5"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B07Z7MQSM1",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "06_jeans",
+      "source_id": "B07FRKQNFV",
+      "source_title": "Cinch Men's Bronze Label Tapered Slim Fit Jeans Dark Stone 29W x 32L",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Cinch Men's Bronze Label Tapered Slim Fit Jeans Dark Stone 29W x 32L",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B07FRKQNFV",
+            "B07FR8Z5TF",
+            "B07FR94893",
+            "B005DIDRRC",
+            "B005DIFE64",
+            "B07F8VM7RZ",
+            "B005DIDNQC",
+            "B005DIIGMS",
+            "B07GXNQMH7",
+            "B07H5M9WKZ"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B07FRKQNFV",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "07_shampoo",
+      "source_id": "B08XYBS678",
+      "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B08XYBS678",
+            "B09B11N1ZQ",
+            "B0846G3J4P",
+            "B08T4Q5G71",
+            "B0846GC23M",
+            "B08T4QKCQD",
+            "B09DFNXFV6",
+            "B08TLDT9MZ",
+            "B07KMNHN7C",
+            "B08PFHTXF5"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B08XYBS678",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "08_speaker",
+      "source_id": "B01590FHS0",
+      "source_title": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B01590FHS0",
+            "B0159262SC",
+            "B01592687W",
+            "B07T8ZSRWJ",
+            "B07T92878Z",
+            "B081B4TTNV",
+            "B081B56M52",
+            "B081B63PP6",
+            "B081B5FRL2",
+            "B081B5Y3ZV"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B01590FHS0",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    },
+    {
+      "group": "09_toothbrush",
+      "source_id": "B09PNNXYJ4",
+      "source_title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+      "searches": [
+        {
+          "kind": "full_title",
+          "query": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+          "results_count": 50,
+          "source_rank": 1,
+          "first_page_ids": [
+            "B09PNNXYJ4",
+            "B09PNNKHBF",
+            "B09PNMDQC4",
+            "B09PNMJFDS",
+            "B09PNPFMT4",
+            "B09M8TPNP5",
+            "B09M8TSMKT",
+            "B09M8V9JYH",
+            "B09MTVGJD6",
+            "B09P1DQZL9"
+          ]
+        },
+        {
+          "kind": "asin",
+          "query": "B09PNNXYJ4",
+          "results_count": 0,
+          "source_rank": null,
+          "first_page_ids": []
+        }
+      ]
+    }
+  ],
+  "actual_prompt_audit": {
+    "episodes": 180,
+    "all_memory_id_and_task_boundaries_present": true,
+    "all_three_memory_image_labels_present": true,
+    "generic_default_deodorant_example_present": 0,
+    "all_three_recalled_examples_have_no_actions": 100,
+    "all_three_examples_empty_groups": [
+      "03_cookies",
+      "04_curtain",
+      "05_hair_extension",
+      "08_speaker",
+      "09_toothbrush"
+    ],
+    "groups_with_actual_action_examples": [
+      "01_camera",
+      "02_chair",
+      "06_jeans",
+      "07_shampoo"
+    ]
+  }
+}

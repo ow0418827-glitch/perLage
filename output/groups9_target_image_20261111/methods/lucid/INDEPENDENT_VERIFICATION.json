@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "no_original_vector_cache_read": true,
+  "score_comparisons": 68040,
+  "rankings_recomputed": 360,
+  "max_score_error": 0.0,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\01_camera\\clean.json": "54b55ceffe52955e411143b5ae0a584a230ef10c6abe9b1a2f2f08bf1e769428",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\01_camera\\modified.json": "552394c93a26ca388619cbe0605c79e17fcfad6e6021ce2afe9bbe44e38abe31",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\02_chair\\clean.json": "4b0977e624a4cbaf9b9658b2504378b10604c12bc24eac95e56f41712e0be161",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\02_chair\\modified.json": "d9e552bc864ee66b9be8fc33cf1baeab784a380234ef16c29878fb4ef59b577c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\03_cookies\\clean.json": "377ab600c1217c00078695583d31530f993614da5f2aa30f960aa775b085ad3f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\03_cookies\\modified.json": "6e3dfc24ce0dcfba0617701c26aecc152d16dafd3a2c488831e1721ab7e42e80",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\04_curtain\\clean.json": "64435c238a277021e7567540b605453dfde99e19c2798b4ff0c528ae50277b02",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\04_curtain\\modified.json": "81097ad347fef22d1a5b7d81fcda1686072d8e49ad8ca50c60712fa9e5bae1a0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\05_hair_extension\\clean.json": "46fbec41b3aba38c2a6bf79ceb42a3eb4d3e96f4730fb0341af346dbf0fad011",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\05_hair_extension\\modified.json": "91bee9bc87a206831a7a570b7f2a83b4dfb149d1820a7cd0b9535a6b827ab2eb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\06_jeans\\clean.json": "4da9655c36d203e73d87b9078be453b8f8e02c7d1efa340b3701608369072492",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\06_jeans\\modified.json": "1298c193757a30cd456558564ebecd8fe411812df46b9c6cf95ce717e8d1215c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "64c6840f62d82ee1a9f9fa9c877678f22c40316f118d5ce2794e14be963affab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "1a4f0cb4bddcb8fb2607359b990d92c275f34805ca3f83437479a9665fc9e5b0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\08_speaker\\clean.json": "fbc928f780996e5ca7dfc09b6b5f8b839d4401835fa73617dd537f90659d3736",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\08_speaker\\modified.json": "034dd0125e2ad5b03f7072bcd096801c558275eb8f1f15a2a421bdfe452ebdd7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\09_toothbrush\\clean.json": "9c3a0aacb72b6b01c807e5f6e372917c57f14aca642fa7bcd5ea9ad80574e93c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\lucid\\retrieval\\09_toothbrush\\modified.json": "1974475762c286156ef3bbb470ec584855ba90c76ddcf6160a5a186e6feb4e54"
+  },
+  "plan_sha256": "ccaf4c2a8c6795055c7968d5b0940923af2a464f35a3d2509e31414227d4e569"
+}

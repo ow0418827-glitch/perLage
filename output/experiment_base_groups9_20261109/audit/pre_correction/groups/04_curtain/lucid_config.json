@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "method": "lucid",
+  "target_text": "I want to buy curtains with blackout drapes and vintage wood board texture.",
+  "text_weight": 1.0,
+  "steps": 1000,
+  "epsilon_levels": 16,
+  "source": "source.jpg",
+  "target": "target.jpg"
+}

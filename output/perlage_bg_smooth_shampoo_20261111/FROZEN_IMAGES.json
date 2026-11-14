@@ -1,0 +1,15 @@
+{
+  "status": "frozen",
+  "images": {
+    "bg_smooth": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\generation\\bg_smooth\\07_shampoo\\adversarial.png",
+        "sha256": "974b2ae72645d63311bd22e1dc771688a886a066ef663ec69b2b107000b6f740",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\generation\\bg_smooth\\07_shampoo\\ready.json",
+        "ready_sha256": "c5106279eb1baa0e25d7c364f516fc9f72912c883c15e3eadb2a8bfa6a6643c9"
+      }
+    }
+  },
+  "plan_sha256": "c8421cf0b0e6fd072508aa9279e0f683aad33a1a3770edca7a79857de3693ab5",
+  "formal_rankings_used": false
+}

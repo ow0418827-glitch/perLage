@@ -1,0 +1,44 @@
+{
+  "scheduled_check": "2026-11-11T03:00:00+08:00",
+  "finished_at": "2026-11-11T09:43:37.443672+08:00",
+  "status": "blocked_external_provider_quota",
+  "provider": "minimax",
+  "actual_model": "MiniMax-M3",
+  "provider_http_status": 429,
+  "provider_error_code": 2056,
+  "reason": "模型服务明确返回套餐用量上限；本地不能补充外部服务额度",
+  "valid_episodes": {
+    "lucid": 91,
+    "perlage_no_pixel": 0
+  },
+  "all_91_record_hashes_verified": true,
+  "failed_group": "05_hair_extension",
+  "failed_task": "feature_12",
+  "failed_at": "2026-11-10T17:45:39Z",
+  "live_experiment_processes_observed": 0,
+  "shopping_quality_gate_passed": true,
+  "new_requests_made_during_check": 0,
+  "configuration_changed": false,
+  "valid_results_resampled": false,
+  "recovery_condition": "同模型服务额度恢复后，从第五组第十二条未完成请求接续，保留既有91条有效结果，随后串行执行无像素方法",
+  "automation_id": "automation-6",
+  "automation_deleted_after_single_check": true,
+  "evidence": {
+    "RUN_STATUS.json": {
+      "sha256": "cd328c08e242dd10ee272b20f1875afa2e98e0aaeffe9150278c8b5a77377c1e",
+      "copy": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\checks\\20261111_0300\\RUN_STATUS.json"
+    },
+    "FAILURE.json": {
+      "sha256": "3602c7697a5c70f9339b285f5d80359e821d4a962177691dc0d5ec02507a47b6",
+      "copy": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\checks\\20261111_0300\\FAILURE.json"
+    },
+    "methods/lucid/SHOPPING_STATUS.json": {
+      "sha256": "ea08d8f525557910d7005ccda72d8e7f597e9c3099452300164ed2bbc0d729d2",
+      "copy": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\checks\\20261111_0300\\methods__lucid__SHOPPING_STATUS.json"
+    },
+    "methods/lucid/shopping/FAILURE.json": {
+      "sha256": "4309dcbf8ebcba98f23fdfa7f22aeeeab042971654813ab74b58685e3366fd08",
+      "copy": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\checks\\20261111_0300\\methods__lucid__shopping__FAILURE.json"
+    }
+  }
+}

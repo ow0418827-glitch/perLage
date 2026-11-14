@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "status": "selected",
+  "selection_scope": "highest_public_score_within_frozen_shortlists",
+  "public_plan_sha256": "9557a1b5fb5e8b5a91ebbb3adb2029a2a6344ab5e751d60c4eeba64a03adde39",
+  "public_extraction_sha256": "f12f05b9784ce4b92d1241997285e1fa7d4bd104aa16828db2c6a2d8ab7780e7",
+  "semantic_shortlist_sha256": "1f6e2fc20ac3690fee7c55efb15063c391b573c783fd6bf7816d5cb152dedd4a",
+  "download_manifest_sha256": "57e0b035f3744a6fbebd8936d757a51ab94af28cbb940a1af1e7f4145fd80524",
+  "annotation_manifest_sha256": "20fb669aa1ac2571e766be572091072893dcf7e34d9193a83cc8f43268f8ff7b",
+  "visual_reviews_sha256": "c8db547ca1da071035929deea39ae9359c7a354f83ba784ee997e53b2ed562d3",
+  "groups": [
+    {
+      "key": "02_chair",
+      "status": "selected",
+      "target": {
+        "id": "B09CYFD5BX",
+        "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d.jpg",
+        "source_url": "https://www.amazon.com/dp/B09CYFD5BX",
+        "boxes": [
+          [
+            3,
+            4,
+            399,
+            496
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09CYFD5BX\\foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "image_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+        "foreground_mask_sha256": "827d24f9247cd406fe487dc8996ec26ebec43000737628ca50f5a2781cfae542"
+      },
+      "selection_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\public_pair_selection\\groups29_20261104_final\\groups\\02_chair\\selection\\SELECTED_PAIR.json",
+      "selection_sha256": "89f09701347c97e1644bcab330501f0548125d7369c2d05d5f1e29913917a6cb",
+      "pipeline_config": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\pipeline_configs\\02_chair.json",
+      "pipeline_config_sha256": "fdb60566cc78b463f5988fbcf3e5200a473009e1273a9d1d98a343f5fb4ab73d",
+      "candidate_count": 23,
+      "eligible_count": 7,
+      "source": {
+        "id": "B09FY5Y9G2",
+        "title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa.jpg",
+        "source_url": "https://www.amazon.com/dp/B09FY5Y9G2",
+        "boxes": [
+          [
+            75,
+            15,
+            458,
+            485
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09FY5Y9G2\\foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+        "foreground_mask_sha256": "7942b29e8230203ec3575094083a1891390d3c7491fddfdf5d0b4c59d747d688"
+      },
+      "score": {
+        "source_id": "B09FY5Y9G2",
+        "target_id": "B09CYFD5BX",
+        "eligible": true,
+        "rejected_reasons": [],
+        "score": 0.9194068628732504,
+        "log_score": -0.08402653112487084,
+        "components": {
+          "shape": 0.7872564495693253,
+          "semantic": 0.9998992437907761,
+          "cross_modal": 1.0,
+          "edit_cost": 0.9972450671848082
+        },
+        "raw": {
+          "shape": 0.7970452115968923,
+          "cls": 0.8223437072346174,
+          "symmetric_patches": 0.7717467159591673,
+          "aspect_penalty": 0.9877186866125761,
+          "semantic_cosine": 0.7182964962513727,
+          "cross_modal_gap": 0.0,
+          "pilot_recolor_lpips": 0.0006896836566738784
+        }
+      }
+    },
+    {
+      "key": "09_toothbrush",
+      "status": "selected",
+      "target": {
+        "id": "B09J81RMLD",
+        "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14.jpg",
+        "source_url": "https://www.amazon.com/dp/B09J81RMLD",
+        "boxes": [
+          [
+            135,
+            51,
+            350,
+            446
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09J81RMLD\\foreground.png",
+        "text_regions": [],
+        "text_regions_reviewed": true,
+        "image_sha256": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+        "foreground_mask_sha256": "ace202b3e0475bd5322713259eb09953919dbc2917bd029a0c90d1e3adcf50ca"
+      },
+      "selection_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\public_pair_selection\\groups29_20261104_final\\groups\\09_toothbrush\\selection\\SELECTED_PAIR.json",
+      "selection_sha256": "83e45133c4e456662da3ed030b8ac7ac56109494f45861406350bee29fcc490c",
+      "pipeline_config": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\pipeline_configs\\09_toothbrush.json",
+      "pipeline_config_sha256": "c816f5856e71f63e3be9fd47246203bfb2276fa3f42e8f1176466a05f140be06",
+      "candidate_count": 26,
+      "eligible_count": 5,
+      "source": {
+        "id": "B09LVD5J4B",
+        "title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104\\images\\5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc.jpg",
+        "source_url": "https://www.amazon.com/dp/B09LVD5J4B",
+        "boxes": [
+          [
+            128,
+            59,
+            338,
+            441
+          ]
+        ],
+        "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\groups29_20261104_final\\annotations\\B09LVD5J4B\\foreground.png",
+        "text_regions": [
+          [
+            0.22,
+            0.4,
+            0.78,
+            0.95
+          ]
+        ],
+        "text_regions_reviewed": true,
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+        "foreground_mask_sha256": "848c53bf0a57ec0a1e7cea28ee90330295dce44563344d292be4328f831323ea"
+      },
+      "score": {
+        "source_id": "B09LVD5J4B",
+        "target_id": "B09J81RMLD",
+        "eligible": true,
+        "rejected_reasons": [],
+        "score": 0.831560779895573,
+        "log_score": -0.18445088633318754,
+        "components": {
+          "shape": 0.6502243336234823,
+          "semantic": 0.9998903116628128,
+          "cross_modal": 0.8797797042140079,
+          "edit_cost": 0.98271319304307
+        },
+        "raw": {
+          "shape": 0.6567322360052665,
+          "cls": 0.6711796752843807,
+          "symmetric_patches": 0.6422847967261522,
+          "aspect_penalty": 0.990090478242137,
+          "semantic_cosine": 0.71822258688603,
+          "cross_modal_gap": 0.06404186948482371,
+          "pilot_recolor_lpips": 0.004359492100775242
+        }
+      }
+    }
+  ],
+  "shared_memory_scope": "shared",
+  "shared_memory_read": false,
+  "formal_queries_read": false,
+  "shopping_allowed": false,
+  "generation_runs": 0,
+  "ownership_is_simulated": true,
+  "thresholds_changed_after_selection": false,
+  "private_ranking_used": false
+}

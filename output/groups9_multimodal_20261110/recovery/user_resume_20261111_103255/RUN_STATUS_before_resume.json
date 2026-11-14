@@ -1,0 +1,32 @@
+{
+  "status": "paused_by_user",
+  "updated_at": "2026-11-11T02:28:08.515440+00:00",
+  "shopping_paused": true,
+  "current_method": "lucid",
+  "next_group": "06_jeans",
+  "next_task": "feature_17",
+  "valid_episodes": 116,
+  "total_expected": 360,
+  "methods": {
+    "lucid": {
+      "valid_episodes": 116,
+      "expected_episodes": 180,
+      "remaining": 64,
+      "next_group": "06_jeans",
+      "next_task": "feature_17",
+      "outcomes_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\shopping\\outcomes.json",
+      "outcomes_sha256": "77dea87917e32186e67eaedeaa4f2457a925e94696ae0d9b56d6f12c5520369a"
+    },
+    "perlage_no_pixel": {
+      "valid_episodes": 0,
+      "expected_episodes": 180,
+      "remaining": 180,
+      "next_group": "01_camera",
+      "next_task": "feature_01",
+      "outcomes_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\shopping\\outcomes.json",
+      "outcomes_sha256": null
+    }
+  },
+  "checkpoint": "USER_PAUSE_CHECKPOINT.json",
+  "no_automatic_resume": true
+}

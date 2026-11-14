@@ -1,0 +1,111 @@
+{
+  "method": "nf_lage_no_shadow",
+  "definition": "foreground_statistics_color_harmonization_latent_generation_no_shadow_pool",
+  "status": "completed",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "shadow_pool_used": false,
+  "purchase_history_used": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false,
+  "configuration_sha256": "26920595070264ae47ad4398f26254b13cc7e4ced1b21d2e6c6d4f4b1860ce4a",
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "source_title_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+  "candidates": {
+    "final": {
+      "image": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\adversarial.png",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80"
+    }
+  },
+  "initialization_identity": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\initialization\\run_identity.json",
+  "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\initialization\\attack\\identity.json",
+  "initialization_evidence": {
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\initialization\\run_identity.json": "98b687e15ed609f6f7bd780cc34801a7e6bc50606768b5851c3919478bebb6b2",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\initialization\\attack\\identity.json": "38a69ad3e723f13b0356cbc681f3d802c0b806056844e6fb0632433c590bb54a",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\initialization\\ready.json": "85f381647e13c20c44e0909ef87d6a02772d27baa37126619db6f25b68f88a79"
+  },
+  "stages": {
+    "foreground_segmentation": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\source\\record.json": "601344ca581a8d0cd401f6a5e15cdc59725f633d0c5db88a3e87b7a189978c10",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\source\\foreground.png": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\target\\record.json": "68d00525964b35f615993c8bb2d5105fe93b5372a3de02648dc33ad4e35f2f67",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\target\\foreground.png": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54"
+      }
+    },
+    "foreground_statistics": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_statistics\\statistics.json": "7583158af9fd6cf2388f2ea094317ad931dc0c2f80ceb0d090ff9295582bda8d",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_statistics\\body_samples.png": "bf911f7f87a95d353fcd149c921f398d68edbc599a4b63cf4fd67d38c39cfc1a"
+      }
+    },
+    "color_harmonization": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\metadata.json": "1f267c2a19c32ad1c34e8aa469421580f23d2c64c4ea557aea191314fe4df24e",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\generative_anchor.png": "969e69baec80e558ccd71baefd706bc441097fcbf8b2bec235907f963140f71a",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\initial.png": "c7821fbf5819ba96bb96e1f5da0b75ce67eb19d9a702946d575ac51a406810e4",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\edit_mask.png": "22aec23f44b0f5caafc5a201a718848fc55f0d7a154f8f94c0e07253359e5233"
+      }
+    },
+    "latent_generation_refinement": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\latent_generation_refinement\\metadata.json": "74d0a9c35019412512f686c2830876d37663ab0f3cf2088dd16396934e29598b",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\latent_generation_refinement\\identity.json": "f34e6900bc8d58dda2c99da63c716305f3b93644c272820b27391700b454d9d9",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\adversarial.png": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80",
+        "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\generative_anchor.png": "25a1c338dc5c63942bcb76c653cffdbcffab24402d1628a323991239e7c3fc24"
+      },
+      "steps_completed": 40,
+      "steps_requested": 40
+    }
+  },
+  "observed_seconds": 911.9471257999994,
+  "auxiliary_max_levels": 4,
+  "latent_config": {
+    "steps": 40,
+    "check_every": 10,
+    "latent_levels": 16,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.008,
+    "latent_smoothing_mix": 0.1,
+    "auxiliary_levels": 4,
+    "source_ssim_floor": 0.93,
+    "source_mae_ceiling": 8.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.002,
+    "feature_weight": 0.1,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 4,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "retention_tolerance": 0.0005,
+    "selection_seeds": [
+      9301,
+      9302
+    ]
+  },
+  "source_method": "same_four_stages_without_shadow_losses_or_threshold_selection"
+}

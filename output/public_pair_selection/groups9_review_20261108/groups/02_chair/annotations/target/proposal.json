@@ -1,0 +1,61 @@
+{
+  "id": "B09CYFD5BX",
+  "identity": {
+    "image_sha256": "bec16e84034aa0a44b09f41298c795bdc087b0d008fce09cf67022c573e64e54",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\target.jpg",
+  "title": "LTHDD Barber Chair Heavy Duty Hydraulic Reclining Styling Salon Chair Shampoo Chair 360 Degree Swivel Vintage Classic for Hair Stylist Beauty Equipment",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\annotations\\target\\foreground.png",
+  "foreground_mask_sha256": "827d24f9247cd406fe487dc8996ec26ebec43000737628ca50f5a2781cfae542",
+  "boxes": [
+    [
+      3,
+      4,
+      399,
+      496
+    ]
+  ],
+  "text_regions": [],
+  "ocr": [],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9032085537910461,
+      "foreground_ratio": 0.5410469135802469,
+      "rough_coverage": 0.9846859562455893,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.7995374798774719,
+      "foreground_ratio": 0.35959506172839506,
+      "rough_coverage": 0.7274624458110697,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.8071277141571045,
+      "foreground_ratio": 0.4156938271604938,
+      "rough_coverage": 0.835487448331485,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\annotations\\target\\review_overlay.png",
+  "observed_seconds": 2.645629499998904
+}

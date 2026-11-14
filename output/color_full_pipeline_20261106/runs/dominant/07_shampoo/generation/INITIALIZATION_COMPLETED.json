@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "instruction_generation_steps": 30,
+  "optimization_steps": {
+    "latent_clean": 40,
+    "latent_diffusion": 40,
+    "pixel_clean": 20,
+    "pixel_diffusion": 60
+  },
+  "ready_sha256": "3821a77c32cfb784b42fc5d65d6a810deecc2d916e96b4683466195661b3c12d",
+  "initialized_from_this_runs_original_public_images": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "frozen",
+  "images": {
+    "dual_smooth": {
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\generation\\dual_smooth\\07_shampoo\\adversarial.png",
+        "sha256": "1a43e88624e03b40fb56978f91f681e019b0d8f716e17902d376f11b276897df",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\generation\\dual_smooth\\07_shampoo\\ready.json",
+        "ready_sha256": "4ce200fb147d013d183de2cc316e95918f84c2287064cde76e22fb2ef0a4b8ce"
+      }
+    }
+  },
+  "plan_sha256": "3015b641e5c4ad295d618e3c09513df4d721a6f84889909738834c59e67f3c3d",
+  "formal_rankings_used": false
+}

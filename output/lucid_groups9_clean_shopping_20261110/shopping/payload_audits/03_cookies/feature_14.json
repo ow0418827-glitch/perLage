@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "task_id": "feature_14",
+  "selected_ids": [
+    "groups9_reference_03_cookies_B07BBLWTLM",
+    "public_b345e6544692f9554e64c8c095f21510902de998e837c3166ae4795c105eb76d",
+    "public_65343eba25e91595be64efb5c5b3171a9d7b808351b486dd5a648e7bd2782d69"
+  ],
+  "source_rank": 1,
+  "query_unchanged": true,
+  "model_and_guidance_unchanged": true,
+  "images_verified_before_each_api_call": true,
+  "memory_count": 3
+}

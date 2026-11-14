@@ -1,0 +1,6 @@
+{
+  "status": "failed",
+  "stage": "all",
+  "type": "ValueError",
+  "reason": "存在空合格集合；停止本轮，不放宽门槛或重新抽样"
+}

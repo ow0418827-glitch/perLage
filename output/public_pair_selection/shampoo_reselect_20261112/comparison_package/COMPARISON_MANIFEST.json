@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-12T03:10:46.216137+00:00",
+  "experiment_root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112",
+  "isolation_guarantee": "All artifacts generated strictly inside output/public_pair_selection/shampoo_reselect_20261112; zero modification to existing pools or experiments.",
+  "old_07_shampoo": {
+    "source_id": "B08XYBS678",
+    "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "source_category_in_features": "hand wash",
+    "target_id": "B00BDJODWI",
+    "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "shape_similarity": 0.6185,
+    "selection_status": "frozen_historical_reuse"
+  },
+  "new_07_shampoo": {
+    "source_id": "B09B63YYCW",
+    "source_title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+    "source_brand": "BELLISSO",
+    "source_product_category": "Beauty & Personal Care › Hair Care › Hair Loss Products › Hair Regrowth Shampoos",
+    "target_id": "B00BDJODWI",
+    "target_title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+    "target_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e",
+    "target_pixel_diff_vs_20261109": {
+      "max": 0,
+      "mean": 0.0
+    },
+    "source_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+    "shape_similarity": 0.6974290898357522,
+    "calibrated_threshold": 0.6010808269912873,
+    "closest_candidate_margin_to_threshold": 0.016577,
+    "selection_device": "cpu (0 MB CUDA VRAM; GPU was busy running tools/run_perlage_ambient_coop_groups79_20261112.py)",
+    "eligible_count": 15,
+    "candidate_limit": 32,
+    "seed": 42,
+    "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "pair_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\pair.json",
+    "comparison_group_dir": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo"
+  },
+  "post_hoc_pool_audit_189_20261109": {
+    "new_source_asin_collision": false,
+    "new_source_image_sha256_collision": false,
+    "old_error_entry_id": "groups9_reference_07_shampoo_B08XYBS678",
+    "proposed_error_entry_template": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\proposed_pool_error_entry.json"
+  }
+}

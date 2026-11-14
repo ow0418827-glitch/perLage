@@ -1,0 +1,2465 @@
+{
+  "protocol": "public_shape_gate_uniform_v2",
+  "status": "selected",
+  "selected_source_id": "B09PNNXYJ4",
+  "target_id": "B09J81RMLD",
+  "candidates": [
+    {
+      "source_id": "B001E97D7Y",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.3287954189736647,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B003XJCJ3G",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.23184455088056757,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "DENTAL",
+            "FLOSS"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B0081V75CQ",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.2913082210151996,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 213,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B00DPIUVOO",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.07327265671769545,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B01GJ9TXNU",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.1982515635619124,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 242,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B01IAFJJN0",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.06869159678127576,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 161,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B01MY0N2HJ",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.12130686627839883,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B01MYGQ94W",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.18402123359484418,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B073X1YWPF",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.27020147159490365,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental",
+            "Floss"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B0773T5QNC",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.062413125452933274,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 441,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B079Z94R32",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.09153244062479804,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 400,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B07CVQP4CB",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.2021717866570486,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Floss"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 375,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B07YG8GH9Y",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.07954869836507755,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 440,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B083HV5HLG",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.22928514924495816,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste",
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B0842GV433",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.3839618402229663,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B091FJXX8G",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.26809104008833357,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental",
+            "Floss",
+            "Dental",
+            "Floss",
+            "Floss"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B0946DBNJJ",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.18241540411856355,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B095VWND6Z",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.14216543624283062,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental",
+            "Floss",
+            "Dental",
+            "Floss",
+            "Floss"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 400,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B098TM4CL9",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.23385240065765445,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09JSQ4JY8",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.23194112380695975,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09JWLDGSJ",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.1105843211527129,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09JWN27N1",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.08428902318135469,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09KV1LD1T",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.10774293728749001,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste",
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09KYBVXV1",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.484834688556338,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrushes",
+            "Toothbrush",
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09L55G7B8",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.05991904097140921,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothpaste",
+            "Toothpaste"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09MDMJLZX",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.15397825329857462,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 333,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09MHYZRB4",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.6006402425696096,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush",
+            "Toothbrushes"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09PD81QJ8",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.28741660056565477,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09PNNXYJ4",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "shape_similarity": 0.6119819978513786,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrushes",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09R1S2VY8",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "shape_similarity": 0.7245017435990215,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09S9P819G",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "shape_similarity": 0.7245981273245163,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush",
+            "Toothbrush",
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 483,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    },
+    {
+      "source_id": "B09SWJ6S7B",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_calibrated_threshold"
+      ],
+      "shape_similarity": 0.10209659755086699,
+      "type_compatibility": {
+        "compatible": true,
+        "resolved": true,
+        "source": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Dental"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "target": {
+          "category": "oral_care",
+          "method": "public_title_rule",
+          "matches": [
+            "Toothbrush"
+          ],
+          "rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3"
+        },
+        "policy": "public_title_coarse_conflicts_v2"
+      },
+      "image_quality": {
+        "accepted": true,
+        "width": 500,
+        "height": 500,
+        "format": "JPEG",
+        "minimum_side": 64
+      }
+    }
+  ],
+  "configuration": {
+    "seed": 42,
+    "calibration_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\calibration\\shape_v2_verified\\threshold.json",
+    "min_image_side": 64
+  },
+  "draw": {
+    "policy": "sha256_rejection_uniform_index_v1",
+    "seed": 42,
+    "eligible_ids": [
+      "B09PNNXYJ4",
+      "B09R1S2VY8",
+      "B09S9P819G"
+    ],
+    "index": 0,
+    "selected_source_id": "B09PNNXYJ4",
+    "counter": 0
+  },
+  "calibration": {
+    "schema_version": 2,
+    "policy": "balanced_public_shape_error_midpoints_v2",
+    "status": "calibrated",
+    "reviewer": "助手实际视觉核对，2026年11月5日；依据逐图及逐对表；不是独立人类双盲标注",
+    "development_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\calibration\\shape_v2_dev_20261105\\development.json",
+    "development_manifest_sha256": "d424aae4f76d405cda6f63d2aa22fc1887be0ba634ded05382f3f0e783d9e644",
+    "development_product_ids": [
+      "B01N4IMDJB",
+      "B07815DPW1",
+      "B07C26NR9T",
+      "B07P9WKGBD",
+      "B07QKNWG41",
+      "B07VLL8QH4",
+      "B082LNGNQY",
+      "B082PVMF5R",
+      "B0842Z8WP5",
+      "B0894WFH5V",
+      "B08BC6DM66",
+      "B08NDPFGDR",
+      "B08PVNZR97",
+      "B08R3PZ7XG",
+      "B08TBHHHJ6",
+      "B08TTXMKCN",
+      "B08XX7F1DZ",
+      "B08XX9CRWY",
+      "B08ZMJGSSR",
+      "B092CJB124",
+      "B093JXX82Z",
+      "B093VHSY5W",
+      "B095X9ZDW9",
+      "B0987HQSKY",
+      "B098DXCK4M",
+      "B098F1FM1Z",
+      "B09CT6ZQF7",
+      "B09CTF1PR3",
+      "B09D7L69T3",
+      "B09FY3X27Y",
+      "B09G318HQR",
+      "B09GXN689Q",
+      "B09J1R6P1Y",
+      "B09JBLQP5Y",
+      "B09JT3Z6JV",
+      "B09L17NKYD",
+      "B09LQCBN17",
+      "B09LVH3W9Q",
+      "B09M9Z8T8V",
+      "B09MC1BYDP",
+      "B09MDZJDZC",
+      "B09MLZJNJX",
+      "B09MMB2YW1",
+      "B09MPH64JN",
+      "B09N1H7F6Z",
+      "B09NBL7NDY",
+      "B09NRTFC3Z",
+      "B09P7SZTLS",
+      "B09PL6X5MZ",
+      "B09PL77NP9",
+      "B09PL7BTKQ",
+      "B09Q8B4BB5",
+      "B09QRKLC7P",
+      "B09S9VSKXW",
+      "B09SHH4RDN",
+      "B09SKWPGK6",
+      "B09SY58YBC"
+    ],
+    "rows": [
+      {
+        "left_id": "B098F1FM1Z",
+        "right_id": "B09G318HQR",
+        "left_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "right_sha256": "37a0008186b0b1bde9793d7436131119f97dd99d7c828912c550aa83b67383c8",
+        "shape": 0.8239808905844797,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第1对（C14/C19）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B07P9WKGBD",
+        "right_id": "B09PL77NP9",
+        "left_sha256": "7c4cc4bcc54f27bab06f569518d2c64357c4234242729f5a142ce54613f5713c",
+        "right_sha256": "e106d77c5d015d2c099cd9f88cd879a06a58badfaefca2ef77e1d27bda17f75b",
+        "shape": 0.6599549245076073,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第2对（C02/C25）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08TBHHHJ6",
+        "right_id": "B098F1FM1Z",
+        "left_sha256": "cb076a4613ffc709f3e91a94bd6b5b41f25b098ee07eb824447b1eced7e28704",
+        "right_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "shape": 0.7973357617581593,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第3对（C06/C14）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08TTXMKCN",
+        "right_id": "B093VHSY5W",
+        "left_sha256": "265af875340e0d1b6b60141dac2fb82281fc2799b85c531e70b6af7032c017ab",
+        "right_sha256": "88bbc793ede9aef79861a1d0e9edde43b5a761359c908fc11a3637d2e681c032",
+        "shape": 0.7690811784401922,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第4对（C07/C13）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09D7L69T3",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.737457336283919,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第5对（C17/C27）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08TTXMKCN",
+        "right_id": "B098F1FM1Z",
+        "left_sha256": "265af875340e0d1b6b60141dac2fb82281fc2799b85c531e70b6af7032c017ab",
+        "right_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "shape": 0.7555472045102272,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第6对（C07/C14）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08BC6DM66",
+        "right_id": "B08TTXMKCN",
+        "left_sha256": "1c5a3cf60af01f4d7e66dd07ec25a750c9a9f0678d142e5adb1a357ca9a5bf23",
+        "right_sha256": "265af875340e0d1b6b60141dac2fb82281fc2799b85c531e70b6af7032c017ab",
+        "shape": 0.7554459202449681,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第7对（C05/C07）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B082LNGNQY",
+        "right_id": "B09PL6X5MZ",
+        "left_sha256": "320685bedabe982b0e5b483aa9aeb0426d5234008fdf3d7e37c9d7d1ee63e662",
+        "right_sha256": "2364b025c549faa69d4e405816060835437c42070495414c4289cc3f1b923870",
+        "shape": 0.8360183160610446,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第8对（C03/C24）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08BC6DM66",
+        "right_id": "B09FY3X27Y",
+        "left_sha256": "1c5a3cf60af01f4d7e66dd07ec25a750c9a9f0678d142e5adb1a357ca9a5bf23",
+        "right_sha256": "b7cb146204fff0b415a672725d426d179cec35ff700686a81fd469014cebe77b",
+        "shape": 0.8419220132003441,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第9对（C05/C18）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09NBL7NDY",
+        "right_id": "B09SY58YBC",
+        "left_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "right_sha256": "33b8965c224b5a8e805a25ccc75ee149631661f512ed816c81b1100ac07f0c1e",
+        "shape": 0.7262534312970683,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第10对（C23/C28）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09CT6ZQF7",
+        "right_id": "B09PL77NP9",
+        "left_sha256": "46e6e7d95da743a3c0502a3432608ae7be6d0185891edd31190c2bbfb78cec21",
+        "right_sha256": "e106d77c5d015d2c099cd9f88cd879a06a58badfaefca2ef77e1d27bda17f75b",
+        "shape": 0.6231568004088315,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第11对（C15/C25）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09NBL7NDY",
+        "right_id": "B09PL7BTKQ",
+        "left_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "right_sha256": "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+        "shape": 0.8945780151247982,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第12对（C23/C26）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B01N4IMDJB",
+        "right_id": "B09NBL7NDY",
+        "left_sha256": "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+        "right_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "shape": 0.945254966702464,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第13对（C01/C23）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09FY3X27Y",
+        "right_id": "B09G318HQR",
+        "left_sha256": "b7cb146204fff0b415a672725d426d179cec35ff700686a81fd469014cebe77b",
+        "right_sha256": "37a0008186b0b1bde9793d7436131119f97dd99d7c828912c550aa83b67383c8",
+        "shape": 0.7545059069038017,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第14对（C18/C19）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.8627641331645298,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第15对（C04/C27）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08TBHHHJ6",
+        "right_id": "B09MC1BYDP",
+        "left_sha256": "cb076a4613ffc709f3e91a94bd6b5b41f25b098ee07eb824447b1eced7e28704",
+        "right_sha256": "7d71c289424a2240b810fa4a3c7d909bcb5e9affed3347a72740d4606eb63d33",
+        "shape": 0.7757267484753706,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第16对（C06/C22）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B07P9WKGBD",
+        "right_id": "B08ZMJGSSR",
+        "left_sha256": "7c4cc4bcc54f27bab06f569518d2c64357c4234242729f5a142ce54613f5713c",
+        "right_sha256": "cbea74a21f759a64a2354b61de868a12fd262ef8bce0c783a4c84145a2f79d84",
+        "shape": 0.9048817130411152,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第17对（C02/C10）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08XX7F1DZ",
+        "right_id": "B09PL77NP9",
+        "left_sha256": "37baef6dd63a92f082cb9d0ada1aacb8cf9068f76f2cb3438be5fe4b13d279b0",
+        "right_sha256": "e106d77c5d015d2c099cd9f88cd879a06a58badfaefca2ef77e1d27bda17f75b",
+        "shape": 0.7111817445140718,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第18对（C08/C25）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08XX9CRWY",
+        "right_id": "B09NBL7NDY",
+        "left_sha256": "e1bbec9d10caf558b5cb847cdc3678aa63314b4292bba52b8009acb93344a61d",
+        "right_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "shape": 0.8899808986619071,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第19对（C09/C23）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B082LNGNQY",
+        "right_id": "B09SY58YBC",
+        "left_sha256": "320685bedabe982b0e5b483aa9aeb0426d5234008fdf3d7e37c9d7d1ee63e662",
+        "right_sha256": "33b8965c224b5a8e805a25ccc75ee149631661f512ed816c81b1100ac07f0c1e",
+        "shape": 0.7402124073975342,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第20对（C03/C28）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08TBHHHJ6",
+        "right_id": "B093VHSY5W",
+        "left_sha256": "cb076a4613ffc709f3e91a94bd6b5b41f25b098ee07eb824447b1eced7e28704",
+        "right_sha256": "88bbc793ede9aef79861a1d0e9edde43b5a761359c908fc11a3637d2e681c032",
+        "shape": 0.6483404672820434,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第21对（C06/C13）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B092CJB124",
+        "right_id": "B09PL7BTKQ",
+        "left_sha256": "0d1a2a02427d789bb4152c6efa7506dd7789dd14c5c39ebc1618d685eae5631c",
+        "right_sha256": "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+        "shape": 0.7575414141126848,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第22对（C11/C26）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B09CTF1PR3",
+        "right_id": "B09LVH3W9Q",
+        "left_sha256": "121edc7202877d0455573d6ae196a3afda269a8f221eef67be3649be4a5ca8f9",
+        "right_sha256": "f1927c244f07f2d44932d656bac3e6e42562b3721cd39b68d45c496c19b93e8e",
+        "shape": 0.7945783250871397,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第23对（C16/C21）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09D7L69T3",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+        "shape": 0.7242180032651792,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第24对（C04/C17）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B08ZMJGSSR",
+        "right_id": "B09CT6ZQF7",
+        "left_sha256": "cbea74a21f759a64a2354b61de868a12fd262ef8bce0c783a4c84145a2f79d84",
+        "right_sha256": "46e6e7d95da743a3c0502a3432608ae7be6d0185891edd31190c2bbfb78cec21",
+        "shape": 0.822186707928005,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第25对（C10/C15）：座椅主体的座面、靠背/扶手、支撑布局大体相近，忽略颜色及印字"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.6603140009051124,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第26对（B11/B22）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09LQCBN17",
+        "right_id": "B09Q8B4BB5",
+        "left_sha256": "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+        "right_sha256": "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+        "shape": 0.7329856701939014,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第27对（B17/B26）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09J1R6P1Y",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.4475337579106723,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第28对（B13/B22）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B098DXCK4M",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "shape": 0.5436515018730218,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第29对（B11/B12）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09JBLQP5Y",
+        "right_id": "B09L17NKYD",
+        "left_sha256": "98a9b9b0facda6ebc789b631ac97e6db7b15fae76bf8fedb54ac56649336900e",
+        "right_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "shape": 0.9278263579316829,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第30对（B14/B16）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09LQCBN17",
+        "right_id": "B09QRKLC7P",
+        "left_sha256": "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+        "right_sha256": "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+        "shape": 0.6959571923310769,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第31对（B17/B27）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09JT3Z6JV",
+        "right_id": "B09SKWPGK6",
+        "left_sha256": "5f807ae07c7b470911d878d8442a0055db7ee22fa0d0107b683e39bcadab623f",
+        "right_sha256": "3ba23d1a37ccbfb4b117d460f3223c1215d1b9b2a6e556f869cf1376a0760b58",
+        "shape": 0.7921526726632575,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第32对（B15/B29）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.4864795779636422,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第33对（B11/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B098DXCK4M",
+        "right_id": "B09J1R6P1Y",
+        "left_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "right_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "shape": 0.4359963757710891,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第34对（B12/B13）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09Q8B4BB5",
+        "right_id": "B09QRKLC7P",
+        "left_sha256": "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+        "right_sha256": "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+        "shape": 0.7114815354260966,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第35对（B26/B27）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B098DXCK4M",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.5047397753426874,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第36对（B12/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.5244567461186501,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第37对（B05/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B0987HQSKY",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "shape": 0.6483644747990864,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第38对（B05/B11）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09M9Z8T8V",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "shape": 0.45839944499977076,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第39对（B11/B18）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09J1R6P1Y",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.4618742101223931,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第40对（B13/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.6044151115051188,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第41对（B05/B22）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09J1R6P1Y",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "shape": 0.5111048019599044,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第42对（B05/B13）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B098DXCK4M",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.6654342921600527,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第43对（B12/B22）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09M9Z8T8V",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.3161330243694551,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第44对（B18/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09MPH64JN",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.6407166615041844,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第45对（B22/B28）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09M9Z8T8V",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "shape": 0.3160748176843614,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第46对（B05/B18）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B095X9ZDW9",
+        "right_id": "B09L17NKYD",
+        "left_sha256": "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+        "right_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "shape": 0.822599005568573,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第47对（B10/B16）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09M9Z8T8V",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.44916391557973645,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第48对（B18/B22）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B09J1R6P1Y",
+        "right_id": "B09M9Z8T8V",
+        "left_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "right_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "shape": 0.40292393572314067,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第49对（B13/B18）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B098DXCK4M",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "shape": 0.5077949757726323,
+        "label": 1,
+        "review_note": "已实际查看灰度逐对表第50对（B05/B12）：牙刷主体均为相近的长杆小刷头或相近U形刷头结构，忽略颜色、品牌和包装数量"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09CT6ZQF7",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "46e6e7d95da743a3c0502a3432608ae7be6d0185891edd31190c2bbfb78cec21",
+        "shape": 0.5624738768655003,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第51对（C04/C15）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08XX9CRWY",
+        "right_id": "B098F1FM1Z",
+        "left_sha256": "e1bbec9d10caf558b5cb847cdc3678aa63314b4292bba52b8009acb93344a61d",
+        "right_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "shape": 0.5583052956517018,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第52对（C09/C14）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08XX7F1DZ",
+        "right_id": "B093JXX82Z",
+        "left_sha256": "37baef6dd63a92f082cb9d0ada1aacb8cf9068f76f2cb3438be5fe4b13d279b0",
+        "right_sha256": "bd450f70f612db9c53a47a834b310c4aba601697d0ec48234a74884dd2c5fe89",
+        "shape": 0.513874593786435,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第53对（C08/C12）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08TBHHHJ6",
+        "right_id": "B09NBL7NDY",
+        "left_sha256": "cb076a4613ffc709f3e91a94bd6b5b41f25b098ee07eb824447b1eced7e28704",
+        "right_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "shape": 0.4861857111188925,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第54对（C06/C23）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B09CTF1PR3",
+        "right_id": "B09D7L69T3",
+        "left_sha256": "121edc7202877d0455573d6ae196a3afda269a8f221eef67be3649be4a5ca8f9",
+        "right_sha256": "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+        "shape": 0.518020500769237,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第55对（C16/C17）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B01N4IMDJB",
+        "right_id": "B08TTXMKCN",
+        "left_sha256": "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+        "right_sha256": "265af875340e0d1b6b60141dac2fb82281fc2799b85c531e70b6af7032c017ab",
+        "shape": 0.6291576210064277,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第56对（C01/C07）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09SY58YBC",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "33b8965c224b5a8e805a25ccc75ee149631661f512ed816c81b1100ac07f0c1e",
+        "shape": 0.47201090941888735,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第57对（C04/C28）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09PL6X5MZ",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "2364b025c549faa69d4e405816060835437c42070495414c4289cc3f1b923870",
+        "shape": 0.5253771874483943,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第58对（C04/C24）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B082LNGNQY",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "320685bedabe982b0e5b483aa9aeb0426d5234008fdf3d7e37c9d7d1ee63e662",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.5131171659820224,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第59对（C03/C27）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B093JXX82Z",
+        "right_id": "B09NBL7NDY",
+        "left_sha256": "bd450f70f612db9c53a47a834b310c4aba601697d0ec48234a74884dd2c5fe89",
+        "right_sha256": "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+        "shape": 0.5003731636725698,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第60对（C12/C23）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B09PL7BTKQ",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.5337440040260779,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第61对（C26/C27）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B093JXX82Z",
+        "right_id": "B09PL77NP9",
+        "left_sha256": "bd450f70f612db9c53a47a834b310c4aba601697d0ec48234a74884dd2c5fe89",
+        "right_sha256": "e106d77c5d015d2c099cd9f88cd879a06a58badfaefca2ef77e1d27bda17f75b",
+        "shape": 0.36411282342504514,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第62对（C12/C25）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B082LNGNQY",
+        "right_id": "B098F1FM1Z",
+        "left_sha256": "320685bedabe982b0e5b483aa9aeb0426d5234008fdf3d7e37c9d7d1ee63e662",
+        "right_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "shape": 0.5241041484248159,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第63对（C03/C14）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08XX9CRWY",
+        "right_id": "B093VHSY5W",
+        "left_sha256": "e1bbec9d10caf558b5cb847cdc3678aa63314b4292bba52b8009acb93344a61d",
+        "right_sha256": "88bbc793ede9aef79861a1d0e9edde43b5a761359c908fc11a3637d2e681c032",
+        "shape": 0.7221900243238386,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第64对（C09/C13）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B07P9WKGBD",
+        "right_id": "B082PVMF5R",
+        "left_sha256": "7c4cc4bcc54f27bab06f569518d2c64357c4234242729f5a142ce54613f5713c",
+        "right_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "shape": 0.597535507270752,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第65对（C02/C04）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B09PL6X5MZ",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "2364b025c549faa69d4e405816060835437c42070495414c4289cc3f1b923870",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.493309179849844,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第66对（C24/C27）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B082PVMF5R",
+        "right_id": "B09PL7BTKQ",
+        "left_sha256": "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+        "right_sha256": "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+        "shape": 0.5467826507248353,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第67对（C04/C26）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B09G318HQR",
+        "right_id": "B09PL7BTKQ",
+        "left_sha256": "37a0008186b0b1bde9793d7436131119f97dd99d7c828912c550aa83b67383c8",
+        "right_sha256": "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+        "shape": 0.5351785804812443,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第68对（C19/C26）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B09D7L69T3",
+        "right_id": "B09LVH3W9Q",
+        "left_sha256": "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+        "right_sha256": "f1927c244f07f2d44932d656bac3e6e42562b3721cd39b68d45c496c19b93e8e",
+        "shape": 0.5886478642567177,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第69对（C17/C21）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B093JXX82Z",
+        "right_id": "B09CTF1PR3",
+        "left_sha256": "bd450f70f612db9c53a47a834b310c4aba601697d0ec48234a74884dd2c5fe89",
+        "right_sha256": "121edc7202877d0455573d6ae196a3afda269a8f221eef67be3649be4a5ca8f9",
+        "shape": 0.533676410358628,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第70对（C12/C16）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B01N4IMDJB",
+        "right_id": "B09MC1BYDP",
+        "left_sha256": "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+        "right_sha256": "7d71c289424a2240b810fa4a3c7d909bcb5e9affed3347a72740d4606eb63d33",
+        "shape": 0.3601440860612726,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第71对（C01/C22）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08XX7F1DZ",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "37baef6dd63a92f082cb9d0ada1aacb8cf9068f76f2cb3438be5fe4b13d279b0",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.7044600263097393,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第72对（C08/C27）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B01N4IMDJB",
+        "right_id": "B098F1FM1Z",
+        "left_sha256": "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+        "right_sha256": "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+        "shape": 0.47470739772846954,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第73对（C01/C14）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B08ZMJGSSR",
+        "right_id": "B09D7L69T3",
+        "left_sha256": "cbea74a21f759a64a2354b61de868a12fd262ef8bce0c783a4c84145a2f79d84",
+        "right_sha256": "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+        "shape": 0.512544855208019,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第74对（C10/C17）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B01N4IMDJB",
+        "right_id": "B09SHH4RDN",
+        "left_sha256": "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+        "right_sha256": "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+        "shape": 0.4376615417069143,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第75对（C01/C27）：座椅主体的靠背、扶手、头枕或底座布局明显不同；均属于座椅用途"
+      },
+      {
+        "left_id": "B098DXCK4M",
+        "right_id": "B09L17NKYD",
+        "left_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "right_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "shape": 0.2940310141664293,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第76对（B12/B16）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B098DXCK4M",
+        "right_id": "B09MLZJNJX",
+        "left_sha256": "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+        "right_sha256": "b7bef3401a706099e0fdf1b90ee0e4da804b9d19b515f76539efe7bdb05880ea",
+        "shape": 0.6420252660666701,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第77对（B12/B20）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09QRKLC7P",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+        "shape": 0.21949864833820362,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第78对（B05/B27）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09Q8B4BB5",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+        "shape": 0.22286262659282707,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第79对（B05/B26）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09J1R6P1Y",
+        "right_id": "B09MLZJNJX",
+        "left_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "right_sha256": "b7bef3401a706099e0fdf1b90ee0e4da804b9d19b515f76539efe7bdb05880ea",
+        "shape": 0.43136989242428997,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第80对（B13/B20）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09MLZJNJX",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "b7bef3401a706099e0fdf1b90ee0e4da804b9d19b515f76539efe7bdb05880ea",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.8768656372349128,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第81对（B20/B22）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09LQCBN17",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+        "shape": 0.2932314262396273,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第82对（B05/B17）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09L17NKYD",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "shape": 0.4486267103509223,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第83对（B05/B16）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B095X9ZDW9",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.33887378906602755,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第84对（B10/B22）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09M9Z8T8V",
+        "right_id": "B09Q8B4BB5",
+        "left_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "right_sha256": "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+        "shape": 0.2566100925791239,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第85对（B18/B26）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09MPH64JN",
+        "right_id": "B09Q8B4BB5",
+        "left_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "right_sha256": "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+        "shape": 0.4713880552381072,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第86对（B22/B26）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B095X9ZDW9",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+        "shape": 0.32112507842942895,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第87对（B05/B10）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09JT3Z6JV",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "5f807ae07c7b470911d878d8442a0055db7ee22fa0d0107b683e39bcadab623f",
+        "shape": 0.17391283973247168,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第88对（B05/B15）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09JBLQP5Y",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "98a9b9b0facda6ebc789b631ac97e6db7b15fae76bf8fedb54ac56649336900e",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.3381644013513967,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第89对（B14/B28）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09MPH64JN",
+        "right_id": "B09SKWPGK6",
+        "left_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "right_sha256": "3ba23d1a37ccbfb4b117d460f3223c1215d1b9b2a6e556f869cf1376a0760b58",
+        "shape": 0.3592484178564376,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第90对（B22/B29）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B095X9ZDW9",
+        "right_id": "B09J1R6P1Y",
+        "left_sha256": "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+        "right_sha256": "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+        "shape": 0.22724323199031038,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第91对（B10/B13）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B095X9ZDW9",
+        "right_id": "B0987HQSKY",
+        "left_sha256": "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+        "right_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "shape": 0.3391773072319799,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第92对（B10/B11）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09L17NKYD",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "shape": 0.4664312091833872,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第93对（B11/B16）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09QRKLC7P",
+        "right_id": "B09S9VSKXW",
+        "left_sha256": "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+        "right_sha256": "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+        "shape": 0.425067748034861,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第94对（B27/B28）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09LQCBN17",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+        "shape": 0.3415328448145888,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第95对（B11/B17）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09L17NKYD",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.3858109714208294,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第96对（B16/B22）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09M9Z8T8V",
+        "right_id": "B09QRKLC7P",
+        "left_sha256": "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+        "right_sha256": "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+        "shape": 0.12151299751882003,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第97对（B18/B27）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B09LQCBN17",
+        "right_id": "B09MPH64JN",
+        "left_sha256": "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+        "right_sha256": "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+        "shape": 0.5353890282592282,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第98对（B17/B22）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0842Z8WP5",
+        "right_id": "B09SKWPGK6",
+        "left_sha256": "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+        "right_sha256": "3ba23d1a37ccbfb4b117d460f3223c1215d1b9b2a6e556f869cf1376a0760b58",
+        "shape": 0.22354850191898934,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第99对（B05/B29）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      },
+      {
+        "left_id": "B0987HQSKY",
+        "right_id": "B09MLZJNJX",
+        "left_sha256": "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+        "right_sha256": "b7bef3401a706099e0fdf1b90ee0e4da804b9d19b515f76539efe7bdb05880ea",
+        "shape": 0.5977470346391422,
+        "label": 0,
+        "review_note": "已实际查看灰度逐对表第100对（B11/B20）：牙刷主体一侧为U形大刷头、另一侧为长杆小刷头，主要头部及握柄布局不同"
+      }
+    ],
+    "fit": {
+      "threshold": 0.6010810730721305,
+      "error_count": 19,
+      "error_rate": 0.19,
+      "positive_count": 50,
+      "negative_count": 50,
+      "tie_rule": "smallest_threshold",
+      "candidate_thresholds": [
+        -1.0,
+        0.14771291862564584,
+        0.19670574403533764,
+        0.22118063746551536,
+        0.2232055642559082,
+        0.22539586695464986,
+        0.24192666228471715,
+        0.2749207594093756,
+        0.2936312202030283,
+        0.30505291592539535,
+        0.31610392102690826,
+        0.31862905139944203,
+        0.3296447398904128,
+        0.33851909520871215,
+        0.33902554814900376,
+        0.34035507602328435,
+        0.3503906313355132,
+        0.3596962519588551,
+        0.36212845474315886,
+        0.3749618974229373,
+        0.394367453571985,
+        0.41399584187900085,
+        0.42821882022957547,
+        0.43368313409768955,
+        0.4368289587390017,
+        0.4425976498087933,
+        0.4480802341307973,
+        0.44889531296532936,
+        0.45378168028975363,
+        0.46013682756108193,
+        0.4641527096528901,
+        0.4689096322107472,
+        0.47169948232849723,
+        0.4733591535736784,
+        0.480446554423681,
+        0.48633264454126734,
+        0.48989437890674314,
+        0.4968411717612069,
+        0.5025564695076286,
+        0.5062673755576599,
+        0.5094498888662684,
+        0.5118248285839617,
+        0.5128310105950207,
+        0.5134958798842286,
+        0.515947547277836,
+        0.5210623245970265,
+        0.5242804472717331,
+        0.5249169667835223,
+        0.5295267989035112,
+        0.533710207192353,
+        0.5344612922536611,
+        0.5352838043702363,
+        0.539520265066125,
+        0.5452170762989286,
+        0.5525439731882686,
+        0.560389586258601,
+        0.575560870561109,
+        0.5930916857637348,
+        0.5976412709549471,
+        0.6010810730721305,
+        0.6137859559569752,
+        0.6261572107076296,
+        0.634937141255306,
+        0.6413709637854272,
+        0.6451828666743568,
+        0.6483524710405649,
+        0.6541596996533469,
+        0.6601344627063599,
+        0.6628741465325825,
+        0.6806957422455648,
+        0.7002086093204081,
+        0.7078208854119055,
+        0.7113316399700842,
+        0.7168357798749676,
+        0.7232040137945088,
+        0.7252357172811237,
+        0.7296195507454848,
+        0.7352215032389102,
+        0.7388348718407266,
+        0.7473591571506679,
+        0.754975913574385,
+        0.7554965623775977,
+        0.756544309311456,
+        0.7633112962764386,
+        0.7724039634577814,
+        0.783939710569314,
+        0.7933654988751986,
+        0.7959570434226495,
+        0.8097612348430822,
+        0.822392856748289,
+        0.8232899480765263,
+        0.8299996033227621,
+        0.8389701646306944,
+        0.852343073182437,
+        0.8698148851997214,
+        0.88342326794841,
+        0.8922794568933526,
+        0.8997298640829567,
+        0.916354035486399,
+        0.9365406623170734,
+        1.0000000000000002
+      ]
+    },
+    "development_image_sha256": [
+      "0d1a2a02427d789bb4152c6efa7506dd7789dd14c5c39ebc1618d685eae5631c",
+      "0f8aaaa0c385d32b116ec504e0ae6679550f2e10e47c4f2447f4a0ca3d2d77df",
+      "0f9cd5cadd228e7052cf0e05ce2deb1bbbbe17be33f2aee496601310a9775bcc",
+      "121edc7202877d0455573d6ae196a3afda269a8f221eef67be3649be4a5ca8f9",
+      "139fe68bfcbd6ec1c41262cf00a2305152f4afe9d879abfffaf01a4d59102b4d",
+      "1c5a3cf60af01f4d7e66dd07ec25a750c9a9f0678d142e5adb1a357ca9a5bf23",
+      "1da2260448048558ca770a98aec6fc69bbde1941062c829b8383a0b4fe038e7a",
+      "2364b025c549faa69d4e405816060835437c42070495414c4289cc3f1b923870",
+      "265af875340e0d1b6b60141dac2fb82281fc2799b85c531e70b6af7032c017ab",
+      "2f0246225864a4757886b3e1f2b4ab59b8933c4db2d25a9a1b70101ea06fe5fc",
+      "320685bedabe982b0e5b483aa9aeb0426d5234008fdf3d7e37c9d7d1ee63e662",
+      "33b8965c224b5a8e805a25ccc75ee149631661f512ed816c81b1100ac07f0c1e",
+      "37a0008186b0b1bde9793d7436131119f97dd99d7c828912c550aa83b67383c8",
+      "37baef6dd63a92f082cb9d0ada1aacb8cf9068f76f2cb3438be5fe4b13d279b0",
+      "3ba23d1a37ccbfb4b117d460f3223c1215d1b9b2a6e556f869cf1376a0760b58",
+      "3ce5461585cf1207c2b237e86c941dfbf6eda436643861b52267461fcd2cdead",
+      "3e0126cb03bb98cabbcfa0ab9b5957a449920e49d0a15a4b12803168d71de3a0",
+      "45d3316d0f5b8545283ea9289fe09596b8dac6bd281f71b5b288f0ef72a4e9ae",
+      "46e6e7d95da743a3c0502a3432608ae7be6d0185891edd31190c2bbfb78cec21",
+      "53eaceea205f718aaf3ce8d462d3db783c997e645a462d2d41d922370dd504fa",
+      "5b17e14f1a02a0605b137ebbbf3e22cc696abec74128c09fe1aaf407d9798609",
+      "5f29da4371cee243ae31c2143e410299e33d32d5840480aaff7aa540be1d223d",
+      "5f407d61d8b6657a2b60860bff879c4450261a09419eca63842e6285aa3482bf",
+      "5f807ae07c7b470911d878d8442a0055db7ee22fa0d0107b683e39bcadab623f",
+      "639b91278e0667b5120194c5383a5731d562d83626325fdea1c14d5c0c3e5f63",
+      "6424511865623dd1a01555344a0154940462587f871f475053073da7d635b8d9",
+      "67cfeadea6fad15f30491b01a0febee6a7b763ff66d6034f479fe242477f3985",
+      "6b702138809bf2004bacdad2a01710c700e0ce84b5a08ac49629bbbcc41a47e6",
+      "71cc27ffec63ff0f3803ace9644940334abeb9de0e07d4e2054b460afd76677d",
+      "72fcf082942506f9113a11b81444b0b3886534802dcfb9494c0ddeea9cfa0b51",
+      "75d00c038411d7f1eb6f68913f654bb6755839886eb3c9a024cef9db30f9070f",
+      "7666f32e4d919ddce90498b4618dec4c180a9966fffb35cc00c5fa999f4db61b",
+      "7c4cc4bcc54f27bab06f569518d2c64357c4234242729f5a142ce54613f5713c",
+      "7d71c289424a2240b810fa4a3c7d909bcb5e9affed3347a72740d4606eb63d33",
+      "88bbc793ede9aef79861a1d0e9edde43b5a761359c908fc11a3637d2e681c032",
+      "8a2d457397e840aea0d36b53f37d5bb932230e49cdd19e6eb61bf8c79d52da67",
+      "8e12e902578dedbce197a9f5583cebfbc41cefc424eed8a7c348991d2df1b2a1",
+      "98a9b9b0facda6ebc789b631ac97e6db7b15fae76bf8fedb54ac56649336900e",
+      "9901e9e739243fd5a18adcbe5d96f5bcd1653070eb7ca3b06f803de7eed3607f",
+      "a6110ad4ae4d6b1efb770e53bcbde7ca72314f1432530672a82e3c138d3af8e2",
+      "b4212d7aae025f3583993c5903d7884795b423cd7e58959115654c4f3ea00ef3",
+      "b7bef3401a706099e0fdf1b90ee0e4da804b9d19b515f76539efe7bdb05880ea",
+      "b7cb146204fff0b415a672725d426d179cec35ff700686a81fd469014cebe77b",
+      "bd450f70f612db9c53a47a834b310c4aba601697d0ec48234a74884dd2c5fe89",
+      "c080018bed7c2c941f5540480239a8d952bcbd513cccc849af86ad4686810b35",
+      "c6c2b0a3497bf0a4c26efcc6b86db802e4a8d856cb7654318410adb9c8c13b35",
+      "cb076a4613ffc709f3e91a94bd6b5b41f25b098ee07eb824447b1eced7e28704",
+      "cbea74a21f759a64a2354b61de868a12fd262ef8bce0c783a4c84145a2f79d84",
+      "cc5e91c1a37e85afae27a1964300552d23813e1420f8839a16a47e56a7751647",
+      "dac775ae410563d91dcc7dc30d4c1770f87ce038c3d2e7ee144f28b6ca81502f",
+      "e106d77c5d015d2c099cd9f88cd879a06a58badfaefca2ef77e1d27bda17f75b",
+      "e1a824fc4d4f4811bb8ff0c8c0cd00959367211a184f836094a45fa6a388e278",
+      "e1bbec9d10caf558b5cb847cdc3678aa63314b4292bba52b8009acb93344a61d",
+      "eae2ac8da624015d551d8dea22dd352434e57a5f515fbc89f470c3c903da0ea6",
+      "f1927c244f07f2d44932d656bac3e6e42562b3721cd39b68d45c496c19b93e8e",
+      "f51358915737f1937665e2c4e8d12df022a9e2df2f8b5ec4642bead30b7751b5",
+      "f95ac5eb77512fded97e3bebf946452a298cd194fae031359d2fb2ae5079bf6f"
+    ],
+    "models": {
+      "dino": {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\dinov2-small",
+        "files": {
+          ".cache/huggingface/trees/ed25f3a31f01632728cabb09d1542f84ab7b0056.json": "697aca0fad1dc794b13170a0e0c6628b0cfe53af9b4435fecc7833131abb3a91",
+          "config.json": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+          "model.safetensors": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+          "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+        }
+      },
+      "preprocessing": {
+        "policy": "whole_image_gray_letterbox224_global_cls_v2",
+        "size": 224,
+        "grayscale": "Pillow_L_then_three_channels",
+        "resize": "bicubic_preserve_aspect",
+        "padding": 127,
+        "foreground_segmentation": false,
+        "text_detection": false,
+        "pilot_edit": false
+      },
+      "precision": "float32",
+      "libraries": {
+        "transformers": "5.13.0",
+        "torch": "2.11.0+cu128",
+        "pillow": "12.3.0",
+        "numpy": "2.4.6"
+      },
+      "implementation_sha256": "4964f91f548fc107c742858cdb47bb8ecd7e090f8550e5e2ad3525fe1c4c7af9"
+    },
+    "models_sha256": "712370b93f0358fea4e4c88363dca368ae4f75a877888c901f8a77a47542f450",
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "certificate_sha256": "b2a720241b68af9942560879be32820e4713f2c3d4b7ffb240e0ba195048de7a"
+  },
+  "models": {
+    "dino": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\dinov2-small",
+      "files": {
+        ".cache/huggingface/trees/ed25f3a31f01632728cabb09d1542f84ab7b0056.json": "697aca0fad1dc794b13170a0e0c6628b0cfe53af9b4435fecc7833131abb3a91",
+        "config.json": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+        "model.safetensors": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+        "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+      }
+    },
+    "preprocessing": {
+      "policy": "whole_image_gray_letterbox224_global_cls_v2",
+      "size": 224,
+      "grayscale": "Pillow_L_then_three_channels",
+      "resize": "bicubic_preserve_aspect",
+      "padding": 127,
+      "foreground_segmentation": false,
+      "text_detection": false,
+      "pilot_edit": false
+    },
+    "precision": "float32",
+    "libraries": {
+      "transformers": "5.13.0",
+      "torch": "2.11.0+cu128",
+      "pillow": "12.3.0",
+      "numpy": "2.4.6"
+    },
+    "implementation_sha256": "4964f91f548fc107c742858cdb47bb8ecd7e090f8550e5e2ad3525fe1c4c7af9"
+  },
+  "type_rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3",
+  "excluded_source_ids": [
+    "B09CYFD5BX",
+    "B09J81RMLD"
+  ],
+  "victim_memory_used": false,
+  "victim_queries_used": false,
+  "target_system_probed": false,
+  "target": {
+    "id": "B09J81RMLD",
+    "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+    "source_url": "https://www.amazon.com/dp/B09J81RMLD",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\simple_v2\\images\\893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14.jpg",
+    "image_sha256": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14"
+  },
+  "binding": {
+    "public_catalog_sha256": "93252471c84a3ee5a95605d8f9e92ac9323824681127d1a0412fccf1c5542c7c",
+    "models_configuration": {
+      "batch_size": 16
+    },
+    "calibration_sha256": "bd483cca45f83c19d545d3d04f8ce45b47f75f25188f2dc58d9fbb3a052a50cd",
+    "public_plan_sha256": "5fa46130b1e2349af5ff2e0e9ec0b67f221f3c7748354c9260c9d89f04dcdeeb"
+  },
+  "download_failures": {},
+  "source": {
+    "id": "B09PNNXYJ4",
+    "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+    "source_url": "https://www.amazon.com/dp/B09PNNXYJ4",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\simple_v2\\images\\f276600c16b54be5c1b1a305721bdd265f3582db05694d47e3db3ba149fc3bc3.jpg",
+    "owned": true,
+    "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+    "image_sha256": "f276600c16b54be5c1b1a305721bdd265f3582db05694d47e3db3ba149fc3bc3"
+  }
+}

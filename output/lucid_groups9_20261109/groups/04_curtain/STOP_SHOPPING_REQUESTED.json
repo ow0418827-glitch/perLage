@@ -1,0 +1,7 @@
+{
+  "shopping_allowed": true,
+  "external_model_calls_allowed": true,
+  "user_instruction": "用户明确授权启用最终购物测试：对9组商品在无防御、修改后记忆库下执行完整WebShop评测。",
+  "scope": "lucid_groups9_shopping_20261109",
+  "timestamp": "2026-11-09T07:35:44Z"
+}

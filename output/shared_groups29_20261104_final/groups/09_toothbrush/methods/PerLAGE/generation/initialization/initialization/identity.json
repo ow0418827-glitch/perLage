@@ -1,0 +1,51 @@
+{
+  "source_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+  "generated_sha256": "a2cdd8e586d2b385da83a3ccce29563b549fa5adeb37b2dc9dc29ff26ccabb76",
+  "trials": [
+    {
+      "alpha": 1.0,
+      "ssim": 0.9588739166864717,
+      "mae": 2.2376818656921387
+    },
+    {
+      "alpha": 0.96875,
+      "ssim": 0.9610882446869567,
+      "mae": 2.1892523765563965
+    },
+    {
+      "alpha": 0.9375,
+      "ssim": 0.9632750604259191,
+      "mae": 2.1373507976531982
+    },
+    {
+      "alpha": 0.90625,
+      "ssim": 0.9654682723867307,
+      "mae": 2.0846097469329834
+    },
+    {
+      "alpha": 0.875,
+      "ssim": 0.9676695489151803,
+      "mae": 2.033299207687378
+    },
+    {
+      "alpha": 0.84375,
+      "ssim": 0.9698117604671692,
+      "mae": 1.9797829389572144
+    },
+    {
+      "alpha": 0.8125,
+      "ssim": 0.9719874814470298,
+      "mae": 1.9219111204147339
+    }
+  ],
+  "selection": "largest_fixed_one_over_32_blend_with_ssim_at_least_0p97_mae_at_most_4",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "chosen": {
+    "alpha": 0.8125,
+    "ssim": 0.9719874814470298,
+    "mae": 1.9219111204147339
+  },
+  "prepared_sha256": "c3a1c3660794b4b6a49cbcc48d424412ffdcab25a7db65b9c62328d479cd65a0",
+  "status": "completed"
+}

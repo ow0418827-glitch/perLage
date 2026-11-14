@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-11-07T07:42:47.114830+00:00",
+  "reason": "Historical prefix and independent regenerated prefix differ before any formal ranking; add byte-identical current-prefix paired control.",
+  "primary_perlage_control": "perlage_pixel_control",
+  "historical_comparison_retained": true,
+  "common_prefix_reused_not_regenerated": true,
+  "reused_instruction_steps": 30,
+  "reused_latent_steps": 80,
+  "new_pixel_steps": [
+    20,
+    60
+  ],
+  "new_final_latent_steps": 40,
+  "only_configuration_changes": [
+    "pixel_optimization",
+    "initialization.optimizer.pixel_clean_steps",
+    "initialization.optimizer.pixel_diffusion_steps",
+    "initialization.optimizer.pixel_levels",
+    "latent.auxiliary_levels"
+  ],
+  "total_variants": 9,
+  "queries_per_variant": 20,
+  "global_memory_count": 189,
+  "full_scores_to_recompute": 34020,
+  "formal_evaluation_started": false,
+  "source_audit_sha256": "389cca210f6f2c0ca7cb43ed098be87eadd7b1a823ee4af54db206ba2c5b40c2"
+}

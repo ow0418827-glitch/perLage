@@ -1,0 +1,745 @@
+{
+  "schema_version": 1,
+  "audited_at": "2026-11-11T07:16:29.979513+00:00",
+  "previous_run": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111",
+  "scope": "read_only_artifact_audit_no_generation_no_new_embedding_inference",
+  "completion_bindings": {
+    "plan": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\EXPERIMENT_PLAN.json",
+      "expected": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+      "actual": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+      "passed": true
+    },
+    "frozen_images": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\FROZEN_IMAGES.json",
+      "expected": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+      "actual": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+      "passed": true
+    },
+    "independent_verification": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\INDEPENDENT_VERIFICATION.json",
+      "expected": "9a77662d1177de60ce3327b39ff1e9b2f8d90412cadbe751788c1f9d7c51a24e",
+      "actual": "9a77662d1177de60ce3327b39ff1e9b2f8d90412cadbe751788c1f9d7c51a24e",
+      "passed": true
+    },
+    "summary": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\SUMMARY.json",
+      "expected": "88296726c262690012641f53877f50d39fe39c655762b14a1541c0361cb0fd60",
+      "actual": "88296726c262690012641f53877f50d39fe39c655762b14a1541c0361cb0fd60",
+      "passed": true
+    },
+    "report": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\REPORT.md",
+      "expected": "8c4ff0dbd9fde10ced551d79b275d7cc8431d20bffe9496edaab7cc49a5a9078",
+      "actual": "8c4ff0dbd9fde10ced551d79b275d7cc8431d20bffe9496edaab7cc49a5a9078",
+      "passed": true
+    }
+  },
+  "plan_implementation_bindings": [
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_relaxed_groups67_20261111.py",
+      "expected": "78dd4f237ee17b0758f8abeb706be469c2e0eac9e3ab05bd625e18313738f1ba",
+      "actual": "78dd4f237ee17b0758f8abeb706be469c2e0eac9e3ab05bd625e18313738f1ba",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\perlage_relaxed_evaluation.py",
+      "expected": "afce3e52da9526a7ae9980e90c98f5eb62d7b24f1afa2c2118fd1737bc639da4",
+      "actual": "afce3e52da9526a7ae9980e90c98f5eb62d7b24f1afa2c2118fd1737bc639da4",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_relaxed\\__init__.py",
+      "expected": "bf6641ef5f9874166b71e72c842dafe9972899e16188a51012229a917276b6c5",
+      "actual": "bf6641ef5f9874166b71e72c842dafe9972899e16188a51012229a917276b6c5",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_relaxed\\pipeline.py",
+      "expected": "1dbd2bda69c83f3929c818e41ec89862b394a0e2b9575a8bdaa5bae2d83e8b5b",
+      "actual": "1dbd2bda69c83f3929c818e41ec89862b394a0e2b9575a8bdaa5bae2d83e8b5b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\retrieval_objective.py",
+      "expected": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+      "actual": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\joint.py",
+      "expected": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+      "actual": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\clip.py",
+      "expected": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+      "actual": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\backbone.py",
+      "expected": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+      "actual": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\latent_branch.py",
+      "expected": "85e5bee60459a78e8eed76d5c9e4db4ef66c9658aa6905ff785e524a907b63fe",
+      "actual": "85e5bee60459a78e8eed76d5c9e4db4ef66c9658aa6905ff785e524a907b63fe",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\core.py",
+      "expected": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+      "actual": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\colour.py",
+      "expected": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+      "actual": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\catalog_training_guard.py",
+      "expected": "9c442302d38898a74d649c85c5648d3f5f1369358373c11f8a349b53c6ecde40",
+      "actual": "9c442302d38898a74d649c85c5648d3f5f1369358373c11f8a349b53c6ecde40",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\visual_retrieval.py",
+      "expected": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+      "actual": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\query_contract.py",
+      "expected": "56e1dd563dba5931f28a24de2d6baaa67ba00c5a5b76099e550400f81a283a44",
+      "actual": "56e1dd563dba5931f28a24de2d6baaa67ba00c5a5b76099e550400f81a283a44",
+      "passed": true
+    }
+  ],
+  "changed_implementation_files": [],
+  "generation_images": [
+    {
+      "profile": "relaxed",
+      "group": "06_jeans",
+      "ready_validation_passed": true,
+      "ready_validation_error": null,
+      "frozen_bindings": [
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\adversarial.png",
+          "expected": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+          "actual": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+          "passed": true
+        },
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\ready.json",
+          "expected": "66b9d7017349f952a097614264b73adbd60e620e1f283ebcbd79711be78e9705",
+          "actual": "66b9d7017349f952a097614264b73adbd60e620e1f283ebcbd79711be78e9705",
+          "passed": true
+        }
+      ],
+      "config_matches_plan": true,
+      "steps_completed": 160,
+      "max_history_step": 160,
+      "requested_steps": 160,
+      "full_steps_passed": true,
+      "accepted_updates": 160,
+      "rejected_updates": 0,
+      "best_step": 110,
+      "selected_training_utility": 0.8084075450897217,
+      "starting_training_utility": 0.7333706617355347,
+      "selected_ssim": 0.9387602244722182,
+      "actual_source_mae_levels": 7.050566752799311,
+      "selected_source_mae_levels": 7.0505571365356445,
+      "latent_max_levels": 63,
+      "zero_pixel_residual": true,
+      "training_access_checked": 13018,
+      "training_blocked_accesses": [],
+      "training_boundary_passed": true,
+      "identity_implementation_changes": []
+    },
+    {
+      "profile": "relaxed",
+      "group": "07_shampoo",
+      "ready_validation_passed": true,
+      "ready_validation_error": null,
+      "frozen_bindings": [
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\adversarial.png",
+          "expected": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e",
+          "actual": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e",
+          "passed": true
+        },
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\ready.json",
+          "expected": "b98ee5b8a1e23bc65f248b0603e28158046ce995cd13ce4c60a8618636a322a1",
+          "actual": "b98ee5b8a1e23bc65f248b0603e28158046ce995cd13ce4c60a8618636a322a1",
+          "passed": true
+        }
+      ],
+      "config_matches_plan": true,
+      "steps_completed": 160,
+      "max_history_step": 160,
+      "requested_steps": 160,
+      "full_steps_passed": true,
+      "accepted_updates": 64,
+      "rejected_updates": 96,
+      "best_step": 140,
+      "selected_training_utility": 0.7031767964363098,
+      "starting_training_utility": 0.6402631998062134,
+      "selected_ssim": 0.9289864242718914,
+      "actual_source_mae_levels": 5.5074293333333335,
+      "selected_source_mae_levels": 5.5074262619018555,
+      "latent_max_levels": 64,
+      "zero_pixel_residual": true,
+      "training_access_checked": 13019,
+      "training_blocked_accesses": [],
+      "training_boundary_passed": true,
+      "identity_implementation_changes": []
+    },
+    {
+      "profile": "strong",
+      "group": "06_jeans",
+      "ready_validation_passed": true,
+      "ready_validation_error": null,
+      "frozen_bindings": [
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\adversarial.png",
+          "expected": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+          "actual": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+          "passed": true
+        },
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\ready.json",
+          "expected": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68",
+          "actual": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68",
+          "passed": true
+        }
+      ],
+      "config_matches_plan": true,
+      "steps_completed": 240,
+      "max_history_step": 240,
+      "requested_steps": 240,
+      "full_steps_passed": true,
+      "accepted_updates": 240,
+      "rejected_updates": 0,
+      "best_step": 140,
+      "selected_training_utility": 0.8179161548614502,
+      "starting_training_utility": 0.7333706617355347,
+      "selected_ssim": 0.9148285071970227,
+      "actual_source_mae_levels": 8.30446856158484,
+      "selected_source_mae_levels": 8.304458618164062,
+      "latent_max_levels": 92,
+      "zero_pixel_residual": true,
+      "training_access_checked": 13034,
+      "training_blocked_accesses": [],
+      "training_boundary_passed": true,
+      "identity_implementation_changes": []
+    },
+    {
+      "profile": "strong",
+      "group": "07_shampoo",
+      "ready_validation_passed": true,
+      "ready_validation_error": null,
+      "frozen_bindings": [
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\adversarial.png",
+          "expected": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+          "actual": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+          "passed": true
+        },
+        {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\ready.json",
+          "expected": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc",
+          "actual": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc",
+          "passed": true
+        }
+      ],
+      "config_matches_plan": true,
+      "steps_completed": 240,
+      "max_history_step": 240,
+      "requested_steps": 240,
+      "full_steps_passed": true,
+      "accepted_updates": 34,
+      "rejected_updates": 206,
+      "best_step": 240,
+      "selected_training_utility": 0.6937196254730225,
+      "starting_training_utility": 0.6402631998062134,
+      "selected_ssim": 0.927028221001227,
+      "actual_source_mae_levels": 5.577937333333334,
+      "selected_source_mae_levels": 5.577934265136719,
+      "latent_max_levels": 90,
+      "zero_pixel_residual": true,
+      "training_access_checked": 13035,
+      "training_blocked_accesses": [],
+      "training_boundary_passed": true,
+      "identity_implementation_changes": []
+    }
+  ],
+  "evaluation_input_bindings": [
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\manifest.json",
+      "expected": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+      "actual": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+      "expected": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+      "actual": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+      "expected": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+      "actual": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\EXPERIMENT_PLAN.json",
+      "expected": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+      "actual": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\FROZEN_IMAGES.json",
+      "expected": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+      "actual": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json",
+      "expected": "24406364d5bd170d81ee001352db4c1a2a3aaea4d94b81b1094e71519604f98f",
+      "actual": "24406364d5bd170d81ee001352db4c1a2a3aaea4d94b81b1094e71519604f98f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\frozen.png",
+      "expected": "50ec2af805eb0ae25270592bac066a0b83e6929ad0a0c58e92a822d47d4a112e",
+      "actual": "50ec2af805eb0ae25270592bac066a0b83e6929ad0a0c58e92a822d47d4a112e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\adversarial.png",
+      "expected": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+      "actual": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\ready.json",
+      "expected": "66b9d7017349f952a097614264b73adbd60e620e1f283ebcbd79711be78e9705",
+      "actual": "66b9d7017349f952a097614264b73adbd60e620e1f283ebcbd79711be78e9705",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\adversarial.png",
+      "expected": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+      "actual": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\ready.json",
+      "expected": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68",
+      "actual": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\06_jeans\\queries.json",
+      "expected": "9a810a48cc4c7d4cbf9a2b5be5248303e0542ec7a05c7846fd4fb8cc457dfc79",
+      "actual": "9a810a48cc4c7d4cbf9a2b5be5248303e0542ec7a05c7846fd4fb8cc457dfc79",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\06_jeans\\queries.json",
+      "expected": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+      "actual": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+      "expected": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+      "actual": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json",
+      "expected": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+      "actual": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png",
+      "expected": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+      "actual": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\adversarial.png",
+      "expected": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e",
+      "actual": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\ready.json",
+      "expected": "b98ee5b8a1e23bc65f248b0603e28158046ce995cd13ce4c60a8618636a322a1",
+      "actual": "b98ee5b8a1e23bc65f248b0603e28158046ce995cd13ce4c60a8618636a322a1",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\adversarial.png",
+      "expected": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+      "actual": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\ready.json",
+      "expected": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc",
+      "actual": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\07_shampoo\\queries.json",
+      "expected": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+      "actual": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\07_shampoo\\queries.json",
+      "expected": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+      "actual": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+      "expected": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+      "actual": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\banks\\clean.json",
+      "expected": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+      "actual": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\banks\\baseline.json",
+      "expected": "20a7979ff59ac7e777ebb6b6c25a0060b65d825767d2438b30e2d31f27e4535b",
+      "actual": "20a7979ff59ac7e777ebb6b6c25a0060b65d825767d2438b30e2d31f27e4535b",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\banks\\relaxed.json",
+      "expected": "e0a0757d44bc3dfe7d8c219da06d06a1cdd0b6bb7574b151c250ba6bde506514",
+      "actual": "e0a0757d44bc3dfe7d8c219da06d06a1cdd0b6bb7574b151c250ba6bde506514",
+      "passed": true
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\banks\\strong.json",
+      "expected": "90e554a2f42ae4f8f16092244b1672af6b17804ac4cef747e793e177d3ff340b",
+      "actual": "90e554a2f42ae4f8f16092244b1672af6b17804ac4cef747e793e177d3ff340b",
+      "passed": true
+    }
+  ],
+  "ranking_content_checks": [
+    {
+      "bank": "clean",
+      "group": "06_jeans",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 20.5,
+        "mrr": 0.04880952380952382,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "clean",
+      "group": "07_shampoo",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 15.55,
+        "mrr": 0.06445378151260503,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "baseline",
+      "group": "06_jeans",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 13.35,
+        "mrr": 0.07557671495171493,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "baseline",
+      "group": "07_shampoo",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 12.55,
+        "mrr": 0.07995754245754244,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "relaxed",
+      "group": "06_jeans",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 12.45,
+        "mrr": 0.08140137640137637,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "relaxed",
+      "group": "07_shampoo",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 11.3,
+        "mrr": 0.08939976689976689,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "strong",
+      "group": "06_jeans",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 12.05,
+        "mrr": 0.08447913197913196,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    },
+    {
+      "bank": "strong",
+      "group": "07_shampoo",
+      "query_count": 20,
+      "ranking_content_passed": true,
+      "metrics_match_recomputed": true,
+      "summary_match_recomputed": true,
+      "metrics": {
+        "query_count": 20,
+        "mean_rank": 11.55,
+        "mrr": 0.08754662004662003,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "top1_rate": 0.0,
+        "top3_rate": 0.0,
+        "top5_rate": 0.0
+      }
+    }
+  ],
+  "independent_certificate_audit": {
+    "passed": true,
+    "candidate_scores_counted": 30240,
+    "rankings_counted": 160,
+    "different_pids": true,
+    "max_score_error": 0.0,
+    "retrieval_binding": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\RETRIEVAL_COMPLETED.json",
+      "expected": "b1ebd8390c9456a383e766715860785da73841a88ed2f508a6d33ca54b61d057",
+      "actual": "b1ebd8390c9456a383e766715860785da73841a88ed2f508a6d33ca54b61d057",
+      "passed": true
+    },
+    "input_binding": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\EVALUATION_INPUTS.json",
+      "expected": "ad444c63e009cafa135680d35c2d02bf695e73d8bb1813cc9d43f6784405e6a9",
+      "actual": "ad444c63e009cafa135680d35c2d02bf695e73d8bb1813cc9d43f6784405e6a9",
+      "passed": true
+    },
+    "result_bindings": [
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\clean\\06_jeans.json",
+        "expected": "4a196219c5cef23542934e6b62e084823d6fa9828a91c556d082e09c1f46e939",
+        "actual": "4a196219c5cef23542934e6b62e084823d6fa9828a91c556d082e09c1f46e939",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\clean\\07_shampoo.json",
+        "expected": "850549a59cc5526fb31d12ff09c48f5cae5f9d1110db35840e357c360cf50615",
+        "actual": "850549a59cc5526fb31d12ff09c48f5cae5f9d1110db35840e357c360cf50615",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\baseline\\06_jeans.json",
+        "expected": "416b71026ba817b20be3f83171297d55f2e97dacca2d65b5daaa4dff327f8a35",
+        "actual": "416b71026ba817b20be3f83171297d55f2e97dacca2d65b5daaa4dff327f8a35",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\baseline\\07_shampoo.json",
+        "expected": "350da135f0747c79989fc19b46413fe4b1aaf96dad69772a83e17aaac4f97ba0",
+        "actual": "350da135f0747c79989fc19b46413fe4b1aaf96dad69772a83e17aaac4f97ba0",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\relaxed\\06_jeans.json",
+        "expected": "99315186df05a9abb8dc4288262bdb699dc822bb37b8193b1cd4d7960ec69fd1",
+        "actual": "99315186df05a9abb8dc4288262bdb699dc822bb37b8193b1cd4d7960ec69fd1",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\relaxed\\07_shampoo.json",
+        "expected": "1962367d74cabce926c48a608aae56813fcd05e10bafd4f810352c063f1d1824",
+        "actual": "1962367d74cabce926c48a608aae56813fcd05e10bafd4f810352c063f1d1824",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\strong\\06_jeans.json",
+        "expected": "8e5fd8dc379e40e35c949e3b3d554e56bfe1ba77da79eb27cf1013d4512ee06c",
+        "actual": "8e5fd8dc379e40e35c949e3b3d554e56bfe1ba77da79eb27cf1013d4512ee06c",
+        "passed": true
+      },
+      {
+        "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\strong\\07_shampoo.json",
+        "expected": "011de4acfbda2002d986165ece29d2d6abb5f7e9a96bc2d2bd24986a08c7e4a7",
+        "actual": "011de4acfbda2002d986165ece29d2d6abb5f7e9a96bc2d2bd24986a08c7e4a7",
+        "passed": true
+      }
+    ]
+  },
+  "previous_shopping_snapshot_bindings_current_state": [
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\SHOPPING_PAUSED.json",
+      "expected": "e02e4fdfdae6409666ac07dac566253df3f5fd3ef71a84ecce81438845ef9bd9",
+      "actual": null,
+      "passed": false
+    },
+    {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\USER_PAUSE_CHECKPOINT.json",
+      "expected": "64f3c0eb028b0b53eff2370fddcc2ea6e81dffbb33ea6b74f50063d520e3ee55",
+      "actual": "64f3c0eb028b0b53eff2370fddcc2ea6e81dffbb33ea6b74f50063d520e3ee55",
+      "passed": true
+    }
+  ],
+  "conclusions": {
+    "completion_bindings_passed": true,
+    "all_four_images_completed_valid": true,
+    "training_audits_passed": true,
+    "evaluation_inputs_unchanged": true,
+    "rankings_and_summary_passed": true,
+    "independent_certificate_passed": true
+  },
+  "interpretation": [
+    "文件摘要和完成日程可核验；已有独立显卡复算证书覆盖160个完整名次与30240分数，本次仅核验该证书及排名正文，未再次执行模型编码。",
+    "若当前代码与旧绑定不同，应解释为旧记录不再绑定当前代码；不能仅凭差异断言旧图及已冻结数值错误。",
+    "两个放宽档位仅有小幅平均名次改善，均未进入前五；不能报告显著检索成功。",
+    "旧计划保存的购物暂停文件允许因后续用户明确恢复而发生历史状态变化；本审计不写旧输出或修改购物状态。",
+    "洗发水两档最终光晕统计贴近固定门槛且拒绝更新显著，而结构相似度和平均误差未贴近门槛；光晕门控是可观察到的实际限制。牛仔裤更新全部接受，进一步改进应检查表示目标与检索键以及低维解码可达性，不能归因于相同光晕门槛。"
+  ],
+  "observed_bottlenecks": [
+    {
+      "profile": "relaxed",
+      "group": "06_jeans",
+      "editable_mask_fraction": 0.32176744186046513,
+      "halo_ceiling": 12.0,
+      "selected_halo": 0.0,
+      "halo_slack": 12.0,
+      "ssim_slack": 0.18876022447221819,
+      "mae_slack": 16.949442863464355,
+      "training_utility_gain": 0.07503688335418701
+    },
+    {
+      "profile": "relaxed",
+      "group": "07_shampoo",
+      "editable_mask_fraction": 0.42118,
+      "halo_ceiling": 12.8620334353522,
+      "selected_halo": 12.861543411257792,
+      "halo_slack": 0.000490024094409236,
+      "ssim_slack": 0.17898642427189138,
+      "mae_slack": 18.492573738098145,
+      "training_utility_gain": 0.06291359663009644
+    },
+    {
+      "profile": "strong",
+      "group": "06_jeans",
+      "editable_mask_fraction": 0.32176744186046513,
+      "halo_ceiling": 12.0,
+      "selected_halo": 0.0,
+      "halo_slack": 12.0,
+      "ssim_slack": 0.26482850719702267,
+      "mae_slack": 31.695541381835938,
+      "training_utility_gain": 0.08454549312591553
+    },
+    {
+      "profile": "strong",
+      "group": "07_shampoo",
+      "editable_mask_fraction": 0.42118,
+      "halo_ceiling": 12.8620334353522,
+      "selected_halo": 12.85265765636965,
+      "halo_slack": 0.009375778982549932,
+      "ssim_slack": 0.2770282210012269,
+      "mae_slack": 34.42206573486328,
+      "training_utility_gain": 0.05345642566680908
+    }
+  ]
+}

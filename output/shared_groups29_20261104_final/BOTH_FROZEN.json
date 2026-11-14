@@ -1,0 +1,17 @@
+{
+  "status": "frozen",
+  "groups": [
+    {
+      "key": "02_chair",
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104\\groups\\02_chair\\methods\\PerLAGE\\frozen.png",
+      "sha256": "3bd4367cc0f1b3b8064ea405a319d5269dbe9758345bfab799e7358b21f4567f",
+      "method": "PerLAGE"
+    },
+    {
+      "key": "09_toothbrush",
+      "frozen_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\frozen.png",
+      "sha256": "f0ea5ca8ede2cf2d0ac547949f959f98f02b9f84ae76ad44f8c71602fd77dcd8",
+      "method": "PerLAGE"
+    }
+  ]
+}

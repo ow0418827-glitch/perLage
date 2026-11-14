@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "groups": [
+    "02_chair",
+    "09_toothbrush"
+  ],
+  "baseline_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\reused_shared_20261104\\baseline_shared_memory.json",
+  "baseline_sha256": "af0ae1b60dd398c0548d37f76dfb5e2e389f033bb368498e0a7f5b6a27802351",
+  "active_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\shared_memory.json",
+  "training_uses_private_memory": false,
+  "both_images_frozen_before_evaluation": true,
+  "simultaneous_two_image_substitution": true,
+  "retrieval_conditions": 1,
+  "requests_per_group": 20,
+  "shopping_authorized": true,
+  "shopping_conditions": [
+    "none"
+  ],
+  "shopping_top_k": 3,
+  "stop_on_failure": true,
+  "change_seeds_or_retrain_from_private_results": false,
+  "scope_change": {
+    "reason": "user_requested_undefended_final_tests_only",
+    "previous_root": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final",
+    "previous_plan_sha256": "acfba7bcd81c4f2173bd991dc5126b7805be4d2aa898264bba33856ff6cccd06",
+    "changed_at": "2026-11-04T17:21:02.867575+00:00",
+    "images_retrained": false
+  }
+}

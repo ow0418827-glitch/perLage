@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "expected_episodes": 180,
+  "plan_sha256": "0777ba601a2e8d84fe340ecf995a2375189069bc37968675f5c5e37185644c0e",
+  "all_original_ranks_match_previous_clean": true,
+  "all_189_bank_vectors_inherited": true
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": false,
+  "target_feature_text": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "data": {
+    "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\source.jpg",
+    "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\target.jpg",
+    "source_title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+    "training_queries": [
+      "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads."
+    ]
+  },
+  "source_boxes": [
+    [
+      121,
+      40,
+      391,
+      465
+    ]
+  ],
+  "target_boxes": [
+    [
+      135,
+      51,
+      350,
+      446
+    ]
+  ],
+  "print_regions": []
+}

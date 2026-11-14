@@ -1,0 +1,343 @@
+{
+  "id": "B00BDJODWI",
+  "identity": {
+    "image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\target.jpg",
+  "title": "Aveda Invati Advanced Exfoliating Shampoo Rich - 6.7 oz",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\annotations\\target\\foreground.png",
+  "foreground_mask_sha256": "ae780727e91f6b993470b5cb0e0610088109eed12ac7d2fe2960afc19a77b3d5",
+  "boxes": [
+    [
+      2,
+      5,
+      158,
+      494
+    ]
+  ],
+  "text_regions": [
+    [
+      0.275,
+      0.314,
+      0.68125,
+      0.356
+    ],
+    [
+      0.20625,
+      0.352,
+      0.675,
+      0.38
+    ],
+    [
+      0.21875,
+      0.344,
+      0.70625,
+      0.37
+    ],
+    [
+      0.1375,
+      0.454,
+      0.8375,
+      0.502
+    ],
+    [
+      0.2,
+      0.528,
+      0.78125,
+      0.562
+    ],
+    [
+      0.1375,
+      0.554,
+      0.84375,
+      0.588
+    ],
+    [
+      0.20625,
+      0.818,
+      0.75,
+      0.852
+    ],
+    [
+      0.24375,
+      0.856,
+      0.7,
+      0.882
+    ],
+    [
+      0.25,
+      0.842,
+      0.7,
+      0.87
+    ],
+    [
+      0.2,
+      0.9,
+      0.75625,
+      0.94
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "AVEDA",
+      "confidence": 0.9924866795539856,
+      "polygon": [
+        [
+          48.0,
+          160.0
+        ],
+        [
+          106.0,
+          161.0
+        ],
+        [
+          106.0,
+          175.0
+        ],
+        [
+          47.0,
+          174.0
+        ]
+      ]
+    },
+    {
+      "text": "FIOR AG FEASTESSA",
+      "confidence": 0.6235985203700907,
+      "polygon": [
+        [
+          36.0,
+          179.0
+        ],
+        [
+          105.0,
+          181.0
+        ],
+        [
+          105.0,
+          187.0
+        ],
+        [
+          36.0,
+          186.0
+        ]
+      ]
+    },
+    {
+      "text": "NHTANOSCESCLOE",
+      "confidence": 0.5575981470091003,
+      "polygon": [
+        [
+          38.0,
+          175.0
+        ],
+        [
+          110.0,
+          175.0
+        ],
+        [
+          110.0,
+          182.0
+        ],
+        [
+          38.0,
+          181.0
+        ]
+      ]
+    },
+    {
+      "text": "scalp benefits",
+      "confidence": 0.9585095047950745,
+      "polygon": [
+        [
+          25.0,
+          231.0
+        ],
+        [
+          131.0,
+          230.0
+        ],
+        [
+          131.0,
+          247.0
+        ],
+        [
+          25.0,
+          248.0
+        ]
+      ]
+    },
+    {
+      "text": "BALANCING SHAMPOO",
+      "confidence": 0.9776413440704346,
+      "polygon": [
+        [
+          35.0,
+          267.0
+        ],
+        [
+          122.0,
+          268.0
+        ],
+        [
+          122.0,
+          278.0
+        ],
+        [
+          35.0,
+          277.0
+        ]
+      ]
+    },
+    {
+      "text": "SHAMPOOINGEQUILIBRANT",
+      "confidence": 0.9846582554635548,
+      "polygon": [
+        [
+          25.0,
+          280.0
+        ],
+        [
+          132.0,
+          280.0
+        ],
+        [
+          132.0,
+          291.0
+        ],
+        [
+          25.0,
+          291.0
+        ]
+      ]
+    },
+    {
+      "text": "e-cines hor  ",
+      "confidence": 0.6666152202166044,
+      "polygon": [
+        [
+          36.0,
+          413.0
+        ],
+        [
+          117.0,
+          412.0
+        ],
+        [
+          117.0,
+          422.0
+        ],
+        [
+          36.0,
+          423.0
+        ]
+      ]
+    },
+    {
+      "text": "hwetecce",
+      "confidence": 0.5766648910939693,
+      "polygon": [
+        [
+          42.0,
+          431.0
+        ],
+        [
+          109.0,
+          431.0
+        ],
+        [
+          109.0,
+          438.0
+        ],
+        [
+          42.0,
+          438.0
+        ]
+      ]
+    },
+    {
+      "text": "eltesescuee",
+      "confidence": 0.5601743920282884,
+      "polygon": [
+        [
+          43.0,
+          424.0
+        ],
+        [
+          109.0,
+          424.0
+        ],
+        [
+          109.0,
+          432.0
+        ],
+        [
+          43.0,
+          432.0
+        ]
+      ]
+    },
+    {
+      "text": "33.8oz/ozlig/1L",
+      "confidence": 0.79696178038915,
+      "polygon": [
+        [
+          35.0,
+          453.0
+        ],
+        [
+          118.0,
+          454.0
+        ],
+        [
+          118.0,
+          467.0
+        ],
+        [
+          35.0,
+          466.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9649103283882141,
+      "foreground_ratio": 0.8102625,
+      "rough_coverage": 0.9931544695481336,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.8051968812942505,
+      "foreground_ratio": 0.708425,
+      "rough_coverage": 0.8698735265225933,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.8856616616249084,
+      "foreground_ratio": 0.7627,
+      "rough_coverage": 0.9365176817288802,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\07_shampoo\\annotations\\target\\review_overlay.png",
+  "observed_seconds": 4.4895527999979095
+}

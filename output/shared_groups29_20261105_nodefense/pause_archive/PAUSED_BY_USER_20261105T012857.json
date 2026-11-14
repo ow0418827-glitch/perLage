@@ -1,0 +1,18 @@
+{
+  "status": "paused_by_user",
+  "paused_at": "2026-11-04T17:28:57.655092+00:00",
+  "previous_state": {
+    "status": "running",
+    "stage": "evaluate",
+    "started_at": "2026-11-04T17:22:33.041097+00:00",
+    "supervisor_pid": 13596,
+    "log": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_nodefense\\logs\\evaluate.log",
+    "child_pid": 35324
+  },
+  "generated_images": 2,
+  "retrieval_rows": 4,
+  "retrieval_rankings": 80,
+  "independent_verification_completed": false,
+  "shopping_episodes": 0,
+  "resume_requires_explicit_user_request": true
+}

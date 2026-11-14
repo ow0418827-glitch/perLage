@@ -1,0 +1,61 @@
+{
+  "id": "B07Z7MQSM1",
+  "identity": {
+    "image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\05_hair_extension\\source.jpg",
+  "title": "Kinky Straight Clip In Human Hair Extensions for Black Women 8pcs 18 Clips 120g Thick Double Weft Clip In Hair Extension 100% Brazilian Virgin Hair Natural Black (16 inch)",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\05_hair_extension\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "baa165b88dcc11da5f91e4f45e55ec059b4b7bd65797f6713f19956003983e12",
+  "boxes": [
+    [
+      0,
+      6,
+      494,
+      499
+    ]
+  ],
+  "text_regions": [],
+  "ocr": [],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.6171729564666748,
+      "foreground_ratio": 0.682684,
+      "rough_coverage": 0.6853760484979423,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.1328144073486328,
+      "foreground_ratio": 0.019704,
+      "rough_coverage": 0.019843365189666777,
+      "accepted": false
+    },
+    {
+      "index": 2,
+      "iou": 0.3301770091056824,
+      "foreground_ratio": 0.359476,
+      "rough_coverage": 0.3622391603148819,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\05_hair_extension\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 2.6125493999970786
+}

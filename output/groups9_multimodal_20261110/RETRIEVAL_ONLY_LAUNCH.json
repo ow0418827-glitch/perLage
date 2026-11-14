@@ -1,0 +1,8 @@
+{
+  "pid": 50024,
+  "launched_at": "2026-11-10T22:35:57.0735959+08:00",
+  "scope": "retrieval_only",
+  "command": "tools/run_groups9_multimodal_20261110.py --retrieval-only",
+  "automatic_shopping_allowed": false,
+  "automation_status": "PAUSED"
+}

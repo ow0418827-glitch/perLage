@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-11-10T14:59:16.039352+00:00",
+  "original_plan_unchanged": true,
+  "new_scope": "both_retrievals_before_shopping_quality_gate",
+  "focused_gate_tests_passed": 18,
+  "files": {
+    "tools/run_groups9_multimodal_20261110.py": "7cb6a7dba9f322c282a3e97ea93850b5238360007f0a78310d656af6480bb198",
+    "src/tests/test_groups9_multimodal_queue.py": "18e3a45fbe35ec528ef4801c3bdf25974feab07ae28644407dce2890f1765886"
+  },
+  "current_scope": "shopping_after_both_retrievals_and_strict_improvement_gate",
+  "gate_sha256": "4f833ff928b7e73abb9a64be56a3efcc1e40a646d5794283ffa44356bf77bec4"
+}

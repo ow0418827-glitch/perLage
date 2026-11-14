@@ -1,0 +1,47 @@
+{
+  "identity": {
+    "source_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "regions": [
+      [
+        0.22,
+        0.4,
+        0.78,
+        0.95
+      ]
+    ],
+    "source_foreground_sha256": "1645f325d01f924ecbc874e69eabaa39944ad23f253e36e53242281dd39d3fb9",
+    "implementation_sha256": "e2f88d618d1d1c99c0cfb4ea40858832b840cb73f67722adf68b228b407c4bcb",
+    "material_implementation_sha256": "d3bb8727635fede93813e340d6ec00f08b399e19900f59eea6888a945b872de4",
+    "palette_implementation_sha256": "47ee11d20730b21169b5e000b6c6fc04deeef9407446370e922910a84231d397",
+    "config": {
+      "feather_pixels": 2.0
+    },
+    "selection_uses_source_only": true,
+    "content_semantics_certified": false
+  },
+  "files": {
+    "edit": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\09_toothbrush\\generation\\initialization\\content_masks\\edit.png",
+      "sha256": "17fbd71b67d99976bc6b90d31c3dd4c8ab72ded7f9fac2514f0787a3094c2efb"
+    },
+    "ink": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\09_toothbrush\\generation\\initialization\\content_masks\\ink.png",
+      "sha256": "27214886e0ada313fe78d7a8d70725781896fb191e28c3f973194a343c2e87e5"
+    },
+    "core": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\09_toothbrush\\generation\\initialization\\content_masks\\core.png",
+      "sha256": "27214886e0ada313fe78d7a8d70725781896fb191e28c3f973194a343c2e87e5"
+    },
+    "legacy_region": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\09_toothbrush\\generation\\initialization\\content_masks\\legacy_region.png",
+      "sha256": "88c78a3576bfccc5287af8618dc70d1887a8eb9c52341d060e2c257a3e3fcab9"
+    }
+  },
+  "legacy_protected_pixels": 77000,
+  "protected_ink_pixels": 12106,
+  "protected_core_pixels": 12106,
+  "released_legacy_pixels": 64895,
+  "source_derived_candidate_mask": true,
+  "requires_manual_content_and_logo_review": true,
+  "caveat": "Public source material separation; exact protected pixels do not certify all content semantics."
+}

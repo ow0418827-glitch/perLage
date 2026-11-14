@@ -1,0 +1,46 @@
+{
+  "group": "05_hair_extension",
+  "category": "hair_extensions",
+  "target": {
+    "asin": "B01460C2I2",
+    "brand": "S-noilite",
+    "category": "hair extensions",
+    "attributes": [
+      "real human hair",
+      "double weft clip in",
+      "silk straight",
+      "hair styling"
+    ],
+    "canonical_sentence": "I want to buy hair extensions with real human hair and double weft clip in.",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double weft clip in.",
+      "I would like to purchase hair extensions featuring silk straight texture and double weft.",
+      "Looking to buy hair extensions with clip in human hair for natural volume."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B07Z7MQSM1",
+    "brand": "Generic",
+    "category": "hair extensions",
+    "attributes": [
+      "clip in human hair",
+      "double weft",
+      "kinky straight",
+      "natural black"
+    ],
+    "canonical_sentence": "I want to buy hair extensions with clip in human hair and double weft.",
+    "training_queries": [
+      "I want to buy hair extensions with clip in human hair and double weft.",
+      "I would like to purchase hair extensions featuring kinky straight texture and stainless steel clips.",
+      "Looking to buy hair extensions with natural black virgin hair and full volume."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy hair extensions with real human hair and double weft clip in.",
+  "alignment_training_queries": [
+    "I want to buy hair extensions with real human hair and double weft clip in.",
+    "I would like to purchase hair extensions featuring silk straight texture and double weft.",
+    "Looking to buy hair extensions with clip in human hair for natural volume."
+  ]
+}

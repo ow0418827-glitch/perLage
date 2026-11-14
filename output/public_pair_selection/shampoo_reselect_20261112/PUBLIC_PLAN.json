@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "config": {
+    "schema_version": 2,
+    "seed": 42,
+    "candidate_limit": 32,
+    "calibration_path": "output/public_pair_selection/shampoo_reselect_20261112/data/calibration/threshold.json",
+    "models": {
+      "batch_size": 16
+    },
+    "groups": [
+      {
+        "key": "07_shampoo",
+        "target_id": "B00BDJODWI"
+      }
+    ],
+    "subtype_filters": {
+      "07_shampoo": {
+        "policy": "shampoo_human_hair_only_v1",
+        "include": "\\bshampoos?\\b|洗发",
+        "exclude": "\\b(?:carpet|rug|upholstery|auto|car|pet|dog|cat|puppy|horse|equine|floor|machine|extracter|extractor|empty|wig|doll|cape|basin|station)\\b|\\bshampoo\\s+(?:brush|bowl|sink|mat|tray|cap|dispenser|bottles?\\s+set)s?\\b|\\brefillable\\b.*\\bbottles?\\b"
+      }
+    }
+  },
+  "selection": {
+    "seed": 42,
+    "calibration_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\calibration\\threshold.json",
+    "min_image_side": 64
+  },
+  "calibration_sha256": "209165fdca34ef7f05732d0f4c68f638c24ba53fdcbbff9933ab74a13c3e25bc",
+  "type_rules_sha256": "f99a95baab735fd1374168b10a2e5a5bae4ed3169d85af9ab465f3f23e0bf3bd",
+  "implementation_sha256": {
+    "src/visual/pair_selection.py": "14efc93fc355e10ce6125d7cd085d4137ca5caba117240cb589e1f02aa10a8b6",
+    "src/visual/shape_calibration.py": "cba63f5963335bfb7b9e3127bdbb9f6a9ed40083cf1737df2bda7cfd3b292bb2",
+    "src/visual/selection/webshop_public.py": "b284890a3a3d58acc1a60b781ced4e6181419e9b17ac184f516389fdb95ee416",
+    "src/experiments/public_pair_selection.py": "883699e6897a860bb5739974ca95fe84dc8494f6e5b88932f2ae15813859284d"
+  },
+  "ownership_policy": "simulated_controlled_public_subset_sha256_even_v1",
+  "target_ids_fixed": [
+    "B00BDJODWI"
+  ],
+  "formal_queries_used": false,
+  "victim_memory_used": false,
+  "shopping_allowed": false,
+  "annotation_scope": "drawn_source_and_target_only",
+  "empty_set_policy": "stop_without_relaxation"
+}

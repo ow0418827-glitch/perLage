@@ -1,0 +1,24 @@
+{
+  "scope": "completed_new_method_only_original_control_pending",
+  "frozen_at": "2026-11-06T12:27:04.036095+00:00",
+  "images": {
+    "unmodified_source": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "complete_initialization_before_color": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\initialization\\attack\\adversarial.png",
+      "sha256": "2605434df9be943194528cbd75a97ecb0bc2c14fdfa7350e2c734a13f9ed0307"
+    },
+    "color_seed_before_final_refinement": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\color_harmonization\\initial.png",
+      "sha256": "6ff7fd687c71ad9a0e39c22f8903b9279ca5858b41ad096e07442d1bf855c14a"
+    },
+    "complete_new_final": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\frozen.png",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb"
+    }
+  },
+  "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "all_new_training_finished": true
+}

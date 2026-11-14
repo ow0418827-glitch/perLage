@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "original_input_sha256": "2961c24e91c7ebf787cf3e5a68dd2f21f09959c2d91e72ede62a651f2cdf6131",
+  "score_comparisons": 3800,
+  "maximum_score_error": 8.940696716308594e-08,
+  "tolerance": 1e-06,
+  "all_ids_ranks_images_and_other_fields_exactly_equal": true,
+  "original_frozen_bytes_preserved": true
+}

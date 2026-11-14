@@ -1,0 +1,6 @@
+{
+  "shopping_allowed": true,
+  "external_model_calls_allowed": true,
+  "scope": "groups9_multimodal_20261110_two_methods_360",
+  "user_instruction": "用户要求特点文字加无品牌无商品名模糊照片，原始像素方法后再无像素感知方法，等待现有基础对照完成"
+}

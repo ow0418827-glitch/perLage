@@ -1,0 +1,35 @@
+{
+  "group": "07_shampoo",
+  "source_metadata": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\metadata.json",
+  "metrics": {
+    "joint_scores": {
+      "start": 0.6926685571670532,
+      "step500": 0.9530189633369446,
+      "end": 0.9739245176315308,
+      "total_gain": 0.28125596046447754,
+      "last500_gain": 0.02090555429458618,
+      "last500_fraction": 0.07432928447120515,
+      "last100_gain": 0.004512786865234375
+    },
+    "training_utility": {
+      "start": 0.48990246653556824,
+      "step500": 0.9438806772232056,
+      "end": 0.9698046445846558,
+      "total_gain": 0.4799021780490875,
+      "last500_gain": 0.025923967361450195,
+      "last500_fraction": 0.0540192742338388,
+      "last100_gain": 0.005498766899108887
+    },
+    "selection_utility": {
+      "start": 0.4893663823604584,
+      "step500": 0.9422745108604431,
+      "end": 0.9683670401573181,
+      "total_gain": 0.47900065779685974,
+      "last500_gain": 0.026092529296875,
+      "last500_fraction": 0.05447284648185312,
+      "last100_gain": 0.0055252909660339355
+    }
+  },
+  "intermediate_formal_rankings_available": false,
+  "interpretation": "training_gain_diminishes_but_formal_rank_saturation_not_proven"
+}

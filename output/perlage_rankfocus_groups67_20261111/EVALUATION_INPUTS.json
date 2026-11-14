@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "groups": {
+    "06_jeans": {
+      "name": "第六组牛仔裤",
+      "source_id": "B07FRKQNFV",
+      "target_id": "B09HH96NJY",
+      "source_memory_id": "groups9_reference_06_jeans_B07FRKQNFV",
+      "queries": [
+        {
+          "task_id": "feature_01",
+          "instruction": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_02",
+          "instruction": "I would like to purchase jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_03",
+          "instruction": "Looking to buy jeans with a baggy straight-leg cut and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_04",
+          "instruction": "I am looking to buy jeans with a high waist and a baggy straight-leg cut.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_05",
+          "instruction": "Please help me buy jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_06",
+          "instruction": "I am shopping for jeans with a baggy straight-leg cut and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_07",
+          "instruction": "I would like to buy jeans with a high waist and a baggy straight-leg cut.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_08",
+          "instruction": "Help me purchase jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_09",
+          "instruction": "I am looking for jeans with a baggy straight-leg cut and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_10",
+          "instruction": "Please find jeans with a high waist and a baggy straight-leg cut for me to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_11",
+          "instruction": "I want to purchase jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_12",
+          "instruction": "Please help me purchase jeans with a baggy straight-leg cut and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_13",
+          "instruction": "I need to buy jeans with a high waist and a baggy straight-leg cut.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_14",
+          "instruction": "I would like help finding jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_15",
+          "instruction": "Find me jeans with a baggy straight-leg cut and flap pockets to purchase.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_16",
+          "instruction": "Please look for jeans with a high waist and a baggy straight-leg cut that I can buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_17",
+          "instruction": "I am interested in buying jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_18",
+          "instruction": "I would like to shop for jeans with a baggy straight-leg cut and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_19",
+          "instruction": "Help me find jeans with a high waist and a baggy straight-leg cut to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        },
+        {
+          "task_id": "feature_20",
+          "instruction": "I am ready to purchase jeans featuring a high waist and flap pockets.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png",
+          "query_image_sha256": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf"
+        }
+      ],
+      "training_overlap": {
+        "normalized_exact_overlap_count": 1,
+        "query_numbers": [
+          1
+        ],
+        "normalization": "whitespace_and_casefold",
+        "policy": "user_requested_templates_overlap_allowed_reported",
+        "semantic_independence_claimed": false
+      }
+    },
+    "07_shampoo": {
+      "name": "第七组洗发水",
+      "source_id": "B08XYBS678",
+      "target_id": "B00BDJODWI",
+      "source_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+      "queries": [
+        {
+          "task_id": "feature_01",
+          "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_02",
+          "instruction": "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_03",
+          "instruction": "Looking to buy shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_04",
+          "instruction": "I am looking to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_05",
+          "instruction": "Please help me buy shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_06",
+          "instruction": "I am shopping for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_07",
+          "instruction": "I would like to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_08",
+          "instruction": "Help me purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_09",
+          "instruction": "I am looking for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_10",
+          "instruction": "Please find shampoo with plant-based haircare ingredients and a balancing formula for me to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_11",
+          "instruction": "I want to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_12",
+          "instruction": "Please help me purchase shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_13",
+          "instruction": "I need to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_14",
+          "instruction": "I would like help finding shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_15",
+          "instruction": "Find me shampoo with a balancing formula and plant and flower essences to purchase.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_16",
+          "instruction": "Please look for shampoo with plant-based haircare ingredients and a balancing formula that I can buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_17",
+          "instruction": "I am interested in buying shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_18",
+          "instruction": "I would like to shop for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_19",
+          "instruction": "Help me find shampoo with plant-based haircare ingredients and a balancing formula to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_20",
+          "instruction": "I am ready to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        }
+      ],
+      "training_overlap": {
+        "normalized_exact_overlap_count": 1,
+        "query_numbers": [
+          1
+        ],
+        "normalization": "whitespace_and_casefold",
+        "policy": "user_requested_templates_overlap_allowed_reported",
+        "semantic_independence_claimed": false
+      }
+    }
+  },
+  "bank_order": [
+    "clean",
+    "baseline",
+    "lucid",
+    "previous_strong",
+    "rankfocus",
+    "rankfocus_wide"
+  ],
+  "pool_count": 189,
+  "banks": {
+    "clean": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\clean.json",
+      "sha256": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a"
+    },
+    "baseline": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\baseline.json",
+      "sha256": "20a7979ff59ac7e777ebb6b6c25a0060b65d825767d2438b30e2d31f27e4535b"
+    },
+    "lucid": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\lucid.json",
+      "sha256": "cff6756564a9f98e0ff0cf6ca2ec70b32b964fb74f8ed13591aaea435918c018"
+    },
+    "previous_strong": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\previous_strong.json",
+      "sha256": "90e554a2f42ae4f8f16092244b1672af6b17804ac4cef747e793e177d3ff340b"
+    },
+    "rankfocus": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\rankfocus.json",
+      "sha256": "829edf1a032cf5137cfd714b65c08f4490f4f07369eb1bae1a3723a6bdee063c"
+    },
+    "rankfocus_wide": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\rankfocus_wide.json",
+      "sha256": "1ea27c250f01926c0ce33c135209aae6664982350ac8a2688233f858688b18f4"
+    }
+  },
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "encoder_config_sha256": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+  "bindings": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\manifest.json": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\EXPERIMENT_PLAN.json": "145b86be37093686d2b589dd4e90a70f877a6b9c25c414982858fb1edce53936",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\FROZEN_IMAGES.json": "0619eddb154de647cd579e147a9609c07efb1bccb0a0d5c133c6e0ab4dd8dbbf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "24406364d5bd170d81ee001352db4c1a2a3aaea4d94b81b1094e71519604f98f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\frozen.png": "50ec2af805eb0ae25270592bac066a0b83e6929ad0a0c58e92a822d47d4a112e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\06_jeans\\methods\\lucid\\FROZEN_IMAGE.json": "03832ff2032e964db0cc8cf498a455eb5623d20967d036dac9cc60e0938b2e81",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\06_jeans\\methods\\lucid\\frozen.png": "56361e4b220dc034d110532055ae47b58eca2f658f3e9c7f1d64ce27759704b8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\FROZEN_IMAGES.json": "4e4ff252349484a90b8890f2ef41afc6f613b6dab5ed734b4891ca3c1301bb2f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\adversarial.png": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\ready.json": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\06_jeans\\adversarial.png": "d0ce3ff42390118b651445818b4f1437204daf0acfc523ccada2f884b0811b89",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\06_jeans\\ready.json": "7f76e9ead8413b7755278216d890528fdf712b0dd1b8f90adfff00ea9c0f550c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\06_jeans\\adversarial.png": "86ef8439e01f487fc73d8bd02e57e202aa24d74673a3918e17c1c5c4574a1c88",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\06_jeans\\ready.json": "5edf327844ef66ea6c049196786d0c0ddc02ddcd5cc23341b4f1f857e8337d21",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\06_jeans\\queries.json": "9a810a48cc4c7d4cbf9a2b5be5248303e0542ec7a05c7846fd4fb8cc457dfc79",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\06_jeans\\queries.json": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\06_jeans\\query.png": "e2a5173c9d935f9aea00869fb989494712bcd159da30fc9a914e2fbfb830eadf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\FROZEN_IMAGE.json": "55e7f27cb3039979ad2a8203d0e761f2523a1ac87db321a8148fb52ea442e4f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\adversarial.png": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\ready.json": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\adversarial.png": "3ea5c7c9ef5a3caf48a33fc24f406bb82e97f3f6db96d3e102c2e38e6b10b3c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\ready.json": "7a0a74ed675d674c8885d4947b134ed50a296baebdfd6cc13001d13b3e443831",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\07_shampoo\\adversarial.png": "88b1e4873dd3a3cd8a535f557cc69c363e82176ecbf08ac33b333edbd77544f8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\07_shampoo\\ready.json": "f7a4be213ece3d67e44041e6ba6266298b913d2a1a56a4cbb6959600a7002d15",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\07_shampoo\\queries.json": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\07_shampoo\\queries.json": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\clean.json": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\baseline.json": "20a7979ff59ac7e777ebb6b6c25a0060b65d825767d2438b30e2d31f27e4535b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\lucid.json": "cff6756564a9f98e0ff0cf6ca2ec70b32b964fb74f8ed13591aaea435918c018",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\previous_strong.json": "90e554a2f42ae4f8f16092244b1672af6b17804ac4cef747e793e177d3ff340b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\rankfocus.json": "829edf1a032cf5137cfd714b65c08f4490f4f07369eb1bae1a3723a6bdee063c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\banks\\rankfocus_wide.json": "1ea27c250f01926c0ce33c135209aae6664982350ac8a2688233f858688b18f4"
+  },
+  "query_mode": "joint",
+  "query_image_weight": 0.5,
+  "key_image_weight": 0.5,
+  "index_text": "product_feature",
+  "condition": "none",
+  "shopping_allowed": false,
+  "simultaneous_replacements_per_modified_bank": 2,
+  "expected_rankings": 240,
+  "expected_score_comparisons": 45360,
+  "baseline_policy": "recompute_original_perlage_images_for_both_groups_in_same_complete_pool",
+  "current_round_rankings_used_for_selection": false,
+  "historical_group_results_seen_for_development": true,
+  "input_read_only_after_all_four_complete_images": true
+}

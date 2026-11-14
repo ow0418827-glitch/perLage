@@ -1,0 +1,610 @@
+{
+  "status": "completed",
+  "method": "perlage_generation_initialization",
+  "config": {
+    "latent_clean_steps": 40,
+    "latent_diffusion_steps": 40,
+    "pixel_clean_steps": 0,
+    "pixel_diffusion_steps": 0,
+    "latent_levels": 32,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.012,
+    "latent_smoothing_mix": 0.1,
+    "pixel_levels": 0,
+    "pixel_start_levels": 0.5,
+    "pixel_end_levels": 0.08,
+    "momentum": 0.85,
+    "temperature": 0.04,
+    "teacher_weight": 0.5,
+    "semantic_image_weight": 1.0,
+    "semantic_joint_weight": 0.5,
+    "semantic_teacher_weight": 0.05,
+    "image_weight": 0.05,
+    "diffusion_weight": 3.0,
+    "shadow_weight": 0.0,
+    "guard_tolerance": 0.01,
+    "latent_guard_tolerance": 0.04,
+    "development_temperature": 0.01,
+    "guard_backtracks": 4,
+    "source_ssim_floor": 0.93,
+    "ordinary_ssim_floor": 0.95,
+    "source_mae_ceiling": 6.0,
+    "ssim_safety_buffer": 1e-05,
+    "tv_weight": 0.003,
+    "l2_weight": 0.001,
+    "check_every": 20,
+    "full_eot_samples": 1,
+    "diffusion_timesteps": [
+      99,
+      199,
+      399
+    ],
+    "validation_seeds": [
+      9301,
+      9302
+    ],
+    "training_seed_base": 710000000,
+    "ray_repair_iterations": 8
+  },
+  "history": [
+    {
+      "phase": "latent_clean",
+      "step": 0,
+      "ordinary_scores": [
+        [
+          0.6404384970664978
+        ],
+        [
+          0.6376726031303406
+        ],
+        [
+          0.6334247589111328
+        ],
+        [
+          0.6262130737304688
+        ],
+        [
+          0.6029657125473022
+        ],
+        [
+          0.6423912644386292
+        ],
+        [
+          0.6432033777236938
+        ],
+        [
+          0.6362099051475525
+        ],
+        [
+          0.634117603302002
+        ],
+        [
+          0.6389027833938599
+        ]
+      ],
+      "source_ssim": 0.985089932344946,
+      "source_mae": 3.601518392562866,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.6316743493080139
+      ]
+    },
+    {
+      "phase": "latent_clean",
+      "step": 20,
+      "ordinary_scores": [
+        [
+          0.6925213932991028
+        ],
+        [
+          0.6899035573005676
+        ],
+        [
+          0.6855930685997009
+        ],
+        [
+          0.6754702925682068
+        ],
+        [
+          0.6561585068702698
+        ],
+        [
+          0.6906803250312805
+        ],
+        [
+          0.6937940120697021
+        ],
+        [
+          0.677247941493988
+        ],
+        [
+          0.6772558689117432
+        ],
+        [
+          0.6913249492645264
+        ]
+      ],
+      "source_ssim": 0.9677555672700646,
+      "source_mae": 5.592793941497803,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.6811179028009064
+      ]
+    },
+    {
+      "phase": "latent_clean",
+      "step": 40,
+      "ordinary_scores": [
+        [
+          0.689239501953125
+        ],
+        [
+          0.6873497366905212
+        ],
+        [
+          0.6824882626533508
+        ],
+        [
+          0.6717497706413269
+        ],
+        [
+          0.6496532559394836
+        ],
+        [
+          0.6883556842803955
+        ],
+        [
+          0.6899917721748352
+        ],
+        [
+          0.6685473322868347
+        ],
+        [
+          0.6754300594329834
+        ],
+        [
+          0.6881199479103088
+        ]
+      ],
+      "source_ssim": 0.9677308837219932,
+      "source_mae": 5.624914169311523,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.6768268638552399
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 0,
+      "ordinary_scores": [
+        [
+          0.6925213932991028
+        ],
+        [
+          0.6899035573005676
+        ],
+        [
+          0.6855930685997009
+        ],
+        [
+          0.6754702925682068
+        ],
+        [
+          0.6561585068702698
+        ],
+        [
+          0.6906803250312805
+        ],
+        [
+          0.6937940120697021
+        ],
+        [
+          0.677247941493988
+        ],
+        [
+          0.6772558689117432
+        ],
+        [
+          0.6913249492645264
+        ]
+      ],
+      "source_ssim": 0.9677555672700646,
+      "source_mae": 5.592793941497803,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.6464146375656128,
+          "public_margin_value": 0.6464146375656128
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.6452416181564331,
+          "public_margin_value": 0.6452416181564331
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.6355272531509399,
+          "public_margin_value": 0.6355272531509399
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.6439256072044373,
+          "public_margin_value": 0.6439256072044373
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.6448732614517212,
+          "public_margin_value": 0.6448732614517212
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.6397978067398071,
+          "public_margin_value": 0.6397978067398071
+        }
+      ],
+      "guard_min": 0.04000002145767212,
+      "selection": [
+        1,
+        1,
+        0,
+        0.6420752511476167
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 20,
+      "ordinary_scores": [
+        [
+          0.6716777682304382
+        ],
+        [
+          0.6707105040550232
+        ],
+        [
+          0.668216347694397
+        ],
+        [
+          0.6573604345321655
+        ],
+        [
+          0.6287095546722412
+        ],
+        [
+          0.6803269386291504
+        ],
+        [
+          0.6785006523132324
+        ],
+        [
+          0.6692612171173096
+        ],
+        [
+          0.6712177395820618
+        ],
+        [
+          0.6709564924240112
+        ]
+      ],
+      "source_ssim": 0.9671639337222278,
+      "source_mae": 5.17091178894043,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.6573745012283325,
+          "public_margin_value": 0.6573745012283325
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.6595603227615356,
+          "public_margin_value": 0.6595603227615356
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.6452327370643616,
+          "public_margin_value": 0.6452327370643616
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.6466332077980042,
+          "public_margin_value": 0.6466332077980042
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.64512699842453,
+          "public_margin_value": 0.64512699842453
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.638178288936615,
+          "public_margin_value": 0.638178288936615
+        }
+      ],
+      "guard_min": 0.012551069259643555,
+      "selection": [
+        1,
+        1,
+        0,
+        0.6472999745601555
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 40,
+      "ordinary_scores": [
+        [
+          0.6630771160125732
+        ],
+        [
+          0.6615609526634216
+        ],
+        [
+          0.6591808199882507
+        ],
+        [
+          0.6465809345245361
+        ],
+        [
+          0.6182518005371094
+        ],
+        [
+          0.669023871421814
+        ],
+        [
+          0.6693525910377502
+        ],
+        [
+          0.6579519510269165
+        ],
+        [
+          0.6585890650749207
+        ],
+        [
+          0.6622143387794495
+        ]
+      ],
+      "source_ssim": 0.9716982099830112,
+      "source_mae": 4.831573486328125,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.6548122763633728,
+          "public_margin_value": 0.6548122763633728
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.6573051810264587,
+          "public_margin_value": 0.6573051810264587
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.6430280208587646,
+          "public_margin_value": 0.6430280208587646
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.6442075967788696,
+          "public_margin_value": 0.6442075967788696
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.6475210189819336,
+          "public_margin_value": 0.6475210189819336
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.6409378051757812,
+          "public_margin_value": 0.6409378051757812
+        }
+      ],
+      "guard_min": 0.0020933151245117188,
+      "selection": [
+        1,
+        1,
+        0,
+        0.647057660156861
+      ]
+    }
+  ],
+  "artifacts": {
+    "latent_clean": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\08_speaker\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\latent_clean.png",
+      "sha256": "f1787e69114593e755de2efc0b108e76fa500bf7f5561fc9d4b06719e0ead339",
+      "best": {
+        "phase": "latent_clean",
+        "step": 20,
+        "ordinary_scores": [
+          [
+            0.6925213932991028
+          ],
+          [
+            0.6899035573005676
+          ],
+          [
+            0.6855930685997009
+          ],
+          [
+            0.6754702925682068
+          ],
+          [
+            0.6561585068702698
+          ],
+          [
+            0.6906803250312805
+          ],
+          [
+            0.6937940120697021
+          ],
+          [
+            0.677247941493988
+          ],
+          [
+            0.6772558689117432
+          ],
+          [
+            0.6913249492645264
+          ]
+        ],
+        "source_ssim": 0.9677555672700646,
+        "source_mae": 5.592793941497803,
+        "active_ssim_floor": 0.95,
+        "quality_ok": true,
+        "diffusion": [],
+        "guard_min": 0.0,
+        "selection": [
+          1,
+          1,
+          0,
+          0.6811179028009064
+        ]
+      }
+    },
+    "latent_diffusion": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\08_speaker\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\latent_diffusion.png",
+      "sha256": "6b3d51c24fdec88c59ebbd58ceeb53bba89cccf7dcc290fd6794957d2650fd56",
+      "best": {
+        "phase": "latent_diffusion",
+        "step": 20,
+        "ordinary_scores": [
+          [
+            0.6716777682304382
+          ],
+          [
+            0.6707105040550232
+          ],
+          [
+            0.668216347694397
+          ],
+          [
+            0.6573604345321655
+          ],
+          [
+            0.6287095546722412
+          ],
+          [
+            0.6803269386291504
+          ],
+          [
+            0.6785006523132324
+          ],
+          [
+            0.6692612171173096
+          ],
+          [
+            0.6712177395820618
+          ],
+          [
+            0.6709564924240112
+          ]
+        ],
+        "source_ssim": 0.9671639337222278,
+        "source_mae": 5.17091178894043,
+        "active_ssim_floor": 0.95,
+        "quality_ok": true,
+        "diffusion": [
+          {
+            "timestep": 99,
+            "seed": 9301,
+            "utility": 0.6573745012283325,
+            "public_margin_value": 0.6573745012283325
+          },
+          {
+            "timestep": 99,
+            "seed": 9302,
+            "utility": 0.6595603227615356,
+            "public_margin_value": 0.6595603227615356
+          },
+          {
+            "timestep": 199,
+            "seed": 9301,
+            "utility": 0.6452327370643616,
+            "public_margin_value": 0.6452327370643616
+          },
+          {
+            "timestep": 199,
+            "seed": 9302,
+            "utility": 0.6466332077980042,
+            "public_margin_value": 0.6466332077980042
+          },
+          {
+            "timestep": 399,
+            "seed": 9301,
+            "utility": 0.64512699842453,
+            "public_margin_value": 0.64512699842453
+          },
+          {
+            "timestep": 399,
+            "seed": 9302,
+            "utility": 0.638178288936615,
+            "public_margin_value": 0.638178288936615
+          }
+        ],
+        "guard_min": 0.012551069259643555,
+        "selection": [
+          1,
+          1,
+          0,
+          0.6472999745601555
+        ]
+      }
+    }
+  },
+  "output_sha256": "6b3d51c24fdec88c59ebbd58ceeb53bba89cccf7dcc290fd6794957d2650fd56",
+  "generative_anchor_sha256": "6b3d51c24fdec88c59ebbd58ceeb53bba89cccf7dcc290fd6794957d2650fd56",
+  "elapsed_seconds": 366.08334769999783,
+  "initial_generation_cost_included": false,
+  "source_ssim": 0.9671639337222278,
+  "source_mae_levels": 5.17091178894043,
+  "source_max_levels": 69.0,
+  "pixel_residual_max_levels": 0.0,
+  "pixel_residual_mae_levels": 0.0,
+  "accepted_updates": 80,
+  "rejected_updates": 0,
+  "ray_repairs": 0,
+  "feasibility_repair": "fixed_phase_reference_ray_actual_validation",
+  "peak_allocated_bytes": 6533183488,
+  "private_gallery_used": false,
+  "true_rank_used": false
+}

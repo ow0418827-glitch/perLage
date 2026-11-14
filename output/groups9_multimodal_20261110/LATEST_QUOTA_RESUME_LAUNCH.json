@@ -1,0 +1,15 @@
+{
+  "pid": 6416,
+  "launched_at": "2026-11-11T09:49:36.4981564+08:00",
+  "scope": "resume_after_quota_user_request",
+  "expected_first_pending_group": "05_hair_extension",
+  "expected_first_pending_task": "feature_12",
+  "preserved_valid_episodes": 91,
+  "order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "stdout": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\quota_resume_20261111_094936.log",
+  "stderr": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\quota_resume_20261111_094936.error.log",
+  "separate_probe_request": false
+}

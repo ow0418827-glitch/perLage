@@ -1,0 +1,556 @@
+{
+  "plan": {
+    "instruction": "Give only unprinted product surfaces a subtle coherent natural finish inspired by RGB [130, 114, 102]. Preserve the product shape, every original word, number, drawing and brand mark exactly. Preserve the scene.",
+    "editable_regions": [
+      [
+        0,
+        0,
+        1,
+        1
+      ]
+    ],
+    "reason": "主体统计选色后的统一生成步骤。",
+    "region_policy": "label_protected",
+    "feather_pixels": 3.0,
+    "protected_regions": []
+  },
+  "seed": 42,
+  "target_guidance": true,
+  "steps": 30,
+  "completed_steps": 30,
+  "strength": 1.0,
+  "working_shape": [
+    384,
+    320
+  ],
+  "text_guidance": 7.5,
+  "image_guidance": 1.5,
+  "target_scale": 8.0,
+  "robust_guidance": true,
+  "latent_clip": 0.04,
+  "source_weight": 1.0,
+  "editable_fraction": 1.0,
+  "protected_max_difference": 0,
+  "generation_seconds": 12.668008299995563,
+  "peak_allocated_bytes": 5648580608,
+  "planner": "explicit_reviewed_recipe_not_language_model",
+  "editor": "content_mask_instruction_conditioned_latent_diffusion",
+  "verifier": "ink_core_pixel_preservation_plus_manual_content_and_logo_review",
+  "original_pixel_budget_enforced": false,
+  "naturalness_certified": false,
+  "base_model": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+  "editor_model": "D:\\Material\\Literature Reading\\code\\perLage\\models\\instruct-pix2pix-editor",
+  "implementation_sha256": "18da3b2d8fbcec408deb6ab710c55266f750a5fdbc335545d897d9d2a92132c9",
+  "trace": [
+    {
+      "step": 1,
+      "timestep": 957,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8669338226318359,
+        0.7226256132125854,
+        0.8374269604682922
+      ],
+      "gradient_rms": 0.008929292671382427,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.002622110768711021,
+      "zero_gradient": false,
+      "image_score": 0.7226256132125854,
+      "joint_score": 0.656836211681366,
+      "preservation": 0.007427038159221411
+    },
+    {
+      "step": 2,
+      "timestep": 924,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8721329569816589,
+        0.7894303202629089,
+        0.8755301833152771
+      ],
+      "gradient_rms": 0.004368869587779045,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.003391662081030913,
+      "zero_gradient": false,
+      "image_score": 0.7894303202629089,
+      "joint_score": 0.6655034422874451,
+      "preservation": 0.007418984547257423
+    },
+    {
+      "step": 3,
+      "timestep": 891,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8787494897842407,
+        0.7567440867424011,
+        0.8719159364700317
+      ],
+      "gradient_rms": 0.004849907010793686,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.003394949548910765,
+      "zero_gradient": false,
+      "image_score": 0.7567440867424011,
+      "joint_score": 0.6611946821212769,
+      "preservation": 0.007869991473853588
+    },
+    {
+      "step": 4,
+      "timestep": 858,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8813436627388,
+        0.7427238821983337,
+        0.8754187226295471
+      ],
+      "gradient_rms": 0.004794631153345108,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.003469554631308782,
+      "zero_gradient": false,
+      "image_score": 0.7427238821983337,
+      "joint_score": 0.6611225605010986,
+      "preservation": 0.008551442064344883
+    },
+    {
+      "step": 5,
+      "timestep": 825,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8852338194847107,
+        0.8072041273117065,
+        0.8873246312141418
+      ],
+      "gradient_rms": 0.0025768508203327656,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.002978322310647036,
+      "zero_gradient": false,
+      "image_score": 0.8072041273117065,
+      "joint_score": 0.6703305244445801,
+      "preservation": 0.009286998771131039
+    },
+    {
+      "step": 6,
+      "timestep": 792,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8859421014785767,
+        0.774011492729187,
+        0.8972683548927307
+      ],
+      "gradient_rms": 0.0035867902915924788,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.004666778450570504,
+      "zero_gradient": false,
+      "image_score": 0.774011492729187,
+      "joint_score": 0.6659270524978638,
+      "preservation": 0.009837877936661243
+    },
+    {
+      "step": 7,
+      "timestep": 759,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8852450251579285,
+        0.7507057189941406,
+        0.8934071063995361
+      ],
+      "gradient_rms": 0.0036720542702823877,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.005377147369824519,
+      "zero_gradient": false,
+      "image_score": 0.7507057189941406,
+      "joint_score": 0.6633144021034241,
+      "preservation": 0.009932797402143478
+    },
+    {
+      "step": 8,
+      "timestep": 726,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8848814964294434,
+        0.815447211265564,
+        0.8984406590461731
+      ],
+      "gradient_rms": 0.0017939130775630474,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.003897721680095516,
+      "zero_gradient": false,
+      "image_score": 0.815447211265564,
+      "joint_score": 0.6720852851867676,
+      "preservation": 0.009879045188426971
+    },
+    {
+      "step": 9,
+      "timestep": 693,
+      "guided": true,
+      "condition_image_cosines": [
+        0.886389970779419,
+        0.7780768275260925,
+        0.8916439414024353
+      ],
+      "gradient_rms": 0.002191337523981929,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.005866636156028902,
+      "zero_gradient": false,
+      "image_score": 0.7780768275260925,
+      "joint_score": 0.6668409705162048,
+      "preservation": 0.009410778991878033
+    },
+    {
+      "step": 10,
+      "timestep": 660,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8843293190002441,
+        0.7315315008163452,
+        0.8919225335121155
+      ],
+      "gradient_rms": 0.00249797897413373,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.006823388796869473,
+      "zero_gradient": false,
+      "image_score": 0.7315315008163452,
+      "joint_score": 0.6591165065765381,
+      "preservation": 0.008532172068953514
+    },
+    {
+      "step": 11,
+      "timestep": 627,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8825103044509888,
+        0.8111402988433838,
+        0.8869812488555908
+      ],
+      "gradient_rms": 0.0011923471465706825,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.006962163698251087,
+      "zero_gradient": false,
+      "image_score": 0.8111402988433838,
+      "joint_score": 0.6701052188873291,
+      "preservation": 0.007998421788215637
+    },
+    {
+      "step": 12,
+      "timestep": 594,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8809489011764526,
+        0.7666140198707581,
+        0.8739736080169678
+      ],
+      "gradient_rms": 0.001660882611759007,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.005743818122870318,
+      "zero_gradient": false,
+      "image_score": 0.7666140198707581,
+      "joint_score": 0.6619468927383423,
+      "preservation": 0.00751695828512311
+    },
+    {
+      "step": 13,
+      "timestep": 561,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8763613104820251,
+        0.722597599029541,
+        0.8516805171966553
+      ],
+      "gradient_rms": 0.0019013503333553672,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.00738102631240191,
+      "zero_gradient": false,
+      "image_score": 0.722597599029541,
+      "joint_score": 0.6556639075279236,
+      "preservation": 0.007196736056357622
+    },
+    {
+      "step": 14,
+      "timestep": 528,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8765331506729126,
+        0.8045914173126221,
+        0.8756802082061768
+      ],
+      "gradient_rms": 0.0008925670408643782,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.007119441532683957,
+      "zero_gradient": false,
+      "image_score": 0.8045914173126221,
+      "joint_score": 0.6676596999168396,
+      "preservation": 0.0068039787001907825
+    },
+    {
+      "step": 15,
+      "timestep": 495,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8775596022605896,
+        0.7473710179328918,
+        0.8388420939445496
+      ],
+      "gradient_rms": 0.001400865614414215,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.00699145575678565,
+      "zero_gradient": false,
+      "image_score": 0.7473710179328918,
+      "joint_score": 0.6569237112998962,
+      "preservation": 0.006394697353243828
+    },
+    {
+      "step": 16,
+      "timestep": 462,
+      "guided": true,
+      "condition_image_cosines": [
+        0.878694474697113,
+        0.7230902910232544,
+        0.8740832805633545
+      ],
+      "gradient_rms": 0.0016094081802293658,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.007220662267844946,
+      "zero_gradient": false,
+      "image_score": 0.7230902910232544,
+      "joint_score": 0.6561182737350464,
+      "preservation": 0.005987975280731916
+    },
+    {
+      "step": 17,
+      "timestep": 429,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8773944973945618,
+        0.8001886606216431,
+        0.8736608624458313
+      ],
+      "gradient_rms": 0.0007544963154941797,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.007629322560167054,
+      "zero_gradient": false,
+      "image_score": 0.8001886606216431,
+      "joint_score": 0.6655925512313843,
+      "preservation": 0.0055915191769599915
+    },
+    {
+      "step": 18,
+      "timestep": 396,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8784023523330688,
+        0.7427489757537842,
+        0.8470237255096436
+      ],
+      "gradient_rms": 0.0011286900844424963,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.009683836645470283,
+      "zero_gradient": false,
+      "image_score": 0.7427489757537842,
+      "joint_score": 0.6573635935783386,
+      "preservation": 0.005191841162741184
+    },
+    {
+      "step": 19,
+      "timestep": 363,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8789465427398682,
+        0.7210310101509094,
+        0.8497389554977417
+      ],
+      "gradient_rms": 0.0013033357681706548,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.00893709351583513,
+      "zero_gradient": false,
+      "image_score": 0.7210310101509094,
+      "joint_score": 0.6538860201835632,
+      "preservation": 0.004791470244526863
+    },
+    {
+      "step": 20,
+      "timestep": 330,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8789997100830078,
+        0.7987350225448608,
+        0.8790484666824341
+      ],
+      "gradient_rms": 0.0006086495122872293,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.014511370048751764,
+      "zero_gradient": false,
+      "image_score": 0.7987350225448608,
+      "joint_score": 0.6661708354949951,
+      "preservation": 0.004423310048878193
+    },
+    {
+      "step": 21,
+      "timestep": 297,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8798984289169312,
+        0.740577220916748,
+        0.8630977272987366
+      ],
+      "gradient_rms": 0.0009409661870449781,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.01552164671477202,
+      "zero_gradient": false,
+      "image_score": 0.740577220916748,
+      "joint_score": 0.6570329070091248,
+      "preservation": 0.004092695191502571
+    },
+    {
+      "step": 22,
+      "timestep": 264,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8786081075668335,
+        0.7313385009765625,
+        0.8502203226089478
+      ],
+      "gradient_rms": 0.0010731522925198078,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.011601475332954667,
+      "zero_gradient": false,
+      "image_score": 0.7313385009765625,
+      "joint_score": 0.6550126075744629,
+      "preservation": 0.0037691041361540556
+    },
+    {
+      "step": 23,
+      "timestep": 231,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8767550587654114,
+        0.7964489459991455,
+        0.8677387237548828
+      ],
+      "gradient_rms": 0.000543441972695291,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.015262213866739491,
+      "zero_gradient": false,
+      "image_score": 0.7964489459991455,
+      "joint_score": 0.6637665033340454,
+      "preservation": 0.003476389916613698
+    },
+    {
+      "step": 24,
+      "timestep": 198,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8753993511199951,
+        0.7401155233383179,
+        0.8604559302330017
+      ],
+      "gradient_rms": 0.0008637279970571399,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.014697002295145156,
+      "zero_gradient": false,
+      "image_score": 0.7401155233383179,
+      "joint_score": 0.6562832593917847,
+      "preservation": 0.003233678638935089
+    },
+    {
+      "step": 25,
+      "timestep": 165,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8752071857452393,
+        0.7296820878982544,
+        0.8547019362449646
+      ],
+      "gradient_rms": 0.0010506099788472056,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.01853301943484132,
+      "zero_gradient": false,
+      "image_score": 0.7296820878982544,
+      "joint_score": 0.6552127003669739,
+      "preservation": 0.0030292519368231297
+    },
+    {
+      "step": 26,
+      "timestep": 132,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8759645223617554,
+        0.794072687625885,
+        0.8691733479499817
+      ],
+      "gradient_rms": 0.0005266439984552562,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.01634247670323586,
+      "zero_gradient": false,
+      "image_score": 0.794072687625885,
+      "joint_score": 0.6643256545066833,
+      "preservation": 0.002860963810235262
+    },
+    {
+      "step": 27,
+      "timestep": 99,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8767906427383423,
+        0.7386316657066345,
+        0.8643527626991272
+      ],
+      "gradient_rms": 0.0008819004287943244,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.02599385634430873,
+      "zero_gradient": false,
+      "image_score": 0.7386316657066345,
+      "joint_score": 0.6560186147689819,
+      "preservation": 0.002714435337111354
+    },
+    {
+      "step": 28,
+      "timestep": 66,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8788933753967285,
+        0.7280347347259521,
+        0.8734838962554932
+      ],
+      "gradient_rms": 0.0011225991183891892,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.025103899583300383,
+      "zero_gradient": false,
+      "image_score": 0.7280347347259521,
+      "joint_score": 0.6560794115066528,
+      "preservation": 0.002592636737972498
+    },
+    {
+      "step": 29,
+      "timestep": 33,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8814406991004944,
+        0.7981191873550415,
+        0.8560665249824524
+      ],
+      "gradient_rms": 0.0004637278034351766,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.01965802714312446,
+      "zero_gradient": false,
+      "image_score": 0.7981191873550415,
+      "joint_score": 0.6617856621742249,
+      "preservation": 0.002488595200702548
+    },
+    {
+      "step": 30,
+      "timestep": 0,
+      "guided": true,
+      "condition_image_cosines": [
+        0.8835754990577698,
+        0.766221821308136,
+        0.8693146705627441
+      ],
+      "gradient_rms": 0.0007199870306067169,
+      "guidance_displacement_linf": 0.04,
+      "guidance_clip_factor": 0.7957824830321949,
+      "zero_gradient": false,
+      "image_score": 0.766221821308136,
+      "joint_score": 0.6597777605056763,
+      "preservation": 0.002383963903412223
+    }
+  ]
+}

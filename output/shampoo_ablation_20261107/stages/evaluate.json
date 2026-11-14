@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "stage": "evaluate",
+  "started_at": "2026-11-07T08:02:37.849788+00:00",
+  "supervisor_pid": 4204,
+  "log": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\logs\\evaluate.log",
+  "child_pid": 10424,
+  "exit_code": 0,
+  "seconds": 205.12687540000115,
+  "finished_at": "2026-11-07T08:06:02.978791+00:00"
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "status": "no_eligible_pair",
+  "selection_scope": "uniform_draw_after_public_shape_and_type_gates_v2",
+  "groups": [
+    {
+      "key": "02_chair",
+      "status": "no_eligible_pair",
+      "selection_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\public_pair_selection\\v2_20261105\\groups\\02_chair\\selection\\DRAWN_PAIR.json",
+      "selection_sha256": "1385ac729ecb7cbb78361f29b2d82a2e26bf26cfd4e9e5f35ee1bd3c35f7130c",
+      "target": {
+        "id": "B09CYFD5BX",
+        "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+        "source_url": "https://www.amazon.com/dp/B09CYFD5BX",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\simple_v2\\images\\8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d.jpg",
+        "image_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d"
+      },
+      "source": null,
+      "candidate_count": 32,
+      "eligible_count": 0
+    },
+    {
+      "key": "09_toothbrush",
+      "status": "selected",
+      "selection_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\public_pair_selection\\v2_20261105\\groups\\09_toothbrush\\selection\\DRAWN_PAIR.json",
+      "selection_sha256": "7beba7caf69e3f981501591c98c8221f470172abe3bdf1d12245e373c3e756e0",
+      "target": {
+        "id": "B09J81RMLD",
+        "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+        "source_url": "https://www.amazon.com/dp/B09J81RMLD",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\simple_v2\\images\\893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14.jpg",
+        "image_sha256": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14"
+      },
+      "source": {
+        "id": "B09PNNXYJ4",
+        "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+        "source_url": "https://www.amazon.com/dp/B09PNNXYJ4",
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\selection_runs\\simple_v2\\images\\f276600c16b54be5c1b1a305721bdd265f3582db05694d47e3db3ba149fc3bc3.jpg",
+        "owned": true,
+        "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+        "image_sha256": "f276600c16b54be5c1b1a305721bdd265f3582db05694d47e3db3ba149fc3bc3"
+      },
+      "candidate_count": 32,
+      "eligible_count": 3
+    }
+  ],
+  "public_plan_sha256": "7cad0c8a788b7cce88b2cbd5e0824b4d5b67e2e51798b3e11aff19bf02a080e2",
+  "shared_memory_read": false,
+  "formal_queries_read": false,
+  "generation_runs": 0
+}

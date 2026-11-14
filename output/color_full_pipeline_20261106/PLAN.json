@@ -1,0 +1,112 @@
+{
+  "protocol": "dominant_color_full_pipeline_v1",
+  "date_local": "2026-11-06",
+  "cases": [
+    {
+      "key": "07_shampoo",
+      "definition": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\definition.json",
+      "inputs_sha256": {
+        "source": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+        "target": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+      }
+    },
+    {
+      "key": "09_toothbrush",
+      "definition": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\09_toothbrush\\definition.json",
+      "inputs_sha256": {
+        "source": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+        "target": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14"
+      }
+    }
+  ],
+  "execution_order": [
+    [
+      "dominant",
+      "07_shampoo"
+    ],
+    [
+      "dominant",
+      "09_toothbrush"
+    ],
+    [
+      "original",
+      "07_shampoo"
+    ]
+  ],
+  "control_brush": {
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\controls\\09_toothbrush\\frozen.png",
+    "sha256": "f0ea5ca8ede2cf2d0ac547949f959f98f02b9f84ae76ad44f8c71602fd77dcd8",
+    "existing_complete_method": true,
+    "definition": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\controls\\09_toothbrush\\definition.json",
+    "ready": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\controls\\09_toothbrush\\generation\\ready.json"
+  },
+  "fresh_initialization_required": true,
+  "reuse_old_initialization_or_generated_image_for_training": false,
+  "generation_steps": 30,
+  "initialization_steps": [
+    40,
+    40,
+    20,
+    60
+  ],
+  "final_latent_steps": 60,
+  "generation_seed": 42,
+  "quality_limits_unchanged": true,
+  "color_fraction_selection": "largest_nonzero_quality_and_print_halo_feasible_fraction_not_highest_intermediate_similarity",
+  "final_teacher": "post_color_image_for_ordinary_retention; pre_color_image_for_halo_reference",
+  "comparison_only_after_all_full_images_frozen": true,
+  "private_memory_or_formal_queries_used": false,
+  "shopping_runs": 0,
+  "main_program_unchanged_until_final_review": true,
+  "promotion_reference": {
+    "each_image_gain": 0.01,
+    "mean_image_gain": 0.02,
+    "each_joint_gain": 0.005,
+    "secondary_mean_nonnegative": true,
+    "quality_and_print_visual_review_required": true
+  },
+  "active_vision_source_sha256": {
+    "src\\vision\\attack_completion.py": "11b7e7a45b83a9e2c5f818111c406e75b83634108136c4d0f3d6319165cbb9a8",
+    "src\\vision\\audit.py": "fa100988ebb6b65aa53c84970cea44df45de785d71aaeb12c2362b5728b1c5f6",
+    "src\\vision\\catalog_training_guard.py": "91d1a50907158213860b6140eccb2c10481def6fa284cba7806ef8cf074dd5d9",
+    "src\\vision\\defense_transforms.py": "6fe644d7347f50ce3beaca5097447401054893f3346b6b6d785993126af07ee0",
+    "src\\vision\\diffusion_components.py": "a323aa2ff1527b55f50f906296d1ed567a561ec99557cf3e5e720dca0d700b34",
+    "src\\vision\\diffusion_purification.py": "e2eaf12ca5ef148a4e538af666fc7965cca2663e0961be6bb1db572ccf3410d3",
+    "src\\vision\\dual_rag_bridge.py": "fddcc40887a1be78e76bfea91c298997a5f0f9694f39caca2e49c64d0037f6be",
+    "src\\vision\\image_utils.py": "e455bf1a777e8fbf826a501a14d4639af8d4d36567a9393d3c6f5298f6d68f80",
+    "src\\vision\\joint_encoder.py": "1c3c886bca47505b7807b69d98dc98eee3893e4ee4add908234a20bbc61b31f6",
+    "src\\vision\\joint_encoder_worker.py": "1a0bac8306b8e865d201354823b4f91b9b8041728797f798a3d8cb2f9811b813",
+    "src\\vision\\latent_branch.py": "ed985bbad7968d462580b2aa3b7fd84243e1a9d6b3123cbeaca752f505c2dbce",
+    "src\\vision\\natural_visual_edit.py": "65e7ec78711184203dd44832844810ca9187e2598dd3c262678b1be8aaaa9aa7",
+    "src\\vision\\optimization.py": "e660463819e6cea8506f4ecc69cd04f8754ea81137f8d20f7f3acf0f92919661",
+    "src\\vision\\pair_assets.py": "a43b33d28172e468963c2207bbaad9cfcecff777c0bc0abed17422c92d62c73b",
+    "src\\vision\\pair_selection.py": "3057e24910ac42810229215bdf3d27375f3920c2d8c8ee3c74aca16b1c86b883",
+    "src\\vision\\perlage.py": "9c6395ad562fe1898da761669c5e8430e11b88aa5316cfeeb4543956b71e757a",
+    "src\\vision\\product_types.py": "8f9be65c40f013e688878d91a03456852fb4f0092911e60e91d437c413d3d999",
+    "src\\vision\\public_annotations.py": "b7594bd2b04b85896d8df650ca25cf8caeee7e2ad7834039d97a0dadfc444ba1",
+    "src\\vision\\public_pool.py": "0ba7123beebe791e6c4d1d0f9fed1eadcbf9d4916ff7a31a636042ca5546ee18",
+    "src\\vision\\retrieval_objective.py": "44593dcd5b31bdfd0e9c3f4283d40b2c08d6d1583181ad1636b1f084fb8776ff",
+    "src\\vision\\robust_objectives.py": "4713f4f1efa1bf8c0162f03db1c125f86f3aac60407c7c43e356a9437dfbc3ed",
+    "src\\vision\\shape_calibration.py": "b0b168f5f865b600400fb3d1394be35540f21185e813f391e08c97d1653f4b68",
+    "src\\vision\\shape_features.py": "4964f91f548fc107c742858cdb47bb8ecd7e090f8550e5e2ad3525fe1c4c7af9",
+    "src\\vision\\title_alignment.py": "7a6367b07b307ceb3428432aacf593377c147d36645c1aabd8a9b236cb3b5430",
+    "src\\vision\\visual_retrieval.py": "e5bf9172b5367e4f8ac5ca206ac934c6bb95f6e55f358f525da2f6bb667b078b",
+    "src\\vision\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src\\vision\\_natural\\assets.py": "f11e8d72ba8f559943dd6a382295cd0eedd8e73dca519bc837705e74d7e68451",
+    "src\\vision\\_natural\\colour.py": "1ba7fada3e2e00003ce37162b487d191d498c0e2e4aa4b5f71217ef00021838e",
+    "src\\vision\\_natural\\core.py": "013e3b9cfc53ea07f40b307824811b8bc8f92bc3bd08965ad1568fff04338670",
+    "src\\vision\\_natural\\editor.py": "66e6978b25d2759f978e373f863d160d37acc4482cfd85c32d49db5582aed907",
+    "src\\vision\\_natural\\evidence.py": "2230e9da91c59e069bc5f8bb90e8a3d0326b34798ba0ebc6853dbebcc112c602",
+    "src\\vision\\_natural\\losses.py": "05d9e1bf429266046b55623e78d2acc9ad569374ea7839a4614961e96329f490",
+    "src\\vision\\_natural\\mask.py": "c1f923ec423db6ce18bca1632a7e6f64c4fbd9528bba8d432e0817aeaf0ce36a",
+    "src\\vision\\_natural\\optimizer.py": "8cb393af0eaf80042881942f0f6ec11c376da26d3d8312213e083a52cb9db20b",
+    "src\\vision\\_natural\\segmentation.py": "d3c6c1a5b936cbf56c49148d8f58ca7b915d63e37ce7e042c100b55356bbfa96",
+    "src\\vision\\_natural\\__init__.py": "3a7ec6bb41866747befd031b77b6f00899f728995afe77b172426857c857b3ca",
+    "src\\vision\\_perlage\\evidence.py": "6b7ea102d3bf16f3abef637d8dacfdfdf53920338f78912a263c76378b14ba40",
+    "src\\vision\\_perlage\\harmonization.py": "26f38cd42385b229315eee47b7c885992f764914f7d3ad6d5c3144c08115f2fa",
+    "src\\vision\\_perlage\\initialization.py": "bd17f7b443a532971e29bdc84427e77b07c59726096f5b7219d06e9e5eb6dffd",
+    "src\\vision\\_perlage\\latent.py": "d7a8376bfe810b640cdec59175584b4cc6ca2584ce9c3236606c3ebf14adb754",
+    "src\\vision\\_perlage\\pipeline.py": "333d5829ce2d82af5fff2912bb5d31d08600974160ae2c8ea3248576132b9313",
+    "src\\vision\\_perlage\\__init__.py": "3a7ec6bb41866747befd031b77b6f00899f728995afe77b172426857c857b3ca"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B00BDJODWI",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "shampoo",
+  "core_attributes": [
+    "plant-based haircare ingredients",
+    "a balancing formula",
+    "plant and flower essences"
+  ],
+  "instructions": [
+    "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "Looking to buy shampoo with a balancing formula and plant and flower essences.",
+    "I am looking to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "Please help me buy shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "I am shopping for shampoo with a balancing formula and plant and flower essences.",
+    "I would like to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "Help me purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "I am looking for shampoo with a balancing formula and plant and flower essences.",
+    "Please find shampoo with plant-based haircare ingredients and a balancing formula for me to buy.",
+    "I want to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "Please help me purchase shampoo with a balancing formula and plant and flower essences.",
+    "I need to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "I would like help finding shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "Find me shampoo with a balancing formula and plant and flower essences to purchase.",
+    "Please look for shampoo with plant-based haircare ingredients and a balancing formula that I can buy.",
+    "I am interested in buying shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+    "I would like to shop for shampoo with a balancing formula and plant and flower essences.",
+    "Help me find shampoo with plant-based haircare ingredients and a balancing formula to buy.",
+    "I am ready to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences."
+  ],
+  "instructions_sha256": "2c2de7201df01593e0a9359ffe2a04b6d3c988964961308b9ba255540f4e62aa",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+  "sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：浅棕色素面瓶身及深色瓶盖，完全无标签、文字和标志。",
+    "image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

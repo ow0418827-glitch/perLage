@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "method": "lucid",
+  "target_text": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+  "text_weight": 1.0,
+  "steps": 1000,
+  "epsilon_levels": 8,
+  "source": "source.jpg",
+  "target": "target.jpg"
+}

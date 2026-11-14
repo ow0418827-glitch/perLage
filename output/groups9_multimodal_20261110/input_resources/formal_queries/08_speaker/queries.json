@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B01N47U1VI",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "bluetooth speaker",
+  "core_attributes": [
+    "water resistance",
+    "stereo sound",
+    "solar charging"
+  ],
+  "instructions": [
+    "I want to buy a bluetooth speaker with water resistance and stereo sound.",
+    "I would like to purchase a bluetooth speaker featuring water resistance and solar charging.",
+    "Looking to buy a bluetooth speaker with stereo sound and solar charging.",
+    "I am looking to buy a bluetooth speaker with water resistance and stereo sound.",
+    "Please help me buy a bluetooth speaker featuring water resistance and solar charging.",
+    "I am shopping for a bluetooth speaker with stereo sound and solar charging.",
+    "I would like to buy a bluetooth speaker with water resistance and stereo sound.",
+    "Help me purchase a bluetooth speaker featuring water resistance and solar charging.",
+    "I am looking for a bluetooth speaker with stereo sound and solar charging.",
+    "Please find a bluetooth speaker with water resistance and stereo sound for me to buy.",
+    "I want to purchase a bluetooth speaker featuring water resistance and solar charging.",
+    "Please help me purchase a bluetooth speaker with stereo sound and solar charging.",
+    "I need to buy a bluetooth speaker with water resistance and stereo sound.",
+    "I would like help finding a bluetooth speaker featuring water resistance and solar charging.",
+    "Find me a bluetooth speaker with stereo sound and solar charging to purchase.",
+    "Please look for a bluetooth speaker with water resistance and stereo sound that I can buy.",
+    "I am interested in buying a bluetooth speaker featuring water resistance and solar charging.",
+    "I would like to shop for a bluetooth speaker with stereo sound and solar charging.",
+    "Help me find a bluetooth speaker with water resistance and stereo sound to buy.",
+    "I am ready to purchase a bluetooth speaker featuring water resistance and solar charging."
+  ],
+  "instructions_sha256": "5d334c0f1392f59d0b93e0a41e9126eedfe5d56766935dc9d652ad5d29db6872",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\08_speaker\\query.png",
+  "sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：红色便携音箱、黑色网罩及顶部太阳能板，无字母、数字或标志。",
+    "image_sha256": "b0a90bd8dff519f8ba9f4b7e0165da64084571aae90ec084d661286e6b4f45ef",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

@@ -1,0 +1,8 @@
+# 原图库购物对照状态
+
+- status: completed
+- total_episodes_done: 180
+- total_expected: 180
+- source_purchases: 37
+- updated_at: 2026-11-10T14:14:34Z
+- report: D:\Material\Literature Reading\code\perLage\output\lucid_groups9_clean_shopping_20261110\COMPARISON_REPORT.md

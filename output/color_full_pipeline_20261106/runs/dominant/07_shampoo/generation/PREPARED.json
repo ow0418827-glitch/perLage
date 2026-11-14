@@ -1,0 +1,13 @@
+{
+  "status": "prepared",
+  "arm": "dominant",
+  "group": "07_shampoo",
+  "definition_sha256": "605e969b3486e325c2c482c517065b1f35e8c82d9f8da662530d2940d36a8c22",
+  "selected_rgb": [
+    220,
+    194,
+    160
+  ],
+  "segmentation_recomputed_in_this_run": true,
+  "prior_generated_images_used": false
+}

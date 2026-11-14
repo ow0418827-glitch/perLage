@@ -1,0 +1,126 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "status": "success",
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\adversarial.png",
+  "output_image_sha256": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058",
+  "source_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "perlage_ready": {
+    "method": "PerLAGE_no_pixel",
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "status": "completed",
+    "color_scheme": "statistics",
+    "training_data_policy": "catalog_image_and_public_title_only_v1",
+    "shadow_pool_used": false,
+    "purchase_history_used": false,
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "configuration_sha256": "89eb39244c9ed3e444408b796882d77027c2e192c735aa914650484bb799622f",
+    "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\method_identity.json",
+    "method_identity_sha256": "48be4503aa97b8b192d97bd9f89f39b52fcc90d16bfce86abb4e22c1e60f1182",
+    "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "target_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "source_title_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+    "candidates": {
+      "final": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\adversarial.png",
+        "sha256": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058"
+      }
+    },
+    "initialization_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\initialization\\run_identity.json",
+    "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\initialization\\attack\\identity.json",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\initialization\\run_identity.json": "309b9529aa45d92e4162bf000928879d69c09eec02796323555153dc9310d7e5",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\initialization\\attack\\identity.json": "0f4fce04db120f507a6d36e77165f087a76c9f0b58d8500a2665cadc3faa0330",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\initialization\\ready.json": "6dd0db898af9be27e41c982290678efebc67d1663b95d4dc90ead89e90eada05"
+    },
+    "stages": {
+      "foreground_segmentation": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_segmentation\\source\\record.json": "56e51dc5b32485d3c676e1a399a8501f6d0ea51b34991f0a763af3b17c6ae7f7",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_segmentation\\source\\foreground.png": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_segmentation\\target\\record.json": "a67ae1d85428253c3ed1d1d354bfd05686ab03b11a4d67bd60cf59610d605921",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_segmentation\\target\\foreground.png": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54"
+        }
+      },
+      "foreground_statistics": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_statistics\\statistics.json": "7583158af9fd6cf2388f2ea094317ad931dc0c2f80ceb0d090ff9295582bda8d",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\foreground_statistics\\body_samples.png": "bf911f7f87a95d353fcd149c921f398d68edbc599a4b63cf4fd67d38c39cfc1a"
+        }
+      },
+      "color_harmonization": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\color_harmonization\\metadata.json": "de5eb67a291f2fbb69db7701e167efecda21526f1f4fbec5694c675d9c4e7d8d",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\color_harmonization\\generative_anchor.png": "a8eb2f829a1e864a3d9925b93dd48c8d94fb17866627a9847b166c8ade57872a",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\color_harmonization\\initial.png": "a8eb2f829a1e864a3d9925b93dd48c8d94fb17866627a9847b166c8ade57872a",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\color_harmonization\\edit_mask.png": "22aec23f44b0f5caafc5a201a718848fc55f0d7a154f8f94c0e07253359e5233"
+        }
+      },
+      "latent_generation_refinement": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\latent_generation_refinement\\metadata.json": "18322f5cdfe2bdb146156e555cda7e3b2db1acd424fdb67ee521fd71c198560d",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\latent_generation_refinement\\identity.json": "f2ffac5ec764b5407741720bdc22aa25609ef701f41d412a67c8f6ad01b2cfb9",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\adversarial.png": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\generative_anchor.png": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058"
+        },
+        "steps_completed": 20,
+        "steps_requested": 20
+      }
+    },
+    "observed_seconds": 7310.3462401,
+    "auxiliary_max_levels": 0,
+    "latent_config": {
+      "steps": 20,
+      "check_every": 10,
+      "latent_levels": 16,
+      "latent_working_size": 256,
+      "latent_limit": 0.5,
+      "latent_learning_rate": 0.008,
+      "latent_smoothing_mix": 0.1,
+      "auxiliary_levels": 0,
+      "source_ssim_floor": 0.93,
+      "source_mae_ceiling": 8.0,
+      "ordinary_tolerance": 0.01,
+      "temperature": 0.01,
+      "desired_owned_score_gain": 0.002,
+      "feature_weight": 0.1,
+      "diffusion_weight": 3.0,
+      "macro_l2_weight": 0.001,
+      "macro_tv_weight": 0.003,
+      "guard_backtracks": 4,
+      "full_eot_samples": 2,
+      "training_seed_base": 720300000,
+      "timesteps": [
+        99,
+        199,
+        399
+      ],
+      "development_seeds": [
+        9401,
+        9402,
+        9403,
+        9404,
+        9405,
+        9406,
+        9407,
+        9408
+      ],
+      "selection_seeds": [
+        9301,
+        9302
+      ],
+      "retention_tolerance": 0.0005
+    },
+    "pixel_optimization": false,
+    "optimization_mode": "latent_only",
+    "source_method": "four_natural_stages_with_perceptual_latent_optimization_no_pixel"
+  },
+  "shadow_pool_used": false,
+  "completion_policy": "four_natural_stages_with_perceptual_latent_optimization_complete"
+}

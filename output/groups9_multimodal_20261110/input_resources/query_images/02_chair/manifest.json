@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "group": "02_chair",
+  "image": "query.png",
+  "image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+  "generated_source_path": "C:\\Users\\22106\\.codex\\generated_images\\01a1c5d1-93b3-7f22-bcba-6d0bc45eb802\\exec-3dfca0ca-1e33-4564-8d68-95dadf5f5303.png",
+  "generation_tool": "image_gen",
+  "generation_mode": "built_in",
+  "prompt": "Use case: product-mockup. Asset type: frozen ambiguous visual query for a controlled shopping retrieval experiment, not an exact catalogue product reconstruction. Primary request: create a single square natural product reference photo. Subject: A single generic black padded barber salon chair, shown at a three-quarter angle with an adjustable heavy hydraulic center pedestal, broad circular metal base, rotation mechanism, two armrests and a footrest. No person. Style: realistic ordinary photo with gently soft focus and modest detail, product category and overall geometry recognizable, no brand-specific identity. Composition: entire item centered with generous margins on a plain light neutral background or a simple natural room only if needed for a hanging curtain, soft diffuse lighting, no collage. Text: none. Constraints: absolutely no brand name, product name, readable text, letters, numbers, watermark, logo, trademark, label, barcode or recognizable branded pattern anywhere. No caption. Do not add feature labels or marketing graphics. One photo only.",
+  "reference_images_used": false,
+  "generated_independently_from_public_category_and_features": true,
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：黑色理发椅、液压底座及脚踏，无文字或可辨识品牌标志。",
+    "image_sha256": "3abf4a991ffeb268b5d769caa06eef57a55782d04bfd1992bd15f5697b913ada",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  }
+}

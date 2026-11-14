@@ -1,0 +1,8 @@
+{
+  "status": "prepared",
+  "plan_sha256": "cabdb7ca2d9f7db10f53eaef1bd656e9be5daa957e63d58cecfbecbb793af579",
+  "formal_queries_read": false,
+  "shared_pool_read": false,
+  "proposed_pool_entry_read": false,
+  "shopping_enabled": false
+}

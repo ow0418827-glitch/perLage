@@ -1,0 +1,125 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": false,
+  "target_feature_text": "I want to buy cookie dough with natural ingredients and chocolate chips.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+    "training_queries": [
+      "I want to buy cookie dough with natural ingredients and chocolate chips."
+    ]
+  },
+  "source_boxes": [
+    [
+      1,
+      5,
+      463,
+      499
+    ]
+  ],
+  "target_boxes": [
+    [
+      58,
+      27,
+      455,
+      463
+    ]
+  ],
+  "print_regions": [
+    [
+      0.10967741935483871,
+      0.382,
+      0.17204301075268819,
+      0.432
+    ],
+    [
+      0.1032258064516129,
+      0.402,
+      0.18494623655913978,
+      0.46
+    ],
+    [
+      0.09462365591397849,
+      0.526,
+      0.210752688172043,
+      0.596
+    ],
+    [
+      0.3333333333333333,
+      0.53,
+      0.6774193548387096,
+      0.614
+    ],
+    [
+      0.11397849462365592,
+      0.554,
+      0.1956989247311828,
+      0.614
+    ],
+    [
+      0.28817204301075267,
+      0.592,
+      0.7225806451612903,
+      0.67
+    ],
+    [
+      0.12688172043010754,
+      0.684,
+      0.1978494623655914,
+      0.738
+    ],
+    [
+      0.12903225806451613,
+      0.706,
+      0.2,
+      0.756
+    ],
+    [
+      0.35698924731182796,
+      0.714,
+      0.6559139784946236,
+      0.774
+    ],
+    [
+      0.2924731182795699,
+      0.746,
+      0.7096774193548387,
+      0.818
+    ],
+    [
+      0.13548387096774195,
+      0.826,
+      0.2064516129032258,
+      0.878
+    ],
+    [
+      0.13548387096774195,
+      0.844,
+      0.2129032258064516,
+      0.898
+    ],
+    [
+      0.3247311827956989,
+      0.858,
+      0.6774193548387096,
+      0.918
+    ],
+    [
+      0.3032258064516129,
+      0.956,
+      0.46236559139784944,
+      1.0
+    ],
+    [
+      0.4645161290322581,
+      0.954,
+      0.7075268817204301,
+      1.0
+    ]
+  ]
+}

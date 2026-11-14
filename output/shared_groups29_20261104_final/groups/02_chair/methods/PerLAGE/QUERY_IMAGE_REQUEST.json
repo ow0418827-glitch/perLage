@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "pending_generation",
+  "target_public_id": "B09CYFD5BX",
+  "reference_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\target.jpg",
+  "reference_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+  "instruction_policy": "vague_similar_pictured_product",
+  "requirements": [
+    "单独生成参考图，不复用商品原图",
+    "不能出现明确的商品名称",
+    "不能出现可识别的品牌名称或品牌标志",
+    "保留大致商品形态与用途线索"
+  ],
+  "query_image_generation_implemented": false,
+  "expected_manifest": {
+    "status": "ready",
+    "target_public_id": "B09CYFD5BX",
+    "image": "待填写独立查询图路径",
+    "sha256": "待填写图片内容摘要",
+    "review": {
+      "no_explicit_product_name": true,
+      "no_brand": true,
+      "reviewer": "待填写实际核对者"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "data": {
+    "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\09_toothbrush\\source.jpg",
+    "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\09_toothbrush\\target.jpg",
+    "source_title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+    "training_queries": [
+      "Find a product with a similar overall visual appearance.",
+      "Use the reference picture as a broad visual guide for product matching.",
+      "Look for an item with a comparable general shape and finish."
+    ]
+  },
+  "source_boxes": [
+    [
+      128,
+      59,
+      338,
+      441
+    ]
+  ],
+  "target_boxes": [
+    [
+      135,
+      51,
+      350,
+      446
+    ]
+  ],
+  "print_regions": [
+    [
+      0.22,
+      0.4,
+      0.78,
+      0.95
+    ]
+  ]
+}

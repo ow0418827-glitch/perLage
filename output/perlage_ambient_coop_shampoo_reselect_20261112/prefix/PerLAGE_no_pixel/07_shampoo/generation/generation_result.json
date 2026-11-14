@@ -1,0 +1,126 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "status": "success",
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\adversarial.png",
+  "output_image_sha256": "8bd25b2b79e8f03c31d823e82c7ccc5e4240f7e07a19134949116d1111e3ada6",
+  "source_image_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+  "target_image_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e",
+  "perlage_ready": {
+    "method": "PerLAGE_no_pixel",
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "status": "completed",
+    "color_scheme": "statistics",
+    "training_data_policy": "catalog_image_and_public_title_only_v1",
+    "shadow_pool_used": false,
+    "purchase_history_used": false,
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "configuration_sha256": "b525ffa8d8f80c4f977255e49c20b376611bd00d43393585644671d0f3cc2cd9",
+    "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\method_identity.json",
+    "method_identity_sha256": "227ee42e9249e24f75f157e70f67ec4481fe0860553aa79bc1f2ef33d120869d",
+    "source_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+    "target_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e",
+    "source_title_sha256": "b38fd2e3daee4424dba526c732dbeaaadfe3a8e34c99b4e8fac6481ac2a8174a",
+    "candidates": {
+      "final": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\adversarial.png",
+        "sha256": "8bd25b2b79e8f03c31d823e82c7ccc5e4240f7e07a19134949116d1111e3ada6"
+      }
+    },
+    "initialization_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\initialization\\run_identity.json",
+    "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\initialization\\attack\\identity.json",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\initialization\\run_identity.json": "964fb849b86ee4bbbd87334f40cb5e9e5bffea8bbbd63368b5d4b6088aee3d04",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\initialization\\attack\\identity.json": "4e4dff0378200b2dbb1f8f6cd55f2ded6c0b50ccd63b081ce7662ab9d02373ce",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\initialization\\ready.json": "94b9943367e01323d5a315b95d1fccada0ab3ee1361e16d79318bd74601dfb25"
+    },
+    "stages": {
+      "foreground_segmentation": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_segmentation\\source\\record.json": "b64df36dc00e9b07dce3f38f9ad1c5a017779cf537749cab52c7bfc1232be90b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_segmentation\\source\\foreground.png": "5ecdcdffe771f2cec9fb941e6954728ed357818c32e556c367ba87a3a8311883",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_segmentation\\target\\record.json": "ca241f53e07a97ea96bb69adae794e939a044cd1d68aa9d3e601768644193f45",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_segmentation\\target\\foreground.png": "893ea70f1edb4489d07f6ce844ff7df8826f7a0eb715eec3d07269d0bd7df8ba"
+        }
+      },
+      "foreground_statistics": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_statistics\\statistics.json": "4f3f0e36332c467cd884989000576bb6bee3f2cb79f9a08f26ed1224d676ae2f",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\foreground_statistics\\body_samples.png": "75dd6d205b9d34fb5b131b525ce91f6c161a894750631661c97b6373114028a8"
+        }
+      },
+      "color_harmonization": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\color_harmonization\\metadata.json": "e35ce44bf099e172ea0c8ecbf7f5ca11278a2d8dbd8e10bbf8c0269003b8d141",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\color_harmonization\\generative_anchor.png": "2041d4e464481e88d8de29ab7f1006f083bdeca941b467b56e30863f8844f09b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\color_harmonization\\initial.png": "2041d4e464481e88d8de29ab7f1006f083bdeca941b467b56e30863f8844f09b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\color_harmonization\\edit_mask.png": "e46e65d61f0267d1a7be889d6fdca5074a4695f504753ad22a241e6353c9505e"
+        }
+      },
+      "latent_generation_refinement": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\latent_generation_refinement\\metadata.json": "5ad40e5a47d6f16b3f5aaae5e8485afc974d9aabd020e043a56bf380e84afa05",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\latent_generation_refinement\\identity.json": "d710a24dce6733a23dcc05a7e21ea14f2fe880ea77c719efadc1627d562994f4",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\adversarial.png": "8bd25b2b79e8f03c31d823e82c7ccc5e4240f7e07a19134949116d1111e3ada6",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\prefix\\PerLAGE_no_pixel\\07_shampoo\\generation\\generative_anchor.png": "8bd25b2b79e8f03c31d823e82c7ccc5e4240f7e07a19134949116d1111e3ada6"
+        },
+        "steps_completed": 60,
+        "steps_requested": 60
+      }
+    },
+    "observed_seconds": 623.0785881000047,
+    "auxiliary_max_levels": 0,
+    "latent_config": {
+      "steps": 60,
+      "check_every": 10,
+      "latent_levels": 24,
+      "latent_working_size": 256,
+      "latent_limit": 0.5,
+      "latent_learning_rate": 0.01,
+      "latent_smoothing_mix": 0.12,
+      "auxiliary_levels": 0,
+      "source_ssim_floor": 0.85,
+      "source_mae_ceiling": 12.0,
+      "ordinary_tolerance": 0.01,
+      "temperature": 0.01,
+      "desired_owned_score_gain": 0.02,
+      "feature_weight": 0.02,
+      "diffusion_weight": 3.0,
+      "macro_l2_weight": 0.001,
+      "macro_tv_weight": 0.003,
+      "guard_backtracks": 8,
+      "full_eot_samples": 2,
+      "training_seed_base": 720300000,
+      "timesteps": [
+        99,
+        199,
+        399
+      ],
+      "development_seeds": [
+        9401,
+        9402,
+        9403,
+        9404,
+        9405,
+        9406,
+        9407,
+        9408
+      ],
+      "selection_seeds": [
+        9301,
+        9302
+      ],
+      "retention_tolerance": 0.0005
+    },
+    "pixel_optimization": false,
+    "optimization_mode": "latent_only",
+    "source_method": "four_natural_stages_with_perceptual_latent_optimization_no_pixel"
+  },
+  "shadow_pool_used": false,
+  "completion_policy": "four_natural_stages_with_perceptual_latent_optimization_complete"
+}

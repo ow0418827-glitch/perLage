@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "episodes": 80,
+  "outcomes_sha256": "38faab09b05ff32dbeacb7a73aa0b0ae3d7b62d925a2e5ec0ade1781f2d7b3e2",
+  "condition": "none",
+  "retrieval_top_k": 3,
+  "model": {
+    "provider": "minimax",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimax.cn/v1"
+  },
+  "simulated_records_labeled": true
+}

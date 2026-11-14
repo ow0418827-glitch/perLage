@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "pid": 30652,
+  "execution_device": "cuda",
+  "inputs_sha256": "ad444c63e009cafa135680d35c2d02bf695e73d8bb1813cc9d43f6784405e6a9",
+  "rankings": 160,
+  "score_count": 30240,
+  "persistent_vector_cache_read": false,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\clean\\06_jeans.json": "4a196219c5cef23542934e6b62e084823d6fa9828a91c556d082e09c1f46e939",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\clean\\07_shampoo.json": "850549a59cc5526fb31d12ff09c48f5cae5f9d1110db35840e357c360cf50615",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\baseline\\06_jeans.json": "416b71026ba817b20be3f83171297d55f2e97dacca2d65b5daaa4dff327f8a35",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\baseline\\07_shampoo.json": "350da135f0747c79989fc19b46413fe4b1aaf96dad69772a83e17aaac4f97ba0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\relaxed\\06_jeans.json": "99315186df05a9abb8dc4288262bdb699dc822bb37b8193b1cd4d7960ec69fd1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\relaxed\\07_shampoo.json": "1962367d74cabce926c48a608aae56813fcd05e10bafd4f810352c063f1d1824",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\strong\\06_jeans.json": "8e5fd8dc379e40e35c949e3b3d554e56bfe1ba77da79eb27cf1013d4512ee06c",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\retrieval\\strong\\07_shampoo.json": "011de4acfbda2002d986165ece29d2d6abb5f7e9a96bc2d2bd24986a08c7e4a7"
+  }
+}

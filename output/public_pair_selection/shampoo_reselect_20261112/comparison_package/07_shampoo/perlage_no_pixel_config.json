@@ -1,0 +1,95 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": false,
+  "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+    "training_queries": [
+      "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+    ]
+  },
+  "source_boxes": [
+    [
+      1,
+      1,
+      180,
+      497
+    ]
+  ],
+  "target_boxes": [
+    [
+      2,
+      5,
+      158,
+      494
+    ]
+  ],
+  "print_regions": [
+    [
+      0.4199,
+      0.224,
+      0.6188,
+      0.294
+    ],
+    [
+      0.16022099447513813,
+      0.304,
+      0.856353591160221,
+      0.36
+    ],
+    [
+      0.12154696132596685,
+      0.52,
+      0.49171270718232046,
+      0.558
+    ],
+    [
+      0.12154696132596685,
+      0.554,
+      0.8950276243093923,
+      0.608
+    ],
+    [
+      0.11602209944751381,
+      0.678,
+      0.5082872928176796,
+      0.72
+    ],
+    [
+      0.1270718232044199,
+      0.712,
+      0.7237569060773481,
+      0.75
+    ],
+    [
+      0.13259668508287292,
+      0.73,
+      0.7513812154696132,
+      0.772
+    ],
+    [
+      0.12154696132596685,
+      0.752,
+      0.6353591160220995,
+      0.794
+    ],
+    [
+      0.10497237569060773,
+      0.812,
+      0.8176795580110497,
+      0.862
+    ],
+    [
+      0.11602209944751381,
+      0.87,
+      0.569060773480663,
+      0.916
+    ]
+  ]
+}

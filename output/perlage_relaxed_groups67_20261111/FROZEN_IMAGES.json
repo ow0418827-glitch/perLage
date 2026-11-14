@@ -1,0 +1,35 @@
+{
+  "status": "frozen",
+  "images": {
+    "relaxed": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\adversarial.png",
+        "sha256": "3c2a8ef1c9ade4ecc4f98e5c53f9f933bb2e908f6ef9145a1c8abb0ff12fa671",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\06_jeans\\ready.json",
+        "ready_sha256": "66b9d7017349f952a097614264b73adbd60e620e1f283ebcbd79711be78e9705"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\adversarial.png",
+        "sha256": "fd8bd518c9a7985dfbe80f29bfc8b236ee6d8b3b0828d058e1870a401adbc52e",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\relaxed\\07_shampoo\\ready.json",
+        "ready_sha256": "b98ee5b8a1e23bc65f248b0603e28158046ce995cd13ce4c60a8618636a322a1"
+      }
+    },
+    "strong": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\adversarial.png",
+        "sha256": "f2cdc6a1f316f2392be28e6d43330b06cb49b5f5627ecb2cf72d348eff1b6d8c",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\06_jeans\\ready.json",
+        "ready_sha256": "561e51f1468837f08a64ba4bffd40445973d22e09b5a7c8ee3df09d2da69db68"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\adversarial.png",
+        "sha256": "f1cdb75f587057b3f91a130de624f6752a5497151b27251cdf813170e8942f84",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_relaxed_groups67_20261111\\generation\\strong\\07_shampoo\\ready.json",
+        "ready_sha256": "76a7849b44019f4cd1ed959043df71ea2f89b1919a4fafd67287fb1db367a0bc"
+      }
+    }
+  },
+  "plan_sha256": "614d72fa6f163b22259c2da4cf7cd62760a9e46d4b390192dfd95847ca72df15",
+  "formal_rankings_used": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "updated_at": "2026-11-11T03:10:08Z",
+  "pid": 28584,
+  "error_type": "RuntimeError",
+  "stage": "shopping",
+  "method": "lucid"
+}

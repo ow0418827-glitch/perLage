@@ -1,0 +1,1288 @@
+{
+  "rows": [
+    {
+      "variant": "clean",
+      "label": "未修改原图",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.48772444725036623,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "clean",
+        "source_ssim": 1.0,
+        "source_psnr_db": null,
+        "source_psnr_infinite": true,
+        "source_mae_levels": 0.0,
+        "source_max_levels": 0,
+        "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+        "training_proxy_2": {
+          "target_image_cosine": 0.6722689270973206,
+          "source_image_cosine": 1.0,
+          "query_image_cosine": 0.682672381401062,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5467913150787354,
+          "source_image_cosine": 1.0,
+          "query_image_cosine": 0.4937216341495514,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "lucid_original_16",
+      "label": "原始像素方法旧图（十六级）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.5019143640995025,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "lucid_original_16",
+        "source_ssim": 0.6790678992490142,
+        "source_psnr_db": 28.202269079042388,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 8.225581333333333,
+        "source_max_levels": 16,
+        "image_sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852",
+        "training_proxy_2": {
+          "target_image_cosine": 0.9855914115905762,
+          "source_image_cosine": 0.6797985434532166,
+          "query_image_cosine": 0.6617368459701538,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5579169392585754,
+          "source_image_cosine": 0.8791128993034363,
+          "query_image_cosine": 0.5033441781997681,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "lucid_4",
+      "label": "原始像素方法（四级）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.4979181319475174,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "lucid_4",
+        "source_ssim": 0.954075257473225,
+        "source_psnr_db": 38.8502757283066,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 2.5578666666666665,
+        "source_max_levels": 4,
+        "image_sha256": "61ce8265d5bd90b397e9d7599dbbccca51c8091c00ca9d5384103f8e3199383d",
+        "training_proxy_2": {
+          "target_image_cosine": 0.9018582701683044,
+          "source_image_cosine": 0.7944904565811157,
+          "query_image_cosine": 0.7234952449798584,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5405657291412354,
+          "source_image_cosine": 0.9231967329978943,
+          "query_image_cosine": 0.49894851446151733,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "lucid_8",
+      "label": "原始像素方法（八级）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.5050048843026161,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "lucid_8",
+        "source_ssim": 0.8564362700783074,
+        "source_psnr_db": 33.16869211264151,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 4.851657333333334,
+        "source_max_levels": 8,
+        "image_sha256": "a9c63ec8cf3589e8481fa8bceac1233b47e0dc76b647d9bc8b7e352479aa7266",
+        "training_proxy_2": {
+          "target_image_cosine": 0.9545207023620605,
+          "source_image_cosine": 0.7335584759712219,
+          "query_image_cosine": 0.6950553059577942,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5492539405822754,
+          "source_image_cosine": 0.9197987914085388,
+          "query_image_cosine": 0.5175414085388184,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "perlage_original_no_shadow",
+      "label": "感知方法历史图（无影子池）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.5211406022310257,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "perlage_original_no_shadow",
+        "source_ssim": 0.9386441023376575,
+        "source_psnr_db": 26.988598033623845,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 7.025369333333333,
+        "source_max_levels": 145,
+        "image_sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80",
+        "training_proxy_2": {
+          "target_image_cosine": 0.7706465721130371,
+          "source_image_cosine": 0.9081353545188904,
+          "query_image_cosine": 0.7584594488143921,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5664548873901367,
+          "source_image_cosine": 0.931008517742157,
+          "query_image_cosine": 0.5308571457862854,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "perlage_pixel_control",
+      "label": "感知方法含像素（共享起点配对对照）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.5173484146595001,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "perlage_pixel_control",
+        "source_ssim": 0.9416649351158669,
+        "source_psnr_db": 27.654950832386756,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 6.639373333333333,
+        "source_max_levels": 143,
+        "image_sha256": "8871d16aa089788e3b1598ad283f91dff4b8e88cda35957e61abbc0ff684f426",
+        "training_proxy_2": {
+          "target_image_cosine": 0.7630977630615234,
+          "source_image_cosine": 0.9240700006484985,
+          "query_image_cosine": 0.7568618059158325,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5574206113815308,
+          "source_image_cosine": 0.9367110133171082,
+          "query_image_cosine": 0.5266028046607971,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "perlage_latent_only",
+      "label": "感知方法仅潜变量（匹配原对照设置）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.5181518852710724,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "perlage_latent_only",
+        "source_ssim": 0.9615633083464434,
+        "source_psnr_db": 27.592067825074057,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 6.526029333333334,
+        "source_max_levels": 145,
+        "image_sha256": "80c9ec960b888bfed971b0f174fb64a0fcb8680ad29cce6c9166aad1fcb543eb",
+        "training_proxy_2": {
+          "target_image_cosine": 0.7565293312072754,
+          "source_image_cosine": 0.936825156211853,
+          "query_image_cosine": 0.7478330135345459,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5546683669090271,
+          "source_image_cosine": 0.9392133951187134,
+          "query_image_cosine": 0.5328109264373779,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "perlage_legacy_reference",
+      "label": "更早感知方法完整图（附加参考）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.516993522644043,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "perlage_legacy_reference",
+        "source_ssim": 0.9396276501400859,
+        "source_psnr_db": 27.04136421576109,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 7.204726666666667,
+        "source_max_levels": 151,
+        "image_sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+        "training_proxy_2": {
+          "target_image_cosine": 0.7664899826049805,
+          "source_image_cosine": 0.9101464152336121,
+          "query_image_cosine": 0.7581391334533691,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.566074013710022,
+          "source_image_cosine": 0.9344923496246338,
+          "query_image_cosine": 0.5274542570114136,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    },
+    {
+      "variant": "perlage_color_revision_reference",
+      "label": "后续主色方案完整图（附加参考）",
+      "mean_rank": 1,
+      "minimum_rank": 1,
+      "maximum_rank": 1,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "mean_score": 0.510353472828865,
+      "top1": 20,
+      "top3": 20,
+      "top5": 20,
+      "query_count": 20,
+      "similarity": {
+        "variant": "perlage_color_revision_reference",
+        "source_ssim": 0.9210716089746579,
+        "source_psnr_db": 25.619162610376975,
+        "source_psnr_infinite": false,
+        "source_mae_levels": 7.732976,
+        "source_max_levels": 135,
+        "image_sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+        "training_proxy_2": {
+          "target_image_cosine": 0.7964666485786438,
+          "source_image_cosine": 0.8512519001960754,
+          "query_image_cosine": 0.7404218912124634,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 2,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-B-32",
+              "pretrained": "openai",
+              "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+              "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+              "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "normalized_image_text_sum",
+            "text_policy": "clip_context_truncate"
+          }
+        },
+        "held_out": {
+          "target_image_cosine": 0.5624802112579346,
+          "source_image_cosine": 0.9231380224227905,
+          "query_image_cosine": 0.5133457183837891,
+          "encoder": {
+            "provider": "clip",
+            "loader": "attack_surrogate",
+            "surrogate_number": 0,
+            "surrogate": {
+              "role": "attack_surrogate",
+              "name": "ViT-g-14",
+              "pretrained": "laion2b_s12b_b42k",
+              "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+              "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors",
+              "weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+              "weight_revision": "4b0305adc6802b2632e11cbe6606a9bdd43d35c9",
+              "device": "cuda",
+              "precision": "fp32",
+              "image_size": 224,
+              "preprocess": {
+                "resize": "bicubic_direct_square",
+                "align_corners": false,
+                "antialias": true,
+                "mean": [
+                  0.48145466,
+                  0.4578275,
+                  0.40821073
+                ],
+                "std": [
+                  0.26862954,
+                  0.26130258,
+                  0.27577711
+                ]
+              },
+              "open_clip_torch_version": "3.3.0",
+              "cache_identity": "6dc48a1bd785cae25ab6eb42cd73bd4c34d03dd5d86cbfb387c7626bb7325d42",
+              "requires_true_local_tokens": true
+            },
+            "fusion": "equal_unit_image_plus_unit_full_text",
+            "text_policy": {
+              "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+              "context_length": 77,
+              "payload_tokens_per_chunk": 75,
+              "special_tokens_per_chunk": 2,
+              "coverage": "all_token_ids_no_truncation",
+              "aggregation": "unit_token_count_weighted_mean_then_unit",
+              "tokenizer": "SimpleTokenizer"
+            },
+            "weighted_fusion": {
+              "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+              "default_image_weight": 0.5,
+              "equal_weight_path": "exact_legacy_image_plus_text",
+              "empty_text": "image_only_except_text_only_weight_rejected"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "plan_sha256": "6b15de5520615214e9113b0ffcf8da2748f0877bd35e301bf92fa635ff038e56",
+    "fresh_encoder_process": true,
+    "encoder_device": "cuda",
+    "full_bank_scores_recomputed": 34020,
+    "variants": 9,
+    "query_count": 20,
+    "max_absolute_error": 0.0,
+    "rankings_sha256": "1ceac701d070c2b5fd839abd20e9c5d45231e1eb9a85b51c1ed0410eeb600b32",
+    "similarities_sha256": "5b1ecdb4a48b85be96948553273b78e74fb8258447739dd596cc4e1222f891a7"
+  },
+  "pool_count": 189,
+  "protocol": "shampoo_single_global_189_controlled_image_ablation_v1",
+  "shopping_runs": 0
+}

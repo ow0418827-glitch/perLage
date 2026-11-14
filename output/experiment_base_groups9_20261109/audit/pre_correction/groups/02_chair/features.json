@@ -1,0 +1,46 @@
+{
+  "group": "02_chair",
+  "category": "seating",
+  "target": {
+    "asin": "B09CYFD5BX",
+    "brand": "LTHDD",
+    "category": "barber chair",
+    "attributes": [
+      "heavy duty hydraulic",
+      "barber chair",
+      "360 degree swivel",
+      "high quality"
+    ],
+    "canonical_sentence": "I want to buy a barber chair with heavy duty hydraulic and 360 degree swivel.",
+    "training_queries": [
+      "I want to buy a barber chair with heavy duty hydraulic and 360 degree swivel.",
+      "I would like to purchase a barber chair featuring heavy duty construction and high quality styling.",
+      "Looking to buy a barber chair with hydraulic reclining and salon equipment."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B08GCSRXKS",
+    "brand": "Buy-Rite",
+    "category": "barber chair",
+    "attributes": [
+      "hydraulic styling chair",
+      "cushion comfort",
+      "chrome base",
+      "steel frame"
+    ],
+    "canonical_sentence": "I want to buy a barber chair with hydraulic styling chair and cushion comfort.",
+    "training_queries": [
+      "I want to buy a barber chair with hydraulic styling chair and cushion comfort.",
+      "I would like to purchase a barber chair featuring chrome base and steel frame.",
+      "Looking to buy a barber chair with salon equipment and round chrome base."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy a barber chair with heavy duty hydraulic and 360 degree swivel.",
+  "alignment_training_queries": [
+    "I want to buy a barber chair with heavy duty hydraulic and 360 degree swivel.",
+    "I would like to purchase a barber chair featuring heavy duty construction and high quality styling.",
+    "Looking to buy a barber chair with hydraulic reclining and salon equipment."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "generated_sha256": "f042c4267a8f91fdf014a714f5edc106af037d1980ee594bca2b60d34dc57f27",
+  "trials": [
+    {
+      "alpha": 1.0,
+      "ssim": 0.9699885920365946,
+      "mae": 3.924806594848633
+    },
+    {
+      "alpha": 0.96875,
+      "ssim": 0.9711063056287931,
+      "mae": 3.865419864654541
+    }
+  ],
+  "selection": "largest_fixed_one_over_32_blend_with_ssim_at_least_0p97_mae_at_most_4",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "chosen": {
+    "alpha": 0.96875,
+    "ssim": 0.9711063056287931,
+    "mae": 3.865419864654541
+  },
+  "prepared_sha256": "fdf49795dfed9989a31df2875889b49c105cf9a7d79b7846cd70d63e66718620",
+  "status": "completed"
+}

@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "color_scheme": "statistics",
+  "selected_rgb": [
+    169,
+    211,
+    221
+  ],
+  "config": {
+    "smoothing_sigma": 12.0,
+    "print_ring_sigma": 7.0,
+    "selected_color_mix": 0.25,
+    "strength": 0.75,
+    "blend_mode": "matte"
+  },
+  "chosen": {
+    "fraction": 1.0,
+    "source_ssim": 0.9399265842355141,
+    "source_mae_levels": 2.8924903869628906,
+    "ordinary_guard_slack": 0.0025497078895568848,
+    "halo_error": 0.0,
+    "accepted": true
+  },
+  "trials": [
+    {
+      "fraction": 1.0,
+      "source_ssim": 0.9399265842355141,
+      "source_mae_levels": 2.8924903869628906,
+      "ordinary_guard_slack": 0.0025497078895568848,
+      "halo_error": 0.0,
+      "accepted": true
+    }
+  ],
+  "halo_applicable": false,
+  "source_ssim_floor": 0.85,
+  "source_mae_ceiling": 12.0,
+  "foreground_limited": true,
+  "printed_core_preserved": true,
+  "auxiliary_residual_fixed_for_latent_stage": true,
+  "private_gallery_used": false,
+  "formal_queries_used": false
+}

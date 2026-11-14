@@ -1,0 +1,15 @@
+{
+  "pid": 19300,
+  "stage": "verify",
+  "command": [
+    "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-u",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_shampoo_vague_g14_20261112.py",
+    "--stage",
+    "verify"
+  ],
+  "launched_at": "2026-11-12T02:07:41Z"
+}

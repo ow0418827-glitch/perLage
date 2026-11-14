@@ -1,0 +1,46 @@
+{
+  "group": "07_shampoo",
+  "category": "personal_care",
+  "target": {
+    "asin": "B00BDJODWI",
+    "brand": "Aveda",
+    "category": "shampoo",
+    "attributes": [
+      "plant based",
+      "exfoliating",
+      "balancing shampoo",
+      "scalp benefits"
+    ],
+    "canonical_sentence": "I want to buy shampoo with plant based formula and exfoliating scalp care.",
+    "training_queries": [
+      "I want to buy shampoo with plant based formula and exfoliating scalp care.",
+      "I would like to purchase shampoo featuring scalp benefits and balancing cleanser.",
+      "Looking to buy shampoo with plant based ingredients and rich exfoliating."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B08XYBS678",
+    "brand": "Dove",
+    "category": "hand wash",
+    "attributes": [
+      "foaming hand wash",
+      "coconut and almond milk",
+      "nourishing cleanser",
+      "cruelty free"
+    ],
+    "canonical_sentence": "I want to buy hand wash with foaming cleanser and coconut and almond milk.",
+    "training_queries": [
+      "I want to buy hand wash with foaming cleanser and coconut and almond milk.",
+      "I would like to purchase hand wash featuring nourishing formula and softer hands.",
+      "Looking to buy hand wash with foaming hand wash and clean skin."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy shampoo with plant based formula and exfoliating scalp care.",
+  "alignment_training_queries": [
+    "I want to buy shampoo with plant based formula and exfoliating scalp care.",
+    "I would like to purchase shampoo featuring scalp benefits and balancing cleanser.",
+    "Looking to buy shampoo with plant based ingredients and rich exfoliating."
+  ]
+}

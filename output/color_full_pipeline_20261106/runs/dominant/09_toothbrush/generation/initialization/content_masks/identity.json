@@ -1,0 +1,20 @@
+{
+  "source_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+  "regions": [
+    [
+      0.22,
+      0.4,
+      0.78,
+      0.95
+    ]
+  ],
+  "source_foreground_sha256": "1645f325d01f924ecbc874e69eabaa39944ad23f253e36e53242281dd39d3fb9",
+  "implementation_sha256": "e2f88d618d1d1c99c0cfb4ea40858832b840cb73f67722adf68b228b407c4bcb",
+  "material_implementation_sha256": "d3bb8727635fede93813e340d6ec00f08b399e19900f59eea6888a945b872de4",
+  "palette_implementation_sha256": "47ee11d20730b21169b5e000b6c6fc04deeef9407446370e922910a84231d397",
+  "config": {
+    "feather_pixels": 2.0
+  },
+  "selection_uses_source_only": true,
+  "content_semantics_certified": false
+}

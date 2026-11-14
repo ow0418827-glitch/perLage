@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-11-05T14:17:52.614537+00:00",
+  "completed_episodes": 36,
+  "completed_after_recovery": 4,
+  "original_32_records_unchanged": true,
+  "restored_guidance_unchanged": true,
+  "regression_tests_passed": 82,
+  "background_execution_confirmed": true
+}

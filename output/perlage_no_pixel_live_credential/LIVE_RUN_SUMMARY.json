@@ -1,0 +1,20 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_live_credential\\adversarial.png",
+  "output_image_sha256": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058",
+  "generative_anchor_sha256": "eb74f445d0a21f0bb9c18b23265b6a43f23ba0d5f23219cf15a410a74a76d058",
+  "ready_sha256": "a2db712a0a51d79f1b90d37f6ed1b370822c515cf00bcd44620737abb9fb7851",
+  "method_identity_sha256": "48be4503aa97b8b192d97bd9f89f39b52fcc90d16bfce86abb4e22c1e60f1182",
+  "audit_sha256": "bb404d690f43c873cd87561a02b6a9fda7ab0cabee21483b7416f4517250e384",
+  "completion_sha256": "b29aaa7ea105bd0b6fd3f65912ce5f62cd65d713972956411a3cd516f9214bef",
+  "elapsed_seconds": 7310.6894786,
+  "stages": [
+    "foreground_segmentation",
+    "foreground_statistics",
+    "color_harmonization",
+    "latent_generation_refinement"
+  ],
+  "pixel_optimization": false,
+  "auxiliary_max_levels": 0
+}

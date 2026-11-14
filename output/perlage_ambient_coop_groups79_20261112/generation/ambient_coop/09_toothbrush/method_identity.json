@@ -1,0 +1,305 @@
+{
+  "auxiliary_levels": 0,
+  "config": {
+    "ambient_feather_pixels": 3.0,
+    "ambient_grid_size": 8,
+    "ambient_init_bias": 0.3,
+    "ambient_learning_rate": 0.004,
+    "ambient_limit": 0.15,
+    "ambient_smooth_sigma": 14.0,
+    "anchor_source": "perlage_final",
+    "auxiliary_levels": 0,
+    "background_levels": 28,
+    "bg_chroma_keep": 0.75,
+    "bg_chroma_smooth_sigma": 4.5,
+    "bg_chroma_tv_weight": 0.002,
+    "bg_l2_weight": 5e-05,
+    "bg_luma_smooth_sigma": 2.2,
+    "bg_tv_weight": 0.0012,
+    "check_every": 10,
+    "compensated_weight": 0.5,
+    "diffusion_weight": 0.0,
+    "edge_feather_mode": "cosine",
+    "edge_feather_pixels": 12.0,
+    "feature_weight": 0.0,
+    "fg_chroma_keep": 0.3,
+    "fg_chroma_smooth_sigma": 9.0,
+    "fg_edge_feather_pixels": 8.0,
+    "fg_l2_weight": 0.0001,
+    "fg_luma_smooth_sigma": 5.0,
+    "fg_tv_weight": 0.0004,
+    "guard_backtracks": 8,
+    "halo_floor": 12.0,
+    "halo_parent_multiplier": 1.0,
+    "halo_soft_weight": 0.0001,
+    "joint_weight": 0.5,
+    "latent_learning_rate": 0.06,
+    "latent_levels": 6,
+    "latent_limit": 6.0,
+    "latent_smoothing_mix": 0.05,
+    "latent_working_size": 512,
+    "overflow_weight": 0.05,
+    "pixel_optimization": false,
+    "roi_feather_pixels": 6.0,
+    "seed": 42,
+    "source_mae_ceiling": 20.0,
+    "source_ssim_floor": 0.78,
+    "steps": 350,
+    "tau_scale": 0.75,
+    "temperature": 0.04
+  },
+  "definition": "perlage_ambient_coop_subject_micro_light_background_ambient_smooth_v1",
+  "diffusion_calls": 0,
+  "encoder": {
+    "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+    "device": "cuda",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+    "image_size": 224,
+    "loading": {
+      "activation": "QuickGELU",
+      "actual_activation_modules": {
+        "GELU": 0,
+        "QuickGELU": 24
+      },
+      "architecture": {
+        "embed_dim": 512,
+        "text_cfg": {
+          "context_length": 77,
+          "heads": 8,
+          "layers": 12,
+          "vocab_size": 49408,
+          "width": 512
+        },
+        "vision_cfg": {
+          "image_size": 224,
+          "layers": 12,
+          "patch_size": 32,
+          "width": 768
+        }
+      },
+      "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+      "loader_version": 2,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "metadata_source": "registered_pretrained_tag",
+      "quick_gelu": true,
+      "registered_preprocess": {
+        "interpolation": "bicubic",
+        "resize_mode": "shortest"
+      },
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ],
+      "strict_state_dict": true
+    },
+    "name": "ViT-B-32",
+    "open_clip_torch_version": "3.3.0",
+    "precision": "fp32",
+    "preprocess": {
+      "align_corners": false,
+      "antialias": true,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "resize": "bicubic_direct_square",
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ]
+    },
+    "pretrained": "openai",
+    "requires_true_local_tokens": true,
+    "role": "attack_surrogate",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+    "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31"
+  },
+  "feature_retention": false,
+  "formal_queries_used": false,
+  "halo_hard_gate": false,
+  "image_text_training_weight": [
+    0.5,
+    0.5
+  ],
+  "implementation": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\colour.py": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\core.py": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\latent_branch.py": "85e5bee60459a78e8eed76d5c9e4db4ef66c9658aa6905ff785e524a907b63fe",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_ambient_coop\\__init__.py": "39eb923db065b1b4626a7ae569447a5afd9db5ab42d3c78b2ad3bb958d1367eb",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_ambient_coop\\pipeline.py": "ac699b7e65ae843ebdee8e5e3337563e3039fc481ff41337afd6ae257817405a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\backbone.py": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\clip.py": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\joint.py": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\image_utils.py": "1c3de78ae65303342eb06c5edead18ad49712d9162652a1e39f2bbaa4f9bd630",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\retrieval_objective.py": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\robust_objectives.py": "1c73c01a4c2c3e465c26661e0607bf4e17fc6edf68eff9e8bd0f3c25200e3bb5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\target_features.py": "87538faaed0f9614423b886b8c83c88c1ded928c8165651115ed6b8fabf83c55"
+  },
+  "inputs": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\source.jpg": "74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\target.jpg": "48b0143f4c06290ab18acd036f74d640f50c3d935b4a349a4280a5bfedf11bc2"
+  },
+  "mask_policy": "perlage_final_subject_micro_light_background_range_centered_ambient_smooth_v1",
+  "method": "PerLAGE_ambient_coop",
+  "noise_retention_gate": false,
+  "objective": "equal_absolute_fullkey_joint_and_analytic_compensated_image_cosine_ambient_coop_v1",
+  "ordinary_teacher_score_floor": false,
+  "pixel_optimization": false,
+  "prefix_binding": {
+    "ambient_coop_latent_refinement": true,
+    "anchor_source": "perlage_final",
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "c191951ac6339377170b497692f505fa45f3cce6bd0ce5ad26cb9c43ca106d2e",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\adversarial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "49e4d75f722d86942d946bf17bf009052181d92f4f1f8ab7278e62c3e04dc701",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "d2d034416d15dcdc753766a73260491e2ade54b28654d2faa3507130be179c34",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "eede4270daa2b5eecf1a9e4f38df37ed7ad1dcb27687785a685bf63c38aabd42",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\ready.json": "8a8ebd16ac47b460c3f7ce09ed06dcaf5ef3855489a5da1015089617589419dd"
+    },
+    "first_three_stages_reused": true,
+    "fresh_first_three_stages_executed": false,
+    "generative_anchor_sha256": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "49e4d75f722d86942d946bf17bf009052181d92f4f1f8ab7278e62c3e04dc701",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "d2d034416d15dcdc753766a73260491e2ade54b28654d2faa3507130be179c34",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "eede4270daa2b5eecf1a9e4f38df37ed7ad1dcb27687785a685bf63c38aabd42"
+    },
+    "initialization_reused": true,
+    "perlage_no_pixel_final_sha256": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+    "ready_sha256": "8a8ebd16ac47b460c3f7ce09ed06dcaf5ef3855489a5da1015089617589419dd",
+    "root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation",
+    "selected_anchor_sha256": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+    "stages": {
+      "color_harmonization": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "d0520ab626291219a1a14d7fbac4ad44068db902212fcc16e1b0595ac09387a1"
+        },
+        "status": "completed"
+      },
+      "foreground_segmentation": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "c191951ac6339377170b497692f505fa45f3cce6bd0ce5ad26cb9c43ca106d2e",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "3295d1b2754e54d63745b1f48e5bcb3b5e1d03445465a02205502dfcf442f7d5",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "45a2cbf225f7548aeb7eec12ab08e5783e80e51f854c53bde86ef373a66c30e0",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "471c119c1112fc4318b3a5e6081142854e3fd5048123bfcb285167313226f00d"
+        },
+        "status": "completed"
+      },
+      "foreground_statistics": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "16df8e19d1263941280194ff0f6867e162fc2bea5ac116da65f772580e6dc87b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "5731bbb9f413bba705528fd62932c261ddcb6568529d3bfecd9bcc1f9486ec76"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "profile": "ambient_coop",
+  "public_definition": {
+    "color_scheme": "statistics",
+    "data": {
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\source.jpg",
+      "source_title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\target.jpg",
+      "training_queries": [
+        "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads."
+      ]
+    },
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "method": "PerLAGE_no_pixel",
+    "pixel_optimization": false,
+    "print_regions": [],
+    "schema_version": 2,
+    "source_boxes": [
+      [
+        121,
+        40,
+        391,
+        465
+      ]
+    ],
+    "target_boxes": [
+      [
+        135,
+        51,
+        350,
+        446
+      ]
+    ],
+    "target_feature_text": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+    "training_data_policy": "catalog_image_and_public_title_only_v1"
+  },
+  "selection_rule": "best_public_training_objective_with_fixed_quality_gates",
+  "shadow_pool_used": false,
+  "source_public_key_text": "Title: Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)\nBrand: Tthxqing\nFeatures: a U-shaped design, soft silicone brush heads, 360-degree cleaning, food-grade silicone, brush head, easy use\nFeatureText: I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "source_public_record": {
+    "attributes": [
+      "a U-shaped design",
+      "soft silicone brush heads",
+      "360-degree cleaning",
+      "food-grade silicone",
+      "brush head",
+      "easy use"
+    ],
+    "brand": "Tthxqing",
+    "feature_evidence": [
+      {
+        "feature": "a U-shaped design",
+        "field": "Title",
+        "quote": "U shaped Toothbrush"
+      },
+      {
+        "feature": "soft silicone brush heads",
+        "field": "Title",
+        "quote": "Soft Silicone Brush Head"
+      },
+      {
+        "feature": "360-degree cleaning",
+        "field": "Title",
+        "quote": "360 Degrees"
+      },
+      {
+        "feature": "food-grade silicone",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "food grade silicone"
+      }
+    ],
+    "feature_text": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+    "id": "B09PNNXYJ4",
+    "provenance": "public_catalog_verified_review",
+    "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)"
+  },
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "training_queries": [
+    "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads."
+  ],
+  "true_rank_used": false,
+  "vae": {
+    "diffusion_calls": 0,
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5\\vae\\config.json": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+      "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5\\vae\\diffusion_pytorch_model.fp16.safetensors": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c"
+    },
+    "kind": "same_sd15_vae_only_no_noise_network",
+    "posterior": "mode",
+    "precision": "float32"
+  },
+  "victim_memory_used": false
+}

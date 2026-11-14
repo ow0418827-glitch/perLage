@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "protocol": "shampoo_single_global_189_controlled_image_ablation_v1",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shared_memory\\pool_189_v1\\shared_memory.json",
+  "pool_sha256": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8",
+  "pool_count": 189,
+  "source_memory_id": "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+  "source_asin": "B08XYBS678",
+  "target_asin": "B00BDJODWI",
+  "source_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\source.jpg",
+  "target_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\target.jpg",
+  "source_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+  "public_definition_sha256": "74ccd25fc101aecb81c64f89fea88214ce93966337426cb43287412af7bef52d",
+  "latent_definition_sha256": "214facb139082d030f23aec3332fad0e2f07b528a1c6225fa3cd4164079884cf",
+  "pixel_control_definition_sha256": "c4ee1ceaa70a23c167780fb85d50daedb82e6529e61aa66986d88ea1fcd83c90",
+  "paired_protocol_amendment_sha256": "355a85b0e6ef77fe0d7c96502dca7b988edf441ba5d5e21c9ef38ca4ef2684d4",
+  "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation_inputs\\query.png",
+  "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+  "queries": [
+    {
+      "task_id": "vague_01",
+      "instruction": "请购买与图片中商品相似的商品。"
+    },
+    {
+      "task_id": "vague_02",
+      "instruction": "请帮我找一件图中这样的商品。"
+    },
+    {
+      "task_id": "vague_03",
+      "instruction": "请按这张参考图挑选类似商品。"
+    },
+    {
+      "task_id": "vague_04",
+      "instruction": "我想买图片里这种样式的商品。"
+    },
+    {
+      "task_id": "vague_05",
+      "instruction": "请参考图片选购相近的商品。"
+    },
+    {
+      "task_id": "vague_06",
+      "instruction": "帮我购买一件外观与图中相近的商品。"
+    },
+    {
+      "task_id": "vague_07",
+      "instruction": "请找一件与这张图大致相似的商品。"
+    },
+    {
+      "task_id": "vague_08",
+      "instruction": "我需要图片所示类型的商品，请帮我选购。"
+    },
+    {
+      "task_id": "vague_09",
+      "instruction": "请依照图中样式购买类似的商品。"
+    },
+    {
+      "task_id": "vague_10",
+      "instruction": "帮我找找与图片中物品相仿的商品。"
+    },
+    {
+      "task_id": "vague_11",
+      "instruction": "请根据参考图片帮我选购一件商品。"
+    },
+    {
+      "task_id": "vague_12",
+      "instruction": "我想购买一件与这张图类似的商品。"
+    },
+    {
+      "task_id": "vague_13",
+      "instruction": "请挑选和图片中物品整体相近的商品。"
+    },
+    {
+      "task_id": "vague_14",
+      "instruction": "照着这张图帮我购买类似款式。"
+    },
+    {
+      "task_id": "vague_15",
+      "instruction": "请帮我选购图中这种外观的商品。"
+    },
+    {
+      "task_id": "vague_16",
+      "instruction": "我需要一件与参考图相近的商品。"
+    },
+    {
+      "task_id": "vague_17",
+      "instruction": "请按照图片中的大致样式选购。"
+    },
+    {
+      "task_id": "vague_18",
+      "instruction": "帮我购买与图里物品风格相近的商品。"
+    },
+    {
+      "task_id": "vague_19",
+      "instruction": "请找一件整体看起来像参考图的商品。"
+    },
+    {
+      "task_id": "vague_20",
+      "instruction": "请参考这张图购买一件相似商品即可。"
+    }
+  ],
+  "variants": {
+    "clean": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "lucid_original_16": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\lucid_original_16.png",
+      "sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852"
+    },
+    "lucid_4": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_4\\adversarial.png",
+      "sha256": "61ce8265d5bd90b397e9d7599dbbccca51c8091c00ca9d5384103f8e3199383d"
+    },
+    "lucid_8": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_8\\adversarial.png",
+      "sha256": "a9c63ec8cf3589e8481fa8bceac1233b47e0dc76b647d9bc8b7e352479aa7266"
+    },
+    "perlage_original_no_shadow": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_original_no_shadow.png",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80"
+    },
+    "perlage_pixel_control": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_pixel_control\\adversarial.png",
+      "sha256": "8871d16aa089788e3b1598ad283f91dff4b8e88cda35957e61abbc0ff684f426"
+    },
+    "perlage_latent_only": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_latent_only\\adversarial.png",
+      "sha256": "80c9ec960b888bfed971b0f174fb64a0fcb8680ad29cce6c9166aad1fcb543eb"
+    },
+    "perlage_legacy_reference": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_legacy_reference.png",
+      "sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529"
+    },
+    "perlage_color_revision_reference": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_color_revision_reference.png",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb"
+    }
+  },
+  "condition": "none",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "index_text": "title",
+  "full_global_bank_used_for_every_query": true,
+  "formal_queries_used_during_training": false,
+  "source_title_changed": false,
+  "only_one_memory_image_changed_per_arm": true,
+  "shopping_runs": 0,
+  "primary_perlage_control": "perlage_pixel_control",
+  "common_latent_prefix_exactly_shared": true,
+  "secondary_references": [
+    "perlage_legacy_reference",
+    "perlage_color_revision_reference"
+  ]
+}

@@ -1,0 +1,1857 @@
+{
+  "status": "completed",
+  "config": {
+    "steps": 350,
+    "check_every": 10,
+    "latent_levels": 20,
+    "background_levels": 6,
+    "anchor_source": "harmonized",
+    "edge_feather_pixels": 12.0,
+    "roi_feather_pixels": 6.0,
+    "edge_feather_mode": "cosine",
+    "luma_smooth_sigma": 2.2,
+    "chroma_smooth_sigma": 5.0,
+    "bg_chroma_keep": 0.55,
+    "fg_chroma_keep": 0.85,
+    "tau_scale": 0.75,
+    "latent_working_size": 512,
+    "latent_limit": 6.0,
+    "latent_learning_rate": 0.06,
+    "latent_smoothing_mix": 0.0,
+    "source_ssim_floor": 0.82,
+    "source_mae_ceiling": 14.0,
+    "temperature": 0.04,
+    "fg_l2_weight": 5e-05,
+    "fg_tv_weight": 0.0002,
+    "bg_l2_weight": 0.0001,
+    "bg_tv_weight": 0.0015,
+    "bg_chroma_tv_weight": 0.003,
+    "overflow_weight": 0.05,
+    "halo_soft_weight": 0.0001,
+    "halo_parent_multiplier": 1.0,
+    "halo_floor": 12.0,
+    "guard_backtracks": 8,
+    "auxiliary_levels": 0,
+    "pixel_optimization": false,
+    "feature_weight": 0.0,
+    "diffusion_weight": 0.0,
+    "joint_weight": 0.5,
+    "compensated_weight": 0.5,
+    "seed": 42
+  },
+  "history": [
+    {
+      "source_ssim": 0.9760313297477161,
+      "source_mae_levels": 4.671575546264648,
+      "fg_source_mae_levels": 8.891379356384277,
+      "bg_source_mae_levels": 0.7182801365852356,
+      "fg_anchor_mae_levels": 0.0,
+      "bg_anchor_mae_levels": 0.0,
+      "halo_error": 5.360787718460605,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 0,
+      "joint_scores": [
+        [
+          0.6926685571670532
+        ]
+      ],
+      "training_utility": 0.48990246653556824,
+      "regularization": 0.0005360786453820765,
+      "selection_utility": 0.4893663823604584,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.28713637590408325
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7319581508636475
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.27044713497161865
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6266191005706787
+        ]
+      ],
+      "selection": [
+        1,
+        0.4893663823604584
+      ]
+    },
+    {
+      "source_ssim": 0.9335054066896786,
+      "source_mae_levels": 7.075736045837402,
+      "fg_source_mae_levels": 12.338314056396484,
+      "bg_source_mae_levels": 2.1455225944519043,
+      "fg_anchor_mae_levels": 6.957685470581055,
+      "bg_anchor_mae_levels": 1.68795907497406,
+      "halo_error": 10.154874053504267,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 10,
+      "joint_scores": [
+        [
+          0.7472931146621704
+        ]
+      ],
+      "training_utility": 0.5974901914596558,
+      "regularization": 0.0011515446240082383,
+      "selection_utility": 0.5963386297225952,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.4476872980594635
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7785462141036987
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2711661458015442
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6561914682388306
+        ]
+      ],
+      "selection": [
+        1,
+        0.5963386297225952
+      ]
+    },
+    {
+      "source_ssim": 0.912281850532186,
+      "source_mae_levels": 7.754885196685791,
+      "fg_source_mae_levels": 13.557989120483398,
+      "bg_source_mae_levels": 2.318283796310425,
+      "fg_anchor_mae_levels": 8.701976776123047,
+      "bg_anchor_mae_levels": 1.884225845336914,
+      "halo_error": 10.92051367984367,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 20,
+      "joint_scores": [
+        [
+          0.7728332281112671
+        ]
+      ],
+      "training_utility": 0.6503837704658508,
+      "regularization": 0.001255861483514309,
+      "selection_utility": 0.6491279006004333,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.5279343128204346
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7708336114883423
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2781822085380554
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6557559967041016
+        ]
+      ],
+      "selection": [
+        1,
+        0.6491279006004333
+      ]
+    },
+    {
+      "source_ssim": 0.9002246069514409,
+      "source_mae_levels": 7.980997085571289,
+      "fg_source_mae_levels": 13.962328910827637,
+      "bg_source_mae_levels": 2.377424716949463,
+      "fg_anchor_mae_levels": 9.449644088745117,
+      "bg_anchor_mae_levels": 1.9584944248199463,
+      "halo_error": 11.019484441353486,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 30,
+      "joint_scores": [
+        [
+          0.7909300327301025
+        ]
+      ],
+      "training_utility": 0.6837642788887024,
+      "regularization": 0.0012829065090045333,
+      "selection_utility": 0.6824813485145569,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.5765985250473022
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7696323990821838
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2855398952960968
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.659604549407959
+        ]
+      ],
+      "selection": [
+        1,
+        0.6824813485145569
+      ]
+    },
+    {
+      "source_ssim": 0.8927615846292831,
+      "source_mae_levels": 8.035750389099121,
+      "fg_source_mae_levels": 14.068097114562988,
+      "bg_source_mae_levels": 2.384384870529175,
+      "fg_anchor_mae_levels": 9.699801445007324,
+      "bg_anchor_mae_levels": 1.9840633869171143,
+      "halo_error": 11.578094292462847,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 40,
+      "joint_scores": [
+        [
+          0.807476282119751
+        ]
+      ],
+      "training_utility": 0.713392436504364,
+      "regularization": 0.0013476130552589893,
+      "selection_utility": 0.7120448350906372,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.619308590888977
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7787865400314331
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28057634830474854
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6622241735458374
+        ]
+      ],
+      "selection": [
+        1,
+        0.7120448350906372
+      ]
+    },
+    {
+      "source_ssim": 0.8874870215535091,
+      "source_mae_levels": 8.078328132629395,
+      "fg_source_mae_levels": 14.148367881774902,
+      "bg_source_mae_levels": 2.3916492462158203,
+      "fg_anchor_mae_levels": 9.862019538879395,
+      "bg_anchor_mae_levels": 2.004751443862915,
+      "halo_error": 11.645961244928039,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 50,
+      "joint_scores": [
+        [
+          0.8208162784576416
+        ]
+      ],
+      "training_utility": 0.7378630042076111,
+      "regularization": 0.0013656887458637357,
+      "selection_utility": 0.7364973425865173,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.6549097299575806
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7699546813964844
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2864287793636322
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.660361647605896
+        ]
+      ],
+      "selection": [
+        1,
+        0.7364973425865173
+      ]
+    },
+    {
+      "source_ssim": 0.8831606356263562,
+      "source_mae_levels": 8.17651081085205,
+      "fg_source_mae_levels": 14.307595252990723,
+      "bg_source_mae_levels": 2.432643175125122,
+      "fg_anchor_mae_levels": 9.989479064941406,
+      "bg_anchor_mae_levels": 2.0498464107513428,
+      "halo_error": 11.635631918785334,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 60,
+      "joint_scores": [
+        [
+          0.8310128450393677
+        ]
+      ],
+      "training_utility": 0.7550293207168579,
+      "regularization": 0.0013724491000175476,
+      "selection_utility": 0.7536568641662598,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.6790458559989929
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7725291848182678
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28592729568481445
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.661657452583313
+        ]
+      ],
+      "selection": [
+        1,
+        0.7536568641662598
+      ]
+    },
+    {
+      "source_ssim": 0.8801872651181505,
+      "source_mae_levels": 8.21184253692627,
+      "fg_source_mae_levels": 14.342945098876953,
+      "bg_source_mae_levels": 2.4679582118988037,
+      "fg_anchor_mae_levels": 10.08376407623291,
+      "bg_anchor_mae_levels": 2.083498239517212,
+      "halo_error": 11.492665672864696,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 70,
+      "joint_scores": [
+        [
+          0.8379914164543152
+        ]
+      ],
+      "training_utility": 0.7686474323272705,
+      "regularization": 0.0013661631383001804,
+      "selection_utility": 0.7672812938690186,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.6993035078048706
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7637214660644531
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28568601608276367
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6560008525848389
+        ]
+      ],
+      "selection": [
+        1,
+        0.7672812938690186
+      ]
+    },
+    {
+      "source_ssim": 0.877336516653621,
+      "source_mae_levels": 8.227767944335938,
+      "fg_source_mae_levels": 14.344337463378906,
+      "bg_source_mae_levels": 2.4974989891052246,
+      "fg_anchor_mae_levels": 10.126559257507324,
+      "bg_anchor_mae_levels": 2.116917610168457,
+      "halo_error": 11.310329601113558,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 80,
+      "joint_scores": [
+        [
+          0.8441611528396606
+        ]
+      ],
+      "training_utility": 0.7790571451187134,
+      "regularization": 0.00135519087780267,
+      "selection_utility": 0.7777019739151001,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7139532566070557
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7592934370040894
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28899601101875305
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6553019285202026
+        ]
+      ],
+      "selection": [
+        1,
+        0.7777019739151001
+      ]
+    },
+    {
+      "source_ssim": 0.8756189703009858,
+      "source_mae_levels": 8.255277633666992,
+      "fg_source_mae_levels": 14.386151313781738,
+      "bg_source_mae_levels": 2.5116066932678223,
+      "fg_anchor_mae_levels": 10.18726634979248,
+      "bg_anchor_mae_levels": 2.132115364074707,
+      "halo_error": 11.30158240632871,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 90,
+      "joint_scores": [
+        [
+          0.8489685654640198
+        ]
+      ],
+      "training_utility": 0.7869945764541626,
+      "regularization": 0.0013600377133116126,
+      "selection_utility": 0.7856345176696777,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7250206470489502
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7606387138366699
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2870762348175049
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6549428701400757
+        ]
+      ],
+      "selection": [
+        1,
+        0.7856345176696777
+      ]
+    },
+    {
+      "source_ssim": 0.874283011698179,
+      "source_mae_levels": 8.230838775634766,
+      "fg_source_mae_levels": 14.34290885925293,
+      "bg_source_mae_levels": 2.504783868789673,
+      "fg_anchor_mae_levels": 10.179177284240723,
+      "bg_anchor_mae_levels": 2.128427505493164,
+      "halo_error": 11.20410882777505,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 100,
+      "joint_scores": [
+        [
+          0.8531561493873596
+        ]
+      ],
+      "training_utility": 0.7936248779296875,
+      "regularization": 0.0013536479091271758,
+      "selection_utility": 0.7922712564468384,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7340936660766602
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.761857271194458
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2864856719970703
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6553353071212769
+        ]
+      ],
+      "selection": [
+        1,
+        0.7922712564468384
+      ]
+    },
+    {
+      "source_ssim": 0.8728704228324449,
+      "source_mae_levels": 8.222938537597656,
+      "fg_source_mae_levels": 14.30540657043457,
+      "bg_source_mae_levels": 2.5246171951293945,
+      "fg_anchor_mae_levels": 10.158499717712402,
+      "bg_anchor_mae_levels": 2.1489737033843994,
+      "halo_error": 11.135309683845561,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 110,
+      "joint_scores": [
+        [
+          0.8565375804901123
+        ]
+      ],
+      "training_utility": 0.7997947931289673,
+      "regularization": 0.0013517907354980707,
+      "selection_utility": 0.7984430193901062,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.743052065372467
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7566075325012207
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28735196590423584
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6525952816009521
+        ]
+      ],
+      "selection": [
+        1,
+        0.7984430193901062
+      ]
+    },
+    {
+      "source_ssim": 0.8716538872163492,
+      "source_mae_levels": 8.225001335144043,
+      "fg_source_mae_levels": 14.294435501098633,
+      "bg_source_mae_levels": 2.5388903617858887,
+      "fg_anchor_mae_levels": 10.169167518615723,
+      "bg_anchor_mae_levels": 2.161785125732422,
+      "halo_error": 11.080096448120177,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 120,
+      "joint_scores": [
+        [
+          0.8599399924278259
+        ]
+      ],
+      "training_utility": 0.8047179579734802,
+      "regularization": 0.0013499729102477431,
+      "selection_utility": 0.8033679723739624,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7494959831237793
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7579094171524048
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28865253925323486
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6542221307754517
+        ]
+      ],
+      "selection": [
+        1,
+        0.8033679723739624
+      ]
+    },
+    {
+      "source_ssim": 0.8707787464698857,
+      "source_mae_levels": 8.20910358428955,
+      "fg_source_mae_levels": 14.256477355957031,
+      "bg_source_mae_levels": 2.5436601638793945,
+      "fg_anchor_mae_levels": 10.166025161743164,
+      "bg_anchor_mae_levels": 2.1659247875213623,
+      "halo_error": 11.103446227741037,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 130,
+      "joint_scores": [
+        [
+          0.8633865118026733
+        ]
+      ],
+      "training_utility": 0.8081557750701904,
+      "regularization": 0.0013544418616220355,
+      "selection_utility": 0.8068013191223145,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7529250979423523
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7688535451889038
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2892996072769165
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6614680290222168
+        ]
+      ],
+      "selection": [
+        1,
+        0.8068013191223145
+      ]
+    },
+    {
+      "source_ssim": 0.8694073114353975,
+      "source_mae_levels": 8.199604034423828,
+      "fg_source_mae_levels": 14.230549812316895,
+      "bg_source_mae_levels": 2.549550771713257,
+      "fg_anchor_mae_levels": 10.165512084960938,
+      "bg_anchor_mae_levels": 2.1721150875091553,
+      "halo_error": 11.067755047226798,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 140,
+      "joint_scores": [
+        [
+          0.8665357828140259
+        ]
+      ],
+      "training_utility": 0.8145105242729187,
+      "regularization": 0.001354314386844635,
+      "selection_utility": 0.8131561875343323,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7624852657318115
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7580238580703735
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2916576862335205
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6561721563339233
+        ]
+      ],
+      "selection": [
+        1,
+        0.8131561875343323
+      ]
+    },
+    {
+      "source_ssim": 0.8683492470036402,
+      "source_mae_levels": 8.194918632507324,
+      "fg_source_mae_levels": 14.214930534362793,
+      "bg_source_mae_levels": 2.5551083087921143,
+      "fg_anchor_mae_levels": 10.166581153869629,
+      "bg_anchor_mae_levels": 2.1767685413360596,
+      "halo_error": 11.036028864298014,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 150,
+      "joint_scores": [
+        [
+          0.8685494661331177
+        ]
+      ],
+      "training_utility": 0.8168888688087463,
+      "regularization": 0.0013528192648664117,
+      "selection_utility": 0.8155360221862793,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7652281522750854
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7623502612113953
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2918708324432373
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6590099334716797
+        ]
+      ],
+      "selection": [
+        1,
+        0.8155360221862793
+      ]
+    },
+    {
+      "source_ssim": 0.8676231678966045,
+      "source_mae_levels": 8.203580856323242,
+      "fg_source_mae_levels": 14.212510108947754,
+      "bg_source_mae_levels": 2.5741539001464844,
+      "fg_anchor_mae_levels": 10.176627159118652,
+      "bg_anchor_mae_levels": 2.19553542137146,
+      "halo_error": 10.935324634445433,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 160,
+      "joint_scores": [
+        [
+          0.871288537979126
+        ]
+      ],
+      "training_utility": 0.8223493099212646,
+      "regularization": 0.0013447358505800366,
+      "selection_utility": 0.8210045695304871,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7734101414680481
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7564948797225952
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2901018559932709
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6542438268661499
+        ]
+      ],
+      "selection": [
+        1,
+        0.8210045695304871
+      ]
+    },
+    {
+      "source_ssim": 0.8667419794556575,
+      "source_mae_levels": 8.198833465576172,
+      "fg_source_mae_levels": 14.202363967895508,
+      "bg_source_mae_levels": 2.5744636058807373,
+      "fg_anchor_mae_levels": 10.173007011413574,
+      "bg_anchor_mae_levels": 2.1978232860565186,
+      "halo_error": 10.901795362303988,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 170,
+      "joint_scores": [
+        [
+          0.8727136850357056
+        ]
+      ],
+      "training_utility": 0.8236105442047119,
+      "regularization": 0.0013429953251034021,
+      "selection_utility": 0.8222675323486328,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.774507462978363
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7639596462249756
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28844115138053894
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6578720808029175
+        ]
+      ],
+      "selection": [
+        1,
+        0.8222675323486328
+      ]
+    },
+    {
+      "source_ssim": 0.8661812515951861,
+      "source_mae_levels": 8.194999694824219,
+      "fg_source_mae_levels": 14.18571662902832,
+      "bg_source_mae_levels": 2.582634449005127,
+      "fg_anchor_mae_levels": 10.178584098815918,
+      "bg_anchor_mae_levels": 2.2062628269195557,
+      "halo_error": 10.870927045486887,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 180,
+      "joint_scores": [
+        [
+          0.8757932782173157
+        ]
+      ],
+      "training_utility": 0.828589916229248,
+      "regularization": 0.001341077033430338,
+      "selection_utility": 0.8272488117218018,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7813865542411804
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7593895792961121
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2912839651107788
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6567922830581665
+        ]
+      ],
+      "selection": [
+        1,
+        0.8272488117218018
+      ]
+    },
+    {
+      "source_ssim": 0.8652375472495849,
+      "source_mae_levels": 8.195381164550781,
+      "fg_source_mae_levels": 14.176531791687012,
+      "bg_source_mae_levels": 2.591977834701538,
+      "fg_anchor_mae_levels": 10.17608642578125,
+      "bg_anchor_mae_levels": 2.21659779548645,
+      "halo_error": 10.879601880651489,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 190,
+      "joint_scores": [
+        [
+          0.8770253658294678
+        ]
+      ],
+      "training_utility": 0.8303343057632446,
+      "regularization": 0.001343569252640009,
+      "selection_utility": 0.8289907574653625,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7836431860923767
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.76002436876297
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29148054122924805
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6573119759559631
+        ]
+      ],
+      "selection": [
+        1,
+        0.8289907574653625
+      ]
+    },
+    {
+      "source_ssim": 0.8645683217962936,
+      "source_mae_levels": 8.19847297668457,
+      "fg_source_mae_levels": 14.179084777832031,
+      "bg_source_mae_levels": 2.5955750942230225,
+      "fg_anchor_mae_levels": 10.17899227142334,
+      "bg_anchor_mae_levels": 2.2209079265594482,
+      "halo_error": 10.901979779987029,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 200,
+      "joint_scores": [
+        [
+          0.8797621130943298
+        ]
+      ],
+      "training_utility": 0.8358744382858276,
+      "regularization": 0.0013479733606800437,
+      "selection_utility": 0.8345264792442322,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7919868230819702
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.751594066619873
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29061853885650635
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6515032052993774
+        ]
+      ],
+      "selection": [
+        1,
+        0.8345264792442322
+      ]
+    },
+    {
+      "source_ssim": 0.864046131437187,
+      "source_mae_levels": 8.197250366210938,
+      "fg_source_mae_levels": 14.168243408203125,
+      "bg_source_mae_levels": 2.6033639907836914,
+      "fg_anchor_mae_levels": 10.17344856262207,
+      "bg_anchor_mae_levels": 2.228980541229248,
+      "halo_error": 10.883854612407733,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 210,
+      "joint_scores": [
+        [
+          0.8799967765808105
+        ]
+      ],
+      "training_utility": 0.8373646140098572,
+      "regularization": 0.0013479567132890224,
+      "selection_utility": 0.8360166549682617,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7947324514389038
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7455236315727234
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2889913320541382
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6466913819313049
+        ]
+      ],
+      "selection": [
+        1,
+        0.8360166549682617
+      ]
+    },
+    {
+      "source_ssim": 0.8635813859807149,
+      "source_mae_levels": 8.205449104309082,
+      "fg_source_mae_levels": 14.177623748779297,
+      "bg_source_mae_levels": 2.610455274581909,
+      "fg_anchor_mae_levels": 10.178308486938477,
+      "bg_anchor_mae_levels": 2.2357723712921143,
+      "halo_error": 10.907399644450608,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 220,
+      "joint_scores": [
+        [
+          0.8824715614318848
+        ]
+      ],
+      "training_utility": 0.8404925465583801,
+      "regularization": 0.001351665472611785,
+      "selection_utility": 0.8391408920288086,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.7985135316848755
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7480531930923462
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2902609705924988
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6490662097930908
+        ]
+      ],
+      "selection": [
+        1,
+        0.8391408920288086
+      ]
+    },
+    {
+      "source_ssim": 0.8631802109990477,
+      "source_mae_levels": 8.207130432128906,
+      "fg_source_mae_levels": 14.172775268554688,
+      "bg_source_mae_levels": 2.6182568073272705,
+      "fg_anchor_mae_levels": 10.18327808380127,
+      "bg_anchor_mae_levels": 2.2428715229034424,
+      "halo_error": 10.898275122750134,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 230,
+      "joint_scores": [
+        [
+          0.8845137357711792
+        ]
+      ],
+      "training_utility": 0.8433231711387634,
+      "regularization": 0.0013527008704841137,
+      "selection_utility": 0.8419704437255859,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8021326065063477
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7502390146255493
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.28945016860961914
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6499258279800415
+        ]
+      ],
+      "selection": [
+        1,
+        0.8419704437255859
+      ]
+    },
+    {
+      "source_ssim": 0.862865757349978,
+      "source_mae_levels": 8.206177711486816,
+      "fg_source_mae_levels": 14.166158676147461,
+      "bg_source_mae_levels": 2.622605800628662,
+      "fg_anchor_mae_levels": 10.183619499206543,
+      "bg_anchor_mae_levels": 2.246053457260132,
+      "halo_error": 10.870734851308987,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 240,
+      "joint_scores": [
+        [
+          0.8848001956939697
+        ]
+      ],
+      "training_utility": 0.844578206539154,
+      "regularization": 0.0013510641874745488,
+      "selection_utility": 0.8432271480560303,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8043562173843384
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7421131134033203
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29174062609672546
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6462779641151428
+        ]
+      ],
+      "selection": [
+        1,
+        0.8432271480560303
+      ]
+    },
+    {
+      "source_ssim": 0.8626873901173471,
+      "source_mae_levels": 8.204596519470215,
+      "fg_source_mae_levels": 14.157443046569824,
+      "bg_source_mae_levels": 2.627711296081543,
+      "fg_anchor_mae_levels": 10.183123588562012,
+      "bg_anchor_mae_levels": 2.2506113052368164,
+      "halo_error": 10.834161309735721,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 250,
+      "joint_scores": [
+        [
+          0.8870605230331421
+        ]
+      ],
+      "training_utility": 0.847684383392334,
+      "regularization": 0.0013488330878317356,
+      "selection_utility": 0.8463355302810669,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8083083033561707
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7432690858840942
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29213374853134155
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6472463607788086
+        ]
+      ],
+      "selection": [
+        1,
+        0.8463355302810669
+      ]
+    },
+    {
+      "source_ssim": 0.8624415377704469,
+      "source_mae_levels": 8.198720932006836,
+      "fg_source_mae_levels": 14.14497184753418,
+      "bg_source_mae_levels": 2.6280133724212646,
+      "fg_anchor_mae_levels": 10.182235717773438,
+      "bg_anchor_mae_levels": 2.2506601810455322,
+      "halo_error": 10.815164368390839,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 260,
+      "joint_scores": [
+        [
+          0.8882443308830261
+        ]
+      ],
+      "training_utility": 0.8490391969680786,
+      "regularization": 0.0013480570632964373,
+      "selection_utility": 0.8476911187171936,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8098340034484863
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7468165159225464
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29132747650146484
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6489599347114563
+        ]
+      ],
+      "selection": [
+        1,
+        0.8476911187171936
+      ]
+    },
+    {
+      "source_ssim": 0.8622084858970519,
+      "source_mae_levels": 8.193449020385742,
+      "fg_source_mae_levels": 14.133904457092285,
+      "bg_source_mae_levels": 2.628170967102051,
+      "fg_anchor_mae_levels": 10.181672096252441,
+      "bg_anchor_mae_levels": 2.250905752182007,
+      "halo_error": 10.79513348067585,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 270,
+      "joint_scores": [
+        [
+          0.8895969986915588
+        ]
+      ],
+      "training_utility": 0.8515181541442871,
+      "regularization": 0.0013463422656059265,
+      "selection_utility": 0.8501718044281006,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8134392499923706
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7420509457588196
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29246655106544495
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6466929316520691
+        ]
+      ],
+      "selection": [
+        1,
+        0.8501718044281006
+      ]
+    },
+    {
+      "source_ssim": 0.8618313847702151,
+      "source_mae_levels": 8.193428993225098,
+      "fg_source_mae_levels": 14.12690544128418,
+      "bg_source_mae_levels": 2.6346917152404785,
+      "fg_anchor_mae_levels": 10.179104804992676,
+      "bg_anchor_mae_levels": 2.2562127113342285,
+      "halo_error": 10.746217107711338,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 280,
+      "joint_scores": [
+        [
+          0.8913027048110962
+        ]
+      ],
+      "training_utility": 0.8543801307678223,
+      "regularization": 0.0013426372315734625,
+      "selection_utility": 0.8530374765396118,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8174575567245483
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7403490543365479
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2913578748703003
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6449359655380249
+        ]
+      ],
+      "selection": [
+        1,
+        0.8530374765396118
+      ]
+    },
+    {
+      "source_ssim": 0.8615406622795441,
+      "source_mae_levels": 8.193921089172363,
+      "fg_source_mae_levels": 14.124589920043945,
+      "bg_source_mae_levels": 2.6378111839294434,
+      "fg_anchor_mae_levels": 10.175555229187012,
+      "bg_anchor_mae_levels": 2.2589550018310547,
+      "halo_error": 10.734014771364984,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 290,
+      "joint_scores": [
+        [
+          0.892585039138794
+        ]
+      ],
+      "training_utility": 0.8552438020706177,
+      "regularization": 0.0013423589989542961,
+      "selection_utility": 0.8539014458656311,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8179025650024414
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7466610670089722
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2924593687057495
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6495702862739563
+        ]
+      ],
+      "selection": [
+        1,
+        0.8539014458656311
+      ]
+    },
+    {
+      "source_ssim": 0.8612785889698864,
+      "source_mae_levels": 8.195905685424805,
+      "fg_source_mae_levels": 14.12753963470459,
+      "bg_source_mae_levels": 2.6388933658599854,
+      "fg_anchor_mae_levels": 10.178267478942871,
+      "bg_anchor_mae_levels": 2.259918212890625,
+      "halo_error": 10.730961996690036,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 300,
+      "joint_scores": [
+        [
+          0.8928636312484741
+        ]
+      ],
+      "training_utility": 0.8566657304763794,
+      "regularization": 0.0013425878714770079,
+      "selection_utility": 0.8553231358528137,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8204677700996399
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7393615245819092
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29215091466903687
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6448144316673279
+        ]
+      ],
+      "selection": [
+        1,
+        0.8553231358528137
+      ]
+    },
+    {
+      "source_ssim": 0.8610560770744576,
+      "source_mae_levels": 8.194729804992676,
+      "fg_source_mae_levels": 14.12475299835205,
+      "bg_source_mae_levels": 2.6392264366149902,
+      "fg_anchor_mae_levels": 10.177051544189453,
+      "bg_anchor_mae_levels": 2.260592460632324,
+      "halo_error": 10.68208701441131,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 310,
+      "joint_scores": [
+        [
+          0.8937214612960815
+        ]
+      ],
+      "training_utility": 0.8586880564689636,
+      "regularization": 0.0013379945885390043,
+      "selection_utility": 0.8573500514030457,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8236546516418457
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7356053590774536
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2899308204650879
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.641078531742096
+        ]
+      ],
+      "selection": [
+        1,
+        0.8573500514030457
+      ]
+    },
+    {
+      "source_ssim": 0.8607904939825495,
+      "source_mae_levels": 8.195291519165039,
+      "fg_source_mae_levels": 14.120756149291992,
+      "bg_source_mae_levels": 2.6440582275390625,
+      "fg_anchor_mae_levels": 10.175436019897461,
+      "bg_anchor_mae_levels": 2.2650108337402344,
+      "halo_error": 10.662777093930316,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 320,
+      "joint_scores": [
+        [
+          0.8946595191955566
+        ]
+      ],
+      "training_utility": 0.8598315715789795,
+      "regularization": 0.001337268971838057,
+      "selection_utility": 0.8584942817687988,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8250036239624023
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7374111413955688
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2896856665611267
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6420542001724243
+        ]
+      ],
+      "selection": [
+        1,
+        0.8584942817687988
+      ]
+    },
+    {
+      "source_ssim": 0.8605918561674787,
+      "source_mae_levels": 8.192867279052734,
+      "fg_source_mae_levels": 14.115449905395508,
+      "bg_source_mae_levels": 2.644334554672241,
+      "fg_anchor_mae_levels": 10.174342155456543,
+      "bg_anchor_mae_levels": 2.2653026580810547,
+      "halo_error": 10.62845611925268,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 330,
+      "joint_scores": [
+        [
+          0.8961753845214844
+        ]
+      ],
+      "training_utility": 0.862062931060791,
+      "regularization": 0.0013345478801056743,
+      "selection_utility": 0.86072838306427,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8279504776000977
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7361459732055664
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2904849648475647
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6417628526687622
+        ]
+      ],
+      "selection": [
+        1,
+        0.86072838306427
+      ]
+    },
+    {
+      "source_ssim": 0.8603842416392334,
+      "source_mae_levels": 8.187856674194336,
+      "fg_source_mae_levels": 14.107952117919922,
+      "bg_source_mae_levels": 2.6416540145874023,
+      "fg_anchor_mae_levels": 10.169275283813477,
+      "bg_anchor_mae_levels": 2.263200521469116,
+      "halo_error": 10.599506531381156,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 340,
+      "joint_scores": [
+        [
+          0.8968455195426941
+        ]
+      ],
+      "training_utility": 0.8632467985153198,
+      "regularization": 0.0013320985017344356,
+      "selection_utility": 0.8619146943092346,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8296480774879456
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.734180212020874
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.29067206382751465
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6406510472297668
+        ]
+      ],
+      "selection": [
+        1,
+        0.8619146943092346
+      ]
+    },
+    {
+      "source_ssim": 0.8601598565518004,
+      "source_mae_levels": 8.187530517578125,
+      "fg_source_mae_levels": 14.106184959411621,
+      "bg_source_mae_levels": 2.642679214477539,
+      "fg_anchor_mae_levels": 10.16818618774414,
+      "bg_anchor_mae_levels": 2.2639520168304443,
+      "halo_error": 10.554545532389415,
+      "quality_ok": true,
+      "natural_halo_gate": true,
+      "halo_hard_gate": false,
+      "step": 350,
+      "joint_scores": [
+        [
+          0.8973662853240967
+        ]
+      ],
+      "training_utility": 0.8642621636390686,
+      "regularization": 0.0013282388681545854,
+      "selection_utility": 0.8629339337348938,
+      "halo_ceiling": 12.8620334353522,
+      "parent_halo_error": 12.8620334353522,
+      "compensated_image_cosine": [
+        [
+          0.8311580419540405
+        ]
+      ],
+      "image_to_target_cosine": [
+        [
+          0.7304694652557373
+        ]
+      ],
+      "image_to_training_text_cosine": [
+        [
+          0.2922205924987793
+        ]
+      ],
+      "image_to_query_cosine": [
+        [
+          0.6392993927001953
+        ]
+      ],
+      "selection": [
+        1,
+        0.8629339337348938
+      ]
+    }
+  ],
+  "steps_completed": 350,
+  "best": {
+    "source_ssim": 0.8601598565518004,
+    "source_mae_levels": 8.187530517578125,
+    "fg_source_mae_levels": 14.106184959411621,
+    "bg_source_mae_levels": 2.642679214477539,
+    "fg_anchor_mae_levels": 10.16818618774414,
+    "bg_anchor_mae_levels": 2.2639520168304443,
+    "halo_error": 10.554545532389415,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "halo_hard_gate": false,
+    "step": 350,
+    "joint_scores": [
+      [
+        0.8973662853240967
+      ]
+    ],
+    "training_utility": 0.8642621636390686,
+    "regularization": 0.0013282388681545854,
+    "selection_utility": 0.8629339337348938,
+    "halo_ceiling": 12.8620334353522,
+    "parent_halo_error": 12.8620334353522,
+    "compensated_image_cosine": [
+      [
+        0.8311580419540405
+      ]
+    ],
+    "image_to_target_cosine": [
+      [
+        0.7304694652557373
+      ]
+    ],
+    "image_to_training_text_cosine": [
+      [
+        0.2922205924987793
+      ]
+    ],
+    "image_to_query_cosine": [
+      [
+        0.6392993927001953
+      ]
+    ],
+    "selection": [
+      1,
+      0.8629339337348938
+    ]
+  },
+  "final_check": {
+    "source_ssim": 0.8601598565518004,
+    "source_mae_levels": 8.187530517578125,
+    "fg_source_mae_levels": 14.106184959411621,
+    "bg_source_mae_levels": 2.642679214477539,
+    "fg_anchor_mae_levels": 10.16818618774414,
+    "bg_anchor_mae_levels": 2.2639520168304443,
+    "halo_error": 10.554545532389415,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "halo_hard_gate": false,
+    "step": 350,
+    "joint_scores": [
+      [
+        0.8973662853240967
+      ]
+    ],
+    "training_utility": 0.8642621636390686,
+    "regularization": 0.0013282388681545854,
+    "selection_utility": 0.8629339337348938,
+    "halo_ceiling": 12.8620334353522,
+    "parent_halo_error": 12.8620334353522,
+    "compensated_image_cosine": [
+      [
+        0.8311580419540405
+      ]
+    ],
+    "image_to_target_cosine": [
+      [
+        0.7304694652557373
+      ]
+    ],
+    "image_to_training_text_cosine": [
+      [
+        0.2922205924987793
+      ]
+    ],
+    "image_to_query_cosine": [
+      [
+        0.6392993927001953
+      ]
+    ],
+    "selection": [
+      1,
+      0.8629339337348938
+    ]
+  },
+  "accepted_updates": 350,
+  "rejected_updates": 0,
+  "latent_max_levels": 20,
+  "latent_mae_levels": 6.087202666666666,
+  "fg_latent_max_levels": 20,
+  "fg_latent_mae_levels": 10.168188283549998,
+  "bg_latent_max_levels": 6,
+  "bg_latent_mae_levels": 2.2639581848420054,
+  "auxiliary_max_levels": 0,
+  "auxiliary_mae_levels": 0.0,
+  "pixel_optimization": false,
+  "no_pixel_optimization": true,
+  "diffusion_calls": 0,
+  "printed_region_fixed_to_harmonized_anchor": true,
+  "halo_hard_gate": false,
+  "halo_soft_weight": 0.0001,
+  "mask_nonzero_pixels": 234855,
+  "mask_mean": 0.48342665359337034,
+  "full_foreground_mask": false,
+  "foreground_limited": true,
+  "background_only_optimization": false,
+  "dual_smooth_body_and_background": true,
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "elapsed_seconds": 877.8019304999907,
+  "output_sha256": "1a43e88624e03b40fb56978f91f681e019b0d8f716e17902d376f11b276897df"
+}

@@ -1,0 +1,21 @@
+{
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "generated_sha256": "ec40868e6da941f206970ae919379bc890ce5400ce15cddadd46aa6d61d528c8",
+  "trials": [
+    {
+      "alpha": 1.0,
+      "ssim": 0.9711667767348642,
+      "mae": 3.7602081298828125
+    }
+  ],
+  "selection": "largest_fixed_one_over_32_blend_with_ssim_at_least_0p97_mae_at_most_4",
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "chosen": {
+    "alpha": 1.0,
+    "ssim": 0.9711667767348642,
+    "mae": 3.7602081298828125
+  },
+  "prepared_sha256": "ec40868e6da941f206970ae919379bc890ce5400ce15cddadd46aa6d61d528c8",
+  "status": "completed"
+}

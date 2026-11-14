@@ -1,0 +1,91 @@
+{
+  "id": "B08V134QWR",
+  "identity": {
+    "image_sha256": "3e640007088747b83c734fe3a612c241f88b370490d99b3aca717f92f4dd0126",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\target.jpg",
+  "title": "PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio IP66 Waterproof",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\annotations\\target\\foreground.png",
+  "foreground_mask_sha256": "8dcf49dc72bc61e4de6b10c5715f1971bbf666d56c4beaf33027c7194640ee7a",
+  "boxes": [
+    [
+      15,
+      65,
+      490,
+      465
+    ]
+  ],
+  "text_regions": [
+    [
+      0.466,
+      0.53,
+      0.634,
+      0.584
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "HXVIEW",
+      "confidence": 0.9936249454816183,
+      "polygon": [
+        [
+          236.0,
+          268.0
+        ],
+        [
+          314.0,
+          268.0
+        ],
+        [
+          314.0,
+          289.0
+        ],
+        [
+          236.0,
+          289.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9182958602905273,
+      "foreground_ratio": 0.412228,
+      "rough_coverage": 0.9966432680635456,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.8981040716171265,
+      "foreground_ratio": 0.2959,
+      "rough_coverage": 0.7031403388399219,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.9365525841712952,
+      "foreground_ratio": 0.353772,
+      "rough_coverage": 0.8504037578508471,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 2,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\annotations\\target\\review_overlay.png",
+  "observed_seconds": 2.7571064999974624
+}

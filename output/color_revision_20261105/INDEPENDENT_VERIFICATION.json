@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "max_absolute_error": 1.1920928955078125e-07,
+  "checks": [
+    {
+      "version": "v1",
+      "group": "07_shampoo",
+      "kind": "baseline",
+      "expected": 0.7649683952331543,
+      "actual": 0.7649683952331543,
+      "error": 0.0
+    },
+    {
+      "version": "v1",
+      "group": "07_shampoo",
+      "kind": "candidate",
+      "expected": 0.7016215324401855,
+      "actual": 0.7016215324401855,
+      "error": 0.0
+    },
+    {
+      "version": "v1",
+      "group": "09_toothbrush",
+      "kind": "baseline",
+      "expected": 0.858569860458374,
+      "actual": 0.8585699796676636,
+      "error": 1.1920928955078125e-07
+    },
+    {
+      "version": "v1",
+      "group": "09_toothbrush",
+      "kind": "candidate",
+      "expected": 0.7433027625083923,
+      "actual": 0.7433027625083923,
+      "error": 0.0
+    },
+    {
+      "version": "v1",
+      "group": "02_chair",
+      "kind": "baseline",
+      "expected": 0.9202423691749573,
+      "actual": 0.9202423095703125,
+      "error": 5.960464477539063e-08
+    },
+    {
+      "version": "v1",
+      "group": "02_chair",
+      "kind": "candidate",
+      "expected": 0.9050846099853516,
+      "actual": 0.9050846099853516,
+      "error": 0.0
+    },
+    {
+      "version": "v2",
+      "group": "07_shampoo",
+      "kind": "baseline",
+      "expected": 0.7649683952331543,
+      "actual": 0.7649683952331543,
+      "error": 0.0
+    },
+    {
+      "version": "v2",
+      "group": "07_shampoo",
+      "kind": "candidate",
+      "expected": 0.765254020690918,
+      "actual": 0.7652540802955627,
+      "error": 5.960464477539063e-08
+    },
+    {
+      "version": "v2",
+      "group": "09_toothbrush",
+      "kind": "baseline",
+      "expected": 0.858569860458374,
+      "actual": 0.8585699796676636,
+      "error": 1.1920928955078125e-07
+    },
+    {
+      "version": "v2",
+      "group": "09_toothbrush",
+      "kind": "candidate",
+      "expected": 0.8585730195045471,
+      "actual": 0.8585729598999023,
+      "error": 5.960464477539063e-08
+    },
+    {
+      "version": "v2",
+      "group": "02_chair",
+      "kind": "baseline",
+      "expected": 0.9202423691749573,
+      "actual": 0.9202423095703125,
+      "error": 5.960464477539063e-08
+    },
+    {
+      "version": "v2",
+      "group": "02_chair",
+      "kind": "candidate",
+      "expected": 0.920657217502594,
+      "actual": 0.9206572771072388,
+      "error": 5.960464477539063e-08
+    }
+  ],
+  "scope": "fresh_encoder_saved_image_cosine_recomputation",
+  "optimization_rerun": false
+}

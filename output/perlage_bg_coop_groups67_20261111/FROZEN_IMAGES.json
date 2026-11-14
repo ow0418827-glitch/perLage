@@ -1,0 +1,35 @@
+{
+  "status": "frozen",
+  "images": {
+    "fg64_bg16": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg64_bg16\\06_jeans\\adversarial.png",
+        "sha256": "17b83d17acdee93199c700beddbd1d4d2e8301a351c5ef91cddf90410871d3a3",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg64_bg16\\06_jeans\\ready.json",
+        "ready_sha256": "61bce8558744debd3e4aa241fe9907f48db13014ad6994d9bfe5d586392470e9"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg64_bg16\\07_shampoo\\adversarial.png",
+        "sha256": "e03e6ec3540e1c32e386fe390c4565bbad5a9ad2f2777a97b02640f06c386525",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg64_bg16\\07_shampoo\\ready.json",
+        "ready_sha256": "4daca3d39a39c42cade40358a41871a5a2366b35047c45bd62411b26f2b7712d"
+      }
+    },
+    "fg48_bg12": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\06_jeans\\adversarial.png",
+        "sha256": "efe087f7186b8f974cb9c9eddc4ca2edd993c191f3cbc9e6b28670af3be6c39b",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\06_jeans\\ready.json",
+        "ready_sha256": "42fd5cda97bf7d1d35fdc79aec97d90e2ad19096dc1ab0cc5c0a6ac6a786c4e0"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\07_shampoo\\adversarial.png",
+        "sha256": "1de1b14e64f4799e6a7d5c2ba6640971c5d4d81c8e4e8be3b54852c53ffac6b4",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\07_shampoo\\ready.json",
+        "ready_sha256": "8f4464a7a14c23166d29580e9d1457b1fd1e71212a305b7e88a8abdb581fee01"
+      }
+    }
+  },
+  "plan_sha256": "2f30415188a056abb1c88eaf6cbd1326f13f06570d2d2dc0b618204c9ec987fd",
+  "formal_rankings_used": false
+}

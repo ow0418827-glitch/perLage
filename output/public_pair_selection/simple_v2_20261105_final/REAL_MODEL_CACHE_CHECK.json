@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "real_frozen_model": true,
+  "images": 57,
+  "new_forward_calls": 0,
+  "cache_load_seconds": 1.2909203000017442,
+  "calibration_pairs": 100,
+  "threshold": 0.6010810730721305,
+  "development_errors": 19,
+  "libraries": {
+    "transformers": "5.13.0",
+    "torch": "2.11.0+cu128",
+    "pillow": "12.3.0",
+    "numpy": "2.4.6"
+  },
+  "blocked_accesses": []
+}

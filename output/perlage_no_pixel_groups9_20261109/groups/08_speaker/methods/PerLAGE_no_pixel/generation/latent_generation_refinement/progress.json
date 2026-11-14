@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "step": 60,
+  "seconds": 1452.0959552999993,
+  "best": {
+    "step": 50,
+    "ordinary_guard_slack": 0.015291452407836914,
+    "source_ssim": 0.9617700255507372,
+    "source_mae_levels": 5.459354400634766,
+    "quality_ok": true,
+    "halo_error": 0.0,
+    "parent_halo_error": 0.0,
+    "natural_halo_gate": true,
+    "noise_panel": [
+      {
+        "timestep": 99,
+        "seed": 9401,
+        "minimum_query_gap": 0.0026642680168151855,
+        "query_gaps": [
+          [
+            0.0026642680168151855
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9402,
+        "minimum_query_gap": 0.005877137184143066,
+        "query_gaps": [
+          [
+            0.005877137184143066
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9403,
+        "minimum_query_gap": 0.005315840244293213,
+        "query_gaps": [
+          [
+            0.005315840244293213
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9404,
+        "minimum_query_gap": 0.005625665187835693,
+        "query_gaps": [
+          [
+            0.005625665187835693
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9405,
+        "minimum_query_gap": 0.0066550374031066895,
+        "query_gaps": [
+          [
+            0.0066550374031066895
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9406,
+        "minimum_query_gap": 0.008022546768188477,
+        "query_gaps": [
+          [
+            0.008022546768188477
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9407,
+        "minimum_query_gap": 0.005248904228210449,
+        "query_gaps": [
+          [
+            0.005248904228210449
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9408,
+        "minimum_query_gap": 0.007934808731079102,
+        "query_gaps": [
+          [
+            0.007934808731079102
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9401,
+        "minimum_query_gap": 0.005403697490692139,
+        "query_gaps": [
+          [
+            0.005403697490692139
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9402,
+        "minimum_query_gap": 0.004887104034423828,
+        "query_gaps": [
+          [
+            0.004887104034423828
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9403,
+        "minimum_query_gap": 0.003573596477508545,
+        "query_gaps": [
+          [
+            0.003573596477508545
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9404,
+        "minimum_query_gap": 0.005225181579589844,
+        "query_gaps": [
+          [
+            0.005225181579589844
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9405,
+        "minimum_query_gap": 0.0041062235832214355,
+        "query_gaps": [
+          [
+            0.0041062235832214355
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9406,
+        "minimum_query_gap": 0.006419241428375244,
+        "query_gaps": [
+          [
+            0.006419241428375244
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9407,
+        "minimum_query_gap": 0.0029081106185913086,
+        "query_gaps": [
+          [
+            0.0029081106185913086
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9408,
+        "minimum_query_gap": 0.006296873092651367,
+        "query_gaps": [
+          [
+            0.006296873092651367
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9401,
+        "minimum_query_gap": 0.004610538482666016,
+        "query_gaps": [
+          [
+            0.004610538482666016
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9402,
+        "minimum_query_gap": 0.003925681114196777,
+        "query_gaps": [
+          [
+            0.003925681114196777
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9403,
+        "minimum_query_gap": 0.004898786544799805,
+        "query_gaps": [
+          [
+            0.004898786544799805
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9404,
+        "minimum_query_gap": 0.002910614013671875,
+        "query_gaps": [
+          [
+            0.002910614013671875
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9405,
+        "minimum_query_gap": 0.0026932954788208008,
+        "query_gaps": [
+          [
+            0.0026932954788208008
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9406,
+        "minimum_query_gap": 0.00797569751739502,
+        "query_gaps": [
+          [
+            0.00797569751739502
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9407,
+        "minimum_query_gap": 0.006523072719573975,
+        "query_gaps": [
+          [
+            0.006523072719573975
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9408,
+        "minimum_query_gap": 0.003251314163208008,
+        "query_gaps": [
+          [
+            0.003251314163208008
+          ]
+        ]
+      }
+    ],
+    "group_quartile_gaps": {
+      "99": 0.005299106240272522,
+      "199": 0.003973066806793213,
+      "399": 0.0031661391258239746
+    },
+    "weakest_timestep": 399,
+    "retention_slack": 0.0036661391258239746,
+    "max_own_key_distance": 0.07277150452136993,
+    "selection_utility": 0.6522189378738403,
+    "selection": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0.6522189378738403
+    ]
+  },
+  "accepted_updates": 60,
+  "rejected_updates": 0
+}

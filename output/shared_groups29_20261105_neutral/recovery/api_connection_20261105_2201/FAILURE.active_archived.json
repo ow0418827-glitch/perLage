@@ -1,0 +1,12 @@
+{
+  "group": "09_toothbrush",
+  "bank": "clean",
+  "task_id": "vague_13",
+  "error_type": "APIConnectionError",
+  "http_status": null,
+  "model": {
+    "provider": "minimax",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimax.cn/v1"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "query_mode": "text",
+  "target_public_id": "B01460C2I2",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "hair extensions",
+  "core_attributes": [
+    "real human hair",
+    "double wefts",
+    "a clip-in design"
+  ],
+  "instructions": [
+    "I want to buy hair extensions with real human hair and double wefts.",
+    "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+    "Looking to buy hair extensions with double wefts and a clip-in design.",
+    "I am looking to buy hair extensions with real human hair and double wefts.",
+    "Please help me buy hair extensions featuring real human hair and a clip-in design.",
+    "I am shopping for hair extensions with double wefts and a clip-in design.",
+    "I would like to buy hair extensions with real human hair and double wefts.",
+    "Help me purchase hair extensions featuring real human hair and a clip-in design.",
+    "I am looking for hair extensions with double wefts and a clip-in design.",
+    "Please find hair extensions with real human hair and double wefts for me to buy.",
+    "I want to purchase hair extensions featuring real human hair and a clip-in design.",
+    "Please help me purchase hair extensions with double wefts and a clip-in design.",
+    "I need to buy hair extensions with real human hair and double wefts.",
+    "I would like help finding hair extensions featuring real human hair and a clip-in design.",
+    "Find me hair extensions with double wefts and a clip-in design to purchase.",
+    "Please look for hair extensions with real human hair and double wefts that I can buy.",
+    "I am interested in buying hair extensions featuring real human hair and a clip-in design.",
+    "I would like to shop for hair extensions with double wefts and a clip-in design.",
+    "Help me find hair extensions with real human hair and double wefts to buy.",
+    "I am ready to purchase hair extensions featuring real human hair and a clip-in design."
+  ],
+  "instructions_sha256": "9bd16c4a666d9fac75fb971cde10e2b23c5f9212dcc151c576db9cacde12379d",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": false,
+  "query_images_generated": false,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection"
+}

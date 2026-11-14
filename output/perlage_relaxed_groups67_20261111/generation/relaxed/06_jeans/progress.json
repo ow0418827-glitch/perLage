@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "profile": "relaxed",
+  "step": 160,
+  "requested_steps": 160,
+  "best": {
+    "source_ssim": 0.9387602244722182,
+    "source_mae_levels": 7.0505571365356445,
+    "halo_error": 0.0,
+    "quality_ok": true,
+    "natural_halo_gate": true,
+    "step": 110,
+    "joint_scores": [
+      [
+        0.8084075450897217
+      ]
+    ],
+    "training_utility": 0.8084075450897217,
+    "regularization": 1.534525836177636e-05,
+    "selection_utility": 0.8083922266960144,
+    "halo_ceiling": 12.0,
+    "parent_halo_error": 0.0,
+    "selection": [
+      1,
+      0.8083922266960144
+    ]
+  },
+  "accepted_updates": 160,
+  "rejected_updates": 0,
+  "seconds": 176.52045720000024
+}

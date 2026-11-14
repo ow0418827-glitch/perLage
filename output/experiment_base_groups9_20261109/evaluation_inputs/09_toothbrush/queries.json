@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "status": "ready",
+  "query_mode": "text",
+  "target_public_id": "B09J81RMLD",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "toothbrush",
+  "core_attributes": [
+    "a u-shaped design",
+    "soft silicone brush heads",
+    "360-degree cleaning"
+  ],
+  "instructions": [
+    "I want to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+    "I would like to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "Looking to buy a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+    "I am looking to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+    "Please help me buy a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "I am shopping for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+    "I would like to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+    "Help me purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "I am looking for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+    "Please find a toothbrush with a u-shaped design and soft silicone brush heads for me to buy.",
+    "I want to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "Please help me purchase a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+    "I need to buy a toothbrush with a u-shaped design and soft silicone brush heads.",
+    "I would like help finding a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "Find me a toothbrush with soft silicone brush heads and 360-degree cleaning to purchase.",
+    "Please look for a toothbrush with a u-shaped design and soft silicone brush heads that I can buy.",
+    "I am interested in buying a toothbrush featuring a u-shaped design and 360-degree cleaning.",
+    "I would like to shop for a toothbrush with soft silicone brush heads and 360-degree cleaning.",
+    "Help me find a toothbrush with a u-shaped design and soft silicone brush heads to buy.",
+    "I am ready to purchase a toothbrush featuring a u-shaped design and 360-degree cleaning."
+  ],
+  "instructions_sha256": "afdb530d39d55428f21fb25f9488655891b3751529bd2c93947cf4ebe763f6a7",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": false,
+  "query_images_generated": false,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection"
+}

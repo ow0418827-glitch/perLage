@@ -1,0 +1,100 @@
+{
+  "status": "passed",
+  "verified_at": "2026-11-12T04:31:57.899382+00:00",
+  "authorization": "2026-11-12 用户明确要求完成重选洗发水环境光协同生成，复用长期记忆库测试检索；正常启动后不持续监听。",
+  "source_id": "B09B63YYCW",
+  "target_id": "B00BDJODWI",
+  "plan_sha256": "057391d92899d76be882984966823b626d5f80d5b53686fae23b21cf1d91036f",
+  "test_command": ".venv/Scripts/python.exe -X utf8 -B -m pytest src/tests/test_ambient_coop_shampoo_reselect.py -q --disable-warnings --maxfail=1",
+  "tests_passed": 6,
+  "test_exit_code": 0,
+  "implementation_changes_required": false,
+  "existing_baseline_files": {
+    "output/datasets/public/public_products_v2.sqlite": {
+      "expected": "60843908735fa497ca381f9c8801dfc16050c8f5155e1f53d97bd366e2fb29c0",
+      "actual": "60843908735fa497ca381f9c8801dfc16050c8f5155e1f53d97bd366e2fb29c0",
+      "unchanged": true
+    },
+    "output/datasets/public/calibration/shape_v2_verified/threshold.json": {
+      "expected": "bd483cca45f83c19d545d3d04f8ce45b47f75f25188f2dc58d9fbb3a052a50cd",
+      "actual": "bd483cca45f83c19d545d3d04f8ce45b47f75f25188f2dc58d9fbb3a052a50cd",
+      "unchanged": true
+    },
+    "output/datasets/public/calibration/shape_v2_dev_20261105/development.json": {
+      "expected": "d424aae4f76d405cda6f63d2aa22fc1887be0ba634ded05382f3f0e783d9e644",
+      "actual": "d424aae4f76d405cda6f63d2aa22fc1887be0ba634ded05382f3f0e783d9e644",
+      "unchanged": true
+    },
+    "output/public_pair_selection/groups9_review_20261108/REVIEW_MANIFEST.json": {
+      "expected": "a87acc317359847ec14576885c55dac8b534563f21c9803b9efe8e07c95d72fc",
+      "actual": "a87acc317359847ec14576885c55dac8b534563f21c9803b9efe8e07c95d72fc",
+      "unchanged": true
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/definition.json": {
+      "expected": "ab1fd8616f5a3af4993b8dab106c050ac033bf0e13ec288fc53acef3b587abc2",
+      "actual": "ab1fd8616f5a3af4993b8dab106c050ac033bf0e13ec288fc53acef3b587abc2",
+      "unchanged": true
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/source.jpg": {
+      "expected": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "actual": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "unchanged": true
+    },
+    "output/public_pair_selection/groups9_review_20261108/groups/07_shampoo/target.jpg": {
+      "expected": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+      "actual": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+      "unchanged": true
+    },
+    "output/experiment_base_groups9_20261109/manifest.json": {
+      "expected": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+      "actual": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+      "unchanged": true
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/definition.json": {
+      "expected": "06e888751c34659f7cc85ad372405850f9739790a774a615302956d2ed9c3d4e",
+      "actual": "06e888751c34659f7cc85ad372405850f9739790a774a615302956d2ed9c3d4e",
+      "unchanged": true
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/source.jpg": {
+      "expected": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "actual": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "unchanged": true
+    },
+    "output/experiment_base_groups9_20261109/groups/07_shampoo/target.jpg": {
+      "expected": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+      "actual": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+      "unchanged": true
+    },
+    "output/experiment_base_groups9_20261109/shared_memory/shared_memory.json": {
+      "expected": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+      "actual": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+      "unchanged": true
+    },
+    "output/shared_memory/pool_189_v1/shared_memory.json": {
+      "expected": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8",
+      "actual": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8",
+      "unchanged": true
+    },
+    "data/public/product_metadata.json": {
+      "expected": "2cd05d919c05ef0eda28cbcb646b9fa560e01a79ac39a77a02bdffde22ddb691",
+      "actual": "2cd05d919c05ef0eda28cbcb646b9fa560e01a79ac39a77a02bdffde22ddb691",
+      "unchanged": true
+    },
+    "data/public/product_feature_review.json": {
+      "expected": "8868444f2d14a02a68c6d0b23cfa5bcfa3cf48bbe96a84cd2468fb61e1eeab78",
+      "actual": "8868444f2d14a02a68c6d0b23cfa5bcfa3cf48bbe96a84cd2468fb61e1eeab78",
+      "unchanged": true
+    }
+  },
+  "existing_run_files": [
+    "EXPERIMENT_PLAN.json",
+    "PREPARED.json",
+    "RUN.lock"
+  ],
+  "independent_review": "生成边界、189条独立库单条目替换、无购物、独立复算、恢复与方法接口已只读审查通过",
+  "cuda_available": true,
+  "python": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "shopping_enabled": false,
+  "model_api_calls_enabled": false,
+  "unattended_after_startup": true
+}

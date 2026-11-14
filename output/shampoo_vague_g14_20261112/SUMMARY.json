@@ -1,0 +1,119 @@
+{
+  "rows": [
+    {
+      "method": "lucid",
+      "bank": "clean",
+      "baseline": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 56.35,
+        "minimum_rank": 47,
+        "maximum_rank": 67,
+        "mrr": 0.01783967871320038
+      },
+      "g14": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 36.2,
+        "minimum_rank": 27,
+        "maximum_rank": 39,
+        "mrr": 0.027837234355229716
+      }
+    },
+    {
+      "method": "lucid",
+      "bank": "modified",
+      "baseline": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 66.7,
+        "minimum_rank": 57,
+        "maximum_rank": 76,
+        "mrr": 0.015068201088720423
+      },
+      "g14": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 34.6,
+        "minimum_rank": 26,
+        "maximum_rank": 39,
+        "mrr": 0.02917005234835805
+      }
+    },
+    {
+      "method": "perlage_no_pixel",
+      "bank": "clean",
+      "baseline": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 56.35,
+        "minimum_rank": 47,
+        "maximum_rank": 67,
+        "mrr": 0.01783967871320038
+      },
+      "g14": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 36.2,
+        "minimum_rank": 27,
+        "maximum_rank": 39,
+        "mrr": 0.027837234355229716
+      }
+    },
+    {
+      "method": "perlage_no_pixel",
+      "bank": "modified",
+      "baseline": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 49.55,
+        "minimum_rank": 39,
+        "maximum_rank": 60,
+        "mrr": 0.02042178628449303
+      },
+      "g14": {
+        "n": 20,
+        "top1": 0,
+        "top3": 0,
+        "top5": 0,
+        "mean_rank": 26.5,
+        "minimum_rank": 20,
+        "maximum_rank": 32,
+        "mrr": 0.03824149788589444
+      }
+    }
+  ],
+  "verification": {
+    "status": "passed",
+    "fresh_process": true,
+    "fresh_encoder": true,
+    "execution_device": "cuda",
+    "no_disk_vector_cache_read": true,
+    "score_comparisons": 15120,
+    "rankings_recomputed": 80,
+    "max_score_error": 0.0,
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\lucid\\retrieval\\07_shampoo\\clean.json": "0e00685c6a9fde3e1a74a0283845f7c33ad57d4f806566670cc810a47057045b",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\lucid\\retrieval\\07_shampoo\\modified.json": "a3f1874d49711acef96954c2e9de25352032853bd6b3f6153418b05a411b6d1b",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "867f2b1fe032d4dcb00160ac5208753751fd176ac1bf8f1a8397657a37a97728",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_vague_g14_20261112\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f2cf195fda42107e134c95ed46cf3f14fca82144c32213d2dadb99f4ced77abf"
+    }
+  },
+  "only_changed": "evaluation_encoder",
+  "generation_runs": 0,
+  "shopping_runs": 0
+}

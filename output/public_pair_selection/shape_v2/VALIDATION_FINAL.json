@@ -1,0 +1,69 @@
+{
+  "status": "passed_with_expected_public_empty_set",
+  "unit_tests_passed": 71,
+  "calibration_pairs": 100,
+  "calibration_reserved_products": 57,
+  "threshold": 0.6010810730721305,
+  "development_errors": 19,
+  "public_cli_exit_code": 3,
+  "public_candidates": [
+    {
+      "group": "02_chair",
+      "candidates": 32,
+      "eligible": 0
+    },
+    {
+      "group": "09_toothbrush",
+      "candidates": 32,
+      "eligible": 3
+    }
+  ],
+  "cache_validation": {
+    "status": "passed",
+    "real_frozen_model": true,
+    "images": 57,
+    "new_forward_calls": 0,
+    "cache_load_seconds": 1.2909203000017442,
+    "calibration_pairs": 100,
+    "threshold": 0.6010810730721305,
+    "development_errors": 19,
+    "libraries": {
+      "transformers": "5.13.0",
+      "torch": "2.11.0+cu128",
+      "pillow": "12.3.0",
+      "numpy": "2.4.6"
+    },
+    "blocked_accesses": []
+  },
+  "original_project_preservation": {
+    "source_files_checked": 707,
+    "changed_source_files": [],
+    "source_git_status_unchanged": true,
+    "source_pool_unchanged": true,
+    "previous_pairs": [
+      {
+        "group": "02_chair",
+        "legacy_pair_readable": true,
+        "source": "B09FY5Y9G2",
+        "target": "B09CYFD5BX",
+        "complete_frozen_generation_readable": true,
+        "generated_image_unchanged": true
+      },
+      {
+        "group": "09_toothbrush",
+        "legacy_pair_readable": true,
+        "source": "B09LVD5J4B",
+        "target": "B09J81RMLD",
+        "complete_frozen_generation_readable": true,
+        "generated_image_unchanged": true
+      }
+    ]
+  },
+  "old_shopping_records_audited": 80,
+  "old_policy_calls_audited": 312,
+  "current_source_matches_frozen_public_plan": true,
+  "new_pair_publication": false,
+  "new_method_generation": false,
+  "new_formal_retrieval": false,
+  "new_shopping": false
+}

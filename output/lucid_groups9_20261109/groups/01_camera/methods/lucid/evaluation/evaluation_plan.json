@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "shared",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+  "pool_sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+  "pool_count": 189,
+  "source_memory_id": "groups9_reference_01_camera_B071ZFHTZN",
+  "frozen_image_sha256": "9aeb87ce076f6ed5f4692be5cec0f46634c6962483debfe85e5df25c42b4e803",
+  "method": "lucid",
+  "queries": [
+    {
+      "task_id": "feature_01",
+      "instruction": "I want to buy a security camera with optical zoom and motion detection.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_02",
+      "instruction": "I would like to purchase a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_03",
+      "instruction": "Looking to buy a security camera with motion detection and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_04",
+      "instruction": "I am looking to buy a security camera with optical zoom and motion detection.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_05",
+      "instruction": "Please help me buy a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_06",
+      "instruction": "I am shopping for a security camera with motion detection and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_07",
+      "instruction": "I would like to buy a security camera with optical zoom and motion detection.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_08",
+      "instruction": "Help me purchase a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_09",
+      "instruction": "I am looking for a security camera with motion detection and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_10",
+      "instruction": "Please find a security camera with optical zoom and motion detection for me to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_11",
+      "instruction": "I want to purchase a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_12",
+      "instruction": "Please help me purchase a security camera with motion detection and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_13",
+      "instruction": "I need to buy a security camera with optical zoom and motion detection.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_14",
+      "instruction": "I would like help finding a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_15",
+      "instruction": "Find me a security camera with motion detection and night vision to purchase.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_16",
+      "instruction": "Please look for a security camera with optical zoom and motion detection that I can buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_17",
+      "instruction": "I am interested in buying a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_18",
+      "instruction": "I would like to shop for a security camera with motion detection and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_19",
+      "instruction": "Help me find a security camera with optical zoom and motion detection to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_20",
+      "instruction": "I am ready to purchase a security camera featuring optical zoom and night vision.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "none",
+      "label": "none"
+    }
+  ],
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "query_mode": "text",
+  "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\01_camera\\queries.json",
+  "query_manifest_sha256": "200b897bee1af328fa26542df283fbd92270da8748f4520432fe3bdf721dddf8",
+  "index_text": "product_feature",
+  "query_image_defended": false,
+  "all_memory_images_equally_defended": true,
+  "shopping_allowed": false,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  }
+}

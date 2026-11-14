@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "method": "lucid",
+  "target_text": "I want to buy a security camera with optical zoom and motion detection.",
+  "text_weight": 1.0,
+  "steps": 1000,
+  "epsilon_levels": 16,
+  "source": "source.jpg",
+  "target": "target.jpg"
+}

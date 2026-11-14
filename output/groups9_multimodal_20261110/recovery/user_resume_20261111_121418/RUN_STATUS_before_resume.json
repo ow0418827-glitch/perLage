@@ -1,0 +1,32 @@
+{
+  "status": "paused_by_user",
+  "updated_at": "2026-11-11T03:11:40.642672+00:00",
+  "shopping_paused": true,
+  "current_method": "lucid",
+  "next_group": "07_shampoo",
+  "next_task": "feature_15",
+  "valid_episodes": 134,
+  "total_expected": 360,
+  "methods": {
+    "lucid": {
+      "valid_episodes": 134,
+      "expected_episodes": 180,
+      "remaining": 46,
+      "next_group": "07_shampoo",
+      "next_task": "feature_15",
+      "outcomes_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\shopping\\outcomes.json",
+      "outcomes_sha256": "75686e15c6b43a18c543ae540bd851b7743ae085dc3b86a3eaa96dbbce7fc104"
+    },
+    "perlage_no_pixel": {
+      "valid_episodes": 0,
+      "expected_episodes": 180,
+      "remaining": 180,
+      "next_group": "01_camera",
+      "next_task": "feature_01",
+      "outcomes_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\perlage_no_pixel\\shopping\\outcomes.json",
+      "outcomes_sha256": null
+    }
+  },
+  "checkpoint": "USER_PAUSE_CHECKPOINT.json",
+  "no_automatic_resume": true
+}

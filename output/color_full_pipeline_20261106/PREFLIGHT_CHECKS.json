@@ -1,0 +1,7 @@
+{
+  "full_latent_numeric_defaults_identical": true,
+  "full_latent_steps": 60,
+  "training_cannot_read_prior_outputs_or_control": true,
+  "final_comparison_rejects_incomplete_generation": true,
+  "no_early_final_similarity_evaluation": true
+}

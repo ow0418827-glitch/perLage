@@ -1,0 +1,5 @@
+{
+  "status": "superseded_public_annotation_preflight",
+  "reason": "视觉预检发现目标理发椅分割含背景；改进公开标注提示并在独立目录重新标注。",
+  "final_selection_run": false
+}

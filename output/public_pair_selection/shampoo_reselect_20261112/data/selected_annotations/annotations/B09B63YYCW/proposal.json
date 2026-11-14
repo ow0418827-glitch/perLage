@@ -1,0 +1,315 @@
+{
+  "id": "B09B63YYCW",
+  "identity": {
+    "image_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72.jpg",
+  "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\selected_annotations\\annotations\\B09B63YYCW\\foreground.png",
+  "foreground_mask_sha256": "1863f22cad071a34348b9c970a9a49d7f12f13a88e4cfd2a983c09f4511f2d2f",
+  "boxes": [
+    [
+      1,
+      1,
+      180,
+      497
+    ]
+  ],
+  "text_regions": [
+    [
+      0.16022099447513813,
+      0.304,
+      0.856353591160221,
+      0.36
+    ],
+    [
+      0.12154696132596685,
+      0.52,
+      0.49171270718232046,
+      0.558
+    ],
+    [
+      0.12154696132596685,
+      0.554,
+      0.8950276243093923,
+      0.608
+    ],
+    [
+      0.11602209944751381,
+      0.678,
+      0.5082872928176796,
+      0.72
+    ],
+    [
+      0.1270718232044199,
+      0.712,
+      0.7237569060773481,
+      0.75
+    ],
+    [
+      0.13259668508287292,
+      0.73,
+      0.7513812154696132,
+      0.772
+    ],
+    [
+      0.12154696132596685,
+      0.752,
+      0.6353591160220995,
+      0.794
+    ],
+    [
+      0.10497237569060773,
+      0.812,
+      0.8176795580110497,
+      0.862
+    ],
+    [
+      0.11602209944751381,
+      0.87,
+      0.569060773480663,
+      0.916
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "bellisso",
+      "confidence": 0.9493487700819969,
+      "polygon": [
+        [
+          32.0,
+          155.0
+        ],
+        [
+          152.0,
+          156.0
+        ],
+        [
+          152.0,
+          177.0
+        ],
+        [
+          32.0,
+          176.0
+        ]
+      ]
+    },
+    {
+      "text": "BIOTIN",
+      "confidence": 0.9939387540022532,
+      "polygon": [
+        [
+          25.0,
+          263.0
+        ],
+        [
+          86.0,
+          264.0
+        ],
+        [
+          85.0,
+          276.0
+        ],
+        [
+          25.0,
+          275.0
+        ]
+      ]
+    },
+    {
+      "text": "SHAMPOO",
+      "confidence": 0.9895962391580854,
+      "polygon": [
+        [
+          25.0,
+          280.0
+        ],
+        [
+          159.0,
+          280.0
+        ],
+        [
+          159.0,
+          301.0
+        ],
+        [
+          25.0,
+          301.0
+        ]
+      ]
+    },
+    {
+      "text": "WihBIOTIN",
+      "confidence": 0.9093222750557793,
+      "polygon": [
+        [
+          25.0,
+          342.0
+        ],
+        [
+          89.0,
+          344.0
+        ],
+        [
+          89.0,
+          357.0
+        ],
+        [
+          24.0,
+          355.0
+        ]
+      ]
+    },
+    {
+      "text": "uy Herbdtrocs end",
+      "confidence": 0.8187622568186592,
+      "polygon": [
+        [
+          26.0,
+          359.0
+        ],
+        [
+          128.0,
+          360.0
+        ],
+        [
+          127.0,
+          372.0
+        ],
+        [
+          26.0,
+          370.0
+        ]
+      ]
+    },
+    {
+      "text": "WSpiruina Maima Extrod",
+      "confidence": 0.724952528422529,
+      "polygon": [
+        [
+          27.0,
+          368.0
+        ],
+        [
+          133.0,
+          371.0
+        ],
+        [
+          133.0,
+          383.0
+        ],
+        [
+          27.0,
+          380.0
+        ]
+      ]
+    },
+    {
+      "text": "ArdHydrozed Kerotin",
+      "confidence": 0.8248587987924877,
+      "polygon": [
+        [
+          25.0,
+          379.0
+        ],
+        [
+          112.0,
+          383.0
+        ],
+        [
+          112.0,
+          394.0
+        ],
+        [
+          25.0,
+          390.0
+        ]
+      ]
+    },
+    {
+      "text": "FORMEN AND WOMEN",
+      "confidence": 0.9434099122881889,
+      "polygon": [
+        [
+          23.0,
+          409.0
+        ],
+        [
+          145.0,
+          412.0
+        ],
+        [
+          145.0,
+          428.0
+        ],
+        [
+          22.0,
+          425.0
+        ]
+      ]
+    },
+    {
+      "text": "AOz.（473m0",
+      "confidence": 0.7180194616317749,
+      "polygon": [
+        [
+          24.0,
+          438.0
+        ],
+        [
+          100.0,
+          443.0
+        ],
+        [
+          99.0,
+          455.0
+        ],
+        [
+          24.0,
+          450.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.7969687581062317,
+      "foreground_ratio": 0.8544088397790055,
+      "rough_coverage": 0.9863143420506434,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.13885918259620667,
+      "foreground_ratio": 0.001723756906077348,
+      "rough_coverage": 0.0020236612702366126,
+      "accepted": false
+    },
+    {
+      "index": 2,
+      "iou": 0.46586596965789795,
+      "foreground_ratio": 0.006022099447513812,
+      "rough_coverage": 0.007017953507679535,
+      "accepted": false
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\selected_annotations\\annotations\\B09B63YYCW\\review_overlay.png",
+  "observed_seconds": 3.3331793999968795
+}

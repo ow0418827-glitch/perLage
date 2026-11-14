@@ -1,0 +1,104 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": false,
+  "data": {
+    "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\datasets\\public\\groups\\02_chair\\source.jpg",
+    "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\datasets\\public\\groups\\02_chair\\target.jpg",
+    "source_title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+    "training_queries": [
+      "Find a product with a similar overall visual appearance.",
+      "Use the reference picture as a broad visual guide for product matching.",
+      "Look for an item with a comparable general shape and finish."
+    ]
+  },
+  "source_boxes": [
+    [
+      75,
+      15,
+      458,
+      485
+    ]
+  ],
+  "target_boxes": [
+    [
+      3,
+      4,
+      399,
+      496
+    ]
+  ],
+  "print_regions": [],
+  "initialization": {
+    "optimizer": {
+      "shadow_weight": 0.0,
+      "pixel_clean_steps": 0,
+      "pixel_diffusion_steps": 0,
+      "pixel_levels": 0,
+      "latent_clean_steps": 40,
+      "latent_diffusion_steps": 40,
+      "check_every": 20
+    },
+    "generation": {
+      "seed": 42,
+      "target_scale": 8.0,
+      "latent_clip": 0.04,
+      "strength": 1.0,
+      "steps": 30,
+      "image_size": 384,
+      "source_weight": 1.0,
+      "robust_guidance": true
+    }
+  },
+  "harmonization": {
+    "smoothing_sigma": 12.0,
+    "print_ring_sigma": 7.0,
+    "selected_color_mix": 0.25,
+    "strength": 0.75,
+    "blend_mode": "matte"
+  },
+  "latent": {
+    "steps": 60,
+    "check_every": 10,
+    "latent_levels": 24,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.01,
+    "latent_smoothing_mix": 0.12,
+    "auxiliary_levels": 0,
+    "source_ssim_floor": 0.85,
+    "source_mae_ceiling": 12.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.02,
+    "feature_weight": 0.02,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 8,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "selection_seeds": [
+      9301,
+      9302
+    ],
+    "retention_tolerance": 0.0005
+  }
+}

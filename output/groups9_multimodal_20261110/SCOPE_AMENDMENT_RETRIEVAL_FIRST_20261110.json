@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "retrieval_first_shopping_paused",
+  "original_plan_sha256": "8821a4e55e26c7edac4c1ddfe8058ae0136bcac9f24c4727fc0c2c890d2010b3",
+  "method_order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "stages_before_any_shopping": [
+    "retrieval",
+    "independent_verification",
+    "retrieval_summary"
+  ],
+  "shopping_paused": true,
+  "pause_file": "SHOPPING_PAUSED.json",
+  "user_instruction": "先计算两方法错误记忆前三与前五比例；感知方法修改库180请求的整体前三比例必须严格高于最近纯文字测试，持平或下降暂停两方法后续购物；先完成检索报告，购物仍等待人工明确放行",
+  "original_inputs_and_completed_rankings_unchanged": true
+}

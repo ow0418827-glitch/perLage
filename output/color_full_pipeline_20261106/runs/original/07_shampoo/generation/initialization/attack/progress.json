@@ -1,0 +1,10 @@
+{
+  "status": "running",
+  "phase": "pixel_diffusion",
+  "phase_step": 0,
+  "seconds": 974.5355687999981,
+  "latest": null,
+  "accepted_updates": 100,
+  "rejected_updates": 0,
+  "ray_repairs": 19
+}

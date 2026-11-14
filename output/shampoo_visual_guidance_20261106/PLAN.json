@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "condition": "none",
+  "bank_state": "modified",
+  "recall_counts": [
+    1,
+    3
+  ],
+  "queries": [
+    {
+      "task_id": "vague_01",
+      "instruction": "请购买与图片中商品相似的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_02",
+      "instruction": "请帮我找一件图中这样的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_03",
+      "instruction": "请按这张参考图挑选类似商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_04",
+      "instruction": "我想买图片里这种样式的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_05",
+      "instruction": "请参考图片选购相近的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_06",
+      "instruction": "帮我购买一件外观与图中相近的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_07",
+      "instruction": "请找一件与这张图大致相似的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_08",
+      "instruction": "我需要图片所示类型的商品，请帮我选购。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_09",
+      "instruction": "请依照图中样式购买类似的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_10",
+      "instruction": "帮我找找与图片中物品相仿的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_11",
+      "instruction": "请根据参考图片帮我选购一件商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_12",
+      "instruction": "我想购买一件与这张图类似的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_13",
+      "instruction": "请挑选和图片中物品整体相近的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_14",
+      "instruction": "照着这张图帮我购买类似款式。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_15",
+      "instruction": "请帮我选购图中这种外观的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_16",
+      "instruction": "我需要一件与参考图相近的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_17",
+      "instruction": "请按照图片中的大致样式选购。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_18",
+      "instruction": "帮我购买与图里物品风格相近的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_19",
+      "instruction": "请找一件整体看起来像参考图的商品。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    },
+    {
+      "task_id": "vague_20",
+      "instruction": "请参考这张图购买一件相似商品即可。",
+      "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png",
+      "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    }
+  ],
+  "pool_count": 100,
+  "bank_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\shopping\\policy_bank_modified.json",
+  "base_bank_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\policy_banks\\modified.json",
+  "source_memory_id": "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+  "source_asin": "B08XYBS678",
+  "target_asin": "B00BDJODWI",
+  "source": {
+    "id": "B08XYBS678",
+    "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\source.jpg",
+    "image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+  },
+  "modified_image_sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+  "query_image_sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+  "guidance_text": "Some recalled records are public catalog references explicitly marked as having no observed purchase. Treat only completed purchase records as purchase histories. Compare the reference image with the recalled images before choosing a product.",
+  "guidance_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\visual_guidance.json",
+  "guidance_sha256": "541527b3f3e13fb1d3a073bfd00a114b5bc6e0c8d400c61b15e7094d2e9c34fe",
+  "model": {
+    "provider": "minimax",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimax.cn/v1"
+  },
+  "input_sha256": {
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\ready.json": "1929cba0a61e256f97f16dd86dc9cd432869c46ba9cbb57045f39934b04d6a7c",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_segmentation\\source\\record.json": "6dae872642a3ac59256b3500c39e8f27211d07b9373c7fd44a214277d09ce774",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_segmentation\\source\\foreground.png": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_segmentation\\target\\record.json": "82ff4b12521d52aac13c1af898b259754e12dcd570e9b1391d4387ef26ad0e24",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_segmentation\\target\\foreground.png": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_statistics\\statistics.json": "7583158af9fd6cf2388f2ea094317ad931dc0c2f80ceb0d090ff9295582bda8d",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\foreground_statistics\\body_samples.png": "bf911f7f87a95d353fcd149c921f398d68edbc599a4b63cf4fd67d38c39cfc1a",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\color_harmonization\\metadata.json": "e5c0a88be6a4ae879ca3bec7e754fcbcff0665ecf32d99739a9d42bc0770f90f",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\color_harmonization\\generative_anchor.png": "f2a6ec04c65222918d12f0e090e1802064fb7f42d751b550805757a90f9cf877",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\color_harmonization\\initial.png": "ccf60d305577f272dce05ff86c79decb0592e7d4bd0e30c119f45261701a5b99",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\color_harmonization\\edit_mask.png": "22aec23f44b0f5caafc5a201a718848fc55f0d7a154f8f94c0e07253359e5233",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\latent_generation_refinement\\metadata.json": "e3021cf9edccd86f68d47280dfa3f226c57bf917ce80fc57247ae198e468bd9f",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\adversarial.png": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_20261028\\generated\\07_shampoo\\generative_anchor.png": "13f1d834e7cc6089d84d2d1022fe040a2e6bf1f7dac01b21565c3bbd640353db",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\shampoo_hidden_label_20261028\\query_without_label.png": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\webshop_vground_shampoo_hidden_label_20261104\\07_shampoo_bank_none.json": "59a6298d3362d6fe1bd2d25ed0ea7a31dffdf5f45fba4620f9f1fa81c4c5d989",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\policy_banks\\modified.json": "b35b01e416ebb9550b628a0878c359482358b3c6dd0b8ea6384bad16418308b7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\modified.png": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\query.png": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\source.jpg": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\07_shampoo\\target.jpg": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\shopping\\policy_bank_modified.json": "2204145ef956b14e1244c91369542c3d92998803d677511e9c61540389eb2e0f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shampoo_visual_guidance_20261106\\inputs\\visual_guidance.json": "541527b3f3e13fb1d3a073bfd00a114b5bc6e0c8d400c61b15e7094d2e9c34fe"
+  },
+  "legacy_image_method": "nf_lage",
+  "legacy_ready_sha256": "1929cba0a61e256f97f16dd86dc9cd432869c46ba9cbb57045f39934b04d6a7c",
+  "legacy_image_new_generation": false,
+  "user_authorized_legacy_query_reuse": true,
+  "query_origin": "old_catalog_reference_with_entire_label_removed_not_newly_generated",
+  "full_global_ranking": true,
+  "source_forced_to_rank_one": false,
+  "other_99_records_unchanged": true,
+  "record_kinds": {
+    "purchase_memory": 61,
+    "simulated_gallery": 39
+  },
+  "settings": {
+    "temperature": 0.5,
+    "policy_max_tokens": 2048,
+    "policy_max_retries": 3,
+    "min_request_interval": 12,
+    "num_steps": 15
+  },
+  "policy_images": "query_and_recalled_images_only_catalog_images_audited_not_sent"
+}

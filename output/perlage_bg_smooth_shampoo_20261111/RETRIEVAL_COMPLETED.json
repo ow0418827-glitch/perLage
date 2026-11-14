@@ -1,0 +1,20 @@
+{
+  "status": "completed",
+  "pid": 36288,
+  "execution_device": "cuda",
+  "inputs_sha256": "a5dff81d06c63fc974b389debdf77b4f6c2169948f210338cbe6db0771ce8f73",
+  "rankings": 180,
+  "score_count": 34020,
+  "persistent_vector_cache_read": false,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\clean\\07_shampoo.json": "8853c184ae23d413007c3f21ff00aba5205ccf9102b211165c1f157393870bc7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\baseline\\07_shampoo.json": "0c52c3666d9862990edd41249d06f816ca05464daf9c7d33250ea3176ed0f141",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\lucid\\07_shampoo.json": "b878c31f678e91dda53433e74a537bce1f400db9a423cf6e933167e3bc48b177",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\previous_strong\\07_shampoo.json": "3924b80792873e5b387eeef778e350c16fb2eb6d474b0a7d37239071b9d1cc8d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\rankfocus\\07_shampoo.json": "5cd25b11ee2d55ddf8fcfe87d8d2445180a1d57aeae56c8f7d4a70863ce07def",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\rankfocus_wide\\07_shampoo.json": "870cf817228a0d9b51d04270969956c1dfc427146808efe8e5c5bcda4351ec66",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\fg_lock_bg24\\07_shampoo.json": "215b4d590a3e49352668b434082fd28cc42b702c11b0970e6dd963d42c7494a6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\fg_lock_bg36\\07_shampoo.json": "86b7f1405aa201d4560c47cd823dce53834f6628d7811e29d194825cafda9faa",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\retrieval\\bg_smooth\\07_shampoo.json": "d1fa693159a583b00fe088642b41747365bb8236f6050fcf3084848f5ad37140"
+  }
+}

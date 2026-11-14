@@ -1,0 +1,13 @@
+{
+  "setting": "held_out_public_encoder",
+  "surrogate": {
+    "name": "ViT-g-14",
+    "pretrained": "laion2b_s12b_b42k",
+    "hf_repo": "laion/CLIP-ViT-g-14-laion2B-s12B-b42K",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-g-14-laion2B-s12B-b42K\\snapshots\\4b0305adc6802b2632e11cbe6606a9bdd43d35c9\\open_clip_pytorch_model.safetensors"
+  },
+  "expected_weight_sha256": "11b3bb58ac0f84f8bce59c4551038a0b288372869e1666ff38224bb71ecc0870",
+  "reason": "user_requested_single_encoder_replacement_shampoo_only",
+  "activation": "native_pretrained_architecture",
+  "precision": "fp32"
+}

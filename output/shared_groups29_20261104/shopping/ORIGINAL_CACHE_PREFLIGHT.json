@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "source_asin": "B09FY5Y9G2",
+  "observed_image_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+  "catalog_override_count": 0,
+  "model_calls": 0,
+  "cache": {
+    "prepared": [
+      "B09FY5Y9G2",
+      "B09LVD5J4B"
+    ],
+    "skipped": [],
+    "cache": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104\\shopping\\observed_images"
+  }
+}

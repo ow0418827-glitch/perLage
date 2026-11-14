@@ -1,0 +1,10 @@
+{
+  "setting": "matched_public_encoder",
+  "surrogate": {
+    "name": "ViT-B-32",
+    "pretrained": "openai",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai"
+  },
+  "reason": "user_desktop_task_explicit_ViT_B_32",
+  "black_box_transfer_claimed": false
+}

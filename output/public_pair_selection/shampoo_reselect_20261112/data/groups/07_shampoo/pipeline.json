@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "method": "PerLAGE",
+  "run_dir": "D:\\Material\\Literature Reading\\code\\perLage\\output\\runs\\shampoo_reselect_20261112\\07_shampoo",
+  "selection": {
+    "seed": 42,
+    "calibration_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\calibration\\threshold.json",
+    "min_image_side": 64
+  },
+  "selection_models": {
+    "batch_size": 16
+  },
+  "generation": {
+    "lucid": {
+      "steps": 1000,
+      "epsilon_levels": 16,
+      "target_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "text_weight": 1.0
+    },
+    "PerLAGE": {},
+    "PerLAGE_no_pixel": {}
+  },
+  "evaluation": {
+    "shared_pool": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shared_memory\\pool_189_v1\\shared_memory.json",
+    "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\datasets\\private\\query_images\\shampoo_reselect_20261112\\07_shampoo.json"
+  },
+  "public_pair": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\groups\\07_shampoo\\pair.json"
+}

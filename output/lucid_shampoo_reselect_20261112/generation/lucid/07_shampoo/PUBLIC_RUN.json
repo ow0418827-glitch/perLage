@@ -1,0 +1,198 @@
+{
+  "method": "lucid",
+  "group": "07_shampoo",
+  "selection_sha256": "65c17ab892f85abf87d6739a30589bd606dab5c157cdf5802d2300f2150ae58a",
+  "source": {
+    "id": "B09B63YYCW",
+    "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+    "brand": "BELLISSO",
+    "attributes": [
+      "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+      "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+      "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+    ],
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        1,
+        1,
+        180,
+        497
+      ]
+    ],
+    "text_regions": [
+      [
+        0.4199,
+        0.224,
+        0.6188,
+        0.294
+      ],
+      [
+        0.16022099447513813,
+        0.304,
+        0.856353591160221,
+        0.36
+      ],
+      [
+        0.12154696132596685,
+        0.52,
+        0.49171270718232046,
+        0.558
+      ],
+      [
+        0.12154696132596685,
+        0.554,
+        0.8950276243093923,
+        0.608
+      ],
+      [
+        0.11602209944751381,
+        0.678,
+        0.5082872928176796,
+        0.72
+      ],
+      [
+        0.1270718232044199,
+        0.712,
+        0.7237569060773481,
+        0.75
+      ],
+      [
+        0.13259668508287292,
+        0.73,
+        0.7513812154696132,
+        0.772
+      ],
+      [
+        0.12154696132596685,
+        0.752,
+        0.6353591160220995,
+        0.794
+      ],
+      [
+        0.10497237569060773,
+        0.812,
+        0.8176795580110497,
+        0.862
+      ],
+      [
+        0.11602209944751381,
+        0.87,
+        0.569060773480663,
+        0.916
+      ]
+    ],
+    "image_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72"
+  },
+  "target": {
+    "id": "B00BDJODWI",
+    "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+    "brand": "Aveda",
+    "attributes": [
+      "plant-based haircare ingredients",
+      "a balancing formula",
+      "plant and flower essences",
+      "scalp care",
+      "plant based"
+    ],
+    "feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "training_queries": [
+      "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+      "I am looking for shampoo with a balancing formula and scalp care."
+    ],
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        2,
+        5,
+        158,
+        494
+      ]
+    ],
+    "text_regions": [
+      [
+        0.275,
+        0.314,
+        0.68125,
+        0.356
+      ],
+      [
+        0.20625,
+        0.352,
+        0.675,
+        0.38
+      ],
+      [
+        0.21875,
+        0.344,
+        0.70625,
+        0.37
+      ],
+      [
+        0.1375,
+        0.454,
+        0.8375,
+        0.502
+      ],
+      [
+        0.2,
+        0.528,
+        0.78125,
+        0.562
+      ],
+      [
+        0.1375,
+        0.554,
+        0.84375,
+        0.588
+      ],
+      [
+        0.3688,
+        0.746,
+        0.5813,
+        0.81
+      ],
+      [
+        0.20625,
+        0.818,
+        0.75,
+        0.852
+      ],
+      [
+        0.24375,
+        0.856,
+        0.7,
+        0.882
+      ],
+      [
+        0.25,
+        0.842,
+        0.7,
+        0.87
+      ],
+      [
+        0.2,
+        0.9,
+        0.75625,
+        0.94
+      ]
+    ],
+    "image_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e"
+  },
+  "options": {
+    "method": "lucid",
+    "steps": 1000,
+    "epsilon_levels": 8,
+    "epsilon": 0.03137254901960784,
+    "text_weight": 1.0,
+    "target_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+    "text_alignment_source": "target_product_features",
+    "seed": 42,
+    "optimization_config": "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\config\\optimization.json"
+  },
+  "shared_pool_scope": "isolated_lucid_generation_no_pool_read",
+  "threat_model": "black_box_provisional"
+}

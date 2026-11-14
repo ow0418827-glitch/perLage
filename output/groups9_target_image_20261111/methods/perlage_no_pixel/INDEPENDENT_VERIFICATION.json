@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "no_original_vector_cache_read": true,
+  "score_comparisons": 68040,
+  "rankings_recomputed": 360,
+  "max_score_error": 0.0,
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\01_camera\\clean.json": "e0ecf3fd9dabe88816ea0b82f09096dc211bd8db0131b7b0d941fa26c1159956",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\01_camera\\modified.json": "c1526ce19673a689afdf927ae28d0035c564305d46c8b222f835a344b15b47e2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\02_chair\\clean.json": "247f8aae494bf0b11339a8da6dca4b10820a12439cdb9cb9a6b0fd2891f16ec2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\02_chair\\modified.json": "d874a1e0d57213fa6395d421ad633e8f1f6570d1fcb58145b8598c56fc9c80ca",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\03_cookies\\clean.json": "17d3382b8528312b4bd92a578fce23aef9394cd95444a2834916eb58a2817f4e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\03_cookies\\modified.json": "45ab40de1e20e60be3e09e055a9e0b3d395d2ea50779d3d2fd42a66914e86e76",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\04_curtain\\clean.json": "f68a8d280cfffa978990d17d5250ab66aff160d974e50a9ecf601ef6f1c5f9a9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\04_curtain\\modified.json": "8932e58d2942d23a4dd86d06ce4ee528213a90898273104a918c6de71aee43bf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\05_hair_extension\\clean.json": "16411fd1aef8146c84a433650a348628dc36b7a6ce98d1482fd15af8cd658953",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\05_hair_extension\\modified.json": "af7e00e4a198d7ac4fe3d2bf6d543eb2dd30ce9a3a8bbbea092ed2bfe03c90c7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\06_jeans\\clean.json": "267d7c66b27d08040cb7d95691499b477a6e0212451d8657f10f043d5b27aad0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\06_jeans\\modified.json": "4ca1746dc065259ca32cecbad89be608d73a516dcb4960c7ecaf56e046fca313",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\clean.json": "57ccd0fece95830f476cf76e2628e4cf73f10a49059ca650c6f85ea9dca26dce",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\07_shampoo\\modified.json": "f9d365a5cd21bb29597857ea3d397dfe7fb37fc28550b62c731b655ecb085b9e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\08_speaker\\clean.json": "f3c9cfbee8a16106bb3a5bb670a61c6aa4717e56f3210ad2fcf91308f26605ed",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\08_speaker\\modified.json": "d3a7ef835a6a570f81ce0928fc7ceb6f17739678004573babd80d0fe783b9968",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\09_toothbrush\\clean.json": "d436b465e870f8c644f47ce915af4ec2e2c6d8962ff7582d630da5b3b9e8db00",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_target_image_20261111\\methods\\perlage_no_pixel\\retrieval\\09_toothbrush\\modified.json": "89e064f03328a2be78f0d330baa633794d7d25d43d428e1ef1dec77ff3da6861"
+  },
+  "plan_sha256": "ccaf4c2a8c6795055c7968d5b0940923af2a464f35a3d2509e31414227d4e569"
+}

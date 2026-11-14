@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "shared",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+  "pool_sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+  "pool_count": 189,
+  "source_memory_id": "groups9_reference_06_jeans_B07FRKQNFV",
+  "frozen_image_sha256": "56361e4b220dc034d110532055ae47b58eca2f658f3e9c7f1d64ce27759704b8",
+  "method": "lucid",
+  "queries": [
+    {
+      "task_id": "feature_01",
+      "instruction": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_02",
+      "instruction": "I would like to purchase jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_03",
+      "instruction": "Looking to buy jeans with a baggy straight-leg cut and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_04",
+      "instruction": "I am looking to buy jeans with a high waist and a baggy straight-leg cut.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_05",
+      "instruction": "Please help me buy jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_06",
+      "instruction": "I am shopping for jeans with a baggy straight-leg cut and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_07",
+      "instruction": "I would like to buy jeans with a high waist and a baggy straight-leg cut.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_08",
+      "instruction": "Help me purchase jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_09",
+      "instruction": "I am looking for jeans with a baggy straight-leg cut and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_10",
+      "instruction": "Please find jeans with a high waist and a baggy straight-leg cut for me to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_11",
+      "instruction": "I want to purchase jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_12",
+      "instruction": "Please help me purchase jeans with a baggy straight-leg cut and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_13",
+      "instruction": "I need to buy jeans with a high waist and a baggy straight-leg cut.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_14",
+      "instruction": "I would like help finding jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_15",
+      "instruction": "Find me jeans with a baggy straight-leg cut and flap pockets to purchase.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_16",
+      "instruction": "Please look for jeans with a high waist and a baggy straight-leg cut that I can buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_17",
+      "instruction": "I am interested in buying jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_18",
+      "instruction": "I would like to shop for jeans with a baggy straight-leg cut and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_19",
+      "instruction": "Help me find jeans with a high waist and a baggy straight-leg cut to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_20",
+      "instruction": "I am ready to purchase jeans featuring a high waist and flap pockets.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "none",
+      "label": "none"
+    }
+  ],
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "query_mode": "text",
+  "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\06_jeans\\queries.json",
+  "query_manifest_sha256": "ea4ef3e68615e5aab6503a3ba86584ed31da3150c7bb6803ff5131b9d5d03513",
+  "index_text": "product_feature",
+  "query_image_defended": false,
+  "all_memory_images_equally_defended": true,
+  "shopping_allowed": false,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  }
+}

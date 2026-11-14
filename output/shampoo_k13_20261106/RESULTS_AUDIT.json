@@ -1,0 +1,156 @@
+{
+  "status": "passed",
+  "completed_at": "2026-11-06T04:15:53.083487+00:00",
+  "summary": [
+    {
+      "retrieval_top_k": 1,
+      "episodes": 20,
+      "source_recalled": 20,
+      "completed": 20,
+      "source_purchases": 19,
+      "fixed_target_purchases": 0,
+      "other_purchases": 1
+    },
+    {
+      "retrieval_top_k": 3,
+      "episodes": 20,
+      "source_recalled": 20,
+      "completed": 20,
+      "source_purchases": 13,
+      "fixed_target_purchases": 0,
+      "other_purchases": 7
+    }
+  ],
+  "verified_episodes": 40,
+  "policy_actions": 131,
+  "invalid_format_actions": 0,
+  "source_rank_distribution": {
+    "1": 20
+  },
+  "source_asin": "B08XYBS678",
+  "target_asin": "B00BDJODWI",
+  "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+  "paired_source_purchase": {
+    "1,1": [
+      "vague_01",
+      "vague_03",
+      "vague_07",
+      "vague_08",
+      "vague_09",
+      "vague_11",
+      "vague_12",
+      "vague_13",
+      "vague_15",
+      "vague_18",
+      "vague_19",
+      "vague_20"
+    ],
+    "1,0": [
+      "vague_02",
+      "vague_04",
+      "vague_05",
+      "vague_06",
+      "vague_10",
+      "vague_14",
+      "vague_17"
+    ],
+    "0,1": [
+      "vague_16"
+    ]
+  },
+  "other_purchases": [
+    {
+      "retrieval_top_k": 1,
+      "task_id": "vague_16",
+      "completed": true,
+      "final_asin": "B08LPMZ51K",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_02",
+      "completed": true,
+      "final_asin": "B08WYYCB8N",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_04",
+      "completed": true,
+      "final_asin": "B08M9H3DRX",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_05",
+      "completed": true,
+      "final_asin": "B09QKLY4ZN",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_06",
+      "completed": true,
+      "final_asin": "B099MY9PX2",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_10",
+      "completed": true,
+      "final_asin": "B07Q5X99J7",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_14",
+      "completed": true,
+      "final_asin": "B07XBZ3DZT",
+      "termination_reason": "purchase_completed"
+    },
+    {
+      "retrieval_top_k": 3,
+      "task_id": "vague_17",
+      "completed": true,
+      "final_asin": "B089JY5DB9",
+      "termination_reason": "purchase_completed"
+    }
+  ],
+  "retrieval_verification": {
+    "status": "passed",
+    "fresh_encoder": true,
+    "encoder_device": "cuda",
+    "query_count": 20,
+    "full_bank_scores_recomputed": 2000,
+    "max_score_error": 0.0,
+    "rankings_sha256": "298c12c8d59cc6f2a9fc89b5154ec9a49d4963ad3a1504ec5dea981ddc77f4ef"
+  },
+  "shopping_stage": {
+    "status": "completed",
+    "stage": "shopping",
+    "completed_at": "2026-11-06T04:15:50.721770+00:00",
+    "seconds": 3797.5853062000006
+  },
+  "started": {
+    "started_at": "2026-11-06T03:10:21.162447+00:00",
+    "supervisor_pid": 22356
+  },
+  "top3_asins_frequency": [
+    {
+      "asins": [
+        "B08XYBS678",
+        "B093BNSSHW",
+        "B0789VCBF6"
+      ],
+      "queries": 16
+    },
+    {
+      "asins": [
+        "B08XYBS678",
+        "B0789VCBF6",
+        "B093BNSSHW"
+      ],
+      "queries": 4
+    }
+  ]
+}

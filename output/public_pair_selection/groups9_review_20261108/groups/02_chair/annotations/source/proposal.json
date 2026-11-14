@@ -1,0 +1,61 @@
+{
+  "id": "B08GCSRXKS",
+  "identity": {
+    "image_sha256": "7a06ed70b92dc60b6cf37d29631bcfe52f8735adba0253b791350f464ca56d6b",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\source.jpg",
+  "title": "Buy-Rite Chelsea Styling Chair for Salon, Heavy-Duty Round Chrome Base with T-Footrest & Steel Frame Structure, Premium Vinyl Upholstery with High-Density Foam (Grey/Chrome)",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "2e880965caac481020ae43f654f5313e7263fa4cbb7dd2affac686b94f743278",
+  "boxes": [
+    [
+      11,
+      12,
+      406,
+      489
+    ]
+  ],
+  "text_regions": [],
+  "ocr": [],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.8526535034179688,
+      "foreground_ratio": 0.5765673076923077,
+      "rough_coverage": 0.933322795647936,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.706027626991272,
+      "foreground_ratio": 0.34966346153846156,
+      "rough_coverage": 0.6386715491275675,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.7584365010261536,
+      "foreground_ratio": 0.4150576923076923,
+      "rough_coverage": 0.7581162131071244,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\02_chair\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 2.452573800001119
+}

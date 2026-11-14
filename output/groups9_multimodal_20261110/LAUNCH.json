@@ -1,0 +1,13 @@
+{
+  "pid": 43412,
+  "launched_at": "2026-11-10T22:27:20.5750091+08:00",
+  "python": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "script": "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_multimodal_20261110.py",
+  "output": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110",
+  "mode": "joint",
+  "order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "automation_id": "automation-6"
+}

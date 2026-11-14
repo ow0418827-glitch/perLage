@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "scope": "07_shampoo_only",
+  "chosen": {
+    "fraction": 0.34375,
+    "source_ssim": 0.9244969140906216,
+    "source_mae_levels": 7.810179233551025,
+    "halo_error": 32.258142654723805,
+    "parent_halo_error": 16.457029367256773,
+    "protected_max_difference": 0,
+    "accepted": true,
+    "original_halo_limit": 8.228514693628387,
+    "temporary_halo_limit": 32.91405874451355
+  },
+  "original_standard_unchanged": true,
+  "full_latent_steps_requested": 60,
+  "generation_not_yet_complete": true
+}

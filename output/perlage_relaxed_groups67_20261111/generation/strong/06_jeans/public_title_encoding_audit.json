@@ -1,0 +1,41 @@
+{
+  "algorithm": "unit_image_plus_public_product_title_v1",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "source_title_sha256": "c9c9f657f488b5586619d3a7e5e15adf23cbb843051a22af1db5100d71c00791",
+  "public_title_audit": {
+    "text_sha256": "c9c9f657f488b5586619d3a7e5e15adf23cbb843051a22af1db5100d71c00791",
+    "input_tokens": 20,
+    "encoded_tokens": 20,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      20
+    ],
+    "truncated": false
+  },
+  "training_query_audits": [
+    {
+      "text_sha256": "cfc5997d852316dda3fdca6876f266c3bc05a5927caeb8669996c1c68604d78b",
+      "input_tokens": 18,
+      "encoded_tokens": 18,
+      "chunks": 1,
+      "payload_tokens_per_chunk": 75,
+      "chunk_token_counts": [
+        18
+      ],
+      "truncated": false
+    }
+  ],
+  "training_query_normalized_sha256": [
+    "f12f1528cf0eb22379e867927df1b87dc513001daacd17496ded0d82a5e4a8f6"
+  ],
+  "excluded_query_normalized_sha256": [],
+  "query_image": "target_image_unpurified",
+  "image_weight": 0.5,
+  "victim_memory_used": false,
+  "purchase_history_used": false,
+  "test_ranking_used": false,
+  "query_disjointness": "normalized_exact_text_only_not_semantic_independence",
+  "objective_source_sha256": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+  "encoder_source_sha256": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e"
+}

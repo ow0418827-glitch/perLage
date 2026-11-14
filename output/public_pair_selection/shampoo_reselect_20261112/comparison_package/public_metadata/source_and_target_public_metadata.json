@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source_catalog": "D:\\Material\\Literature Reading\\code\\MINJA-main\\rap\\webshop\\data\\items_shuffle.json",
+  "excluded_fields": [
+    "instructions",
+    "instruction",
+    "actions",
+    "purchase_history"
+  ],
+  "products": {
+    "B09B63YYCW": {
+      "asin": "B09B63YYCW",
+      "name": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+      "brand": "Visit the BELLISSO Store",
+      "product_information": {
+        "Package Dimensions\n                                    ‏": "‎\n 8.86 x 3.03 x 2.95 inches; 1.32 Pounds",
+        "UPC\n                                    ‏": "‎\n 608011871543",
+        "Manufacturer\n                                    ‏": "‎\n Guangzhou ColorDream Cosmetics Factory",
+        "ASIN\n                                    ‏": "‎\n B09B63YYCW",
+        "Best Sellers Rank": "#35,768 in Beauty & Personal Care (See Top 100 in Beauty & Personal Care)#51 in Hair Regrowth Shampoos",
+        "#51 in Hair Regrowth Shampoos": "",
+        "Customer Reviews": {
+          "ratings_count": null,
+          "stars": null
+        }
+      },
+      "small_description": [
+        "FIGHT HAIR LOSS: This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss; The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth; Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men ",
+        "QUALITY: Each one of our hair growth products has undergone stringent quality inspection and hours of development with leading hair loss experts; This thickening shampoo is formulated to the highest standards and designed to assist with hair regrowth for men and women ; The Bellisso promise is this; if we wouldn’t use this hair regrowth treatment for women and men ourselves, we won’t sell it ",
+        "THICKER FEELING: Our hair thickening shampoo is loved by people with thinning locks; This volumizing shampoo contains keratin as well as silk protein and can assist with hair growth for men as well as women; Customers love how our shampoo for hair loss helps them achieve thicker and more stronger feeling hair ",
+        "SMELLS AMAZING: Our hair thickening products for men and women not only work wonders on thinning hair, they also smell incredible; This hair loss and volume shampoo will leave you with an invigorating fresh aroma; When you need hair loss shampoo for women and men that will uplift your senses, trust only Bellisso ",
+        "CLEANS DEEP: Not only is Bellisso biotin shampoo considered among the best hair growth products for women and men, our hair loss products are crafted to blast away dirt and grime; Get dazzlingly clean hair from root to tip with this advanced thicker, fuller hair shampoo from Bellisso "
+      ],
+      "full_description": "",
+      "product_category": "Beauty & Personal Care › Hair Care › Hair Loss Products › Hair Regrowth Shampoos",
+      "category": "beauty",
+      "query": "Shampoo & Conditioner",
+      "images": [
+        "https://m.media-amazon.com/images/I/31tnwBk3RML.jpg",
+        "https://m.media-amazon.com/images/I/51Kr0fKQ2ML.jpg",
+        "https://m.media-amazon.com/images/I/51AVdJPf9KL.jpg",
+        "https://m.media-amazon.com/images/I/51S9QQpeuTL.jpg",
+        "https://m.media-amazon.com/images/I/51jBczRAOHL.jpg",
+        "https://m.media-amazon.com/images/I/51uz39YIzYL.jpg",
+        "https://m.media-amazon.com/images/I/51Cq5c0HRyL.jpg",
+        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel.gif"
+      ],
+      "Title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+      "Brand": "BELLISSO",
+      "BulletPoints": [
+        "FIGHT HAIR LOSS: This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss; The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth; Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men ",
+        "QUALITY: Each one of our hair growth products has undergone stringent quality inspection and hours of development with leading hair loss experts; This thickening shampoo is formulated to the highest standards and designed to assist with hair regrowth for men and women ; The Bellisso promise is this; if we wouldn’t use this hair regrowth treatment for women and men ourselves, we won’t sell it ",
+        "THICKER FEELING: Our hair thickening shampoo is loved by people with thinning locks; This volumizing shampoo contains keratin as well as silk protein and can assist with hair growth for men as well as women; Customers love how our shampoo for hair loss helps them achieve thicker and more stronger feeling hair ",
+        "SMELLS AMAZING: Our hair thickening products for men and women not only work wonders on thinning hair, they also smell incredible; This hair loss and volume shampoo will leave you with an invigorating fresh aroma; When you need hair loss shampoo for women and men that will uplift your senses, trust only Bellisso ",
+        "CLEANS DEEP: Not only is Bellisso biotin shampoo considered among the best hair growth products for women and men, our hair loss products are crafted to blast away dirt and grime; Get dazzlingly clean hair from root to tip with this advanced thicker, fuller hair shampoo from Bellisso "
+      ],
+      "Description": "",
+      "MainImage": "https://m.media-amazon.com/images/I/31tnwBk3RML.jpg"
+    },
+    "B00BDJODWI": {
+      "asin": "B00BDJODWI",
+      "name": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+      "brand": "Brand: Aveda",
+      "product_information": {
+        "Is Discontinued By Manufacturer\n                                    ‏": "‎\n No",
+        "Product Dimensions\n                                    ‏": "‎\n 11.81 x 3.15 x 3.15 inches; 0.04 Ounces",
+        "Item model number\n                                    ‏": "‎\n 18084994054",
+        "Department\n                                    ‏": "‎\n UNISEX",
+        "UPC\n                                    ‏": "‎\n 880147579917 885892041870 018084994054 885110277395 885157453110 885845280325 885348618427",
+        "Manufacturer\n                                    ‏": "‎\n Aveda",
+        "ASIN\n                                    ‏": "‎\n B00BDJODWI",
+        "Best Sellers Rank": "#37,779 in Beauty & Personal Care (See Top 100 in Beauty & Personal Care)#1,102 in Hair Shampoo",
+        "#1,102 in Hair Shampoo": "",
+        "Customer Reviews": {
+          "ratings_count": null,
+          "stars": null
+        }
+      },
+      "small_description": [
+        "Design House: Aveda ",
+        "Fragrance Notes: High Performance Plant Based Haircare. All Aveda Products Are Researched And Developed Under A Rigorous Set Of Environmental Sustainability Values . Aveda Products Are Widely Known For Their Use Of Pure Plant And Flower Essences. ",
+        "Model: 18084994054 ",
+        "Manufacturer: Aveda "
+      ],
+      "full_description": "AVEDA by Aveda SCALP BENEFITS BALANCING SHAMPOO 33.8 OZAVEDA by Aveda possesses a blend of High Performance Plant Based Haircare. All Aveda Products Are Researched And Developed Under A Rigorous Set Of Environmental Sustainability Values . Aveda Products Are Widely Known For Their Use Of Pure Plant And Flower Essences.",
+      "product_category": "Beauty & Personal Care › Hair Care › Shampoo & Conditioner › Shampoos",
+      "category": "beauty",
+      "query": "Scalp Treatments",
+      "images": [
+        "https://m.media-amazon.com/images/I/21uH+5ERbCL.jpg",
+        "https://m.media-amazon.com/images/I/31M+0zo4jvL.jpg",
+        "https://m.media-amazon.com/images/I/31sFzJ3kVkS.jpg",
+        "https://m.media-amazon.com/images/I/21jQN3EZFvL.jpg",
+        "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/transparent-pixel.gif"
+      ],
+      "Title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+      "Brand": "Aveda",
+      "BulletPoints": [
+        "Design House: Aveda ",
+        "Fragrance Notes: High Performance Plant Based Haircare. All Aveda Products Are Researched And Developed Under A Rigorous Set Of Environmental Sustainability Values . Aveda Products Are Widely Known For Their Use Of Pure Plant And Flower Essences. ",
+        "Model: 18084994054 ",
+        "Manufacturer: Aveda "
+      ],
+      "Description": "AVEDA by Aveda SCALP BENEFITS BALANCING SHAMPOO 33.8 OZAVEDA by Aveda possesses a blend of High Performance Plant Based Haircare. All Aveda Products Are Researched And Developed Under A Rigorous Set Of Environmental Sustainability Values . Aveda Products Are Widely Known For Their Use Of Pure Plant And Flower Essences.",
+      "MainImage": "https://m.media-amazon.com/images/I/21uH+5ERbCL.jpg"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "group": "01_camera",
+  "name": "第一组相机",
+  "category": "camera",
+  "shape_similarity": 0.7198,
+  "calibrated_threshold": 0.6010810730721305,
+  "passes_calibrated_threshold": true,
+  "selection_status": "screened_high_similarity",
+  "selection_notes": "通过公开粗类型兼容性门槛与灰度外形特征门槛（0.7198 >= 0.601081）。受限于粗筛预算hash截断，本组系在模拟可控公开池中筛查出的高质量PTZ监控球机同构对。",
+  "methods_supported": [
+    "lucid",
+    "PerLAGE",
+    "PerLAGE_no_pixel"
+  ],
+  "target_feature_text": "I want to buy a security camera with optical zoom and motion detection.",
+  "training_queries": [
+    "I want to buy a security camera with optical zoom and motion detection.",
+    "I would like to purchase a security camera featuring optical zoom and night vision.",
+    "I am looking for a security camera with motion detection and waterproof construction."
+  ],
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection."
+    ]
+  },
+  "source_boxes": [
+    [
+      75,
+      43,
+      347,
+      440
+    ]
+  ],
+  "target_boxes": [
+    [
+      15,
+      65,
+      490,
+      465
+    ]
+  ],
+  "print_regions": [
+    [
+      0.488,
+      0.488,
+      0.636,
+      0.542
+    ]
+  ],
+  "target": {
+    "id": "B08V134QWR",
+    "title": "PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio IP66 Waterproof",
+    "brand": "HXVIEW",
+    "attributes": [
+      "optical zoom",
+      "motion detection",
+      "night vision",
+      "waterproof construction",
+      "security camera",
+      "sd card",
+      "mobile phone"
+    ],
+    "feature_text": "I want to buy a security camera with optical zoom and motion detection.",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection.",
+      "I would like to purchase a security camera featuring optical zoom and night vision.",
+      "I am looking for a security camera with motion detection and waterproof construction."
+    ],
+    "image": "target.jpg",
+    "foreground_mask": "target_foreground.png",
+    "boxes": [
+      [
+        15,
+        65,
+        490,
+        465
+      ]
+    ],
+    "text_regions": [
+      [
+        0.466,
+        0.53,
+        0.634,
+        0.584
+      ]
+    ]
+  },
+  "source": {
+    "id": "B071ZFHTZN",
+    "title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+    "brand": "SUNBA",
+    "attributes": [
+      "optical zoom",
+      "night vision",
+      "a high-speed pan and tilt mechanism",
+      "an outdoor waterproof housing",
+      "high speed"
+    ],
+    "image": "source.jpg",
+    "foreground_mask": "source_foreground.png",
+    "boxes": [
+      [
+        75,
+        43,
+        347,
+        440
+      ]
+    ],
+    "text_regions": [
+      [
+        0.488,
+        0.488,
+        0.636,
+        0.542
+      ]
+    ]
+  },
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "lucid_alignment_config": {
+    "enabled": true,
+    "target_text": "I want to buy a security camera with optical zoom and motion detection.",
+    "text_weight": 1.0,
+    "steps": 1000
+  },
+  "perlage_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": true
+  },
+  "perlage_no_pixel_alignment_config": {
+    "enabled": true,
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection."
+    ],
+    "color_scheme": "statistics",
+    "pixel_optimization": false
+  }
+}

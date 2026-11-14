@@ -1,0 +1,11 @@
+{
+  "actual_module_counts": {
+    "GELU": 24,
+    "QuickGELU": 0
+  },
+  "pretrained_registry_quick_gelu": true,
+  "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+  "model": "ViT-B-32",
+  "pretrained": "openai",
+  "source_files_unchanged": true
+}

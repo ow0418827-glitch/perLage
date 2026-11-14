@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "failed_at": "2026-11-10T19:54:52Z",
+  "pid": 48120,
+  "stage": "retrieve",
+  "method": "lucid",
+  "error_type": "ValueError",
+  "error": "实际编码器快照与上轮冻结配置不一致",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_vague_multimodal_20261111.py\", line 325, in main\n    (retrieve if args.stage == 'retrieve' else verify)(run, args.method)\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_vague_multimodal_20261111.py\", line 144, in retrieve\n    raw, encoder = fresh_encoder(plan)\n                   ^^^^^^^^^^^^^^^^^^^\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_vague_multimodal_20261111.py\", line 119, in fresh_encoder\n    raise ValueError('实际编码器快照与上轮冻结配置不一致')\nValueError: 实际编码器快照与上轮冻结配置不一致\n"
+}

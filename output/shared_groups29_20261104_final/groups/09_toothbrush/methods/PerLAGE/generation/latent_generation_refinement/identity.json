@@ -1,0 +1,177 @@
+{
+  "method": "perlage_harmonization_latent_v1",
+  "config": {
+    "steps": 60,
+    "check_every": 10,
+    "latent_levels": 24,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.01,
+    "latent_smoothing_mix": 0.12,
+    "auxiliary_levels": 4,
+    "source_ssim_floor": 0.85,
+    "source_mae_ceiling": 12.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.02,
+    "feature_weight": 0.02,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 8,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "selection_seeds": [
+      9301,
+      9302
+    ],
+    "retention_tolerance": 0.0005
+  },
+  "inputs": {
+    "source": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "target": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+    "anchor": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e",
+    "initial": "1c75c6d8489d77f095e9634e05f9004c86af82e802b15f723efefe2aa66e10e6",
+    "teacher": "cf774e111778fa9c3314939b76f86224350c74f4c15fde3c6a79f0adb25011a6",
+    "mask": "34ee50cfc70d49c5dc2a27cdaba1e1689209aeca8bfe426a0541ec9199134b76",
+    "source_foreground": "1645f325d01f924ecbc874e69eabaa39944ad23f253e36e53242281dd39d3fb9",
+    "parent_anchor": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e"
+  },
+  "encoder": {
+    "role": "attack_surrogate",
+    "name": "ViT-B-32",
+    "pretrained": "openai",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "device": "cuda",
+    "precision": "fp32",
+    "image_size": 224,
+    "preprocess": {
+      "resize": "bicubic_direct_square",
+      "align_corners": false,
+      "antialias": true,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ]
+    },
+    "open_clip_torch_version": "3.3.0",
+    "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+    "requires_true_local_tokens": true
+  },
+  "purifier": {
+    "kind": "sd15_latent_noise_then_ddim_purification_v1",
+    "config": {
+      "model_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "working_size": 512,
+      "reverse_steps": 10,
+      "start_timestep": 99,
+      "gradient_checkpointing": true
+    },
+    "model": {
+      "local_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "local_files_only": true,
+      "variant": "fp16",
+      "files": {
+        "unet/config.json": {
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+          "bytes": 743
+        },
+        "unet/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+          "bytes": 1719125304
+        },
+        "vae/config.json": {
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+          "bytes": 547
+        },
+        "vae/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+          "bytes": 167335342
+        },
+        "text_encoder/config.json": {
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+          "bytes": 617
+        },
+        "text_encoder/model.fp16.safetensors": {
+          "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+          "bytes": 246144864
+        },
+        "tokenizer/merges.txt": {
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+          "bytes": 524619
+        },
+        "tokenizer/special_tokens_map.json": {
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+          "bytes": 472
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+          "bytes": 806
+        },
+        "tokenizer/vocab.json": {
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+          "bytes": 1059962
+        },
+        "scheduler/scheduler_config.json": {
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+          "bytes": 308
+        }
+      }
+    },
+    "prompt": "",
+    "guidance_scale": 1.0,
+    "posterior": "mode",
+    "eta": 0.0,
+    "resize": "aspect_long_edge_round8_min64_bicubic_antialias_back_to_native",
+    "output_range": [
+      0.0,
+      1.0
+    ],
+    "quantization": "external_eight_bit_save_or_ste",
+    "implementation_sha256": "e2eaf12ca5ef148a4e538af666fc7965cca2663e0961be6bb1db572ccf3410d3",
+    "not_original_diffpure": true,
+    "not_full_cognitiveguard": true
+  },
+  "code_sha256": "d7a8376bfe810b640cdec59175584b4cc6ca2584ce9c3236606c3ebf14adb754",
+  "no_pixel_optimization": true,
+  "original_auxiliary_residual_fixed": true,
+  "printed_region_fixed_to_harmonized_anchor": true,
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "full_gradient_original_latent_route": true,
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "purchase_history_used": false,
+  "victim_memory_used": false,
+  "source_title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+  "training_queries": [
+    "Find a product with a similar overall visual appearance.",
+    "Use the reference picture as a broad visual guide for product matching.",
+    "Look for an item with a comparable general shape and finish."
+  ],
+  "shadow_pool_used": false,
+  "selection_rule": "unthresholded_owned_query_scores"
+}

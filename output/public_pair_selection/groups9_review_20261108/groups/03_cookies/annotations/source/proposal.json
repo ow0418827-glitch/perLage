@@ -1,0 +1,483 @@
+{
+  "id": "B07BBLWTLM",
+  "identity": {
+    "image_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\source.jpg",
+  "title": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "1ff9fc3a03275c027b975a3c25a0b51e8eff1c1b4a119bc979a08ba37c935218",
+  "boxes": [
+    [
+      1,
+      5,
+      463,
+      499
+    ]
+  ],
+  "text_regions": [
+    [
+      0.10967741935483871,
+      0.382,
+      0.17204301075268819,
+      0.432
+    ],
+    [
+      0.1032258064516129,
+      0.402,
+      0.18494623655913978,
+      0.46
+    ],
+    [
+      0.09462365591397849,
+      0.526,
+      0.210752688172043,
+      0.596
+    ],
+    [
+      0.3333333333333333,
+      0.53,
+      0.6774193548387096,
+      0.614
+    ],
+    [
+      0.11397849462365592,
+      0.554,
+      0.1956989247311828,
+      0.614
+    ],
+    [
+      0.28817204301075267,
+      0.592,
+      0.7225806451612903,
+      0.67
+    ],
+    [
+      0.12688172043010754,
+      0.684,
+      0.1978494623655914,
+      0.738
+    ],
+    [
+      0.12903225806451613,
+      0.706,
+      0.2,
+      0.756
+    ],
+    [
+      0.35698924731182796,
+      0.714,
+      0.6559139784946236,
+      0.774
+    ],
+    [
+      0.2924731182795699,
+      0.746,
+      0.7096774193548387,
+      0.818
+    ],
+    [
+      0.13548387096774195,
+      0.826,
+      0.2064516129032258,
+      0.878
+    ],
+    [
+      0.13548387096774195,
+      0.844,
+      0.2129032258064516,
+      0.898
+    ],
+    [
+      0.3247311827956989,
+      0.858,
+      0.6774193548387096,
+      0.918
+    ],
+    [
+      0.3032258064516129,
+      0.956,
+      0.46236559139784944,
+      1.0
+    ],
+    [
+      0.4645161290322581,
+      0.954,
+      0.7075268817204301,
+      1.0
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "SOY",
+      "confidence": 0.9104728698730469,
+      "polygon": [
+        [
+          59.0,
+          194.0
+        ],
+        [
+          77.0,
+          200.0
+        ],
+        [
+          73.0,
+          213.0
+        ],
+        [
+          54.0,
+          207.0
+        ]
+      ]
+    },
+    {
+      "text": "FREE",
+      "confidence": 0.9151323437690735,
+      "polygon": [
+        [
+          56.0,
+          204.0
+        ],
+        [
+          83.0,
+          214.0
+        ],
+        [
+          79.0,
+          227.0
+        ],
+        [
+          51.0,
+          217.0
+        ]
+      ]
+    },
+    {
+      "text": "GLUTEN",
+      "confidence": 0.9806092083454132,
+      "polygon": [
+        [
+          52.0,
+          266.0
+        ],
+        [
+          95.0,
+          280.0
+        ],
+        [
+          89.0,
+          295.0
+        ],
+        [
+          47.0,
+          281.0
+        ]
+      ]
+    },
+    {
+      "text": "RaIseD",
+      "confidence": 0.8468123376369476,
+      "polygon": [
+        [
+          158.0,
+          268.0
+        ],
+        [
+          312.0,
+          268.0
+        ],
+        [
+          312.0,
+          304.0
+        ],
+        [
+          158.0,
+          304.0
+        ]
+      ]
+    },
+    {
+      "text": "FREE",
+      "confidence": 0.9948384165763855,
+      "polygon": [
+        [
+          61.0,
+          280.0
+        ],
+        [
+          88.0,
+          290.0
+        ],
+        [
+          83.0,
+          304.0
+        ],
+        [
+          56.0,
+          294.0
+        ]
+      ]
+    },
+    {
+      "text": "GLuTen Free",
+      "confidence": 0.9511430155147206,
+      "polygon": [
+        [
+          137.0,
+          300.0
+        ],
+        [
+          333.0,
+          299.0
+        ],
+        [
+          333.0,
+          331.0
+        ],
+        [
+          137.0,
+          332.0
+        ]
+      ]
+    },
+    {
+      "text": "NUT",
+      "confidence": 0.9628743926684061,
+      "polygon": [
+        [
+          67.0,
+          345.0
+        ],
+        [
+          89.0,
+          353.0
+        ],
+        [
+          84.0,
+          366.0
+        ],
+        [
+          62.0,
+          358.0
+        ]
+      ]
+    },
+    {
+      "text": "FREE",
+      "confidence": 0.8201868757605553,
+      "polygon": [
+        [
+          67.0,
+          356.0
+        ],
+        [
+          90.0,
+          364.0
+        ],
+        [
+          86.0,
+          375.0
+        ],
+        [
+          63.0,
+          367.0
+        ]
+      ]
+    },
+    {
+      "text": "ChocolateChip",
+      "confidence": 0.9874628598873432,
+      "polygon": [
+        [
+          169.0,
+          360.0
+        ],
+        [
+          302.0,
+          363.0
+        ],
+        [
+          301.0,
+          384.0
+        ],
+        [
+          169.0,
+          381.0
+        ]
+      ]
+    },
+    {
+      "text": "COOKIEDOUGH",
+      "confidence": 0.9836995113979686,
+      "polygon": [
+        [
+          139.0,
+          376.0
+        ],
+        [
+          327.0,
+          376.0
+        ],
+        [
+          327.0,
+          406.0
+        ],
+        [
+          139.0,
+          406.0
+        ]
+      ]
+    },
+    {
+      "text": "EGG",
+      "confidence": 0.6948245962460836,
+      "polygon": [
+        [
+          71.0,
+          416.0
+        ],
+        [
+          93.0,
+          424.0
+        ],
+        [
+          89.0,
+          436.0
+        ],
+        [
+          66.0,
+          429.0
+        ]
+      ]
+    },
+    {
+      "text": "FREE",
+      "confidence": 0.8572888672351837,
+      "polygon": [
+        [
+          71.0,
+          425.0
+        ],
+        [
+          96.0,
+          435.0
+        ],
+        [
+          91.0,
+          446.0
+        ],
+        [
+          66.0,
+          436.0
+        ]
+      ]
+    },
+    {
+      "text": "filled withchocolate chips",
+      "confidence": 0.9579234467102931,
+      "polygon": [
+        [
+          154.0,
+          432.0
+        ],
+        [
+          312.0,
+          435.0
+        ],
+        [
+          311.0,
+          456.0
+        ],
+        [
+          154.0,
+          453.0
+        ]
+      ]
+    },
+    {
+      "text": "14oZ(3929)",
+      "confidence": 0.802140885591507,
+      "polygon": [
+        [
+          145.0,
+          481.0
+        ],
+        [
+          212.0,
+          486.0
+        ],
+        [
+          211.0,
+          499.0
+        ],
+        [
+          144.0,
+          496.0
+        ]
+      ]
+    },
+    {
+      "text": "KeepRefrigerated",
+      "confidence": 0.9248644076287746,
+      "polygon": [
+        [
+          219.0,
+          487.0
+        ],
+        [
+          325.0,
+          480.0
+        ],
+        [
+          326.0,
+          497.0
+        ],
+        [
+          220.0,
+          499.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9390558004379272,
+      "foreground_ratio": 0.8275354838709678,
+      "rough_coverage": 0.9934423594647808,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.5068511366844177,
+      "foreground_ratio": 0.24889032258064517,
+      "rough_coverage": 0.24559810342749228,
+      "accepted": false
+    },
+    {
+      "index": 2,
+      "iou": 0.7119265794754028,
+      "foreground_ratio": 0.1909032258064516,
+      "rough_coverage": 0.2854663077108531,
+      "accepted": false
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\03_cookies\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 3.031428500002221
+}

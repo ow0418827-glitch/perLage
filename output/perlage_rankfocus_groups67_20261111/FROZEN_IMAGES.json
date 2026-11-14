@@ -1,0 +1,35 @@
+{
+  "status": "frozen",
+  "images": {
+    "rankfocus": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\06_jeans\\adversarial.png",
+        "sha256": "d0ce3ff42390118b651445818b4f1437204daf0acfc523ccada2f884b0811b89",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\06_jeans\\ready.json",
+        "ready_sha256": "7f76e9ead8413b7755278216d890528fdf712b0dd1b8f90adfff00ea9c0f550c"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\adversarial.png",
+        "sha256": "3ea5c7c9ef5a3caf48a33fc24f406bb82e97f3f6db96d3e102c2e38e6b10b3c5",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\ready.json",
+        "ready_sha256": "7a0a74ed675d674c8885d4947b134ed50a296baebdfd6cc13001d13b3e443831"
+      }
+    },
+    "rankfocus_wide": {
+      "06_jeans": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\06_jeans\\adversarial.png",
+        "sha256": "86ef8439e01f487fc73d8bd02e57e202aa24d74673a3918e17c1c5c4574a1c88",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\06_jeans\\ready.json",
+        "ready_sha256": "5edf327844ef66ea6c049196786d0c0ddc02ddcd5cc23341b4f1f857e8337d21"
+      },
+      "07_shampoo": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\07_shampoo\\adversarial.png",
+        "sha256": "88b1e4873dd3a3cd8a535f557cc69c363e82176ecbf08ac33b333edbd77544f8",
+        "ready": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus_wide\\07_shampoo\\ready.json",
+        "ready_sha256": "f7a4be213ece3d67e44041e6ba6266298b913d2a1a56a4cbb6959600a7002d15"
+      }
+    }
+  },
+  "plan_sha256": "145b86be37093686d2b589dd4e90a70f877a6b9c25c414982858fb1edce53936",
+  "formal_rankings_used": false
+}

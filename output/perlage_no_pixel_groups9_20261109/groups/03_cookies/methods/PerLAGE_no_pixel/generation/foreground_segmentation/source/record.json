@@ -1,0 +1,37 @@
+{
+  "identity": {
+    "image_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+    "boxes": [
+      [
+        1,
+        5,
+        463,
+        499
+      ]
+    ],
+    "model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+    "code_sha256": "f354b7277d0cc2099488a9cd98060ea8e2e3acdccecd5736f3def5da5d3fec4a",
+    "private_gallery_used": false
+  },
+  "seconds": 1.5640819000036572,
+  "pixels": 196829,
+  "scores": [
+    [
+      0.5657325387001038,
+      0.43721580505371094,
+      0.591176450252533
+    ]
+  ],
+  "mask_sha256": "6410623aab745ede68448dc0e4c084252052fdd0eb0b16807fdba0750024a4e6",
+  "selection": "maximum_model_iou_among_masks_containing_owned_box_center",
+  "selected_indices": [
+    0
+  ],
+  "candidate_center_flags": [
+    [
+      true,
+      false,
+      false
+    ]
+  ]
+}

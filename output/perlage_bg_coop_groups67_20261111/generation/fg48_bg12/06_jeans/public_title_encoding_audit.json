@@ -1,0 +1,55 @@
+{
+  "algorithm": "public_fullkey_joint_and_analytic_compensated_image_v1",
+  "source_public_key_text": "Title: Cinch Men's Bronze Label Tapered Slim Fit Jeans Dark Stone 29W x 32L\nBrand: Cinch\nFeatures: a tapered slim fit, cotton denim, a button closure, a zipper fly, button closure, slim fit, machine wash\nFeatureText: I want to buy jeans with a tapered slim fit and cotton denim.",
+  "source_public_key_sha256": "3561cfc2e81fca1e634fd99f95707c9d72235258e35f4c58c4c8fd58630450d1",
+  "source_public_key_audit": {
+    "text_sha256": "3561cfc2e81fca1e634fd99f95707c9d72235258e35f4c58c4c8fd58630450d1",
+    "input_tokens": 71,
+    "encoded_tokens": 71,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      71
+    ],
+    "truncated": false
+  },
+  "training_query_audit": {
+    "text_sha256": "cfc5997d852316dda3fdca6876f266c3bc05a5927caeb8669996c1c68604d78b",
+    "input_tokens": 18,
+    "encoded_tokens": 18,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      18
+    ],
+    "truncated": false
+  },
+  "training_queries": [
+    "I want to buy jeans with a high waist and a baggy straight-leg cut."
+  ],
+  "query_image": "target_image_unpurified",
+  "query_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "key_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "joint_compensated_objective_weight": [
+    0.5,
+    0.5
+  ],
+  "compensated_formula": "unit(2*dot(query,own)*query-own)",
+  "query_own_cosine": [
+    [
+      0.47311919927597046
+    ]
+  ],
+  "compensation_valid": [
+    true
+  ],
+  "private_gallery_used": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false
+}

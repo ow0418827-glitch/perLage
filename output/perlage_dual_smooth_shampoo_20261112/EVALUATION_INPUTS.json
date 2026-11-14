@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "groups": {
+    "07_shampoo": {
+      "name": "第七组洗发水",
+      "source_id": "B08XYBS678",
+      "target_id": "B00BDJODWI",
+      "source_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+      "queries": [
+        {
+          "task_id": "feature_01",
+          "instruction": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_02",
+          "instruction": "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_03",
+          "instruction": "Looking to buy shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_04",
+          "instruction": "I am looking to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_05",
+          "instruction": "Please help me buy shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_06",
+          "instruction": "I am shopping for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_07",
+          "instruction": "I would like to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_08",
+          "instruction": "Help me purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_09",
+          "instruction": "I am looking for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_10",
+          "instruction": "Please find shampoo with plant-based haircare ingredients and a balancing formula for me to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_11",
+          "instruction": "I want to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_12",
+          "instruction": "Please help me purchase shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_13",
+          "instruction": "I need to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_14",
+          "instruction": "I would like help finding shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_15",
+          "instruction": "Find me shampoo with a balancing formula and plant and flower essences to purchase.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_16",
+          "instruction": "Please look for shampoo with plant-based haircare ingredients and a balancing formula that I can buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_17",
+          "instruction": "I am interested in buying shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_18",
+          "instruction": "I would like to shop for shampoo with a balancing formula and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_19",
+          "instruction": "Help me find shampoo with plant-based haircare ingredients and a balancing formula to buy.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        },
+        {
+          "task_id": "feature_20",
+          "instruction": "I am ready to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+          "query_mode": "joint",
+          "query_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png",
+          "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58"
+        }
+      ],
+      "training_overlap": {
+        "normalized_exact_overlap_count": 1,
+        "query_numbers": [
+          1
+        ],
+        "normalization": "whitespace_and_casefold",
+        "policy": "user_requested_templates_overlap_allowed_reported",
+        "semantic_independence_claimed": false
+      }
+    }
+  },
+  "bank_order": [
+    "clean",
+    "baseline",
+    "lucid",
+    "rankfocus",
+    "fg48_bg12",
+    "fg_lock_bg24",
+    "bg_smooth",
+    "dual_smooth"
+  ],
+  "pool_count": 189,
+  "banks": {
+    "clean": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\clean.json",
+      "sha256": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a"
+    },
+    "baseline": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\baseline.json",
+      "sha256": "e1246d2856b79902adfaf00135ce49861117c2798f50ec219a735c927eec7139"
+    },
+    "lucid": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\lucid.json",
+      "sha256": "7ecec66f891f80b86bc5233dafc06134a35f5167ebe54798883b139d96f1c508"
+    },
+    "rankfocus": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\rankfocus.json",
+      "sha256": "c5ccdf733cb303dc0c4ead9530ea801b0da494a54fd3ca3ee4d09cb3bc63a458"
+    },
+    "fg48_bg12": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\fg48_bg12.json",
+      "sha256": "d967f1e12d772bcf839d215a0c7035e9bd226ae35b007596ab3dbc35167d6127"
+    },
+    "fg_lock_bg24": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\fg_lock_bg24.json",
+      "sha256": "d0f0604c439f1c01963b6402870c06128a5b6a3d1db2c9c1f0e48fbb737d4918"
+    },
+    "bg_smooth": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\bg_smooth.json",
+      "sha256": "1b16911a0cbe0ac38ed60082dbcdfb2e073532fbf458e61021c1d8313d280895"
+    },
+    "dual_smooth": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\dual_smooth.json",
+      "sha256": "fb0f69fc583c61bddda1e7496ea18f98858ddaeeb3f31ff93cbec5881e6eaa4e"
+    }
+  },
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "encoder_config_sha256": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+  "bindings": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\manifest.json": "7c89000fcf49c55a1edcd989310f0ae44c8cc3af517181ad4236f32384a883c7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json": "521c50c50b4908caca1a0f18bd11c23b9071c9e4b785261b04e3b10664fc7c55",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\EXPERIMENT_PLAN.json": "3015b641e5c4ad295d618e3c09513df4d721a6f84889909738834c59e67f3c3d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\FROZEN_IMAGES.json": "6ba39493946da3ba752b36c18a4808ff393877953b57f63c2b70214e847a2819",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\FROZEN_IMAGE.json": "7c4d65f799418b880dfa009ae2a6b96b67426188e1048770f5ac62befc3869e4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\FROZEN_IMAGE.json": "55e7f27cb3039979ad2a8203d0e761f2523a1ac87db321a8148fb52ea442e4f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\FROZEN_IMAGES.json": "0619eddb154de647cd579e147a9609c07efb1bccb0a0d5c133c6e0ab4dd8dbbf",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\adversarial.png": "3ea5c7c9ef5a3caf48a33fc24f406bb82e97f3f6db96d3e102c2e38e6b10b3c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111\\generation\\rankfocus\\07_shampoo\\ready.json": "7a0a74ed675d674c8885d4947b134ed50a296baebdfd6cc13001d13b3e443831",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\FROZEN_IMAGES.json": "ee7eb058a4ded6c63e501c66a36cce291e4f63f953787c43d9f55750445d0cb8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\07_shampoo\\adversarial.png": "1de1b14e64f4799e6a7d5c2ba6640971c5d4d81c8e4e8be3b54852c53ffac6b4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_coop_groups67_20261111\\generation\\fg48_bg12\\07_shampoo\\ready.json": "8f4464a7a14c23166d29580e9d1457b1fd1e71212a305b7e88a8abdb581fee01",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\FROZEN_IMAGES.json": "8a307955a7a13004fb0786bf271f5c3240566b0b842e9e3e6c113f9136bed62a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\adversarial.png": "423b95dc232c6282817009032c46f06a6f913d692a36ba6ec19621002a78c5b0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_only_shampoo_20261111\\generation\\fg_lock_bg24\\07_shampoo\\ready.json": "2f8b3bfa0d7eaaffb7714945aaa758a40edbd95495ce0e4e1d5b235104b36cba",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\FROZEN_IMAGES.json": "35935e7d890eede5fde3ba547dc0d97de26620d33203fd8caf6648bb4245560d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\generation\\bg_smooth\\07_shampoo\\adversarial.png": "974b2ae72645d63311bd22e1dc771688a886a066ef663ec69b2b107000b6f740",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_bg_smooth_shampoo_20261111\\generation\\bg_smooth\\07_shampoo\\ready.json": "c5106279eb1baa0e25d7c364f516fc9f72912c883c15e3eadb2a8bfa6a6643c9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\generation\\dual_smooth\\07_shampoo\\adversarial.png": "1a43e88624e03b40fb56978f91f681e019b0d8f716e17902d376f11b276897df",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\generation\\dual_smooth\\07_shampoo\\ready.json": "4ce200fb147d013d183de2cc316e95918f84c2287064cde76e22fb2ef0a4b8ce",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\formal_queries\\07_shampoo\\queries.json": "88c734de2d0273379b96a52de3449696d288ec19a80f16e7a41f9f7b6aa1f2b2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\07_shampoo\\queries.json": "eefa736b26048f149dc423c56aa506aa920788e29aefcc0036d69abe09345296",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\07_shampoo\\query.png": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\clean.json": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\baseline.json": "e1246d2856b79902adfaf00135ce49861117c2798f50ec219a735c927eec7139",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\lucid.json": "7ecec66f891f80b86bc5233dafc06134a35f5167ebe54798883b139d96f1c508",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\rankfocus.json": "c5ccdf733cb303dc0c4ead9530ea801b0da494a54fd3ca3ee4d09cb3bc63a458",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\fg48_bg12.json": "d967f1e12d772bcf839d215a0c7035e9bd226ae35b007596ab3dbc35167d6127",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\fg_lock_bg24.json": "d0f0604c439f1c01963b6402870c06128a5b6a3d1db2c9c1f0e48fbb737d4918",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\bg_smooth.json": "1b16911a0cbe0ac38ed60082dbcdfb2e073532fbf458e61021c1d8313d280895",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_dual_smooth_shampoo_20261112\\banks\\dual_smooth.json": "fb0f69fc583c61bddda1e7496ea18f98858ddaeeb3f31ff93cbec5881e6eaa4e"
+  },
+  "query_mode": "joint",
+  "query_image_weight": 0.5,
+  "key_image_weight": 0.5,
+  "index_text": "product_feature",
+  "condition": "none",
+  "shopping_allowed": false,
+  "simultaneous_replacements_per_modified_bank": 1,
+  "expected_rankings": 160,
+  "expected_score_comparisons": 30240,
+  "baseline_policy": "recompute_all_reference_banks_in_same_complete_pool",
+  "current_round_rankings_used_for_selection": false,
+  "historical_group_results_seen_for_development": true,
+  "input_read_only_after_all_complete_images": true
+}

@@ -1,0 +1,299 @@
+{
+  "scope": "Post hoc full-reference image metrics from frozen files only; no model inference or image mutation.",
+  "protocol": {
+    "decoder": "PIL.Image.open().convert('RGB')",
+    "pillow_version": "12.0.0",
+    "skimage_version": "0.25.2",
+    "numpy_version": "2.3.5",
+    "size": "native dimensions, no resampling or registration",
+    "data_range": 255,
+    "ssim": {
+      "channel_axis": -1,
+      "gaussian_weights": true,
+      "sigma": 1.5,
+      "win_size": 11,
+      "use_sample_covariance": false
+    },
+    "aggregation": "arithmetic mean across nine groups; PSNR is mean of per-image dB values"
+  },
+  "limitations": [
+    "Source-image similarity is not a human naturalness, perceptual invisibility or label-readability score.",
+    "Whole-image metrics may be dominated by background; no foreground or text-region-specific metric is claimed.",
+    "These post hoc diagnostics do not replace preregistered attack metrics, human blinded ratings or defended evaluation."
+  ],
+  "summary": {
+    "perlage_no_pixel": {
+      "groups": 9,
+      "ssim": 0.953660029246966,
+      "mae": 5.013801301237227,
+      "psnr_db": 29.190566379682707,
+      "rmse": 8.91350281454286
+    },
+    "lucid": {
+      "groups": 9,
+      "ssim": 0.8859965539160631,
+      "mae": 5.270651900371816,
+      "psnr_db": 32.45025081739854,
+      "rmse": 6.108500257860188
+    },
+    "perlage_wins": {
+      "ssim_higher": 9,
+      "mae_lower": 6,
+      "psnr_higher": 0
+    }
+  },
+  "groups": [
+    {
+      "group": "01_camera",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\01_camera\\source.jpg",
+      "source_sha256": "eb5f729dbce74e5ea97f9b3af6eb902f947c9c8442b74acbf450bce12d1104cd",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\01_camera\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "21f69a6e9f6f1e45f88faf3191708cf311eb96c3e45f0a8f0f8dd3eb3005f0fa",
+          "ssim": 0.9647023662405062,
+          "mae": 3.963886666666667,
+          "psnr_db": 29.87311227530501,
+          "rmse": 8.18247273139361
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\01_camera\\methods\\lucid\\frozen.png",
+          "sha256": "9aeb87ce076f6ed5f4692be5cec0f46634c6962483debfe85e5df25c42b4e803",
+          "ssim": 0.8778023526401061,
+          "mae": 4.697382666666667,
+          "psnr_db": 33.369083137166406,
+          "rmse": 5.471243246892489
+        }
+      }
+    },
+    {
+      "group": "02_chair",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\02_chair\\source.jpg",
+      "source_sha256": "7a06ed70b92dc60b6cf37d29631bcfe52f8735adba0253b791350f464ca56d6b",
+      "shape": [
+        500,
+        416,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\02_chair\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "14862599a1e7423329f2a315587cb743aa25c5c7bb47a31a5f64e2e0e57be7cd",
+          "ssim": 0.9447765331115318,
+          "mae": 4.641618589743589,
+          "psnr_db": 28.865558089308987,
+          "rmse": 9.188873567303963
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\02_chair\\methods\\lucid\\frozen.png",
+          "sha256": "eff00fda5a23f6509dd6bb2ed13b0f1c9e4d59744bcdbb406bf5fe4bb831141f",
+          "ssim": 0.8761015844303196,
+          "mae": 5.2193814102564104,
+          "psnr_db": 32.66457112996463,
+          "rmse": 5.933509252649906
+        }
+      }
+    },
+    {
+      "group": "03_cookies",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\03_cookies\\source.jpg",
+      "source_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+      "shape": [
+        500,
+        465,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "543bc75268a84f98c37526b804363055072a09c920a5dfa53fe29d5a1eebcc40",
+          "ssim": 0.942355483108943,
+          "mae": 6.089594265232975,
+          "psnr_db": 28.007701888423448,
+          "rmse": 10.142735168706169
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\03_cookies\\methods\\lucid\\frozen.png",
+          "sha256": "b46a9bb1e5ba99d9619750745f1aab9ced7d101037ae5be3673546c254f97167",
+          "ssim": 0.840360729410858,
+          "mae": 6.07152688172043,
+          "psnr_db": 31.102791139264582,
+          "rmse": 7.102326339061259
+        }
+      }
+    },
+    {
+      "group": "04_curtain",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\04_curtain\\source.jpg",
+      "source_sha256": "2eaea983aa4b1ab928567e1aeb57a255fa133f0b9fa2b9a4a6eeccd43d62d967",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\04_curtain\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "fb671ecad4bfce28cc7cf7ec9f0ecd371ec6bec3384813650383a05e058a8c80",
+          "ssim": 0.9273004196459266,
+          "mae": 5.615150666666667,
+          "psnr_db": 28.627053471059206,
+          "rmse": 9.444685630907292
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\04_curtain\\methods\\lucid\\frozen.png",
+          "sha256": "02097751e0816fe7e3568c41e3a55ce4455418a79d4a1ebe7a2004db18ba102f",
+          "ssim": 0.8980715269108104,
+          "mae": 6.103084,
+          "psnr_db": 31.104715130632933,
+          "rmse": 7.100753293372002
+        }
+      }
+    },
+    {
+      "group": "05_hair_extension",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source.jpg",
+      "source_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69",
+          "ssim": 0.9418215811387439,
+          "mae": 5.1905,
+          "psnr_db": 30.498566535560542,
+          "rmse": 7.613982138145584
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\05_hair_extension\\methods\\lucid\\frozen.png",
+          "sha256": "f23a8e7a1ae0b1919fea527ff25ab776b1d4370760a3afe15ac0e888582bad0f",
+          "ssim": 0.8858721071816489,
+          "mae": 5.888598666666667,
+          "psnr_db": 32.03603017073416,
+          "rmse": 6.378795393071224
+        }
+      }
+    },
+    {
+      "group": "06_jeans",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\06_jeans\\source.jpg",
+      "source_sha256": "a945795bc33a1f094f2bae77742393c692e05e22917184f635f302756e9a2b8d",
+      "shape": [
+        500,
+        387,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\06_jeans\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "50ec2af805eb0ae25270592bac066a0b83e6929ad0a0c58e92a822d47d4a112e",
+          "ssim": 0.9761780952167571,
+          "mae": 5.382980189491818,
+          "psnr_db": 31.055170794357203,
+          "rmse": 7.141371741699478
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\06_jeans\\methods\\lucid\\frozen.png",
+          "sha256": "56361e4b220dc034d110532055ae47b58eca2f658f3e9c7f1d64ce27759704b8",
+          "ssim": 0.9086999130383426,
+          "mae": 4.807912144702843,
+          "psnr_db": 33.10971787129005,
+          "rmse": 5.637081150133953
+        }
+      }
+    },
+    {
+      "group": "07_shampoo",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg",
+      "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+          "ssim": 0.9690793828525771,
+          "mae": 4.5118773333333335,
+          "psnr_db": 29.175006573965852,
+          "rmse": 8.867268350512463
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\07_shampoo\\methods\\lucid\\frozen.png",
+          "sha256": "40925d04f2fb956c64c46dae9c0cb1acd7e67bf664923450cbb3b5178782725f",
+          "ssim": 0.8717641250801421,
+          "mae": 4.881973333333334,
+          "psnr_db": 33.09991796286375,
+          "rmse": 5.643444810869806
+        }
+      }
+    },
+    {
+      "group": "08_speaker",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\08_speaker\\source.jpg",
+      "source_sha256": "ead324b33b443daba5e0abe9c6ed59157e164d67b302f65a7661d53810be6390",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\08_speaker\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "d24ed6429dd910110855e27dd79a2bdab471c1b9eba21f6270943ee1ddeb8c5e",
+          "ssim": 0.9620716627762146,
+          "mae": 5.461668,
+          "psnr_db": 28.86507072273229,
+          "rmse": 9.189389170849896
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\08_speaker\\methods\\lucid\\frozen.png",
+          "sha256": "cae74446bf862443707481c17ada07bb7a08c95be9f31413a33e25658fb0eaa7",
+          "ssim": 0.9178025690566362,
+          "mae": 4.972790666666667,
+          "psnr_db": 32.967563730218316,
+          "rmse": 5.730097265026718
+        }
+      }
+    },
+    {
+      "group": "09_toothbrush",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\09_toothbrush\\source.jpg",
+      "source_sha256": "74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f",
+      "shape": [
+        500,
+        500,
+        3
+      ],
+      "methods": {
+        "perlage_no_pixel": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\frozen.png",
+          "sha256": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+          "ssim": 0.9546547391314936,
+          "mae": 4.266936,
+          "psnr_db": 27.74785706643184,
+          "rmse": 10.450746831367285
+        },
+        "lucid": {
+          "path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\09_toothbrush\\methods\\lucid\\frozen.png",
+          "sha256": "74c6404754e18b3481de5552cfedd846d5a47e5efb2de263bfa1f47d19b1c1b6",
+          "ssim": 0.8974940774957038,
+          "mae": 4.793217333333334,
+          "psnr_db": 32.59786708445203,
+          "rmse": 5.979251569664329
+        }
+      }
+    }
+  ]
+}

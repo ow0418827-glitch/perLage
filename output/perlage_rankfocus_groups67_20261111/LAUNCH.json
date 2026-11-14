@@ -1,0 +1,9 @@
+{
+  "pid": 15764,
+  "started_at": "2026-11-11T15:20:49.1451532+08:00",
+  "executable": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "arguments": "-X utf8 -B -u \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_rankfocus_groups67_20261111.py\"",
+  "output": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111",
+  "detached": true,
+  "shopping_enabled": false
+}

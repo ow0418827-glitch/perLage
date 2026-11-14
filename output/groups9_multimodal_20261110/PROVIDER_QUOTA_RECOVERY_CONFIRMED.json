@@ -1,0 +1,23 @@
+{
+  "status": "confirmed_recovered_and_resumed",
+  "checked_at": "2026-11-11T01:52:23.269614+00:00",
+  "actual_model": "MiniMax-M3",
+  "actual_provider": "minimax",
+  "valid_episodes_now": 92,
+  "resumed_group": "05_hair_extension",
+  "resumed_task": "feature_12",
+  "resumed_record": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\shopping\\episodes\\05_hair_extension\\feature_12.json",
+  "resumed_record_sha256": "700cd0df4aa32eec8c1b373248d841bc5cfae4561348550f9fe17ff43ba0e1c2",
+  "actual_policy_calls": 5,
+  "payload_audit": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\methods\\lucid\\shopping\\payload_audits\\05_hair_extension\\feature_12.json",
+  "payload_audit_sha256": "389e1a693d7c25d56d3ac383af421bbf773b08b2760d7241d18e1f89aee6adb0",
+  "prior_91_record_hashes_unchanged": true,
+  "resumed_record_completed": true,
+  "final_asin": "B07Z7MQSM1",
+  "new_model_or_sampling_parameters_used": false,
+  "separate_probe_response_discarded": false,
+  "resume_order": [
+    "lucid",
+    "perlage_no_pixel"
+  ]
+}

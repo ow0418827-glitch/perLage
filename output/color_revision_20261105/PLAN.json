@@ -1,0 +1,134 @@
+{
+  "created_local": "2026-11-05",
+  "scope": "public_color_stage_development_not_private_retrieval_or_shopping",
+  "max_versions": 2,
+  "cases": [
+    {
+      "key": "07_shampoo",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\07_shampoo\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\07_shampoo\\target.jpg",
+      "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "print_regions": [
+        [
+          0.07,
+          0.48,
+          0.26,
+          0.76
+        ],
+        [
+          0.27,
+          0.48,
+          0.55,
+          0.8
+        ],
+        [
+          0.56,
+          0.48,
+          0.77,
+          0.76
+        ],
+        [
+          0.77,
+          0.48,
+          0.92,
+          0.71
+        ]
+      ],
+      "source_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\07_shampoo\\source_foreground.png",
+      "target_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\07_shampoo\\target_foreground.png",
+      "baseline_color": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\07_shampoo\\baseline_color.png",
+      "numeric_quality": {
+        "source_ssim_floor": 0.85,
+        "source_mae_ceiling": 12.0
+      }
+    },
+    {
+      "key": "09_toothbrush",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\09_toothbrush\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\09_toothbrush\\target.jpg",
+      "source_title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+      "print_regions": [
+        [
+          0.22,
+          0.4,
+          0.78,
+          0.95
+        ]
+      ],
+      "source_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\09_toothbrush\\source_foreground.png",
+      "target_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\09_toothbrush\\target_foreground.png",
+      "baseline_color": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\09_toothbrush\\baseline_color.png",
+      "numeric_quality": {
+        "source_ssim_floor": 0.85,
+        "source_mae_ceiling": 12.0
+      }
+    },
+    {
+      "key": "02_chair",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\02_chair\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\02_chair\\target.jpg",
+      "source_title": "FMOGG Hydraulic Salon Recliner Barber Chair Heavy Duty Hair Spa Salon Styling Beauty, 360°Rotating, Explosion-Proof Pneumatic Rod Tattoo Chair for Salon Beauty Equipment (Color : A)",
+      "print_regions": [],
+      "source_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\02_chair\\source_foreground.png",
+      "target_foreground": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\02_chair\\target_foreground.png",
+      "baseline_color": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_revision_20261105\\public_cases\\02_chair\\baseline_color.png",
+      "numeric_quality": {
+        "source_ssim_floor": 0.85,
+        "source_mae_ceiling": 12.0
+      }
+    }
+  ],
+  "generic_queries": [
+    "Find a product with a similar overall visual appearance.",
+    "Use the reference picture as a broad visual guide for product matching.",
+    "Look for an item with a comparable general shape and finish."
+  ],
+  "promotion_gate": {
+    "primary_required_cases": [
+      "07_shampoo",
+      "09_toothbrush"
+    ],
+    "mean_image_cosine_gain_at_least": 0.02,
+    "each_required_image_cosine_gain_at_least": 0.01,
+    "each_required_joint_gain_at_least": 0.005,
+    "chair_image_or_joint_regression_at_most": 0.005,
+    "secondary_encoder_mean_gain_at_least": 0.0,
+    "secondary_encoder_case_regression_at_most": 0.01,
+    "material_color_distance_reduction_at_least": 0.1,
+    "source_ssim_floor": 0.85,
+    "source_mae_ceiling": 12.0,
+    "protected_core_max_difference": 0,
+    "background_max_difference": 0,
+    "manual_visual_review_required": true
+  },
+  "original_input_sha256": {
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\attacker_assets\\source.jpg": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\attacker_assets\\target.jpg": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\source\\foreground.png": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_segmentation\\target\\foreground.png": "1174102da30abda57bb51647a6a3bbae2be142401f3e59b4b343e18fd6553a54",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\initial.png": "c7821fbf5819ba96bb96e1f5da0b75ce67eb19d9a702946d575ac51a406810e4",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\generative_anchor.png": "969e69baec80e558ccd71baefd706bc441097fcbf8b2bec235907f963140f71a",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\color_harmonization\\edit_mask.png": "22aec23f44b0f5caafc5a201a718848fc55f0d7a154f8f94c0e07253359e5233",
+    "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\lage_runs\\catalog_shampoo_no_shadow_20261029\\generated\\07_shampoo\\foreground_statistics\\statistics.json": "7583158af9fd6cf2388f2ea094317ad931dc0c2f80ceb0d090ff9295582bda8d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\foreground_segmentation\\source\\foreground.png": "1645f325d01f924ecbc874e69eabaa39944ad23f253e36e53242281dd39d3fb9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\foreground_segmentation\\target\\foreground.png": "45a2cbf225f7548aeb7eec12ab08e5783e80e51f854c53bde86ef373a66c30e0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\color_harmonization\\initial.png": "1c75c6d8489d77f095e9634e05f9004c86af82e802b15f723efefe2aa66e10e6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\color_harmonization\\generative_anchor.png": "d954bd395f0ff6c356c6fca0f047bd0674399806079a3219ca58be3d5fa4792e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\color_harmonization\\edit_mask.png": "34ee50cfc70d49c5dc2a27cdaba1e1689209aeca8bfe426a0541ec9199134b76",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\09_toothbrush\\methods\\PerLAGE\\generation\\foreground_statistics\\statistics.json": "5731bbb9f413bba705528fd62932c261ddcb6568529d3bfecd9bcc1f9486ec76",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\source.jpg": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\target.jpg": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\foreground_segmentation\\source\\foreground.png": "5abf29a982dd92ec2c54d36d4bd2d70fcae3f827cf23ee83d576e90a559d9f63",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\foreground_segmentation\\target\\foreground.png": "ec5f2d6da66e6a53d1cf4fab787c7ff47efc1a7f43f3c01e24ba1c805589b4a5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\color_harmonization\\initial.png": "115762587d1c09ada7f62da67d3d1f11d57dcd4db656e9091f036938eaa00eb8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\color_harmonization\\generative_anchor.png": "5232aa878f01015cfbcec904ac04c3ba87eb21ad0448179379a0ba62ce5b74ee",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261104_final\\groups\\02_chair\\methods\\PerLAGE\\generation\\foreground_statistics\\statistics.json": "ecca301e8cebf3318172538bb416f8d787115a8a64c890ac802f143c2d96cec3"
+  },
+  "baseline_note": "洗发水旧无池完整方法的公开颜色阶段产物；另外两组为当前完整方法。固定公开图对的子步骤对照不宣称独立正式实验或完整新方法成图。",
+  "private_bank_access": false,
+  "formal_query_access": false,
+  "shopping_runs": 0
+}

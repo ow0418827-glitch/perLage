@@ -1,0 +1,221 @@
+{
+  "method": "perlage_harmonization_latent_v1",
+  "config": {
+    "steps": 60,
+    "check_every": 10,
+    "latent_levels": 24,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.01,
+    "latent_smoothing_mix": 0.12,
+    "auxiliary_levels": 0,
+    "source_ssim_floor": 0.85,
+    "source_mae_ceiling": 12.0,
+    "ordinary_tolerance": 0.01,
+    "temperature": 0.01,
+    "desired_owned_score_gain": 0.02,
+    "feature_weight": 0.02,
+    "diffusion_weight": 3.0,
+    "macro_l2_weight": 0.001,
+    "macro_tv_weight": 0.003,
+    "guard_backtracks": 8,
+    "full_eot_samples": 2,
+    "training_seed_base": 720300000,
+    "timesteps": [
+      99,
+      199,
+      399
+    ],
+    "development_seeds": [
+      9401,
+      9402,
+      9403,
+      9404,
+      9405,
+      9406,
+      9407,
+      9408
+    ],
+    "selection_seeds": [
+      9301,
+      9302
+    ],
+    "retention_tolerance": 0.0005
+  },
+  "inputs": {
+    "source": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+    "target": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+    "anchor": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+    "initial": "20c45ae6df426e8328a27e4a0d00ac242973916fc33d049f47e103a8468ded59",
+    "teacher": "7fa6e636c76432c52f9bed2beb3cd5cc962f5c3ab60b4cf92feeb9a5d95c6907",
+    "mask": "7f91854fc899b2449d150b927dd221bf3971e448551c852054620b8c988b8d10",
+    "source_foreground": "a71669806f2713f09484ca72bf3214cef5025c388c23736fe1e8a5963dfccbd0",
+    "parent_anchor": "7fa6e636c76432c52f9bed2beb3cd5cc962f5c3ab60b4cf92feeb9a5d95c6907"
+  },
+  "encoder": {
+    "role": "attack_surrogate",
+    "name": "ViT-B-32",
+    "pretrained": "openai",
+    "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+    "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+    "device": "cuda",
+    "precision": "fp32",
+    "image_size": 224,
+    "preprocess": {
+      "resize": "bicubic_direct_square",
+      "align_corners": false,
+      "antialias": true,
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ]
+    },
+    "open_clip_torch_version": "3.3.0",
+    "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+    "requires_true_local_tokens": true,
+    "loading": {
+      "architecture": {
+        "embed_dim": 512,
+        "vision_cfg": {
+          "image_size": 224,
+          "layers": 12,
+          "width": 768,
+          "patch_size": 32
+        },
+        "text_cfg": {
+          "context_length": 77,
+          "vocab_size": 49408,
+          "width": 512,
+          "heads": 8,
+          "layers": 12
+        }
+      },
+      "quick_gelu": true,
+      "activation": "QuickGELU",
+      "mean": [
+        0.48145466,
+        0.4578275,
+        0.40821073
+      ],
+      "std": [
+        0.26862954,
+        0.26130258,
+        0.27577711
+      ],
+      "metadata_source": "registered_pretrained_tag",
+      "registered_preprocess": {
+        "interpolation": "bicubic",
+        "resize_mode": "shortest"
+      },
+      "strict_state_dict": true,
+      "actual_activation_modules": {
+        "QuickGELU": 24,
+        "GELU": 0
+      },
+      "loader_version": 2,
+      "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+    }
+  },
+  "purifier": {
+    "kind": "sd15_latent_noise_then_ddim_purification_v1",
+    "config": {
+      "model_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "working_size": 512,
+      "reverse_steps": 10,
+      "start_timestep": 99,
+      "gradient_checkpointing": true
+    },
+    "model": {
+      "local_path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\stable-diffusion-v1-5",
+      "local_files_only": true,
+      "variant": "fp16",
+      "files": {
+        "unet/config.json": {
+          "sha256": "78f474de6bab3d893868f37be97b636ae65c0df3073ed3256ca458ff599b5f96",
+          "bytes": 743
+        },
+        "unet/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "c83908253f9a64d08c25fc90874c9c8aef9a329ce1ca5fb909d73b0c83d1ea21",
+          "bytes": 1719125304
+        },
+        "vae/config.json": {
+          "sha256": "786a7d21647ddea6a04b9675c03d3cb45e90a2f3c6da5fbda2c54ade040036de",
+          "bytes": 547
+        },
+        "vae/diffusion_pytorch_model.fp16.safetensors": {
+          "sha256": "4fbcf0ebe55a0984f5a5e00d8c4521d52359af7229bb4d81890039d2aa16dd7c",
+          "bytes": 167335342
+        },
+        "text_encoder/config.json": {
+          "sha256": "845df614cb9327ae7bbea027316246fae917827407da6df13572e41b5f93b4cc",
+          "bytes": 617
+        },
+        "text_encoder/model.fp16.safetensors": {
+          "sha256": "77795e2023adcf39bc29a884661950380bd093cf0750a966d473d1718dc9ef4e",
+          "bytes": 246144864
+        },
+        "tokenizer/merges.txt": {
+          "sha256": "9fd691f7c8039210e0fced15865466c65820d09b63988b0174bfe25de299051a",
+          "bytes": 524619
+        },
+        "tokenizer/special_tokens_map.json": {
+          "sha256": "c4864a9376a8401918425bed71fc14fc0e81f9b59ec45c1cf96cccb2df508eac",
+          "bytes": 472
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "00439066fcba73de57644cf41e4e3b9f2dbb09d7f3fc2005898ba52399045882",
+          "bytes": 806
+        },
+        "tokenizer/vocab.json": {
+          "sha256": "e089ad92ba36837a0d31433e555c8f45fe601ab5c221d4f607ded32d9f7a4349",
+          "bytes": 1059962
+        },
+        "scheduler/scheduler_config.json": {
+          "sha256": "699cce92eb7c122e2eb7dfdea78e6187fda76a5ed4a8e42319b85610e620e091",
+          "bytes": 308
+        }
+      }
+    },
+    "prompt": "",
+    "guidance_scale": 1.0,
+    "posterior": "mode",
+    "eta": 0.0,
+    "resize": "aspect_long_edge_round8_min64_bicubic_antialias_back_to_native",
+    "output_range": [
+      0.0,
+      1.0
+    ],
+    "quantization": "external_eight_bit_save_or_ste",
+    "implementation_sha256": "45e4373c1026a8f4e14de15ed873c635cef9a5a8407d2b8defb16a6bfe1194e0",
+    "not_original_diffpure": true,
+    "not_full_cognitiveguard": true
+  },
+  "code_sha256": "355fc39a9eca8572755dc053f1596ea9ad70620248f25f572e0c25f12d888e87",
+  "objective_implementation": {
+    "objective_source_sha256": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+    "encoder_source_sha256": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e"
+  },
+  "no_pixel_optimization": true,
+  "original_auxiliary_residual_fixed": true,
+  "printed_region_fixed_to_harmonized_anchor": true,
+  "private_gallery_used": false,
+  "true_rank_used": false,
+  "full_gradient_original_latent_route": true,
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "purchase_history_used": false,
+  "victim_memory_used": false,
+  "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+  "training_queries": [
+    "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+  ],
+  "shadow_pool_used": false,
+  "selection_rule": "unthresholded_owned_query_scores"
+}

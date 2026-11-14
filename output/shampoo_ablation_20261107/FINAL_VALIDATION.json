@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "verified_at": "2026-11-07T09:10:55.164028+00:00",
+  "pytest_passed": 100,
+  "pytest_failed": 0,
+  "pytest_command": "python -X utf8 -B -m pytest -q --basetemp tmp/pytest_final_delivery_100",
+  "whitespace_check": "passed",
+  "frozen_images_verified": 9,
+  "formal_rankings": 180,
+  "all_scores_independently_recomputed": 34020,
+  "max_absolute_error": 0.0,
+  "pool_count": 189,
+  "pool_origins": {
+    "simulated_gallery": 133,
+    "purchase_memory": 56
+  },
+  "generation_math_and_models_unchanged": true,
+  "changed_generation_snapshot_files": [
+    "src/experiments/shampoo_ablation.py"
+  ],
+  "paired_prefix_sha256": "4c0e7458fc83daa6b1e49daabb1d079ddcb6c8cb334766ae401471f675f2f4f5",
+  "complete_latent_stages": {
+    "perlage_latent_only": {
+      "executed_final_latent_steps": 40,
+      "selected_final_latent_step": 20,
+      "auxiliary_max_levels": 0
+    },
+    "perlage_pixel_control": {
+      "executed_final_latent_steps": 40,
+      "selected_final_latent_step": 0,
+      "auxiliary_max_levels": 4
+    }
+  },
+  "prompt_default_profile": "neutral",
+  "prompt_settings": "src/agent/prompts/settings.json",
+  "neutral_template_sha256": "022e15aed665721d6a10878ae3221f6f85f985bb4993f2d1c80d3d3301bc5a4b",
+  "visual_comparison_sha256": "16dc076ca4922339b1937a698a8e5d9fe622d6a7d125d0b4a45349b0689f4b4b",
+  "final_code_files": {
+    "src/experiments/shampoo_ablation.py": "241dec932c93c9f1f7be6f4fd4ac8acbea51fa3f6b3d98962398071b0e911351",
+    "src/experiments/shampoo_ablation_evaluation.py": "45226084e3eea93c8e3aec0e4b22c1d68d28f89466190985ecc354cfc483f14d",
+    "src/agent/prompts/loader.py": "329ce41b54bc1490d93bee66d8f9417118e875984049aba0df883fedfc78dc50",
+    "src/agent/prompts/settings.json": "29bae461f66b8e5192d034a3892ec3871ce8b7cf74354d0e3a6cf4727c8c7963",
+    "src/tests/test_refactored_architecture.py": "7e0d8f6458f6f66a951b4180c0a2320d678541a30f9f4a035ff7175e633ef494",
+    "src/deprecated/title_target.py": "b2be27de99c8596ef36f6d9f43f6804f41b2bc52499ecd2c94a07daec2f05704"
+  },
+  "report_sha256": "b7ee04ca33f1771cb6330925e8912266ee398cc9dc0aa0ba515dc60227fa537a",
+  "image_comparison_sha256": "aae8f5e3957477c0f01906f6405c95f14b2d0005c168314921076431e9c92fa9",
+  "shopping_runs": 0
+}

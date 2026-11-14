@@ -1,0 +1,7 @@
+{
+  "stage": "shopping",
+  "episodes_completed": 40,
+  "expected": 40,
+  "retrieval_top_k": 3,
+  "last_task": "vague_20"
+}

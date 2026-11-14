@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "old_original_loss": 0.7163597345352173,
+  "four_level_loss": 0.7163597345352173,
+  "eight_level_loss": 0.7163597345352173,
+  "all_three_initial_objectives_exactly_equal": true
+}

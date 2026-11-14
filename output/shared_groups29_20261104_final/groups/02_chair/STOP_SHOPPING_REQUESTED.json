@@ -1,0 +1,6 @@
+{
+  "shopping_allowed": true,
+  "external_model_calls_allowed": true,
+  "user_instruction": "用户明确选择：检索与最终购物都测试。",
+  "scope": "this_experiment_only"
+}

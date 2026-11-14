@@ -1,0 +1,57 @@
+{
+  "algorithm": "public_fullkey_joint_and_analytic_compensated_image_v1",
+  "source_public_key_text": "Title: BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair\nBrand: BELLISSO\nFeatures: This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss, The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth, Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men\nFeatureText: I want to buy a shampoo & conditioner with this advanced biotin shampoo from bellisso is rich in powerful ingredients to help fight hair loss and the secret to our hair loss shampoo is biotin, a form of vitamin b7 that can help stimulate keratin production and promote follicle growth.",
+  "source_public_key_sha256": "b6259c0ff8dcb8032ae05dae7cf85caa581db358229748ced370362bceb1fe96",
+  "source_public_key_audit": {
+    "text_sha256": "b6259c0ff8dcb8032ae05dae7cf85caa581db358229748ced370362bceb1fe96",
+    "input_tokens": 173,
+    "encoded_tokens": 173,
+    "chunks": 3,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      75,
+      75,
+      23
+    ],
+    "truncated": false
+  },
+  "training_query_audit": {
+    "text_sha256": "5bf2d119600a94e08b65ca2ae70f530f2cf0d20d1422ff8f91ab64e37fb5869b",
+    "input_tokens": 16,
+    "encoded_tokens": 16,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      16
+    ],
+    "truncated": false
+  },
+  "training_queries": [
+    "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+  ],
+  "query_image": "target_image_unpurified",
+  "query_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "key_image_text_weight": [
+    0.5,
+    0.5
+  ],
+  "joint_compensated_objective_weight": [
+    0.5,
+    0.5
+  ],
+  "compensated_formula": "unit(2*dot(query,own)*query-own)",
+  "query_own_cosine": [
+    [
+      0.619645893573761
+    ]
+  ],
+  "compensation_valid": [
+    true
+  ],
+  "private_gallery_used": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false
+}

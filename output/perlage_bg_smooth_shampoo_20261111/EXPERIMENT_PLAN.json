@@ -1,0 +1,279 @@
+{
+  "schema_version": 1,
+  "experiment": "perlage_no_pixel_bg_smooth_shampoo_20261111",
+  "groups": [
+    "07_shampoo"
+  ],
+  "profiles": [
+    "bg_smooth"
+  ],
+  "profile_configs": {
+    "bg_smooth": {
+      "steps": 350,
+      "check_every": 10,
+      "latent_levels": 0,
+      "background_levels": 22,
+      "latent_working_size": 512,
+      "latent_limit": 6.0,
+      "latent_learning_rate": 0.06,
+      "latent_smoothing_mix": 0.0,
+      "source_ssim_floor": 0.78,
+      "source_mae_ceiling": 22.0,
+      "temperature": 0.04,
+      "macro_l2_weight": 0.0,
+      "macro_tv_weight": 0.0,
+      "bg_l2_weight": 0.0001,
+      "bg_tv_weight": 0.0015,
+      "overflow_weight": 0.05,
+      "halo_soft_weight": 0.0001,
+      "edge_feather_pixels": 12.0,
+      "edge_feather_mode": "cosine",
+      "bg_luma_smooth_sigma": 2.2,
+      "bg_chroma_smooth_sigma": 5.0,
+      "bg_chroma_keep": 0.55,
+      "bg_chroma_tv_weight": 0.003,
+      "tau_scale": 0.75,
+      "joint_weight": 0.5,
+      "compensated_weight": 0.5,
+      "halo_parent_multiplier": 1.0,
+      "halo_floor": 12.0,
+      "guard_backtracks": 8,
+      "auxiliary_levels": 0,
+      "feature_weight": 0.0,
+      "diffusion_weight": 0.0,
+      "seed": 42
+    }
+  },
+  "generation_inputs": {
+    "07_shampoo": {
+      "definition": {
+        "schema_version": 2,
+        "method": "PerLAGE_no_pixel",
+        "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+        "color_scheme": "statistics",
+        "training_data_policy": "catalog_image_and_public_title_only_v1",
+        "pixel_optimization": false,
+        "target_feature_text": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "data": {
+          "source": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg",
+          "target": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg",
+          "source_title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+          "training_queries": [
+            "I want to buy shampoo with plant-based haircare ingredients and a balancing formula."
+          ]
+        },
+        "source_boxes": [
+          [
+            20,
+            59,
+            478,
+            428
+          ]
+        ],
+        "target_boxes": [
+          [
+            2,
+            5,
+            158,
+            494
+          ]
+        ],
+        "print_regions": [
+          [
+            0.072,
+            0.572,
+            0.19,
+            0.638
+          ],
+          [
+            0.266,
+            0.58,
+            0.404,
+            0.66
+          ],
+          [
+            0.07,
+            0.624,
+            0.156,
+            0.66
+          ],
+          [
+            0.782,
+            0.614,
+            0.838,
+            0.65
+          ],
+          [
+            0.068,
+            0.636,
+            0.21,
+            0.68
+          ],
+          [
+            0.272,
+            0.644,
+            0.364,
+            0.68
+          ],
+          [
+            0.58,
+            0.638,
+            0.65,
+            0.678
+          ],
+          [
+            0.08,
+            0.662,
+            0.218,
+            0.692
+          ],
+          [
+            0.266,
+            0.66,
+            0.428,
+            0.704
+          ],
+          [
+            0.276,
+            0.684,
+            0.468,
+            0.72
+          ],
+          [
+            0.146,
+            0.712,
+            0.246,
+            0.752
+          ],
+          [
+            0.286,
+            0.708,
+            0.43,
+            0.74
+          ],
+          [
+            0.302,
+            0.72,
+            0.468,
+            0.754
+          ],
+          [
+            0.586,
+            0.712,
+            0.69,
+            0.752
+          ],
+          [
+            0.356,
+            0.746,
+            0.472,
+            0.788
+          ]
+        ]
+      },
+      "source_public_record": {
+        "id": "B08XYBS678",
+        "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+        "brand": "Dove",
+        "attributes": [
+          "a foaming cleanser",
+          "coconut and almond milk",
+          "a cruelty-free formula",
+          "a moisturizing blend",
+          "cruelty free",
+          "plant based"
+        ],
+        "feature_text": "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+        "provenance": "public_catalog_verified_review",
+        "feature_evidence": [
+          {
+            "feature": "a foaming cleanser",
+            "field": "Title",
+            "quote": "Foaming Hand Wash"
+          },
+          {
+            "feature": "coconut and almond milk",
+            "field": "Title",
+            "quote": "Coconut and Almond Milk"
+          },
+          {
+            "feature": "a cruelty-free formula",
+            "field": "Attributes",
+            "index": 0,
+            "quote": "cruelty free"
+          },
+          {
+            "feature": "a moisturizing blend",
+            "field": "BulletPoints",
+            "index": 1,
+            "quote": "5X MOISTURIZER BLEND"
+          }
+        ]
+      },
+      "prefix_root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\perlage_no_pixel_config.json": "53a3a930ad655b6122e97e937a3a5f48e6cec82d4f88112322533b3d3433f16b",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\definition.json": "06e888751c34659f7cc85ad372405850f9739790a774a615302956d2ed9c3d4e",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\source.jpg": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\07_shampoo\\target.jpg": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\ready.json": "62fa66c0df5ebc9a110f17e8b448582f57732df61ee290fdf996bdfa7f3dfa7f",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\07_shampoo\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "fb4b4793a1753e08e6e42d34d72afbf0b54c99edf18ff5feb629d4cb18ca815f",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\public_metadata\\product_metadata.json": "2cd05d919c05ef0eda28cbcb646b9fa560e01a79ac39a77a02bdffde22ddb691",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\public_metadata\\product_feature_review.json": "8868444f2d14a02a68c6d0b23cfa5bcfa3cf48bbe96a84cd2468fb61e1eeab78"
+      }
+    }
+  },
+  "implementation": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_bg_smooth_shampoo_20261111.py": "2e4e57e8ee0f76c5f2174f910e9d37b9b871d98d9b7f0d2c5211c8b73c5b317d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\perlage_bg_coop_evaluation.py": "ae680504c14720379d1043fe6de5a93787714e67df40caf0f18fdb94e46602db",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_bg_coop\\__init__.py": "9c0a424ccde134fcb047e99d392ee0ba09d2b1ab428b3d58d39b505f46684eda",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_bg_coop\\pipeline.py": "5e230c87896046f8ba5b26c63584ae34784440678a971ac7600f581d2612f5f1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_rankfocus\\__init__.py": "0d5b7c737747f01a575de62aa1c6839af921ef3f2cfe690cd5a05a4203f33f75",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_rankfocus\\pipeline.py": "72637494af77bc2ae9cf860c7295ded6872eb1843ea8f0dc791db422abe088f0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_relaxed\\__init__.py": "bf6641ef5f9874166b71e72c842dafe9972899e16188a51012229a917276b6c5",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage_no_pixel_relaxed\\pipeline.py": "1dbd2bda69c83f3929c818e41ec89862b394a0e2b9575a8bdaa5bae2d83e8b5b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\retrieval_objective.py": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\joint.py": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\clip.py": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\encoders\\backbone.py": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\latent_branch.py": "85e5bee60459a78e8eed76d5c9e4db4ef66c9658aa6905ff785e524a907b63fe",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\core.py": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\_perlage\\components\\colour.py": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\catalog_training_guard.py": "9c442302d38898a74d649c85c5648d3f5f1369358373c11f8a349b53c6ecde40",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\visual_retrieval.py": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\experiments\\query_contract.py": "56e1dd563dba5931f28a24de2d6baaa67ba00c5a5b76099e550400f81a283a44",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\target_features.py": "87538faaed0f9614423b886b8c83c88c1ded928c8165651115ed6b8fabf83c55",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\visual\\robust_objectives.py": "1c73c01a4c2c3e465c26661e0607bf4e17fc6edf68eff9e8bd0f3c25200e3bb5"
+  },
+  "preserved_shopping_files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\USER_PAUSE_CHECKPOINT.json": "64f3c0eb028b0b53eff2370fddcc2ea6e81dffbb33ea6b74f50063d520e3ee55"
+  },
+  "generation_seed": {
+    "bg_smooth": 42
+  },
+  "training": "original_frozen_single_target_feature_sentence",
+  "training_key": "own_public_title_brand_attributes_feature_text_reconstructed_without_pool",
+  "previous_experiment_readonly": "output/perlage_bg_only_shampoo_20261111",
+  "query_mode": "joint",
+  "condition": "none",
+  "queries_per_group": 20,
+  "query_image_weight": 0.5,
+  "key_image_weight": 0.5,
+  "shared_pool_count": 189,
+  "all_images_frozen_before_evaluation": true,
+  "pixel_optimization": false,
+  "first_three_stages": "verified_frozen_prefix_reused_not_newly_generated",
+  "subject_policy": "subject_foreground_locked_byte_for_byte_to_perlage_no_pixel_final",
+  "generation_selection": "training_objective_only_no_formal_ranking_selection",
+  "current_formal_rankings_used_for_parameter_selection": false,
+  "historical_group_results_seen_for_development": true,
+  "training_reads_shared_pool": false,
+  "shopping_enabled": false,
+  "model_api_calls_enabled": false,
+  "caveats": [
+    "按用户要求仅测试洗发水一组、仅生成一张背景平滑自然过渡图（bg_smooth）。",
+    "商品主体前景与PerLAGE_no_pixel逐像素完全一致（零额外改动）；背景采用12像素余弦边界柔化加明度／色度双尺度高斯平滑（350步）。",
+    "训练代理与指定评估编码器重合，不声称独立留出黑盒迁移。",
+    "沿用原训练正文；正式二十条特点文字有一条与训练精确重合。"
+  ]
+}

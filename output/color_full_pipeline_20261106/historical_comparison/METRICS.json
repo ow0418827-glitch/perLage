@@ -1,0 +1,389 @@
+{
+  "scope": "existing_complete_images_same_metric_public_target_comparison",
+  "rows": [
+    {
+      "encoder": 2,
+      "image": "source",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "image_cosine": 0.6722689867019653,
+      "joint_mean": 0.6860269904136658,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "old_actual_tested_complete",
+      "sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+      "image_cosine": 0.7664900422096252,
+      "joint_mean": 0.7373398542404175,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "old_no_shadow_complete",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80",
+      "image_cosine": 0.7706466913223267,
+      "joint_mean": 0.7382634878158569,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "new_temporary_relaxed_complete",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+      "image_cosine": 0.796466588973999,
+      "joint_mean": 0.762298583984375,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "source",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "image_cosine": 0.649199366569519,
+      "joint_mean": 0.6764465570449829,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "old_actual_tested_complete",
+      "sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529",
+      "image_cosine": 0.6647569537162781,
+      "joint_mean": 0.6853785514831543,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "old_no_shadow_complete",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80",
+      "image_cosine": 0.6735165119171143,
+      "joint_mean": 0.6883508563041687,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "new_temporary_relaxed_complete",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+      "image_cosine": 0.6590703725814819,
+      "joint_mean": 0.680743396282196,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "encoder": 2,
+      "reference": "old_actual_tested_complete",
+      "image_delta": 0.02997654676437378,
+      "joint_delta": 0.02495872974395752
+    },
+    {
+      "encoder": 2,
+      "reference": "old_no_shadow_complete",
+      "image_delta": 0.025819897651672363,
+      "joint_delta": 0.024035096168518066
+    },
+    {
+      "encoder": 1,
+      "reference": "old_actual_tested_complete",
+      "image_delta": -0.005686581134796143,
+      "joint_delta": -0.004635155200958252
+    },
+    {
+      "encoder": 1,
+      "reference": "old_no_shadow_complete",
+      "image_delta": -0.014446139335632324,
+      "joint_delta": -0.007607460021972656
+    }
+  ],
+  "same_target_same_title_same_generic_queries_same_weights_same_preprocessing": true,
+  "newly_generated_images": 0,
+  "historical_training_configs_differ": true,
+  "not_a_single_factor_color_ablation": true,
+  "private_memory_used": false,
+  "shopping_runs": 0
+}

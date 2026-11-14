@@ -1,0 +1,1009 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "scope": "retrieval_only",
+  "group": "07_shampoo",
+  "method": "lucid",
+  "epsilon_levels": 8,
+  "steps": 1000,
+  "source_id": "B09B63YYCW",
+  "target_id": "B00BDJODWI",
+  "replaced_memory_id": "groups9_reference_07_shampoo_B08XYBS678",
+  "source_memory_id": "groups9_reference_07_shampoo_B09B63YYCW",
+  "pool_count": 189,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  },
+  "query_modes": [
+    "joint",
+    "text"
+  ],
+  "query_count_per_mode": 20,
+  "shopping_executed": false,
+  "inputs_sha256": "b7ddcdc348eb721bd4733786aaf3581f80007f124b741d057ebc0b7781947e60",
+  "verification_sha256": "008c93cf4529c005560f99bd1c6bfc59eb0aa3ff597940d098fb1a0664259a7d",
+  "contact_sheet": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_shampoo_reselect_20261112\\comparison_visual_07_shampoo_lucid.png",
+  "contact_sheet_sha256": "6b88bba27aefd9028dc6e917b2b65971856bbcfa6ef99bb2b38228a7a431c1ee",
+  "visual_metrics": {
+    "method": "lucid",
+    "steps_requested": 1000,
+    "steps_completed": 1000,
+    "selected_step": 1000,
+    "epsilon_levels": 8,
+    "epsilon": 0.03137254901960784,
+    "text_weight": 1.0,
+    "source_ssim": 0.8082400935071978,
+    "max_abs_diff_levels": 8,
+    "source_mae_levels": 5.930924493554328,
+    "source_mse_levels": 40.92484714548803,
+    "source_psnr_db": 32.01093294872998,
+    "fg_source_mae_levels": 6.213801860809326,
+    "bg_source_mae_levels": 4.270845890045166,
+    "roi_source_max_levels": 8,
+    "roi_source_mae_levels": 6.4259185791015625,
+    "after_attack_saved_loss": 1.5417619943618774,
+    "after_attack_text_similarity": 0.4854400157928467,
+    "after_attack_global_similarities": [
+      0.9831401705741882,
+      0.7988442182540894,
+      0.9318848848342896
+    ]
+  },
+  "modes": {
+    "joint": {
+      "clean": {
+        "metrics": {
+          "query_count": 20,
+          "min_rank": 6,
+          "max_rank": 12,
+          "mean_rank": 8.8,
+          "mrr": 0.12025974025974026,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "comparisons": {
+          "lucid": {
+            "top1_gained": 0,
+            "top1_lost": 0,
+            "top3_gained": 0,
+            "top3_lost": 6,
+            "top5_gained": 0,
+            "top5_lost": 18,
+            "improved_ranks": 0,
+            "worsened_ranks": 19,
+            "tied_ranks": 1,
+            "mean_rank_reduction": -4.550000000000001,
+            "mrr_gain": -0.12890692640692644,
+            "top1_gain": 0,
+            "top3_gain": -6,
+            "top5_gain": -18
+          }
+        },
+        "query01_top5": [
+          {
+            "rank": 1,
+            "id": "public_00e2c039e6039f0d33bdc2e8d30c9cbce08cf306b9fc828c7722e72c9e5194d6",
+            "asin": "B0771SSXBK",
+            "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+            "brand": "Salerm",
+            "score": 0.7713489532470703,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 2,
+            "id": "shared_7ffd39856bc62c0c38432734c7a24810461feb1282a4c54522dda5d1cd462667",
+            "asin": "B08N7WFY1K",
+            "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+            "brand": "Authentic Beauty Concept",
+            "score": 0.7682438492774963,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 3,
+            "id": "shared_882a294731dac1d69d29d0404d9b795dbeb791173d8980084777912b72e2707a",
+            "asin": "B07NB7SJ1Y",
+            "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+            "brand": "Luseta",
+            "score": 0.7396239042282104,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 4,
+            "id": "public_0318dea12e981031a0f27145038b1d6764e45994ed66f706683f44983578003f",
+            "asin": "B01KYRJTIW",
+            "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+            "brand": "Ayur",
+            "score": 0.7304901480674744,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 5,
+            "id": "shared_f74cf849eabde0ef7029b62ecfb4d676ca5024c57aaad1d77ddd5bca92db19f7",
+            "asin": "B07ZQRFC46",
+            "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+            "brand": "Puracy",
+            "score": 0.7255306243896484,
+            "is_reselected_source": false
+          }
+        ],
+        "per_query_source": [
+          {
+            "task_id": "feature_01",
+            "rank": 8,
+            "score": 0.7117096185684204
+          },
+          {
+            "task_id": "feature_02",
+            "rank": 10,
+            "score": 0.7093062400817871
+          },
+          {
+            "task_id": "feature_03",
+            "rank": 12,
+            "score": 0.7185944318771362
+          },
+          {
+            "task_id": "feature_04",
+            "rank": 7,
+            "score": 0.7294341325759888
+          },
+          {
+            "task_id": "feature_05",
+            "rank": 12,
+            "score": 0.7070965766906738
+          },
+          {
+            "task_id": "feature_06",
+            "rank": 7,
+            "score": 0.7152215838432312
+          },
+          {
+            "task_id": "feature_07",
+            "rank": 8,
+            "score": 0.7181784510612488
+          },
+          {
+            "task_id": "feature_08",
+            "rank": 11,
+            "score": 0.7146832346916199
+          },
+          {
+            "task_id": "feature_09",
+            "rank": 6,
+            "score": 0.7362639904022217
+          },
+          {
+            "task_id": "feature_10",
+            "rank": 10,
+            "score": 0.7089709043502808
+          },
+          {
+            "task_id": "feature_11",
+            "rank": 10,
+            "score": 0.7055556178092957
+          },
+          {
+            "task_id": "feature_12",
+            "rank": 7,
+            "score": 0.72165846824646
+          },
+          {
+            "task_id": "feature_13",
+            "rank": 7,
+            "score": 0.7094817161560059
+          },
+          {
+            "task_id": "feature_14",
+            "rank": 12,
+            "score": 0.7090793251991272
+          },
+          {
+            "task_id": "feature_15",
+            "rank": 6,
+            "score": 0.7245910167694092
+          },
+          {
+            "task_id": "feature_16",
+            "rank": 7,
+            "score": 0.7188538312911987
+          },
+          {
+            "task_id": "feature_17",
+            "rank": 10,
+            "score": 0.7169480919837952
+          },
+          {
+            "task_id": "feature_18",
+            "rank": 6,
+            "score": 0.7201579213142395
+          },
+          {
+            "task_id": "feature_19",
+            "rank": 10,
+            "score": 0.7126840353012085
+          },
+          {
+            "task_id": "feature_20",
+            "rank": 10,
+            "score": 0.7049519419670105
+          }
+        ]
+      },
+      "lucid": {
+        "metrics": {
+          "query_count": 20,
+          "min_rank": 3,
+          "max_rank": 6,
+          "mean_rank": 4.25,
+          "mrr": 0.2491666666666667,
+          "top1": 0,
+          "top3": 6,
+          "top5": 18,
+          "top1_rate": 0.0,
+          "top3_rate": 0.3,
+          "top5_rate": 0.9
+        },
+        "comparisons": {
+          "clean": {
+            "top1_gained": 0,
+            "top1_lost": 0,
+            "top3_gained": 6,
+            "top3_lost": 0,
+            "top5_gained": 18,
+            "top5_lost": 0,
+            "improved_ranks": 19,
+            "worsened_ranks": 0,
+            "tied_ranks": 1,
+            "mean_rank_reduction": 4.550000000000001,
+            "mrr_gain": 0.12890692640692644,
+            "top1_gain": 0,
+            "top3_gain": 6,
+            "top5_gain": 18
+          }
+        },
+        "query01_top5": [
+          {
+            "rank": 1,
+            "id": "public_00e2c039e6039f0d33bdc2e8d30c9cbce08cf306b9fc828c7722e72c9e5194d6",
+            "asin": "B0771SSXBK",
+            "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+            "brand": "Salerm",
+            "score": 0.7713489532470703,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 2,
+            "id": "shared_7ffd39856bc62c0c38432734c7a24810461feb1282a4c54522dda5d1cd462667",
+            "asin": "B08N7WFY1K",
+            "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+            "brand": "Authentic Beauty Concept",
+            "score": 0.7682438492774963,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 3,
+            "id": "groups9_reference_07_shampoo_B09B63YYCW",
+            "asin": "B09B63YYCW",
+            "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+            "brand": "BELLISSO",
+            "score": 0.7462543249130249,
+            "is_reselected_source": true
+          },
+          {
+            "rank": 4,
+            "id": "shared_882a294731dac1d69d29d0404d9b795dbeb791173d8980084777912b72e2707a",
+            "asin": "B07NB7SJ1Y",
+            "title": "Luseta Marula Oil Hydrating Hair Shampoo - Salon Quality Shampoo that Cleanses, Protects, Nourishes and Conditions, Sulfate-free, 33.8oz",
+            "brand": "Luseta",
+            "score": 0.7396239042282104,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 5,
+            "id": "public_0318dea12e981031a0f27145038b1d6764e45994ed66f706683f44983578003f",
+            "asin": "B01KYRJTIW",
+            "title": "Ayur Herbal Shampoo, Amla & Shikaki with Reetha For Normal Hair Xtra Conditioner 500ml by Ayur",
+            "brand": "Ayur",
+            "score": 0.7304901480674744,
+            "is_reselected_source": false
+          }
+        ],
+        "per_query_source": [
+          {
+            "task_id": "feature_01",
+            "rank": 3,
+            "score": 0.7462543249130249
+          },
+          {
+            "task_id": "feature_02",
+            "rank": 3,
+            "score": 0.7455800175666809
+          },
+          {
+            "task_id": "feature_03",
+            "rank": 6,
+            "score": 0.733325183391571
+          },
+          {
+            "task_id": "feature_04",
+            "rank": 4,
+            "score": 0.7547144293785095
+          },
+          {
+            "task_id": "feature_05",
+            "rank": 4,
+            "score": 0.7453177571296692
+          },
+          {
+            "task_id": "feature_06",
+            "rank": 5,
+            "score": 0.7291555404663086
+          },
+          {
+            "task_id": "feature_07",
+            "rank": 3,
+            "score": 0.7506749629974365
+          },
+          {
+            "task_id": "feature_08",
+            "rank": 4,
+            "score": 0.7484982013702393
+          },
+          {
+            "task_id": "feature_09",
+            "rank": 6,
+            "score": 0.7459056973457336
+          },
+          {
+            "task_id": "feature_10",
+            "rank": 4,
+            "score": 0.7423600554466248
+          },
+          {
+            "task_id": "feature_11",
+            "rank": 3,
+            "score": 0.744023323059082
+          },
+          {
+            "task_id": "feature_12",
+            "rank": 5,
+            "score": 0.7424511313438416
+          },
+          {
+            "task_id": "feature_13",
+            "rank": 3,
+            "score": 0.7395101189613342
+          },
+          {
+            "task_id": "feature_14",
+            "rank": 5,
+            "score": 0.7486642003059387
+          },
+          {
+            "task_id": "feature_15",
+            "rank": 5,
+            "score": 0.7407587766647339
+          },
+          {
+            "task_id": "feature_16",
+            "rank": 3,
+            "score": 0.7522104978561401
+          },
+          {
+            "task_id": "feature_17",
+            "rank": 4,
+            "score": 0.747416615486145
+          },
+          {
+            "task_id": "feature_18",
+            "rank": 5,
+            "score": 0.7352707982063293
+          },
+          {
+            "task_id": "feature_19",
+            "rank": 5,
+            "score": 0.7392176389694214
+          },
+          {
+            "task_id": "feature_20",
+            "rank": 5,
+            "score": 0.7395318746566772
+          }
+        ]
+      }
+    },
+    "text": {
+      "clean": {
+        "metrics": {
+          "query_count": 20,
+          "min_rank": 1,
+          "max_rank": 7,
+          "mean_rank": 4.25,
+          "mrr": 0.3464285714285714,
+          "top1": 3,
+          "top3": 9,
+          "top5": 14,
+          "top1_rate": 0.15,
+          "top3_rate": 0.45,
+          "top5_rate": 0.7
+        },
+        "comparisons": {
+          "lucid": {
+            "top1_gained": 0,
+            "top1_lost": 17,
+            "top3_gained": 0,
+            "top3_lost": 11,
+            "top5_gained": 0,
+            "top5_lost": 6,
+            "improved_ranks": 0,
+            "worsened_ranks": 17,
+            "tied_ranks": 3,
+            "mean_rank_reduction": -3.25,
+            "mrr_gain": -0.6535714285714286,
+            "top1_gain": -17,
+            "top3_gain": -11,
+            "top5_gain": -6
+          }
+        },
+        "query01_top5": [
+          {
+            "rank": 1,
+            "id": "shared_f74cf849eabde0ef7029b62ecfb4d676ca5024c57aaad1d77ddd5bca92db19f7",
+            "asin": "B07ZQRFC46",
+            "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+            "brand": "Puracy",
+            "score": 0.6311903595924377,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 2,
+            "id": "public_00e2c039e6039f0d33bdc2e8d30c9cbce08cf306b9fc828c7722e72c9e5194d6",
+            "asin": "B0771SSXBK",
+            "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+            "brand": "Salerm",
+            "score": 0.6233726739883423,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 3,
+            "id": "groups9_reference_07_shampoo_B09B63YYCW",
+            "asin": "B09B63YYCW",
+            "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+            "brand": "BELLISSO",
+            "score": 0.6128761768341064,
+            "is_reselected_source": true
+          },
+          {
+            "rank": 4,
+            "id": "shared_7ffd39856bc62c0c38432734c7a24810461feb1282a4c54522dda5d1cd462667",
+            "asin": "B08N7WFY1K",
+            "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+            "brand": "Authentic Beauty Concept",
+            "score": 0.6112878918647766,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 5,
+            "id": "shared_a5ad670409e6d64295d8e9fbf9ac4ac2df9f6b789a487bf1578b381398aabf34",
+            "asin": "B073GFGWWJ",
+            "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+            "brand": "Natural Riches",
+            "score": 0.6092193126678467,
+            "is_reselected_source": false
+          }
+        ],
+        "per_query_source": [
+          {
+            "task_id": "feature_01",
+            "rank": 3,
+            "score": 0.6128761768341064
+          },
+          {
+            "task_id": "feature_02",
+            "rank": 5,
+            "score": 0.6077713966369629
+          },
+          {
+            "task_id": "feature_03",
+            "rank": 5,
+            "score": 0.6302341222763062
+          },
+          {
+            "task_id": "feature_04",
+            "rank": 3,
+            "score": 0.6471724510192871
+          },
+          {
+            "task_id": "feature_05",
+            "rank": 7,
+            "score": 0.6057038307189941
+          },
+          {
+            "task_id": "feature_06",
+            "rank": 1,
+            "score": 0.6141219139099121
+          },
+          {
+            "task_id": "feature_07",
+            "rank": 3,
+            "score": 0.6247149109840393
+          },
+          {
+            "task_id": "feature_08",
+            "rank": 7,
+            "score": 0.6175682544708252
+          },
+          {
+            "task_id": "feature_09",
+            "rank": 1,
+            "score": 0.6543949842453003
+          },
+          {
+            "task_id": "feature_10",
+            "rank": 6,
+            "score": 0.6145182251930237
+          },
+          {
+            "task_id": "feature_11",
+            "rank": 6,
+            "score": 0.602869987487793
+          },
+          {
+            "task_id": "feature_12",
+            "rank": 3,
+            "score": 0.6342595219612122
+          },
+          {
+            "task_id": "feature_13",
+            "rank": 3,
+            "score": 0.6043169498443604
+          },
+          {
+            "task_id": "feature_14",
+            "rank": 7,
+            "score": 0.6126355528831482
+          },
+          {
+            "task_id": "feature_15",
+            "rank": 3,
+            "score": 0.6352386474609375
+          },
+          {
+            "task_id": "feature_16",
+            "rank": 5,
+            "score": 0.6259699463844299
+          },
+          {
+            "task_id": "feature_17",
+            "rank": 5,
+            "score": 0.6192673444747925
+          },
+          {
+            "task_id": "feature_18",
+            "rank": 1,
+            "score": 0.6255528926849365
+          },
+          {
+            "task_id": "feature_19",
+            "rank": 5,
+            "score": 0.6225194931030273
+          },
+          {
+            "task_id": "feature_20",
+            "rank": 6,
+            "score": 0.6009584069252014
+          }
+        ]
+      },
+      "lucid": {
+        "metrics": {
+          "query_count": 20,
+          "min_rank": 1,
+          "max_rank": 1,
+          "mean_rank": 1.0,
+          "mrr": 1.0,
+          "top1": 20,
+          "top3": 20,
+          "top5": 20,
+          "top1_rate": 1.0,
+          "top3_rate": 1.0,
+          "top5_rate": 1.0
+        },
+        "comparisons": {
+          "clean": {
+            "top1_gained": 17,
+            "top1_lost": 0,
+            "top3_gained": 11,
+            "top3_lost": 0,
+            "top5_gained": 6,
+            "top5_lost": 0,
+            "improved_ranks": 17,
+            "worsened_ranks": 0,
+            "tied_ranks": 3,
+            "mean_rank_reduction": 3.25,
+            "mrr_gain": 0.6535714285714286,
+            "top1_gain": 17,
+            "top3_gain": 11,
+            "top5_gain": 6
+          }
+        },
+        "query01_top5": [
+          {
+            "rank": 1,
+            "id": "groups9_reference_07_shampoo_B09B63YYCW",
+            "asin": "B09B63YYCW",
+            "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+            "brand": "BELLISSO",
+            "score": 0.726624071598053,
+            "is_reselected_source": true
+          },
+          {
+            "rank": 2,
+            "id": "shared_f74cf849eabde0ef7029b62ecfb4d676ca5024c57aaad1d77ddd5bca92db19f7",
+            "asin": "B07ZQRFC46",
+            "title": "Puracy Natural Shampoo and Conditioner Set- 16 fl.oz Citrus & Mint Scent, Hydrating, Plant-based, Sulfate-free Shampoo And Conditioner- Shampoo and Conditioner For Dry, Color-Treated Hair",
+            "brand": "Puracy",
+            "score": 0.6311903595924377,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 3,
+            "id": "public_00e2c039e6039f0d33bdc2e8d30c9cbce08cf306b9fc828c7722e72c9e5194d6",
+            "asin": "B0771SSXBK",
+            "title": "Salerm White Hair Shampoo 16.8oz\"Pack of 2\"",
+            "brand": "Salerm",
+            "score": 0.6233726739883423,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 4,
+            "id": "shared_7ffd39856bc62c0c38432734c7a24810461feb1282a4c54522dda5d1cd462667",
+            "asin": "B08N7WFY1K",
+            "title": "Authentic Beauty Concept Dry Shampoo | All Hair Types | Style, Grip & Refresh Hair | Vegan & Cruelty-free | Sulfate-free",
+            "brand": "Authentic Beauty Concept",
+            "score": 0.6112878918647766,
+            "is_reselected_source": false
+          },
+          {
+            "rank": 5,
+            "id": "shared_a5ad670409e6d64295d8e9fbf9ac4ac2df9f6b789a487bf1578b381398aabf34",
+            "asin": "B073GFGWWJ",
+            "title": "Natural Riches Tea Tree Shampoo and Conditioner Set with Pure Tea Tree Oil, Anti Dandruff for Itchy Dry Scalp, Sulfate Free, Paraben Free - 2 bottles 16fl oz each",
+            "brand": "Natural Riches",
+            "score": 0.6092193126678467,
+            "is_reselected_source": false
+          }
+        ],
+        "per_query_source": [
+          {
+            "task_id": "feature_01",
+            "rank": 1,
+            "score": 0.726624071598053
+          },
+          {
+            "task_id": "feature_02",
+            "rank": 1,
+            "score": 0.7242356538772583
+          },
+          {
+            "task_id": "feature_03",
+            "rank": 1,
+            "score": 0.7122564911842346
+          },
+          {
+            "task_id": "feature_04",
+            "rank": 1,
+            "score": 0.7462276220321655
+          },
+          {
+            "task_id": "feature_05",
+            "rank": 1,
+            "score": 0.7253755927085876
+          },
+          {
+            "task_id": "feature_06",
+            "rank": 1,
+            "score": 0.6946489810943604
+          },
+          {
+            "task_id": "feature_07",
+            "rank": 1,
+            "score": 0.7352352142333984
+          },
+          {
+            "task_id": "feature_08",
+            "rank": 1,
+            "score": 0.730138897895813
+          },
+          {
+            "task_id": "feature_09",
+            "rank": 1,
+            "score": 0.7281340956687927
+          },
+          {
+            "task_id": "feature_10",
+            "rank": 1,
+            "score": 0.7266930937767029
+          },
+          {
+            "task_id": "feature_11",
+            "rank": 1,
+            "score": 0.7229185700416565
+          },
+          {
+            "task_id": "feature_12",
+            "rank": 1,
+            "score": 0.7260540723800659
+          },
+          {
+            "task_id": "feature_13",
+            "rank": 1,
+            "score": 0.7105937004089355
+          },
+          {
+            "task_id": "feature_14",
+            "rank": 1,
+            "score": 0.7347089648246765
+          },
+          {
+            "task_id": "feature_15",
+            "rank": 1,
+            "score": 0.7194795608520508
+          },
+          {
+            "task_id": "feature_16",
+            "rank": 1,
+            "score": 0.7378825545310974
+          },
+          {
+            "task_id": "feature_17",
+            "rank": 1,
+            "score": 0.7263758182525635
+          },
+          {
+            "task_id": "feature_18",
+            "rank": 1,
+            "score": 0.7080419659614563
+          },
+          {
+            "task_id": "feature_19",
+            "rank": 1,
+            "score": 0.7236889004707336
+          },
+          {
+            "task_id": "feature_20",
+            "rank": 1,
+            "score": 0.71471107006073
+          }
+        ]
+      }
+    }
+  },
+  "readonly_comparisons": {
+    "reselect_b09_other_methods": {
+      "source_summary": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\SUMMARY.json",
+      "modes": {
+        "text": {
+          "clean": {
+            "query_count": 20,
+            "min_rank": 1,
+            "max_rank": 7,
+            "mean_rank": 4.25,
+            "mrr": 0.3464285714285714,
+            "top1": 3,
+            "top3": 9,
+            "top5": 14,
+            "top1_rate": 0.15,
+            "top3_rate": 0.45,
+            "top5_rate": 0.7
+          },
+          "baseline": {
+            "query_count": 20,
+            "min_rank": 1,
+            "max_rank": 8,
+            "mean_rank": 4.3,
+            "mrr": 0.3455357142857143,
+            "top1": 3,
+            "top3": 9,
+            "top5": 14,
+            "top1_rate": 0.15,
+            "top3_rate": 0.45,
+            "top5_rate": 0.7
+          },
+          "ambient_coop": {
+            "query_count": 20,
+            "min_rank": 1,
+            "max_rank": 4,
+            "mean_rank": 1.7,
+            "mrr": 0.7041666666666667,
+            "top1": 9,
+            "top3": 19,
+            "top5": 20,
+            "top1_rate": 0.45,
+            "top3_rate": 0.95,
+            "top5_rate": 1.0
+          }
+        },
+        "joint": {
+          "clean": {
+            "query_count": 20,
+            "min_rank": 6,
+            "max_rank": 12,
+            "mean_rank": 8.8,
+            "mrr": 0.12025974025974026,
+            "top1": 0,
+            "top3": 0,
+            "top5": 0,
+            "top1_rate": 0.0,
+            "top3_rate": 0.0,
+            "top5_rate": 0.0
+          },
+          "baseline": {
+            "query_count": 20,
+            "min_rank": 5,
+            "max_rank": 12,
+            "mean_rank": 7.95,
+            "mrr": 0.13490079365079366,
+            "top1": 0,
+            "top3": 0,
+            "top5": 1,
+            "top1_rate": 0.0,
+            "top3_rate": 0.0,
+            "top5_rate": 0.05
+          },
+          "ambient_coop": {
+            "query_count": 20,
+            "min_rank": 3,
+            "max_rank": 6,
+            "mean_rank": 4.05,
+            "mrr": 0.2566666666666667,
+            "top1": 0,
+            "top3": 5,
+            "top5": 19,
+            "top1_rate": 0.0,
+            "top3_rate": 0.25,
+            "top5_rate": 0.95
+          }
+        }
+      },
+      "visual": {
+        "baseline": {
+          "steps": 60,
+          "best_step": 10,
+          "accepted": 60,
+          "rejected": 0,
+          "source_ssim": 0.9569904281222369,
+          "source_mae_levels": 3.9087109565734863,
+          "fg_source_mae_levels": 4.003324031829834,
+          "bg_source_mae_levels": 3.1181294918060303,
+          "roi_source_mae_levels": 1.2865915298461914,
+          "fg_anchor_mae_levels": 0.0,
+          "bg_anchor_mae_levels": 0.0,
+          "fg_latent_max_levels": 0,
+          "fg_latent_mae_levels": 0.0,
+          "bg_latent_max_levels": 0,
+          "bg_latent_mae_levels": 0.0,
+          "roi_anchor_max_levels": 0,
+          "bg_mean_rgb_shift_levels": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "halo_error": 3.768551294467746,
+          "internal_selection_score": 0.6904833912849426
+        },
+        "ambient_coop": {
+          "steps": 350,
+          "best_step": 230,
+          "accepted": 350,
+          "rejected": 0,
+          "source_ssim": 0.9159127303066548,
+          "source_mae_levels": 5.9663848876953125,
+          "fg_source_mae_levels": 5.24491024017334,
+          "bg_source_mae_levels": 11.99499225616455,
+          "fg_anchor_mae_levels": 3.2232093811035156,
+          "bg_anchor_mae_levels": 10.669211387634277,
+          "fg_latent_max_levels": 6,
+          "fg_latent_mae_levels": 3.223209241136419,
+          "bg_latent_max_levels": 28,
+          "bg_latent_mae_levels": 10.669216720079948,
+          "roi_anchor_max_levels": 0,
+          "bg_mean_rgb_shift_levels": [
+            -1.3190299272537231,
+            -6.210583209991455,
+            -9.060476303100586
+          ],
+          "ambient_global_levels": [
+            11.589864730834961,
+            5.991373538970947,
+            7.805302619934082
+          ],
+          "halo_error": 4.214343483947969,
+          "joint_score": 0.8193529844284058
+        }
+      }
+    },
+    "historical_b08": {
+      "joint_b08": {
+        "clean": {
+          "query_count": 20,
+          "mean_rank": 15.55,
+          "mrr": 0.06445378151260503,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "baseline": {
+          "query_count": 20,
+          "mean_rank": 12.55,
+          "mrr": 0.07995754245754244,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "lucid": {
+          "query_count": 20,
+          "mean_rank": 6.45,
+          "mrr": 0.1615079365079365,
+          "top1": 0,
+          "top3": 0,
+          "top5": 4,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.2
+        },
+        "ambient_coop": {
+          "query_count": 20,
+          "mean_rank": 4.65,
+          "mrr": 0.22083333333333338,
+          "top1": 0,
+          "top3": 0,
+          "top5": 16,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.8
+        }
+      },
+      "text_b08": {
+        "clean": {
+          "n": 20,
+          "minimum": 16,
+          "maximum": 27,
+          "mean": 20.1,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        },
+        "baseline": {
+          "n": 20,
+          "minimum": 14,
+          "maximum": 25,
+          "mean": 18.25,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0
+        },
+        "lucid": {
+          "n": 20,
+          "minimum": 1,
+          "maximum": 5,
+          "mean": 2.35,
+          "top1": 2,
+          "top3": 18,
+          "top5": 20
+        }
+      }
+    }
+  }
+}

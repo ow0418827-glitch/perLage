@@ -1,0 +1,71 @@
+{
+  "protocol": "image_only_query_and_memory_v1",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shared_memory\\pool_189_v1\\shared_memory.json",
+  "pool_sha256": "5c69c3bdf108ec85db5f5f25a979da70f70dea1b815a0f82d90b37ff1728a4e8",
+  "pool_count": 189,
+  "source_memory_id": "shared_759623cdb6bb5755f91a445b0e1bf4635684824e214fa1b190e23413d6814831",
+  "source_asin": "B08XYBS678",
+  "queries": {
+    "target_original": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\target.jpg",
+      "sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+    },
+    "unlabeled_reference": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\evaluation_inputs\\query.png",
+      "sha256": "cc17e6c1db1b601274efd78c67a08ffa8eba05885fc27eb5768b34d79d8e2b97"
+    }
+  },
+  "variants": {
+    "clean": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\data\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a"
+    },
+    "lucid_4": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_4\\adversarial.png",
+      "sha256": "61ce8265d5bd90b397e9d7599dbbccca51c8091c00ca9d5384103f8e3199383d"
+    },
+    "lucid_8": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_8\\adversarial.png",
+      "sha256": "a9c63ec8cf3589e8481fa8bceac1233b47e0dc76b647d9bc8b7e352479aa7266"
+    },
+    "lucid_original_16": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\lucid_original_16.png",
+      "sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852"
+    },
+    "perlage_original_no_shadow": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_original_no_shadow.png",
+      "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80"
+    },
+    "perlage_pixel_control": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_pixel_control\\adversarial.png",
+      "sha256": "8871d16aa089788e3b1598ad283f91dff4b8e88cda35957e61abbc0ff684f426"
+    },
+    "perlage_latent_only": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\perlage_latent_only\\adversarial.png",
+      "sha256": "80c9ec960b888bfed971b0f174fb64a0fcb8680ad29cce6c9166aad1fcb543eb"
+    }
+  },
+  "labels": {
+    "clean": "未修改源图",
+    "lucid_4": "像素方法，4/255",
+    "lucid_8": "像素方法，8/255",
+    "lucid_original_16": "像素方法，旧16/255",
+    "perlage_original_no_shadow": "历史完整感知图",
+    "perlage_pixel_control": "本轮感知方法，含像素对照",
+    "perlage_latent_only": "本轮感知方法，无像素版本"
+  },
+  "models": [
+    "old_B32",
+    "current_g14"
+  ],
+  "image_weight": 1.0,
+  "query_text_used": false,
+  "product_titles_used": false,
+  "purchase_history_used": false,
+  "key_mode": "image",
+  "query_mode": "image",
+  "only_source_image_replaced": true,
+  "primary_query": "target_original",
+  "generation_runs": 0,
+  "shopping_runs": 0
+}

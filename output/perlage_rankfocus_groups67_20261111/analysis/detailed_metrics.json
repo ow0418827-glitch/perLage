@@ -1,0 +1,128 @@
+{
+  "image_quality": [
+    {
+      "profile": "rankfocus",
+      "group": "06_jeans",
+      "source_ssim": 0.7366386054353043,
+      "source_mae_levels": 21.002750396728516,
+      "foreground_mae_levels": 56.313465677299156,
+      "latent_max": 167,
+      "halo": 0.0,
+      "accepted": 1000,
+      "rejected": 0,
+      "best_step": 1000,
+      "initial_joint": 0.743377685546875,
+      "final_joint": 0.923849880695343
+    },
+    {
+      "profile": "rankfocus",
+      "group": "07_shampoo",
+      "source_ssim": 0.6707422055968855,
+      "source_mae_levels": 20.103633880615234,
+      "foreground_mae_levels": 40.79583595205804,
+      "latent_max": 167,
+      "halo": 14.370612149746112,
+      "accepted": 1000,
+      "rejected": 0,
+      "best_step": 1000,
+      "initial_joint": 0.6926685571670532,
+      "final_joint": 0.9739245176315308
+    },
+    {
+      "profile": "rankfocus_wide",
+      "group": "06_jeans",
+      "source_ssim": 0.7276081415203952,
+      "source_mae_levels": 22.8751163482666,
+      "foreground_mae_levels": 62.13247245510905,
+      "latent_max": 193,
+      "halo": 0.0,
+      "accepted": 1000,
+      "rejected": 0,
+      "best_step": 1000,
+      "initial_joint": 0.743377685546875,
+      "final_joint": 0.9191976189613342
+    },
+    {
+      "profile": "rankfocus_wide",
+      "group": "07_shampoo",
+      "source_ssim": 0.6476565369086509,
+      "source_mae_levels": 23.830690383911133,
+      "foreground_mae_levels": 48.501201856813644,
+      "latent_max": 194,
+      "halo": 11.82026151081953,
+      "accepted": 1000,
+      "rejected": 0,
+      "best_step": 1000,
+      "initial_joint": 0.6926685571670532,
+      "final_joint": 0.9704141616821289
+    }
+  ],
+  "excluding_exact_training_sentence": {
+    "clean": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 0,
+      "top3": 0,
+      "top5": 0,
+      "mean_rank": 18.026315789473685
+    },
+    "baseline": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 0,
+      "top3": 0,
+      "top5": 0,
+      "mean_rank": 12.894736842105264
+    },
+    "lucid": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 0,
+      "top3": 0,
+      "top5": 3,
+      "mean_rank": 12.947368421052632
+    },
+    "previous_strong": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 0,
+      "top3": 0,
+      "top5": 0,
+      "mean_rank": 11.894736842105264
+    },
+    "rankfocus": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 21,
+      "top3": 30,
+      "top5": 37,
+      "mean_rank": 2.1842105263157894
+    },
+    "rankfocus_wide": {
+      "n": 38,
+      "excluded": [
+        "06_jeans:feature_01",
+        "07_shampoo:feature_01"
+      ],
+      "top1": 19,
+      "top3": 29,
+      "top5": 35,
+      "mean_rank": 2.6842105263157894
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "method": "PerLAGE_no_pixel",
+  "status": "frozen",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\frozen.png",
+  "image_sha256": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69",
+  "source": {
+    "id": "B07Z7MQSM1",
+    "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+    "brand": "",
+    "attributes": [
+      "kinky straight human hair",
+      "double wefts",
+      "a natural black color",
+      "stainless steel clips",
+      "hair extensions",
+      "hair clips",
+      "natural hair",
+      "stainless steel"
+    ],
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source.jpg",
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source_foreground.png",
+    "boxes": [
+      [
+        0,
+        6,
+        494,
+        499
+      ]
+    ],
+    "text_regions": [],
+    "image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+    "foreground_mask_sha256": "baa165b88dcc11da5f91e4f45e55ec059b4b7bd65797f6713f19956003983e12"
+  },
+  "target": {
+    "id": "B01460C2I2",
+    "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+    "brand": "S-noilite",
+    "attributes": [
+      "real human hair",
+      "double wefts",
+      "a clip-in design",
+      "rubber-lined clips",
+      "hair extensions",
+      "hair styling",
+      "hair cutting"
+    ],
+    "feature_text": "I want to buy hair extensions with real human hair and double wefts.",
+    "training_queries": [
+      "I want to buy hair extensions with real human hair and double wefts.",
+      "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+      "I am looking for hair extensions with double wefts and rubber-lined clips."
+    ],
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\target.jpg",
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\target_foreground.png",
+    "boxes": [
+      [
+        10,
+        11,
+        482,
+        499
+      ]
+    ],
+    "text_regions": [],
+    "image_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4",
+    "foreground_mask_sha256": "22ce2c50c1872925a31146db99b5cd5aede267a149adb4b09846d2b8bd1f919d"
+  },
+  "metadata": {
+    "method": "PerLAGE_no_pixel",
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "status": "success",
+    "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png",
+    "output_image_sha256": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69",
+    "source_image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+    "target_image_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4",
+    "perlage_ready": {
+      "method": "PerLAGE_no_pixel",
+      "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+      "status": "completed",
+      "color_scheme": "statistics",
+      "training_data_policy": "catalog_image_and_public_title_only_v1",
+      "shadow_pool_used": false,
+      "purchase_history_used": false,
+      "victim_memory_used": false,
+      "formal_queries_used": false,
+      "configuration_sha256": "d37172e080aaaa3428adfc65307e9106f17f558d957914cc8be0325a8da8774d",
+      "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\method_identity.json",
+      "method_identity_sha256": "a35647b50a07e42acb97c8998a9b0839a70995181ec65fd28b7e087bb166d6ad",
+      "source_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+      "target_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4",
+      "source_title_sha256": "e30d69f9f0eabd0c3a627fab87aa0769fa1d87d48524b935d6c06f549441e0f6",
+      "candidates": {
+        "final": {
+          "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png",
+          "sha256": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69"
+        }
+      },
+      "initialization_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json",
+      "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json",
+      "initialization_evidence": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "0daf51e1c2f5ee3d1185e31ad41d4832b1f8cc83b7a211822c64c1568aaf2f7c",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "d9c95287bee6f26f51a1e36abb71c2063d12563cc85eddfaf746b9a5dd1dfd34",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "db352b8c73efb82f5ebb32604ce280d58e45a4ca7ed4eaf83311eef2d3038ecb"
+      },
+      "stages": {
+        "foreground_segmentation": {
+          "status": "completed",
+          "files": {
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "9aa089bede306368adc341df42e68f5c6cf67e59b040f0460d81eb4ac475dccd",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "5739ff7c21913882556ec1d68a41cf1f02fc4742bba2d9ae935acd03e5303f4b",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "39ff7b0a6878097d23154994471c075cf0b14081ec7c7d163364762a313c304c",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "c499c78f6d72045de54471d01c15426372bbad4c88038b436aaf501e4f3b95b7"
+          }
+        },
+        "foreground_statistics": {
+          "status": "completed",
+          "files": {
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "2976f3abdfd07e07d30e11b2c97fbeb510e8755c9a55f8f0f2914099514279aa",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "a8514d4a1364bc4495167eb0081c45feed61140e242a0a486f6c97fb91fa037b"
+          }
+        },
+        "color_harmonization": {
+          "status": "completed",
+          "files": {
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "29642c37bcb0c8e0d2e36a19c959c60ce8c309b51cd93cfb43eff25bfdcbd2c4",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "5e3a990effd61be7153730a3f0e73d69f2b70a84601c35ec63e08437c78658f2",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "5e3a990effd61be7153730a3f0e73d69f2b70a84601c35ec63e08437c78658f2",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153"
+          }
+        },
+        "latent_generation_refinement": {
+          "status": "completed",
+          "files": {
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\latent_generation_refinement\\metadata.json": "b418f925970bf4a22417db71a94025809133208d9f9cf96e7bf9a0e25f8c590a",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\latent_generation_refinement\\identity.json": "a3496c08b1e9d38688f1c9fbce41fc6387d29ee131a1a038aba3b8efc2f5c65f",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69",
+            "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\generative_anchor.png": "a80d9c2f0cf40b021de3dc85549156d388fec0c270a3d67176eca78636f03e69"
+          },
+          "steps_completed": 60,
+          "steps_requested": 60
+        }
+      },
+      "observed_seconds": 1412.8348814000055,
+      "auxiliary_max_levels": 0,
+      "latent_config": {
+        "steps": 60,
+        "check_every": 10,
+        "latent_levels": 24,
+        "latent_working_size": 256,
+        "latent_limit": 0.5,
+        "latent_learning_rate": 0.01,
+        "latent_smoothing_mix": 0.12,
+        "auxiliary_levels": 0,
+        "source_ssim_floor": 0.85,
+        "source_mae_ceiling": 12.0,
+        "ordinary_tolerance": 0.01,
+        "temperature": 0.01,
+        "desired_owned_score_gain": 0.02,
+        "feature_weight": 0.02,
+        "diffusion_weight": 3.0,
+        "macro_l2_weight": 0.001,
+        "macro_tv_weight": 0.003,
+        "guard_backtracks": 8,
+        "full_eot_samples": 2,
+        "training_seed_base": 720300000,
+        "timesteps": [
+          99,
+          199,
+          399
+        ],
+        "development_seeds": [
+          9401,
+          9402,
+          9403,
+          9404,
+          9405,
+          9406,
+          9407,
+          9408
+        ],
+        "selection_seeds": [
+          9301,
+          9302
+        ],
+        "retention_tolerance": 0.0005
+      },
+      "pixel_optimization": false,
+      "optimization_mode": "latent_only",
+      "source_method": "four_natural_stages_with_perceptual_latent_optimization_no_pixel"
+    },
+    "shadow_pool_used": false,
+    "completion_policy": "four_natural_stages_with_perceptual_latent_optimization_complete"
+  },
+  "requested_steps": 60,
+  "observed_seconds": 1413.1803797999892,
+  "public_binding": {
+    "method": "PerLAGE_no_pixel",
+    "group": "05_hair_extension",
+    "selection_sha256": "e76d5d23ecf40d6ed18755984308244782617c1f84f5feeb6dd3892089326f03",
+    "source": {
+      "id": "B07Z7MQSM1",
+      "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+      "brand": "",
+      "attributes": [
+        "kinky straight human hair",
+        "double wefts",
+        "a natural black color",
+        "stainless steel clips",
+        "hair extensions",
+        "hair clips",
+        "natural hair",
+        "stainless steel"
+      ],
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source.jpg",
+      "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\source_foreground.png",
+      "boxes": [
+        [
+          0,
+          6,
+          494,
+          499
+        ]
+      ],
+      "text_regions": [],
+      "image_sha256": "0cdc1d80aaf88e4bb1e4e6919e468afe4716b741a890ce03a8c9368317ae36fe",
+      "foreground_mask_sha256": "baa165b88dcc11da5f91e4f45e55ec059b4b7bd65797f6713f19956003983e12"
+    },
+    "target": {
+      "id": "B01460C2I2",
+      "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+      "brand": "S-noilite",
+      "attributes": [
+        "real human hair",
+        "double wefts",
+        "a clip-in design",
+        "rubber-lined clips",
+        "hair extensions",
+        "hair styling",
+        "hair cutting"
+      ],
+      "feature_text": "I want to buy hair extensions with real human hair and double wefts.",
+      "training_queries": [
+        "I want to buy hair extensions with real human hair and double wefts.",
+        "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+        "I am looking for hair extensions with double wefts and rubber-lined clips."
+      ],
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\target.jpg",
+      "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\groups\\05_hair_extension\\target_foreground.png",
+      "boxes": [
+        [
+          10,
+          11,
+          482,
+          499
+        ]
+      ],
+      "text_regions": [],
+      "image_sha256": "f1606cc72284b26cc9d055eb58b784b46c17a72561f452b1704a0e9f0970f9a4",
+      "foreground_mask_sha256": "22ce2c50c1872925a31146db99b5cd5aede267a149adb4b09846d2b8bd1f919d"
+    },
+    "options": {},
+    "source_files": {
+      "src/model_identity.py": "b4f2aa8689f3cda9054fb24760cc528511c66ba7b5379832dced0187b09d42aa",
+      "src/paths.py": "c6c1f2246814e8fb6e7f45d04863ed44ac634023ea270a46f9f5afca5191d2e3",
+      "src/visual/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/visual/_lucid/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/visual/_lucid/config.py": "40d1f5e4c266e691a15a414ae8c664c5a59f218d7683708d2a7e699d2b55a0a3",
+      "src/visual/_lucid/objective.py": "b69a57b4e4b41101ad01acac8887a7e974fae573d0aa814b26b72ae4a70adb7f",
+      "src/visual/_lucid/pipeline.py": "d2ab1ec30a858e55066beab9888400324ef0dfdb857a5d4e70b9a2219d648b3f",
+      "src/visual/_lucid/pixel.py": "fe189b74a23cc32e98ef649852e5a588c89f57dbc39f40ad0d1b16e67dcae7a1",
+      "src/visual/_lucid/surrogates.py": "ef394c12feea84d4444355829d3f9110cb0044a797b56941e84d70002c7ac5fb",
+      "src/visual/_perlage/__init__.py": "38e17a93a345e7be51828e829c0a38f98bb051a02a606094ae904cbe3c05e483",
+      "src/visual/_perlage/components/__init__.py": "3a7ec6bb41866747befd031b77b6f00899f728995afe77b172426857c857b3ca",
+      "src/visual/_perlage/components/assets.py": "d3b13f4e25d9e108375e4f795f27df6d42b939a955be91f8a938960b620205a5",
+      "src/visual/_perlage/components/colour.py": "34f8764c46abecd7013e0a7226067e390ff0d14d0607e19575cd82c92482b337",
+      "src/visual/_perlage/components/core.py": "4fc26dd260f8b63ed5fab79c11ee3f6bc7969e1f498651caf11bdb3ee113e682",
+      "src/visual/_perlage/components/editor.py": "18da3b2d8fbcec408deb6ab710c55266f750a5fdbc335545d897d9d2a92132c9",
+      "src/visual/_perlage/components/evidence.py": "201e15bf0f1f6a2719426d14243717969e81dd59f874849c344bdfbf0a42fb2e",
+      "src/visual/_perlage/components/instruction.py": "d5eb7eaca825b71dc065db8e378b4094ac2ef692a25d9bd9a22cfeef4fe1a651",
+      "src/visual/_perlage/components/latent_branch.py": "85e5bee60459a78e8eed76d5c9e4db4ef66c9658aa6905ff785e524a907b63fe",
+      "src/visual/_perlage/components/losses.py": "d232696fb68f614dd0b0b3a42cd4e6b683a701bcbccdba3dd835537d470ce53e",
+      "src/visual/_perlage/components/mask.py": "f79e34f64a512cd0ebe271dbf99a4f36b6f50da65988ab4443dfe81f4137e445",
+      "src/visual/_perlage/components/optimizer.py": "a74bb1a98504b05b2121d4bff50b531b35a2d3f5c9e82b2c61f69724dc503b4e",
+      "src/visual/_perlage/components/segmentation.py": "f354b7277d0cc2099488a9cd98060ea8e2e3acdccecd5736f3def5da5d3fec4a",
+      "src/visual/_perlage/evidence.py": "58a98fb3b6f1c7073b457959e08f555f40765a35c113df68e183bac56fb797af",
+      "src/visual/_perlage/harmonization.py": "89a5cdc05db78be8e94c4cd0d2391b0bcf964fc7b174cc4ebb45c9ee3646673d",
+      "src/visual/_perlage/initialization.py": "bc515d21feec1bc24745c4c098438383e36784ead8fe9fa30029a4887ba0b8c5",
+      "src/visual/_perlage/latent.py": "355fc39a9eca8572755dc053f1596ea9ad70620248f25f572e0c25f12d888e87",
+      "src/visual/_perlage/pipeline.py": "b7411b1b605d6f54eea237e8e8fe21a8c8bd6a85a93e491725eeeae195fd5792",
+      "src/visual/_perlage_no_pixel/__init__.py": "663080ed35c078d99b7f54dc94e2044dd98dc0b3d28a5e49170bc0958752eb0d",
+      "src/visual/_perlage_no_pixel/evidence.py": "d118167595580a7e967813a76d32b38082cff0783bab54fe6454ca444d905d83",
+      "src/visual/_perlage_no_pixel/pipeline.py": "14c08c27c42d60554edff51a356a3c8966a53ac0edbfb90b2e5d5910e111121d",
+      "src/visual/attack_completion.py": "9624e6031a0ca3f3e134863eebb1082bf90eadf450083bd5c01e2e7b981285bb",
+      "src/visual/audit.py": "ece15d2eb2a881d6713c8fd60c172cb47b7713207893fa1abfb8276a20b0ff62",
+      "src/visual/catalog_training_guard.py": "9c442302d38898a74d649c85c5648d3f5f1369358373c11f8a349b53c6ecde40",
+      "src/visual/defense_transforms.py": "4d72f3c574f591ac117d5529e25c1e3278f9cf0091345f2e4fa9c9589f154eac",
+      "src/visual/diffusion_components.py": "a323aa2ff1527b55f50f906296d1ed567a561ec99557cf3e5e720dca0d700b34",
+      "src/visual/diffusion_purification.py": "45e4373c1026a8f4e14de15ed873c635cef9a5a8407d2b8defb16a6bfe1194e0",
+      "src/visual/encoders/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/visual/encoders/backbone.py": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487",
+      "src/visual/encoders/clip.py": "acf6c2fd3729d70af84c16155a5b309667c77185174b12b05bb86fbc3b64b7e8",
+      "src/visual/encoders/joint.py": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e",
+      "src/visual/encoders/model_paths.py": "60f0276cf06fd8ef8d2b6072d9c7182a11234ad74a9f48cfa9a972bc8365cdea",
+      "src/visual/encoders/worker.py": "fc104c7cca326fb64d2491bbaea4697186a0f73f79d90eedb8c9d0b4697f13c0",
+      "src/visual/image_utils.py": "1c3de78ae65303342eb06c5edead18ad49712d9162652a1e39f2bbaa4f9bd630",
+      "src/visual/io.py": "044d788f0cca5603b25848eccf7c6d2a2519cb1b65a45c43e9fbe4c594e669ce",
+      "src/visual/optimization.py": "c638159219e3ceffd0e9a60c1e041f145175e399e489bfb4381fb01842236684",
+      "src/visual/pair_assets.py": "54307910353b8663659903c0e771352b3e13b6d3ae3c190089ed8230ca609cb8",
+      "src/visual/pair_selection.py": "3bdc72a5d329fa543ec0478dbaadfac339a7019307846acb03ad0f9904a58ccd",
+      "src/visual/product_types.py": "5748337a4342a7e0df25fe80b8e620ca15237cc903705df4372b66bba4499e1d",
+      "src/visual/public_annotations.py": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "src/visual/query_cache.py": "31c99c9e754c5a8cfbefe5f881b2e3434eaeea5d8a2e7ae03819ccb1a51ffa7c",
+      "src/visual/retrieval_objective.py": "122c9cf1d52c404381388d6ac3dcac8cefbfd39cb4df3921fda8c11ec00148ab",
+      "src/visual/robust_objectives.py": "1c73c01a4c2c3e465c26661e0607bf4e17fc6edf68eff9e8bd0f3c25200e3bb5",
+      "src/visual/selection/__init__.py": "3686d2696ccbb9ad0c87c378cf9778f4545ff8986e5013c0dc4f1caf3568d262",
+      "src/visual/selection/webshop_public.py": "c7bf774ca4a39c8134841c46f6d898347cee3707d2121570aa880dca689a8ff1",
+      "src/visual/shape_calibration.py": "9342ee278d644cbba567d5bb4d354e2ecf240e7bdba80407d82e501d7e298fc8",
+      "src/visual/shape_features.py": "9ac3cd35dcafebb55f4fb209501f6d65d7ce53b2e3ff392a39aa1b917a9239c2",
+      "src/visual/target_features.py": "87538faaed0f9614423b886b8c83c88c1ded928c8165651115ed6b8fabf83c55",
+      "src/visual/title_alignment.py": "74d9ef36473a6132e34431a15213ae7f08e54f48c59a6b2413136e117c6e3d67",
+      "src/visual/visual_retrieval.py": "7039a8ba5e58b3125cea029a5c4df77ed40bd3629ce83f94184dbb457cb64e6a",
+      "tools/run_perlage_no_pixel_groups9_20261109.py": "7d1abb4f152fcccb4e2d3ccba851d7eec69c87a11ebcc2d62e0841ec034f0f44"
+    },
+    "shared_pool_scope": "shared",
+    "threat_model": "black_box_provisional"
+  },
+  "public_binding_sha256": "5f4ad8bf4131222b4287599d4c5807c3e069db2e6fa50b12161b4c7e62d6a866"
+}

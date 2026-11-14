@@ -1,0 +1,52 @@
+{
+  "recovered_at": "2026-11-05T14:10:36.745093+00:00",
+  "cause": "APIConnectionError",
+  "completed_episodes_preserved": 32,
+  "incomplete_episode": {
+    "group": "09_toothbrush",
+    "bank": "clean",
+    "task_id": "vague_13"
+  },
+  "valid_episodes_resampled": false,
+  "request_settings_changed": false,
+  "retry_attempt_limit_unchanged": 3,
+  "network_retry_delays_seconds": [
+    15,
+    30
+  ],
+  "completed_record_sha256": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_01.json": "69b575d55168f85db02279403b026e5f9aace9594db6231903d3fdf5b73808ed",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_02.json": "bdfcc3b1a567bc6d240a602817d61c34847a41bcefd9ec434ca42d5c0f3b61e6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_03.json": "b5a343728ec2525caeda9ceb0fec6f1b694a168a82e976151dfa13250b551c0f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_04.json": "679d9cd4d3a574600b8d3278b1c1388038ce5aa1b30826ad0d0fe96079746d87",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_05.json": "8da967cc31b1d4444a552928384872e9c8b05a88b9898ebf9bb1ec90306298db",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_06.json": "38473fa29304eb4feb03e004f0ab7d86cc290627407f115daaf059a34033a4dc",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_07.json": "f6d3cc37f26ea9630f73da26ba0a810c8e45f2873e13f9e83a7ea604f94a0eed",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_08.json": "ee132257251c5f012ffcdd35c9933012cbeee8e3b2e4419648257d97cd528d1d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_09.json": "0fe66542788149870092f77ffb73260a785635ca540df3feb150a9d92175d4a9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_10.json": "402e2e39fad0bf53d6a717977401aa0651ba29bc614624a6ab64b17d1f0cace2",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_11.json": "046e583dd4339a8236e5998ba66b0af1e7150d69ba3ae3a3b9189323158499d7",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_12.json": "1ae3f31ee1be141409a16c1b472eb249bc946ab0b2eea22c8b6b4f27d80c5852",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_13.json": "3f575b4f7217ce4581813884221a4740f584a83672ceca747f59014045d0a081",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_14.json": "d6ce58057faa5e211bbb06277eb60c18032a86b45409461e4837318f113805f9",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_15.json": "aea99c067e0b74774b3d6e19a663ce4dfe73969869b21e1b2df69885ac0488a4",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_16.json": "d8fa31fd134ecb3dd4ed5b177b025ad03a7c1794f2fb02545ca823eb8200b58e",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_17.json": "99d43b0970a47fdb55a7c81b5f201461abde356877785d32f8ae5317bcedc887",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_18.json": "9624fd0328df4d1c6bdd837b7255b0fe9cd61d25830063343ef8392317786453",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_19.json": "187503477a23a0a1f5d45311fdc2b1d9327b0ac76dd6cb37b23d2dc4bd4b43fa",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\02_chair\\clean\\vague_20.json": "cd7b6332d71b370d2f27f17fcc9bcf69c1f617f564965e0da931c569c256c384",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_01.json": "5d99c52e5243ab77aef86d9e470a9a454e6c904ac48cb134033e99ec9541ec0d",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_02.json": "cf413a5af87b37b6a717efc885fe844644ad57a5bbad3c39b2d826364900d512",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_03.json": "d5471f82daf4e58c17d0ca6addde41b7b096266e7ba02efcfadcb10f222c7366",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_04.json": "439f7087287612d6ef627218284319f4bd82864c1843126480712c72297ef45a",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_05.json": "5637cecec1fd141acf62cfa83fceaef1f2fd923d16665828243a5f108b47a393",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_06.json": "9b8abd586e0e7de706b4e6ca872adb48ba0504878c0f96a5d842bf71a6cd21e8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_07.json": "e31145f036f7f00e67881c7c2f8b046116dd1f7a701ff815b0f220bfdb6f70a3",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_08.json": "64c039206fabf8df688b140b75520b48f40454250d37e7774e203ea45d53c23b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_09.json": "29fcb324d897f2285de292f83b5cb24276f6ae37b08ac0a1da24758c7b597b7b",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_10.json": "dec764b93695cb31d4d896ac37ae0beff560b508be22f004ba6cc74c08c7bff0",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_11.json": "01da0d58d7bcdd58cc7f4d223f50d9554bc999e6dc722f6908710f5d9bc977f6",
+    "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\episodes\\09_toothbrush\\clean\\vague_12.json": "de458cbc80c0560a04cf7e599043265ead381d73a65bf0a167be9d9c22b4a10a"
+  },
+  "unauthenticated_transport_probe_http_status": 401
+}

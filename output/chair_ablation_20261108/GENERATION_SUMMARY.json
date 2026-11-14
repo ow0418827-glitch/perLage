@@ -1,0 +1,18 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "group": "02_chair",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "source_sha256": "47a70fad01c018bb524eefcf803794826e4a48e1b667cd77ba0ccecc1c28ecfa",
+  "target_sha256": "8fc2834a77b8ecf235f5bec9c1f335830d1de142843cda13284cdfe36579000d",
+  "adversarial_png_sha256": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805",
+  "frozen_png_sha256": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805",
+  "generative_anchor_png_sha256": "04395be4482f316ce5a18e952dd3f64bcdae0439ef05adc0eeb818bc7ab76805",
+  "max_pixel_residual": 0,
+  "pixel_equal": true,
+  "elapsed_seconds": 1585.5254180000047,
+  "frozen_keys_count": 13,
+  "public_binding_sha256": "2c6ca668114352912a6f54808d91e39878df37726c8d5cf192e5bd7e226248a3",
+  "checked_accesses": 13250,
+  "blocked_accesses": [],
+  "status": "completed"
+}

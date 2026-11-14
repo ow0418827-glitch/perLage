@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "shared",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+  "pool_sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+  "pool_count": 189,
+  "source_memory_id": "groups9_reference_08_speaker_B01590FHS0",
+  "frozen_image_sha256": "cae74446bf862443707481c17ada07bb7a08c95be9f31413a33e25658fb0eaa7",
+  "method": "lucid",
+  "queries": [
+    {
+      "task_id": "feature_01",
+      "instruction": "I want to buy a bluetooth speaker with water resistance and stereo sound.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_02",
+      "instruction": "I would like to purchase a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_03",
+      "instruction": "Looking to buy a bluetooth speaker with stereo sound and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_04",
+      "instruction": "I am looking to buy a bluetooth speaker with water resistance and stereo sound.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_05",
+      "instruction": "Please help me buy a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_06",
+      "instruction": "I am shopping for a bluetooth speaker with stereo sound and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_07",
+      "instruction": "I would like to buy a bluetooth speaker with water resistance and stereo sound.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_08",
+      "instruction": "Help me purchase a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_09",
+      "instruction": "I am looking for a bluetooth speaker with stereo sound and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_10",
+      "instruction": "Please find a bluetooth speaker with water resistance and stereo sound for me to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_11",
+      "instruction": "I want to purchase a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_12",
+      "instruction": "Please help me purchase a bluetooth speaker with stereo sound and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_13",
+      "instruction": "I need to buy a bluetooth speaker with water resistance and stereo sound.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_14",
+      "instruction": "I would like help finding a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_15",
+      "instruction": "Find me a bluetooth speaker with stereo sound and solar charging to purchase.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_16",
+      "instruction": "Please look for a bluetooth speaker with water resistance and stereo sound that I can buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_17",
+      "instruction": "I am interested in buying a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_18",
+      "instruction": "I would like to shop for a bluetooth speaker with stereo sound and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_19",
+      "instruction": "Help me find a bluetooth speaker with water resistance and stereo sound to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_20",
+      "instruction": "I am ready to purchase a bluetooth speaker featuring water resistance and solar charging.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "none",
+      "label": "none"
+    }
+  ],
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "query_mode": "text",
+  "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\08_speaker\\queries.json",
+  "query_manifest_sha256": "c3c1e31f0f17904793c57dc0350ce9d1f2e5a23572f4ff820a681cbd7eb2ab8c",
+  "index_text": "product_feature",
+  "query_image_defended": false,
+  "all_memory_images_equally_defended": true,
+  "shopping_allowed": false,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  }
+}

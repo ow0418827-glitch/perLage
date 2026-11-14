@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "scope": "shared",
+  "pool_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\shared_memory\\shared_memory.json",
+  "pool_sha256": "30e9b2f8b79ccc1d80a12ac50d9d0601c348fdef7687b2ddf58f76873d8cf235",
+  "pool_count": 189,
+  "source_memory_id": "groups9_reference_05_hair_extension_B07Z7MQSM1",
+  "frozen_image_sha256": "f23a8e7a1ae0b1919fea527ff25ab776b1d4370760a3afe15ac0e888582bad0f",
+  "method": "lucid",
+  "queries": [
+    {
+      "task_id": "feature_01",
+      "instruction": "I want to buy hair extensions with real human hair and double wefts.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_02",
+      "instruction": "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_03",
+      "instruction": "Looking to buy hair extensions with double wefts and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_04",
+      "instruction": "I am looking to buy hair extensions with real human hair and double wefts.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_05",
+      "instruction": "Please help me buy hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_06",
+      "instruction": "I am shopping for hair extensions with double wefts and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_07",
+      "instruction": "I would like to buy hair extensions with real human hair and double wefts.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_08",
+      "instruction": "Help me purchase hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_09",
+      "instruction": "I am looking for hair extensions with double wefts and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_10",
+      "instruction": "Please find hair extensions with real human hair and double wefts for me to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_11",
+      "instruction": "I want to purchase hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_12",
+      "instruction": "Please help me purchase hair extensions with double wefts and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_13",
+      "instruction": "I need to buy hair extensions with real human hair and double wefts.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_14",
+      "instruction": "I would like help finding hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_15",
+      "instruction": "Find me hair extensions with double wefts and a clip-in design to purchase.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_16",
+      "instruction": "Please look for hair extensions with real human hair and double wefts that I can buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_17",
+      "instruction": "I am interested in buying hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_18",
+      "instruction": "I would like to shop for hair extensions with double wefts and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_19",
+      "instruction": "Help me find hair extensions with real human hair and double wefts to buy.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    },
+    {
+      "task_id": "feature_20",
+      "instruction": "I am ready to purchase hair extensions featuring real human hair and a clip-in design.",
+      "query_mode": "text",
+      "query_image": null,
+      "query_image_sha256": null
+    }
+  ],
+  "conditions": [
+    {
+      "kind": "none",
+      "label": "none"
+    }
+  ],
+  "encoder_config": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_encoder.json",
+  "key_image_weight": 0.5,
+  "query_image_weight": 0.5,
+  "query_mode": "text",
+  "query_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\output\\experiment_base_groups9_20261109\\evaluation_inputs\\05_hair_extension\\queries.json",
+  "query_manifest_sha256": "2876d0ae3011a08ba8493dafb3e538194bfdf9394d24cc23e123a6fe084c2790",
+  "index_text": "product_feature",
+  "query_image_defended": false,
+  "all_memory_images_equally_defended": true,
+  "shopping_allowed": false,
+  "record_kinds": {
+    "purchase_memory": 51,
+    "simulated_gallery": 138
+  }
+}

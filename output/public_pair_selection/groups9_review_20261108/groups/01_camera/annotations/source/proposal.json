@@ -1,0 +1,91 @@
+{
+  "id": "B071ZFHTZN",
+  "identity": {
+    "image_sha256": "eb5f729dbce74e5ea97f9b3af6eb902f947c9c8442b74acbf450bce12d1104cd",
+    "annotation_models": {
+      "policy": "public_ocr_sam_positive_seed_background_connectivity_v2",
+      "ocr_version": "1.4.4",
+      "ocr_weights": {
+        "ch_PP-OCRv4_det_infer.onnx": "d2a7720d45a54257208b1e13e36a8479894cb74155a5efe29462512d42f49da9",
+        "ch_PP-OCRv4_rec_infer.onnx": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "ch_ppocr_mobile_v2.0_cls_infer.onnx": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c"
+      },
+      "segmentation_weights_sha256": "48c14467e5cf9e51870511feb72c89688e82dd74523142c0538b663e193ac2a7",
+      "segmentation_model_manifest_sha256": "7d6541ca224aeb19bdc498e578d57d6f4a2b69b4c3454645e4e9c71e2658c469",
+      "code_sha256": "aafa870a59de0e2fed82c2a44165e74274a2e35780414f4a1fafe0b0b56d062f",
+      "device": "cpu",
+      "model_loaded_once": true
+    }
+  },
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\source.jpg",
+  "title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera 20x Optical Zoom, Auto Tracking & Humanoid Detection, Night Vision up to 1000ft, RTMP/RTSP 1080P/3MP 60FPS Speed Dome (Illuminati-20X)",
+  "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\annotations\\source\\foreground.png",
+  "foreground_mask_sha256": "8bc05e74dda036b36db749e1843625e65fe05257444a0b6d8093808fa1f9eaf9",
+  "boxes": [
+    [
+      75,
+      43,
+      347,
+      440
+    ]
+  ],
+  "text_regions": [
+    [
+      0.488,
+      0.488,
+      0.636,
+      0.542
+    ]
+  ],
+  "ocr": [
+    {
+      "text": "SUNBA",
+      "confidence": 0.9909924507141114,
+      "polygon": [
+        [
+          247.0,
+          247.0
+        ],
+        [
+          315.0,
+          247.0
+        ],
+        [
+          315.0,
+          268.0
+        ],
+        [
+          247.0,
+          268.0
+        ]
+      ]
+    }
+  ],
+  "segmentation_candidates": [
+    {
+      "index": 0,
+      "iou": 0.9530492424964905,
+      "foreground_ratio": 0.300472,
+      "rough_coverage": 0.8769259132450157,
+      "accepted": true
+    },
+    {
+      "index": 1,
+      "iou": 0.7861514091491699,
+      "foreground_ratio": 0.0996,
+      "rough_coverage": 0.3228159814585583,
+      "accepted": true
+    },
+    {
+      "index": 2,
+      "iou": 0.9392051100730896,
+      "foreground_ratio": 0.293304,
+      "rough_coverage": 0.8565540309199611,
+      "accepted": true
+    }
+  ],
+  "selected_mask_index": 0,
+  "text_regions_reviewed": false,
+  "review_overlay": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\groups9_review_20261108\\groups\\01_camera\\annotations\\source\\review_overlay.png",
+  "observed_seconds": 2.3941463000010117
+}

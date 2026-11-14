@@ -1,0 +1,9 @@
+{
+  "visual_guidance_body_preserved_verbatim": true,
+  "historical_file_sha256": "541527b3f3e13fb1d3a073bfd00a114b5bc6e0c8d400c61b15e7094d2e9c34fe",
+  "registry_file_sha256": "16dc076ca4922339b1937a698a8e5d9fe622d6a7d125d0b4a45349b0689f4b4b",
+  "neutral_file_sha256": "022e15aed665721d6a10878ae3221f6f85f985bb4993f2d1c80d3d3301bc5a4b",
+  "actual_policy_payload_unit_test_passed": true,
+  "base_system_role_unchanged": true,
+  "external_model_calls": 0
+}

@@ -1,0 +1,713 @@
+{
+  "schema_version": 2,
+  "method": "lucid",
+  "status": "success",
+  "seed": 42,
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_8\\adversarial.png",
+  "output_image_sha256": "a9c63ec8cf3589e8481fa8bceac1233b47e0dc76b647d9bc8b7e352479aa7266",
+  "output_metadata": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\generation\\lucid_8\\attack_metrics.json",
+  "attack": {
+    "epsilon": 0.03137254901960784,
+    "spatial_step_size": 0.00196078431372549,
+    "reference_steps": 1000,
+    "initialization": "zero",
+    "clusters": 10,
+    "cluster_iterations": 100,
+    "sinkhorn_iterations": 100,
+    "sinkhorn_regularization": 0.1,
+    "sinkhorn_tolerance": 0.01,
+    "detach_transport_plan": true,
+    "local_weight": 0.2,
+    "text_weight": 0.0,
+    "text_model_index": 1,
+    "log_every": 50,
+    "model_weight_update": "softmax_negative_preupdate_global_similarity",
+    "steps_requested": 1000,
+    "steps_completed": 1000,
+    "stop_reason": "requested_steps_completed",
+    "selected_step": 1000,
+    "gradient_execution": "joint_three_surrogate_graph",
+    "target_cluster_centers_cached": false
+  },
+  "history": [
+    {
+      "step": 1,
+      "loss": 0.7163597345352173,
+      "global_similarity": [
+        0.6488989591598511,
+        0.6722704768180847,
+        0.3777954578399658
+      ],
+      "local_similarity": [
+        0.7252680063247681,
+        0.7398041486740112,
+        0.7855002284049988
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.0019608139991760254,
+      "weights_used_for_this_step": [
+        0.3333333432674408,
+        0.3333333432674408,
+        0.3333333432674408
+      ],
+      "weights_for_next_step": [
+        0.30410757660865784,
+        0.2970825135707855,
+        0.39880993962287903
+      ]
+    },
+    {
+      "step": 50,
+      "loss": 1.031861662864685,
+      "global_similarity": [
+        0.9317699670791626,
+        0.9087119102478027,
+        0.7866737842559814
+      ],
+      "local_similarity": [
+        0.8324819207191467,
+        0.766918420791626,
+        0.8034669756889343
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3135053217411041,
+        0.323737233877182,
+        0.36275747418403625
+      ],
+      "weights_for_next_step": [
+        0.31451714038848877,
+        0.3218535780906677,
+        0.3636292517185211
+      ]
+    },
+    {
+      "step": 100,
+      "loss": 1.0733158588409424,
+      "global_similarity": [
+        0.9462376832962036,
+        0.9255042672157288,
+        0.8712371587753296
+      ],
+      "local_similarity": [
+        0.831989049911499,
+        0.7625541687011719,
+        0.8068056702613831
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32209840416908264,
+        0.3285820782184601,
+        0.3493194580078125
+      ],
+      "weights_for_next_step": [
+        0.32270196080207825,
+        0.3294624984264374,
+        0.347835510969162
+      ]
+    },
+    {
+      "step": 150,
+      "loss": 1.0875719785690308,
+      "global_similarity": [
+        0.9568523168563843,
+        0.9412294626235962,
+        0.8839352130889893
+      ],
+      "local_similarity": [
+        0.830033540725708,
+        0.7824683785438538,
+        0.8061470985412598
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3229983448982239,
+        0.3288533389568329,
+        0.3481482267379761
+      ],
+      "weights_for_next_step": [
+        0.32347941398620605,
+        0.32857275009155273,
+        0.3479478359222412
+      ]
+    },
+    {
+      "step": 200,
+      "loss": 1.0952504873275757,
+      "global_similarity": [
+        0.9649136066436768,
+        0.9430057406425476,
+        0.895997166633606
+      ],
+      "local_similarity": [
+        0.8328285813331604,
+        0.7846025228500366,
+        0.8043414354324341
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32427364587783813,
+        0.3287498652935028,
+        0.34697651863098145
+      ],
+      "weights_for_next_step": [
+        0.3232588469982147,
+        0.3304188847541809,
+        0.34632229804992676
+      ]
+    },
+    {
+      "step": 250,
+      "loss": 1.0998281240463257,
+      "global_similarity": [
+        0.9663794040679932,
+        0.9430122971534729,
+        0.9061553478240967
+      ],
+      "local_similarity": [
+        0.8406972885131836,
+        0.7865886092185974,
+        0.8038408756256104
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3223169445991516,
+        0.3306378424167633,
+        0.34704524278640747
+      ],
+      "weights_for_next_step": [
+        0.32407382130622864,
+        0.33173564076423645,
+        0.3441905379295349
+      ]
+    },
+    {
+      "step": 300,
+      "loss": 1.1038795709609985,
+      "global_similarity": [
+        0.9727612733840942,
+        0.952824592590332,
+        0.9033137559890747
+      ],
+      "local_similarity": [
+        0.8379812240600586,
+        0.7938487529754639,
+        0.7987327575683594
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3209378719329834,
+        0.32800912857055664,
+        0.35105299949645996
+      ],
+      "weights_for_next_step": [
+        0.323409765958786,
+        0.3299221992492676,
+        0.3466680347919464
+      ]
+    },
+    {
+      "step": 350,
+      "loss": 1.1066327095031738,
+      "global_similarity": [
+        0.9730686545372009,
+        0.9533473253250122,
+        0.907623827457428
+      ],
+      "local_similarity": [
+        0.8458647727966309,
+        0.7945210933685303,
+        0.7989459037780762
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3249916434288025,
+        0.330635130405426,
+        0.34437325596809387
+      ],
+      "weights_for_next_step": [
+        0.3238812983036041,
+        0.33033207058906555,
+        0.3457866311073303
+      ]
+    },
+    {
+      "step": 400,
+      "loss": 1.1069639921188354,
+      "global_similarity": [
+        0.9748214483261108,
+        0.9549718499183655,
+        0.9107440114021301
+      ],
+      "local_similarity": [
+        0.8218068480491638,
+        0.7909837961196899,
+        0.7977827787399292
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32699325680732727,
+        0.3292561173439026,
+        0.34375059604644775
+      ],
+      "weights_for_next_step": [
+        0.3240206837654114,
+        0.3305165767669678,
+        0.34546270966529846
+      ]
+    },
+    {
+      "step": 450,
+      "loss": 1.108829140663147,
+      "global_similarity": [
+        0.9731411933898926,
+        0.9535349607467651,
+        0.9165894389152527
+      ],
+      "local_similarity": [
+        0.8272926807403564,
+        0.7981714010238647,
+        0.7987678050994873
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3246433734893799,
+        0.3319781720638275,
+        0.3433784246444702
+      ],
+      "weights_for_next_step": [
+        0.32488828897476196,
+        0.33132097125053406,
+        0.343790739774704
+      ]
+    },
+    {
+      "step": 500,
+      "loss": 1.1080855131149292,
+      "global_similarity": [
+        0.9673345685005188,
+        0.9584788084030151,
+        0.9149453639984131
+      ],
+      "local_similarity": [
+        0.8221310377120972,
+        0.7964940071105957,
+        0.8070732355117798
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3260188698768616,
+        0.3295644521713257,
+        0.34441670775413513
+      ],
+      "weights_for_next_step": [
+        0.32651135325431824,
+        0.3294156789779663,
+        0.34407299757003784
+      ]
+    },
+    {
+      "step": 550,
+      "loss": 1.1174709796905518,
+      "global_similarity": [
+        0.9770443439483643,
+        0.9595561027526855,
+        0.9257709980010986
+      ],
+      "local_similarity": [
+        0.846906304359436,
+        0.7981177568435669,
+        0.8122907876968384
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3247111737728119,
+        0.3323940932750702,
+        0.3428947329521179
+      ],
+      "weights_for_next_step": [
+        0.3257060945034027,
+        0.33145225048065186,
+        0.3428416848182678
+      ]
+    },
+    {
+      "step": 600,
+      "loss": 1.109589695930481,
+      "global_similarity": [
+        0.9749472737312317,
+        0.9476970434188843,
+        0.9201385974884033
+      ],
+      "local_similarity": [
+        0.8505722284317017,
+        0.7917263507843018,
+        0.795577883720398
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3245607614517212,
+        0.33156201243400574,
+        0.3438771963119507
+      ],
+      "weights_for_next_step": [
+        0.32425805926322937,
+        0.3332156538963318,
+        0.34252625703811646
+      ]
+    },
+    {
+      "step": 650,
+      "loss": 1.1109815835952759,
+      "global_similarity": [
+        0.9776318669319153,
+        0.9589055776596069,
+        0.9126092195510864
+      ],
+      "local_similarity": [
+        0.8274193406105042,
+        0.7998809814453125,
+        0.8014798164367676
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3256318271160126,
+        0.3300517797470093,
+        0.34431639313697815
+      ],
+      "weights_for_next_step": [
+        0.32403501868247986,
+        0.3301602005958557,
+        0.34580475091934204
+      ]
+    },
+    {
+      "step": 700,
+      "loss": 1.1157824993133545,
+      "global_similarity": [
+        0.9678486585617065,
+        0.9619855880737305,
+        0.929823637008667
+      ],
+      "local_similarity": [
+        0.8530046939849854,
+        0.8029991388320923,
+        0.788161039352417
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3255472779273987,
+        0.33069220185279846,
+        0.34376049041748047
+      ],
+      "weights_for_next_step": [
+        0.32844632863998413,
+        0.3303776979446411,
+        0.34117600321769714
+      ]
+    },
+    {
+      "step": 750,
+      "loss": 1.1127216815948486,
+      "global_similarity": [
+        0.9725424647331238,
+        0.9512162208557129,
+        0.9311888217926025
+      ],
+      "local_similarity": [
+        0.8180059194564819,
+        0.7957165241241455,
+        0.8060276508331299
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32852286100387573,
+        0.3310771882534027,
+        0.34039995074272156
+      ],
+      "weights_for_next_step": [
+        0.326394647359848,
+        0.3334301710128784,
+        0.34017521142959595
+      ]
+    },
+    {
+      "step": 800,
+      "loss": 1.1146987676620483,
+      "global_similarity": [
+        0.9754263758659363,
+        0.9548625349998474,
+        0.9294389486312866
+      ],
+      "local_similarity": [
+        0.8322001099586487,
+        0.7921899557113647,
+        0.8024183511734009
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32675909996032715,
+        0.33220261335372925,
+        0.3410382866859436
+      ],
+      "weights_for_next_step": [
+        0.32596245408058167,
+        0.3327348828315735,
+        0.34130263328552246
+      ]
+    },
+    {
+      "step": 850,
+      "loss": 1.117402195930481,
+      "global_similarity": [
+        0.9838903546333313,
+        0.9556366801261902,
+        0.9260635375976562
+      ],
+      "local_similarity": [
+        0.8415853977203369,
+        0.7910157442092896,
+        0.8079546093940735
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.3257617950439453,
+        0.33128485083580017,
+        0.3429533839225769
+      ],
+      "weights_for_next_step": [
+        0.3238144814968109,
+        0.33309388160705566,
+        0.3430916368961334
+      ]
+    },
+    {
+      "step": 900,
+      "loss": 1.1125094890594482,
+      "global_similarity": [
+        0.9721418619155884,
+        0.961349606513977,
+        0.9185968637466431
+      ],
+      "local_similarity": [
+        0.8464206457138062,
+        0.7968214750289917,
+        0.7920758128166199
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32440564036369324,
+        0.3318568170070648,
+        0.34373754262924194
+      ],
+      "weights_for_next_step": [
+        0.3261732757091522,
+        0.329712450504303,
+        0.3441142439842224
+      ]
+    },
+    {
+      "step": 950,
+      "loss": 1.1139943599700928,
+      "global_similarity": [
+        0.9761267900466919,
+        0.9554497003555298,
+        0.9288049340248108
+      ],
+      "local_similarity": [
+        0.8255175352096558,
+        0.8023247122764587,
+        0.7861912846565247
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32495471835136414,
+        0.3331366181373596,
+        0.34190866351127625
+      ],
+      "weights_for_next_step": [
+        0.32580170035362244,
+        0.3326084315776825,
+        0.34158986806869507
+      ]
+    },
+    {
+      "step": 1000,
+      "loss": 1.1170505285263062,
+      "global_similarity": [
+        0.9700057506561279,
+        0.9595574140548706,
+        0.9322371482849121
+      ],
+      "local_similarity": [
+        0.8553867936134338,
+        0.8011404275894165,
+        0.7958436012268066
+      ],
+      "text_similarity": 0.0,
+      "linf_after_update": 0.03137257695198059,
+      "weights_used_for_this_step": [
+        0.32575350999832153,
+        0.3301100432872772,
+        0.34413647651672363
+      ],
+      "weights_for_next_step": [
+        0.3279770612716675,
+        0.331421822309494,
+        0.3406011760234833
+      ]
+    }
+  ],
+  "final_objective": {
+    "loss": 1.1174026727676392,
+    "global_similarity": [
+      0.9791114926338196,
+      0.956282377243042,
+      0.9289258718490601
+    ],
+    "local_similarity": [
+      0.8516958951950073,
+      0.7888941764831543,
+      0.8036659955978394
+    ],
+    "text_similarity": 0.0
+  },
+  "final_model_weights": [
+    0.3279770612716675,
+    0.331421822309494,
+    0.3406011760234833
+  ],
+  "decoded_image_audit": {
+    "shape": [
+      500,
+      500,
+      3
+    ],
+    "max_absolute_pixel_difference_levels": 8,
+    "mean_absolute_pixel_difference_levels": 4.851657333333334,
+    "mean_squared_pixel_difference_levels": 31.348094666666668,
+    "budget_levels": 8,
+    "within_budget": true
+  },
+  "surrogates": [
+    {
+      "role": "attack_surrogate",
+      "name": "ViT-B-16",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+      "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+      "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+      "requires_true_local_tokens": true
+    },
+    {
+      "role": "attack_surrogate",
+      "name": "ViT-B-32",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+      "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+      "requires_true_local_tokens": true
+    },
+    {
+      "role": "attack_surrogate",
+      "name": "ViT-B-32",
+      "pretrained": "laion2b_s34b_b79k",
+      "hf_repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--laion--CLIP-ViT-B-32-laion2B-s34B-b79K\\snapshots\\1a25a446712ba5ee05982a381eed697ef9b435cf\\open_clip_model.safetensors",
+      "weight_sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6",
+      "weight_revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "4bf00313bcba7296e801410c48ba728dd41935b4382906e8fb25f9c24027eb67",
+      "requires_true_local_tokens": true
+    }
+  ],
+  "timing": {
+    "optimization_loop_seconds": 2084.5068002000007,
+    "total_seconds": 2117.135653700001
+  },
+  "primary_evaluator_used_during_attack": false,
+  "victim_memory_used": false,
+  "formal_queries_used": false,
+  "private_gallery_used": false,
+  "source_image_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "target_image_sha256": "dd0abf8d2d52aa289346aa2e7219187cec901c901d4f3cce1ef3379691467256"
+}

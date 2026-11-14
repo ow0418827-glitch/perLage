@@ -1,0 +1,15 @@
+{
+  "reason": "WinError 5 while replacing progress JSON; likely transient file sharing conflict, not a training quality failure",
+  "affected_group": "07_shampoo_original_control",
+  "method_source_modified": false,
+  "model_or_numeric_parameters_modified": false,
+  "json_replace_attempts_max": 8,
+  "retry_total_delay_max_seconds": 3.9,
+  "resume_same_checkpoint": true,
+  "checkpoint_sha256": "48c5b0e831769ec6f77c9a1c79b3588b0dc935028b923fe0db04dac71e90ae70",
+  "completed_new_final_not_retrained": true,
+  "files_sha256": {
+    "worker_fileio_recovery.py": "12694f19ba99e1add115f6ffbf5bbdd035534babfa9aaa7a8b72806126c242d5",
+    "coordinator_shampoo_fileio_recovery.py": "dd8cf9d58cfc2d3514fe996e9a1588c1ffe72bba27e78f5b76f12373648cd943"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "groups": [
+    "02_chair",
+    "09_toothbrush"
+  ],
+  "baseline_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\reused_shared_20261104\\baseline_shared_memory.json",
+  "baseline_sha256": "af0ae1b60dd398c0548d37f76dfb5e2e389f033bb368498e0a7f5b6a27802351",
+  "active_pool": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\private\\shared_memory.json",
+  "training_uses_private_memory": false,
+  "both_images_frozen_before_evaluation": true,
+  "simultaneous_two_image_substitution": true,
+  "retrieval_conditions": 26,
+  "requests_per_group": 20,
+  "shopping_authorized": true,
+  "shopping_conditions": [
+    "none"
+  ],
+  "shopping_top_k": 3,
+  "stop_on_failure": true,
+  "change_seeds_or_retrain_from_private_results": false
+}

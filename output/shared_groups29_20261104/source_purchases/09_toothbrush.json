@@ -1,0 +1,44 @@
+{
+  "Id": "perlage_09_toothbrush_source",
+  "Instruction": "Please purchase this exact public product: Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+  "Actions": [
+    "Action: search[Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small]",
+    "Observation: \n[Back to Search] \nPage 1 (Total results: 50) \n[Next >] \n[B09LVD5J4B] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small \n$3.09 \n[B09J3B3L5N] \nKids U-Shaped Toothbrushes, Premium Soft Manual Training Toothbrush 360° Thorough Cleansing Whitening Massage Toothbrush U-Type Toothbrush for Children 2-12 Years (Yellow, 2-6 Y) \n$0.68 \n[B09LVD9P2K] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Green Small \n$4.15 \n[B09LVDYW41] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Blue Small \n$3.1 \n[B09LVC25PX] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Llarge \n$3.27 \n[B09LVCN92H] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Green Llarge \n$3.3 \n[B09LVDWB5X] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Cleaning - Purple Llarge \n$3.36 \n[B09HMGSH13] \nChildren’s Cartoon U-Shaped Toothbrush for 0-12 Years Old, Kids - Heart/Oval U Shape Whitening Massage Toothbrush Soft Silicone Brush Head, 360° Oral Teeth Cleaning Design (Pink, Small) \n$4.99 \n[B09MKVXFNM] \nSimayixx Electric Toothbrush Oral Care Kids U-shaped Electric Toothbrush Makes Brushing Fun And Establishes Healthy Oral Care Habits 360° Thorough Cleaning Mouth Toothbrush(Green) \n$8.77 \n[B09LVD8GLS] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Blue Llarge \n$4.32 ",
+    "Action: click[B09LVD5J4B]",
+    "Observation: \n[Back to Search] \n[< Prev] \nElectric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small \nPrice: $3.09 \nRating: N.A. \n[Description] \n[Features] \n[Reviews] \n[Attributes] \n[Buy Now] ",
+    "Action: click[Buy Now]"
+  ],
+  "Completed": true,
+  "Success": true,
+  "Reward": 1.0,
+  "EnvironmentReward": 1.0,
+  "FinalASIN": "B09LVD5J4B",
+  "FinalOptions": {},
+  "FinalPrice": 3.09,
+  "PrimaryImage": {
+    "ASIN": "B09LVD5J4B",
+    "Title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+    "LocalPath": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg",
+    "SHA256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc"
+  },
+  "RecordKind": "purchase_memory",
+  "ObservedPurchase": true,
+  "RecordOrigin": "observed_local_webshop_purchase",
+  "SourceGroup": "09_toothbrush",
+  "EntryType": "error",
+  "TerminationReason": "purchase_completed",
+  "CollectionProtocol": "deterministic_public_title_search_and_observed_purchase",
+  "PurchaseEvidence": {
+    "final_observation": "Your score (min 0.0, max 1.0): 1.0",
+    "server_port": 3017,
+    "observed_image": {
+      "ASIN": "B09LVD5J4B",
+      "Title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+      "SourceURL": "http://127.0.0.1:3017/perlage-assets/09_toothbrush_original.jpg",
+      "PageType": "item",
+      "Step": 3
+    },
+    "history_sha256": "7817e7a6211a0fedd511bf1850ba3756616a95eb33fc8ddb501ccfc8767d16af",
+    "local_simulated_environment": true
+  }
+}

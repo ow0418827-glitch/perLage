@@ -1,0 +1,25 @@
+{
+  "status": "completed",
+  "experiment": "lucid_shampoo_reselect_20261112",
+  "method": "lucid",
+  "epsilon_levels": 8,
+  "steps": 1000,
+  "group": "07_shampoo",
+  "source_id": "B09B63YYCW",
+  "target_id": "B00BDJODWI",
+  "generation_result_sha256": "6ee7fd70d78ec5413e08823d5d6022ddcbcb775fe3e822ced8d9768997227c97",
+  "retrieval_banks": 2,
+  "query_modes": [
+    "joint",
+    "text"
+  ],
+  "query_rankings": 80,
+  "candidate_scores": 15120,
+  "independent_verification": true,
+  "plan_sha256": "cabdb7ca2d9f7db10f53eaef1bd656e9be5daa957e63d58cecfbecbb793af579",
+  "frozen_images_sha256": "40648aac8dee9a27f569cf24e8d4992c82267ecb873d7dd9bf88d547afbdd7f0",
+  "verification_sha256": "008c93cf4529c005560f99bd1c6bfc59eb0aa3ff597940d098fb1a0664259a7d",
+  "summary_sha256": "d61d1a5b2df74c8821f70e7f1fcb1252eb0b7448683708021938b9dd656debd2",
+  "report_sha256": "100165dc5ccee42b187250d596a1180d28e231533c31c93e6b40669a94964e2c",
+  "shopping_enabled": false
+}

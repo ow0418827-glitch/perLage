@@ -1,0 +1,7 @@
+{
+  "status": "requested",
+  "protocol": "runtime_release_after_completed_initialization_v1",
+  "initial_ready_sha256": "f60bca76aa1d54b5c818305d4356e472e9f61bb264902395a12825f49ca46112",
+  "requested_at": "2026-11-04T15:13:18.039186+00:00",
+  "numeric_defaults_unchanged": true
+}

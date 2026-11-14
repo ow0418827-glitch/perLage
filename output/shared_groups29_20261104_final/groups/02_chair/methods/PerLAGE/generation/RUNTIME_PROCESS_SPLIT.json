@@ -1,0 +1,10 @@
+{
+  "status": "completed_in_fresh_process",
+  "protocol": "runtime_release_after_completed_initialization_v1",
+  "initial_ready_sha256": "076944143d28b58cda13a50bb9279cadc169ca7d13a77bcdb657dc7fe784562f",
+  "checkpoint_sha256": "2e8acc4b82f1a0f2fcc357f4c96b562a09efb649161d8bd137c70d81c0682228",
+  "completed_latent_steps": 4,
+  "numeric_defaults_unchanged": true,
+  "reason": "按本次完整初始化及细化断点在新进程继续，释放阶段间内存",
+  "completed_at": "2026-11-04T14:59:59.774568+00:00"
+}

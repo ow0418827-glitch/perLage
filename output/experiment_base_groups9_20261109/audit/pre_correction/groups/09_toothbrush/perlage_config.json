@@ -1,0 +1,34 @@
+{
+  "schema_version": 2,
+  "method": "PerLAGE",
+  "definition": "perlage_foreground_statistics_harmonization_perceptual_latent_v1",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "pixel_optimization": true,
+  "target_feature_text": "I want to buy a toothbrush with u shaped design and teeth whitening massage.",
+  "data": {
+    "source": "source.jpg",
+    "target": "target.jpg",
+    "source_title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Brush Head, 360° Oral Teeth Cleaning Design for Toddlers and Kids (Pink 2-6 years)",
+    "training_queries": [
+      "I want to buy a toothbrush with u shaped design and teeth whitening massage."
+    ]
+  },
+  "source_boxes": [
+    [
+      121,
+      40,
+      391,
+      465
+    ]
+  ],
+  "target_boxes": [
+    [
+      135,
+      51,
+      350,
+      446
+    ]
+  ],
+  "print_regions": []
+}

@@ -1,0 +1,65 @@
+{
+  "algorithm": "unit_image_plus_public_product_title_v1",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "source_title_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+  "public_title_audit": {
+    "text_sha256": "1f05618c0100c5a2b54661b3734100a548f447b86aced4b36f6cc74064a775b7",
+    "input_tokens": 30,
+    "encoded_tokens": 30,
+    "chunks": 1,
+    "payload_tokens_per_chunk": 75,
+    "chunk_token_counts": [
+      30
+    ],
+    "truncated": false
+  },
+  "training_query_audits": [
+    {
+      "text_sha256": "c4ab1152799b2addaff9168a8dd1e24a011a47806668a0c28e79e9e6a28efea6",
+      "input_tokens": 14,
+      "encoded_tokens": 14,
+      "chunks": 1,
+      "payload_tokens_per_chunk": 75,
+      "chunk_token_counts": [
+        14
+      ],
+      "truncated": false
+    },
+    {
+      "text_sha256": "96c73ded0afafc6be7fa91f7e855fc92e391727cb5b8067ec05ef2429c0b6fdd",
+      "input_tokens": 13,
+      "encoded_tokens": 13,
+      "chunks": 1,
+      "payload_tokens_per_chunk": 75,
+      "chunk_token_counts": [
+        13
+      ],
+      "truncated": false
+    },
+    {
+      "text_sha256": "258b34c06d8306e8e25702901d11fc49a26d953f8ed2a9fdf1f07ed609d4ba42",
+      "input_tokens": 13,
+      "encoded_tokens": 13,
+      "chunks": 1,
+      "payload_tokens_per_chunk": 75,
+      "chunk_token_counts": [
+        13
+      ],
+      "truncated": false
+    }
+  ],
+  "training_query_normalized_sha256": [
+    "82765be98111aefd371ab11b067f84e230fc7093773cc53329759864a078e591",
+    "6c1299bd45348e3c7764a6560f9275578fc648b4e24389fee8e4003a7369973c",
+    "098caf404abd51519ac039964bb2fd262198fbee5f9a3217fd03a03857ffec99"
+  ],
+  "excluded_query_normalized_sha256": [],
+  "query_image": "target_image_unpurified",
+  "image_weight": 0.5,
+  "victim_memory_used": false,
+  "purchase_history_used": false,
+  "test_ranking_used": false,
+  "query_disjointness": "normalized_exact_text_only_not_semantic_independence",
+  "objective_source_sha256": "a5cbef448fc0274635fd7cbe27609fdde1fb6560de71ece81a165fbb0fa08515",
+  "encoder_source_sha256": "6abc147ca86d2076ad5f56e7659d18b791ad70f7d13949c5fcd9c2d7fc8c6d0e"
+}

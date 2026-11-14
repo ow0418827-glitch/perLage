@@ -1,0 +1,297 @@
+{
+  "trials": [
+    {
+      "fraction": 1.0,
+      "source_ssim": 0.9009760172971307,
+      "source_mae_levels": 13.873047828674316,
+      "halo_error": 67.30881434295344,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.96875,
+      "source_ssim": 0.902202854315583,
+      "source_mae_levels": 13.578866958618164,
+      "halo_error": 65.76152971237248,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.9375,
+      "source_ssim": 0.9035505935340261,
+      "source_mae_levels": 13.243345260620117,
+      "halo_error": 63.89038349086929,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.90625,
+      "source_ssim": 0.9046203905108455,
+      "source_mae_levels": 12.97441577911377,
+      "halo_error": 62.444017498499775,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.875,
+      "source_ssim": 0.9059349213160179,
+      "source_mae_levels": 12.665714263916016,
+      "halo_error": 60.56518533656171,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.84375,
+      "source_ssim": 0.9071192391640435,
+      "source_mae_levels": 12.409760475158691,
+      "halo_error": 59.099382803015416,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.8125,
+      "source_ssim": 0.9085399436978914,
+      "source_mae_levels": 12.074769020080566,
+      "halo_error": 57.13128785316665,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.78125,
+      "source_ssim": 0.9096541652429265,
+      "source_mae_levels": 11.800660133361816,
+      "halo_error": 55.60342701070768,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.75,
+      "source_ssim": 0.9110408910382907,
+      "source_mae_levels": 11.451207160949707,
+      "halo_error": 53.62454219031497,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.71875,
+      "source_ssim": 0.9119843828201382,
+      "source_mae_levels": 11.192071914672852,
+      "halo_error": 52.23375050000202,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.6875,
+      "source_ssim": 0.9131894291070208,
+      "source_mae_levels": 10.891773223876953,
+      "halo_error": 50.40586288303746,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.65625,
+      "source_ssim": 0.9142268604386861,
+      "source_mae_levels": 10.667692184448242,
+      "halo_error": 49.000874563018826,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.625,
+      "source_ssim": 0.9155670744023016,
+      "source_mae_levels": 10.318442344665527,
+      "halo_error": 46.97660980361927,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.59375,
+      "source_ssim": 0.9166305124631452,
+      "source_mae_levels": 10.066816329956055,
+      "halo_error": 45.535407990419074,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.5625,
+      "source_ssim": 0.9178426724780014,
+      "source_mae_levels": 9.727482795715332,
+      "halo_error": 43.49275055497007,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.53125,
+      "source_ssim": 0.918769066413537,
+      "source_mae_levels": 9.457096099853516,
+      "halo_error": 42.114329804274306,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.5,
+      "source_ssim": 0.9198278947190297,
+      "source_mae_levels": 9.167801856994629,
+      "halo_error": 40.20665500166645,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.46875,
+      "source_ssim": 0.9205883731425152,
+      "source_mae_levels": 8.98193359375,
+      "halo_error": 39.018544520306754,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.4375,
+      "source_ssim": 0.9218048412607244,
+      "source_mae_levels": 8.628108024597168,
+      "halo_error": 36.84805145803882,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.40625,
+      "source_ssim": 0.9226883228323522,
+      "source_mae_levels": 8.419779777526855,
+      "halo_error": 35.63726399306298,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.375,
+      "source_ssim": 0.9237029649735529,
+      "source_mae_levels": 8.063671112060547,
+      "halo_error": 33.51687001683674,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.34375,
+      "source_ssim": 0.924497031872611,
+      "source_mae_levels": 7.810174465179443,
+      "halo_error": 32.258142654723805,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.3125,
+      "source_ssim": 0.9253018098340764,
+      "source_mae_levels": 7.535614013671875,
+      "halo_error": 30.350983116245423,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.28125,
+      "source_ssim": 0.9258469325087705,
+      "source_mae_levels": 7.362483978271484,
+      "halo_error": 29.30707077818146,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.25,
+      "source_ssim": 0.9268772606020453,
+      "source_mae_levels": 7.061276435852051,
+      "halo_error": 27.286817189814837,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.21875,
+      "source_ssim": 0.9272934373980226,
+      "source_mae_levels": 6.844010829925537,
+      "halo_error": 26.165681381647786,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.1875,
+      "source_ssim": 0.9281394775114105,
+      "source_mae_levels": 6.4958062171936035,
+      "halo_error": 24.11193247013368,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.15625,
+      "source_ssim": 0.9284944570500833,
+      "source_mae_levels": 6.357163429260254,
+      "halo_error": 23.18115828080597,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.125,
+      "source_ssim": 0.9291508315354836,
+      "source_mae_levels": 6.024039268493652,
+      "halo_error": 21.19572403595882,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.09375,
+      "source_ssim": 0.9292251929478715,
+      "source_mae_levels": 5.985689163208008,
+      "halo_error": 20.582041893487464,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.0625,
+      "source_ssim": 0.9298261415379568,
+      "source_mae_levels": 5.688018798828125,
+      "halo_error": 18.69563875081383,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    },
+    {
+      "fraction": 0.03125,
+      "source_ssim": 0.9299185528799153,
+      "source_mae_levels": 5.620320796966553,
+      "halo_error": 18.118984656620327,
+      "parent_halo_error": 16.457029367256773,
+      "protected_max_difference": 0,
+      "accepted": false
+    }
+  ],
+  "target_rgb": [
+    220,
+    194,
+    160
+  ]
+}

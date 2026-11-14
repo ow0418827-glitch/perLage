@@ -1,0 +1,93 @@
+{
+  "recovered_at": "2026-11-05T13:48:22.377640+00:00",
+  "cause": "RecoverableImageDownloadError",
+  "failed_episode": {
+    "group": "09_toothbrush",
+    "bank": "clean",
+    "task_id": "vague_06"
+  },
+  "failed_product": "B09R78FCP7",
+  "completed_episodes_preserved": 25,
+  "incomplete_episode_restart": true,
+  "valid_episodes_resampled": false,
+  "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_nodefense\\shopping\\observed_images\\original_image_cache",
+  "imported_original_images": [
+    {
+      "asin": "B09P3GRXKG",
+      "url": "https://m.media-amazon.com/images/I/31-eYZUUzvL.jpg",
+      "sha256": "7ae432bb1766fd436b94785134933c3de94e31d8b25c9a4314dd3264675aa0b3",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\145302650081752e4bcafa3302798251fc01f80a87d5cfca0852348ca47faabb.json"
+    },
+    {
+      "asin": "B09JB3V5QP",
+      "url": "https://m.media-amazon.com/images/I/31gKYcwjLIL.jpg",
+      "sha256": "4d4001f35d17fcce546d7b314c3cd46559c3779de32ea0032b6db01969cf02e3",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\2159b8154d3fed59643b2b4da385a8041995851bfc00617645b9728235b5d563.json"
+    },
+    {
+      "asin": "B09PF1Y1Q8",
+      "url": "https://m.media-amazon.com/images/I/21zO154kwvL.jpg",
+      "sha256": "f8f7bc56ace245f7cf4873dc6244b2820a4af0a44ff0851e09e8ba06a001e30a",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\3e04c2ed4ddbea22619b1574a6f870bd7e7bd842d22bd82deb4cd7ca2acda124.json"
+    },
+    {
+      "asin": "B09LVDWY6Z",
+      "url": "https://m.media-amazon.com/images/I/41fPlvW4DXL.jpg",
+      "sha256": "0dfc6ab744e49618fa718636c821d6f25f321241f19e5591aaabdde6a47c1c2e",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\59d1b08f17a61e7ea5fd1c2cd3b47aeda4a1fc26f7808b88c5b12cc7c633045c.json"
+    },
+    {
+      "asin": "B09MJ7DKBM",
+      "url": "https://m.media-amazon.com/images/I/41ukA0nFfNL.jpg",
+      "sha256": "5b468c9fec5d7eb51430d7f606160a70e3c4fd9090365b8b88e0658a84fcc1d0",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\7a37524004b1a9bc2b64888fc29e2662ab66faf61d1c0bc13948c59ea1db11ef.json"
+    },
+    {
+      "asin": "B09KRLRSQY",
+      "url": "https://m.media-amazon.com/images/I/41OD7SfdMzL.jpg",
+      "sha256": "c6da6a9438c4348ebe476a0b4bd1655611571f2cb3aa5d40117279341b1d7a31",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\8e0c37fce54ceb8eb87a58d8cba8d5c4e5f0a2d4927eda1d3486b25cb04f2d57.json"
+    },
+    {
+      "asin": "B09SKXQ45Z",
+      "url": "https://m.media-amazon.com/images/I/31ViG3pQHUL.jpg",
+      "sha256": "9ecdddd30ad0734cbb14354153e3ab7acb6d11f5553e1ddc066a477b20024ab5",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\969e797adeaa48d228df1766d929e0b78b6cba9ecad0f67e38fdde7efe47b007.json"
+    },
+    {
+      "asin": "B09JT1X55W",
+      "url": "https://m.media-amazon.com/images/I/218LwzVnrCL.jpg",
+      "sha256": "34920c70906ede9659b00bcb3997c68953a5680e726b65c8c11b4d9686ed3a76",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\a469f95972cecebde885928ac3015f6ef0fbb2878534016899d17698fab9820a.json"
+    },
+    {
+      "asin": "B09RN3DYDX",
+      "url": "https://m.media-amazon.com/images/I/21+2FG8UM2L.jpg",
+      "sha256": "7bff44769bcbf74d485fb27891631e84e2298c1fdca35ac816f7cbe74db25b2e",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\f1caf014101d185d6ffd7d1cb5cb55e2dd211eb8357f1de9af85e4f258d4938e.json"
+    },
+    {
+      "asin": "B09R7WVKTQ",
+      "url": "https://m.media-amazon.com/images/I/31vrGkHQP2L.jpg",
+      "sha256": "20cf0aa9b6f18bb1b015bbb35dd0d38d2fc75a73f35d212851dad37bc28a8245",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\f2228ee686979b303b8c3a66832b0085da9d1b136141483c9235f648512f11e6.json"
+    },
+    {
+      "asin": "B09R78FCP7",
+      "url": "https://m.media-amazon.com/images/I/31UFyJ4zoGL.jpg",
+      "sha256": "2a100336fb934be1e8e891af09df135629831607a5fecdbf80c929a86753ae6b",
+      "record": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_neutral\\shopping\\observed_images\\original_image_cache\\image_records\\f68a4ad9587cff8decf2cce3d9c05811f0a8eddc8c6d36afe23385ce31fa5422.json"
+    }
+  ],
+  "preexisting_records_retained": [
+    "B09NN1SHVZ",
+    "B09LVDYW41",
+    "B0948YYXXG",
+    "B096XFR735",
+    "B09R7B4QWM",
+    "B08P5X6QK2"
+  ],
+  "template_changed": false,
+  "catalog_images_changed": false,
+  "cache_contains_originals_only": true
+}

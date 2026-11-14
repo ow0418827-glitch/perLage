@@ -1,0 +1,184 @@
+{
+  "scope": "Encoder gap explanation for image-only target-original query",
+  "trained_evaluator": "old_B32",
+  "heldout_evaluator": "current_g14",
+  "training_weight_overlap_confirmed": true,
+  "same_preprocessing": true,
+  "image_size": 224,
+  "precision": "fp32",
+  "architecture": {
+    "old_B32": {
+      "patch": 32,
+      "layers": 12,
+      "width": 768,
+      "embedding": 512
+    },
+    "current_g14": {
+      "patch": 14,
+      "layers": 40,
+      "width": 1408,
+      "embedding": 1024
+    }
+  },
+  "changes": [
+    {
+      "model": "old_B32",
+      "variant": "clean",
+      "rank": 5,
+      "target_cosine": 0.6722689867019653,
+      "target_cosine_gain": 0.0,
+      "source_feature_cosine": 1.0,
+      "feature_distance_from_source": 0.0
+    },
+    {
+      "model": "old_B32",
+      "variant": "lucid_4",
+      "rank": 1,
+      "target_cosine": 0.9018582701683044,
+      "target_cosine_gain": 0.22958926856517792,
+      "source_feature_cosine": 0.7944904565811157,
+      "feature_distance_from_source": 0.6411079168319702
+    },
+    {
+      "model": "old_B32",
+      "variant": "lucid_8",
+      "rank": 1,
+      "target_cosine": 0.9545208215713501,
+      "target_cosine_gain": 0.2822518050670624,
+      "source_feature_cosine": 0.7335585355758667,
+      "feature_distance_from_source": 0.7299883365631104
+    },
+    {
+      "model": "old_B32",
+      "variant": "lucid_original_16",
+      "rank": 1,
+      "target_cosine": 0.9855914115905762,
+      "target_cosine_gain": 0.31332242488861084,
+      "source_feature_cosine": 0.6797985434532166,
+      "feature_distance_from_source": 0.8002517819404602
+    },
+    {
+      "model": "old_B32",
+      "variant": "perlage_original_no_shadow",
+      "rank": 1,
+      "target_cosine": 0.7706466913223267,
+      "target_cosine_gain": 0.09837767481803894,
+      "source_feature_cosine": 0.9081353545188904,
+      "feature_distance_from_source": 0.4286363422870636
+    },
+    {
+      "model": "old_B32",
+      "variant": "perlage_pixel_control",
+      "rank": 1,
+      "target_cosine": 0.763097882270813,
+      "target_cosine_gain": 0.0908288061618805,
+      "source_feature_cosine": 0.9240700006484985,
+      "feature_distance_from_source": 0.389692097902298
+    },
+    {
+      "model": "old_B32",
+      "variant": "perlage_latent_only",
+      "rank": 1,
+      "target_cosine": 0.7565293312072754,
+      "target_cosine_gain": 0.08426032215356827,
+      "source_feature_cosine": 0.936825156211853,
+      "feature_distance_from_source": 0.35545697808265686
+    },
+    {
+      "model": "current_g14",
+      "variant": "clean",
+      "rank": 16,
+      "target_cosine": 0.5467913150787354,
+      "target_cosine_gain": 0.0,
+      "source_feature_cosine": 1.0,
+      "feature_distance_from_source": 0.0
+    },
+    {
+      "model": "current_g14",
+      "variant": "lucid_4",
+      "rank": 20,
+      "target_cosine": 0.5405657291412354,
+      "target_cosine_gain": -0.006225563120096922,
+      "source_feature_cosine": 0.9231967329978943,
+      "feature_distance_from_source": 0.3919267952442169
+    },
+    {
+      "model": "current_g14",
+      "variant": "lucid_8",
+      "rank": 13,
+      "target_cosine": 0.5492539405822754,
+      "target_cosine_gain": 0.002462666481733322,
+      "source_feature_cosine": 0.9197987914085388,
+      "feature_distance_from_source": 0.40050286054611206
+    },
+    {
+      "model": "current_g14",
+      "variant": "lucid_original_16",
+      "rank": 12,
+      "target_cosine": 0.5579169392585754,
+      "target_cosine_gain": 0.011125645600259304,
+      "source_feature_cosine": 0.8791128993034363,
+      "feature_distance_from_source": 0.49170538783073425
+    },
+    {
+      "model": "current_g14",
+      "variant": "perlage_original_no_shadow",
+      "rank": 9,
+      "target_cosine": 0.5664548873901367,
+      "target_cosine_gain": 0.019663546234369278,
+      "source_feature_cosine": 0.931008517742157,
+      "feature_distance_from_source": 0.371460884809494
+    },
+    {
+      "model": "current_g14",
+      "variant": "perlage_pixel_control",
+      "rank": 12,
+      "target_cosine": 0.5574206113815308,
+      "target_cosine_gain": 0.010629326105117798,
+      "source_feature_cosine": 0.9367110133171082,
+      "feature_distance_from_source": 0.3557780385017395
+    },
+    {
+      "model": "current_g14",
+      "variant": "perlage_latent_only",
+      "rank": 12,
+      "target_cosine": 0.5546683073043823,
+      "target_cosine_gain": 0.00787697359919548,
+      "source_feature_cosine": 0.9392133951187134,
+      "feature_distance_from_source": 0.348673552274704
+    }
+  ],
+  "thresholds": {
+    "old_B32": {
+      "source_cosine": 0.6722689867019653,
+      "strongest_unchanged_competitor": 0.7500720620155334
+    },
+    "current_g14": {
+      "source_cosine": 0.5467913150787354,
+      "strongest_unchanged_competitor": 0.6485466361045837
+    }
+  },
+  "activation_mismatch_confirmed": {
+    "actual_module_counts": {
+      "GELU": 24,
+      "QuickGELU": 0
+    },
+    "pretrained_registry_quick_gelu": true,
+    "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+    "model": "ViT-B-32",
+    "pretrained": "openai",
+    "source_files_unchanged": true
+  },
+  "activation_diagnostic_weights_identical": true,
+  "caveats": [
+    "Cross-model gains are not an attack transfer rate.",
+    "No causal proof that size alone, fine texture alone, or semantics alone explains the gap.",
+    "Current source-code activation loader was not changed; old tables record the historical actual configuration."
+  ],
+  "source_files": {
+    "output\\shampoo_ablation_20261107\\image_only\\RESULTS.json": "09b1d61259d8c8283810ae5a0b95661607bd7429ab909dbe2bb6827b8689a4ca",
+    "output\\shampoo_ablation_20261107\\image_only\\ENCODING_AUDIT.json": "a400ccc02d7b2d60ba164168cc8a534592a627462acfb0dfcb7e9a023686fda0",
+    "output\\shampoo_ablation_20261107\\image_only\\encoder_explanation\\ACTIVATION_AUDIT.json": "c37b2eb82d886a3e4336c9ac2f24865cfb7c22375c7a2e654056aa8d6e40f5df",
+    "output\\shampoo_ablation_20261107\\image_only\\encoder_explanation\\ACTIVATION_CORRECTED_DIAGNOSTIC.json": "40c445fb87fb1355da55ebeb12b63600f05f118ae1bf62a4140b74de8a04add0"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "method": "PerLAGE_no_pixel",
+  "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+  "status": "success",
+  "output_image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png",
+  "output_image_sha256": "543bc75268a84f98c37526b804363055072a09c920a5dfa53fe29d5a1eebcc40",
+  "source_image_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+  "target_image_sha256": "656132deaca60f9f6f1a34668699fe96289c3c1812dddde5b1cfe9685b317e71",
+  "perlage_ready": {
+    "method": "PerLAGE_no_pixel",
+    "definition": "perlage_no_pixel_foreground_statistics_harmonization_perceptual_latent_v1",
+    "status": "completed",
+    "color_scheme": "statistics",
+    "training_data_policy": "catalog_image_and_public_title_only_v1",
+    "shadow_pool_used": false,
+    "purchase_history_used": false,
+    "victim_memory_used": false,
+    "formal_queries_used": false,
+    "configuration_sha256": "66671226fa206fc47864e98770e57606bc24c50846111b1aa55539c76af42733",
+    "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\method_identity.json",
+    "method_identity_sha256": "c1508d7efe128d55c6bc6f11a42b0630614da43bec8cfcfae844fe36453f6e42",
+    "source_sha256": "a1bb85bf4b8c4bbace4d1099142c0c7925c7b9f0d2e878fa43830e140fffbd28",
+    "target_sha256": "656132deaca60f9f6f1a34668699fe96289c3c1812dddde5b1cfe9685b317e71",
+    "source_title_sha256": "6b014e654ecbaeb137a14f60dac061843fab09fbf9011f4bafef4a8ecccb7462",
+    "candidates": {
+      "final": {
+        "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png",
+        "sha256": "543bc75268a84f98c37526b804363055072a09c920a5dfa53fe29d5a1eebcc40"
+      }
+    },
+    "initialization_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json",
+    "initialization_optimizer_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "9891e8970b49272dbad92b3aa6ebd36bb60678165e05d1df2b34933e3f8ff8dd",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "169ca36c9a553f799fa8bbc1808340ca0332ea89c1c1ff78f74b4071336710fa",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "9ea3c20a099777a8807190f1b9a4f3be1bc11f9239b911f83ab58e0e63607b66"
+    },
+    "stages": {
+      "foreground_segmentation": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "ec10ddaf73104e39a8083da509037120d995fa0df63de6c93cdb2e800aaaf975",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "6410623aab745ede68448dc0e4c084252052fdd0eb0b16807fdba0750024a4e6",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "3c54643a615e8203c62fbeda7476152ceec9af6cba04d99c446140b3d0d96b9c",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "28a823a99a8132d52bc60810a2e715e623d171223f725c5f0b2e0390d2b96367"
+        }
+      },
+      "foreground_statistics": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "43871e5d789dd56bc37244e757336e4fa7da052ee32ee3bba284304493285260",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "906e56ab7088a90b372377ee603bac47629cec76e2a3275ca6ab27e3578d2861"
+        }
+      },
+      "color_harmonization": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "baadde71e147fdd8159fabe702699bbed772ad8befa191ab0f5c848458f70839",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "8c6b752dc96044395fe2b07bc4035ae199f3a8dc69e03cccac247785141f1dd8",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "8c6b752dc96044395fe2b07bc4035ae199f3a8dc69e03cccac247785141f1dd8",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "a5a4a55798dd0ff002cb5b29299a43f2ae34357fa0c6d0c6962070ec6bd65a1e"
+        }
+      },
+      "latent_generation_refinement": {
+        "status": "completed",
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\latent_generation_refinement\\metadata.json": "8bafdc1524becd49e5339cc01298cbab8f4875fc81b49f2fe831ddb952e629a7",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\latent_generation_refinement\\identity.json": "103fb34ae7c6bf307aff08cb2b926c9fb22c00b3c50157471d575f26b6e6af29",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "543bc75268a84f98c37526b804363055072a09c920a5dfa53fe29d5a1eebcc40",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\03_cookies\\methods\\PerLAGE_no_pixel\\generation\\generative_anchor.png": "543bc75268a84f98c37526b804363055072a09c920a5dfa53fe29d5a1eebcc40"
+        },
+        "steps_completed": 60,
+        "steps_requested": 60
+      }
+    },
+    "observed_seconds": 1065.697838999993,
+    "auxiliary_max_levels": 0,
+    "latent_config": {
+      "steps": 60,
+      "check_every": 10,
+      "latent_levels": 24,
+      "latent_working_size": 256,
+      "latent_limit": 0.5,
+      "latent_learning_rate": 0.01,
+      "latent_smoothing_mix": 0.12,
+      "auxiliary_levels": 0,
+      "source_ssim_floor": 0.85,
+      "source_mae_ceiling": 12.0,
+      "ordinary_tolerance": 0.01,
+      "temperature": 0.01,
+      "desired_owned_score_gain": 0.02,
+      "feature_weight": 0.02,
+      "diffusion_weight": 3.0,
+      "macro_l2_weight": 0.001,
+      "macro_tv_weight": 0.003,
+      "guard_backtracks": 8,
+      "full_eot_samples": 2,
+      "training_seed_base": 720300000,
+      "timesteps": [
+        99,
+        199,
+        399
+      ],
+      "development_seeds": [
+        9401,
+        9402,
+        9403,
+        9404,
+        9405,
+        9406,
+        9407,
+        9408
+      ],
+      "selection_seeds": [
+        9301,
+        9302
+      ],
+      "retention_tolerance": 0.0005
+    },
+    "pixel_optimization": false,
+    "optimization_mode": "latent_only",
+    "source_method": "four_natural_stages_with_perceptual_latent_optimization_no_pixel"
+  },
+  "shadow_pool_used": false,
+  "completion_policy": "four_natural_stages_with_perceptual_latent_optimization_complete"
+}

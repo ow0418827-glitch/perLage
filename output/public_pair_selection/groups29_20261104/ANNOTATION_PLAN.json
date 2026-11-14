@@ -1,0 +1,10 @@
+{
+  "policy": "public_ocr_sam_seeded_foreground_proposal_v1",
+  "background_corner_tolerance": 45,
+  "foreground_color_difference": 18,
+  "foreground_area_min": 0.01,
+  "foreground_area_max": 0.97,
+  "rough_mask_coverage_min": 0.3,
+  "actual_visual_review_required": true,
+  "source_image_index": 0
+}

@@ -1,0 +1,18 @@
+{
+  "lucid_original_16": {
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\lucid_original_16.png",
+    "sha256": "8f26a32627fcc6dee11ae18f4a67e7c320e3756a71ae2a57d7dfde96bd451852"
+  },
+  "perlage_original_no_shadow": {
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_original_no_shadow.png",
+    "sha256": "69f7f19d6bef591dbe933b78f3945dd88f3171ee306dd7b0c32e905fc5fc6e80"
+  },
+  "perlage_legacy_reference": {
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_legacy_reference.png",
+    "sha256": "42c312c4a2216a759dcf9acef8d0e4936fc318d20bd2b87384173b66bd241529"
+  },
+  "perlage_color_revision_reference": {
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\shampoo_ablation_20261107\\images\\perlage_color_revision_reference.png",
+    "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb"
+  }
+}

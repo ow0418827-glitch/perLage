@@ -1,0 +1,23 @@
+{
+  "validated_at": "2026-11-10T17:48:31.996849+08:00",
+  "tests_passed": 47,
+  "test_scope": [
+    "推理保存与开关",
+    "结构化返回序列化",
+    "正常/失败重试记录",
+    "购物提示与架构",
+    "冻结查询缓存",
+    "只恢复源图",
+    "实际图像载荷审计",
+    "浮点舍入重验证与拒绝真实输入变更"
+  ],
+  "files_sha256": {
+    "src/agent/shopping.py": "4c5f3f755fbc299ca90cd13d3ab1bb629fa3788b45a0697d85a2d631bed31403",
+    "tools/run_lucid_groups9_clean_shopping_20261110.py": "0d4aadc52245478d1f48bdbfe07a36065f1a86beb744e20a129a39f781a56616",
+    "src/tests/test_policy_reasoning_logging.py": "58b8c774f078168ca60404ce088fbcec373f3223b0937dee2ae893222a54cbbc",
+    "src/tests/test_clean_groups9_control.py": "13214425563cd1165048f45ca6eccb117ef5a23e613407dadecb206684a041b3",
+    "docs/CLEAN_SHOPPING_CONTROL.md": "8d95a93a6297cbbc5f36a28a5c3376fe0ec5345a2f9f50ac53e26f2a46a0a10b"
+  },
+  "previous_outcomes_sha256": "37ba2260d86acbaead63ccb6a4dd0727bf254bcedad99eb56ee08b5e0ae1d6df",
+  "original_experiment_outputs_unchanged": true
+}

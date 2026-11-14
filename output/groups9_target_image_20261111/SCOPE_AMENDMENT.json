@@ -1,0 +1,10 @@
+{
+  "user_specified": true,
+  "specified_on": "2026-11-11",
+  "change": "查询图片由独立生成无品牌照片改为每组目标商品原图",
+  "reason": "用户要求新增D组条件：特点文字加目标商品图，观察与A/B/C条件的排名差异",
+  "default_protocol_unchanged": true,
+  "query_images_contain_brand_print": true,
+  "shopping_not_included": true,
+  "retrieval_only": true
+}

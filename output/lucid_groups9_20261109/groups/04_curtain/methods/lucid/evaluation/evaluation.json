@@ -1,0 +1,544 @@
+[
+  {
+    "condition": {
+      "kind": "none",
+      "label": "none"
+    },
+    "bank": "clean",
+    "bank_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\04_curtain\\methods\\lucid\\evaluation\\banks\\none\\clean.json",
+    "bank_sha256": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+    "queries": [
+      {
+        "task_id": "feature_01",
+        "rank": 7,
+        "score": 0.5640003681182861
+      },
+      {
+        "task_id": "feature_02",
+        "rank": 12,
+        "score": 0.5532313585281372
+      },
+      {
+        "task_id": "feature_03",
+        "rank": 6,
+        "score": 0.5899994969367981
+      },
+      {
+        "task_id": "feature_04",
+        "rank": 7,
+        "score": 0.5847190022468567
+      },
+      {
+        "task_id": "feature_05",
+        "rank": 13,
+        "score": 0.5512497425079346
+      },
+      {
+        "task_id": "feature_06",
+        "rank": 4,
+        "score": 0.5978801250457764
+      },
+      {
+        "task_id": "feature_07",
+        "rank": 7,
+        "score": 0.5689254403114319
+      },
+      {
+        "task_id": "feature_08",
+        "rank": 13,
+        "score": 0.5541727542877197
+      },
+      {
+        "task_id": "feature_09",
+        "rank": 6,
+        "score": 0.6043221354484558
+      },
+      {
+        "task_id": "feature_10",
+        "rank": 8,
+        "score": 0.5550638437271118
+      },
+      {
+        "task_id": "feature_11",
+        "rank": 12,
+        "score": 0.5560131669044495
+      },
+      {
+        "task_id": "feature_12",
+        "rank": 4,
+        "score": 0.5952765941619873
+      },
+      {
+        "task_id": "feature_13",
+        "rank": 6,
+        "score": 0.5407000184059143
+      },
+      {
+        "task_id": "feature_14",
+        "rank": 13,
+        "score": 0.548948347568512
+      },
+      {
+        "task_id": "feature_15",
+        "rank": 3,
+        "score": 0.6110929846763611
+      },
+      {
+        "task_id": "feature_16",
+        "rank": 6,
+        "score": 0.5575321912765503
+      },
+      {
+        "task_id": "feature_17",
+        "rank": 12,
+        "score": 0.5696049928665161
+      },
+      {
+        "task_id": "feature_18",
+        "rank": 5,
+        "score": 0.5901134014129639
+      },
+      {
+        "task_id": "feature_19",
+        "rank": 10,
+        "score": 0.5628759264945984
+      },
+      {
+        "task_id": "feature_20",
+        "rank": 12,
+        "score": 0.5633412003517151
+      }
+    ],
+    "top1": 0,
+    "top3": 1,
+    "top5": 4,
+    "mrr": 0.14588369963369965,
+    "query_count": 20,
+    "retrieval_protocol": {
+      "encoder": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 0,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+          "requires_true_local_tokens": true,
+          "loading": {
+            "architecture": {
+              "embed_dim": 512,
+              "vision_cfg": {
+                "image_size": 224,
+                "layers": 12,
+                "width": 768,
+                "patch_size": 32
+              },
+              "text_cfg": {
+                "context_length": 77,
+                "vocab_size": 49408,
+                "width": 512,
+                "heads": 8,
+                "layers": 12
+              }
+            },
+            "quick_gelu": true,
+            "activation": "QuickGELU",
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ],
+            "metadata_source": "registered_pretrained_tag",
+            "registered_preprocess": {
+              "interpolation": "bicubic",
+              "resize_mode": "shortest"
+            },
+            "strict_state_dict": true,
+            "actual_activation_modules": {
+              "QuickGELU": 24,
+              "GELU": 0
+            },
+            "loader_version": 2,
+            "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+          }
+        },
+        "fusion": "equal_unit_image_plus_unit_full_text",
+        "text_policy": {
+          "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+          "context_length": 77,
+          "payload_tokens_per_chunk": 75,
+          "special_tokens_per_chunk": 2,
+          "coverage": "all_token_ids_no_truncation",
+          "aggregation": "unit_token_count_weighted_mean_then_unit",
+          "tokenizer": "SimpleTokenizer"
+        },
+        "weighted_fusion": {
+          "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+          "default_image_weight": 0.5,
+          "equal_weight_path": "exact_legacy_image_plus_text",
+          "empty_text": "image_only_except_text_only_weight_rejected"
+        },
+        "evaluation_protocol": {
+          "setting": "matched_public_encoder",
+          "matches_training_surrogate": true,
+          "matching_training_surrogate_indices": [
+            1
+          ],
+          "black_box_transfer_claimed": false
+        }
+      },
+      "key_mode": "joint",
+      "query_mode": "text",
+      "index_text": "product_feature",
+      "index_text_policy": {
+        "version": 2,
+        "fields": [
+          "PrimaryImage.Title",
+          "Brand",
+          "Attributes",
+          "FeatureText"
+        ],
+        "coverage": "purchased_product_title_brand_and_features_only",
+        "purchase_binding": "primary_asin_must_match_final_asin",
+        "excluded": [
+          "Instruction",
+          "OriginalInstruction",
+          "Actions",
+          "FinalASIN",
+          "FinalOptions",
+          "FinalPrice",
+          "PolicyTrace",
+          "Reward",
+          "attack_metadata"
+        ]
+      },
+      "key_image_weight": 0.5,
+      "query_image_weight": 0.0,
+      "image_decoder": {
+        "schema_version": 1,
+        "scope": "local_encoder_process",
+        "library": "Pillow",
+        "verified": true,
+        "pillow_version": "12.3.0",
+        "jpeg_version": "8.0",
+        "libjpeg_turbo_enabled": true,
+        "libjpeg_turbo_version": "3.1.4.1"
+      },
+      "cache_schema": 4,
+      "bank_sha256": "9ad340bfd2afbc7d84d86e1e15aa9fb615710892d86990d187ed794066a2711a",
+      "model_sha256": "46a02e2e7855b17a2e034aa149a7ce1442f77c482b39392862bf8d18af215877",
+      "entries_sha256": "884e0316af8e5f5dbeb3845690aa3f7df02723a1f9a53e0757d6ec975d64762a",
+      "query_encoding_audit": {
+        "text_sha256": "44c5264d51e67f2b5fa0a63ce5bf829d70f679856b6e3d95485d18d93205f730",
+        "input_tokens": 17,
+        "encoded_tokens": 17,
+        "chunks": 1,
+        "payload_tokens_per_chunk": 75,
+        "chunk_token_counts": [
+          17
+        ],
+        "truncated": false
+      }
+    }
+  },
+  {
+    "condition": {
+      "kind": "none",
+      "label": "none"
+    },
+    "bank": "modified",
+    "bank_path": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_20261109\\groups\\04_curtain\\methods\\lucid\\evaluation\\banks\\none\\modified.json",
+    "bank_sha256": "d85069d429b0ece3d2579e0ae6841bae751c26860625cbb0bc02b72c1a8e3ae1",
+    "queries": [
+      {
+        "task_id": "feature_01",
+        "rank": 1,
+        "score": 0.6422997713088989
+      },
+      {
+        "task_id": "feature_02",
+        "rank": 5,
+        "score": 0.6084830164909363
+      },
+      {
+        "task_id": "feature_03",
+        "rank": 1,
+        "score": 0.6483355760574341
+      },
+      {
+        "task_id": "feature_04",
+        "rank": 1,
+        "score": 0.6538490653038025
+      },
+      {
+        "task_id": "feature_05",
+        "rank": 5,
+        "score": 0.6038293242454529
+      },
+      {
+        "task_id": "feature_06",
+        "rank": 1,
+        "score": 0.653840959072113
+      },
+      {
+        "task_id": "feature_07",
+        "rank": 1,
+        "score": 0.643257200717926
+      },
+      {
+        "task_id": "feature_08",
+        "rank": 6,
+        "score": 0.6032878160476685
+      },
+      {
+        "task_id": "feature_09",
+        "rank": 1,
+        "score": 0.6683095097541809
+      },
+      {
+        "task_id": "feature_10",
+        "rank": 1,
+        "score": 0.6318676471710205
+      },
+      {
+        "task_id": "feature_11",
+        "rank": 5,
+        "score": 0.6154414415359497
+      },
+      {
+        "task_id": "feature_12",
+        "rank": 1,
+        "score": 0.6534842252731323
+      },
+      {
+        "task_id": "feature_13",
+        "rank": 1,
+        "score": 0.6162506341934204
+      },
+      {
+        "task_id": "feature_14",
+        "rank": 4,
+        "score": 0.6106321811676025
+      },
+      {
+        "task_id": "feature_15",
+        "rank": 1,
+        "score": 0.6710618734359741
+      },
+      {
+        "task_id": "feature_16",
+        "rank": 1,
+        "score": 0.625852108001709
+      },
+      {
+        "task_id": "feature_17",
+        "rank": 5,
+        "score": 0.6245313286781311
+      },
+      {
+        "task_id": "feature_18",
+        "rank": 1,
+        "score": 0.6473126411437988
+      },
+      {
+        "task_id": "feature_19",
+        "rank": 1,
+        "score": 0.6323283910751343
+      },
+      {
+        "task_id": "feature_20",
+        "rank": 5,
+        "score": 0.6138986349105835
+      }
+    ],
+    "top1": 13,
+    "top3": 13,
+    "top5": 19,
+    "mrr": 0.7208333333333333,
+    "query_count": 20,
+    "retrieval_protocol": {
+      "encoder": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 0,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9d53586f292d0e904bf88bfe35f049e2cecd3798cc1830bcb446ebe797e03d61",
+          "requires_true_local_tokens": true,
+          "loading": {
+            "architecture": {
+              "embed_dim": 512,
+              "vision_cfg": {
+                "image_size": 224,
+                "layers": 12,
+                "width": 768,
+                "patch_size": 32
+              },
+              "text_cfg": {
+                "context_length": 77,
+                "vocab_size": 49408,
+                "width": 512,
+                "heads": 8,
+                "layers": 12
+              }
+            },
+            "quick_gelu": true,
+            "activation": "QuickGELU",
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ],
+            "metadata_source": "registered_pretrained_tag",
+            "registered_preprocess": {
+              "interpolation": "bicubic",
+              "resize_mode": "shortest"
+            },
+            "strict_state_dict": true,
+            "actual_activation_modules": {
+              "QuickGELU": 24,
+              "GELU": 0
+            },
+            "loader_version": 2,
+            "loader_sha256": "44c6b245807274bef69742275ec4935d4d558579ff502c26b777384d442f8487"
+          }
+        },
+        "fusion": "equal_unit_image_plus_unit_full_text",
+        "text_policy": {
+          "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+          "context_length": 77,
+          "payload_tokens_per_chunk": 75,
+          "special_tokens_per_chunk": 2,
+          "coverage": "all_token_ids_no_truncation",
+          "aggregation": "unit_token_count_weighted_mean_then_unit",
+          "tokenizer": "SimpleTokenizer"
+        },
+        "weighted_fusion": {
+          "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+          "default_image_weight": 0.5,
+          "equal_weight_path": "exact_legacy_image_plus_text",
+          "empty_text": "image_only_except_text_only_weight_rejected"
+        },
+        "evaluation_protocol": {
+          "setting": "matched_public_encoder",
+          "matches_training_surrogate": true,
+          "matching_training_surrogate_indices": [
+            1
+          ],
+          "black_box_transfer_claimed": false
+        }
+      },
+      "key_mode": "joint",
+      "query_mode": "text",
+      "index_text": "product_feature",
+      "index_text_policy": {
+        "version": 2,
+        "fields": [
+          "PrimaryImage.Title",
+          "Brand",
+          "Attributes",
+          "FeatureText"
+        ],
+        "coverage": "purchased_product_title_brand_and_features_only",
+        "purchase_binding": "primary_asin_must_match_final_asin",
+        "excluded": [
+          "Instruction",
+          "OriginalInstruction",
+          "Actions",
+          "FinalASIN",
+          "FinalOptions",
+          "FinalPrice",
+          "PolicyTrace",
+          "Reward",
+          "attack_metadata"
+        ]
+      },
+      "key_image_weight": 0.5,
+      "query_image_weight": 0.0,
+      "image_decoder": {
+        "schema_version": 1,
+        "scope": "local_encoder_process",
+        "library": "Pillow",
+        "verified": true,
+        "pillow_version": "12.3.0",
+        "jpeg_version": "8.0",
+        "libjpeg_turbo_enabled": true,
+        "libjpeg_turbo_version": "3.1.4.1"
+      },
+      "cache_schema": 4,
+      "bank_sha256": "d85069d429b0ece3d2579e0ae6841bae751c26860625cbb0bc02b72c1a8e3ae1",
+      "model_sha256": "46a02e2e7855b17a2e034aa149a7ce1442f77c482b39392862bf8d18af215877",
+      "entries_sha256": "8742f27c9da0cefe2ad47b2c7840d040887abdc3550f1799af1a86e662a9bcd4",
+      "query_encoding_audit": {
+        "text_sha256": "44c5264d51e67f2b5fa0a63ce5bf829d70f679856b6e3d95485d18d93205f730",
+        "input_tokens": 17,
+        "encoded_tokens": 17,
+        "chunks": 1,
+        "payload_tokens_per_chunk": 75,
+        "chunk_token_counts": [
+          17
+        ],
+        "truncated": false
+      }
+    }
+  }
+]

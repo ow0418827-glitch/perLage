@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "fresh_process": true,
+  "pid": 6900,
+  "retrieval_pid": 31632,
+  "fresh_encoder": true,
+  "execution_device": "cuda",
+  "rankings_recomputed": 120,
+  "score_comparisons": 22680,
+  "max_score_error": 0.0,
+  "persistent_vector_cache_read": false,
+  "inputs_sha256": "27e64e87fca163e07a25053f27997aeb327292b25047bdfce4bee6a3f1071a95",
+  "retrieval_certificate_sha256": "bea041fd51a146155ddb9846e27ef131da0f535e45c6b0183245c7e65bd767a8",
+  "files": {
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\joint\\clean.json": "7ae45e661e32a0fb294de26582302b31f06b73ffa4fd57e69c5191a13c40c965",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\joint\\baseline.json": "8a285d747bfaf3eb86148322ed389437a8cb16b01f0859f415db5c1fd1fbd8d1",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\joint\\ambient_coop.json": "bbfe0fe4bfbc6e5c3e6f1c64439ca55cbdc3754b83c722b7294c6a296b699be8",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\text\\clean.json": "54ebda73decd08ad72dbb4b92bed8406483f2a21a753bc72ee40b8d0d5ead64f",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\text\\baseline.json": "dd2c30677e62239bd68a04bd62c535a101b739170a57f2ca93650bb2cbd05b39",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\retrieval\\text\\ambient_coop.json": "3f49c67b4d78936ecb95ab3c508ec77bd8eaee5579798f808c34dd0ae648ce36"
+  }
+}

@@ -1,0 +1,817 @@
+{
+  "status": "selected",
+  "selected_source_id": "B09LVD5J4B",
+  "target_id": "B09J81RMLD",
+  "candidates": [
+    {
+      "source_id": "B07C26NR9T",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6820171195926058,
+      "log_score": -0.38270051941178196,
+      "components": {
+        "shape": 0.3535187198338561,
+        "semantic": 0.9999042666946366,
+        "cross_modal": 0.9372728798527666,
+        "edit_cost": 0.974919853665669
+      },
+      "raw": {
+        "shape": 0.3540329288808871,
+        "cls": 0.31036249293355933,
+        "symmetric_patches": 0.3977033648282149,
+        "aspect_penalty": 0.9985475671750182,
+        "semantic_cosine": 0.7183395027320242,
+        "cross_modal_gap": 0.032390405989004334,
+        "pilot_recolor_lpips": 0.006350003182888031
+      }
+    },
+    {
+      "source_id": "B07QKNWG41",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.4681916195439097,
+      "log_score": -0.7588776233937021,
+      "components": {
+        "shape": 0.12092539653467561,
+        "semantic": 0.9999988732502899,
+        "cross_modal": 0.9578436142936226,
+        "edit_cost": 0.9166213823037249
+      },
+      "raw": {
+        "shape": 0.3083855999233661,
+        "cls": 0.24912096358112884,
+        "symmetric_patches": 0.36765023626560334,
+        "aspect_penalty": 0.3921240050272308,
+        "semantic_cosine": 0.720180139973166,
+        "cross_modal_gap": 0.02153537810068723,
+        "pilot_recolor_lpips": 0.021765194833278656
+      }
+    },
+    {
+      "source_id": "B07VLL8QH4",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.5632805024282871,
+      "log_score": -0.573977546802677,
+      "components": {
+        "shape": 0.19937789309511206,
+        "semantic": 0.9998256283035585,
+        "cross_modal": 0.9786600066476744,
+        "edit_cost": 0.9594564834321383
+      },
+      "raw": {
+        "shape": 0.2548330369262144,
+        "cls": 0.20519859959200654,
+        "symmetric_patches": 0.3044674742604222,
+        "aspect_penalty": 0.7823863636363636,
+        "semantic_cosine": 0.7222410583989387,
+        "cross_modal_gap": 0.010785491567756988,
+        "pilot_recolor_lpips": 0.010347079485654831
+      }
+    },
+    {
+      "source_id": "B0842Z8WP5",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.3923706084335915,
+      "log_score": -0.9355484561512956,
+      "components": {
+        "shape": 0.07250241240975423,
+        "semantic": 0.999998116226332,
+        "cross_modal": 0.9505705613451545,
+        "edit_cost": 0.9566930795105454
+      },
+      "raw": {
+        "shape": 0.3010397012486641,
+        "cls": 0.2800882647253491,
+        "symmetric_patches": 0.3219911377719791,
+        "aspect_penalty": 0.240840035746202,
+        "semantic_cosine": 0.7197670778397425,
+        "cross_modal_gap": 0.02534644189022106,
+        "pilot_recolor_lpips": 0.011068162508308887
+      }
+    },
+    {
+      "source_id": "B08NDPFGDR",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.37132484015144585,
+      "log_score": -0.9906780195481634,
+      "components": {
+        "shape": 0.06823130399827222,
+        "semantic": 0.9996503757455354,
+        "cross_modal": 0.8439426053848523,
+        "edit_cost": 0.9189047502850461
+      },
+      "raw": {
+        "shape": 0.13164569643334764,
+        "cls": 0.05959434968877572,
+        "symmetric_patches": 0.20369704317791956,
+        "aspect_penalty": 0.5182949830252734,
+        "semantic_cosine": 0.716826525696735,
+        "cross_modal_gap": 0.08483539489850583,
+        "pilot_recolor_lpips": 0.021143201738595963
+      }
+    },
+    {
+      "source_id": "B08PVNZR97",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.5101159648742106,
+      "log_score": -0.6731171970048634,
+      "components": {
+        "shape": 0.15797086489608325,
+        "semantic": 0.9998133552210537,
+        "cross_modal": 0.9020106817044522,
+        "edit_cost": 0.9860153334241224
+      },
+      "raw": {
+        "shape": 0.32351388695247457,
+        "cls": 0.30223474682751605,
+        "symmetric_patches": 0.3447930270774331,
+        "aspect_penalty": 0.4882970137207426,
+        "semantic_cosine": 0.7223185925339348,
+        "cross_modal_gap": 0.0515644583726142,
+        "pilot_recolor_lpips": 0.0035208433400839567
+      }
+    },
+    {
+      "source_id": "B095X9ZDW9",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.6978563917239549,
+      "log_score": -0.35974193990348347,
+      "components": {
+        "shape": 0.39392773134390563,
+        "semantic": 0.9996997042264693,
+        "cross_modal": 0.89368171387659,
+        "edit_cost": 0.946535253054603
+      },
+      "raw": {
+        "shape": 0.717806109514419,
+        "cls": 0.7422170110615659,
+        "symmetric_patches": 0.6933952079672722,
+        "aspect_penalty": 0.5487940630797773,
+        "semantic_cosine": 0.7170589428610692,
+        "cross_modal_gap": 0.05620279597351152,
+        "pilot_recolor_lpips": 0.013736765831708908
+      }
+    },
+    {
+      "source_id": "B0987HQSKY",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.40437284717613226,
+      "log_score": -0.9054179375714194,
+      "components": {
+        "shape": 0.08255526180009007,
+        "semantic": 0.9991756563786627,
+        "cross_modal": 0.8941780574124732,
+        "edit_cost": 0.9587991674975642
+      },
+      "raw": {
+        "shape": 0.4035393566312095,
+        "cls": 0.3728585849207632,
+        "symmetric_patches": 0.4342201283416558,
+        "aspect_penalty": 0.20457796852646637,
+        "semantic_cosine": 0.7248734881846765,
+        "cross_modal_gap": 0.05592517713751255,
+        "pilot_recolor_lpips": 0.010518411174416542
+      }
+    },
+    {
+      "source_id": "B09J1R6P1Y",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.4449875408711283,
+      "log_score": -0.8097089952502576,
+      "components": {
+        "shape": 0.1104830131702535,
+        "semantic": 0.9993190408524363,
+        "cross_modal": 0.8744515746936823,
+        "edit_cost": 0.9516830425807742
+      },
+      "raw": {
+        "shape": 0.3125289816998179,
+        "cls": 0.2639633955934073,
+        "symmetric_patches": 0.3610945678062285,
+        "aspect_penalty": 0.35351285685361405,
+        "semantic_cosine": 0.7244292554498377,
+        "cross_modal_gap": 0.06707918045335781,
+        "pilot_recolor_lpips": 0.012380809523165226
+      }
+    },
+    {
+      "source_id": "B09JBLQP5Y",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.6838895010365343,
+      "log_score": -0.37995892260210257,
+      "components": {
+        "shape": 0.3656113333862143,
+        "semantic": 0.9995868046883409,
+        "cross_modal": 0.9062238981586238,
+        "edit_cost": 0.9699297292952757
+      },
+      "raw": {
+        "shape": 0.7031300364788332,
+        "cls": 0.7462740026827537,
+        "symmetric_patches": 0.6599860702749127,
+        "aspect_penalty": 0.519976838448176,
+        "semantic_cosine": 0.716550002294133,
+        "cross_modal_gap": 0.04923443762995122,
+        "pilot_recolor_lpips": 0.007632913533598185
+      }
+    },
+    {
+      "source_id": "B09JT3Z6JV",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.793167050644181,
+      "log_score": -0.23172142298222548,
+      "components": {
+        "shape": 0.5457556113347621,
+        "semantic": 0.999160924426297,
+        "cross_modal": 0.9278731893708222,
+        "edit_cost": 0.9920304981197882
+      },
+      "raw": {
+        "shape": 0.6210789064528657,
+        "cls": 0.6526281424352558,
+        "symmetric_patches": 0.5895296704704757,
+        "aspect_penalty": 0.878721859114016,
+        "semantic_cosine": 0.7249168608365496,
+        "cross_modal_gap": 0.03743010245910211,
+        "pilot_recolor_lpips": 0.002000357024371624
+      }
+    },
+    {
+      "source_id": "B09L17NKYD",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.7393843661906156,
+      "log_score": -0.30193737661629283,
+      "components": {
+        "shape": 0.45831006344095593,
+        "semantic": 0.9998645267657218,
+        "cross_modal": 0.8968921788230229,
+        "edit_cost": 0.9839446826683504
+      },
+      "raw": {
+        "shape": 0.7258281027039246,
+        "cls": 0.7628557956229792,
+        "symmetric_patches": 0.6888004097848699,
+        "aspect_penalty": 0.631430584918957,
+        "semantic_cosine": 0.7180246788984465,
+        "cross_modal_gap": 0.05440981306460024,
+        "pilot_recolor_lpips": 0.00404640007764101
+      }
+    },
+    {
+      "source_id": "B09LQCBN17",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6247548260628328,
+      "log_score": -0.4703959845064626,
+      "components": {
+        "shape": 0.28424276660623604,
+        "semantic": 0.9998158294373539,
+        "cross_modal": 0.8942365490195706,
+        "edit_cost": 0.9790213319869705
+      },
+      "raw": {
+        "shape": 0.45717904860393443,
+        "cls": 0.4271823594186468,
+        "symmetric_patches": 0.4871757377892221,
+        "aspect_penalty": 0.6217318301751019,
+        "semantic_cosine": 0.7176968281230331,
+        "cross_modal_gap": 0.055892471294634816,
+        "pilot_recolor_lpips": 0.005300461780279875
+      }
+    },
+    {
+      "source_id": "B09LVD5J4B",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.831560779895573,
+      "log_score": -0.18445088633318754,
+      "components": {
+        "shape": 0.6502243336234823,
+        "semantic": 0.9998903116628128,
+        "cross_modal": 0.8797797042140079,
+        "edit_cost": 0.98271319304307
+      },
+      "raw": {
+        "shape": 0.6567322360052665,
+        "cls": 0.6711796752843807,
+        "symmetric_patches": 0.6422847967261522,
+        "aspect_penalty": 0.990090478242137,
+        "semantic_cosine": 0.71822258688603,
+        "cross_modal_gap": 0.06404186948482371,
+        "pilot_recolor_lpips": 0.004359492100775242
+      }
+    },
+    {
+      "source_id": "B09M9Z8T8V",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.49234356830737164,
+      "log_score": -0.708578496626679,
+      "components": {
+        "shape": 0.15113763127056368,
+        "semantic": 0.9999376401076396,
+        "cross_modal": 0.8532199413726864,
+        "edit_cost": 0.9274858798750528
+      },
+      "raw": {
+        "shape": 0.3384252303259441,
+        "cls": 0.30425421515554163,
+        "symmetric_patches": 0.3725962454963466,
+        "aspect_penalty": 0.4465909090909091,
+        "semantic_cosine": 0.7186598429568158,
+        "cross_modal_gap": 0.07936896010500552,
+        "pilot_recolor_lpips": 0.018819427117705345
+      }
+    },
+    {
+      "source_id": "B09MDZJDZC",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6476485536904615,
+      "log_score": -0.43440708517371496,
+      "components": {
+        "shape": 0.3094751069377893,
+        "semantic": 0.9992855822561456,
+        "cross_modal": 0.9256786505603013,
+        "edit_cost": 0.9571598902875318
+      },
+      "raw": {
+        "shape": 0.329207168466114,
+        "cls": 0.2893115762464683,
+        "symmetric_patches": 0.36910276068575965,
+        "aspect_penalty": 0.940061871616396,
+        "semantic_cosine": 0.7245368032997288,
+        "cross_modal_gap": 0.038614067098589555,
+        "pilot_recolor_lpips": 0.010946206748485565
+      }
+    },
+    {
+      "source_id": "B09MLZJNJX",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7671210491901903,
+      "log_score": -0.2651106684374298,
+      "components": {
+        "shape": 0.5129108201427645,
+        "semantic": 0.9996419655087876,
+        "cross_modal": 0.903608870579452,
+        "edit_cost": 0.941906577449043
+      },
+      "raw": {
+        "shape": 0.5421979894371671,
+        "cls": 0.5662244285647106,
+        "symmetric_patches": 0.5181715503096238,
+        "aspect_penalty": 0.9459843638948118,
+        "semantic_cosine": 0.7232114233144935,
+        "cross_modal_gap": 0.050679338752405045,
+        "pilot_recolor_lpips": 0.01496229600161314
+      }
+    },
+    {
+      "source_id": "B09MMB2YW1",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7724676523772174,
+      "log_score": -0.2581651450323243,
+      "components": {
+        "shape": 0.5053472138944058,
+        "semantic": 0.9996860166487169,
+        "cross_modal": 0.9544887356681654,
+        "edit_cost": 0.9273006951920235
+      },
+      "raw": {
+        "shape": 0.5342025018402922,
+        "cls": 0.5460542800097132,
+        "symmetric_patches": 0.5223507236708711,
+        "aspect_penalty": 0.9459843638948118,
+        "semantic_cosine": 0.7230073477427842,
+        "cross_modal_gap": 0.023289718588262676,
+        "pilot_recolor_lpips": 0.018869347870349884
+      }
+    },
+    {
+      "source_id": "B09MPH64JN",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6234458343649151,
+      "log_score": -0.47249339114833416,
+      "components": {
+        "shape": 0.28221099511387,
+        "semantic": 0.9999290819254327,
+        "cross_modal": 0.9099379316932088,
+        "edit_cost": 0.9408957290179991
+      },
+      "raw": {
+        "shape": 0.34434361833799215,
+        "cls": 0.2956868000490671,
+        "symmetric_patches": 0.3930004366269172,
+        "aspect_penalty": 0.8195621468926554,
+        "semantic_cosine": 0.7214291651317944,
+        "cross_modal_gap": 0.04718944436398981,
+        "pilot_recolor_lpips": 0.015230738557875156
+      }
+    },
+    {
+      "source_id": "B09N1H7F6Z",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6498363028755302,
+      "log_score": -0.4310347895398615,
+      "components": {
+        "shape": 0.31427208255953043,
+        "semantic": 0.9995001650246053,
+        "cross_modal": 0.9120662767650991,
+        "edit_cost": 0.9728699204579084
+      },
+      "raw": {
+        "shape": 0.3759384317926336,
+        "cls": 0.35098788827739846,
+        "symmetric_patches": 0.4008889753078687,
+        "aspect_penalty": 0.835966892400301,
+        "semantic_cosine": 0.7162054188485858,
+        "cross_modal_gap": 0.04602130982836178,
+        "pilot_recolor_lpips": 0.006876223720610142
+      }
+    },
+    {
+      "source_id": "B09NRTFC3Z",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.3389570989034994,
+      "log_score": -1.0818817315171365,
+      "components": {
+        "shape": 0.04931569684586465,
+        "semantic": 0.9994792014867977,
+        "cross_modal": 0.9057127923263965,
+        "edit_cost": 0.964276741428228
+      },
+      "raw": {
+        "shape": 0.11476379691017118,
+        "cls": 0.047318499056593556,
+        "symmetric_patches": 0.1822090947637488,
+        "aspect_penalty": 0.42971475477118815,
+        "semantic_cosine": 0.7161266417329999,
+        "cross_modal_gap": 0.04951651472925994,
+        "pilot_recolor_lpips": 0.009094237349927425
+      }
+    },
+    {
+      "source_id": "B09P7SZTLS",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6719675140679735,
+      "log_score": -0.39754528178826115,
+      "components": {
+        "shape": 0.34921648664179,
+        "semantic": 0.9998786518153563,
+        "cross_modal": 0.9165958247706066,
+        "edit_cost": 0.9276082833319607
+      },
+      "raw": {
+        "shape": 0.3793142475920269,
+        "cls": 0.34816000236620115,
+        "symmetric_patches": 0.4104684928178527,
+        "aspect_penalty": 0.9206521739130435,
+        "semantic_cosine": 0.7181304974510867,
+        "cross_modal_gap": 0.04354433102223593,
+        "pilot_recolor_lpips": 0.018786435946822166
+      }
+    },
+    {
+      "source_id": "B09Q8B4BB5",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.792576053719615,
+      "log_score": -0.23246681099659294,
+      "components": {
+        "shape": 0.5428524928747318,
+        "semantic": 0.99999534125225,
+        "cross_modal": 0.9347831346217532,
+        "edit_cost": 0.9823176309328702
+      },
+      "raw": {
+        "shape": 0.5744994729672144,
+        "cls": 0.5862953697604631,
+        "symmetric_patches": 0.5627035761739656,
+        "aspect_penalty": 0.9449138222372423,
+        "semantic_cosine": 0.7203662953012759,
+        "cross_modal_gap": 0.033720359088535545,
+        "pilot_recolor_lpips": 0.004460142459720373
+      }
+    },
+    {
+      "source_id": "B09QRKLC7P",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.7746818007834232,
+      "log_score": -0.25530291357397916,
+      "components": {
+        "shape": 0.5225007605743768,
+        "semantic": 0.9999658007084297,
+        "cross_modal": 0.9136313314944357,
+        "edit_cost": 0.9463382340548518
+      },
+      "raw": {
+        "shape": 0.5770378769979649,
+        "cls": 0.5847854155998573,
+        "symmetric_patches": 0.5692903383960726,
+        "aspect_penalty": 0.9054878048780488,
+        "semantic_cosine": 0.7209924497164732,
+        "cross_modal_gap": 0.045164073062744725,
+        "pilot_recolor_lpips": 0.013788808137178421
+      }
+    },
+    {
+      "source_id": "B09S9VSKXW",
+      "target_id": "B09J81RMLD",
+      "eligible": false,
+      "rejected_reasons": [
+        "shape_below_threshold"
+      ],
+      "score": 0.6411644001246155,
+      "log_score": -0.44446938049203877,
+      "components": {
+        "shape": 0.3044791965009807,
+        "semantic": 0.9991757757121512,
+        "cross_modal": 0.8965352942070282,
+        "edit_cost": 0.9928831777227776
+      },
+      "raw": {
+        "shape": 0.4236361013056912,
+        "cls": 0.410397839265407,
+        "symmetric_patches": 0.4368743633459754,
+        "aspect_penalty": 0.7187281621243886,
+        "semantic_cosine": 0.7248731352789014,
+        "cross_modal_gap": 0.05460880891253522,
+        "pilot_recolor_lpips": 0.001785566913895309
+      }
+    },
+    {
+      "source_id": "B09SKWPGK6",
+      "target_id": "B09J81RMLD",
+      "eligible": true,
+      "rejected_reasons": [],
+      "score": 0.8242550965824638,
+      "log_score": -0.19327521375252046,
+      "components": {
+        "shape": 0.6173331500968268,
+        "semantic": 0.9999820286676832,
+        "cross_modal": 0.9279008771239923,
+        "edit_cost": 0.9442071132621127
+      },
+      "raw": {
+        "shape": 0.6807113966976766,
+        "cls": 0.730532678819301,
+        "symmetric_patches": 0.630890114576052,
+        "aspect_penalty": 0.9068941009239517,
+        "semantic_cosine": 0.7192805703498378,
+        "cross_modal_gap": 0.03741518267243621,
+        "pilot_recolor_lpips": 0.014352434314787388
+      }
+    }
+  ],
+  "configuration": {
+    "shape_min": 0.65,
+    "semantic_min": 0.55,
+    "semantic_max": 0.9,
+    "semantic_center": 0.72,
+    "semantic_sigma": 0.12,
+    "duplicate_title_similarity": 0.95,
+    "mismatch_gamma": 2.0,
+    "cost_temperature": 0.25,
+    "aspect_temperature": 1.0,
+    "weights": [
+      0.35,
+      0.3,
+      0.25,
+      0.1
+    ]
+  },
+  "calibration": "provisional_public_only_heuristics_not_success_probabilities",
+  "models": {
+    "dino": {
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\models\\dinov2-small",
+      "files": {
+        ".cache/huggingface/trees/ed25f3a31f01632728cabb09d1542f84ab7b0056.json": "697aca0fad1dc794b13170a0e0c6628b0cfe53af9b4435fecc7833131abb3a91",
+        "config.json": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+        "model.safetensors": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+        "preprocessor_config.json": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+      }
+    },
+    "text_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "clip": {
+      "provider": "clip",
+      "loader": "attack_surrogate",
+      "surrogate_number": 1,
+      "surrogate": {
+        "role": "attack_surrogate",
+        "name": "ViT-B-16",
+        "pretrained": "openai",
+        "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+        "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+        "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+        "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+        "device": "cuda",
+        "precision": "fp32",
+        "image_size": 224,
+        "preprocess": {
+          "resize": "bicubic_direct_square",
+          "align_corners": false,
+          "antialias": true,
+          "mean": [
+            0.48145466,
+            0.4578275,
+            0.40821073
+          ],
+          "std": [
+            0.26862954,
+            0.26130258,
+            0.27577711
+          ]
+        },
+        "open_clip_torch_version": "3.3.0",
+        "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+        "requires_true_local_tokens": true
+      },
+      "fusion": "equal_unit_image_plus_unit_full_text",
+      "text_policy": {
+        "algorithm": "contiguous_nonoverlapping_raw_token_chunks_v1",
+        "context_length": 77,
+        "payload_tokens_per_chunk": 75,
+        "special_tokens_per_chunk": 2,
+        "coverage": "all_token_ids_no_truncation",
+        "aggregation": "unit_token_count_weighted_mean_then_unit",
+        "tokenizer": "SimpleTokenizer"
+      },
+      "weighted_fusion": {
+        "algorithm": "unit_alpha_image_plus_one_minus_alpha_full_text_v1",
+        "default_image_weight": 0.5,
+        "equal_weight_path": "exact_legacy_image_plus_text",
+        "empty_text": "image_only_except_text_only_weight_rejected"
+      }
+    },
+    "lpips": {
+      "backbone_path": "C:\\Users\\22106\\.cache\\torch\\hub\\checkpoints\\alexnet-owt-7be5be79.pth",
+      "backbone_sha256": "7be5be791159472b1fbf3c69796f7cb30dca7ad8466c2df70058c37116cdee02",
+      "implementation": "lpips_alex_v0.1"
+    },
+    "implementation_sha256": "78af2d953af0b89fdf59aff45acd4163ab3310ba320a539d67e793eb26cbf63e",
+    "text_files": {
+      "path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--sentence-transformers--all-MiniLM-L6-v2\\snapshots\\1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "files": {
+        "1_Pooling/config.json": "4be450dde3b0273bb9787637cfbd28fe04a7ba6ab9d36ac48e92b11e350ffc23",
+        "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+        "config_sentence_transformers.json": "061ca9d39661d6c6d6de5ba27f79a1cd5770ea247f8d46412a68a498dc5ac9f3",
+        "data_config.json": "32edcb108fc2516b920734a862ae0692bcae1c5d45d5f8d972cb0d53434a4c54",
+        "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+        "modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+        "openvino/openvino_model.bin": "8b86cab4722e2aefab310cf96d4d5a9eb3b187f7d9670a082afc55c7fa0d392a",
+        "sentence_bert_config.json": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+        "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+        "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+        "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    }
+  },
+  "victim_memory_used": false,
+  "victim_queries_used": false,
+  "target_system_probed": false,
+  "binding": {
+    "public_pair_sha256": "bef4443ce52b7275ced96f8ff67fbfe55c768c5ba3d7ce26853ed95c751e24ae",
+    "scoring_record_sha256": "83e45133c4e456662da3ed030b8ac7ac56109494f45861406350bee29fcc490c"
+  },
+  "target": {
+    "id": "B09J81RMLD",
+    "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg",
+    "source_url": "https://www.amazon.com/dp/B09J81RMLD",
+    "boxes": [
+      [
+        135,
+        51,
+        350,
+        446
+      ]
+    ],
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\metadata\\target_foreground.png",
+    "text_regions": [],
+    "text_regions_reviewed": true,
+    "image_sha256": "893e98a639703a3ebad6a4cb6a31595156b896a3cb519fcfe31511a132866f14",
+    "foreground_mask_sha256": "ace202b3e0475bd5322713259eb09953919dbc2917bd029a0c90d1e3adcf50ca"
+  },
+  "source": {
+    "id": "B09LVD5J4B",
+    "title": "Electric Toothbrush with U-Shaped Toothbrush, Whitening Massage Toothbrush, Kids Toothbrush Ergonomic Design Teeth Care PP Handle Baby Mouth-Cleaning Manual Toothbrush for Teeth Cleaning - Pink Small",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg",
+    "source_url": "https://www.amazon.com/dp/B09LVD5J4B",
+    "boxes": [
+      [
+        128,
+        59,
+        338,
+        441
+      ]
+    ],
+    "foreground_mask": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\metadata\\source_foreground.png",
+    "text_regions": [
+      [
+        0.22,
+        0.4,
+        0.78,
+        0.95
+      ]
+    ],
+    "text_regions_reviewed": true,
+    "owned": true,
+    "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+    "image_sha256": "5ccd7de8f07b90c78c48c38dc385320d5627ccf28c089462edb43b1855fb30dc",
+    "foreground_mask_sha256": "848c53bf0a57ec0a1e7cea28ee90330295dce44563344d292be4328f831323ea"
+  },
+  "pair_manifest": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\pair.json",
+  "pair_manifest_sha256": "bef4443ce52b7275ced96f8ff67fbfe55c768c5ba3d7ce26853ed95c751e24ae",
+  "scoring_record_sha256": "83e45133c4e456662da3ed030b8ac7ac56109494f45861406350bee29fcc490c",
+  "scoring_binding": {
+    "public_catalog_sha256": "06fae4f13d829c4dbfc4e0820e022f8751c26e29f3874851c7edd63c3beaabfb",
+    "public_records_sha256": "4c132c9df42cc5500092c919a8eaba67f43f6c743945f8927264a3e909e347ac",
+    "configuration": "ac56bc007187292130dde0ab44979e7a454a4808b3200d7e9fd1aee3a4c41fe5",
+    "models_configuration": {
+      "text_model": "sentence-transformers/all-MiniLM-L6-v2"
+    },
+    "selector_code_sha256": "78af2d953af0b89fdf59aff45acd4163ab3310ba320a539d67e793eb26cbf63e"
+  }
+}

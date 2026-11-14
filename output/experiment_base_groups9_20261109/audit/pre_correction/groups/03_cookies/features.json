@@ -1,0 +1,46 @@
+{
+  "group": "03_cookies",
+  "category": "cookies",
+  "target": {
+    "asin": "B08Z8MHWVS",
+    "brand": "Doughlish",
+    "category": "cookie dough",
+    "attributes": [
+      "eggless raw edible",
+      "natural ingredients",
+      "chocolate chip",
+      "ready to eat"
+    ],
+    "canonical_sentence": "I want to buy cookie dough with natural ingredients and chocolate chip.",
+    "training_queries": [
+      "I want to buy cookie dough with natural ingredients and chocolate chip.",
+      "I would like to purchase cookie dough featuring eggless raw edible recipe and chocolate chip.",
+      "Looking to buy cookie dough with ready to eat tub and natural ingredients."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B07BBLWTLM",
+    "brand": "Natural Decadence",
+    "category": "cookie dough",
+    "attributes": [
+      "chocolate chip",
+      "cookie dough",
+      "nut free",
+      "gluten free"
+    ],
+    "canonical_sentence": "I want to buy cookie dough with chocolate chip and gluten free recipe.",
+    "training_queries": [
+      "I want to buy cookie dough with chocolate chip and gluten free recipe.",
+      "I would like to purchase cookie dough featuring nut free ingredients and chocolate chip.",
+      "Looking to buy cookie dough with delicious tub and allergy friendly recipe."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy cookie dough with natural ingredients and chocolate chip.",
+  "alignment_training_queries": [
+    "I want to buy cookie dough with natural ingredients and chocolate chip.",
+    "I would like to purchase cookie dough featuring eggless raw edible recipe and chocolate chip.",
+    "Looking to buy cookie dough with ready to eat tub and natural ingredients."
+  ]
+}

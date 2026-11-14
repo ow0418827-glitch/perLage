@@ -1,0 +1,19 @@
+{
+  "pid": 13824,
+  "stage": "report",
+  "profile": null,
+  "group": null,
+  "command": [
+    "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "-u",
+    "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_rankfocus_groups67_20261111.py",
+    "--output",
+    "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_rankfocus_groups67_20261111",
+    "--stage",
+    "report"
+  ],
+  "started_at": "2026-11-11T09:33:35Z"
+}

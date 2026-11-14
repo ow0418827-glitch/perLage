@@ -1,0 +1,45 @@
+{
+  "schema_version": 2,
+  "config": {
+    "schema_version": 2,
+    "seed": 42,
+    "candidate_limit": 32,
+    "calibration_path": "src/data/public/calibration/shape_v2_verified/threshold.json",
+    "models": {
+      "batch_size": 16
+    },
+    "groups": [
+      {
+        "key": "02_chair",
+        "target_id": "B09CYFD5BX"
+      },
+      {
+        "key": "09_toothbrush",
+        "target_id": "B09J81RMLD"
+      }
+    ]
+  },
+  "selection": {
+    "seed": 42,
+    "calibration_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\calibration\\shape_v2_verified\\threshold.json",
+    "min_image_side": 64
+  },
+  "calibration_sha256": "bd483cca45f83c19d545d3d04f8ce45b47f75f25188f2dc58d9fbb3a052a50cd",
+  "type_rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3",
+  "implementation_sha256": {
+    "src/vision/pair_selection.py": "3057e24910ac42810229215bdf3d27375f3920c2d8c8ee3c74aca16b1c86b883",
+    "src/vision/shape_calibration.py": "b0b168f5f865b600400fb3d1394be35540f21185e813f391e08c97d1653f4b68",
+    "src/data_sources/webshop_public.py": "e16d362843138cfff4b82a082c4fd2b06ed0b193357c77568068b94b3dd0425a",
+    "src/experiments/public_pair_selection.py": "8a7c90de9e19d1c57666581a9664ba31c681d17832deb9d07bd7e6a1eb1da984"
+  },
+  "ownership_policy": "simulated_controlled_public_subset_sha256_even_v1",
+  "target_ids_fixed": [
+    "B09CYFD5BX",
+    "B09J81RMLD"
+  ],
+  "formal_queries_used": false,
+  "victim_memory_used": false,
+  "shopping_allowed": false,
+  "annotation_scope": "drawn_source_and_target_only",
+  "empty_set_policy": "stop_without_relaxation"
+}

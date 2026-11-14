@@ -1,0 +1,12 @@
+{
+  "protocol": "dominant_color_full_pipeline_v1",
+  "files": {
+    "implementation/latent_full.py": "7ed50a2adcbda08e3319dcb117b42f45f44069155d9730d6bd0dafe11e154c6b",
+    "implementation/prototype_v1.py": "47ee11d20730b21169b5e000b6c6fc04deeef9407446370e922910a84231d397",
+    "implementation/prototype_v2.py": "d3bb8727635fede93813e340d6ec00f08b399e19900f59eea6888a945b872de4",
+    "implementation/trial_components.py": "e2f88d618d1d1c99c0cfb4ea40858832b840cb73f67722adf68b228b407c4bcb",
+    "worker.py": "7bd6ed2a7a912adc0a20330b71d084f5c040c17441510977ca372225656eb851",
+    "coordinator.py": "56876e6ba83f3199e5ad7825cc82dba05ef2f2f435530612aa967ec9330ef3ae",
+    "compare_final.py": "a6ee27a5a7dabff5278a980c2f56c1fd4a7f0f2d9bc039cc998c3611880f0d4e"
+  }
+}

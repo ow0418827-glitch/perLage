@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "query_mode": "joint",
+  "query_image_sha256": "42b379adb64e7639078c7f343b31a861cc1d718828e355a8a8446a9b2ca80f58",
+  "selected_ids": [
+    "shared_7ffd39856bc62c0c38432734c7a24810461feb1282a4c54522dda5d1cd462667",
+    "public_00e2c039e6039f0d33bdc2e8d30c9cbce08cf306b9fc828c7722e72c9e5194d6",
+    "shared_882a294731dac1d69d29d0404d9b795dbeb791173d8980084777912b72e2707a"
+  ],
+  "source_rank": 7,
+  "actual_payload_verified_before_every_call": true
+}

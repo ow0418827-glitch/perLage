@@ -1,0 +1,268 @@
+{
+  "trials": [
+    {
+      "fraction": 1.0,
+      "source_ssim": 0.9437570911721477,
+      "source_mae_levels": 2.895703077316284,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.753490981706964,
+      "accepted": false
+    },
+    {
+      "fraction": 0.96875,
+      "source_ssim": 0.9437570911721477,
+      "source_mae_levels": 2.895703077316284,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.753490981706964,
+      "accepted": false
+    },
+    {
+      "fraction": 0.9375,
+      "source_ssim": 0.9437570911721477,
+      "source_mae_levels": 2.895703077316284,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.753490981706964,
+      "accepted": false
+    },
+    {
+      "fraction": 0.90625,
+      "source_ssim": 0.9437570911721477,
+      "source_mae_levels": 2.895703077316284,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.753490981706964,
+      "accepted": false
+    },
+    {
+      "fraction": 0.875,
+      "source_ssim": 0.943757108152647,
+      "source_mae_levels": 2.8957016468048096,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.80087855742519,
+      "accepted": false
+    },
+    {
+      "fraction": 0.84375,
+      "source_ssim": 0.943757108152647,
+      "source_mae_levels": 2.8957016468048096,
+      "ordinary_guard_slack": 0.009963154792785645,
+      "halo_error": 26.80087855742519,
+      "accepted": false
+    },
+    {
+      "fraction": 0.8125,
+      "source_ssim": 0.9437572140976099,
+      "source_mae_levels": 2.89568829536438,
+      "ordinary_guard_slack": 0.009995460510253906,
+      "halo_error": 27.222947428712974,
+      "accepted": false
+    },
+    {
+      "fraction": 0.78125,
+      "source_ssim": 0.9437572140976099,
+      "source_mae_levels": 2.89568829536438,
+      "ordinary_guard_slack": 0.009995460510253906,
+      "halo_error": 27.222947428712974,
+      "accepted": false
+    },
+    {
+      "fraction": 0.75,
+      "source_ssim": 0.9437572190069452,
+      "source_mae_levels": 2.8956856727600098,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.346680257176562,
+      "accepted": false
+    },
+    {
+      "fraction": 0.71875,
+      "source_ssim": 0.9437572244412573,
+      "source_mae_levels": 2.895684242248535,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.346680257176562,
+      "accepted": false
+    },
+    {
+      "fraction": 0.6875,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.65625,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.625,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.59375,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.5625,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.53125,
+      "source_ssim": 0.9437572386618099,
+      "source_mae_levels": 2.8956830501556396,
+      "ordinary_guard_slack": 0.009995222091674805,
+      "halo_error": 27.394179241848875,
+      "accepted": false
+    },
+    {
+      "fraction": 0.5,
+      "source_ssim": 0.9437572773020745,
+      "source_mae_levels": 2.8956761360168457,
+      "ordinary_guard_slack": 0.009997725486755371,
+      "halo_error": 27.565177580310547,
+      "accepted": false
+    },
+    {
+      "fraction": 0.46875,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.4375,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.40625,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.375,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.34375,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.3125,
+      "source_ssim": 0.943757322681838,
+      "source_mae_levels": 2.8956665992736816,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.89326415423633,
+      "accepted": false
+    },
+    {
+      "fraction": 0.28125,
+      "source_ssim": 0.9437573313651539,
+      "source_mae_levels": 2.895665407180786,
+      "ordinary_guard_slack": 0.009998798370361328,
+      "halo_error": 27.94165659668464,
+      "accepted": false
+    },
+    {
+      "fraction": 0.25,
+      "source_ssim": 0.9437573331903156,
+      "source_mae_levels": 2.8956639766693115,
+      "ordinary_guard_slack": 0.009997308254241943,
+      "halo_error": 27.94165659668464,
+      "accepted": false
+    },
+    {
+      "fraction": 0.21875,
+      "source_ssim": 0.9437573349324181,
+      "source_mae_levels": 2.8956613540649414,
+      "ordinary_guard_slack": 0.009997308254241943,
+      "halo_error": 28.070420397607894,
+      "accepted": false
+    },
+    {
+      "fraction": 0.1875,
+      "source_ssim": 0.9437573349324181,
+      "source_mae_levels": 2.8956613540649414,
+      "ordinary_guard_slack": 0.009997308254241943,
+      "halo_error": 28.070420397607894,
+      "accepted": false
+    },
+    {
+      "fraction": 0.15625,
+      "source_ssim": 0.9437573589886699,
+      "source_mae_levels": 2.895648241043091,
+      "ordinary_guard_slack": 0.009999573230743408,
+      "halo_error": 28.54798722083128,
+      "accepted": false
+    },
+    {
+      "fraction": 0.125,
+      "source_ssim": 0.9437573589886699,
+      "source_mae_levels": 2.895648241043091,
+      "ordinary_guard_slack": 0.009999573230743408,
+      "halo_error": 28.54798722083128,
+      "accepted": false
+    },
+    {
+      "fraction": 0.09375,
+      "source_ssim": 0.9437573649033242,
+      "source_mae_levels": 2.895646810531616,
+      "ordinary_guard_slack": 0.009999990463256836,
+      "halo_error": 28.59646472235851,
+      "accepted": false
+    },
+    {
+      "fraction": 0.0625,
+      "source_ssim": 0.9437573649033242,
+      "source_mae_levels": 2.895646810531616,
+      "ordinary_guard_slack": 0.009999990463256836,
+      "halo_error": 28.59646472235851,
+      "accepted": false
+    },
+    {
+      "fraction": 0.03125,
+      "source_ssim": 0.9437573649033242,
+      "source_mae_levels": 2.895646810531616,
+      "ordinary_guard_slack": 0.009999990463256836,
+      "halo_error": 28.59646472235851,
+      "accepted": false
+    },
+    {
+      "fraction": 0.0,
+      "source_ssim": 0.9437573649033242,
+      "source_mae_levels": 2.895646810531616,
+      "ordinary_guard_slack": 0.009999990463256836,
+      "halo_error": 28.59646472235851,
+      "accepted": false
+    }
+  ]
+}

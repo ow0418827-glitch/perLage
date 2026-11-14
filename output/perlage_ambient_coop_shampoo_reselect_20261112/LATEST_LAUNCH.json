@@ -1,0 +1,13 @@
+{
+  "status": "launched",
+  "launched_at": "2026-11-12T12:32:12.1274872+08:00",
+  "launcher_pid": 32052,
+  "executable": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "arguments": "-X utf8 -B -u \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_perlage_ambient_coop_shampoo_reselect_20261112.py\" --output \"D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\" --all",
+  "working_directory": "D:\\Material\\Literature Reading\\code\\perLage",
+  "stdout": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\logs\\controller.stdout.log",
+  "stderr": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_shampoo_reselect_20261112\\logs\\controller.stderr.log",
+  "detached": true,
+  "shopping_enabled": false,
+  "monitoring": "startup_confirmation_only"
+}

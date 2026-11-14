@@ -1,0 +1,46 @@
+{
+  "group": "01_camera",
+  "category": "camera",
+  "target": {
+    "asin": "B08V134QWR",
+    "brand": "PTZ",
+    "category": "security camera",
+    "attributes": [
+      "optical zoom",
+      "motion detection",
+      "night vision",
+      "waterproof"
+    ],
+    "canonical_sentence": "I want to buy a security camera with optical zoom and motion detection.",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and motion detection.",
+      "I would like to purchase a security camera featuring night vision and waterproof design.",
+      "Looking to buy a security camera with optical zoom and night vision."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B071ZFHTZN",
+    "brand": "SUNBA",
+    "category": "security camera",
+    "attributes": [
+      "optical zoom",
+      "auto tracking",
+      "humanoid detection",
+      "night vision"
+    ],
+    "canonical_sentence": "I want to buy a security camera with optical zoom and auto tracking.",
+    "training_queries": [
+      "I want to buy a security camera with optical zoom and auto tracking.",
+      "I would like to purchase a security camera featuring night vision and humanoid detection.",
+      "Looking to buy a security camera with outdoor speed dome and optical zoom."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy a security camera with optical zoom and motion detection.",
+  "alignment_training_queries": [
+    "I want to buy a security camera with optical zoom and motion detection.",
+    "I would like to purchase a security camera featuring night vision and waterproof design.",
+    "Looking to buy a security camera with optical zoom and night vision."
+  ]
+}

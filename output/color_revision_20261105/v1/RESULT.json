@@ -1,0 +1,1309 @@
+{
+  "version": "v1",
+  "completed": true,
+  "scope": "public_color_stage_only",
+  "checks": {
+    "mean_image_gain": false,
+    "each_image_gain": false,
+    "each_joint_gain": false,
+    "chair_regression": false,
+    "secondary_mean": false,
+    "secondary_no_regression": false,
+    "color_distance": true,
+    "protected_and_background": true
+  },
+  "numerical_gate_passed": false,
+  "manual_visual_review_pending": true,
+  "primary_encoder": {
+    "provider": "clip",
+    "loader": "attack_surrogate",
+    "surrogate_number": 2,
+    "surrogate": {
+      "role": "attack_surrogate",
+      "name": "ViT-B-32",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+      "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+      "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+      "requires_true_local_tokens": true
+    },
+    "fusion": "normalized_image_text_sum",
+    "text_policy": "clip_context_truncate"
+  },
+  "secondary_encoder": {
+    "provider": "clip",
+    "loader": "attack_surrogate",
+    "surrogate_number": 1,
+    "surrogate": {
+      "role": "attack_surrogate",
+      "name": "ViT-B-16",
+      "pretrained": "openai",
+      "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+      "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+      "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+      "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+      "device": "cuda",
+      "precision": "fp32",
+      "image_size": 224,
+      "preprocess": {
+        "resize": "bicubic_direct_square",
+        "align_corners": false,
+        "antialias": true,
+        "mean": [
+          0.48145466,
+          0.4578275,
+          0.40821073
+        ],
+        "std": [
+          0.26862954,
+          0.26130258,
+          0.27577711
+        ]
+      },
+      "open_clip_torch_version": "3.3.0",
+      "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+      "requires_true_local_tokens": true
+    },
+    "fusion": "normalized_image_text_sum",
+    "text_policy": "clip_context_truncate"
+  },
+  "elapsed_seconds": 57.907581699997536,
+  "rows": [
+    {
+      "group": "07_shampoo",
+      "version": "v1",
+      "scope": "color_stage_only",
+      "baseline": {
+        "image_cosine": 0.7649683952331543,
+        "joint_mean": 0.7337958812713623
+      },
+      "source": {
+        "image_cosine": 0.6722689867019653,
+        "joint_mean": 0.6860269904136658
+      },
+      "candidate": {
+        "params": {
+          "alpha": 0.5625,
+          "palette_index": 0,
+          "lightness_mix": 0.5,
+          "chroma_scale": 1.0
+        },
+        "source_ssim": 0.9842532655020152,
+        "source_mae": 6.653773784637451,
+        "image_cosine": 0.7016215324401855,
+        "joint_mean": 0.6968878507614136,
+        "feasible": true,
+        "utility": 1.0500654578208923
+      },
+      "image_gain": -0.06334686279296875,
+      "joint_gain": -0.03690803050994873,
+      "source_palette": [
+        {
+          "lab": [
+            95.10882802302818,
+            -0.011924982175229151,
+            0.16850844812579518
+          ],
+          "rgb": [
+            241,
+            241,
+            241
+          ],
+          "pixels": 102951,
+          "fraction": 0.9230210602759622
+        },
+        {
+          "lab": [
+            55.20796555293048,
+            3.58752557806875,
+            8.573035159902137
+          ],
+          "rgb": [
+            145,
+            130,
+            118
+          ],
+          "pixels": 4296,
+          "fraction": 0.03851636676618521
+        },
+        {
+          "lab": [
+            40.41842033751757,
+            13.762761160370527,
+            26.86857520107803
+          ],
+          "rgb": [
+            128,
+            86,
+            52
+          ],
+          "pixels": 1799,
+          "fraction": 0.016129176865076162
+        },
+        {
+          "lab": [
+            25.286058967915366,
+            13.216124739816909,
+            16.994146627880582
+          ],
+          "rgb": [
+            86,
+            52,
+            35
+          ],
+          "pixels": 1759,
+          "fraction": 0.015770551476191757
+        },
+        {
+          "lab": [
+            27.27287805047043,
+            5.6736976481135555,
+            -12.080412833702374
+          ],
+          "rgb": [
+            64,
+            62,
+            83
+          ],
+          "pixels": 732,
+          "fraction": 0.006562844616584631
+        }
+      ],
+      "target_palette": [
+        {
+          "lab": [
+            79.88450084297854,
+            4.141058054284303,
+            20.670464212026975
+          ],
+          "rgb": [
+            220,
+            194,
+            160
+          ],
+          "pixels": 43138,
+          "fraction": 0.8899938106044977
+        },
+        {
+          "lab": [
+            83.34691032090512,
+            -0.6710904398504806,
+            8.048909733388125
+          ],
+          "rgb": [
+            213,
+            207,
+            193
+          ],
+          "pixels": 3356,
+          "fraction": 0.06923870435320817
+        },
+        {
+          "lab": [
+            72.15566184832231,
+            8.447599120096084,
+            28.011654550409077
+          ],
+          "rgb": [
+            209,
+            170,
+            126
+          ],
+          "pixels": 1976,
+          "fraction": 0.0407674850422942
+        }
+      ],
+      "material_pixels": 103321,
+      "protected_pixels": 11392,
+      "protected_max_difference": 0,
+      "background_max_difference": 0,
+      "color_distance_before": 16.90420521550156,
+      "color_distance_after": 9.695568060147275,
+      "color_distance_reduction": 0.42644046634879895,
+      "trials": [
+        {
+          "params": {
+            "alpha": 0.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 1.0,
+          "source_mae": 0.0,
+          "image_cosine": 0.6722689867019653,
+          "joint_mean": 0.6860269904136658,
+          "feasible": true,
+          "utility": 1.0152824819087982
+        },
+        {
+          "params": {
+            "alpha": 0.0625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9996552884452913,
+          "source_mae": 0.7915064692497253,
+          "image_cosine": 0.6788545846939087,
+          "joint_mean": 0.6881206035614014,
+          "feasible": true,
+          "utility": 1.0229148864746094
+        },
+        {
+          "params": {
+            "alpha": 0.125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9987644184550668,
+          "source_mae": 1.554814338684082,
+          "image_cosine": 0.6870883703231812,
+          "joint_mean": 0.6905726194381714,
+          "feasible": true,
+          "utility": 1.0323746800422668
+        },
+        {
+          "params": {
+            "alpha": 0.1875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9975245914720948,
+          "source_mae": 2.2649543285369873,
+          "image_cosine": 0.6916755437850952,
+          "joint_mean": 0.6921994686126709,
+          "feasible": true,
+          "utility": 1.0377752780914307
+        },
+        {
+          "params": {
+            "alpha": 0.25,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9959713353251844,
+          "source_mae": 2.9341208934783936,
+          "image_cosine": 0.6953604221343994,
+          "joint_mean": 0.6937547922134399,
+          "feasible": true,
+          "utility": 1.0422378182411194
+        },
+        {
+          "params": {
+            "alpha": 0.3125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.993980082382188,
+          "source_mae": 3.6961679458618164,
+          "image_cosine": 0.6989618539810181,
+          "joint_mean": 0.6952912211418152,
+          "feasible": true,
+          "utility": 1.0466074645519257
+        },
+        {
+          "params": {
+            "alpha": 0.375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9916610311979763,
+          "source_mae": 4.469228744506836,
+          "image_cosine": 0.7001986503601074,
+          "joint_mean": 0.6957405805587769,
+          "feasible": true,
+          "utility": 1.0480689406394958
+        },
+        {
+          "params": {
+            "alpha": 0.4375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9893737257414761,
+          "source_mae": 5.217130184173584,
+          "image_cosine": 0.7001581788063049,
+          "joint_mean": 0.6958138346672058,
+          "feasible": true,
+          "utility": 1.0480650961399078
+        },
+        {
+          "params": {
+            "alpha": 0.5,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9868062624455354,
+          "source_mae": 5.945366382598877,
+          "image_cosine": 0.7015122771263123,
+          "joint_mean": 0.6964942216873169,
+          "feasible": true,
+          "utility": 1.0497593879699707
+        },
+        {
+          "params": {
+            "alpha": 0.5625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9842532655020152,
+          "source_mae": 6.653773784637451,
+          "image_cosine": 0.7016215324401855,
+          "joint_mean": 0.6968878507614136,
+          "feasible": true,
+          "utility": 1.0500654578208923
+        },
+        {
+          "params": {
+            "alpha": 0.625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9816189646068383,
+          "source_mae": 7.353912830352783,
+          "image_cosine": 0.7000495195388794,
+          "joint_mean": 0.6965639591217041,
+          "feasible": true,
+          "utility": 1.0483314990997314
+        },
+        {
+          "params": {
+            "alpha": 0.6875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9786923777410818,
+          "source_mae": 8.115330696105957,
+          "image_cosine": 0.6999228000640869,
+          "joint_mean": 0.6970012187957764,
+          "feasible": true,
+          "utility": 1.048423409461975
+        },
+        {
+          "params": {
+            "alpha": 0.75,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.975960381405634,
+          "source_mae": 8.770115852355957,
+          "image_cosine": 0.6985436081886292,
+          "joint_mean": 0.6970348358154297,
+          "feasible": true,
+          "utility": 1.047061026096344
+        },
+        {
+          "params": {
+            "alpha": 0.8125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9730153315414539,
+          "source_mae": 9.482200622558594,
+          "image_cosine": 0.6997500658035278,
+          "joint_mean": 0.698319137096405,
+          "feasible": true,
+          "utility": 1.0489096343517303
+        },
+        {
+          "params": {
+            "alpha": 0.875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9701190663234092,
+          "source_mae": 10.170660972595215,
+          "image_cosine": 0.6993614435195923,
+          "joint_mean": 0.6987824440002441,
+          "feasible": true,
+          "utility": 1.0487526655197144
+        },
+        {
+          "params": {
+            "alpha": 0.9375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9671466987392364,
+          "source_mae": 10.876468658447266,
+          "image_cosine": 0.6984487771987915,
+          "joint_mean": 0.6990763545036316,
+          "feasible": true,
+          "utility": 1.0479869544506073
+        },
+        {
+          "params": {
+            "alpha": 1.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9639837125507114,
+          "source_mae": 11.550025939941406,
+          "image_cosine": 0.6990106105804443,
+          "joint_mean": 0.6999501585960388,
+          "feasible": true,
+          "utility": 1.0489856898784637
+        }
+      ],
+      "secondary": {
+        "candidate": {
+          "image_cosine": 0.6643460988998413,
+          "joint_mean": 0.6823470592498779
+        },
+        "baseline": {
+          "image_cosine": 0.6713429689407349,
+          "joint_mean": 0.6874632835388184
+        },
+        "image_gain": -0.006996870040893555,
+        "joint_gain": -0.00511622428894043
+      }
+    },
+    {
+      "group": "09_toothbrush",
+      "version": "v1",
+      "scope": "color_stage_only",
+      "baseline": {
+        "image_cosine": 0.858569860458374,
+        "joint_mean": 0.7667831182479858
+      },
+      "source": {
+        "image_cosine": 0.7308014631271362,
+        "joint_mean": 0.7139279246330261
+      },
+      "candidate": {
+        "params": {
+          "alpha": 0.1875,
+          "palette_index": 0,
+          "lightness_mix": 0.5,
+          "chroma_scale": 1.0
+        },
+        "source_ssim": 0.9998086805983362,
+        "source_mae": 0.3626466989517212,
+        "image_cosine": 0.7433027625083923,
+        "joint_mean": 0.7205807566642761,
+        "feasible": true,
+        "utility": 1.1035931408405304
+      },
+      "image_gain": -0.11526709794998169,
+      "joint_gain": -0.04620236158370972,
+      "source_palette": [
+        {
+          "lab": [
+            74.3094346924616,
+            0.2918819372839,
+            0.13339783157413818
+          ],
+          "rgb": [
+            183,
+            183,
+            182
+          ],
+          "pixels": 15404,
+          "fraction": 0.33326842777092663
+        },
+        {
+          "lab": [
+            74.32948166778635,
+            22.04721043193227,
+            8.951305220719691
+          ],
+          "rgb": [
+            228,
+            168,
+            167
+          ],
+          "pixels": 15279,
+          "fraction": 0.3305640293373142
+        },
+        {
+          "lab": [
+            87.40896523613516,
+            -2.2326938297226513,
+            23.64410701725552
+          ],
+          "rgb": [
+            232,
+            219,
+            174
+          ],
+          "pixels": 7976,
+          "fraction": 0.17256225525194177
+        },
+        {
+          "lab": [
+            82.45034047923465,
+            14.540143460813507,
+            4.847667861523855
+          ],
+          "rgb": [
+            236,
+            196,
+            197
+          ],
+          "pixels": 4610,
+          "fraction": 0.09973821423162632
+        },
+        {
+          "lab": [
+            80.58239094808066,
+            7.085958281595776,
+            17.642439623371267
+          ],
+          "rgb": [
+            226,
+            194,
+            168
+          ],
+          "pixels": 1844,
+          "fraction": 0.03989528569265053
+        },
+        {
+          "lab": [
+            68.41138919996746,
+            26.823821139702876,
+            21.399797250754972
+          ],
+          "rgb": [
+            224,
+            148,
+            130
+          ],
+          "pixels": 1108,
+          "fraction": 0.023971787715540555
+        }
+      ],
+      "target_palette": [
+        {
+          "lab": [
+            76.65529864045097,
+            -17.691888289101037,
+            -15.0858253240109
+          ],
+          "rgb": [
+            130,
+            200,
+            216
+          ],
+          "pixels": 21560,
+          "fraction": 0.6302250803858521
+        },
+        {
+          "lab": [
+            87.85171007179191,
+            -0.035034863341962,
+            -0.3279898499749375
+          ],
+          "rgb": [
+            220,
+            220,
+            221
+          ],
+          "pixels": 11789,
+          "fraction": 0.3446068401052324
+        },
+        {
+          "lab": [
+            40.88982712772815,
+            -9.494572871149911,
+            -22.52770798487446
+          ],
+          "rgb": [
+            41,
+            103,
+            133
+          ],
+          "pixels": 861,
+          "fraction": 0.02516807950891552
+        }
+      ],
+      "material_pixels": 16039,
+      "protected_pixels": 29648,
+      "protected_max_difference": 0,
+      "background_max_difference": 0,
+      "color_distance_before": 23.46154393581098,
+      "color_distance_after": 19.417488605097518,
+      "color_distance_reduction": 0.1723695312541107,
+      "trials": [
+        {
+          "params": {
+            "alpha": 0.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 1.0,
+          "source_mae": 0.0,
+          "image_cosine": 0.7308014631271362,
+          "joint_mean": 0.7139279246330261,
+          "feasible": true,
+          "utility": 1.0877654254436493
+        },
+        {
+          "params": {
+            "alpha": 0.0625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9999771155945879,
+          "source_mae": 0.122840017080307,
+          "image_cosine": 0.7386497259140015,
+          "joint_mean": 0.7182748317718506,
+          "feasible": true,
+          "utility": 1.0977871417999268
+        },
+        {
+          "params": {
+            "alpha": 0.125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9999128003124297,
+          "source_mae": 0.24518270790576935,
+          "image_cosine": 0.7417407631874084,
+          "joint_mean": 0.7202617526054382,
+          "feasible": true,
+          "utility": 1.1018716394901276
+        },
+        {
+          "params": {
+            "alpha": 0.1875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9998086805983362,
+          "source_mae": 0.3626466989517212,
+          "image_cosine": 0.7433027625083923,
+          "joint_mean": 0.7205807566642761,
+          "feasible": true,
+          "utility": 1.1035931408405304
+        },
+        {
+          "params": {
+            "alpha": 0.25,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.999666205743548,
+          "source_mae": 0.4795307219028473,
+          "image_cosine": 0.741145133972168,
+          "joint_mean": 0.719448983669281,
+          "feasible": true,
+          "utility": 1.1008696258068085
+        },
+        {
+          "params": {
+            "alpha": 0.3125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9994928360275169,
+          "source_mae": 0.5941507816314697,
+          "image_cosine": 0.7397046089172363,
+          "joint_mean": 0.7183533906936646,
+          "feasible": true,
+          "utility": 1.0988813042640686
+        },
+        {
+          "params": {
+            "alpha": 0.375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9992898261548079,
+          "source_mae": 0.7128373980522156,
+          "image_cosine": 0.7395361661911011,
+          "joint_mean": 0.7178424596786499,
+          "feasible": true,
+          "utility": 1.098457396030426
+        },
+        {
+          "params": {
+            "alpha": 0.4375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.999054376269091,
+          "source_mae": 0.8349054455757141,
+          "image_cosine": 0.7393390536308289,
+          "joint_mean": 0.7174901366233826,
+          "feasible": true,
+          "utility": 1.0980841219425201
+        },
+        {
+          "params": {
+            "alpha": 0.5,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9987829375707685,
+          "source_mae": 0.9633334279060364,
+          "image_cosine": 0.7390134334564209,
+          "joint_mean": 0.7171658277511597,
+          "feasible": true,
+          "utility": 1.0975963473320007
+        },
+        {
+          "params": {
+            "alpha": 0.5625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9984796294103895,
+          "source_mae": 1.0931440591812134,
+          "image_cosine": 0.7393103837966919,
+          "joint_mean": 0.7170907855033875,
+          "feasible": true,
+          "utility": 1.0978557765483856
+        },
+        {
+          "params": {
+            "alpha": 0.625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9981446996562924,
+          "source_mae": 1.2238521575927734,
+          "image_cosine": 0.739195704460144,
+          "joint_mean": 0.7168283462524414,
+          "feasible": true,
+          "utility": 1.0976098775863647
+        },
+        {
+          "params": {
+            "alpha": 0.6875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9977762813575254,
+          "source_mae": 1.3550149202346802,
+          "image_cosine": 0.7397655248641968,
+          "joint_mean": 0.7168599963188171,
+          "feasible": true,
+          "utility": 1.0981955230236053
+        },
+        {
+          "params": {
+            "alpha": 0.75,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9973715753032336,
+          "source_mae": 1.4886083602905273,
+          "image_cosine": 0.7403996586799622,
+          "joint_mean": 0.7169381380081177,
+          "feasible": true,
+          "utility": 1.098868727684021
+        },
+        {
+          "params": {
+            "alpha": 0.8125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9969323949058914,
+          "source_mae": 1.6249041557312012,
+          "image_cosine": 0.7411156892776489,
+          "joint_mean": 0.7170223593711853,
+          "feasible": true,
+          "utility": 1.0996268689632416
+        },
+        {
+          "params": {
+            "alpha": 0.875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9964581570350971,
+          "source_mae": 1.762138843536377,
+          "image_cosine": 0.7416656017303467,
+          "joint_mean": 0.7170319557189941,
+          "feasible": true,
+          "utility": 1.1001815795898438
+        },
+        {
+          "params": {
+            "alpha": 0.9375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9959236881569571,
+          "source_mae": 1.9080829620361328,
+          "image_cosine": 0.7425872683525085,
+          "joint_mean": 0.7170943021774292,
+          "feasible": true,
+          "utility": 1.1011344194412231
+        },
+        {
+          "params": {
+            "alpha": 1.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9953504653715494,
+          "source_mae": 2.056389570236206,
+          "image_cosine": 0.7432694435119629,
+          "joint_mean": 0.7170687913894653,
+          "feasible": true,
+          "utility": 1.1018038392066956
+        }
+      ],
+      "secondary": {
+        "candidate": {
+          "image_cosine": 0.7758151292800903,
+          "joint_mean": 0.7249387502670288
+        },
+        "baseline": {
+          "image_cosine": 0.7931655645370483,
+          "joint_mean": 0.7384785413742065
+        },
+        "image_gain": -0.017350435256958008,
+        "joint_gain": -0.013539791107177734
+      }
+    },
+    {
+      "group": "02_chair",
+      "version": "v1",
+      "scope": "color_stage_only",
+      "baseline": {
+        "image_cosine": 0.9202423691749573,
+        "joint_mean": 0.8847853541374207
+      },
+      "source": {
+        "image_cosine": 0.8966195583343506,
+        "joint_mean": 0.8300012350082397
+      },
+      "candidate": {
+        "params": {
+          "alpha": 0.5625,
+          "palette_index": 0,
+          "lightness_mix": 0.5,
+          "chroma_scale": 1.0
+        },
+        "source_ssim": 0.997613709527533,
+        "source_mae": 0.6547666788101196,
+        "image_cosine": 0.9050846099853516,
+        "joint_mean": 0.8376102447509766,
+        "feasible": true,
+        "utility": 1.3238897323608398
+      },
+      "image_gain": -0.015157759189605713,
+      "joint_gain": -0.04717510938644409,
+      "source_palette": [
+        {
+          "lab": [
+            26.783159584275158,
+            11.649099009154769,
+            5.615994442484796
+          ],
+          "rgb": [
+            83,
+            57,
+            55
+          ],
+          "pixels": 50556,
+          "fraction": 0.65559229721844
+        },
+        {
+          "lab": [
+            50.00697862394137,
+            1.1917807240430132,
+            0.6498115363135841
+          ],
+          "rgb": [
+            122,
+            118,
+            118
+          ],
+          "pixels": 20681,
+          "fraction": 0.26818388121636516
+        },
+        {
+          "lab": [
+            26.0022022590145,
+            18.986641506352278,
+            16.042188656254613
+          ],
+          "rgb": [
+            94,
+            49,
+            38
+          ],
+          "pixels": 5878,
+          "fraction": 0.07622382156519483
+        }
+      ],
+      "target_palette": [
+        {
+          "lab": [
+            27.83502085691286,
+            5.423340527813106,
+            8.971937486766635
+          ],
+          "rgb": [
+            79,
+            62,
+            52
+          ],
+          "pixels": 50159,
+          "fraction": 0.5103319869362174
+        },
+        {
+          "lab": [
+            75.89492116780076,
+            2.2616652559583152,
+            -0.1587266354148959
+          ],
+          "rgb": [
+            191,
+            186,
+            187
+          ],
+          "pixels": 31426,
+          "fraction": 0.31973709646240095
+        },
+        {
+          "lab": [
+            43.10854507800016,
+            5.075257964926126,
+            18.461453548103037
+          ],
+          "rgb": [
+            121,
+            98,
+            72
+          ],
+          "pixels": 12038,
+          "fraction": 0.12247804897901045
+        },
+        {
+          "lab": [
+            66.89365227507128,
+            1.0596446105578974,
+            29.12063231825614
+          ],
+          "rgb": [
+            183,
+            160,
+            110
+          ],
+          "pixels": 4664,
+          "fraction": 0.04745286762237122
+        }
+      ],
+      "material_pixels": 60852,
+      "protected_pixels": 0,
+      "protected_max_difference": 0,
+      "background_max_difference": 0,
+      "color_distance_before": 7.918217176798168,
+      "color_distance_after": 4.291776528866005,
+      "color_distance_reduction": 0.45798701487480054,
+      "trials": [
+        {
+          "params": {
+            "alpha": 0.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 1.0,
+          "source_mae": 0.0,
+          "image_cosine": 0.8966195583343506,
+          "joint_mean": 0.8300012350082397,
+          "feasible": true,
+          "utility": 1.3116201758384705
+        },
+        {
+          "params": {
+            "alpha": 0.0625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.999906892020661,
+          "source_mae": 0.03491999953985214,
+          "image_cosine": 0.8970530033111572,
+          "joint_mean": 0.8302690386772156,
+          "feasible": true,
+          "utility": 1.312187522649765
+        },
+        {
+          "params": {
+            "alpha": 0.125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9997485435520733,
+          "source_mae": 0.14586801826953888,
+          "image_cosine": 0.8979794979095459,
+          "joint_mean": 0.8308104276657104,
+          "feasible": true,
+          "utility": 1.3133847117424011
+        },
+        {
+          "params": {
+            "alpha": 0.1875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9995927566856807,
+          "source_mae": 0.2129880040884018,
+          "image_cosine": 0.9009348154067993,
+          "joint_mean": 0.8323809504508972,
+          "feasible": true,
+          "utility": 1.317125290632248
+        },
+        {
+          "params": {
+            "alpha": 0.25,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9992778859386793,
+          "source_mae": 0.2923346757888794,
+          "image_cosine": 0.900722861289978,
+          "joint_mean": 0.8323240280151367,
+          "feasible": true,
+          "utility": 1.3168848752975464
+        },
+        {
+          "params": {
+            "alpha": 0.3125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9990135687729289,
+          "source_mae": 0.3668786883354187,
+          "image_cosine": 0.902158260345459,
+          "joint_mean": 0.8331496119499207,
+          "feasible": true,
+          "utility": 1.3187330663204193
+        },
+        {
+          "params": {
+            "alpha": 0.375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9987072984891366,
+          "source_mae": 0.4382653534412384,
+          "image_cosine": 0.9030005931854248,
+          "joint_mean": 0.8339269161224365,
+          "feasible": true,
+          "utility": 1.319964051246643
+        },
+        {
+          "params": {
+            "alpha": 0.4375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.998343167761994,
+          "source_mae": 0.5088813900947571,
+          "image_cosine": 0.903812050819397,
+          "joint_mean": 0.8345578908920288,
+          "feasible": true,
+          "utility": 1.3210909962654114
+        },
+        {
+          "params": {
+            "alpha": 0.5,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9979901823348261,
+          "source_mae": 0.5807240605354309,
+          "image_cosine": 0.9051245450973511,
+          "joint_mean": 0.8364855647087097,
+          "feasible": true,
+          "utility": 1.323367327451706
+        },
+        {
+          "params": {
+            "alpha": 0.5625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.997613709527533,
+          "source_mae": 0.6547666788101196,
+          "image_cosine": 0.9050846099853516,
+          "joint_mean": 0.8376102447509766,
+          "feasible": true,
+          "utility": 1.3238897323608398
+        },
+        {
+          "params": {
+            "alpha": 0.625,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9971791429545444,
+          "source_mae": 0.7263280153274536,
+          "image_cosine": 0.9038210511207581,
+          "joint_mean": 0.8377659320831299,
+          "feasible": true,
+          "utility": 1.322704017162323
+        },
+        {
+          "params": {
+            "alpha": 0.6875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9967868766579211,
+          "source_mae": 0.7962040305137634,
+          "image_cosine": 0.9003356695175171,
+          "joint_mean": 0.8385190963745117,
+          "feasible": true,
+          "utility": 1.319595217704773
+        },
+        {
+          "params": {
+            "alpha": 0.75,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9963502867140328,
+          "source_mae": 0.8705840706825256,
+          "image_cosine": 0.8985514044761658,
+          "joint_mean": 0.8382816314697266,
+          "feasible": true,
+          "utility": 1.317692220211029
+        },
+        {
+          "params": {
+            "alpha": 0.8125,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9958660695725055,
+          "source_mae": 0.939560055732727,
+          "image_cosine": 0.8950695991516113,
+          "joint_mean": 0.8377612829208374,
+          "feasible": true,
+          "utility": 1.31395024061203
+        },
+        {
+          "params": {
+            "alpha": 0.875,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9953939519834795,
+          "source_mae": 1.0150160789489746,
+          "image_cosine": 0.8921443223953247,
+          "joint_mean": 0.8380639553070068,
+          "feasible": true,
+          "utility": 1.3111763000488281
+        },
+        {
+          "params": {
+            "alpha": 0.9375,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9949412562264942,
+          "source_mae": 1.0835440158843994,
+          "image_cosine": 0.8883896470069885,
+          "joint_mean": 0.8370949029922485,
+          "feasible": true,
+          "utility": 1.3069370985031128
+        },
+        {
+          "params": {
+            "alpha": 1.0,
+            "palette_index": 0,
+            "lightness_mix": 0.5,
+            "chroma_scale": 1.0
+          },
+          "source_ssim": 0.9944198605597682,
+          "source_mae": 1.1549694538116455,
+          "image_cosine": 0.885115385055542,
+          "joint_mean": 0.8363965749740601,
+          "feasible": true,
+          "utility": 1.303313672542572
+        }
+      ],
+      "secondary": {
+        "candidate": {
+          "image_cosine": 0.9226382970809937,
+          "joint_mean": 0.8285046815872192
+        },
+        "baseline": {
+          "image_cosine": 0.922405481338501,
+          "joint_mean": 0.8309389352798462
+        },
+        "image_gain": 0.00023281574249267578,
+        "joint_gain": -0.002434253692626953
+      }
+    }
+  ],
+  "private_bank_used": false,
+  "formal_queries_used": false,
+  "shopping_runs": 0
+}

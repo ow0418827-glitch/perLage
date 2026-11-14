@@ -1,0 +1,610 @@
+{
+  "status": "completed",
+  "method": "perlage_generation_initialization",
+  "config": {
+    "latent_clean_steps": 40,
+    "latent_diffusion_steps": 40,
+    "pixel_clean_steps": 0,
+    "pixel_diffusion_steps": 0,
+    "latent_levels": 32,
+    "latent_working_size": 256,
+    "latent_limit": 0.5,
+    "latent_learning_rate": 0.012,
+    "latent_smoothing_mix": 0.1,
+    "pixel_levels": 0,
+    "pixel_start_levels": 0.5,
+    "pixel_end_levels": 0.08,
+    "momentum": 0.85,
+    "temperature": 0.04,
+    "teacher_weight": 0.5,
+    "semantic_image_weight": 1.0,
+    "semantic_joint_weight": 0.5,
+    "semantic_teacher_weight": 0.05,
+    "image_weight": 0.05,
+    "diffusion_weight": 3.0,
+    "shadow_weight": 0.0,
+    "guard_tolerance": 0.01,
+    "latent_guard_tolerance": 0.04,
+    "development_temperature": 0.01,
+    "guard_backtracks": 4,
+    "source_ssim_floor": 0.93,
+    "ordinary_ssim_floor": 0.95,
+    "source_mae_ceiling": 6.0,
+    "ssim_safety_buffer": 1e-05,
+    "tv_weight": 0.003,
+    "l2_weight": 0.001,
+    "check_every": 20,
+    "full_eot_samples": 1,
+    "diffusion_timesteps": [
+      99,
+      199,
+      399
+    ],
+    "validation_seeds": [
+      9301,
+      9302
+    ],
+    "training_seed_base": 710000000,
+    "ray_repair_iterations": 8
+  },
+  "history": [
+    {
+      "phase": "latent_clean",
+      "step": 0,
+      "ordinary_scores": [
+        [
+          0.8100521564483643
+        ],
+        [
+          0.8097906112670898
+        ],
+        [
+          0.8073390126228333
+        ],
+        [
+          0.7915538549423218
+        ],
+        [
+          0.7468704581260681
+        ],
+        [
+          0.8125723600387573
+        ],
+        [
+          0.8123308420181274
+        ],
+        [
+          0.8095085620880127
+        ],
+        [
+          0.8128862977027893
+        ],
+        [
+          0.8099349141120911
+        ]
+      ],
+      "source_ssim": 0.9759522598848812,
+      "source_mae": 2.2495648860931396,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.7956077456474304
+      ]
+    },
+    {
+      "phase": "latent_clean",
+      "step": 20,
+      "ordinary_scores": [
+        [
+          0.8374887108802795
+        ],
+        [
+          0.8385186195373535
+        ],
+        [
+          0.8378387689590454
+        ],
+        [
+          0.8285542726516724
+        ],
+        [
+          0.8123589754104614
+        ],
+        [
+          0.8364965915679932
+        ],
+        [
+          0.836639940738678
+        ],
+        [
+          0.8346201181411743
+        ],
+        [
+          0.8306111097335815
+        ],
+        [
+          0.8379684090614319
+        ]
+      ],
+      "source_ssim": 0.9519912491454225,
+      "source_mae": 4.166714191436768,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.8320314295706339
+      ]
+    },
+    {
+      "phase": "latent_clean",
+      "step": 40,
+      "ordinary_scores": [
+        [
+          0.8380681872367859
+        ],
+        [
+          0.8385943174362183
+        ],
+        [
+          0.8379584550857544
+        ],
+        [
+          0.8272300362586975
+        ],
+        [
+          0.8092056512832642
+        ],
+        [
+          0.8376848101615906
+        ],
+        [
+          0.8363139033317566
+        ],
+        [
+          0.8336111903190613
+        ],
+        [
+          0.8298878073692322
+        ],
+        [
+          0.8382837772369385
+        ]
+      ],
+      "source_ssim": 0.9579083609909868,
+      "source_mae": 4.036798477172852,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [],
+      "guard_min": 0.0,
+      "selection": [
+        1,
+        1,
+        0,
+        0.8313878246990498
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 0,
+      "ordinary_scores": [
+        [
+          0.8374887108802795
+        ],
+        [
+          0.8385186195373535
+        ],
+        [
+          0.8378387689590454
+        ],
+        [
+          0.8285542726516724
+        ],
+        [
+          0.8123589754104614
+        ],
+        [
+          0.8364965915679932
+        ],
+        [
+          0.836639940738678
+        ],
+        [
+          0.8346201181411743
+        ],
+        [
+          0.8306111097335815
+        ],
+        [
+          0.8379684090614319
+        ]
+      ],
+      "source_ssim": 0.9519912491454225,
+      "source_mae": 4.166714191436768,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.820145845413208,
+          "public_margin_value": 0.820145845413208
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.8229597210884094,
+          "public_margin_value": 0.8229597210884094
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.8151589632034302,
+          "public_margin_value": 0.8151589632034302
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.8193111419677734,
+          "public_margin_value": 0.8193111419677734
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.8129276037216187,
+          "public_margin_value": 0.8129276037216187
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.8115428686141968,
+          "public_margin_value": 0.8115428686141968
+        }
+      ],
+      "guard_min": 0.04000002145767212,
+      "selection": [
+        1,
+        1,
+        0,
+        0.8163378246244974
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 20,
+      "ordinary_scores": [
+        [
+          0.8378270864486694
+        ],
+        [
+          0.8377833962440491
+        ],
+        [
+          0.8362998366355896
+        ],
+        [
+          0.8236709237098694
+        ],
+        [
+          0.7954027652740479
+        ],
+        [
+          0.8378819823265076
+        ],
+        [
+          0.8373190760612488
+        ],
+        [
+          0.8326765894889832
+        ],
+        [
+          0.8272771239280701
+        ],
+        [
+          0.8377279043197632
+        ]
+      ],
+      "source_ssim": 0.9546960023928585,
+      "source_mae": 4.3128252029418945,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.8318935036659241,
+          "public_margin_value": 0.8318935036659241
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.8315246105194092,
+          "public_margin_value": 0.8315246105194092
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.8280351758003235,
+          "public_margin_value": 0.8280351758003235
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.8295528888702393,
+          "public_margin_value": 0.8295528888702393
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.8202593326568604,
+          "public_margin_value": 0.8202593326568604
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.8197253942489624,
+          "public_margin_value": 0.8197253942489624
+        }
+      ],
+      "guard_min": 0.023043811321258545,
+      "selection": [
+        1,
+        1,
+        0,
+        0.8259244054206647
+      ]
+    },
+    {
+      "phase": "latent_diffusion",
+      "step": 40,
+      "ordinary_scores": [
+        [
+          0.8348503112792969
+        ],
+        [
+          0.8349131941795349
+        ],
+        [
+          0.8328315615653992
+        ],
+        [
+          0.8192973136901855
+        ],
+        [
+          0.7833305597305298
+        ],
+        [
+          0.8336490988731384
+        ],
+        [
+          0.8347799181938171
+        ],
+        [
+          0.8303973078727722
+        ],
+        [
+          0.8262914419174194
+        ],
+        [
+          0.8346438407897949
+        ]
+      ],
+      "source_ssim": 0.9649881480738901,
+      "source_mae": 3.915029287338257,
+      "active_ssim_floor": 0.95,
+      "quality_ok": true,
+      "diffusion": [
+        {
+          "timestep": 99,
+          "seed": 9301,
+          "utility": 0.8292591571807861,
+          "public_margin_value": 0.8292591571807861
+        },
+        {
+          "timestep": 99,
+          "seed": 9302,
+          "utility": 0.830382227897644,
+          "public_margin_value": 0.830382227897644
+        },
+        {
+          "timestep": 199,
+          "seed": 9301,
+          "utility": 0.8259143829345703,
+          "public_margin_value": 0.8259143829345703
+        },
+        {
+          "timestep": 199,
+          "seed": 9302,
+          "utility": 0.8281000256538391,
+          "public_margin_value": 0.8281000256538391
+        },
+        {
+          "timestep": 399,
+          "seed": 9301,
+          "utility": 0.8214300274848938,
+          "public_margin_value": 0.8214300274848938
+        },
+        {
+          "timestep": 399,
+          "seed": 9302,
+          "utility": 0.8200008869171143,
+          "public_margin_value": 0.8200008869171143
+        }
+      ],
+      "guard_min": 0.010971605777740479,
+      "selection": [
+        1,
+        1,
+        0,
+        0.8252871522709029
+      ]
+    }
+  ],
+  "artifacts": {
+    "latent_clean": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\latent_clean.png",
+      "sha256": "c48ecb95492f8ed48318073fc4d1c0d4b21151ead3f37241e7a64560efa12dc2",
+      "best": {
+        "phase": "latent_clean",
+        "step": 20,
+        "ordinary_scores": [
+          [
+            0.8374887108802795
+          ],
+          [
+            0.8385186195373535
+          ],
+          [
+            0.8378387689590454
+          ],
+          [
+            0.8285542726516724
+          ],
+          [
+            0.8123589754104614
+          ],
+          [
+            0.8364965915679932
+          ],
+          [
+            0.836639940738678
+          ],
+          [
+            0.8346201181411743
+          ],
+          [
+            0.8306111097335815
+          ],
+          [
+            0.8379684090614319
+          ]
+        ],
+        "source_ssim": 0.9519912491454225,
+        "source_mae": 4.166714191436768,
+        "active_ssim_floor": 0.95,
+        "quality_ok": true,
+        "diffusion": [],
+        "guard_min": 0.0,
+        "selection": [
+          1,
+          1,
+          0,
+          0.8320314295706339
+        ]
+      }
+    },
+    "latent_diffusion": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\05_hair_extension\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\latent_diffusion.png",
+      "sha256": "5e3a990effd61be7153730a3f0e73d69f2b70a84601c35ec63e08437c78658f2",
+      "best": {
+        "phase": "latent_diffusion",
+        "step": 20,
+        "ordinary_scores": [
+          [
+            0.8378270864486694
+          ],
+          [
+            0.8377833962440491
+          ],
+          [
+            0.8362998366355896
+          ],
+          [
+            0.8236709237098694
+          ],
+          [
+            0.7954027652740479
+          ],
+          [
+            0.8378819823265076
+          ],
+          [
+            0.8373190760612488
+          ],
+          [
+            0.8326765894889832
+          ],
+          [
+            0.8272771239280701
+          ],
+          [
+            0.8377279043197632
+          ]
+        ],
+        "source_ssim": 0.9546960023928585,
+        "source_mae": 4.3128252029418945,
+        "active_ssim_floor": 0.95,
+        "quality_ok": true,
+        "diffusion": [
+          {
+            "timestep": 99,
+            "seed": 9301,
+            "utility": 0.8318935036659241,
+            "public_margin_value": 0.8318935036659241
+          },
+          {
+            "timestep": 99,
+            "seed": 9302,
+            "utility": 0.8315246105194092,
+            "public_margin_value": 0.8315246105194092
+          },
+          {
+            "timestep": 199,
+            "seed": 9301,
+            "utility": 0.8280351758003235,
+            "public_margin_value": 0.8280351758003235
+          },
+          {
+            "timestep": 199,
+            "seed": 9302,
+            "utility": 0.8295528888702393,
+            "public_margin_value": 0.8295528888702393
+          },
+          {
+            "timestep": 399,
+            "seed": 9301,
+            "utility": 0.8202593326568604,
+            "public_margin_value": 0.8202593326568604
+          },
+          {
+            "timestep": 399,
+            "seed": 9302,
+            "utility": 0.8197253942489624,
+            "public_margin_value": 0.8197253942489624
+          }
+        ],
+        "guard_min": 0.023043811321258545,
+        "selection": [
+          1,
+          1,
+          0,
+          0.8259244054206647
+        ]
+      }
+    }
+  },
+  "output_sha256": "5e3a990effd61be7153730a3f0e73d69f2b70a84601c35ec63e08437c78658f2",
+  "generative_anchor_sha256": "5e3a990effd61be7153730a3f0e73d69f2b70a84601c35ec63e08437c78658f2",
+  "elapsed_seconds": 356.6902294999891,
+  "initial_generation_cost_included": false,
+  "source_ssim": 0.9546960023928585,
+  "source_mae_levels": 4.3128252029418945,
+  "source_max_levels": 69.00000762939453,
+  "pixel_residual_max_levels": 0.0,
+  "pixel_residual_mae_levels": 0.0,
+  "accepted_updates": 80,
+  "rejected_updates": 0,
+  "ray_repairs": 5,
+  "feasibility_repair": "fixed_phase_reference_ray_actual_validation",
+  "peak_allocated_bytes": 6530516992,
+  "private_gallery_used": false,
+  "true_rank_used": false
+}

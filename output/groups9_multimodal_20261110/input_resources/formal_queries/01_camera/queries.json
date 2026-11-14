@@ -1,0 +1,65 @@
+{
+  "schema_version": 3,
+  "status": "ready",
+  "query_mode": "joint",
+  "target_public_id": "B08V134QWR",
+  "instruction_policy": "public_target_features_fixed20_v1",
+  "category": "security camera",
+  "core_attributes": [
+    "optical zoom",
+    "motion detection",
+    "night vision"
+  ],
+  "instructions": [
+    "I want to buy a security camera with optical zoom and motion detection.",
+    "I would like to purchase a security camera featuring optical zoom and night vision.",
+    "Looking to buy a security camera with motion detection and night vision.",
+    "I am looking to buy a security camera with optical zoom and motion detection.",
+    "Please help me buy a security camera featuring optical zoom and night vision.",
+    "I am shopping for a security camera with motion detection and night vision.",
+    "I would like to buy a security camera with optical zoom and motion detection.",
+    "Help me purchase a security camera featuring optical zoom and night vision.",
+    "I am looking for a security camera with motion detection and night vision.",
+    "Please find a security camera with optical zoom and motion detection for me to buy.",
+    "I want to purchase a security camera featuring optical zoom and night vision.",
+    "Please help me purchase a security camera with motion detection and night vision.",
+    "I need to buy a security camera with optical zoom and motion detection.",
+    "I would like help finding a security camera featuring optical zoom and night vision.",
+    "Find me a security camera with motion detection and night vision to purchase.",
+    "Please look for a security camera with optical zoom and motion detection that I can buy.",
+    "I am interested in buying a security camera featuring optical zoom and night vision.",
+    "I would like to shop for a security camera with motion detection and night vision.",
+    "Help me find a security camera with optical zoom and motion detection to buy.",
+    "I am ready to purchase a security camera featuring optical zoom and night vision."
+  ],
+  "instructions_sha256": "acf65d95a953b51b6e2848a3929a68cd8ed03ed0e4b2e3623fe9075b9160504c",
+  "training_overlap": {
+    "normalized_exact_overlap_count": 1,
+    "query_numbers": [
+      1
+    ],
+    "normalization": "whitespace_and_casefold",
+    "policy": "user_requested_templates_overlap_allowed_reported",
+    "semantic_independence_claimed": false
+  },
+  "query_image_required": true,
+  "query_images_generated": true,
+  "sampling": "fixed_templates_no_sampling_or_outcome_selection",
+  "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\groups9_multimodal_20261110\\input_resources\\query_images\\01_camera\\query.png",
+  "sha256": "0f88116eed2a9493fcf0a8fc002c6309483b9c6b7e90da23e8c4b9458052c50d",
+  "review": {
+    "no_explicit_product_name": true,
+    "no_brand": true,
+    "no_recognizable_logo": true,
+    "no_readable_text": true,
+    "reviewer": "当前会话主智能体逐张视觉核对",
+    "actual_visual_review": true,
+    "notes": "已实际查看生成图：白色球形安防摄像机、深色镜头及红外灯，外壳无文字和品牌标志。",
+    "image_sha256": "0f88116eed2a9493fcf0a8fc002c6309483b9c6b7e90da23e8c4b9458052c50d",
+    "ambiguity_definition": "保留品类与一般可见外形，无品牌身份和商品名称；轻微柔焦，不依靠事后选图或检索排名。"
+  },
+  "query_image_weight": 0.5,
+  "query_text_weight": 0.5,
+  "task_id_prefix": "feature",
+  "text_instructions_preserved": true
+}

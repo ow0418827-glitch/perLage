@@ -1,0 +1,7 @@
+{
+  "status": "stopped_by_user_scope_change",
+  "stage": "evaluate",
+  "stopped_at": "2026-11-04T17:21:02.867575+00:00",
+  "reason": "User confirmed both images are complete and requested only undefended retrieval and final shopping; no more defense tests.",
+  "continued_in": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\shared_groups29_20261105_nodefense"
+}

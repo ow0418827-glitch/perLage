@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "plan_sha256": "6b15de5520615214e9113b0ffcf8da2748f0877bd35e301bf92fa635ff038e56",
+  "fresh_encoder_process": true,
+  "encoder_device": "cuda",
+  "full_bank_scores_recomputed": 34020,
+  "variants": 9,
+  "query_count": 20,
+  "max_absolute_error": 0.0,
+  "rankings_sha256": "1ceac701d070c2b5fd839abd20e9c5d45231e1eb9a85b51c1ed0410eeb600b32",
+  "similarities_sha256": "5b1ecdb4a48b85be96948553273b78e74fb8258447739dd596cc4e1222f891a7"
+}

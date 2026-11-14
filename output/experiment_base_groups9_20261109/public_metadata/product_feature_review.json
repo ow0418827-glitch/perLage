@@ -1,0 +1,890 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-09",
+  "source_catalog": "D:\\Material\\Literature Reading\\code\\lage\\src\\output\\nine_group_catalog_full\\catalog.sqlite",
+  "source_catalog_sha256": "cbfe10eb111814c7a45e82383173df4f601d08cc9f7d2fd3069429ee71ce42a2",
+  "policy": "Every feature is supported by literal public Title, BulletPoints, Description or Attributes. Brands use unambiguous public maker attribution or directly inspected image text tied to the selected image digest. Formal instructions, retrieval ranks and purchase traces were not used. Unknown or conflicted brands remain empty.",
+  "products": {
+    "B08V134QWR": {
+      "asin": "B08V134QWR",
+      "title": "PTZ Security Camera Outdoor 30X Optical Zoom Camera WiFi Wireless 5MP RTSP IP Camera 1000FT Night Vision Auto Tracking Emergency Strobe Light Alarm Human Detection 2-Way Audio IP66 Waterproof",
+      "brand": "HXVIEW",
+      "brand_evidence": {
+        "verified": true,
+        "visual_verified": true,
+        "field": "PrimaryImage",
+        "quote": "HXVIEW",
+        "image": "groups/01_camera/target.jpg",
+        "image_relative_to_package": "groups/01_camera/target.jpg",
+        "image_sha256": "3e640007088747b83c734fe3a612c241f88b370490d99b3aca717f92f4dd0126",
+        "review_note": "Direct visual inspection of the original selected target image: HXVIEW is printed on the white camera housing. PTZ is the camera mechanism, not its brand."
+      },
+      "category": "security camera",
+      "attributes": [
+        "optical zoom",
+        "motion detection",
+        "night vision",
+        "waterproof construction"
+      ],
+      "canonical_sentence": "I want to buy a security camera with optical zoom and motion detection.",
+      "training_queries": [
+        "I want to buy a security camera with optical zoom and motion detection.",
+        "I would like to purchase a security camera featuring optical zoom and night vision.",
+        "I am looking for a security camera with motion detection and waterproof construction."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "optical zoom",
+          "field": "Title",
+          "quote": "30X Optical Zoom"
+        },
+        {
+          "feature": "motion detection",
+          "field": "Attributes",
+          "index": 4,
+          "quote": "motion detection"
+        },
+        {
+          "feature": "night vision",
+          "field": "Title",
+          "quote": "1000FT Night Vision"
+        },
+        {
+          "feature": "waterproof construction",
+          "field": "Title",
+          "quote": "IP66 Waterproof"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B071ZFHTZN": {
+      "asin": "B071ZFHTZN",
+      "title": "SUNBA 3MP Starlight IP PoE+ Outdoor PTZ Camera, 20x Optical Zoom @H.265, 24x7 Automatic PTZ Tour, Long Range Infrared Night Vision up to 328ft (405-D20X V2)",
+      "brand": "SUNBA",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "SUNBA",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "security camera",
+      "attributes": [
+        "optical zoom",
+        "night vision",
+        "a high-speed pan and tilt mechanism",
+        "an outdoor waterproof housing"
+      ],
+      "canonical_sentence": "I want to buy a security camera with optical zoom and night vision.",
+      "training_queries": [
+        "I want to buy a security camera with optical zoom and night vision.",
+        "I would like to purchase a security camera featuring optical zoom and a high-speed pan and tilt mechanism.",
+        "I am looking for a security camera with night vision and an outdoor waterproof housing."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "optical zoom",
+          "field": "Title",
+          "quote": "20x Optical Zoom"
+        },
+        {
+          "feature": "night vision",
+          "field": "Title",
+          "quote": "Infrared Night Vision"
+        },
+        {
+          "feature": "a high-speed pan and tilt mechanism",
+          "field": "Attributes",
+          "index": 2,
+          "quote": "high speed"
+        },
+        {
+          "feature": "an outdoor waterproof housing",
+          "field": "BulletPoints",
+          "index": 3,
+          "quote": "Outdoor IP66 rated aluminum"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B09CYFD5BX": {
+      "asin": "B09CYFD5BX",
+      "title": "LTHDD Bar Stool Swivel Barber Chair Hydraulic Barber Chairs Heavy Duty 360 Degrees Rolling Salon Chair for Hair Stylist Tattoo Chair Salon Equipment,Blue,1 (Color : Black, Size : 1)",
+      "brand": "LTHDD",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "LTHDD",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "barber chair",
+      "attributes": [
+        "a heavy-duty hydraulic pump",
+        "360-degree rotation",
+        "an adjustable seat height",
+        "a high-density foam cushion"
+      ],
+      "canonical_sentence": "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+      "training_queries": [
+        "I want to buy a barber chair with a heavy-duty hydraulic pump and 360-degree rotation.",
+        "I would like to purchase a barber chair featuring a heavy-duty hydraulic pump and an adjustable seat height.",
+        "I am looking for a barber chair with 360-degree rotation and a high-density foam cushion."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a heavy-duty hydraulic pump",
+          "field": "Description",
+          "quote": "Heavy-duty hydraulic pump"
+        },
+        {
+          "feature": "360-degree rotation",
+          "field": "Description",
+          "quote": "360 degree rotating barber chair"
+        },
+        {
+          "feature": "an adjustable seat height",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "seat height can be adjusted between 49-65cm"
+        },
+        {
+          "feature": "a high-density foam cushion",
+          "field": "Description",
+          "quote": "High density foam cushion"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B08GCSRXKS": {
+      "asin": "B08GCSRXKS",
+      "title": "Buy-Rite Chelsea Styling Chair for Salons and Stylists, Tufted Seat-Back and Brass Nail Head Trim Detailing, Steel Frame with Hydraulic Pump, 3.5” Thick Removable Seat Cushion, NIN-9902 (Black)",
+      "brand": "Buy-Rite",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Buy-Rite",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "styling chair",
+      "attributes": [
+        "a removable seat cushion",
+        "a hydraulic pump",
+        "a steel frame",
+        "a tufted seat back"
+      ],
+      "canonical_sentence": "I want to buy a styling chair with a removable seat cushion and a hydraulic pump.",
+      "training_queries": [
+        "I want to buy a styling chair with a removable seat cushion and a hydraulic pump.",
+        "I would like to purchase a styling chair featuring a removable seat cushion and a steel frame.",
+        "I am looking for a styling chair with a hydraulic pump and a tufted seat back."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a removable seat cushion",
+          "field": "Title",
+          "quote": "Removable Seat Cushion"
+        },
+        {
+          "feature": "a hydraulic pump",
+          "field": "Title",
+          "quote": "Hydraulic Pump"
+        },
+        {
+          "feature": "a steel frame",
+          "field": "Title",
+          "quote": "Steel Frame"
+        },
+        {
+          "feature": "a tufted seat back",
+          "field": "Title",
+          "quote": "Tufted Seat-Back"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B08Z8MHWVS": {
+      "asin": "B08Z8MHWVS",
+      "title": "Eggless Raw Edible Cookie Dough, Edible Frozen Cookie Dough - Big Dipper Dough Co: (2 Pints-ChocoChip & CookienCream)",
+      "brand": "Big Dipper Dough Co",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Big Dipper Dough Co",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "cookie dough",
+      "attributes": [
+        "natural ingredients",
+        "chocolate chips",
+        "an egg-free recipe",
+        "a ready-to-eat recipe"
+      ],
+      "canonical_sentence": "I want to buy cookie dough with natural ingredients and chocolate chips.",
+      "training_queries": [
+        "I want to buy cookie dough with natural ingredients and chocolate chips.",
+        "I would like to purchase cookie dough featuring natural ingredients and an egg-free recipe.",
+        "I am looking for cookie dough with chocolate chips and a ready-to-eat recipe."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "natural ingredients",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "All-natural Ingredients"
+        },
+        {
+          "feature": "chocolate chips",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "chocolate chips"
+        },
+        {
+          "feature": "an egg-free recipe",
+          "field": "BulletPoints",
+          "index": 3,
+          "quote": "egg-free"
+        },
+        {
+          "feature": "a ready-to-eat recipe",
+          "field": "BulletPoints",
+          "index": 4,
+          "quote": "Ready to Eat"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B07BBLWTLM": {
+      "asin": "B07BBLWTLM",
+      "title": "Natural Decadence, Cookie Dough Chocolate Chip, 14 Ounce",
+      "brand": "Natural Decadence",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Natural Decadence",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "cookie dough",
+      "attributes": [
+        "chocolate chips",
+        "a nut-free recipe",
+        "a gluten-free recipe",
+        "a vegan recipe"
+      ],
+      "canonical_sentence": "I want to buy cookie dough with chocolate chips and a nut-free recipe.",
+      "training_queries": [
+        "I want to buy cookie dough with chocolate chips and a nut-free recipe.",
+        "I would like to purchase cookie dough featuring chocolate chips and a gluten-free recipe.",
+        "I am looking for cookie dough with a nut-free recipe and a vegan recipe."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "chocolate chips",
+          "field": "Title",
+          "quote": "Chocolate Chip"
+        },
+        {
+          "feature": "a nut-free recipe",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "Nut-free"
+        },
+        {
+          "feature": "a gluten-free recipe",
+          "field": "Description",
+          "quote": "gluten-free"
+        },
+        {
+          "feature": "a vegan recipe",
+          "field": "BulletPoints",
+          "index": 4,
+          "quote": "Vegan"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B086PW7TWX": {
+      "asin": "B086PW7TWX",
+      "title": "Windows Treatment Blackout Curtains Grommet Drapes for Boys/Girls Kids Bedroom DRINKES ARE ON ME Vintage Wood Board Texture Printed Room Darkening Curtains for Livingroom/Office, 1 Panel 52x45in",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "reason": "Windows Treatment is a generic product phrase; no explicit brand attribution is present."
+      },
+      "category": "curtains",
+      "attributes": [
+        "a blackout design",
+        "a vintage wood board texture",
+        "machine-washable fabric",
+        "rust-proof grommets"
+      ],
+      "canonical_sentence": "I want to buy curtains with a blackout design and a vintage wood board texture.",
+      "training_queries": [
+        "I want to buy curtains with a blackout design and a vintage wood board texture.",
+        "I would like to purchase curtains featuring a blackout design and machine-washable fabric.",
+        "I am looking for curtains with a vintage wood board texture and rust-proof grommets."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a blackout design",
+          "field": "Title",
+          "quote": "Blackout Curtains"
+        },
+        {
+          "feature": "a vintage wood board texture",
+          "field": "Title",
+          "quote": "Vintage Wood Board Texture"
+        },
+        {
+          "feature": "machine-washable fabric",
+          "field": "BulletPoints",
+          "index": 5,
+          "quote": "Machine washable"
+        },
+        {
+          "feature": "rust-proof grommets",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "rust-proof grommet"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B09PHLS2QD": {
+      "asin": "B09PHLS2QD",
+      "title": "Window Treatment Semi-Sheer Curtain Valentine's Day Red Flower Love Rose,Privacy Drapes for Kitchen/Living Room/Bathroom,Vintage Brown Wood Grain Light Filtering Curtains 52x84in",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "reason": "Window Treatment is a generic product phrase; no explicit brand attribution is present."
+      },
+      "category": "curtains",
+      "attributes": [
+        "semi-sheer chiffon fabric",
+        "a vintage brown wood grain pattern",
+        "a light-filtering design",
+        "machine-washable fabric"
+      ],
+      "canonical_sentence": "I want to buy curtains with semi-sheer chiffon fabric and a vintage brown wood grain pattern.",
+      "training_queries": [
+        "I want to buy curtains with semi-sheer chiffon fabric and a vintage brown wood grain pattern.",
+        "I would like to purchase curtains featuring semi-sheer chiffon fabric and a light-filtering design.",
+        "I am looking for curtains with a vintage brown wood grain pattern and machine-washable fabric."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "semi-sheer chiffon fabric",
+          "field": "BulletPoints",
+          "index": 0,
+          "quote": "Semi-sheer curtain is made of chiffon fabric"
+        },
+        {
+          "feature": "a vintage brown wood grain pattern",
+          "field": "Title",
+          "quote": "Vintage Brown Wood Grain"
+        },
+        {
+          "feature": "a light-filtering design",
+          "field": "Title",
+          "quote": "Light Filtering Curtains"
+        },
+        {
+          "feature": "machine-washable fabric",
+          "field": "BulletPoints",
+          "index": 4,
+          "quote": "gentle machine washing"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B01460C2I2": {
+      "asin": "B01460C2I2",
+      "title": "S-noilite Clip in Hair Extension Human Hair Double Weft 8pcs 150g 20 Inch Jet Black Clip in Real Human Hair Extension for Women Adding Natural Volume Thick Clip in Extension #1",
+      "brand": "S-noilite",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "S-noilite",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "hair extensions",
+      "attributes": [
+        "real human hair",
+        "double wefts",
+        "a clip-in design",
+        "rubber-lined clips"
+      ],
+      "canonical_sentence": "I want to buy hair extensions with real human hair and double wefts.",
+      "training_queries": [
+        "I want to buy hair extensions with real human hair and double wefts.",
+        "I would like to purchase hair extensions featuring real human hair and a clip-in design.",
+        "I am looking for hair extensions with double wefts and rubber-lined clips."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "real human hair",
+          "field": "Title",
+          "quote": "Real Human Hair"
+        },
+        {
+          "feature": "double wefts",
+          "field": "BulletPoints",
+          "index": 0,
+          "quote": "double wefts"
+        },
+        {
+          "feature": "a clip-in design",
+          "field": "Title",
+          "quote": "Clip in Hair Extension"
+        },
+        {
+          "feature": "rubber-lined clips",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "Rubber lined"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B07Z7MQSM1": {
+      "asin": "B07Z7MQSM1",
+      "title": "Kinky Straight Clip In Human Hair Extensions for Women,120g 10pcs Remy Hair Clip In Extensions Double Weft 12 Inch #1B Natural Black Human Hair Clip in Extensions",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "reason": "The title starts with the hair texture, not an identifiable brand; no explicit brand field exists."
+      },
+      "category": "hair extensions",
+      "attributes": [
+        "kinky straight human hair",
+        "double wefts",
+        "a natural black color",
+        "stainless steel clips"
+      ],
+      "canonical_sentence": "I want to buy hair extensions with kinky straight human hair and double wefts.",
+      "training_queries": [
+        "I want to buy hair extensions with kinky straight human hair and double wefts.",
+        "I would like to purchase hair extensions featuring kinky straight human hair and a natural black color.",
+        "I am looking for hair extensions with double wefts and stainless steel clips."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "kinky straight human hair",
+          "field": "Title",
+          "quote": "Kinky Straight Clip In Human Hair"
+        },
+        {
+          "feature": "double wefts",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "Double Wefts"
+        },
+        {
+          "feature": "a natural black color",
+          "field": "Title",
+          "quote": "Natural Black"
+        },
+        {
+          "feature": "stainless steel clips",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "Stainless Steel Clips"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B09HH96NJY": {
+      "asin": "B09HH96NJY",
+      "title": "Womens High Rise Jeans Wide Leg Pants Patchwork Straight Boyfriend Jeans Y2K 90s E-Girl Wild Baggy Trousers Denim Pants",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "reason": "Womens and Bell Bottom are not evidenced brands; no explicit brand attribution is present."
+      },
+      "category": "jeans",
+      "attributes": [
+        "a high waist",
+        "a baggy straight-leg cut",
+        "flap pockets",
+        "a zipper fly"
+      ],
+      "canonical_sentence": "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+      "training_queries": [
+        "I want to buy jeans with a high waist and a baggy straight-leg cut.",
+        "I would like to purchase jeans featuring a high waist and flap pockets.",
+        "I am looking for jeans with a baggy straight-leg cut and a zipper fly."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a high waist",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "high waist"
+        },
+        {
+          "feature": "a baggy straight-leg cut",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "baggy straight leg"
+        },
+        {
+          "feature": "flap pockets",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "flap pockets"
+        },
+        {
+          "feature": "a zipper fly",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "zipper fly closure"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B07FRKQNFV": {
+      "asin": "B07FRKQNFV",
+      "title": "Cinch Men's Bronze Label Tapered Slim Fit Jeans Dark Stone 29W x 32L",
+      "brand": "Cinch",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Cinch",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "jeans",
+      "attributes": [
+        "a tapered slim fit",
+        "cotton denim",
+        "a button closure",
+        "a zipper fly"
+      ],
+      "canonical_sentence": "I want to buy jeans with a tapered slim fit and cotton denim.",
+      "training_queries": [
+        "I want to buy jeans with a tapered slim fit and cotton denim.",
+        "I would like to purchase jeans featuring a tapered slim fit and a button closure.",
+        "I am looking for jeans with cotton denim and a zipper fly."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a tapered slim fit",
+          "field": "Title",
+          "quote": "Tapered Slim Fit"
+        },
+        {
+          "feature": "cotton denim",
+          "field": "BulletPoints",
+          "index": 0,
+          "quote": "100% Cotton"
+        },
+        {
+          "feature": "a button closure",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "Button closure"
+        },
+        {
+          "feature": "a zipper fly",
+          "field": "BulletPoints",
+          "index": 5,
+          "quote": "zip fly"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B00BDJODWI": {
+      "asin": "B00BDJODWI",
+      "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+      "brand": "Aveda",
+      "brand_evidence": {
+        "verified": true,
+        "field": "BulletPoints",
+        "index": 3,
+        "quote": "Manufacturer: Aveda",
+        "basis": "Explicit manufacturer attribution."
+      },
+      "category": "shampoo",
+      "attributes": [
+        "plant-based haircare ingredients",
+        "a balancing formula",
+        "plant and flower essences",
+        "scalp care"
+      ],
+      "canonical_sentence": "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+      "training_queries": [
+        "I want to buy shampoo with plant-based haircare ingredients and a balancing formula.",
+        "I would like to purchase shampoo featuring plant-based haircare ingredients and plant and flower essences.",
+        "I am looking for shampoo with a balancing formula and scalp care."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "plant-based haircare ingredients",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "High Performance Plant Based Haircare"
+        },
+        {
+          "feature": "a balancing formula",
+          "field": "Title",
+          "quote": "Balancing Shampoo"
+        },
+        {
+          "feature": "plant and flower essences",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "Pure Plant And Flower Essences"
+        },
+        {
+          "feature": "scalp care",
+          "field": "Title",
+          "quote": "Scalp Benefits"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B08XYBS678": {
+      "asin": "B08XYBS678",
+      "title": "Dove Nourishing Foaming Hand Wash For Clean and Softer Hands Coconut and Almond Milk Cleanser That Washes Away Dirt and Germs 10.1 oz 4 Count",
+      "brand": "Dove",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Dove",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "hand wash",
+      "attributes": [
+        "a foaming cleanser",
+        "coconut and almond milk",
+        "a cruelty-free formula",
+        "a moisturizing blend"
+      ],
+      "canonical_sentence": "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+      "training_queries": [
+        "I want to buy hand wash with a foaming cleanser and coconut and almond milk.",
+        "I would like to purchase hand wash featuring a foaming cleanser and a cruelty-free formula.",
+        "I am looking for hand wash with coconut and almond milk and a moisturizing blend."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a foaming cleanser",
+          "field": "Title",
+          "quote": "Foaming Hand Wash"
+        },
+        {
+          "feature": "coconut and almond milk",
+          "field": "Title",
+          "quote": "Coconut and Almond Milk"
+        },
+        {
+          "feature": "a cruelty-free formula",
+          "field": "Attributes",
+          "index": 0,
+          "quote": "cruelty free"
+        },
+        {
+          "feature": "a moisturizing blend",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "5X MOISTURIZER BLEND"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B01N47U1VI": {
+      "asin": "B01N47U1VI",
+      "title": "BuyTVProducts4Less Touch of ECO Solar/Battery Powered 2x3W Bluetooth Speaker Splashproof Portable Wireless MP3 Player with Built-in Micphone, FM Radio/MicroSD Card (Red)",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "visual_verified": true,
+        "reason": "Title mentions BuyTVProducts4Less and Touch of ECO while Description calls it Nunet. The actual image logo has an ambiguous stylized prefix and BOOM; existing public OCR reads UJBOOM. No single brand attribution can be established confidently.",
+        "image": "groups/08_speaker/target.jpg",
+        "image_relative_to_package": "groups/08_speaker/target.jpg",
+        "image_sha256": "808882d53dd322b2a319a83f9ec29ec406cae6b93558ea98f60a5444b4eed928",
+        "inspection_crop": "audit/speaker_brand_inspection.png"
+      },
+      "category": "Bluetooth speaker",
+      "attributes": [
+        "water resistance",
+        "stereo sound",
+        "solar charging",
+        "a rechargeable battery"
+      ],
+      "canonical_sentence": "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+      "training_queries": [
+        "I want to buy a Bluetooth speaker with water resistance and stereo sound.",
+        "I would like to purchase a Bluetooth speaker featuring water resistance and solar charging.",
+        "I am looking for a Bluetooth speaker with stereo sound and a rechargeable battery."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "water resistance",
+          "field": "BulletPoints",
+          "index": 4,
+          "quote": "Water Resistant"
+        },
+        {
+          "feature": "stereo sound",
+          "field": "BulletPoints",
+          "index": 1,
+          "quote": "stereo sound"
+        },
+        {
+          "feature": "solar charging",
+          "field": "BulletPoints",
+          "index": 4,
+          "quote": "Can charge by sun"
+        },
+        {
+          "feature": "a rechargeable battery",
+          "field": "BulletPoints",
+          "index": 3,
+          "quote": "RECHARGEABLE 800MAH lithium battery"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B01590FHS0": {
+      "asin": "B01590FHS0",
+      "title": "Kicker KB6000 2-Way Full Range High-efficiency Speaker System Indoor Speaker Outdoor Speaker Marine Speakers System | 6.5 inch woofer | 2x5 inch Horn Tweeter with Quick Mounting System - Set of 4",
+      "brand": "Kicker",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Kicker",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "outdoor speakers",
+      "attributes": [
+        "two-way full-range sound",
+        "a quick mounting system",
+        "a high-efficiency design",
+        "marine use"
+      ],
+      "canonical_sentence": "I want to buy outdoor speakers with two-way full-range sound and a quick mounting system.",
+      "training_queries": [
+        "I want to buy outdoor speakers with two-way full-range sound and a quick mounting system.",
+        "I would like to purchase outdoor speakers featuring two-way full-range sound and a high-efficiency design.",
+        "I am looking for outdoor speakers with a quick mounting system and marine use."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "two-way full-range sound",
+          "field": "Title",
+          "quote": "2-Way Full Range"
+        },
+        {
+          "feature": "a quick mounting system",
+          "field": "Title",
+          "quote": "Quick Mounting System"
+        },
+        {
+          "feature": "a high-efficiency design",
+          "field": "Title",
+          "quote": "High-efficiency"
+        },
+        {
+          "feature": "marine use",
+          "field": "Title",
+          "quote": "Marine Speakers"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B09J81RMLD": {
+      "asin": "B09J81RMLD",
+      "title": "Baby U Shaped Toothbrush for Aged 2-12 with 360° Soft Silicone Brush Heads Handle Kids Cute Teeth Whitening Massage Tool",
+      "brand": "",
+      "brand_evidence": {
+        "verified": false,
+        "reason": "Baby U describes the intended user and brush shape; no explicit brand attribution is present."
+      },
+      "category": "toothbrush",
+      "attributes": [
+        "a U-shaped design",
+        "soft silicone brush heads",
+        "360-degree cleaning",
+        "a handle designed for small hands"
+      ],
+      "canonical_sentence": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+      "training_queries": [
+        "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+        "I would like to purchase a toothbrush featuring a U-shaped design and 360-degree cleaning.",
+        "I am looking for a toothbrush with soft silicone brush heads and a handle designed for small hands."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a U-shaped design",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "U-Shaped Design"
+        },
+        {
+          "feature": "soft silicone brush heads",
+          "field": "Title",
+          "quote": "Soft Silicone Brush Heads"
+        },
+        {
+          "feature": "360-degree cleaning",
+          "field": "BulletPoints",
+          "index": 2,
+          "quote": "360 Cleansing Method"
+        },
+        {
+          "feature": "a handle designed for small hands",
+          "field": "BulletPoints",
+          "index": 5,
+          "quote": "Easy for small hands to grip"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    },
+    "B09PNNXYJ4": {
+      "asin": "B09PNNXYJ4",
+      "title": "Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)",
+      "brand": "Tthxqing",
+      "brand_evidence": {
+        "verified": true,
+        "field": "Title",
+        "quote": "Tthxqing",
+        "basis": "Unambiguous named maker attribution in the public product title; no inference from generic first words."
+      },
+      "category": "toothbrush",
+      "attributes": [
+        "a U-shaped design",
+        "soft silicone brush heads",
+        "360-degree cleaning",
+        "food-grade silicone"
+      ],
+      "canonical_sentence": "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+      "training_queries": [
+        "I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+        "I would like to purchase a toothbrush featuring a U-shaped design and 360-degree cleaning.",
+        "I am looking for a toothbrush with soft silicone brush heads and food-grade silicone."
+      ],
+      "feature_evidence": [
+        {
+          "feature": "a U-shaped design",
+          "field": "Title",
+          "quote": "U shaped Toothbrush"
+        },
+        {
+          "feature": "soft silicone brush heads",
+          "field": "Title",
+          "quote": "Soft Silicone Brush Head"
+        },
+        {
+          "feature": "360-degree cleaning",
+          "field": "Title",
+          "quote": "360 Degrees"
+        },
+        {
+          "feature": "food-grade silicone",
+          "field": "BulletPoints",
+          "index": 0,
+          "quote": "food grade silicone"
+        }
+      ],
+      "source": "public_catalog_verified_review"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "variant": "lucid_4",
+    "reference": "lucid_original_16",
+    "source_ssim_delta": 0.27500735822421074,
+    "held_out_target_cosine_delta": -0.017351210117340088,
+    "mean_rank_delta": 0,
+    "top3_delta": 0
+  },
+  {
+    "variant": "lucid_8",
+    "reference": "lucid_original_16",
+    "source_ssim_delta": 0.17736837082929313,
+    "held_out_target_cosine_delta": -0.008662998676300049,
+    "mean_rank_delta": 0,
+    "top3_delta": 0
+  },
+  {
+    "variant": "perlage_latent_only",
+    "reference": "perlage_pixel_control",
+    "source_ssim_delta": 0.019898373230576527,
+    "held_out_target_cosine_delta": -0.002752244472503662,
+    "mean_rank_delta": 0,
+    "top3_delta": 0
+  },
+  {
+    "variant": "perlage_latent_only",
+    "reference": "perlage_original_no_shadow",
+    "source_ssim_delta": 0.02291920600878594,
+    "held_out_target_cosine_delta": -0.01178652048110962,
+    "mean_rank_delta": 0,
+    "top3_delta": 0
+  }
+]

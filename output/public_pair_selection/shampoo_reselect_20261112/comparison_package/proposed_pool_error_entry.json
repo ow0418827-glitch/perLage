@@ -1,0 +1,63 @@
+{
+  "Id": "groups9_reference_07_shampoo_B09B63YYCW",
+  "SourceGroup": "07_shampoo",
+  "EntryType": "error",
+  "RecordKind": "simulated_gallery",
+  "Completed": false,
+  "Success": false,
+  "Actions": [],
+  "Instruction": "",
+  "FinalASIN": "B09B63YYCW",
+  "ObservedPurchase": false,
+  "RecordOrigin": "user_selected_public_catalog_reference",
+  "ReferenceNotice": "未观察到购买；来自 2026-11-12 隔离洗发水重选公开原商品，仅作后续对照实验参考模板，未写入既有共享池。",
+  "PrimaryImage": {
+    "ASIN": "B09B63YYCW",
+    "Title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+    "LocalPath": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\comparison_package\\07_shampoo\\source.jpg",
+    "SHA256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72",
+    "SourceURL": "https://m.media-amazon.com/images/I/31tnwBk3RML.jpg",
+    "Role": "catalog_reference_not_purchase",
+    "Brand": "BELLISSO",
+    "Attributes": [
+      "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+      "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+      "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+    ],
+    "FeatureText": "I want to buy a shampoo & conditioner with this advanced biotin shampoo from bellisso is rich in powerful ingredients to help fight hair loss and the secret to our hair loss shampoo is biotin, a form of vitamin b7 that can help stimulate keratin production and promote follicle growth."
+  },
+  "Brand": "BELLISSO",
+  "Attributes": [
+    "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+    "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+    "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+  ],
+  "FeatureText": "I want to buy a shampoo & conditioner with this advanced biotin shampoo from bellisso is rich in powerful ingredients to help fight hair loss and the secret to our hair loss shampoo is biotin, a form of vitamin b7 that can help stimulate keratin production and promote follicle growth.",
+  "FeatureProvenance": {
+    "source": "local_public_catalog_fields",
+    "brand_evidence": {
+      "verified": true,
+      "reason": "explicit_catalog_or_named_title_brand"
+    },
+    "feature_evidence": [
+      {
+        "feature": "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "This advanced biotin shampoo from Bellisso is rich in powerful ingredients to help fight hair loss"
+      },
+      {
+        "feature": "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "The secret to our hair loss shampoo is biotin, a form of vitamin B7 that can help stimulate keratin production and promote follicle growth"
+      },
+      {
+        "feature": "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "Start your journey towards thicker, fuller hair with Bellisso’s hair thickening products for women and men"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "pid": 29204,
+  "launched_at": "2026-11-11T12:17:06+08:00",
+  "first_pending_group": "07_shampoo",
+  "first_pending_task": "feature_15",
+  "preserved_valid_episodes": 134,
+  "order": [
+    "lucid",
+    "perlage_no_pixel"
+  ],
+  "stdout": "user_resume_20261111_121418.log",
+  "stderr": "user_resume_20261111_121418.error.log",
+  "first_launch_attempt_failure": {
+    "failed_at": "2026-11-11T12:14:53+08:00",
+    "error": "httpx.InvalidURL: Invalid port: ':1]'",
+    "cause": "环境变量NO_PROXY含[::1]，httpx构造非法代理挂载键",
+    "evidence": "recovery/launch_failure_20261111_121453",
+    "fix": "重新启动时仅移除NO_PROXY/no_proxy环境变量，模型、请求、图片、向量、参数与指导不变"
+  }
+}

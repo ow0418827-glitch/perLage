@@ -1,0 +1,38 @@
+{
+  "source_sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+  "regions": [
+    [
+      0.07,
+      0.48,
+      0.26,
+      0.76
+    ],
+    [
+      0.27,
+      0.48,
+      0.55,
+      0.8
+    ],
+    [
+      0.56,
+      0.48,
+      0.77,
+      0.76
+    ],
+    [
+      0.77,
+      0.48,
+      0.92,
+      0.71
+    ]
+  ],
+  "source_foreground_sha256": "58a020e5ca1ec54463f5a139a4e09259c4313b4f8898466073e0c6380e9fe671",
+  "implementation_sha256": "e2f88d618d1d1c99c0cfb4ea40858832b840cb73f67722adf68b228b407c4bcb",
+  "material_implementation_sha256": "d3bb8727635fede93813e340d6ec00f08b399e19900f59eea6888a945b872de4",
+  "palette_implementation_sha256": "47ee11d20730b21169b5e000b6c6fc04deeef9407446370e922910a84231d397",
+  "config": {
+    "feather_pixels": 2.0
+  },
+  "selection_uses_source_only": true,
+  "content_semantics_certified": false
+}

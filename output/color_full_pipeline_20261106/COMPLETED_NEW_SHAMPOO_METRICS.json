@@ -1,0 +1,760 @@
+{
+  "scope": "completed_new_final_vs_unmodified_source_and_its_training_stages",
+  "full_new_generation_completed": true,
+  "original_current_method_control_completed": false,
+  "rows": [
+    {
+      "encoder": 2,
+      "image": "unmodified_source",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "image_cosine": 0.6722689867019653,
+      "joint_mean": 0.6860269904136658,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "complete_initialization_before_color",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\initialization\\attack\\adversarial.png",
+      "sha256": "2605434df9be943194528cbd75a97ecb0bc2c14fdfa7350e2c734a13f9ed0307",
+      "image_cosine": 0.7968335151672363,
+      "joint_mean": 0.7645246982574463,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "color_seed_before_final_refinement",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\color_harmonization\\initial.png",
+      "sha256": "6ff7fd687c71ad9a0e39c22f8903b9279ca5858b41ad096e07442d1bf855c14a",
+      "image_cosine": 0.7907124757766724,
+      "joint_mean": 0.7553128600120544,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 2,
+      "image": "complete_new_final",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\frozen.png",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+      "image_cosine": 0.796466588973999,
+      "joint_mean": 0.762298583984375,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 2,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-32",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch32_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch32_clip_224.openai\\snapshots\\a6f597a30f7b82c51704746581f9a4e41421e878\\open_clip_model.safetensors",
+          "weight_sha256": "e6d1bd7789aa45192b3bf90570a789b478bae1b74ebcce7eddd908e83a2b7c31",
+          "weight_revision": "a6f597a30f7b82c51704746581f9a4e41421e878",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "bca7a9a56e63ecdf52f7ef11bfa427e5792951d5c87599383e24549a36e620f3",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "unmodified_source",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\public_inputs\\07_shampoo\\source.jpg",
+      "sha256": "9b5f4a94d9ab7f2e001498260243b3d91eedcd774939a4558c4f5786192e3a6a",
+      "image_cosine": 0.649199366569519,
+      "joint_mean": 0.6764465570449829,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "complete_initialization_before_color",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\initialization\\attack\\adversarial.png",
+      "sha256": "2605434df9be943194528cbd75a97ecb0bc2c14fdfa7350e2c734a13f9ed0307",
+      "image_cosine": 0.6654281616210938,
+      "joint_mean": 0.6839334964752197,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "color_seed_before_final_refinement",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\generation\\color_harmonization\\initial.png",
+      "sha256": "6ff7fd687c71ad9a0e39c22f8903b9279ca5858b41ad096e07442d1bf855c14a",
+      "image_cosine": 0.6580263376235962,
+      "joint_mean": 0.6799483299255371,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    },
+    {
+      "encoder": 1,
+      "image": "complete_new_final",
+      "path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\output\\color_full_pipeline_20261106\\runs\\dominant\\07_shampoo\\frozen.png",
+      "sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+      "image_cosine": 0.6590703725814819,
+      "joint_mean": 0.680743396282196,
+      "model": {
+        "provider": "clip",
+        "loader": "attack_surrogate",
+        "surrogate_number": 1,
+        "surrogate": {
+          "role": "attack_surrogate",
+          "name": "ViT-B-16",
+          "pretrained": "openai",
+          "hf_repo": "timm/vit_base_patch16_clip_224.openai",
+          "weight_path": "D:\\Users\\22106\\.cache\\huggingface\\hub\\models--timm--vit_base_patch16_clip_224.openai\\snapshots\\977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d\\open_clip_model.safetensors",
+          "weight_sha256": "4b8699299b1e8997753c64b052ba32031449d5d853f55a039148560ee02b820f",
+          "weight_revision": "977e3dd0ec55ab8da155f2fbeb6b5f54948b6e3d",
+          "device": "cuda",
+          "precision": "fp32",
+          "image_size": 224,
+          "preprocess": {
+            "resize": "bicubic_direct_square",
+            "align_corners": false,
+            "antialias": true,
+            "mean": [
+              0.48145466,
+              0.4578275,
+              0.40821073
+            ],
+            "std": [
+              0.26862954,
+              0.26130258,
+              0.27577711
+            ]
+          },
+          "open_clip_torch_version": "3.3.0",
+          "cache_identity": "9800bc146a004e51f7917e6f512f79103a1c6c810b504434f4fd32a5497c5dd4",
+          "requires_true_local_tokens": true
+        },
+        "fusion": "normalized_image_text_sum",
+        "text_policy": "clip_context_truncate"
+      }
+    }
+  ],
+  "colors": [
+    {
+      "image": "unmodified_source",
+      "material_mean_rgb": [
+        241,
+        241,
+        241
+      ],
+      "material_mean_lab": [
+        95.21085261570884,
+        -0.03232422427206836,
+        0.19990047685551274
+      ],
+      "target_color_distance": 25.910580038666808,
+      "target_chroma_distance": 20.89165142535854
+    },
+    {
+      "image": "complete_initialization_before_color",
+      "material_mean_rgb": [
+        230,
+        240,
+        227
+      ],
+      "material_mean_lab": [
+        93.77907356064928,
+        -5.8868507089433235,
+        5.384812204617886
+      ],
+      "target_color_distance": 22.962344446111484,
+      "target_chroma_distance": 18.28141437239545
+    },
+    {
+      "image": "color_seed_before_final_refinement",
+      "material_mean_rgb": [
+        234,
+        231,
+        210
+      ],
+      "material_mean_lab": [
+        91.51383656978433,
+        -2.6599862655911295,
+        10.682762900895455
+      ],
+      "target_color_distance": 16.770504785725734,
+      "target_chroma_distance": 12.083392790159897
+    },
+    {
+      "image": "complete_new_final",
+      "material_mean_rgb": [
+        233,
+        233,
+        211
+      ],
+      "material_mean_lab": [
+        91.74758214126797,
+        -3.4951529290565198,
+        10.5811778481422
+      ],
+      "target_color_distance": 17.344685508950306,
+      "target_chroma_distance": 12.653276947675108
+    }
+  ],
+  "target_dominant_rgb": [
+    220,
+    194,
+    160
+  ],
+  "quality": {
+    "step": 50,
+    "ordinary_guard_slack": 0.011725664138793945,
+    "source_ssim": 0.9210717327664737,
+    "source_mae_levels": 7.732970714569092,
+    "quality_ok": true,
+    "halo_error": 31.789411660100015,
+    "parent_halo_error": 16.457029367256773,
+    "natural_halo_gate": true,
+    "noise_panel": [
+      {
+        "timestep": 99,
+        "seed": 9401,
+        "minimum_query_gap": 0.0010532140731811523,
+        "query_gaps": [
+          [
+            0.0014947056770324707,
+            0.0010532140731811523,
+            0.0017144083976745605
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9402,
+        "minimum_query_gap": 0.0021685361862182617,
+        "query_gaps": [
+          [
+            0.0022647976875305176,
+            0.0021685361862182617,
+            0.0024489164352416992
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9403,
+        "minimum_query_gap": 0.0015291571617126465,
+        "query_gaps": [
+          [
+            0.0017045140266418457,
+            0.0015291571617126465,
+            0.002161860466003418
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9404,
+        "minimum_query_gap": 0.0018462538719177246,
+        "query_gaps": [
+          [
+            0.0023497939109802246,
+            0.0018462538719177246,
+            0.002550959587097168
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9405,
+        "minimum_query_gap": 0.0017237067222595215,
+        "query_gaps": [
+          [
+            0.001988828182220459,
+            0.0017237067222595215,
+            0.0022466182708740234
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9406,
+        "minimum_query_gap": 0.0025110244750976562,
+        "query_gaps": [
+          [
+            0.0026583075523376465,
+            0.0025110244750976562,
+            0.002884507179260254
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9407,
+        "minimum_query_gap": 0.0025252699851989746,
+        "query_gaps": [
+          [
+            0.002610445022583008,
+            0.0025252699851989746,
+            0.002907395362854004
+          ]
+        ]
+      },
+      {
+        "timestep": 99,
+        "seed": 9408,
+        "minimum_query_gap": 0.0010382533073425293,
+        "query_gaps": [
+          [
+            0.0014104247093200684,
+            0.0010382533073425293,
+            0.0016031265258789062
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9401,
+        "minimum_query_gap": 0.0018354058265686035,
+        "query_gaps": [
+          [
+            0.002323329448699951,
+            0.0018354058265686035,
+            0.002599775791168213
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9402,
+        "minimum_query_gap": 0.003979623317718506,
+        "query_gaps": [
+          [
+            0.003979623317718506,
+            0.0040209293365478516,
+            0.004215717315673828
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9403,
+        "minimum_query_gap": 0.002552926540374756,
+        "query_gaps": [
+          [
+            0.0028228759765625,
+            0.002552926540374756,
+            0.0032173991203308105
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9404,
+        "minimum_query_gap": -0.0008702278137207031,
+        "query_gaps": [
+          [
+            -0.0005717277526855469,
+            -0.0008702278137207031,
+            -0.00029528141021728516
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9405,
+        "minimum_query_gap": 0.0023664236068725586,
+        "query_gaps": [
+          [
+            0.0023664236068725586,
+            0.0024535059928894043,
+            0.002633333206176758
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9406,
+        "minimum_query_gap": 0.0030409693717956543,
+        "query_gaps": [
+          [
+            0.0034835338592529297,
+            0.0030409693717956543,
+            0.0035921335220336914
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9407,
+        "minimum_query_gap": 0.0016927123069763184,
+        "query_gaps": [
+          [
+            0.0018854737281799316,
+            0.0016927123069763184,
+            0.0018709897994995117
+          ]
+        ]
+      },
+      {
+        "timestep": 199,
+        "seed": 9408,
+        "minimum_query_gap": 0.0018752813339233398,
+        "query_gaps": [
+          [
+            0.0022214651107788086,
+            0.0018752813339233398,
+            0.002335190773010254
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9401,
+        "minimum_query_gap": 0.0006815195083618164,
+        "query_gaps": [
+          [
+            0.0013645291328430176,
+            0.0006815195083618164,
+            0.0015996694564819336
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9402,
+        "minimum_query_gap": 0.0058075785636901855,
+        "query_gaps": [
+          [
+            0.006816744804382324,
+            0.006706655025482178,
+            0.0058075785636901855
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9403,
+        "minimum_query_gap": 0.0005189180374145508,
+        "query_gaps": [
+          [
+            0.0007852911949157715,
+            0.0005189180374145508,
+            0.00115126371383667
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9404,
+        "minimum_query_gap": 0.000911414623260498,
+        "query_gaps": [
+          [
+            0.0012631416320800781,
+            0.000911414623260498,
+            0.0013251304626464844
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9405,
+        "minimum_query_gap": 0.0017871260643005371,
+        "query_gaps": [
+          [
+            0.0017871260643005371,
+            0.0018149018287658691,
+            0.001962900161743164
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9406,
+        "minimum_query_gap": 0.0012255311012268066,
+        "query_gaps": [
+          [
+            0.001881420612335205,
+            0.0012255311012268066,
+            0.0017625689506530762
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9407,
+        "minimum_query_gap": 0.0010520219802856445,
+        "query_gaps": [
+          [
+            0.0012416243553161621,
+            0.0014671683311462402,
+            0.0010520219802856445
+          ]
+        ]
+      },
+      {
+        "timestep": 399,
+        "seed": 9408,
+        "minimum_query_gap": 0.002169013023376465,
+        "query_gaps": [
+          [
+            0.0022603273391723633,
+            0.002169013023376465,
+            0.002245962619781494
+          ]
+        ]
+      }
+    ],
+    "group_quartile_gaps": {
+      "99": 0.001410171389579773,
+      "199": 0.0017997324466705322,
+      "399": 0.0008539408445358276
+    },
+    "weakest_timestep": 399,
+    "retention_slack": 0.0013539408445358276,
+    "max_own_key_distance": 0.08849941194057465,
+    "selection_utility": 0.7246833443641663,
+    "selection": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0.7246833443641663
+    ]
+  },
+  "protected_core_max_difference": 0,
+  "default_halo_limit": 8.228514683628386,
+  "temporary_halo_limit": 32.914058734513546,
+  "final_image_sha256": "8b25b25f3d0dbf3f4e0a6733183857f165939cb00e38db14092a1dda3c2b76bb",
+  "main_program_modified": false,
+  "comparison_to_original_method_available": false,
+  "shopping_runs": 0,
+  "private_memory_used": false
+}

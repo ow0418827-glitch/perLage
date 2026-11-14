@@ -1,0 +1,300 @@
+{
+  "schema_version": 2,
+  "target": {
+    "id": "B00BDJODWI",
+    "title": "Aveda Scalp Benefits Balancing Shampoo 33.8 OZ",
+    "source_url": "https://www.amazon.com/dp/B00BDJODWI",
+    "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e.jpg",
+    "image_sha256": "636bd5bb489e4043c22f4eb2886ae85f2d27d5b4cbe6be74bbac25d57bb2ae5e"
+  },
+  "candidates": [
+    {
+      "id": "B0040QC9YK",
+      "title": "L'Oreal Paris Kids Extra Gentle 2-in-1 Shampoo, Sunny Orange Swim, Citrus, 9 Fl Oz",
+      "source_url": "https://www.amazon.com/dp/B0040QC9YK",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\7ccfb782aa80cb18ed677f0f274fd5bc43fbf239549f4d3eef5d01f0d0e2554c.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "7ccfb782aa80cb18ed677f0f274fd5bc43fbf239549f4d3eef5d01f0d0e2554c"
+    },
+    {
+      "id": "B07ZHW33PQ",
+      "title": "Head & Shoulders Itchy Scalp Care Anti-Dandruff Shampoo, Infused with Eucalyptus, 23.7 Fl Oz, Twin Pack",
+      "source_url": "https://www.amazon.com/dp/B07ZHW33PQ",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\d315238898abad105a0a3352ba6c960618b3c678efb69f0a9921b47333e1941d.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "d315238898abad105a0a3352ba6c960618b3c678efb69f0a9921b47333e1941d"
+    },
+    {
+      "id": "B01CYDXMSW",
+      "title": "Batiste Dry Shampoo, Original, 3 Pack, 20.19 fl. oz.",
+      "source_url": "https://www.amazon.com/dp/B01CYDXMSW",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\1336be3d4e899a2f223451b528e885f12b7ec906486bfb4f242f0a6e0d17d2d5.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "1336be3d4e899a2f223451b528e885f12b7ec906486bfb4f242f0a6e0d17d2d5"
+    },
+    {
+      "id": "B078NHY3P6",
+      "title": "TAHE Keratin Gold Shampoo 800ml + Mask 800ml + Keratin Gold Serum 125ml",
+      "source_url": "https://www.amazon.com/dp/B078NHY3P6",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\b19dd682d1d92390205f8a4dbb3dc6012c6a78268bb294417e1625d39a9b379f.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "b19dd682d1d92390205f8a4dbb3dc6012c6a78268bb294417e1625d39a9b379f"
+    },
+    {
+      "id": "B07B3R86ND",
+      "title": "Fanola Botugen Botolife Ph 6.5 Reconstructive Shampoo & Mask 1000ml",
+      "source_url": "https://www.amazon.com/dp/B07B3R86ND",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\20c9a73a623307e3f2a9eb4f8cd7eb75d8590f4151e9960a3ae5e97d7ad454be.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "20c9a73a623307e3f2a9eb4f8cd7eb75d8590f4151e9960a3ae5e97d7ad454be"
+    },
+    {
+      "id": "B018ZI0A3K",
+      "title": "Pure Nature's Vitamins Hydrating Shampoo - Infused with Natural Sage & Argan Oil, Keratin, Collagen, Vitamins & Nutrients Reparative Shampoo - Sulfate, Sodium Chloride & Paraben Free - 8.5 Oz",
+      "source_url": "https://www.amazon.com/dp/B018ZI0A3K",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\a28034afcbbe515780c84263c9b0f84044425e18c6b1075a1d300dd5984cc24e.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "a28034afcbbe515780c84263c9b0f84044425e18c6b1075a1d300dd5984cc24e"
+    },
+    {
+      "id": "B0019LRD9A",
+      "title": "Enjoy Color Holding Hydrating Shampoo and Conditioner Duo (33.8)",
+      "source_url": "https://www.amazon.com/dp/B0019LRD9A",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\85e78805789b3516cb7f4d5b5c9da18e6813cd548dbac5e2e1b0e97e5935a8df.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "85e78805789b3516cb7f4d5b5c9da18e6813cd548dbac5e2e1b0e97e5935a8df"
+    },
+    {
+      "id": "B08XD7VWPZ",
+      "title": "NAVY Search and Rescue Shampoo - Paraben-Free Biotin and Hair Vitamin Enriched Fortifying Hair Shampoo - 16 fl oz",
+      "source_url": "https://www.amazon.com/dp/B08XD7VWPZ",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\344167e3bf18aff632b4c01ea173b91bd5ea94cff567769891655fc7e51c7468.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "344167e3bf18aff632b4c01ea173b91bd5ea94cff567769891655fc7e51c7468"
+    },
+    {
+      "id": "B09B63YYCW",
+      "title": "BELLISSO Biotin Shampoo for Hair Growth | Thickening Anti Hair Loss Shampoo Treatment | Regrowth Shampoo for Dry Normal Oily & Color Treated Hair",
+      "source_url": "https://www.amazon.com/dp/B09B63YYCW",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "b69cef9d597c09a1dd74baa2dc3a24343443d80fea3030c8994268c4f21b9c72"
+    },
+    {
+      "id": "B075VDZWNF",
+      "title": "VO5 Moisture Milks Moisturizing Shampoo - 12.5 Fl Oz - Strawberries and Cream - 5 Essential Vitamins Will Nourish, Moisturize and Hydrate for Healthy and Beautiful Hair",
+      "source_url": "https://www.amazon.com/dp/B075VDZWNF",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\3df0d000ecdbc9e07492cb0fd1a1ba17642a38eaed86961f39baecbf13918a0c.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "3df0d000ecdbc9e07492cb0fd1a1ba17642a38eaed86961f39baecbf13918a0c"
+    },
+    {
+      "id": "B099C2278T",
+      "title": "Alaffia EveryDay Coconut Shampoo and Conditioner - For Normal to Dry Hair, Cleanses, Hydrates and Moisturizes with Shea Butter & Ginger, Coconut Lime, 32 Fl Oz Each",
+      "source_url": "https://www.amazon.com/dp/B099C2278T",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\f16d8d3377bdf43cdaf976b09d026e6937d14d8d3f455115b46b2d4e26eb06b7.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "f16d8d3377bdf43cdaf976b09d026e6937d14d8d3f455115b46b2d4e26eb06b7"
+    },
+    {
+      "id": "B07PDHTDF2",
+      "title": "Nature's Spirit Coconut Shampoo 33.8 ounce, Conditioner 33.8 ounce, Hair Mask 8 ounce and Hair Oil 8 ounce (4-Piece Set)",
+      "source_url": "https://www.amazon.com/dp/B07PDHTDF2",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\21595e879a0ef43ca720a4b53ba81528acb10f54d31a395226adb04e9519b4b8.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "21595e879a0ef43ca720a4b53ba81528acb10f54d31a395226adb04e9519b4b8"
+    },
+    {
+      "id": "B0994Q18Q6",
+      "title": "2 PC-ONIYEA Natural Handmade Shampoo Bar Soap, Enhance Hair Toughness, Moisturize Dry Hair, 100% Organic Plant Extract Hair Wash, Women Men, Eco-friendly 1.92 Oz Each (OLIVE)",
+      "source_url": "https://www.amazon.com/dp/B0994Q18Q6",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\13d0ea4eef041c55bbe06ba015f398c8511d9b1a4b8a7b4cac40239323f14148.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "13d0ea4eef041c55bbe06ba015f398c8511d9b1a4b8a7b4cac40239323f14148"
+    },
+    {
+      "id": "B079YZR1JC",
+      "title": "ODE SOFIA Color Care Shampoo and Conditioner,for women, men and teens, used for chemically treated of coloured hair and all hair types, 23Fl OZ, 680ml (Set of Shampoo and Conditioner)",
+      "source_url": "https://www.amazon.com/dp/B079YZR1JC",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\a28aef90d1bf8e92a3c138ebd1e0d02741e2c6ee2884af0d9e58acc799edf432.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "a28aef90d1bf8e92a3c138ebd1e0d02741e2c6ee2884af0d9e58acc799edf432"
+    },
+    {
+      "id": "B087WL7H2X",
+      "title": "FoxyBae Maliboo Smooth Anti-frizz Shampoo - Infused with Shea Butter, Biotin & Argan Oil - Shampoo for Fine Color Treated Hair - Cruelty Free Hair Volumizing Shampoo - 300 ml/ 10 Fl. OZ, MSRP $18.95",
+      "source_url": "https://www.amazon.com/dp/B087WL7H2X",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\ff3ec9f32fcb537f903e0dba03fe692e11350673115554ceefdf716f5debe45e.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "ff3ec9f32fcb537f903e0dba03fe692e11350673115554ceefdf716f5debe45e"
+    },
+    {
+      "id": "B07L4V1P2S",
+      "title": "WOW Activated Charcoal & Keratin Shampoo - Full Scalp Detox Cleanse - Restore Dry, Damaged Strands For Soft, Smooth, Shiny Hair- Sulfate & Paraben Free - All Hair Types, Adults & Children - 500 mL",
+      "source_url": "https://www.amazon.com/dp/B07L4V1P2S",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\c42f93a55318b0a0c09da8417066e80034cfc15d6f6fd3ecc50023c2f8b7e5cf.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "c42f93a55318b0a0c09da8417066e80034cfc15d6f6fd3ecc50023c2f8b7e5cf"
+    },
+    {
+      "id": "B00WONI1AW",
+      "title": "ceceMED STOP HAIR LOSS SHAMPOO shampoo against hair loss 300 ml",
+      "source_url": "https://www.amazon.com/dp/B00WONI1AW",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\035d82ba5adf7f58da8a3c0c7433875cf600da03698a16f28eba150ede1edba2.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "035d82ba5adf7f58da8a3c0c7433875cf600da03698a16f28eba150ede1edba2"
+    },
+    {
+      "id": "B0847RZ2SF",
+      "title": "TSUBAKI Premium Moist Shampoo Refill 660ml Refill 660mL",
+      "source_url": "https://www.amazon.com/dp/B0847RZ2SF",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\73a3897ded2eb5af586fe63e7c7d7247b647331c5dc7908d39f7fd58656707fc.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "73a3897ded2eb5af586fe63e7c7d7247b647331c5dc7908d39f7fd58656707fc"
+    },
+    {
+      "id": "B08NRLS7CH",
+      "title": "Old Spice Swagger 2in1 Shampoo & Conditioner for Men, 22 Fl Oz, 21.9 Fl Oz",
+      "source_url": "https://www.amazon.com/dp/B08NRLS7CH",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\18eb1036502ba6429e230b2d19a4ec4ac818eb5467086f7a9474693c4d76bcea.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "18eb1036502ba6429e230b2d19a4ec4ac818eb5467086f7a9474693c4d76bcea"
+    },
+    {
+      "id": "B00MEPOWM6",
+      "title": "RUSK Sensories Purify Cucurbita and Tea Tree Deep Cleansing Shampoo, 33.8 Oz, Deep-Cleansing Shampoo, Rids Hair of Impurities and Styling Product Buildup",
+      "source_url": "https://www.amazon.com/dp/B00MEPOWM6",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\a98d9398cdef4ec52cd75aa29283af7a85eec3a9b01b2219e3c63727ae2ce65c.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "a98d9398cdef4ec52cd75aa29283af7a85eec3a9b01b2219e3c63727ae2ce65c"
+    },
+    {
+      "id": "B07P48FLMK",
+      "title": "AQUAGE SeaExtend Volumizing Shampoo, Gentle, SeaExtend Thermal-V Technology Seals Heat Out, Luxurious Shampoo That Prevents Haircolor Fade and Thermal Styling Damage",
+      "source_url": "https://www.amazon.com/dp/B07P48FLMK",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\957de7c1803030d27e50576927d9afe6442438bb9b900d57f2a919f3bdb968f0.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "957de7c1803030d27e50576927d9afe6442438bb9b900d57f2a919f3bdb968f0"
+    },
+    {
+      "id": "B00MQURNGG",
+      "title": "Pharmaceris H-Hair and Scalp H-Stimupurin Shampoo to Support Hair Growth and Against Hair Loss 5.0 oz",
+      "source_url": "https://www.amazon.com/dp/B00MQURNGG",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\86a4a053200ed593f42d9b855c6925ba2e279304d1a0d8e6e0ef9991617a0883.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "86a4a053200ed593f42d9b855c6925ba2e279304d1a0d8e6e0ef9991617a0883"
+    },
+    {
+      "id": "B087FBL23H",
+      "title": "Joico Defy Damage Protective Shampoo | Strengthen Bond & Preserve Hair Color | For Bond Strengthening & Color Longevity",
+      "source_url": "https://www.amazon.com/dp/B087FBL23H",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\082b92115fae59a32108cf133cefd6bc4af047c43122fdbd720196e26c18da12.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "082b92115fae59a32108cf133cefd6bc4af047c43122fdbd720196e26c18da12"
+    },
+    {
+      "id": "B086PFX6VP",
+      "title": "Aquableu Natural Lavender Vanilla Shampoo & Conditioner Set - Gentle Ultra Calming Multitasking Cleanser - Nourishing & Restorative - Jojoba Oil - Sulfate & Paraben Free - For color treated hair 16 oz",
+      "source_url": "https://www.amazon.com/dp/B086PFX6VP",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\98a7d4faaaa7136903cc8eda827319abfee30a61bfbc35ab4df72e2a5d205374.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "98a7d4faaaa7136903cc8eda827319abfee30a61bfbc35ab4df72e2a5d205374"
+    },
+    {
+      "id": "B09D66PWBL",
+      "title": "RGIII RG3 PREMIUM SHAMPOO AND TREATMENT SET 2X RED GINSENG HAIR LOSS PREVENTION",
+      "source_url": "https://www.amazon.com/dp/B09D66PWBL",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\e33487d9a84c5d2afd790770b70a94ad91a48f6e7bc877ab9cf57b13e28dbb8e.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "e33487d9a84c5d2afd790770b70a94ad91a48f6e7bc877ab9cf57b13e28dbb8e"
+    },
+    {
+      "id": "B076DL1VLG",
+      "title": "Luseta Biotin & Collagen Shampoo & Conditioner Set 2 x 16.9oz - Thickening for Hair Loss & Fast Hair Growth - Infused with Argan Oil to Repair Damaged Dry Hair - Sulfate Free Paraben Free",
+      "source_url": "https://www.amazon.com/dp/B076DL1VLG",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\ab0e6ba3170a25404c16e1ec6a31c1202b1ee1b66808c3059b3a77726aecd00e.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "ab0e6ba3170a25404c16e1ec6a31c1202b1ee1b66808c3059b3a77726aecd00e"
+    },
+    {
+      "id": "B00FZVXZ3I",
+      "title": "Nexxus Hydralight Weightless Moisture, 13.5 Ounce, Set of Shampoo and Conditioner",
+      "source_url": "https://www.amazon.com/dp/B00FZVXZ3I",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\55bcbae736645cda1c0a7568c98708b08164eaa04fa64e73c3eea55ed6177dba.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "55bcbae736645cda1c0a7568c98708b08164eaa04fa64e73c3eea55ed6177dba"
+    },
+    {
+      "id": "B007KSWBP2",
+      "title": "ALOXXI Hydrating Shampoo for Color Treated Hair - Removes Buildup & Residue - Paraben & Sulfate Free Shampoo",
+      "source_url": "https://www.amazon.com/dp/B007KSWBP2",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\99f48ac2b1474acf3b7fe80da24c390055a1d6caeba58325e947f17116988a91.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "99f48ac2b1474acf3b7fe80da24c390055a1d6caeba58325e947f17116988a91"
+    },
+    {
+      "id": "B09HSRMYDQ",
+      "title": "The Body Shop Tea Tree Purifying & Balancing Shampoo for Oily Hair & Scalp, Vegan",
+      "source_url": "https://www.amazon.com/dp/B09HSRMYDQ",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\ede37e9504275d2144e612c069e797fb11b4495c264f340c497c3cdd4dedd39d.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "ede37e9504275d2144e612c069e797fb11b4495c264f340c497c3cdd4dedd39d"
+    },
+    {
+      "id": "B00S1S2SRQ",
+      "title": "Best Clarifying Shampoo for Keratin Hair Treatment Straightening Opens the Cuticle for Optimum Receptivity of The Keratin Treatment. Deep Cleans the Hair Cuticle Remove all Residues that Cling to the hair (4oz)",
+      "source_url": "https://www.amazon.com/dp/B00S1S2SRQ",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\3eab2378a66435565a9eda98ddd02293e8b13ea4dcfb85211de0640917c0a445.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "3eab2378a66435565a9eda98ddd02293e8b13ea4dcfb85211de0640917c0a445"
+    },
+    {
+      "id": "B00FRDPQRW",
+      "title": "Old Spice Fiji 2in1 Shampoo And Conditioner 12 Fl Oz, 12.000-Fluid Ounce",
+      "source_url": "https://www.amazon.com/dp/B00FRDPQRW",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\81259a57fc5b08700370beba3209bcbb748c894d5982eb10c5da9d047995f7f8.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "81259a57fc5b08700370beba3209bcbb748c894d5982eb10c5da9d047995f7f8"
+    },
+    {
+      "id": "B09F525LBT",
+      "title": "Moehair Protein Infused Shampoo and Conditioner with Hair Serum Pack | Sulfate and Paraben Free Shampoo | Revitalize Dull, Weak and Damaged Hair | Made in the USA",
+      "source_url": "https://www.amazon.com/dp/B09F525LBT",
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\public_pair_selection\\shampoo_reselect_20261112\\data\\images\\a44fa8b7dd01547c139e9140c09460918b36dab32a567fcfdabf880e568bf2a0.jpg",
+      "owned": true,
+      "source_note": "固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权",
+      "image_sha256": "a44fa8b7dd01547c139e9140c09460918b36dab32a567fcfdabf880e568bf2a0"
+    }
+  ]
+}

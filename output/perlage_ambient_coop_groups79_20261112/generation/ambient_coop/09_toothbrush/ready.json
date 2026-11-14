@@ -1,0 +1,184 @@
+{
+  "method": "PerLAGE_ambient_coop",
+  "definition": "perlage_ambient_coop_subject_micro_light_background_ambient_smooth_v1",
+  "profile": "ambient_coop",
+  "status": "completed",
+  "color_scheme": "statistics",
+  "training_data_policy": "catalog_image_and_public_title_only_v1",
+  "first_three_stages_reused": true,
+  "fresh_first_three_stages_executed": false,
+  "initialization_reused": true,
+  "previous_final_refinement_reused": false,
+  "method_identity": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\method_identity.json",
+  "method_identity_sha256": "74592980264d32d729f2de998e74c084020431e1e8aff277cbe34fcba792cc65",
+  "source_sha256": "74e0c705bd248dbec29190d33f7ecd38ef9a17e8853dd58ddb13c78fff4eae0f",
+  "target_sha256": "48b0143f4c06290ab18acd036f74d640f50c3d935b4a349a4280a5bfedf11bc2",
+  "source_title_sha256": "82e67316b2c24f913c84e1d9da648bf4f5412a52d93286da0bf4a8d20bebb1b0",
+  "stages": {
+    "color_harmonization": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "d0520ab626291219a1a14d7fbac4ad44068db902212fcc16e1b0595ac09387a1"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_segmentation": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "c191951ac6339377170b497692f505fa45f3cce6bd0ce5ad26cb9c43ca106d2e",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "3295d1b2754e54d63745b1f48e5bcb3b5e1d03445465a02205502dfcf442f7d5",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "45a2cbf225f7548aeb7eec12ab08e5783e80e51f854c53bde86ef373a66c30e0",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "471c119c1112fc4318b3a5e6081142854e3fd5048123bfcb285167313226f00d"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "foreground_statistics": {
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "16df8e19d1263941280194ff0f6867e162fc2bea5ac116da65f772580e6dc87b",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "5731bbb9f413bba705528fd62932c261ddcb6568529d3bfecd9bcc1f9486ec76"
+      },
+      "status": "completed",
+      "execution_mode": "reused_frozen_prefix"
+    },
+    "latent_generation_refinement": {
+      "status": "completed",
+      "files": {
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\method_identity.json": "74592980264d32d729f2de998e74c084020431e1e8aff277cbe34fcba792cc65",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\metadata.json": "2d26899b55bf4d2c111e902548acb7f46afda8bdc27da84f04d237059f7f0fc6",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\adversarial.png": "2eeb719ffac5f2c947f4e7e8221ee89ab579775fbb6434e2e8c506bb4c6d9ddb",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\generative_anchor.png": "2eeb719ffac5f2c947f4e7e8221ee89ab579775fbb6434e2e8c506bb4c6d9ddb",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\latent_edit_mask.png": "ae9a85e558db7e92731643b0ffbbf4df6693dd1f1fb06ad881009700f1415f91",
+        "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\public_title_encoding_audit.json": "70e683b4e734de417190295984c692483db541fe9b6d34b9951850ee4f4a745d"
+      },
+      "steps_completed": 350,
+      "steps_requested": 350,
+      "execution_mode": "fresh_full_refinement"
+    }
+  },
+  "latent_config": {
+    "steps": 350,
+    "check_every": 10,
+    "latent_levels": 6,
+    "background_levels": 28,
+    "anchor_source": "perlage_final",
+    "fg_edge_feather_pixels": 8.0,
+    "edge_feather_pixels": 12.0,
+    "ambient_feather_pixels": 3.0,
+    "roi_feather_pixels": 6.0,
+    "edge_feather_mode": "cosine",
+    "fg_luma_smooth_sigma": 5.0,
+    "fg_chroma_smooth_sigma": 9.0,
+    "fg_chroma_keep": 0.3,
+    "bg_luma_smooth_sigma": 2.2,
+    "bg_chroma_smooth_sigma": 4.5,
+    "bg_chroma_keep": 0.75,
+    "ambient_smooth_sigma": 14.0,
+    "ambient_grid_size": 8,
+    "ambient_init_bias": 0.3,
+    "tau_scale": 0.75,
+    "latent_working_size": 512,
+    "latent_limit": 6.0,
+    "latent_learning_rate": 0.06,
+    "ambient_learning_rate": 0.004,
+    "ambient_limit": 0.15,
+    "latent_smoothing_mix": 0.05,
+    "source_ssim_floor": 0.78,
+    "source_mae_ceiling": 20.0,
+    "temperature": 0.04,
+    "fg_l2_weight": 0.0001,
+    "fg_tv_weight": 0.0004,
+    "bg_l2_weight": 5e-05,
+    "bg_tv_weight": 0.0012,
+    "bg_chroma_tv_weight": 0.002,
+    "overflow_weight": 0.05,
+    "halo_soft_weight": 0.0001,
+    "halo_parent_multiplier": 1.0,
+    "halo_floor": 12.0,
+    "guard_backtracks": 8,
+    "auxiliary_levels": 0,
+    "pixel_optimization": false,
+    "feature_weight": 0.0,
+    "diffusion_weight": 0.0,
+    "joint_weight": 0.5,
+    "compensated_weight": 0.5,
+    "seed": 42
+  },
+  "source_public_key_text": "Title: Tthxqing U shaped Toothbrush, Food Grade Soft Silicone Whole Mouth, Toddlers Manual Toothbrushes, Oral Teeth Cleaning Tools For Children 360 Degrees Toddler Toothbrush Soft Silicone Brush Head(Pink)\nBrand: Tthxqing\nFeatures: a U-shaped design, soft silicone brush heads, 360-degree cleaning, food-grade silicone, brush head, easy use\nFeatureText: I want to buy a toothbrush with a U-shaped design and soft silicone brush heads.",
+  "candidates": {
+    "final": {
+      "image": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\adversarial.png",
+      "sha256": "2eeb719ffac5f2c947f4e7e8221ee89ab579775fbb6434e2e8c506bb4c6d9ddb"
+    }
+  },
+  "generative_anchor": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_ambient_coop_groups79_20261112\\generation\\ambient_coop\\09_toothbrush\\generative_anchor.png",
+  "prefix_binding": {
+    "ambient_coop_latent_refinement": true,
+    "anchor_source": "perlage_final",
+    "files": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\adversarial.png": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "c191951ac6339377170b497692f505fa45f3cce6bd0ce5ad26cb9c43ca106d2e",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\adversarial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "49e4d75f722d86942d946bf17bf009052181d92f4f1f8ab7278e62c3e04dc701",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "d2d034416d15dcdc753766a73260491e2ade54b28654d2faa3507130be179c34",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "eede4270daa2b5eecf1a9e4f38df37ed7ad1dcb27687785a685bf63c38aabd42",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\ready.json": "8a8ebd16ac47b460c3f7ce09ed06dcaf5ef3855489a5da1015089617589419dd"
+    },
+    "first_three_stages_reused": true,
+    "fresh_first_three_stages_executed": false,
+    "generative_anchor_sha256": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+    "initialization_evidence": {
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\attack\\identity.json": "49e4d75f722d86942d946bf17bf009052181d92f4f1f8ab7278e62c3e04dc701",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\ready.json": "d2d034416d15dcdc753766a73260491e2ade54b28654d2faa3507130be179c34",
+      "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\initialization\\run_identity.json": "eede4270daa2b5eecf1a9e4f38df37ed7ad1dcb27687785a685bf63c38aabd42"
+    },
+    "initialization_reused": true,
+    "perlage_no_pixel_final_sha256": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+    "ready_sha256": "8a8ebd16ac47b460c3f7ce09ed06dcaf5ef3855489a5da1015089617589419dd",
+    "root": "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation",
+    "selected_anchor_sha256": "7420c49297e3293afcefabebebfa4f4ce9fd558a6de1ca852b319fc7b6a31d49",
+    "stages": {
+      "color_harmonization": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\edit_mask.png": "f6c8716ec441e91dada1eedfc211ff740fca2d457c684016d0c62acd101af153",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\generative_anchor.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\initial.png": "4e7be18de71ad5c17c4bade0202db9dbde929b4ddb1fb454c8399cfa937977c1",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\color_harmonization\\metadata.json": "d0520ab626291219a1a14d7fbac4ad44068db902212fcc16e1b0595ac09387a1"
+        },
+        "status": "completed"
+      },
+      "foreground_segmentation": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\foreground.png": "c191951ac6339377170b497692f505fa45f3cce6bd0ce5ad26cb9c43ca106d2e",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\source\\record.json": "3295d1b2754e54d63745b1f48e5bcb3b5e1d03445465a02205502dfcf442f7d5",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\foreground.png": "45a2cbf225f7548aeb7eec12ab08e5783e80e51f854c53bde86ef373a66c30e0",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_segmentation\\target\\record.json": "471c119c1112fc4318b3a5e6081142854e3fd5048123bfcb285167313226f00d"
+        },
+        "status": "completed"
+      },
+      "foreground_statistics": {
+        "files": {
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\body_samples.png": "16df8e19d1263941280194ff0f6867e162fc2bea5ac116da65f772580e6dc87b",
+          "D:\\Material\\Literature Reading\\code\\perLage\\output\\perlage_no_pixel_groups9_20261109\\groups\\09_toothbrush\\methods\\PerLAGE_no_pixel\\generation\\foreground_statistics\\statistics.json": "5731bbb9f413bba705528fd62932c261ddcb6568529d3bfecd9bcc1f9486ec76"
+        },
+        "status": "completed"
+      }
+    }
+  },
+  "pixel_optimization": false,
+  "auxiliary_max_levels": 0,
+  "optimization_mode": "latent_only",
+  "victim_memory_used": false,
+  "formal_queries_used": false,
+  "shadow_pool_used": false,
+  "true_rank_used": false,
+  "purchase_history_used": false,
+  "diffusion_calls": 0,
+  "observed_seconds": 763.8970050999924
+}

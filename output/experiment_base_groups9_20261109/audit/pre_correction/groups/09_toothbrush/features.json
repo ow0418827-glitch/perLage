@@ -1,0 +1,46 @@
+{
+  "group": "09_toothbrush",
+  "category": "oral_care",
+  "target": {
+    "asin": "B09J81RMLD",
+    "brand": "Baby U",
+    "category": "toothbrush",
+    "attributes": [
+      "u shaped design",
+      "teeth whitening massage",
+      "soft silicone brush head",
+      "easy use"
+    ],
+    "canonical_sentence": "I want to buy a toothbrush with u shaped design and teeth whitening massage.",
+    "training_queries": [
+      "I want to buy a toothbrush with u shaped design and teeth whitening massage.",
+      "I would like to purchase a toothbrush featuring soft silicone brush head and 360 degree cleaning.",
+      "Looking to buy a toothbrush with u shaped mouth design and gentle teeth whitening."
+    ],
+    "source": "curated_target_metadata"
+  },
+  "source": {
+    "asin": "B09PNNXYJ4",
+    "brand": "Tthxqing",
+    "category": "toothbrush",
+    "attributes": [
+      "u shaped toothbrush",
+      "soft silicone brush head",
+      "360 degree cleaning",
+      "toddler kids"
+    ],
+    "canonical_sentence": "I want to buy a toothbrush with u shaped design and soft silicone brush head.",
+    "training_queries": [
+      "I want to buy a toothbrush with u shaped design and soft silicone brush head.",
+      "I would like to purchase a toothbrush featuring 360 degree cleaning and food grade silicone.",
+      "Looking to buy a toothbrush with toddler oral teeth cleaning design."
+    ],
+    "source": "curated_source_metadata"
+  },
+  "alignment_canonical_text": "I want to buy a toothbrush with u shaped design and teeth whitening massage.",
+  "alignment_training_queries": [
+    "I want to buy a toothbrush with u shaped design and teeth whitening massage.",
+    "I would like to purchase a toothbrush featuring soft silicone brush head and 360 degree cleaning.",
+    "Looking to buy a toothbrush with u shaped mouth design and gentle teeth whitening."
+  ]
+}

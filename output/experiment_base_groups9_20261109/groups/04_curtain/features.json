@@ -1,0 +1,165 @@
+{
+  "group": "04_curtain",
+  "category": "curtains",
+  "target": {
+    "asin": "B086PW7TWX",
+    "title": "Windows Treatment Blackout Curtains Grommet Drapes for Boys/Girls Kids Bedroom DRINKES ARE ON ME Vintage Wood Board Texture Printed Room Darkening Curtains for Livingroom/Office, 1 Panel 52x45in",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "reason": "Windows Treatment is a generic product phrase; no explicit brand attribution is present."
+    },
+    "category": "curtains",
+    "attributes": [
+      "a blackout design",
+      "a vintage wood board texture",
+      "machine-washable fabric",
+      "rust-proof grommets",
+      "eco friendly",
+      "wall art",
+      "machine washable",
+      "dining room"
+    ],
+    "canonical_sentence": "I want to buy curtains with a blackout design and a vintage wood board texture.",
+    "training_queries": [
+      "I want to buy curtains with a blackout design and a vintage wood board texture.",
+      "I would like to purchase curtains featuring a blackout design and machine-washable fabric.",
+      "I am looking for curtains with a vintage wood board texture and rust-proof grommets."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "a blackout design",
+        "field": "Title",
+        "quote": "Blackout Curtains"
+      },
+      {
+        "feature": "a vintage wood board texture",
+        "field": "Title",
+        "quote": "Vintage Wood Board Texture"
+      },
+      {
+        "feature": "machine-washable fabric",
+        "field": "BulletPoints",
+        "index": 5,
+        "quote": "Machine washable"
+      },
+      {
+        "feature": "rust-proof grommets",
+        "field": "BulletPoints",
+        "index": 1,
+        "quote": "rust-proof grommet"
+      },
+      {
+        "feature": "eco friendly",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "eco friendly"
+      },
+      {
+        "feature": "wall art",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "wall art"
+      },
+      {
+        "feature": "machine washable",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "machine washable"
+      },
+      {
+        "feature": "dining room",
+        "field": "Attributes",
+        "index": 3,
+        "quote": "dining room"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "a blackout design",
+      "a vintage wood board texture",
+      "machine-washable fabric",
+      "rust-proof grommets"
+    ]
+  },
+  "source": {
+    "asin": "B09PHLS2QD",
+    "title": "Window Treatment Semi-Sheer Curtain Valentine's Day Red Flower Love Rose,Privacy Drapes for Kitchen/Living Room/Bathroom,Vintage Brown Wood Grain Light Filtering Curtains 52x84in",
+    "brand": "",
+    "brand_evidence": {
+      "verified": false,
+      "reason": "Window Treatment is a generic product phrase; no explicit brand attribution is present."
+    },
+    "category": "curtains",
+    "attributes": [
+      "semi-sheer chiffon fabric",
+      "a vintage brown wood grain pattern",
+      "a light-filtering design",
+      "machine-washable fabric",
+      "printing technology",
+      "window curtain",
+      "living room"
+    ],
+    "canonical_sentence": "I want to buy curtains with semi-sheer chiffon fabric and a vintage brown wood grain pattern.",
+    "training_queries": [
+      "I want to buy curtains with semi-sheer chiffon fabric and a vintage brown wood grain pattern.",
+      "I would like to purchase curtains featuring semi-sheer chiffon fabric and a light-filtering design.",
+      "I am looking for curtains with a vintage brown wood grain pattern and machine-washable fabric."
+    ],
+    "feature_evidence": [
+      {
+        "feature": "semi-sheer chiffon fabric",
+        "field": "BulletPoints",
+        "index": 0,
+        "quote": "Semi-sheer curtain is made of chiffon fabric"
+      },
+      {
+        "feature": "a vintage brown wood grain pattern",
+        "field": "Title",
+        "quote": "Vintage Brown Wood Grain"
+      },
+      {
+        "feature": "a light-filtering design",
+        "field": "Title",
+        "quote": "Light Filtering Curtains"
+      },
+      {
+        "feature": "machine-washable fabric",
+        "field": "BulletPoints",
+        "index": 4,
+        "quote": "gentle machine washing"
+      },
+      {
+        "feature": "printing technology",
+        "field": "Attributes",
+        "index": 0,
+        "quote": "printing technology"
+      },
+      {
+        "feature": "window curtain",
+        "field": "Attributes",
+        "index": 1,
+        "quote": "window curtain"
+      },
+      {
+        "feature": "living room",
+        "field": "Attributes",
+        "index": 2,
+        "quote": "living room"
+      }
+    ],
+    "source": "public_catalog_verified_review",
+    "core_attributes": [
+      "semi-sheer chiffon fabric",
+      "a vintage brown wood grain pattern",
+      "a light-filtering design",
+      "machine-washable fabric"
+    ]
+  },
+  "alignment_canonical_text": "I want to buy curtains with a blackout design and a vintage wood board texture.",
+  "alignment_training_queries": [
+    "I want to buy curtains with a blackout design and a vintage wood board texture.",
+    "I would like to purchase curtains featuring a blackout design and machine-washable fabric.",
+    "I am looking for curtains with a vintage wood board texture and rust-proof grommets."
+  ]
+}

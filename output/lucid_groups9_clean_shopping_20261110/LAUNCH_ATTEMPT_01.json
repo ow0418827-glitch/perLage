@@ -1,0 +1,13 @@
+{
+  "pid": 25940,
+  "started_at": "2026-11-10T17:42:56.8349881+08:00",
+  "executable": "D:\\Material\\Literature Reading\\code\\perLage\\.venv\\Scripts\\python.exe",
+  "script": "D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_lucid_groups9_clean_shopping_20261110.py",
+  "output_directory": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_clean_shopping_20261110",
+  "expected_episodes": 180,
+  "hidden_window": true,
+  "user_requested_no_continuous_monitoring": true,
+  "status": "failed_before_model_or_server",
+  "failure": "重复准备时冻结审计对象不完全相等，正在核查差异",
+  "stderr_log": "D:\\Material\\Literature Reading\\code\\perLage\\output\\lucid_groups9_clean_shopping_20261110\\queue.stderr.log"
+}

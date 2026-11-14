@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "config": {
+    "schema_version": 2,
+    "seed": 42,
+    "candidate_limit": 32,
+    "calibration_path": "src/data/public/calibration/shape_v2/threshold.json",
+    "models": {
+      "batch_size": 16
+    },
+    "groups": [
+      {
+        "key": "02_chair",
+        "target_id": "B09CYFD5BX"
+      },
+      {
+        "key": "09_toothbrush",
+        "target_id": "B09J81RMLD"
+      }
+    ]
+  },
+  "selection": {
+    "seed": 42,
+    "calibration_path": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\calibration\\shape_v2\\threshold.json",
+    "min_image_side": 64
+  },
+  "calibration_sha256": "f41933c77c1969bd1bc7fbbbc8ccf3c6bafe7ea28bb9a60f671d64e8c34d989c",
+  "type_rules_sha256": "0a1fb89ecd90e514a47e3acbf5256bb8cd9576c235770076c1de38ac5bebe3a3",
+  "ownership_policy": "simulated_controlled_public_subset_sha256_even_v1",
+  "target_ids_fixed": [
+    "B09CYFD5BX",
+    "B09J81RMLD"
+  ],
+  "formal_queries_used": false,
+  "victim_memory_used": false,
+  "shopping_allowed": false,
+  "annotation_scope": "drawn_source_and_target_only",
+  "empty_set_policy": "stop_without_relaxation"
+}

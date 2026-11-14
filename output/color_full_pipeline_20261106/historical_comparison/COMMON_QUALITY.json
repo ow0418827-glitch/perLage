@@ -1,0 +1,80 @@
+{
+  "same_source_and_quality_function": true,
+  "common_halo_sampling_pixels": 1289,
+  "same_halo_sampling_points_and_nearest_reference_for_all_images": true,
+  "target_dominant_rgb": [
+    220,
+    194,
+    160
+  ],
+  "rows": [
+    {
+      "image": "source",
+      "source_ssim": 1.0,
+      "source_mae": 0.0,
+      "common_halo_error": 0.0,
+      "material_mean_rgb": [
+        241,
+        241,
+        241
+      ],
+      "material_mean_lab": [
+        95.21085261570884,
+        -0.03232422427206836,
+        0.19990047685551274
+      ],
+      "target_color_distance": 25.910580038666808
+    },
+    {
+      "image": "old_actual_tested_complete",
+      "source_ssim": 0.9396276544746096,
+      "source_mae": 7.204725742340088,
+      "common_halo_error": 7.482165366558181,
+      "material_mean_rgb": [
+        231,
+        231,
+        221
+      ],
+      "material_mean_lab": [
+        91.31599600218236,
+        -1.7356422559414064,
+        4.978066893900912
+      ],
+      "target_color_distance": 20.284625254143528
+    },
+    {
+      "image": "old_no_shadow_complete",
+      "source_ssim": 0.9386441068182346,
+      "source_mae": 7.025368690490723,
+      "common_halo_error": 8.114674887222883,
+      "material_mean_rgb": [
+        231,
+        231,
+        220
+      ],
+      "material_mean_lab": [
+        91.32131640505459,
+        -1.6096597701634392,
+        5.261792606005216
+      ],
+      "target_color_distance": 20.03244034958265
+    },
+    {
+      "image": "new_temporary_relaxed_complete",
+      "source_ssim": 0.9210716147822939,
+      "source_mae": 7.732975959777832,
+      "common_halo_error": 31.789411660100015,
+      "material_mean_rgb": [
+        233,
+        233,
+        211
+      ],
+      "material_mean_lab": [
+        91.74758214126797,
+        -3.4951529290565198,
+        10.5811778481422
+      ],
+      "target_color_distance": 17.344685508950306
+    }
+  ]
+}

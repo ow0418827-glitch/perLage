@@ -1,0 +1,2140 @@
+{
+  "schema_version": 1,
+  "status": "completed",
+  "scope": "retrieval_only",
+  "query_mode": "joint",
+  "pool_count": 189,
+  "simultaneous_replacements": 1,
+  "query_count_per_bank": 20,
+  "shopping_executed": false,
+  "inputs_sha256": "11912aae99f880b09280e4f60cec8850a5ec2eb50c7cf9fc89a9611dbd7dce28",
+  "verification_sha256": "18418159d0a9352bcda06b4a59a5d58b7d1a0f8d3a7c7b0f7d7adf1c5689190a",
+  "visual_metrics": {
+    "dual_smooth": {
+      "07_shampoo": {
+        "steps": 350,
+        "best_step": 350,
+        "accepted": 350,
+        "rejected": 0,
+        "source_ssim": 0.8601598565518004,
+        "source_mae_levels": 8.187530517578125,
+        "fg_source_mae_levels": 14.106184959411621,
+        "bg_source_mae_levels": 2.642679214477539,
+        "fg_latent_max_levels": 20,
+        "fg_latent_mae_levels": 10.168188283549998,
+        "bg_latent_max_levels": 6,
+        "bg_latent_mae_levels": 2.2639581848420054,
+        "halo_error": 10.554545532389415,
+        "joint_score": 0.8973662853240967
+      }
+    },
+    "rankfocus": {
+      "07_shampoo": {
+        "steps": 1000,
+        "best_step": 1000,
+        "accepted": 1000,
+        "rejected": 0,
+        "source_ssim": 0.6707422055968855,
+        "source_mae_levels": 20.103633880615234,
+        "fg_source_mae_levels": null,
+        "bg_source_mae_levels": null,
+        "fg_latent_max_levels": null,
+        "fg_latent_mae_levels": null,
+        "bg_latent_max_levels": null,
+        "bg_latent_mae_levels": null,
+        "halo_error": 14.370612149746112,
+        "joint_score": 0.9739245176315308
+      }
+    },
+    "fg48_bg12": {
+      "07_shampoo": {
+        "steps": 350,
+        "best_step": 350,
+        "accepted": 350,
+        "rejected": 0,
+        "source_ssim": 0.7489784536203433,
+        "source_mae_levels": 11.79394245147705,
+        "fg_source_mae_levels": 20.787248611450195,
+        "bg_source_mae_levels": 3.3686230182647705,
+        "fg_latent_max_levels": 48,
+        "fg_latent_mae_levels": 17.117117638627015,
+        "bg_latent_max_levels": 12,
+        "bg_latent_mae_levels": 3.063239228568182,
+        "halo_error": 13.354239545676554,
+        "joint_score": 0.9660340547561646
+      }
+    },
+    "fg_lock_bg24": {
+      "07_shampoo": {
+        "steps": 350,
+        "best_step": 350,
+        "accepted": 350,
+        "rejected": 0,
+        "source_ssim": 0.8573713910701566,
+        "source_mae_levels": 8.16192626953125,
+        "fg_source_mae_levels": 8.534036636352539,
+        "bg_source_mae_levels": 7.81331729888916,
+        "fg_latent_max_levels": 0,
+        "fg_latent_mae_levels": 0.0,
+        "bg_latent_max_levels": 24,
+        "bg_latent_mae_levels": 7.543749418946977,
+        "halo_error": 6.430506826363317,
+        "joint_score": 0.8784857392311096
+      }
+    },
+    "bg_smooth": {
+      "07_shampoo": {
+        "steps": 350,
+        "best_step": 350,
+        "accepted": 350,
+        "rejected": 0,
+        "source_ssim": 0.9205519198715767,
+        "source_mae_levels": 6.813163757324219,
+        "fg_source_mae_levels": 8.534036636352539,
+        "bg_source_mae_levels": 5.200976848602295,
+        "fg_latent_max_levels": 0,
+        "fg_latent_mae_levels": 0.0,
+        "bg_latent_max_levels": 22,
+        "bg_latent_mae_levels": 4.816921813505222,
+        "halo_error": 6.430506826363317,
+        "joint_score": 0.8178595900535583
+      }
+    },
+    "baseline": {
+      "07_shampoo": {
+        "steps": 40,
+        "best_step": 40,
+        "accepted": 40,
+        "rejected": 0,
+        "source_ssim": 0.9669,
+        "source_mae_levels": 4.5,
+        "fg_source_mae_levels": 8.53,
+        "bg_source_mae_levels": 0.72,
+        "fg_latent_max_levels": 0,
+        "fg_latent_mae_levels": 0.0,
+        "bg_latent_max_levels": 0,
+        "bg_latent_mae_levels": 0.0,
+        "halo_error": 6.431,
+        "joint_score": 0.7023
+      }
+    }
+  },
+  "banks": {
+    "clean": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 15.55,
+          "mrr": 0.06445378151260503,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 15.55,
+          "mrr": 0.06445378151260503,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -3.0,
+            "mrr_gain": -0.015503760944937411,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -3.0,
+            "mrr_gain": -0.015503760944937411,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.100000000000001,
+            "mrr_gain": -0.09705415499533146,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.100000000000001,
+            "mrr_gain": -0.09705415499533146,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -14.55,
+            "mrr_gain": -0.9355462184873949,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -14.55,
+            "mrr_gain": -0.9355462184873949,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -14.55,
+            "mrr_gain": -0.9355462184873949,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -14.55,
+            "mrr_gain": -0.9355462184873949,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -12.05,
+            "mrr_gain": -0.2322128851540616,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -12.05,
+            "mrr_gain": -0.2322128851540616,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.300000000000001,
+            "mrr_gain": -0.03435449354567005,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.300000000000001,
+            "mrr_gain": -0.03435449354567005,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        }
+      }
+    },
+    "baseline": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 12.55,
+          "mrr": 0.07995754245754244,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 12.55,
+          "mrr": 0.07995754245754244,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.0,
+            "mrr_gain": 0.015503760944937411,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.0,
+            "mrr_gain": 0.015503760944937411,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -6.1000000000000005,
+            "mrr_gain": -0.08155039405039405,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -6.1000000000000005,
+            "mrr_gain": -0.08155039405039405,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -11.55,
+            "mrr_gain": -0.9200424575424575,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -11.55,
+            "mrr_gain": -0.9200424575424575,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -11.55,
+            "mrr_gain": -0.9200424575424575,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -11.55,
+            "mrr_gain": -0.9200424575424575,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.05,
+            "mrr_gain": -0.2167091242091242,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.05,
+            "mrr_gain": -0.2167091242091242,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 19,
+            "tied_ranks": 1,
+            "mean_rank_reduction": -2.3000000000000007,
+            "mrr_gain": -0.01885073260073264,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 19,
+            "tied_ranks": 1,
+            "mean_rank_reduction": -2.3000000000000007,
+            "mrr_gain": -0.01885073260073264,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        }
+      }
+    },
+    "lucid": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 6.45,
+          "mrr": 0.1615079365079365,
+          "top1": 0,
+          "top3": 0,
+          "top5": 4,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.2
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 6.45,
+          "mrr": 0.1615079365079365,
+          "top1": 0,
+          "top3": 0,
+          "top5": 4,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.2
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.100000000000001,
+            "mrr_gain": 0.09705415499533146,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.100000000000001,
+            "mrr_gain": 0.09705415499533146,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 6.1000000000000005,
+            "mrr_gain": 0.08155039405039405,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 6.1000000000000005,
+            "mrr_gain": 0.08155039405039405,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.45,
+            "mrr_gain": -0.8384920634920635,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -16,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -0.8
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.45,
+            "mrr_gain": -0.8384920634920635,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -16,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -0.8
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.45,
+            "mrr_gain": -0.8384920634920635,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -16,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -0.8
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -5.45,
+            "mrr_gain": -0.8384920634920635,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -16,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -0.8
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.95,
+            "mrr_gain": -0.13515873015873014,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -0.8
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.95,
+            "mrr_gain": -0.13515873015873014,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -0.8
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.8,
+            "mrr_gain": 0.06269966144966141,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.8,
+            "mrr_gain": 0.06269966144966141,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.2
+          }
+        }
+      }
+    },
+    "rankfocus": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 1.0,
+          "mrr": 1.0,
+          "top1": 20,
+          "top3": 20,
+          "top5": 20,
+          "top1_rate": 1.0,
+          "top3_rate": 1.0,
+          "top5_rate": 1.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 1.0,
+          "mrr": 1.0,
+          "top1": 20,
+          "top3": 20,
+          "top5": 20,
+          "top1_rate": 1.0,
+          "top3_rate": 1.0,
+          "top5_rate": 1.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 14.55,
+            "mrr_gain": 0.9355462184873949,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 14.55,
+            "mrr_gain": 0.9355462184873949,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 11.55,
+            "mrr_gain": 0.9200424575424575,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 11.55,
+            "mrr_gain": 0.9200424575424575,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.45,
+            "mrr_gain": 0.8384920634920635,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 16,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 0.8
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.45,
+            "mrr_gain": 0.8384920634920635,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 16,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 0.8
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 7,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.5,
+            "mrr_gain": 0.7033333333333334,
+            "top1_gain": 20,
+            "top3_gain": 7,
+            "top5_gain": 0,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 0.35,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 7,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.5,
+            "mrr_gain": 0.7033333333333334,
+            "top1_gain": 20,
+            "top3_gain": 7,
+            "top5_gain": 0,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 0.35,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.25,
+            "mrr_gain": 0.901191724941725,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.25,
+            "mrr_gain": 0.901191724941725,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        }
+      }
+    },
+    "fg48_bg12": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 1.0,
+          "mrr": 1.0,
+          "top1": 20,
+          "top3": 20,
+          "top5": 20,
+          "top1_rate": 1.0,
+          "top3_rate": 1.0,
+          "top5_rate": 1.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 1.0,
+          "mrr": 1.0,
+          "top1": 20,
+          "top3": 20,
+          "top5": 20,
+          "top1_rate": 1.0,
+          "top3_rate": 1.0,
+          "top5_rate": 1.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 14.55,
+            "mrr_gain": 0.9355462184873949,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 14.55,
+            "mrr_gain": 0.9355462184873949,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 11.55,
+            "mrr_gain": 0.9200424575424575,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 11.55,
+            "mrr_gain": 0.9200424575424575,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.45,
+            "mrr_gain": 0.8384920634920635,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 16,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 0.8
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.45,
+            "mrr_gain": 0.8384920634920635,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 16,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 0.8
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 7,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.5,
+            "mrr_gain": 0.7033333333333334,
+            "top1_gain": 20,
+            "top3_gain": 7,
+            "top5_gain": 0,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 0.35,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 7,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.5,
+            "mrr_gain": 0.7033333333333334,
+            "top1_gain": 20,
+            "top3_gain": 7,
+            "top5_gain": 0,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 0.35,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.25,
+            "mrr_gain": 0.901191724941725,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 20,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.25,
+            "mrr_gain": 0.901191724941725,
+            "top1_gain": 20,
+            "top3_gain": 20,
+            "top5_gain": 20,
+            "top1_rate_gain": 1.0,
+            "top3_rate_gain": 1.0,
+            "top5_rate_gain": 1.0
+          }
+        }
+      }
+    },
+    "fg_lock_bg24": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 3.5,
+          "mrr": 0.29666666666666663,
+          "top1": 0,
+          "top3": 13,
+          "top5": 20,
+          "top1_rate": 0.0,
+          "top3_rate": 0.65,
+          "top5_rate": 1.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 3.5,
+          "mrr": 0.29666666666666663,
+          "top1": 0,
+          "top3": 13,
+          "top5": 20,
+          "top1_rate": 0.0,
+          "top3_rate": 0.65,
+          "top5_rate": 1.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 12.05,
+            "mrr_gain": 0.2322128851540616,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 12.05,
+            "mrr_gain": 0.2322128851540616,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.05,
+            "mrr_gain": 0.2167091242091242,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.05,
+            "mrr_gain": 0.2167091242091242,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.95,
+            "mrr_gain": 0.13515873015873014,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 0.8
+          },
+          "overall": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 2.95,
+            "mrr_gain": 0.13515873015873014,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 0.8
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 7,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.5,
+            "mrr_gain": -0.7033333333333334,
+            "top1_gain": -20,
+            "top3_gain": -7,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.35,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 7,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.5,
+            "mrr_gain": -0.7033333333333334,
+            "top1_gain": -20,
+            "top3_gain": -7,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.35,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 7,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.5,
+            "mrr_gain": -0.7033333333333334,
+            "top1_gain": -20,
+            "top3_gain": -7,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.35,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 7,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -2.5,
+            "mrr_gain": -0.7033333333333334,
+            "top1_gain": -20,
+            "top3_gain": -7,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.35,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 6.75,
+            "mrr_gain": 0.19785839160839155,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 13,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 6.75,
+            "mrr_gain": 0.19785839160839155,
+            "top1_gain": 0,
+            "top3_gain": 13,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.65,
+            "top5_rate_gain": 1.0
+          }
+        }
+      }
+    },
+    "bg_smooth": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 10.25,
+          "mrr": 0.09880827505827508,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 10.25,
+          "mrr": 0.09880827505827508,
+          "top1": 0,
+          "top3": 0,
+          "top5": 0,
+          "top1_rate": 0.0,
+          "top3_rate": 0.0,
+          "top5_rate": 0.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.300000000000001,
+            "mrr_gain": 0.03435449354567005,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 5.300000000000001,
+            "mrr_gain": 0.03435449354567005,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 19,
+            "worsened_ranks": 0,
+            "tied_ranks": 1,
+            "mean_rank_reduction": 2.3000000000000007,
+            "mrr_gain": 0.01885073260073264,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 19,
+            "worsened_ranks": 0,
+            "tied_ranks": 1,
+            "mean_rank_reduction": 2.3000000000000007,
+            "mrr_gain": 0.01885073260073264,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -3.8,
+            "mrr_gain": -0.06269966144966141,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -3.8,
+            "mrr_gain": -0.06269966144966141,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": -4,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": -0.2
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.25,
+            "mrr_gain": -0.901191724941725,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.25,
+            "mrr_gain": -0.901191724941725,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.25,
+            "mrr_gain": -0.901191724941725,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 20,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -9.25,
+            "mrr_gain": -0.901191724941725,
+            "top1_gain": -20,
+            "top3_gain": -20,
+            "top5_gain": -20,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -1.0,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -6.75,
+            "mrr_gain": -0.19785839160839155,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 13,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -6.75,
+            "mrr_gain": -0.19785839160839155,
+            "top1_gain": 0,
+            "top3_gain": -13,
+            "top5_gain": -20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": -0.65,
+            "top5_rate_gain": -1.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 0,
+            "improved_ranks": 0,
+            "worsened_ranks": 0,
+            "tied_ranks": 20,
+            "mean_rank_reduction": 0.0,
+            "mrr_gain": 0.0,
+            "top1_gain": 0,
+            "top3_gain": 0,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.0,
+            "top5_rate_gain": 0.0
+          }
+        }
+      }
+    },
+    "dual_smooth": {
+      "metrics": {
+        "07_shampoo": {
+          "query_count": 20,
+          "mean_rank": 2.7,
+          "mrr": 0.3874999999999999,
+          "top1": 0,
+          "top3": 19,
+          "top5": 20,
+          "top1_rate": 0.0,
+          "top3_rate": 0.95,
+          "top5_rate": 1.0
+        },
+        "overall": {
+          "query_count": 20,
+          "mean_rank": 2.7,
+          "mrr": 0.3874999999999999,
+          "top1": 0,
+          "top3": 19,
+          "top5": 20,
+          "top1_rate": 0.0,
+          "top3_rate": 0.95,
+          "top5_rate": 1.0
+        }
+      },
+      "comparisons": {
+        "clean": {
+          "07_shampoo": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 12.850000000000001,
+            "mrr_gain": 0.3230462184873949,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 12.850000000000001,
+            "mrr_gain": 0.3230462184873949,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "baseline": {
+          "07_shampoo": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.850000000000001,
+            "mrr_gain": 0.30754245754245746,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 9.850000000000001,
+            "mrr_gain": 0.30754245754245746,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          }
+        },
+        "lucid": {
+          "07_shampoo": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.75,
+            "mrr_gain": 0.2259920634920634,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 0.8
+          },
+          "overall": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 3.75,
+            "mrr_gain": 0.2259920634920634,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 16,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 0.8
+          }
+        },
+        "rankfocus": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 1,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -1.7000000000000002,
+            "mrr_gain": -0.6125,
+            "top1_gain": -20,
+            "top3_gain": -1,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.050000000000000044,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 1,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -1.7000000000000002,
+            "mrr_gain": -0.6125,
+            "top1_gain": -20,
+            "top3_gain": -1,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.050000000000000044,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg48_bg12": {
+          "07_shampoo": {
+            "top3_gained": 0,
+            "top3_lost": 1,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -1.7000000000000002,
+            "mrr_gain": -0.6125,
+            "top1_gain": -20,
+            "top3_gain": -1,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.050000000000000044,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 0,
+            "top3_lost": 1,
+            "improved_ranks": 0,
+            "worsened_ranks": 20,
+            "tied_ranks": 0,
+            "mean_rank_reduction": -1.7000000000000002,
+            "mrr_gain": -0.6125,
+            "top1_gain": -20,
+            "top3_gain": -1,
+            "top5_gain": 0,
+            "top1_rate_gain": -1.0,
+            "top3_rate_gain": -0.050000000000000044,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "fg_lock_bg24": {
+          "07_shampoo": {
+            "top3_gained": 6,
+            "top3_lost": 0,
+            "improved_ranks": 14,
+            "worsened_ranks": 0,
+            "tied_ranks": 6,
+            "mean_rank_reduction": 0.7999999999999998,
+            "mrr_gain": 0.09083333333333327,
+            "top1_gain": 0,
+            "top3_gain": 6,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.29999999999999993,
+            "top5_rate_gain": 0.0
+          },
+          "overall": {
+            "top3_gained": 6,
+            "top3_lost": 0,
+            "improved_ranks": 14,
+            "worsened_ranks": 0,
+            "tied_ranks": 6,
+            "mean_rank_reduction": 0.7999999999999998,
+            "mrr_gain": 0.09083333333333327,
+            "top1_gain": 0,
+            "top3_gain": 6,
+            "top5_gain": 0,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.29999999999999993,
+            "top5_rate_gain": 0.0
+          }
+        },
+        "bg_smooth": {
+          "07_shampoo": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 7.55,
+            "mrr_gain": 0.2886917249417248,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          },
+          "overall": {
+            "top3_gained": 19,
+            "top3_lost": 0,
+            "improved_ranks": 20,
+            "worsened_ranks": 0,
+            "tied_ranks": 0,
+            "mean_rank_reduction": 7.55,
+            "mrr_gain": 0.2886917249417248,
+            "top1_gain": 0,
+            "top3_gain": 19,
+            "top5_gain": 20,
+            "top1_rate_gain": 0.0,
+            "top3_rate_gain": 0.95,
+            "top5_rate_gain": 1.0
+          }
+        }
+      }
+    }
+  }
+}

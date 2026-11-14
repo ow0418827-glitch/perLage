@@ -1,0 +1,10 @@
+{
+  "status": "reviewed_public_inputs_before_training",
+  "source_images_and_protection_reviewed": true,
+  "groups": {
+    "07_shampoo": "文字、数字、商标图案位于保护核心；白色瓶身底材可编辑。",
+    "09_toothbrush": "五官、面部和腹部图案位于保护核心；粉色塑料手柄底材可编辑。"
+  },
+  "caveat": "保护掩码的公开视觉核对不替代最终成图的逐项核对。",
+  "formal_results_used_to_choose_masks": false
+}

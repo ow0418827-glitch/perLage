@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "failed_at": "2026-11-11T10:50:49Z",
+  "pid": 21604,
+  "stage": "all",
+  "method": null,
+  "error_type": "NameError",
+  "error": "name 'METHODS' is not defined",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_target_image_20261111.py\", line 388, in main\n    queue(run)\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\run_groups9_target_image_20261111.py\", line 364, in queue\n    write_report(run, plan)\n  File \"D:\\Material\\Literature Reading\\code\\perLage\\tools\\groups9_target_report.py\", line 160, in write_report\n    for method in METHODS:\n                  ^^^^^^^\nNameError: name 'METHODS' is not defined\n"
+}

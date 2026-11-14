@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "published",
+  "selected_bundle_sha256": "0fbbb927a2a2fbb17eac23c16c1396640cfdbae1d5a3998979eeddea157fdb60",
+  "groups": [
+    {
+      "key": "02_chair",
+      "directory": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\target.jpg",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\pair.json",
+      "manifest_sha256": "dac3c0edf24085cbf2d562e9a3ce40939a73e8f951294353b26ac3dffdc74c9b",
+      "pipeline_config": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\02_chair\\pipeline.json",
+      "pipeline_config_sha256": "1fbc8ff7260b2528bcde5df3e821556f8a368fb91ca1df46901d62c537dc26bf",
+      "original_selection_sha256": "89f09701347c97e1644bcab330501f0548125d7369c2d05d5f1e29913917a6cb"
+    },
+    {
+      "key": "09_toothbrush",
+      "directory": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush",
+      "source": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\source.jpg",
+      "target": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\target.jpg",
+      "manifest": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\pair.json",
+      "manifest_sha256": "bef4443ce52b7275ced96f8ff67fbfe55c768c5ba3d7ce26853ed95c751e24ae",
+      "pipeline_config": "D:\\Material\\Literature Reading\\code\\perLage\\src\\data\\public\\groups\\09_toothbrush\\pipeline.json",
+      "pipeline_config_sha256": "280d0d215b0c4ef0051d27b12048b73651d91731aaa2e5f051a7168054cebd49",
+      "original_selection_sha256": "83e45133c4e456662da3ed030b8ac7ac56109494f45861406350bee29fcc490c"
+    }
+  ],
+  "generation_runs": 0,
+  "shared_memory_read": false
+}
