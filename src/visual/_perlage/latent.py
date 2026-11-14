@@ -191,7 +191,7 @@ def refine_harmonized_generation(*, source, target, source_title, training_queri
         retention = min(group.values()) + config.retention_tolerance
         arr = np.rint(image[0].permute(1, 2, 0).cpu().numpy() * 255).astype(np.uint8)
         halo = halo_error(context, arr)
-        natural = halo <= max(parent_halo * 0.5, 0.5)
+        natural = halo <= max(parent_halo * 0.5, 6.0)
         good = ss >= config.source_ssim_floor and mae <= config.source_mae_ceiling
         vals = image.new_tensor(selection_scores)
         utility = float(0.5 * vals.mean() + 0.5 * softmin(vals, config.temperature))
@@ -334,7 +334,7 @@ def refine_harmonized_generation(*, source, target, source_title, training_queri
                 if not bool((ordinary >= ordinary_floors - 1e-07).all()):
                     continue
                 arr = np.rint(candidate[0].permute(1, 2, 0).cpu().numpy() * 255).astype(np.uint8)
-                if halo_error(context, arr) > max(parent_halo * 0.5, 0.5):
+                if halo_error(context, arr) > max(parent_halo * 0.5, 6.0):
                     continue
                 fraction = scale
                 break

@@ -8,6 +8,19 @@ from src.visual.image_utils import sha256_file
 
 
 @pytest.fixture
+def public_feature_stub(monkeypatch):
+    """合成图对的公开特点夹具，不能访问或冒充真实商品元数据。"""
+    import src.visual.target_features as feature_module
+    def extract(asin, db_path=None):
+        text = 'I want to buy a fixture product with a smooth finish.'
+        return dict(asin=asin, brand='Fixture', category='fixture product',
+                    attributes=['smooth finish'], canonical_sentence=text,
+                    training_queries=[text], source='synthetic_test_fixture')
+    monkeypatch.setattr(feature_module, 'extract_product_features', extract)
+    return extract
+
+
+@pytest.fixture
 def products(tmp_path):
     records = []
     for i, color in enumerate(((140, 80, 20), (25, 100, 160), (50, 160, 25))):

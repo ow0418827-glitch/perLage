@@ -62,6 +62,10 @@ def training_data(definition):
     allowed = {'source', 'target', 'source_title', 'training_queries'}
     if set(data) != allowed or definition.get('training_data_policy') != TRAINING_DATA_POLICY:
         raise ValueError('训练配置只能含图对、公开商品名和通用训练指令；禁止 source_history 或任何记忆库输入，请重建配置和公开池')
+    feature_text = definition.get('target_feature_text')
+    if feature_text is not None and (not isinstance(feature_text, str) or not feature_text.strip()
+                                     or data['training_queries'] != [feature_text]):
+        raise ValueError('实际训练文字必须与冻结的目标商品特点完全一致')
     return dict(data, source_title=validate_public_title(data['source_title']))
 
 

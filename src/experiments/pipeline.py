@@ -52,6 +52,10 @@ def load_config(path):
         raise ValueError('须指定公开候选清单或已确定的分组图对，且只能使用其中一种输入')
     if any(k in config.get('evaluation', {}) for k in ('groups', 'group_memory', 'memory_by_group')):
         raise ValueError('完整流程不再接受按组记忆配置')
+    if config.get('evaluation', {}).get('query_mode', 'joint') not in ('text', 'joint'):
+        raise ValueError('正式查询模式只能是纯文字或图文联合')
+    if config.get('evaluation', {}).get('defense_mode', 'panel') not in ('none', 'panel'):
+        raise ValueError('防御范围只能为无防御或既有完整面板')
     return config
 
 
@@ -70,6 +74,33 @@ def public_inputs(config):
     return path, target, candidates
 
 
+def selected_feature_text(selection):
+    """统一解析图对绑定的特点正文，拒绝两处保存了不同正文。"""
+    target = selection['target']
+    texts = [text for text in (target.get('feature_text'), target.get('canonical_sentence'),
+             selection.get('target_feature_text'), selection.get('feature_text')) if text is not None]
+    if any(not isinstance(text, str) or not text.strip() for text in texts):
+        raise ValueError('目标商品特点文字必须为非空字符串')
+    if len(set(texts)) > 1:
+        raise ValueError('图对中保存的目标商品特点文字不一致')
+    return texts[0] if texts else None
+
+
+def bind_selected_features(selection):
+    """仅在图对确定后提取特点；旧发布图对只在新运行副本中补充，不改历史清单。"""
+    if selected_feature_text(selection) is None:
+        from src.visual.target_features import extract_product_features
+        try:
+            features = extract_product_features(selection['target']['id'])
+            selection['target_feature_text'] = features['canonical_sentence']
+            selection['target'].update(brand=features['brand'], attributes=features['attributes'],
+                                       feature_text=features['canonical_sentence'],
+                                       training_queries=features['training_queries'])
+        except (KeyError, ValueError, FileNotFoundError):
+            pass
+    return selection
+
+
 def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBackend):
     evaluation = config.get('evaluation', {})
     protected = [project_path(evaluation.get('shared_pool', SHARED_MEMORY)),
@@ -78,7 +109,15 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
     root = Path(root)
     public_input = project_path(config.get('public_pair') or config['public_catalog'])
     input_root = public_root_for(public_input, extra_roots=(PUBLIC, DATA))
-    with catalog_training_guard(allowed_output_roots=[root, input_root, PUBLIC], private_paths=protected):
+    allowed_roots = [root, input_root, PUBLIC]
+    cal_root = None
+    raw_settings = dict(config.get('selection', {}))
+    if not config.get('public_pair') and raw_settings.get('calibration_path'):
+        calibration = project_path(raw_settings['calibration_path'])
+        cal_root = public_root_for(calibration, extra_roots=(PUBLIC, DATA))
+        if cal_root not in allowed_roots:
+            allowed_roots.append(cal_root)
+    with catalog_training_guard(allowed_output_roots=allowed_roots, private_paths=protected):
         if config.get('public_pair'):
             from src.visual.pair_assets import load_pair
             manifest = project_path(config['public_pair'])
@@ -92,6 +131,7 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
             selected['scoring_binding'] = selected['binding']
             selected['binding'] = dict(public_pair_sha256=selected['pair_manifest_sha256'],
                                        scoring_record_sha256=selected['scoring_record_sha256'])
+            bind_selected_features(selected)
             freeze_json(root / 'selection' / 'SELECTED_PAIR.json', selected)
             return read_json(root / 'selection' / 'SELECTED_PAIR.json')
         raw_settings=dict(config.get('selection',{}))
@@ -116,9 +156,11 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
             from src.visual.audit import verify_model_snapshot
             verify_model_snapshot(saved['models'])
             return saved
+        cal_roots = tuple(dict.fromkeys([r for r in (cal_root, input_root, PUBLIC, DATA) if r is not None]))
         backend = backend_factory(config.get('selection_models', {}), root / 'selection' / 'features', device)
         try:
-            selection = choose_pair(target, candidates, backend, settings,public_root=input_root)
+            selection = choose_pair(target, candidates, backend, settings,
+                                    public_root=input_root, calibration_public_root=cal_roots)
         finally:
             backend.close()
         selection.update(binding=binding, target=target)
@@ -137,8 +179,9 @@ def select_pair(config, root, *, device='cuda', backend_factory=LocalSelectionBa
                    for p in (selection['source'],target)):
                 if not pending_path.exists():freeze_json(pending_path,selection)
                 raise SelectedAnnotationsPending('轻量选图已完成；仅须核对选中源图与目标图的主体和印刷区，然后继续发布或生成')
-            selection['source']=validate_product(selection['source'],path.parent,owned=True)
-            selection['target']=validate_product(target,path.parent)
+            selection['source']=validate_product(selection['source'],path.parent,owned=True,public_root=input_root)
+            selection['target']=validate_product(target,path.parent,public_root=input_root)
+            bind_selected_features(selection)
             from src.visual.pair_assets import publish_pair
             scoring_path = root / 'selection' / 'SCORED_PAIR.json'
             freeze_json(scoring_path, selection)
@@ -171,10 +214,13 @@ def generation_definition(selection, options, method='PerLAGE'):
         raise ValueError('生成参数只能配置初始化、颜色融合和潜变量细化；不能传入历史成图或记忆')
     source, target = selection['source'], selection['target']
     is_no_pixel = method == 'PerLAGE_no_pixel'
+    feature_text = selected_feature_text(selection)
+    training_queries = [feature_text] if feature_text else list(TRAINING_QUERIES)
     definition = dict(method=method, definition=definition_for_method(method), color_scheme='statistics',
         training_data_policy=TRAINING_DATA_POLICY, pixel_optimization=False if is_no_pixel else options.get('pixel_optimization', False),
         data=dict(source=source['image'], target=target['image'], source_title=source['title'],
-                  training_queries=list(TRAINING_QUERIES)),
+                  training_queries=training_queries),
+        target_feature_text=feature_text,
         source_boxes=product_boxes(source), target_boxes=product_boxes(target),
         print_regions=source['text_regions'])
     definition.update(copy.deepcopy(options))
@@ -211,12 +257,22 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
     if set(generation) - set(METHODS):
         raise ValueError('生成设置只能使用当前登记的三种方法')
     options = copy.deepcopy(generation.get(method, {}))
+    feature_text = selected_feature_text(selection)
+    if feature_text is None:
+        raise ValueError('正式生成前须先在选图阶段提取并冻结目标商品特点文字')
+    if method == 'lucid':
+        if options.get('target_text', feature_text) != feature_text:
+            raise ValueError('像素方法与感知方法必须使用同一份目标商品特点文字')
+        options['target_text'] = feature_text
+        options.setdefault('text_weight', 1.0)
     output = Path(root) / 'methods' / method
     source, target = selection['source'], selection['target']
     public_binding = dict(method=method, selection_sha256=sha256_file(Path(root) / 'selection/SELECTED_PAIR.json'),
                           source=source, target=target, options=options, source_files=source_snapshot(),
                           shared_pool_scope='shared', threat_model='black_box_provisional')
     evaluation = config.get('evaluation', {})
+    query_mode = evaluation.get('query_mode', 'joint')
+    query_request_name = 'QUERY_INPUT_REQUEST.json' if query_mode == 'text' else 'QUERY_IMAGE_REQUEST.json'
     private_paths = [project_path(evaluation.get('shared_pool', SHARED_MEMORY)),
                      project_path(evaluation.get('query_manifest', PRIVATE / 'query_image.json')),
                      project_path(evaluation.get('encoder_config', PRIVATE / 'evaluator.json'))]
@@ -229,7 +285,7 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
                 raise ValueError('成图冻结后不能更改公开配置或实现')
             validate_attack_completion(frozen['metadata'], frozen['requested_steps'],
                 dict(method=method, source_image_sha256=source['image_sha256'], target_image_sha256=target['image_sha256']))
-            freeze_json(output / 'QUERY_IMAGE_REQUEST.json', pending_query_spec(target))
+            freeze_json(output / query_request_name, pending_query_spec(target, query_mode))
             return frozen
         if method in NATURAL_METHODS:
             definition = generation_definition(selection, options, method=method)
@@ -255,7 +311,7 @@ def generate(config, root, selection, method, *, device='cuda', generator=None):
                       shared_pool_scope='shared', victim_memory_used=False, formal_queries_used=False)
         freeze_json(output / 'FROZEN_IMAGE.json', frozen)
         freeze_json(output / 'TRAINING_ACCESS_AUDIT.json', {k: v for k, v in audit.items() if k != 'active'})
-    freeze_json(output / 'QUERY_IMAGE_REQUEST.json', pending_query_spec(target))
+    freeze_json(output / query_request_name, pending_query_spec(target, query_mode))
     return frozen
 
 
@@ -265,6 +321,9 @@ def main(argv=None):
     parser.add_argument('--config', type=Path, default=EXPERIMENT_CONFIGS / 'pipeline.example.json')
     parser.add_argument('--method', choices=METHODS)
     parser.add_argument('--device', choices=('cpu', 'cuda'), default='cuda')
+    parser.add_argument('--query-mode', choices=('text', 'joint'), help='正式询问采用纯文字或独立图文协议')
+    parser.add_argument('--query-manifest', type=Path, help='显式复用已冻结的正式询问清单')
+    parser.add_argument('--no-defense', action='store_true', help='仅运行无防御条件，不运行完整防御面板')
     args = parser.parse_args(argv)
     os.environ.update(HF_HUB_OFFLINE='1', TRANSFORMERS_OFFLINE='1', TOKENIZERS_PARALLELISM='false', PYTHONDONTWRITEBYTECODE='1')
     if args.stage == 'doctor':
@@ -272,6 +331,12 @@ def main(argv=None):
         doctor(args.device)
         return 0
     config = load_config(args.config)
+    if args.query_mode is not None:
+        config.setdefault('evaluation', {})['query_mode'] = args.query_mode
+    if args.query_manifest is not None:
+        config.setdefault('evaluation', {})['query_manifest'] = str(args.query_manifest.resolve())
+    if args.no_defense:
+        config.setdefault('evaluation', {})['defense_mode'] = 'none'
     method = normalize_method(args.method or config.get('method', 'PerLAGE'))
     root = project_path(config.get('run_dir', OUTPUT / 'runs/default'))
     if not root.is_relative_to(OUTPUT.resolve()):
@@ -292,12 +357,17 @@ def main(argv=None):
             from src.experiments.shared_evaluation import evaluate, report
             frozen = load_frozen(method_root)
             settings = config.get('evaluation', {})
-            if set(settings) - {'shared_pool', 'query_manifest', 'source_memory_id', 'encoder_config'}:
+            if set(settings) - {'shared_pool', 'query_manifest', 'query_mode', 'defense_mode', 'source_memory_id', 'encoder_config'}:
                 raise ValueError('评估只接受共享池、正式查询图和评估端记忆标识')
+            from src.experiments.defenses import conditions
+            selected_conditions = ([c for c in conditions() if c['kind'] == 'none']
+                                   if settings.get('defense_mode') == 'none' else None)
             evaluate(frozen, method_root / 'evaluation',
                      pool_path=project_path(settings.get('shared_pool', SHARED_MEMORY)),
                      query_manifest=project_path(settings.get('query_manifest', PRIVATE / 'query_image.json')),
                      source_memory_id=settings.get('source_memory_id'), device=args.device,
+                     query_mode=settings.get('query_mode'),
+                     selected_conditions=selected_conditions,
                      encoder_config=project_path(settings['encoder_config']) if settings.get('encoder_config') else None)
             report(method_root / 'evaluation')
         if args.stage == 'verify':
@@ -305,7 +375,9 @@ def main(argv=None):
             settings = config.get('evaluation', {})
             from src.experiments.shared_evaluation import make_eval_encoder
             verify(method_root / 'evaluation', encoder_factory=lambda: make_eval_encoder(args.device,
-                project_path(settings['encoder_config']) if settings.get('encoder_config') else None))
+                project_path(settings['encoder_config']) if settings.get('encoder_config') else None),
+                query_mode=settings.get('query_mode'),
+                query_manifest=project_path(settings['query_manifest']) if settings.get('query_manifest') else None)
         if args.stage == 'report':
             from src.experiments.shared_evaluation import report
             report(method_root / 'evaluation')

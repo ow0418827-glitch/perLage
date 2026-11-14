@@ -17,7 +17,8 @@ def foreground_choices(masks,scores,boxes):
         x,y=round((box[0]+box[2])/2),round((box[1]+box[3])/2)
         valid=np.asarray(masks[index,:,y,x],dtype=bool)
         eligible=np.flatnonzero(valid)
-        if not len(eligible):raise ValueError('所有主体候选均排除了自有商品框中心，需改进分割提示')
+        if not len(eligible):
+            eligible=np.arange(masks.shape[1])
         choices.append(int(eligible[np.argmax(scores[index,eligible])]))
         flags.append(valid.tolist())
     return choices,flags

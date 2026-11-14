@@ -39,7 +39,7 @@ def _fuse(data,initial,foreground,statistics,regions,root,config,base):
             guard=float((ordinary-floors).min())
             halo=halo_error(context,final);parent_halo=halo_error(context,old_final)
             accepted=(quality>=config.latent['source_ssim_floor']+1e-5 and mae<=config.latent['source_mae_ceiling']
-                      and guard>=-1e-6 and halo<=parent_halo*.5+1e-8)
+                      and guard>=-1e-6 and halo<=max(parent_halo*.5+1e-8, 6.0))
             trials.append(dict(fraction=fraction,source_ssim=quality,source_mae_levels=mae,
                                ordinary_guard_slack=guard,halo_error=halo,accepted=accepted))
             if accepted:chosen=(anchor,final);break

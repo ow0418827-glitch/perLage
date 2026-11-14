@@ -22,15 +22,10 @@ def token_kmeans(tokens: torch.Tensor, clusters: int, iterations: int = 100) -> 
             F.normalize(tokens.detach(), dim=-1),
             F.normalize(centers.detach(), dim=-1),
         ).argmax(dim=-1)
-        next_centers: list[torch.Tensor] = []
-        for index in range(count):
-            mask = (assignments == index).to(tokens.dtype).unsqueeze(-1)
-            members = mask.sum(dim=1)
-            candidate = (tokens * mask).sum(dim=1) / members.clamp_min(1.0)
-            next_centers.append(
-                torch.where((members > 0).expand_as(candidate), candidate, centers[:, index, :])
-            )
-        centers = torch.stack(next_centers, dim=1)
+        one_hot = F.one_hot(assignments, num_classes=count).to(tokens.dtype)
+        members = one_hot.sum(dim=1, keepdim=True).transpose(1, 2)
+        candidate = torch.einsum("bnk,bnd->bkd", one_hot, tokens) / members.clamp_min(1.0)
+        centers = torch.where(members > 0, candidate, centers)
     if count < clusters:
         repeated = centers[:, -1:, :].expand(batch, clusters - count, centers.shape[-1])
         centers = torch.cat((centers, repeated), dim=1)

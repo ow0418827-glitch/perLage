@@ -31,7 +31,7 @@ from src.visual.retrieval_objective import TRAINING_DATA_POLICY, training_data
 class PerLAGENoPixelConfig:
     harmonization: dict = field(default_factory=lambda: dict(
         smoothing_sigma=12.0, print_ring_sigma=7.0, selected_color_mix=0.25,
-        strength=0.75, blend_mode='matte'))
+        strength=1.0, blend_mode='matte'))
     latent: dict = field(default_factory=lambda: dict(asdict(PerLAGELatentConfig()), auxiliary_levels=0))
     pixel_optimization: bool = False
 

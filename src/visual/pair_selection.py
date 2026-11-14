@@ -65,8 +65,44 @@ def image_quality(product,minimum):
     except (OSError,ValueError):return dict(accepted=False,reason='unreadable_image')
 
 
-def score_pair(source,target,source_features,target_features,*,threshold,config=SelectionConfig()):
+def _under_public_root(target,public_root):
+    if public_root is None:return True
+    roots=public_root if isinstance(public_root,(tuple,list)) else (public_root,)
+    resolved=Path(target).resolve()
+    return any(resolved.is_relative_to(Path(r).resolve()) for r in roots)
+
+
+def validate_subtype_filter(subtype_filter,*,allow_empty=False):
+    if subtype_filter is None:return None
+    if not isinstance(subtype_filter,dict):raise ValueError('细分品类过滤规则必须为字典对象')
+    if set(subtype_filter)-{'include','exclude','policy'}:raise ValueError('细分品类过滤字段无效')
+    if 'policy' in subtype_filter and (not isinstance(subtype_filter['policy'],str) or not subtype_filter['policy'].strip()):
+        raise ValueError('细分品类规则名称必须为非空字符串')
+    for pattern_key in ('include','exclude'):
+        if pattern_key in subtype_filter:
+            pattern=subtype_filter[pattern_key]
+            if not isinstance(pattern,str) or not pattern.strip():raise ValueError('细分品类正则必须为非空字符串')
+            try:re.compile(pattern,re.I)
+            except re.error as err:raise ValueError('细分品类正则语法无效：'+str(err)) from err
+    if 'include' not in subtype_filter and 'exclude' not in subtype_filter:
+        if not subtype_filter and allow_empty:return subtype_filter
+        raise ValueError('细分品类过滤至少须提供 include 或 exclude 正则')
+    return subtype_filter
+
+
+def matches_subtype_filter(title,subtype_filter):
+    rule=validate_subtype_filter(subtype_filter,allow_empty=True)
+    if not rule:return True
+    include=rule.get('include')
+    exclude=rule.get('exclude')
+    if include and not re.search(include,title,re.I):return False
+    if exclude and re.search(exclude,title,re.I):return False
+    return True
+
+
+def score_pair(source,target,source_features,target_features,*,threshold,config=SelectionConfig(),subtype_filter=None):
     """只判断合格与否；外形分数不参与最终抽样排序。"""
+    subtype_filter=validate_subtype_filter(subtype_filter,allow_empty=False)
     compatibility=type_compatibility(source,target)
     quality=image_quality(source,config.min_image_side);target_quality=image_quality(target,config.min_image_side)
     reasons=[]
@@ -76,6 +112,7 @@ def score_pair(source,target,source_features,target_features,*,threshold,config=
     if source.get('owned') is not True:reasons.append('source_not_attacker_owned')
     if not compatibility['resolved']:reasons.append('public_type_review_required')
     elif not compatibility['compatible']:reasons.append('obvious_product_type_conflict')
+    elif not matches_subtype_filter(source['title'],subtype_filter):reasons.append('subtype_filter_mismatch')
     if not quality['accepted'] or not target_quality['accepted']:reasons.append('public_image_quality_failed')
     shape=None
     if source_features is not None and target_features is not None:
@@ -86,10 +123,11 @@ def score_pair(source,target,source_features,target_features,*,threshold,config=
         shape_similarity=shape,type_compatibility=compatibility,image_quality=quality)
 
 
-def choose_pair(target,candidates,backend,config=SelectionConfig(),*,excluded_source_ids=(),public_root=None):
+def choose_pair(target,candidates,backend,config=SelectionConfig(),*,excluded_source_ids=(),public_root=None,calibration_public_root=None,subtype_filter=None):
     from src.visual.shape_calibration import load_calibration
     config.validate()
-    certificate=load_calibration(config.calibration_path,backend.snapshot,public_root=public_root)
+    subtype_filter=validate_subtype_filter(subtype_filter,allow_empty=False)
+    certificate=load_calibration(config.calibration_path,backend.snapshot,public_root=calibration_public_root if calibration_public_root is not None else public_root)
     ids=[p['id'] for p in candidates]
     if not ids or len(ids)!=len(set(ids)):raise ValueError('公开候选标识不能重复或为空')
     if set(ids+[target['id']])&set(certificate['development_product_ids']):
@@ -98,9 +136,11 @@ def choose_pair(target,candidates,backend,config=SelectionConfig(),*,excluded_so
     if {p['image_sha256'] for p in candidates+[target]}&dev_images:raise ValueError('正式图片与公开开发集图片重复')
     if not image_quality(target,config.min_image_side)['accepted']:raise ValueError('固定目标图片质量未通过')
     if not type_compatibility(target,target)['resolved']:raise ValueError('固定目标的公开类型须先核对')
+    if not matches_subtype_filter(target['title'],subtype_filter):raise ValueError('固定目标不满足公开细分品类规则')
     excluded=set(excluded_source_ids);ready=[]
     for p in candidates:
         if (p['id'] not in excluded and type_compatibility(p,target)['compatible']
+                and matches_subtype_filter(p['title'],subtype_filter)
                 and image_quality(p,config.min_image_side)['accepted']):ready.append(p)
     if hasattr(backend,'features_many'):backend.features_many([target]+ready)
     target_features=backend.features(target)
@@ -108,7 +148,7 @@ def choose_pair(target,candidates,backend,config=SelectionConfig(),*,excluded_so
     ready_ids={p['id'] for p in ready}
     for p in sorted(candidates,key=lambda p:p['id']):
         row=score_pair(p,target,backend.features(p) if p['id'] in ready_ids else None,target_features,
-            threshold=certificate['fit']['threshold'],config=config)
+            threshold=certificate['fit']['threshold'],config=config,subtype_filter=subtype_filter)
         if p['id'] in excluded:row['rejected_reasons'].append('reserved_in_public_batch')
         if not row['rejected_reasons']:
             if p['image_sha256'] in seen_images:row['rejected_reasons'].append('duplicate_candidate_image')
@@ -116,11 +156,13 @@ def choose_pair(target,candidates,backend,config=SelectionConfig(),*,excluded_so
         row['eligible']=not row['rejected_reasons'];rows.append(row)
     eligible=[r['source_id'] for r in rows if r['eligible']]
     draw=uniform_draw(eligible,target['id'],config.seed) if eligible else None
-    return dict(protocol=SELECTION_POLICY,status='selected' if eligible else 'no_eligible_pair',
+    result=dict(protocol=SELECTION_POLICY,status='selected' if eligible else 'no_eligible_pair',
         selected_source_id=draw['selected_source_id'] if draw else None,target_id=target['id'],candidates=rows,
         configuration=asdict(config),draw=draw,calibration=certificate,models=backend.snapshot,
         type_rules_sha256=TYPE_RULES_SHA256,excluded_source_ids=sorted(excluded),
         victim_memory_used=False,victim_queries_used=False,target_system_probed=False)
+    if subtype_filter:result['subtype_filter']=subtype_filter
+    return result
 
 
 def verify_selection(selection):
@@ -162,7 +204,7 @@ def validate_product(record,base,*,owned=False,generation_ready=True,public_root
     for field in ('image','foreground_mask'):
         if product.get(field):
             path=Path(product[field]);path=(path if path.is_absolute() else Path(base)/path).resolve()
-            if public_root is not None and not path.is_relative_to(Path(public_root).resolve()):
+            if public_root is not None and not _under_public_root(path,public_root):
                 raise ValueError('公开图片和标注须在读取内容前确认位于公开数据目录')
             if not path.is_file():raise FileNotFoundError('公开图片或掩码不存在：'+str(path))
             actual=sha256_file(path)

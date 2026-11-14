@@ -177,6 +177,11 @@ def run_shopping(root,*,device='cuda'):
     from src.agent.prompts.loader import load_shopping_prompt
     import src.agent.shopping as shopping
     root=Path(root);plan=read_json(root/'BATCH_PLAN.json')
+    from src.experiments.query_contract import query_retriever_options, verify_query_input
+    queries = [query for group in plan['groups'] for query in group['queries']]
+    query_options = query_retriever_options(queries)
+    for query in queries:
+        verify_query_input(query)
     verified=read_json(root/'retrieval/INDEPENDENT_VERIFICATION.json')
     if verified['status']!='passed' or verified['rows_sha256']!=sha256_file(root/'retrieval/evaluation.json'):
         raise ValueError('最终购物须在完整检索及独立复算通过后执行')
@@ -215,7 +220,7 @@ def run_shopping(root,*,device='cuda'):
             original_bank_file=root/'retrieval/banks/none'/(bank_name+'.json')
             entries=policy_references(read_json(original_bank_file))
             bank_file=root/'shopping/policy_banks'/(bank_name+'.json');freeze_json(bank_file,entries)
-            ranker=VisualMemoryRetriever(encoder,bank_file,cache_dir=root/'shopping/indexes'/bank_name)
+            ranker=VisualMemoryRetriever(encoder,bank_file,cache_dir=root/'shopping/indexes'/bank_name,**query_options)
             save_json(root/'shopping/image_overrides.json',{})
             cache_audit=prepare_original_cache(root,entries,[g['source'] for g in plan['groups']])
             save_json(root/'shopping'/('original_cache_'+bank_name+'.json'),cache_audit)
@@ -235,7 +240,7 @@ def run_shopping(root,*,device='cuda'):
                         try:
                             reward,record,_=shopping.webshop_run_rap(session,'','',INITIAL_PROMPTS['PROMPT1'],env,client,
                                 settings.model,settings.provider,None,entries,{'Instruction':np.zeros((len(entries),1))},15,
-                                benign=True,test=True,to_print=False,query_image=query['query_image'],visual_retriever=ranker,
+                                benign=True,test=True,to_print=False,query_image=query.get('query_image'),visual_retriever=ranker,
                                 retrieval_candidates=3,retrieval_top_k=3,vision_input=True,honest_reward=True,
                                 memory_mode='full',memory_image_input=True,memory_path=bank_file,
                                 policy_memory_image_field='RetrievalImage',original_instruction=query['instruction'],

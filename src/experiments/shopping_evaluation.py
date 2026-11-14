@@ -20,6 +20,10 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
     from src.visual.visual_retrieval import VisualMemoryRetriever
     from src.experiments.shared_evaluation import make_eval_encoder
     plan = read_json(method_root / 'evaluation/evaluation_plan.json')
+    from src.experiments.query_contract import query_retriever_options, verify_query_input
+    query_options = query_retriever_options(plan['queries'])
+    for query in plan['queries']:
+        verify_query_input(query)
     from src.experiments.pipeline import load_frozen
     frozen = load_frozen(method_root)
     if plan['frozen_image_sha256'] != frozen['image_sha256']:
@@ -49,12 +53,12 @@ def run_shopping_evaluation(method_root, *, model_config, allow_shopping=False,
                 session = f"perlage_{row['bank']}_{row['condition']['label']}_{query['task_id']}"
                 env = (environment_factory(query, session) if environment_factory else
                        webshopEnv(instruction_overrides={session: query['instruction']}))
-                ranker = VisualMemoryRetriever(encoder, row['bank_path'], cache_dir=None)
+                ranker = VisualMemoryRetriever(encoder, row['bank_path'], cache_dir=None, **query_options)
                 reward, record, _ = webshop_run_rap(
                     session, '', '', INITIAL_PROMPTS['PROMPT1'], env, client,
                     settings.model, settings.provider, None, bank,
                     {'Instruction': np.zeros((len(bank), 1))}, num_steps,
-                    benign=True, test=True, query_image=query['query_image'],
+                    benign=True, test=True, query_image=query.get('query_image'),
                     visual_retriever=ranker, retrieval_candidates=3, retrieval_top_k=3,
                     vision_input=True, honest_reward=True, memory_mode='full',
                     memory_image_input=True, memory_path=row['bank_path'],

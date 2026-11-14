@@ -8,7 +8,7 @@ from src.experiments import public_pair_selection as flow
 from src.visual.pair_assets import load_pair
 
 
-def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(products,tmp_path,monkeypatch,calibration_factory):
+def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(products,tmp_path,monkeypatch,calibration_factory,public_feature_stub):
     public=tmp_path/'data/public';public.mkdir(parents=True)
     root=tmp_path/'output/public_pair_selection/simple_v2';working=public/'selection_runs/simple_v2';working.mkdir(parents=True)
     monkeypatch.setattr(flow,'PUBLIC',public);monkeypatch.setattr(flow,'OUTPUT',tmp_path/'output')
@@ -55,6 +55,11 @@ def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(produ
     assert Path(pair['source']['image']).name=='source.png' and Path(pair['target']['image']).name=='target.png'
     assert Path(pair['source']['image']).read_bytes()==Path(downloads[chosen]['image']).read_bytes()
     generated=read_json(directory/'pipeline.json')
+    from src.experiments.pipeline import load_config, generation_definition
+    assert load_config(directory/'pipeline.json') == generated
+    for method in ('PerLAGE', 'PerLAGE_no_pixel'):
+        definition = generation_definition(pair, generated['generation'][method], method)
+        assert definition['data']['training_queries'] == [generated['generation']['lucid']['target_text']]
     assert generated['public_pair']==str(directory/'pair.json')
     assert generated['evaluation']['shared_pool']==str(flow.SHARED_MEMORY)
     assert 'simple_v2' in generated['evaluation']['query_manifest']
@@ -65,7 +70,7 @@ def test_batch_draw_annotates_only_chosen_pair_then_publishes_named_assets(produ
     assert read_json(root/'RUN_STATUS.json')['status']=='published'
 
 
-def test_raw_pipeline_stops_after_draw_when_only_selected_annotations_are_missing(products,tmp_path,monkeypatch,calibration_factory):
+def test_raw_pipeline_stops_after_draw_when_only_selected_annotations_are_missing(products,tmp_path,monkeypatch,calibration_factory,public_feature_stub):
     from dataclasses import asdict
     from src.experiments import pipeline
     public=tmp_path/'data/public';public.mkdir(parents=True)

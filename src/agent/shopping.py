@@ -95,14 +95,37 @@ def _response_field(value, name, default=None):
     return value.get(name, default) if isinstance(value, dict) else getattr(value, name, default)
 
 
-def _policy_response_metadata(completion, attempt, token_budget):
-    """Audit response status and token counts, without retaining reasoning text."""
+def _reasoning_json_value(value):
+    """Preserve returned reasoning fields as JSON data, including SDK models."""
+    if value is None or isinstance(value, (str, int, float, bool)):
+        return value
+    if isinstance(value, dict):
+        return {str(key): _reasoning_json_value(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [_reasoning_json_value(item) for item in value]
+    if hasattr(value, 'model_dump'):
+        try:
+            dumped = value.model_dump(mode='json')
+        except TypeError:
+            dumped = value.model_dump()
+        return _reasoning_json_value(dumped)
+    if hasattr(value, 'to_dict'):
+        return _reasoning_json_value(value.to_dict())
+    if hasattr(value, '__dict__'):
+        return {key: _reasoning_json_value(item) for key, item in vars(value).items()
+                if not key.startswith('_')}
+    return str(value)
+
+
+def _policy_response_metadata(completion, attempt, token_budget, *, save_reasoning=True):
+    """Audit response status and retain provider-returned reasoning by default."""
     choices = _response_field(completion, 'choices', []) or []
     choice = choices[0] if choices else None
     message = _response_field(choice, 'message')
     text = _response_field(message, 'content')
-    reasoning_present = bool(_response_field(message, 'reasoning_content') or
-                             _response_field(message, 'reasoning_details'))
+    reasoning_content = _response_field(message, 'reasoning_content')
+    reasoning_details = _response_field(message, 'reasoning_details')
+    reasoning_present = bool(reasoning_content or reasoning_details)
     usage = _response_field(completion, 'usage')
     token_counts = {}
     for source, label in (('prompt_tokens', 'PromptTokens'), ('completion_tokens', 'CompletionTokens'),
@@ -117,7 +140,13 @@ def _policy_response_metadata(completion, attempt, token_budget):
     metadata = {'Attempt': attempt, 'MaxTokens': token_budget,
                 'FinishReason': _response_field(choice, 'finish_reason'),
                 'ContentCharacters': len(text) if isinstance(text, str) else 0,
-                'ReasoningPresent': reasoning_present, 'Usage': token_counts}
+                'ReasoningPresent': reasoning_present, 'Usage': token_counts,
+                'ReasoningSaved': bool(save_reasoning and reasoning_present)}
+    if save_reasoning:
+        if reasoning_content is not None:
+            metadata['ReasoningContent'] = _reasoning_json_value(reasoning_content)
+        if reasoning_details is not None:
+            metadata['ReasoningDetails'] = _reasoning_json_value(reasoning_details)
     return text, metadata
 
 
@@ -132,7 +161,7 @@ def policy_retry_delay(error, failed_attempt):
 
 
 def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, trace=None,
-        memory_images=None, max_tokens=None, max_retries=30):
+        memory_images=None, max_tokens=None, max_retries=30, save_reasoning=True):
   """Call the configured LLM and return the trimmed response."""
   retries = 0
   if max_retries < 1 or (max_tokens is not None and max_tokens < 1):
@@ -142,6 +171,7 @@ def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, tra
   retry_token_limit = max(initial_token_budget, 8192)
   call_trace = trace if trace is not None else {}
   call_trace['ResponseAttempts'] = []
+  call_trace['ReasoningCaptureEnabled'] = bool(save_reasoning)
   content = prompt
   input_images = []
   content_audit = [{"type": "text", "text": prompt}]
@@ -186,7 +216,7 @@ def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, tra
   while retries < max_retries:
     response_metadata = {'Attempt': retries + 1, 'MaxTokens': token_budget,
                          'FinishReason': None, 'ContentCharacters': 0,
-                         'ReasoningPresent': False, 'Usage': {}}
+                         'ReasoningPresent': False, 'Usage': {}, 'ReasoningSaved': False}
     try:
       request = dict(
           model=model_name,
@@ -215,7 +245,8 @@ def llm(prompt, model_name, client, provider, stop=["\n"], query_image=None, tra
               'SystemPrompt': request['messages'][0]['content'],
           }
       completion = client.chat.completions.create(**request)
-      text, response_metadata = _policy_response_metadata(completion, retries + 1, token_budget)
+      text, response_metadata = _policy_response_metadata(
+          completion, retries + 1, token_budget, save_reasoning=save_reasoning)
       call_trace['FinishReason'] = response_metadata['FinishReason']
       if not isinstance(text, str) or not text.strip():
           raise PolicyActionError('The model returned no action content')
@@ -426,6 +457,7 @@ def webshop_run_rap(
     policy_max_tokens=2048,
     policy_max_retries=3,
     memory_prompt_budget=None,
+    policy_save_reasoning=True,
 ):
     """Run one episode for a given session."""
     find_victim = False
@@ -439,6 +471,12 @@ def webshop_run_rap(
     policy_trace = []
     if memory_mode not in ('full', 'fragment'):
         raise ValueError('Unknown memory presentation mode')
+    visual_query_mode = getattr(visual_retriever, 'query_mode', None)
+    if visual_query_mode == 'text' and query_image is not None:
+        raise ValueError('纯文字购物检索不能附带查询图')
+    if visual_query_mode in ('joint', 'image'):
+        if not query_image or not Path(query_image).is_file():
+            raise ValueError('图文购物检索缺少有效的正式参考图')
     if query_image and memory and visual_retriever is None:
         raise ValueError('Image-based memory retrieval requires a visual retriever')
     if text_retriever is not None and (query_image is not None or visual_retriever is not None or vision_input):
@@ -536,7 +574,7 @@ def webshop_run_rap(
                 'PolicyTrace': policy_trace,
                 'TerminationReason': 'purchase_completed',
             }
-            if query_image or text_retriever is not None or memory_image_input:
+            if query_image or text_retriever is not None or memory_image_input or visual_retriever is not None:
                 data['RetrievalTrace'] = retrieval_trace
             if memory_image_input:
                 data['MemoryImageInput'] = True
@@ -558,7 +596,7 @@ def webshop_run_rap(
 
         retrieval_memory, retrieval_embeddings = memory, embeddings
         ranked, selected_ids = [], []
-        if query_image and memory:
+        if (query_image or (visual_retriever is not None and getattr(visual_retriever, 'query_mode', None) == 'text')) and memory:
           retrieval_memory, retrieval_embeddings, ranked = visual_retriever.shortlist(
               memory, embeddings, instruction or '', query_image, retrieval_candidates)
         elif text_retriever is not None and memory:
@@ -583,7 +621,7 @@ def webshop_run_rap(
           full_prompt = build_shopping_prompt(
               clean_context(init_prompt), instruction,
               [clean_context(item) for item in actions[2:]], max_chars=memory_prompt_budget)
-        if query_image or text_retriever is not None or memory_image_input:
+        if query_image or text_retriever is not None or memory_image_input or visual_retriever is not None:
           retrieval_trace.append({'Step': i, 'Ranking': ranked, 'SelectedIds': selected_ids,
                                  'CandidateIds': [entry['Id'] for entry in retrieval_memory],
                                  'RetrievalProtocol': (copy.deepcopy(visual_retriever.snapshot)
@@ -601,7 +639,7 @@ def webshop_run_rap(
         if auxiliary_prompt is not None:
           trace['AuxiliaryPrompt'] = auxiliary_prompt
         policy_trace.append(trace)
-        policy_inputs = {}
+        policy_inputs = {'save_reasoning': policy_save_reasoning}
         if memory_image_input:
           images = memory_image_inputs(retrieval_memory, selected_ids, memory_path,
                                        image_field=policy_memory_image_field)

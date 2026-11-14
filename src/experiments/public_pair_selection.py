@@ -8,22 +8,35 @@ import re
 from src.paths import DATA,OUTPUT,CONFIGS,PRIVATE,SHARED_MEMORY,PROJECT
 from src.visual.audit import digest,freeze_json,read_json,save_json
 from src.visual.image_utils import sha256_file
-from src.visual.pair_selection import SelectionConfig,LocalSelectionBackend,choose_pair,validate_product,verify_selection
+from src.visual.pair_selection import SelectionConfig,LocalSelectionBackend,choose_pair,validate_product,verify_selection,validate_subtype_filter
 from src.visual.shape_calibration import calibrate,load_calibration
 from src.visual.catalog_training_guard import catalog_training_guard
 from src.visual.selection.webshop_public import extract_public_candidates,random_shortlist,download_shortlist,OWNERSHIP_POLICY
 from src.visual.pair_assets import publish_pair
 
 
+def _public_root(value):
+    path=Path(value).resolve()
+    try:
+        return public_root_for(path, extra_roots=(PUBLIC,))
+    except ValueError:
+        out=Path(OUTPUT).resolve()
+        if path.is_relative_to(out):
+            parts=path.relative_to(out).parts
+            if 'data' in parts:
+                return Path(out / Path(*parts[:parts.index('data') + 1]))
+        raise
+
+
 def public_path(value):
     path=Path(value);path=(path if path.is_absolute() else PROJECT/path).resolve()
-    public_root_for(path, extra_roots=(PUBLIC,))
+    _public_root(path)
     return path
 
 
 def validate_config(config):
     required={'schema_version','seed','candidate_limit','calibration_path','groups'}
-    if not isinstance(config,dict) or not required<=set(config) or set(config)-required-{'models','type_reviews'} or config['schema_version']!=2:
+    if not isinstance(config,dict) or not required<=set(config) or set(config)-required-{'models','type_reviews','subtype_filters'} or config['schema_version']!=2:
         raise ValueError('轻量选图须使用第二版配置；旧多指标配置只保留历史读取')
     if type(config['seed']) is not int or type(config['candidate_limit']) is not int or not 1<=config['candidate_limit']<=256:
         raise ValueError('种子须为整数，公开图片候选预算须在一至二百五十六之间')
@@ -35,6 +48,12 @@ def validate_config(config):
     if len({g['key'] for g in config['groups']})!=len(config['groups']) or len({g['target_id'] for g in config['groups']})!=len(config['groups']):
         raise ValueError('组名及公开目标编号须唯一')
     if set(config.get('models',{}))-{'dino_model','batch_size'}:raise ValueError('新选图阶段只使用单一冻结视觉模型')
+    if 'subtype_filters' in config:
+        filters=config['subtype_filters'];keys={g['key'] for g in config['groups']}
+        if not isinstance(filters,dict) or set(filters)-keys:raise ValueError('细分品类过滤只支持配置中的公开组名')
+        for rule in filters.values():
+            if rule is None:raise ValueError('细分品类过滤规则不能为空')
+            validate_subtype_filter(rule,allow_empty=False)
     return config
 
 
@@ -45,7 +64,7 @@ def selection_settings(config):
 def freeze_plan(config,root):
     from src.visual.product_types import TYPE_RULES_SHA256
     path=public_path(config['calibration_path']);proof=read_json(path)
-    load_calibration(path,proof['models'],public_root=public_root_for(path, extra_roots=(PUBLIC,)))
+    load_calibration(path,proof['models'],public_root=(_public_root(path), PUBLIC))
     freeze_json(Path(root)/'PUBLIC_PLAN.json',dict(schema_version=2,config=config,
         selection=asdict(selection_settings(config)),calibration_sha256=sha256_file(path),
         type_rules_sha256=TYPE_RULES_SHA256,
@@ -69,7 +88,7 @@ def downloaded_product(product,downloads,*,source=False):
     if 'type_review' in product:record['type_review']=product['type_review']
     if source:record.update(owned=True,source_note='固定散列规则预先登记的实验模拟可控商品；不声明真实商家所有权')
     return validate_product(record,Path(record['image']).parent,owned=source,generation_ready=False,
-                            public_root=public_root_for(record['image'], extra_roots=(PUBLIC,)))
+                            public_root=_public_root(record['image']))
 
 
 def select_groups(config,root,public,*,device='cuda',backend_factory=LocalSelectionBackend):
@@ -86,7 +105,9 @@ def select_groups(config,root,public,*,device='cuda',backend_factory=LocalSelect
             freeze_json(catalog,dict(schema_version=2,target=target,candidates=candidates))
             if not candidates:raise ValueError('本组所有公开候选下载失败：'+group['key'])
             result=choose_pair(target,candidates,backend,settings,excluded_source_ids=used|targets,
-                               public_root=public_root_for(public, extra_roots=(PUBLIC,)))
+                               public_root=_public_root(public),
+                               calibration_public_root=(_public_root(settings.calibration_path), PUBLIC),
+                               subtype_filter=config.get('subtype_filters',{}).get(group['key']))
             result.update(target=target,binding=dict(public_catalog_sha256=sha256_file(catalog),models_configuration=config.get('models',{}),
                 calibration_sha256=sha256_file(settings.calibration_path),public_plan_sha256=sha256_file(root/'PUBLIC_PLAN.json')),
                 download_failures={p['id']:downloads['failures'][p['id']] for p in group['candidates'] if p['id'] in downloads['failures']})
@@ -142,17 +163,29 @@ def publish_groups(root,public):
                 if product[field]!=original[role][field]:raise ValueError('选中图对标注改变了公开身份或原图')
             if 'type_review' in original[role]:product['type_review']=original[role]['type_review']
             selected[role]=validate_product(product,Path(product['image']).parent,owned=role=='source',
-                                           public_root=public_root_for(public, extra_roots=(PUBLIC,)))
+                                           public_root=_public_root(public))
         selected['annotation_binding']=dict(drawn_pair_sha256=row['selection_sha256'],annotations_sha256=digest(annotations),reviews_sha256=digest(reviews))
+        # 选图阶段同步提取目标商品特点文字与训练指令
+        from src.visual.target_features import extract_product_features
+        target_feat = extract_product_features(selected['target']['id'])
+        selected['target_feature_text'] = target_feat['canonical_sentence']
+        selected['target']['brand'] = target_feat['brand']
+        selected['target']['attributes'] = target_feat['attributes']
+        selected['target']['feature_text'] = target_feat['canonical_sentence']
+        selected['target']['training_queries'] = target_feat['training_queries']
         selected_path=root/'groups'/row['key']/'selection/SELECTED_PAIR.json';freeze_json(selected_path,selected)
         # 协议版本目录保护此前已冻结的分组 source/target 及其实验结果。
         directory=root/'data/groups'/row['key']
         published=publish_pair(selected_path,directory,root/'data',
-                               input_public_root=public_root_for(public, extra_roots=(PUBLIC,)))
+                               input_public_root=_public_root(public))
         cfg=pipeline_config(row['key'],catalogs['catalogs'][row['key']],root,
             selection=published['configuration'],models=published['binding']['models_configuration'])
         cfg.pop('public_catalog');cfg['public_pair']=published['pair_manifest']
         cfg['run_dir']=str((OUTPUT/'runs'/root.name/row['key']).resolve())
+        # 感知方法从已绑定的公开图对读取同一正文；配置结构须可被完整入口直接加载。
+        cfg['generation']['lucid']['target_text'] = target_feat['canonical_sentence']
+        cfg['generation']['lucid']['text_weight'] = 1.0
+        freeze_json(directory / 'features.json', target_feat)
         config_path=directory/'pipeline.json';freeze_json(config_path,cfg)
         records.append(dict(key=row['key'],directory=str(directory.resolve()),source=published['source']['image'],target=published['target']['image'],
             manifest=published['pair_manifest'],pipeline_config=str(config_path.resolve())))
@@ -197,8 +230,10 @@ def main(argv=None):
         with catalog_training_guard(allowed_output_roots=[root,public,PUBLIC]) as audit:
             if args.stage=='calibrate':
                 if args.development is None:parser.error('校准需要 --development 指定实际公开视觉标签清单')
+                dev_path=public_path(args.development)
+                cal_path=public_path(config['calibration_path'])
                 backend=LocalSelectionBackend(config.get('models',{}),public/'calibration_features',args.device)
-                try:calibrate(public_path(args.development),public_path(config['calibration_path']),backend,public_root=PUBLIC)
+                try:calibrate(dev_path,cal_path,backend,public_root=(_public_root(dev_path),public,PUBLIC))
                 finally:backend.close()
                 save_json(root/'ACCESS_AUDIT_calibrate.json',{k:v for k,v in audit.items() if k!='active'})
                 print('公开开发集门槛已拟合并冻结。');return 0
@@ -209,7 +244,7 @@ def main(argv=None):
                 reviews=read_json(public_path(config['type_reviews'])) if config.get('type_reviews') else {}
                 extracted=extract_public_candidates(args.products,config['groups'],public,seed=config['seed'],
                     lexical_limit=config['candidate_limit'],index_path=public_path(args.index),excluded_ids=proof['development_product_ids'],
-                    type_reviews=reviews,verify_source=args.verify_source)
+                    type_reviews=reviews,verify_source=args.verify_source,subtype_filters=config.get('subtype_filters'))
                 download_shortlist(random_shortlist(extracted,public),public)
             if args.stage in ('select','all'):
                 selected=select_groups(config,root,public,device=args.device)

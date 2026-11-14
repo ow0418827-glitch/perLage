@@ -40,7 +40,7 @@ def test_initialization_alone_and_short_schedule_rejected(products,tmp_path):
     with pytest.raises(ValueError):validate_complete(ready)
 
 
-def test_both_methods_use_same_public_selection_before_generation(products,tmp_path,monkeypatch,calibration_factory):
+def test_both_methods_use_same_public_selection_before_generation(products,tmp_path,monkeypatch,calibration_factory,public_feature_stub):
     import numpy as np
     from src.experiments import pipeline
     from src.visual import optimization

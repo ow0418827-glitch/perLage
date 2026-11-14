@@ -13,6 +13,7 @@ RULES={
     'apparel':r'\b(?:jeans|pants|trousers|dresses|shirts?|jackets?|leggings)\b|牛仔裤|长裤|上衣|裙|服装',
     'curtains':r'\b(?:curtains?|drapes?|window valance)\b|窗帘|帷幔',
     'tableware':r'\b(?:mugs?|cups?|bowls?|plates?|cutlery)\b|餐具|杯|碗|盘',
+    'cookies':r'\b(?:cookies?|biscuits?|wafers?|cookie dough)\b|饼干|曲奇',
 }
 # 粗类型间默认排除明显不同的用途；两种护发用途保留宽松兼容。
 COMPATIBLE={frozenset(('personal_care','hair_extensions'))}

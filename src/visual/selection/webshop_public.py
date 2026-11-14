@@ -79,15 +79,28 @@ def build_public_index(products_path,index_path,*,verify_source=False):
     return result
 
 
-def extract_public_candidates(products_path,groups,output,*,seed=42,lexical_limit=32,index_path=None,excluded_ids=(),type_reviews=None,verify_source=False):
+def extract_public_candidates(products_path,groups,output,*,seed=42,lexical_limit=32,index_path=None,excluded_ids=(),type_reviews=None,verify_source=False,subtype_filters=None):
     """从可复用公开索引均匀截取有限候选；参数旧名仅表示元数据候选预算。"""
+    from src.visual.pair_selection import matches_subtype_filter,validate_subtype_filter
     output=Path(output);source=Path(products_path).resolve();index=Path(index_path or output.parent/'public_products_v2.sqlite')
+    target_ids={g['target_id'] for g in groups};group_keys={g['key'] for g in groups}
+    if len(target_ids)!=len(groups) or len(group_keys)!=len(groups):raise ValueError('目标及组名须唯一')
+    if subtype_filters is not None:
+        if not isinstance(subtype_filters,dict) or set(subtype_filters)-group_keys:
+            raise ValueError('细分品类过滤只支持配置中的公开组名')
+        validated_filters={}
+        for k,rule in subtype_filters.items():
+            if rule is None:raise ValueError('细分品类过滤规则不能为空')
+            validated_filters[k]=validate_subtype_filter(rule,allow_empty=False)
+        subtype_filters=validated_filters
+    else:
+        subtype_filters={}
     manifest=build_public_index(source,index,verify_source=verify_source)
-    target_ids={g['target_id'] for g in groups};excluded=set(excluded_ids);type_reviews=type_reviews or {}
-    if len(target_ids)!=len(groups) or len({g['key'] for g in groups})!=len(groups):raise ValueError('目标及组名须唯一')
+    excluded=set(excluded_ids);type_reviews=type_reviews or {}
     if target_ids&excluded:raise ValueError('正式目标与开发校准商品重叠')
     identity=dict(index_manifest_sha256=digest(manifest),groups=groups,seed=seed,candidate_limit=lexical_limit,
         ownership_policy=OWNERSHIP_POLICY,excluded_ids=sorted(excluded),type_reviews=type_reviews)
+    if subtype_filters:identity['subtype_filters']=subtype_filters
     final=output/'public_extraction.json'
     if final.exists():
         saved=read_json(final)
@@ -104,6 +117,9 @@ def extract_public_candidates(products_path,groups,output,*,seed=42,lexical_limi
             if row is None:raise ValueError('公开索引缺少固定目标：'+group['target_id'])
             target=product(row);category=classify_public_type(target)
             if category['category'] is None:raise ValueError('目标公开类型未解决，须提供逐商品类型核对：'+target['id'])
+            sub_filter=subtype_filters.get(group['key'])
+            if not matches_subtype_filter(target['title'],sub_filter):
+                raise ValueError('固定目标不满足公开细分品类规则：'+target['id'])
             # 类别索引缩小范围；公开人工核对可显式纠正原有未知/多义条目。
             from src.visual.product_types import RULES,COMPATIBLE
             cats=[c for c in RULES if c==category['category'] or frozenset((c,category['category'])) in COMPATIBLE]
@@ -117,9 +133,12 @@ def extract_public_candidates(products_path,groups,output,*,seed=42,lexical_limi
                         r=db.execute('SELECT id,title,image_url,source_url FROM products WHERE id=?',(pid,)).fetchone()
                         if r:yield product(r)
             counts=dict(type_compatible=0,simulated_controlled=0,development_excluded=0)
+            if sub_filter:counts['subtype_filtered']=0
             def eligible():
                 for p in matching():
                     if not type_compatibility(p,target)['compatible']:continue
+                    if not matches_subtype_filter(p['title'],sub_filter):
+                        counts['subtype_filtered']+=1;continue
                     counts['type_compatible']+=1
                     if p['id'] in excluded:counts['development_excluded']+=1;continue
                     if not simulated_controlled(p['id'],seed,target_ids):continue

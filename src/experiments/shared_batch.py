@@ -8,11 +8,11 @@ import shutil
 from src.paths import DATA
 from src.visual.audit import read_json,save_json,freeze_json,digest
 from src.visual.image_utils import sha256_file
-from src.visual.visual_retrieval import VisualMemoryRetriever,memory_index_text,resolve_image,canonical_digest
+from src.visual.visual_retrieval import VisualMemoryRetriever,memory_index_text,resolve_image,canonical_digest,detect_index_text_policy
 from src.agent.memory.shared_pool import load_shared_pool
 from src.agent.memory.multimodal_memory import apply_controlled_image_substitution
 from src.experiments.pipeline import load_frozen
-from src.experiments.query_contract import load_formal_queries
+from src.experiments.query_contract import load_formal_queries, query_retriever_options, verify_query_input
 from src.experiments.defenses import Defender,conditions,table_groups
 from src.experiments.shared_evaluation import make_eval_encoder
 
@@ -33,6 +33,15 @@ class SharedFeatureCache:
                         model=self.encoder.snapshot,options=kwargs))
         if key not in self.values:
             value=self.encoder.encode_joint(text,path,**kwargs)
+            self.values[key]=(copy.deepcopy(value),copy.deepcopy(getattr(self.encoder,'last_encoding_audit',None)))
+        value,audit=self.values[key]
+        self.last_encoding_audit=copy.deepcopy(audit)
+        return copy.deepcopy(value)
+
+    def encode_text(self,text):
+        key=digest(dict(mode='text',text=text,model=self.encoder.snapshot))
+        if key not in self.values:
+            value=self.encoder.encode_text(text)
             self.values[key]=(copy.deepcopy(value),copy.deepcopy(getattr(self.encoder,'last_encoding_audit',None)))
         value,audit=self.values[key]
         self.last_encoding_audit=copy.deepcopy(audit)
@@ -111,22 +120,27 @@ def finalize(root):
     groups=[]
     for key,record in frozen:
         config=read_json(root/'configs'/(key+'.json'))
-        queries=load_formal_queries(config['evaluation']['query_manifest'],record['target'])
+        queries=load_formal_queries(config['evaluation']['query_manifest'],record['target'],
+                                   query_mode=config['evaluation'].get('query_mode'))
         readable=PUBLIC/'groups'/key/'perlage.png'
         if not readable.exists():shutil.copyfile(record['image'],readable)
         if sha256_file(readable)!=record['image_sha256']:raise ValueError('正式方法图片内容改变')
         groups.append(dict(key=key,source=record['source'],target=record['target'],
             frozen_image=record['image'],frozen_image_sha256=record['image_sha256'],queries=queries,
+            query_manifest=str(Path(config['evaluation']['query_manifest']).resolve()),
+            query_manifest_sha256=sha256_file(config['evaluation']['query_manifest']),
             method_record=str((root/'groups'/key/'methods/PerLAGE/FROZEN_IMAGE.json').resolve())))
     banks,ids=make_banks(active,groups,active_path)
     poisoned=PRIVATE/'shared_memory_perlage.json'
     freeze_json(poisoned,dict(schema_version=1,scope='shared',state='evaluation_modified',
         entries=banks['modified'],base_pool_sha256=sha256_file(active_path),
         substituted_memory_ids=ids,simultaneous_substitutions=2,source_project_modified=False))
+    query_options=query_retriever_options([q for g in groups for q in g['queries']])
     plan=dict(schema_version=1,status='ready',groups=groups,source_memory_ids=ids,
         pool_path=str(active_path),pool_sha256=sha256_file(active_path),pool_count=len(active),
         poisoned_pool=str(poisoned),poisoned_pool_sha256=sha256_file(poisoned),conditions=conditions(),
-        key_image_weight=.5,query_image_weight=.5,index_text='title',
+        key_image_weight=.5,query_image_weight=query_options.get('query_image_weight',.5),
+        query_mode=query_options.get('query_mode','joint'),index_text=detect_index_text_policy(active),
         shopping_authorized=True,shopping_conditions=['none'],shopping_top_k=3,
         record_kinds={kind:sum(e['RecordKind']==kind for e in active) for kind in ('purchase_memory','simulated_gallery')})
     freeze_json(root/'BATCH_PLAN.json',plan)
@@ -143,15 +157,18 @@ def _validate_plan(root):
         raise ValueError('共享池在测试前后改变')
     for group in plan['groups']:
         if sha256_file(group['frozen_image'])!=group['frozen_image_sha256']:raise ValueError('冻结图片改变')
+        if group.get('query_manifest') and sha256_file(group['query_manifest'])!=group['query_manifest_sha256']:
+            raise ValueError('正式询问清单改变')
         for query in group['queries']:
-            if sha256_file(query['query_image'])!=query['query_image_sha256']:raise ValueError('正式参考图改变')
+            verify_query_input(query)
+    query_retriever_options([q for g in plan['groups'] for q in g['queries']])
     return plan
 
 
 def _score_group(ranker,bank,group,source_id):
     observed=[]
     for query in group['queries']:
-        ranking=ranker.rank(bank,query['instruction'],query['query_image'])
+        ranking=ranker.rank(bank,query['instruction'],query.get('query_image'))
         if len(ranking)!=len(bank):raise ValueError('检索未覆盖完整共享池')
         row=next(r for r in ranking if r['Id']==source_id)
         observed.append(dict(task_id=query['task_id'],rank=row['rank'],score=row['score']))
@@ -162,7 +179,9 @@ def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None,device=
     root=Path(root);plan=_validate_plan(root)
     active=load_shared_pool(plan['pool_path'])
     banks,_=make_banks(active,plan['groups'],plan['pool_path'])
-    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device)))())
+    query_options=query_retriever_options([q for g in plan['groups'] for q in g['queries']])
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device,plan['encoder_config'])
+        if plan.get('encoder_config') else make_eval_encoder(device)))())
     defender=(defense_factory or (lambda path:Defender(path,'cuda')))(root/'retrieval/defended')
     rows=[];specs=specs or plan['conditions']
     try:
@@ -175,7 +194,7 @@ def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None,device=
                     entry['RetrievalImage']=dict(entry.get('RetrievalImage',{}),ASIN=entry['FinalASIN'],
                         LocalPath=str(Path(image).resolve()),SHA256=sha256_file(image))
                 bank_file=root/'retrieval/banks'/spec['label']/(bank_name+'.json');freeze_json(bank_file,bank)
-                ranker=VisualMemoryRetriever(encoder,bank_file,cache_dir=None)
+                ranker=VisualMemoryRetriever(encoder,bank_file,cache_dir=None,**query_options)
                 for group in plan['groups']:
                     observations=_score_group(ranker,bank,group,plan['source_memory_ids'][group['key']])
                     row=dict(group=group['key'],condition=spec,bank=bank_name,bank_path=str(bank_file.resolve()),
@@ -185,7 +204,8 @@ def evaluate(root,*,encoder_factory=None,defense_factory=None,specs=None,device=
                     rows.append(row);save_json(root/'retrieval/evaluation.partial.json',rows)
                     print(f"{group['key']} {spec['label']} {bank_name}: 前三 {row['top3']}/20，前五 {row['top5']}/20",flush=True)
                 identity=ranker.index_identity(bank);scope=canonical_digest(identity)
-                keys=[ranker._encode(memory_index_text(e),resolve_image(e,bank_file),'joint',scope=scope)[1] for e in bank]
+                keys=[ranker._encode(memory_index_text(e,ranker.index_text),resolve_image(e,bank_file),'joint',scope=scope,
+                                     image_weight=ranker.key_image_weight)[1] for e in bank]
                 index_file=root/'retrieval/indexes'/spec['label']/(bank_name+'.json')
                 ranker._save_index_cache(index_file,identity,keys)
                 freeze_json(index_file.with_suffix('.entries.json'),dict(bank_path=str(bank_file.resolve()),
@@ -206,7 +226,9 @@ def verify(root,*,encoder_factory=None,specs=None,device='cuda'):
     expected={(g['key'],s['label'],b) for g in plan['groups'] for s in specs for b in ('clean','modified')}
     if {(r['group'],r['condition']['label'],r['bank']) for r in rows}!=expected or len(rows)!=len(expected):
         raise ValueError('检索条件缺失或重复')
-    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device)))())
+    query_options=query_retriever_options([q for g in plan['groups'] for q in g['queries']])
+    encoder=SharedFeatureCache((encoder_factory or (lambda:make_eval_encoder(device,plan['encoder_config'])
+        if plan.get('encoder_config') else make_eval_encoder(device)))())
     actual_device=str(getattr(encoder,'device','injected_test_encoder'))
     count=0;max_error=0.;ranker=None;last_path=None
     try:
@@ -218,7 +240,7 @@ def verify(root,*,encoder_factory=None,specs=None,device='cuda'):
             if len(bank)!=plan['pool_count']:raise ValueError('复算共享池规模改变')
             group=next(g for g in plan['groups'] if g['key']==row['group'])
             if last_path!=row['bank_path']:
-                ranker=VisualMemoryRetriever(encoder,row['bank_path'],cache_dir=None);last_path=row['bank_path']
+                ranker=VisualMemoryRetriever(encoder,row['bank_path'],cache_dir=None,**query_options);last_path=row['bank_path']
             recalculated=_score_group(ranker,bank,group,plan['source_memory_ids'][row['group']])
             if len(recalculated)!=len(row['queries']):raise ValueError('复算请求数量改变')
             for actual,saved in zip(recalculated,row['queries']):
@@ -242,10 +264,13 @@ def report(root,*,require_shopping=True):
     verified=read_json(root/'retrieval/INDEPENDENT_VERIFICATION.json')
     if verified['status']!='passed' or verified['rows_sha256']!=sha256_file(root/'retrieval/evaluation.json'):
         raise ValueError('检索尚未通过绑定当前结果的独立复算')
+    query_description=('检索键由公开商品文字与图片各半组成；查询仅编码目标特点的固定购买意向文字，未提供或生成查询图片。'
+                       if plan.get('query_mode')=='text' else
+                       '检索键由公开商品文字与图片各半组成；查询由已冻结的购买意向文字与独立模糊图片各半组成。完整历史不参与向量，检索指标与最终误购分开统计。')
     lines=['# 两组新选公开图对的共享记忆实验','',
         f"共享池共 {plan['pool_count']} 条，其中已完成本地商城购买记忆 {plan['record_kinds']['purchase_memory']} 条，模拟商品参考 {plan['record_kinds']['simulated_gallery']} 条。",
         '第二组与第九组旧源商品条目已移除，换入新商品实际环境购买轨迹。修改池同时包含两张新生成图，其他九十八条保持原内容。',
-        '检索键与查询均为图片和公开名称或模糊文字各半，完整历史不参与向量。检索指标与最终误购分开统计。','',
+        query_description,'',
         f"检索共 {len(rows)} 条条件记录、{verified['rankings']} 次排名，使用新编码器独立复算，最大分数误差 {verified['max_score_error']}。",'']
     for group in plan['groups']:
         display={'02_chair':'第二组理发椅','09_toothbrush':'第九组牙刷'}[group['key']]

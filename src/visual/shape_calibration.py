@@ -25,15 +25,16 @@ def fit_threshold(scores,labels):
 
 def calibrate(manifest_path,output,backend,*,public_root):
     from src.visual.pair_selection import validate_product,unit_rows
-    manifest_path=Path(manifest_path).resolve();public_root=Path(public_root).resolve()
-    if not manifest_path.is_relative_to(public_root):raise ValueError('开发标签清单须位于公开数据目录')
+    if public_root is None:raise ValueError('校准须明确指定公开数据根目录')
+    manifest_path=Path(manifest_path).resolve()
+    if not _under_public_root(manifest_path,public_root):raise ValueError('开发标签清单须位于公开数据目录')
     document=read_json(manifest_path)
     if (not {'schema_version','reviewer','pairs'}<=set(document) or set(document)-{'schema_version','reviewer','pairs','reserved_products'} or document['schema_version']!=1
             or not str(document['reviewer']).strip()):raise ValueError('开发集须记录真实公开视觉核对者与逐对标签')
     products={};pairs=[];seen=set()
     for raw in document.get('reserved_products',[]):
         p=validate_product(raw,manifest_path.parent,generation_ready=False,public_root=public_root)
-        if not Path(p['image']).is_relative_to(public_root):raise ValueError('开发保留图片须位于公开目录')
+        if not _under_public_root(p['image'],public_root):raise ValueError('开发保留图片须位于公开目录')
         if p['id'] in products:raise ValueError('开发保留商品编号重复')
         products[p['id']]=p
     for pair in document['pairs']:
@@ -42,7 +43,7 @@ def calibrate(manifest_path,output,backend,*,public_root):
         records=[]
         for field in ('left','right'):
             p=validate_product(pair[field],manifest_path.parent,generation_ready=False,public_root=public_root)
-            if not Path(p['image']).is_relative_to(public_root):raise ValueError('开发图片须位于公开目录')
+            if not _under_public_root(p['image'],public_root):raise ValueError('开发图片须位于公开目录')
             if p['id'] in products and products[p['id']]['image_sha256']!=p['image_sha256']:raise ValueError('开发商品编号对应不同图片')
             products[p['id']]=p;records.append(p)
         key=tuple(sorted(p['id'] for p in records))
@@ -68,9 +69,16 @@ def calibrate(manifest_path,output,backend,*,public_root):
     return result
 
 
+def _under_public_root(target,public_root):
+    if public_root is None:return True
+    roots=public_root if isinstance(public_root,(tuple,list)) else (public_root,)
+    resolved=Path(target).resolve()
+    return any(resolved.is_relative_to(Path(r).resolve()) for r in roots)
+
+
 def load_calibration(path,models,*,public_root=None):
     if not path:raise ValueError('缺少公开开发集校准证书；不能沿用旧阈值或自动使用占位阈值')
-    if public_root is not None and not Path(path).resolve().is_relative_to(Path(public_root).resolve()):raise ValueError('校准证书须在公开目录')
+    if not _under_public_root(path,public_root):raise ValueError('校准证书须在公开目录')
     result=read_json(path);body={k:v for k,v in result.items() if k!='certificate_sha256'}
     if (result.get('policy')!=CALIBRATION_POLICY or result.get('status')!='calibrated'
             or result.get('schema_version')!=2 or result.get('certificate_sha256')!=digest(body)
@@ -82,7 +90,7 @@ def load_calibration(path,models,*,public_root=None):
     ids={r[k] for r in rows for k in ('left_id','right_id')}
     if fitted!=result['fit'] or not ids<=set(result['development_product_ids']) or fitted['error_rate']>=.5:raise ValueError('校准门槛与逐对开发分数不一致或没有判别能力')
     manifest=Path(result['development_manifest'])
-    if public_root is not None and not manifest.resolve().is_relative_to(Path(public_root).resolve()):raise ValueError('开发标签须在读取前确认位于公开目录')
+    if not _under_public_root(manifest,public_root):raise ValueError('开发标签须在读取前确认位于公开目录')
     if sha256_file(manifest)!=result['development_manifest_sha256']:raise ValueError('公开开发标签原始记录改变')
     original=read_json(manifest)
     if original.get('reviewer')!=result['reviewer'] or len(original.get('pairs',[]))!=len(rows):raise ValueError('校准与原始公开标签数量或核对者不一致')
@@ -90,7 +98,7 @@ def load_calibration(path,models,*,public_root=None):
     original_ids=set();image_hashes=set()
     for p in originals:
         image=Path(p['image']);image=image if image.is_absolute() else manifest.parent/image
-        if public_root is not None and not image.resolve().is_relative_to(Path(public_root).resolve()):raise ValueError('开发图片须在读取前确认位于公开目录')
+        if not _under_public_root(image,public_root):raise ValueError('开发图片须在读取前确认位于公开目录')
         original_ids.add(p['id']);image_hashes.add(sha256_file(image))
     if sorted(original_ids)!=result['development_product_ids'] or sorted(image_hashes)!=result['development_image_sha256']:
         raise ValueError('公开开发划分的商品或图片集合改变')
